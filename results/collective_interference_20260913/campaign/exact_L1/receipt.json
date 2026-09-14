@@ -1,0 +1,63 @@
+{
+  "name": "exact_L1",
+  "bins_per_band": 1,
+  "model_bytes": 1031,
+  "certificate_bytes": 713,
+  "discovery": {
+    "proposal_seconds": 0.018799667000166664,
+    "exact_lower_corrections": 0,
+    "lower_cost": {
+      "retained_states_constructed": 20,
+      "largest_matrix": 20,
+      "retained_word_state_actions": 580,
+      "spectator_bins_processed": 2,
+      "physical_fock_space_enumerated": false
+    },
+    "numerical_eigensolver_max_dimension": 20,
+    "large_sector_enumerated": false
+  },
+  "accepted": {
+    "lower": "-51334420877/10000000000",
+    "upper": "-930834848956908068902297/181327622491099716763110",
+    "lower_shifted": "-11334420877/10000000000",
+    "upper_shifted": "-205524358992509201849857/181327622491099716763110",
+    "width": "1480335787001084744747/181327622491099716763110000000000",
+    "width_float": 8.163873582326077e-12,
+    "filled_bath_energy": "-4",
+    "physical_modes": 6,
+    "particles": 3,
+    "retained_modes": 6,
+    "coupling_patterns": 2,
+    "dark_modes_eliminated": 0,
+    "lower_checks": [
+      {
+        "dimension": 20,
+        "rank": 20
+      }
+    ],
+    "lower_cost": {
+      "retained_states_constructed": 20,
+      "largest_matrix": 20,
+      "retained_word_state_actions": 580,
+      "spectator_bins_processed": 2,
+      "physical_fock_space_enumerated": false
+    },
+    "upper_cost": {
+      "retained_states_constructed": 20,
+      "largest_matrix": 20,
+      "retained_word_state_actions": 580,
+      "spectator_bins_processed": 2,
+      "physical_fock_space_enumerated": false
+    },
+    "maximum_metric_bits": 1,
+    "uniform_width_ceiling": "1480335787001084744747/181327622491099716763110000000000",
+    "lower_envelope_trial_gap": "1480335787001084744747/181327622491099716763110000000000",
+    "active_floor": "-534/35",
+    "hybridization_norm_bound": "21/5",
+    "maximum_bin_width": "0",
+    "minimum_excitation_gap": "4",
+    "replay_seconds": 0.011645792000308575,
+    "scope": "Exact operator-envelope interval for declared collective charging/bath family; energy units are abstract, not Hartree."
+  },
+  "case_wall_seconds": 0.13094275000003108
+}

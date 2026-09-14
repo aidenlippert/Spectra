@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/self_consistent/test_builder.py", line 27, in test_tau_cross_and_iteration
+    out,h=self_consistent_update(v,w,iterations=2)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/self_consistent/builder.py", line 44, in self_consistent_update
+    taus=tau_from_perturbation(current,weights)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/self_consistent/builder.py", line 24, in tau_from_perturbation
+    if not creators: raise ValueError('constant/annihilator-only perturbation unsupported')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: constant/annihilator-only perturbation unsupported

@@ -1,0 +1,39 @@
+{
+  "tag": "h8",
+  "n": 849,
+  "assemble_seconds": 2.639746134998859,
+  "matrix_sha256": "afa6c3880de776beaec8bb6cf0e89a0131fe1eac811d0252b8f147faaaf6f84e",
+  "basis_sha256": "fa188d7a92325df4223504e70f455b6b1899a82cb73c932e870f50c8a2d3fff9",
+  "cpu": {
+    "times": [
+      0.02153858100064099,
+      0.02138198199827457,
+      0.02161847200113698
+    ],
+    "median_seconds": 0.02153858100064099,
+    "energy": -9.202521547729072
+  },
+  "gpu": {
+    "times": [
+      0.03462119799951324,
+      0.034528526000940474,
+      0.034626947999640834
+    ],
+    "median_seconds": 0.03462119799951324,
+    "energy": -9.202521547729072
+  },
+  "upper_rational": "-9202521547724778217328717060175067289/999999999999533478211157000000000000",
+  "upper_stats": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 185,
+    "hamiltonian_terms": 2912,
+    "word_state_checks": 538720,
+    "contributing_word_state_pairs": 24884,
+    "action_cache_states": 0,
+    "replay_seconds": 0.13815724899905035,
+    "upper": "-9202521547724778217328717060175067289/999999999999533478211157000000000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  },
+  "witness_support": 185,
+  "gpu_cpu_energy_absdiff": 0.0
+}

@@ -1,0 +1,75 @@
+[
+  {
+    "order": 4,
+    "accepted": true,
+    "all_entries_match_signed_orbit_moments": true,
+    "work": {
+      "maximum_moment_order": 4,
+      "maximum_power": 2,
+      "boundary_count": 14,
+      "initial_frame_supports": [
+        1,
+        4,
+        4,
+        16,
+        4,
+        4,
+        16,
+        16,
+        4,
+        64,
+        16,
+        16,
+        4,
+        16
+      ],
+      "maximum_frame_support": 1016,
+      "source_frame_states": 320,
+      "referenced_frame_states": 1208,
+      "original_pauli_terms": 53,
+      "frame_pauli_terms": 53,
+      "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim."
+    },
+    "seconds": 0.17410275002475828
+  },
+  {
+    "order": 8,
+    "accepted": true,
+    "all_entries_match_signed_orbit_moments": true,
+    "work": {
+      "maximum_moment_order": 8,
+      "maximum_power": 4,
+      "boundary_count": 14,
+      "initial_frame_supports": [
+        1,
+        4,
+        4,
+        16,
+        4,
+        4,
+        16,
+        16,
+        4,
+        64,
+        16,
+        16,
+        4,
+        16
+      ],
+      "maximum_frame_support": 3213,
+      "source_frame_states": 2152,
+      "referenced_frame_states": 6121,
+      "original_pauli_terms": 53,
+      "frame_pauli_terms": 53,
+      "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim."
+    },
+    "seconds": 1.9664631250780076
+  },
+  {
+    "order": 12,
+    "accepted": false,
+    "reason": "Clifford frame action budget exhausted",
+    "source_frame_states": 4096,
+    "seconds": 1.6732661669375375
+  }
+]

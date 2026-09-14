@@ -1,0 +1,593 @@
+{
+  "fixture_sha256": "797b241225ab321dae959f37c2be850544a63193296e23a61260fb27fee7e670",
+  "tail_sha256": "443f456d42fa8963de5b4d060bdb9852f21299203d3baac313fd04cbe4ea2bfd",
+  "pattern_constraints": 6,
+  "retained_patterns": 6,
+  "coupling": "joint",
+  "modes": 8,
+  "particles": 4,
+  "symmetry": {
+    "original_dimensions": [
+      8,
+      8,
+      28,
+      28,
+      64
+    ],
+    "symmetry_dimensions": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      8,
+      8,
+      2,
+      4,
+      2,
+      4,
+      8,
+      8,
+      2,
+      4,
+      8,
+      8,
+      16,
+      16,
+      8,
+      8
+    ],
+    "parity_masks": [
+      51,
+      85,
+      153
+    ],
+    "alpha_charge_quotient": true
+  },
+  "base_Gram_dimensions": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    4,
+    8,
+    8,
+    2,
+    4,
+    2,
+    4,
+    8,
+    8,
+    2,
+    4,
+    8,
+    8,
+    16,
+    16,
+    8,
+    8
+  ],
+  "anti_Gram_dimensions": [
+    14,
+    14,
+    14,
+    14
+  ],
+  "Gram_entries": 1920,
+  "coefficient_rows": 185,
+  "coefficient_max_degree": 4,
+  "gram_map_nonzeros": 59824,
+  "ideal_variables": 13,
+  "preparation": [
+    {
+      "monomial_word_pairs": 4,
+      "monomial_map_nonzeros": 4
+    },
+    {
+      "monomial_word_pairs": 4,
+      "monomial_map_nonzeros": 4
+    },
+    {
+      "monomial_word_pairs": 4,
+      "monomial_map_nonzeros": 4
+    },
+    {
+      "monomial_word_pairs": 4,
+      "monomial_map_nonzeros": 4
+    },
+    {
+      "monomial_word_pairs": 4,
+      "monomial_map_nonzeros": 6
+    },
+    {
+      "monomial_word_pairs": 4,
+      "monomial_map_nonzeros": 6
+    },
+    {
+      "monomial_word_pairs": 4,
+      "monomial_map_nonzeros": 6
+    },
+    {
+      "monomial_word_pairs": 4,
+      "monomial_map_nonzeros": 6
+    },
+    {
+      "monomial_word_pairs": 4,
+      "monomial_map_nonzeros": 4
+    },
+    {
+      "monomial_word_pairs": 16,
+      "monomial_map_nonzeros": 16
+    },
+    {
+      "monomial_word_pairs": 64,
+      "monomial_map_nonzeros": 64
+    },
+    {
+      "monomial_word_pairs": 64,
+      "monomial_map_nonzeros": 64
+    },
+    {
+      "monomial_word_pairs": 4,
+      "monomial_map_nonzeros": 4
+    },
+    {
+      "monomial_word_pairs": 16,
+      "monomial_map_nonzeros": 16
+    },
+    {
+      "monomial_word_pairs": 4,
+      "monomial_map_nonzeros": 10
+    },
+    {
+      "monomial_word_pairs": 16,
+      "monomial_map_nonzeros": 36
+    },
+    {
+      "monomial_word_pairs": 64,
+      "monomial_map_nonzeros": 104
+    },
+    {
+      "monomial_word_pairs": 64,
+      "monomial_map_nonzeros": 104
+    },
+    {
+      "monomial_word_pairs": 4,
+      "monomial_map_nonzeros": 10
+    },
+    {
+      "monomial_word_pairs": 16,
+      "monomial_map_nonzeros": 36
+    },
+    {
+      "monomial_word_pairs": 64,
+      "monomial_map_nonzeros": 80
+    },
+    {
+      "monomial_word_pairs": 64,
+      "monomial_map_nonzeros": 80
+    },
+    {
+      "monomial_word_pairs": 256,
+      "monomial_map_nonzeros": 240
+    },
+    {
+      "monomial_word_pairs": 256,
+      "monomial_map_nonzeros": 240
+    },
+    {
+      "monomial_word_pairs": 64,
+      "monomial_map_nonzeros": 80
+    },
+    {
+      "monomial_word_pairs": 64,
+      "monomial_map_nonzeros": 80
+    },
+    {
+      "monomial_word_pairs": 2116,
+      "CAR_word_products": 4232,
+      "monomial_map_nonzeros": 1280,
+      "max_surviving_degree": 4
+    },
+    {
+      "monomial_word_pairs": 2116,
+      "CAR_word_products": 4232,
+      "monomial_map_nonzeros": 1280,
+      "max_surviving_degree": 4
+    },
+    {
+      "monomial_word_pairs": 2116,
+      "CAR_word_products": 4232,
+      "monomial_map_nonzeros": 1280,
+      "max_surviving_degree": 4
+    },
+    {
+      "monomial_word_pairs": 2116,
+      "CAR_word_products": 4232,
+      "monomial_map_nonzeros": 1280,
+      "max_surviving_degree": 4
+    }
+  ],
+  "contraction": [
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 24,
+      "dense_sum_entries": 12,
+      "sparse_dense_multiply_entries": 12,
+      "contraction_peak_primary_array_bytes": 4536,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 24,
+      "dense_sum_entries": 12,
+      "sparse_dense_multiply_entries": 12,
+      "contraction_peak_primary_array_bytes": 4536,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 24,
+      "dense_sum_entries": 12,
+      "sparse_dense_multiply_entries": 12,
+      "contraction_peak_primary_array_bytes": 4536,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 24,
+      "dense_sum_entries": 12,
+      "sparse_dense_multiply_entries": 12,
+      "contraction_peak_primary_array_bytes": 4536,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 24,
+      "dense_sum_entries": 12,
+      "sparse_dense_multiply_entries": 18,
+      "contraction_peak_primary_array_bytes": 4536,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 24,
+      "dense_sum_entries": 12,
+      "sparse_dense_multiply_entries": 18,
+      "contraction_peak_primary_array_bytes": 4536,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 24,
+      "dense_sum_entries": 12,
+      "sparse_dense_multiply_entries": 18,
+      "contraction_peak_primary_array_bytes": 4536,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 24,
+      "dense_sum_entries": 12,
+      "sparse_dense_multiply_entries": 18,
+      "contraction_peak_primary_array_bytes": 4536,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 24,
+      "dense_sum_entries": 12,
+      "sparse_dense_multiply_entries": 12,
+      "contraction_peak_primary_array_bytes": 4536,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 320,
+      "dense_sum_entries": 160,
+      "sparse_dense_multiply_entries": 160,
+      "contraction_peak_primary_array_bytes": 16080,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 4608,
+      "dense_sum_entries": 2304,
+      "sparse_dense_multiply_entries": 2304,
+      "contraction_peak_primary_array_bytes": 31872,
+      "contraction_batches": 3,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 4608,
+      "dense_sum_entries": 2304,
+      "sparse_dense_multiply_entries": 2304,
+      "contraction_peak_primary_array_bytes": 31872,
+      "contraction_batches": 3,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 24,
+      "dense_sum_entries": 12,
+      "sparse_dense_multiply_entries": 12,
+      "contraction_peak_primary_array_bytes": 4536,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 320,
+      "dense_sum_entries": 160,
+      "sparse_dense_multiply_entries": 160,
+      "contraction_peak_primary_array_bytes": 16080,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 24,
+      "dense_sum_entries": 12,
+      "sparse_dense_multiply_entries": 30,
+      "contraction_peak_primary_array_bytes": 4536,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 320,
+      "dense_sum_entries": 160,
+      "sparse_dense_multiply_entries": 360,
+      "contraction_peak_primary_array_bytes": 16080,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 4608,
+      "dense_sum_entries": 2304,
+      "sparse_dense_multiply_entries": 3744,
+      "contraction_peak_primary_array_bytes": 31872,
+      "contraction_batches": 3,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 4608,
+      "dense_sum_entries": 2304,
+      "sparse_dense_multiply_entries": 3744,
+      "contraction_peak_primary_array_bytes": 31872,
+      "contraction_batches": 3,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 24,
+      "dense_sum_entries": 12,
+      "sparse_dense_multiply_entries": 30,
+      "contraction_peak_primary_array_bytes": 4536,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 320,
+      "dense_sum_entries": 160,
+      "sparse_dense_multiply_entries": 360,
+      "contraction_peak_primary_array_bytes": 16080,
+      "contraction_batches": 1,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 4608,
+      "dense_sum_entries": 2304,
+      "sparse_dense_multiply_entries": 2880,
+      "contraction_peak_primary_array_bytes": 31872,
+      "contraction_batches": 3,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 4608,
+      "dense_sum_entries": 2304,
+      "sparse_dense_multiply_entries": 2880,
+      "contraction_peak_primary_array_bytes": 31872,
+      "contraction_batches": 3,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 69632,
+      "dense_sum_entries": 34816,
+      "sparse_dense_multiply_entries": 32640,
+      "contraction_peak_primary_array_bytes": 56448,
+      "contraction_batches": 9,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 69632,
+      "dense_sum_entries": 34816,
+      "sparse_dense_multiply_entries": 32640,
+      "contraction_peak_primary_array_bytes": 56448,
+      "contraction_batches": 9,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 4608,
+      "dense_sum_entries": 2304,
+      "sparse_dense_multiply_entries": 2880,
+      "contraction_peak_primary_array_bytes": 31872,
+      "contraction_batches": 3,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 0,
+      "dense_outer_entries": 4608,
+      "dense_sum_entries": 2304,
+      "sparse_dense_multiply_entries": 2880,
+      "contraction_peak_primary_array_bytes": 31872,
+      "contraction_batches": 3,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 9016,
+      "dense_outer_entries": 444360,
+      "dense_sum_entries": 222180,
+      "sparse_dense_multiply_entries": 134400,
+      "contraction_peak_primary_array_bytes": 294528,
+      "contraction_batches": 7,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 9016,
+      "dense_outer_entries": 444360,
+      "dense_sum_entries": 222180,
+      "sparse_dense_multiply_entries": 134400,
+      "contraction_peak_primary_array_bytes": 294528,
+      "contraction_batches": 7,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 9016,
+      "dense_outer_entries": 444360,
+      "dense_sum_entries": 222180,
+      "sparse_dense_multiply_entries": 134400,
+      "contraction_peak_primary_array_bytes": 294528,
+      "contraction_batches": 7,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 9016,
+      "dense_outer_entries": 444360,
+      "dense_sum_entries": 222180,
+      "sparse_dense_multiply_entries": 134400,
+      "contraction_peak_primary_array_bytes": 294528,
+      "contraction_batches": 7,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    }
+  ],
+  "conditioning": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      "basis_dimension": 14,
+      "support_monomials": 46,
+      "support_component_dimensions": [
+        1,
+        1,
+        12
+      ],
+      "coefficient_matrix_entries": 644,
+      "estimated_condition_before": 1.5811388301821838,
+      "orthogonality_max_error": 5.7063819894561505e-15,
+      "max_transform_entry": 1.0,
+      "seconds": 0.007111124999937601,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    },
+    {
+      "basis_dimension": 14,
+      "support_monomials": 46,
+      "support_component_dimensions": [
+        1,
+        1,
+        12
+      ],
+      "coefficient_matrix_entries": 644,
+      "estimated_condition_before": 1.5811388301437872,
+      "orthogonality_max_error": 2.438717586604605e-15,
+      "max_transform_entry": 1.0,
+      "seconds": 0.0005060420007794164,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    },
+    {
+      "basis_dimension": 14,
+      "support_monomials": 46,
+      "support_component_dimensions": [
+        1,
+        1,
+        12
+      ],
+      "coefficient_matrix_entries": 644,
+      "estimated_condition_before": 1.5811388301821836,
+      "orthogonality_max_error": 5.861155325691641e-15,
+      "max_transform_entry": 1.0,
+      "seconds": 0.000524125003721565,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    },
+    {
+      "basis_dimension": 14,
+      "support_monomials": 46,
+      "support_component_dimensions": [
+        1,
+        1,
+        12
+      ],
+      "coefficient_matrix_entries": 644,
+      "estimated_condition_before": 1.581138830143787,
+      "orthogonality_max_error": 2.1334318774982883e-15,
+      "max_transform_entry": 1.0,
+      "seconds": 0.00048099999548867345,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    }
+  ],
+  "construction_seconds": 0.45919812499778345,
+  "solver": "CLARABEL",
+  "solver_options": {
+    "tol_gap_abs": 1e-08,
+    "tol_gap_rel": 1e-08,
+    "tol_feas": 1e-08,
+    "max_iter": 1000,
+    "time_limit": 60.0
+  },
+  "budget_seconds": 90.0,
+  "replay_reserve_seconds": 20,
+  "many_body_states_enumerated": 0
+}

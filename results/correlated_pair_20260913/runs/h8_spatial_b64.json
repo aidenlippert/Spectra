@@ -1,0 +1,29 @@
+{
+  "name": "h8_spatial_b64",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-u",
+    "-m",
+    "research.correlated_pair_20260913.mps_spatial",
+    "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "results/correlated_pair_20260913/mps/h8_spatial64",
+    "--alpha",
+    "4",
+    "--beta",
+    "4",
+    "--bond",
+    "64",
+    "--sweeps",
+    "9"
+  ],
+  "timeout_seconds": 240,
+  "status": "passed",
+  "started_UTC": "2026-09-14T06:52:41.470034+00:00",
+  "pid": 21278,
+  "exit_code": 0,
+  "wall_seconds": 23.697323792002862,
+  "child_user_seconds": 23.032163,
+  "child_system_seconds": 0.55035,
+  "peak_child_RSS_bytes": 411582464,
+  "finished_UTC": "2026-09-14T06:53:05.167626+00:00"
+}

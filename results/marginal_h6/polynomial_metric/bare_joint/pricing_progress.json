@@ -1,0 +1,78 @@
+{
+  "status": "Restricted and direct-moment searches accepted on original H6; fresh direct-moment discovery also accepted on perturbed H6. General objective remains open.",
+  "sources": [
+    "experiments/marginal_joint_column_generation.py",
+    "experiments/marginal_moment_pricing.py",
+    "experiments/marginal_joint_coefficient_constructor.py"
+  ],
+  "report": "research/marginal_moment_pricing.md",
+  "receipts": {
+    "column_generation": {
+      "source_sha256": "9b7255212be2f6d31ff451bed7ad65c08e3d8af6db86214bb36edd40a9b87e9e",
+      "exact_accepted": true,
+      "reason": "Exact certificate accepted",
+      "elapsed_seconds_including_export": 57.829563415958546,
+      "dictionary_columns": 67524,
+      "metric_columns": 48,
+      "coefficient_rows": 421,
+      "initial_atom_columns": 604,
+      "final_active_atom_columns": 2172,
+      "rounds": 30,
+      "batch_per_positivity_block": 32,
+      "scope": "Generated geometry-only seed and dual pricing over complete cached dictionary. No inherited solution or selected proof atoms. Artificial coefficient residuals are proposal-only; full exact export required. Complete dictionary storage and quotient dimension remain."
+    },
+    "moment_pricing": {
+      "coefficient_rows": 210,
+      "moment_monomials": 1764,
+      "moment_map_nonzeros": 44811,
+      "candidate_labels": 48342,
+      "materialized_all_atom_matrix": false,
+      "exact_accepted": true,
+      "reason": "Exact certificate accepted",
+      "source_sha256": "9b7255212be2f6d31ff451bed7ad65c08e3d8af6db86214bb36edd40a9b87e9e",
+      "preparation_seconds": 97.81390983297024,
+      "elapsed_seconds_including_export": 175.35140874993522,
+      "active_atom_columns": 2268,
+      "rounds": 34,
+      "scope": "Bare-H generated metric and moment finite-difference pricing; only selected atom columns are materialized. Candidate support labels and bounded-degree moment map remain. No inherited certificates, atom directions, physical configurations, or full atom matrix. Exact full export is acceptance."
+    },
+    "moment_pricing_transfer": {
+      "coefficient_rows": 210,
+      "moment_monomials": 1764,
+      "moment_map_nonzeros": 44811,
+      "candidate_labels": 48342,
+      "materialized_all_atom_matrix": false,
+      "exact_accepted": true,
+      "reason": "Exact certificate accepted",
+      "source_sha256": "2e58128770ddafc5c24473fcdf8aad4a8d40d63d20bd94e1b5ae3ddb6b0efce0",
+      "preparation_seconds": 113.5751600000076,
+      "elapsed_seconds_including_export": 176.98736183403526,
+      "active_atom_columns": 2140,
+      "rounds": 30,
+      "scope": "Bare-H generated metric and moment finite-difference pricing; only selected atom columns are materialized. Candidate support labels and bounded-degree moment map remain. No inherited certificates, atom directions, physical configurations, or full atom matrix. Exact full export is acceptance."
+    }
+  },
+  "stdlib_replays": [
+    "results/marginal_h6/polynomial_metric/bare_joint/column_generation/proof/independent_replay.json",
+    "results/marginal_h6/polynomial_metric/bare_joint/column_generation/proof/energy_independent_replay.json",
+    "results/marginal_h6/polynomial_metric/bare_joint/moment_pricing/proof/independent_replay.json",
+    "results/marginal_h6/polynomial_metric/bare_joint/moment_pricing/proof/energy_independent_replay.json",
+    "results/marginal_h6/polynomial_metric/bare_joint/moment_pricing_transfer/proof/independent_replay.json",
+    "results/marginal_h6/polynomial_metric/bare_joint/moment_pricing_transfer/proof/energy_independent_replay.json"
+  ],
+  "full_suite_tests": 368,
+  "full_suite_seconds": 301.387,
+  "provenance": "All metric directions and candidate supports generated from bare Hamiltonian/sector. Cached restricted master uses previously generated coefficient dictionary but no solution. Direct moments avoids full atom preparation and materializes only selected columns. Energy integration retains prior reference/response/witness.",
+  "new_scaling_evidence": [
+    "moment_pricing/degree_scaling_diagnostic.json",
+    "moment_pricing/graded_quotient_diagnostic.json"
+  ],
+  "next_required_work": [
+    "Introduce a total-degree-filtered joint quotient with exact degree refusal instead of rectangular over-allocation. Eight-site degree-six basis has3920 coordinates, but degree-eight numerators must not be projected away.",
+    "Find a sufficiently accurate metric/compiler/proof degree combination on larger models; extend positivity/number-identity degree only with matching exact verification.",
+    "Bound or reduce candidate support/assignment scanning and moment-map growth.",
+    "Replace explicit400-configuration energy witness/response dependence.",
+    "General physical marginal-cone boundary and efficient representability remain unproved."
+  ],
+  "scope": "Finite Hamiltonian-bound exact certificates. Candidate moments and degrees still scale combinatorially; no general many-body collapse claim."
+}

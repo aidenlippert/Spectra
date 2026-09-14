@@ -1,0 +1,17 @@
+{
+  "returncode": 0,
+  "status": "finished",
+  "name": "h4_gpu",
+  "command": [
+    "research/certificate_scaling/low_rank_compression.py",
+    "--campaign",
+    "--fixture",
+    "results/marginal_molecule_stress/h4_square_degree3_certificate.json",
+    "--outputdir",
+    "results/certificate_scaling/lambda_batch/h4_gpu",
+    "--backend",
+    "cupy"
+  ],
+  "timeout_seconds": 180,
+  "wall_seconds": 5.57372428900004
+}

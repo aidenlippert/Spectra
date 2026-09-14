@@ -1,0 +1,31 @@
+{
+  "name": "ch2_mps_triplet",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-u",
+    "-m",
+    "research.correlated_pair_20260913.mps_direct",
+    "results/ch2_validation_20260913/fixture.json",
+    "results/correlated_pair_20260913/ch2/triplet",
+    "--alpha",
+    "4",
+    "--beta",
+    "2",
+    "--bond",
+    "48",
+    "--sweeps",
+    "10",
+    "--spin",
+    "1"
+  ],
+  "timeout_seconds": 90,
+  "status": "passed",
+  "started_UTC": "2026-09-14T06:51:14.712771+00:00",
+  "pid": 21022,
+  "exit_code": 0,
+  "wall_seconds": 5.346326083003078,
+  "child_user_seconds": 4.464771,
+  "child_system_seconds": 0.911735,
+  "peak_child_RSS_bytes": 305807360,
+  "finished_UTC": "2026-09-14T06:51:20.061033+00:00"
+}

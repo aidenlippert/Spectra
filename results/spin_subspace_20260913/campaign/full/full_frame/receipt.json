@@ -1,0 +1,201 @@
+{
+  "directions": 252,
+  "separate": false,
+  "anti_dimensions": [
+    63,
+    63,
+    63,
+    63
+  ],
+  "Gram_entries": 21600,
+  "constructed_map_nonzeros": 1489680,
+  "used_map_nonzeros": 1489680,
+  "construction_seconds": 1.0792376669996884,
+  "solver_seconds_limit": 60.0,
+  "conditioning": [
+    {
+      "basis_dimension": 63,
+      "support_monomials": 156,
+      "support_component_dimensions": [
+        1,
+        1,
+        1,
+        30,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "coefficient_matrix_entries": 9828,
+      "estimated_condition_before": 84638.8119073346,
+      "orthogonality_max_error": 1.3172630445388393e-11,
+      "max_transform_entry": 27184.14523395015,
+      "seconds": 0.004584166999848094,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    },
+    {
+      "basis_dimension": 63,
+      "support_monomials": 156,
+      "support_component_dimensions": [
+        1,
+        1,
+        1,
+        30,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "coefficient_matrix_entries": 9828,
+      "estimated_condition_before": 112547.10826122796,
+      "orthogonality_max_error": 1.9500402292920788e-11,
+      "max_transform_entry": 35282.35896084592,
+      "seconds": 0.002254166996863205,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    },
+    {
+      "basis_dimension": 63,
+      "support_monomials": 156,
+      "support_component_dimensions": [
+        1,
+        1,
+        1,
+        5,
+        5,
+        5,
+        30,
+        5,
+        5,
+        5
+      ],
+      "coefficient_matrix_entries": 9828,
+      "estimated_condition_before": 84638.8119073346,
+      "orthogonality_max_error": 1.3172630445388393e-11,
+      "max_transform_entry": 27184.14523395015,
+      "seconds": 0.0022343750024447218,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    },
+    {
+      "basis_dimension": 63,
+      "support_monomials": 156,
+      "support_component_dimensions": [
+        1,
+        1,
+        1,
+        5,
+        5,
+        5,
+        30,
+        5,
+        5,
+        5
+      ],
+      "coefficient_matrix_entries": 9828,
+      "estimated_condition_before": 112547.10826122796,
+      "orthogonality_max_error": 1.9500402292920788e-11,
+      "max_transform_entry": 35282.35896084592,
+      "seconds": 0.0022398750006686896,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    }
+  ],
+  "contraction_work": [
+    {
+      "basis_transform_multiply_entries": 619164,
+      "dense_outer_entries": 98122752,
+      "dense_sum_entries": 49061376,
+      "sparse_dense_multiply_entries": 20829312,
+      "contraction_peak_primary_array_bytes": 3232640,
+      "contraction_batches": 126,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 619164,
+      "dense_outer_entries": 98122752,
+      "dense_sum_entries": 49061376,
+      "sparse_dense_multiply_entries": 20829312,
+      "contraction_peak_primary_array_bytes": 3232640,
+      "contraction_batches": 126,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 619164,
+      "dense_outer_entries": 98122752,
+      "dense_sum_entries": 49061376,
+      "sparse_dense_multiply_entries": 20829312,
+      "contraction_peak_primary_array_bytes": 3232640,
+      "contraction_batches": 126,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 619164,
+      "dense_outer_entries": 98122752,
+      "dense_sum_entries": 49061376,
+      "sparse_dense_multiply_entries": 20829312,
+      "contraction_peak_primary_array_bytes": 3232640,
+      "contraction_batches": 126,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    }
+  ],
+  "status": "optimal_inaccurate",
+  "floating_lower_Ha": -6.343043178624759,
+  "clipped_negative_Gram_mass": 4.048361353216208e-06,
+  "solve_seconds": 27.903667582999333,
+  "export_seconds": 0.03981920899968827,
+  "accept_seconds": 6.55912058299873,
+  "wall_seconds": 35.581845209002495,
+  "certificate_bytes": 196378,
+  "accepted": {
+    "retained": {
+      "lower": "-2283502970100057880048979174440501135907239/360000000000000000000000000000000000000000",
+      "lower_float": -6.343063805833494,
+      "residual_l1": "9070196937880048979174440501135907239/360000000000000000000000000000000000000000",
+      "residual_l1_float": 2.5194991494111246e-05,
+      "multiplier_terms": 37,
+      "square_polynomial_terms": 919,
+      "residual_terms": 919,
+      "residual_max_degree": 4,
+      "mode_count": 12,
+      "particle_number": 6,
+      "factor_rows": 604,
+      "factor_nonzeros": 64126
+    },
+    "tail": {
+      "lower_operator_shift_Ha": "-227/62500000000",
+      "upper_operator_shift_Ha": "6770477/62500000000",
+      "tail_interval_width_Ha": "423169/3906250000",
+      "tail_interval_width_mHa": 0.108331264,
+      "factors": 10,
+      "factor_nonzeros": 105,
+      "coefficient_dimension": 21,
+      "modes": 12,
+      "particles": 6,
+      "number_centered": true,
+      "mismatch_paired_norm_Ha": "1/31250000000",
+      "mismatch_terms": 54,
+      "casimir_bound": "24",
+      "lower_psd": {
+        "dimension": 21,
+        "rank": 21
+      },
+      "upper_psd": {
+        "dimension": 21,
+        "rank": 21
+      },
+      "replay_seconds": 0.2914231659960933,
+      "many_body_states_enumerated": 0,
+      "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+    },
+    "original_lower_Ha": "-2283502971407577880048979174440501135907239/360000000000000000000000000000000000000000",
+    "original_lower_float_Ha": -6.3430638094654945,
+    "expand_seconds": 1.6879886250026175,
+    "SOS_replay_seconds": 4.861180166997656,
+    "replay_seconds": 6.5491690000053495,
+    "expanded_certificate_bytes": 1312728,
+    "many_body_states_enumerated": 0,
+    "scope": "Exact lower bound for the frozen molecule. No optimality or compact upper-discovery claim."
+  }
+}

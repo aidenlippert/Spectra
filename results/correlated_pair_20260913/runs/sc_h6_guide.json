@@ -1,0 +1,23 @@
+{
+  "name": "sc_h6_guide",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-S",
+    "-m",
+    "research.correlated_pair_20260913.self_consistent.run_builder",
+    "--fixture",
+    "results/molecular_collective_20260913/campaign/h6/fixture.json",
+    "--out",
+    "results/correlated_pair_20260913/self_consistent/h6_guide"
+  ],
+  "timeout_seconds": 180,
+  "status": "passed",
+  "started_UTC": "2026-09-14T06:34:07.395290+00:00",
+  "pid": 17976,
+  "exit_code": 0,
+  "wall_seconds": 0.12872849999985192,
+  "child_user_seconds": 0.07624,
+  "child_system_seconds": 0.008489,
+  "peak_child_RSS_bytes": 19496960,
+  "finished_UTC": "2026-09-14T06:34:07.524659+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "scope": "Post-replay residual analysis; no certificate retagging",
+  "cases": {
+    "frozen_h6": {
+      "raw_b": -10.176026488,
+      "residual_l1": 0.16529274563099,
+      "residual_degrees": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "coefficient_lower": -10.34131923363099,
+      "spectral_residual_lower": -10.34129334956679,
+      "spectral_improvement_Ha": 2.58840642e-05,
+      "full_interval_width_Ha": 4.00823472333379,
+      "higher_body_refusal": false
+    },
+    "fresh_h6_1p73": {
+      "raw_b": -10.03747563,
+      "residual_l1": 0.033773935644,
+      "residual_degrees": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "coefficient_lower": -10.071249565644,
+      "spectral_residual_lower": -10.071247803290902,
+      "spectral_improvement_Ha": 1.762353098e-06,
+      "full_interval_width_Ha": 4.502815118998154,
+      "higher_body_refusal": false
+    }
+  },
+  "diagnosis": "The residual has body degrees through 3, so the exact exterior-power spectral replay is applicable directly to the unchanged original certificates. The reported lower is b plus the constant residual contribution plus the certified residual correction; it is not raw b. The residual replay improves the lower slightly, but the resulting full intervals remain several hartrees wide. This diagnoses the bounded solver/export procedure, not a family optimum or a proved family limitation."
+}

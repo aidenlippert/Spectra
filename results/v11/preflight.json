@@ -1,0 +1,3799 @@
+{
+  "schema": "v11-paired-1",
+  "scope": "one existing development case; no learned method",
+  "warmup": [
+    {
+      "arm": "integer",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.007744917063973844,
+      "checking_seconds": 0.005522917024791241,
+      "endpoint_seconds": 0.000560915912501514,
+      "complete_seconds": 0.013828750001266599,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      }
+    },
+    {
+      "arm": "matrix",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.011031499947421253,
+      "checking_seconds": 0.005266375024802983,
+      "endpoint_seconds": 0.0005227919900789857,
+      "complete_seconds": 0.01682066696230322,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "matrix_work": {
+          "matrix_entries": 128,
+          "initial_updates": 8,
+          "action_calls": 13,
+          "action_entry_updates": 26624,
+          "permutation_builds": 13,
+          "transforms": 14,
+          "walsh_add_subtracts": 5376,
+          "exported_integers": 333,
+          "int64_kernels": 21,
+          "object_kernels": 6,
+          "array_cast_entries": 128,
+          "range_scan_entries": 5120,
+          "max_integer_bits": 76,
+          "max_forward_bits": 79,
+          "peak_pauli_terms": 30
+        },
+        "denominator": 10,
+        "initial_denominator": 1
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      }
+    }
+  ],
+  "rows": [
+    {
+      "arm": "integer",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.0075362499337643385,
+      "checking_seconds": 0.0053259170381352305,
+      "endpoint_seconds": 0.0005334169836714864,
+      "complete_seconds": 0.013395583955571055,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 0
+    },
+    {
+      "arm": "matrix",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.009699583984911442,
+      "checking_seconds": 0.006090541020967066,
+      "endpoint_seconds": 0.0005853750044479966,
+      "complete_seconds": 0.016375500010326505,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "matrix_work": {
+          "matrix_entries": 128,
+          "initial_updates": 8,
+          "action_calls": 13,
+          "action_entry_updates": 26624,
+          "permutation_builds": 13,
+          "transforms": 14,
+          "walsh_add_subtracts": 5376,
+          "exported_integers": 333,
+          "int64_kernels": 21,
+          "object_kernels": 6,
+          "array_cast_entries": 128,
+          "range_scan_entries": 5120,
+          "max_integer_bits": 76,
+          "max_forward_bits": 79,
+          "peak_pauli_terms": 30
+        },
+        "denominator": 10,
+        "initial_denominator": 1
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 0
+    },
+    {
+      "arm": "integer",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.00785937497857958,
+      "checking_seconds": 0.00546849996317178,
+      "endpoint_seconds": 0.0005443750414997339,
+      "complete_seconds": 0.013872249983251095,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 1
+    },
+    {
+      "arm": "matrix",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.009653166984207928,
+      "checking_seconds": 0.0056650410406291485,
+      "endpoint_seconds": 0.0005726669915020466,
+      "complete_seconds": 0.015890875016339123,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "matrix_work": {
+          "matrix_entries": 128,
+          "initial_updates": 8,
+          "action_calls": 13,
+          "action_entry_updates": 26624,
+          "permutation_builds": 13,
+          "transforms": 14,
+          "walsh_add_subtracts": 5376,
+          "exported_integers": 333,
+          "int64_kernels": 21,
+          "object_kernels": 6,
+          "array_cast_entries": 128,
+          "range_scan_entries": 5120,
+          "max_integer_bits": 76,
+          "max_forward_bits": 79,
+          "peak_pauli_terms": 30
+        },
+        "denominator": 10,
+        "initial_denominator": 1
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 1
+    },
+    {
+      "arm": "integer",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.007648624945431948,
+      "checking_seconds": 0.005360292037948966,
+      "endpoint_seconds": 0.0005565410247072577,
+      "complete_seconds": 0.013565458008088171,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 2
+    },
+    {
+      "arm": "matrix",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.009482332970947027,
+      "checking_seconds": 0.005297750001773238,
+      "endpoint_seconds": 0.0005444170674309134,
+      "complete_seconds": 0.015324500040151179,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "matrix_work": {
+          "matrix_entries": 128,
+          "initial_updates": 8,
+          "action_calls": 13,
+          "action_entry_updates": 26624,
+          "permutation_builds": 13,
+          "transforms": 14,
+          "walsh_add_subtracts": 5376,
+          "exported_integers": 333,
+          "int64_kernels": 21,
+          "object_kernels": 6,
+          "array_cast_entries": 128,
+          "range_scan_entries": 5120,
+          "max_integer_bits": 76,
+          "max_forward_bits": 79,
+          "peak_pauli_terms": 30
+        },
+        "denominator": 10,
+        "initial_denominator": 1
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 2
+    },
+    {
+      "arm": "matrix",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.009173583006486297,
+      "checking_seconds": 0.005158124957233667,
+      "endpoint_seconds": 0.0005352080333977938,
+      "complete_seconds": 0.014866915997117758,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "matrix_work": {
+          "matrix_entries": 128,
+          "initial_updates": 8,
+          "action_calls": 13,
+          "action_entry_updates": 26624,
+          "permutation_builds": 13,
+          "transforms": 14,
+          "walsh_add_subtracts": 5376,
+          "exported_integers": 333,
+          "int64_kernels": 21,
+          "object_kernels": 6,
+          "array_cast_entries": 128,
+          "range_scan_entries": 5120,
+          "max_integer_bits": 76,
+          "max_forward_bits": 79,
+          "peak_pauli_terms": 30
+        },
+        "denominator": 10,
+        "initial_denominator": 1
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 3
+    },
+    {
+      "arm": "integer",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.007577916025184095,
+      "checking_seconds": 0.005664583994075656,
+      "endpoint_seconds": 0.0005826250417158008,
+      "complete_seconds": 0.013825125060975552,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 3
+    },
+    {
+      "arm": "matrix",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.00994466699194163,
+      "checking_seconds": 0.00566837505903095,
+      "endpoint_seconds": 0.0005910829640924931,
+      "complete_seconds": 0.016204125015065074,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "matrix_work": {
+          "matrix_entries": 128,
+          "initial_updates": 8,
+          "action_calls": 13,
+          "action_entry_updates": 26624,
+          "permutation_builds": 13,
+          "transforms": 14,
+          "walsh_add_subtracts": 5376,
+          "exported_integers": 333,
+          "int64_kernels": 21,
+          "object_kernels": 6,
+          "array_cast_entries": 128,
+          "range_scan_entries": 5120,
+          "max_integer_bits": 76,
+          "max_forward_bits": 79,
+          "peak_pauli_terms": 30
+        },
+        "denominator": 10,
+        "initial_denominator": 1
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 4
+    },
+    {
+      "arm": "integer",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.008109708083793521,
+      "checking_seconds": 0.0056240829871967435,
+      "endpoint_seconds": 0.0005929169710725546,
+      "complete_seconds": 0.014326708042062819,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 4
+    },
+    {
+      "arm": "integer",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.007998834014870226,
+      "checking_seconds": 0.005507624940946698,
+      "endpoint_seconds": 0.0005602500168606639,
+      "complete_seconds": 0.014066708972677588,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 5
+    },
+    {
+      "arm": "matrix",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.009944083052687347,
+      "checking_seconds": 0.005450124968774617,
+      "endpoint_seconds": 0.0005502499407157302,
+      "complete_seconds": 0.015944457962177694,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "matrix_work": {
+          "matrix_entries": 128,
+          "initial_updates": 8,
+          "action_calls": 13,
+          "action_entry_updates": 26624,
+          "permutation_builds": 13,
+          "transforms": 14,
+          "walsh_add_subtracts": 5376,
+          "exported_integers": 333,
+          "int64_kernels": 21,
+          "object_kernels": 6,
+          "array_cast_entries": 128,
+          "range_scan_entries": 5120,
+          "max_integer_bits": 76,
+          "max_forward_bits": 79,
+          "peak_pauli_terms": 30
+        },
+        "denominator": 10,
+        "initial_denominator": 1
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 5
+    },
+    {
+      "arm": "matrix",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.009725832962431014,
+      "checking_seconds": 0.005369874997995794,
+      "endpoint_seconds": 0.0005742090288549662,
+      "complete_seconds": 0.015669916989281774,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "matrix_work": {
+          "matrix_entries": 128,
+          "initial_updates": 8,
+          "action_calls": 13,
+          "action_entry_updates": 26624,
+          "permutation_builds": 13,
+          "transforms": 14,
+          "walsh_add_subtracts": 5376,
+          "exported_integers": 333,
+          "int64_kernels": 21,
+          "object_kernels": 6,
+          "array_cast_entries": 128,
+          "range_scan_entries": 5120,
+          "max_integer_bits": 76,
+          "max_forward_bits": 79,
+          "peak_pauli_terms": 30
+        },
+        "denominator": 10,
+        "initial_denominator": 1
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 6
+    },
+    {
+      "arm": "integer",
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12,
+      "construction_seconds": 0.007794749923050404,
+      "checking_seconds": 0.005472791031934321,
+      "endpoint_seconds": 0.0005567499902099371,
+      "complete_seconds": 0.013824290945194662,
+      "cost": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checker": {
+        "status": "certified",
+        "bound": "9235404595038841/20270250000000000000",
+        "time": "1/2",
+        "checking_cost": {
+          "pair_checks": 0,
+          "squares": 60,
+          "scalar_bound_ops": 28
+        },
+        "generator_cost": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 48,
+          "basis_multiply_adds": 0
+        }
+      },
+      "repetition": 6
+    }
+  ],
+  "exact_polynomial_equality": true,
+  "exact_norm_witness_equality": true,
+  "source_sha256": {
+    "research/v11/PREFLIGHT_PROTOCOL.md": "253392aff6f53e0509832e2c00524164aa1db5cf302955cc3de75ef2f7933f16",
+    "experiments/v11_matrix_taylor.py": "d4d122aef35583d8975788589950f9bea0518d446dae681a49532e6219b7b5e9",
+    "experiments/v11_preflight.py": "c4b19d81e7d7f1cf01423fe1bbff83e632d204f77291c10742fb6828dddebce7",
+    "experiments/v8_integer_taylor.py": "9fc0e4303ef18c95d8ec8cdf35f20ba7f387aa6612fb7bf9bd51d6861f85e75c",
+    "experiments/v7_certificate.py": "b4eb02311899b9bd2bd86639f681cd6a5fe1258d6466ad99bceb054766af9426"
+  }
+}

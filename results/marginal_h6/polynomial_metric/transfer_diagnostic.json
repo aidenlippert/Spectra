@@ -1,0 +1,30 @@
+{
+  "kind": "polynomial_metric_transfer_diagnostic_v1",
+  "source_candidate": "results/marginal_h6/polynomial_metric/candidate.json",
+  "perturbed_source": "results/marginal_h6/charge_spin/direct_transfer_stronger/certificate.json",
+  "diagnostic_scope": "Recompiled exact polynomial metric against perturbed Hamiltonian; reused candidate positivity decompositions only as a transfer test. No LP and no proof modification.",
+  "gamma_tests": {
+    "-6.24": {
+      "weight_lower": "4999999583/500000000000",
+      "numerator_lower": "-32973143398400051991883/3000000000000000000000",
+      "numerator_residual_l1": "32976143398400051991883/3000000000000000000000"
+    },
+    "-6.30": {
+      "numerator_lower": "-106276035614832312806429/7500000000000000000000"
+    },
+    "-6.50": {
+      "numerator_lower": "-160051812218822481634889/3750000000000000000000"
+    },
+    "-7": {
+      "numerator_lower": "-89527821744431870343023/750000000000000000000"
+    }
+  },
+  "compiled": {
+    "weight_terms": 567,
+    "numerator_terms": 1764,
+    "transition_groups": 1140,
+    "coefficient_products": 7992302
+  },
+  "conclusion": "The candidate metric positivity proof does not transfer to the perturbed Hamiltonian at gamma=-6.24. Weight positivity remains certified by the reused decomposition, but the joint numerator decomposition fails with a large negative lower bound. Varying gamma downward to -6.30,-6.50,-7 does not repair this fixed decomposition. No useful transferred gamma established; a new numerator proof or metric is required.",
+  "physical_sector_minima": "Not computed: this diagnostic concerns polynomial decomposition transfer and intentionally does not add exhaustive sector enumeration."
+}

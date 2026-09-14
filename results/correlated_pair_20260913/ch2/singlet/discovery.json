@@ -1,0 +1,138 @@
+{
+  "fixture_sha256": "b4483785bd5de677bdf839a35c10427c3232541cca6041ae3096019c3cc40419",
+  "physical_energy_float_Ha": -38.429076003158684,
+  "penalized_energy_float_Ha": -38.42907600315869,
+  "numerical_penalty_expectation_Ha": -7.105427357601002e-15,
+  "penalty": 4.0,
+  "optimizer_converged": true,
+  "sweep_energies": [
+    -38.19193381520513,
+    -38.413574789990065,
+    -38.426485232219875,
+    -38.428816152202614,
+    -38.42883577642726,
+    -38.42905652940735,
+    -38.42907494000482,
+    -38.42907600088357,
+    -38.42907600315322,
+    -38.42907600315869
+  ],
+  "requested_bond": 48,
+  "sweeps_cap": 10,
+  "seed": 20260913,
+  "physical_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "mpo_max_bond": 175,
+  "mpo_terms": 1121,
+  "tensor_shapes": [
+    [
+      1,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      4
+    ],
+    [
+      4,
+      2,
+      8
+    ],
+    [
+      8,
+      2,
+      16
+    ],
+    [
+      16,
+      2,
+      31
+    ],
+    [
+      31,
+      2,
+      28
+    ],
+    [
+      28,
+      2,
+      28
+    ],
+    [
+      28,
+      2,
+      16
+    ],
+    [
+      16,
+      2,
+      8
+    ],
+    [
+      8,
+      2,
+      4
+    ],
+    [
+      4,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      1
+    ]
+  ],
+  "dense_tensor_entries": 5872,
+  "maximum_tensor_imaginary_part": 0.0,
+  "rounding": {
+    "charge_eigenvalue_max_distance_to_integer": 3.5060310210610623e-10,
+    "discarded_local_tensor_squared_entries": 1.0140578166511372e-10,
+    "input_norm_before_normalization": 1.0,
+    "postround_bond_dimensions": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      31,
+      28,
+      28,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "warning": "Discarded local tensor entries are a proposal diagnostic, not a state norm or energy error guarantee."
+  },
+  "number_treatment": "Numerical quadratic penalties; exact charge-flow tensor export.",
+  "full_state_exported": false,
+  "full_many_body_matrix_built": false,
+  "FCI_or_Gram_teacher_loaded": false,
+  "seconds": 4.213046416989528,
+  "versions": {
+    "quimb": "1.15.0",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "cotengra": "0.8.2",
+    "autoray": "0.11.0"
+  },
+  "spin_penalty_target": 0,
+  "initial_MPS_path": null
+}

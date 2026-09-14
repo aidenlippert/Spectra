@@ -1,0 +1,96 @@
+{
+  "case": "repulsive",
+  "objective": "energy",
+  "radius": 1,
+  "modes": 8,
+  "training_modes": 12,
+  "weights": [
+    "26267/65536",
+    "1",
+    "28819/32768",
+    "1"
+  ],
+  "origin": {
+    "search_radius": 1,
+    "seed": 17,
+    "candidate": "optimized"
+  },
+  "model": {
+    "modes": 8,
+    "particles": 4,
+    "hopping": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "interaction": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "fields": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "energy_unit": "t_reference=1; abstract lattice model"
+  },
+  "amplitude": {
+    "sites": [
+      "28819/32768",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "28819/32768"
+    ],
+    "pairs": [
+      [
+        "26267/65536",
+        "26267/65536",
+        "26267/65536",
+        "26267/65536",
+        "26267/65536",
+        "26267/65536",
+        "26267/65536"
+      ]
+    ]
+  },
+  "claim": {
+    "method": "fixed_N_finite_pair_range_local_energy_DP_v1",
+    "lower": "-193814/26267",
+    "upper": "-1212044700911587690556171536800980807713/322508993328324227349311042725506566135",
+    "width": "30669979874091157931640412677649966732691519/8471343727755092479784353159270880972668045",
+    "lower_float": -7.378611946548902,
+    "upper_float": -3.7581733408521987,
+    "width_float": 3.620438605696703,
+    "partition": "322508993328324227349311042725506566135/42535295865117307932921825928971026432",
+    "minimum_configuration": "01100110",
+    "modes": 8,
+    "particles": 4,
+    "pair_range": 1,
+    "tail_memory_bits": 3,
+    "dp_transitions": 142,
+    "peak_dp_states": 22,
+    "factor_table_entries": 112,
+    "peak_dp_rational_bits": 127,
+    "many_body_states_enumerated": 0,
+    "wall_seconds": 0.004064697997819167,
+    "scope": "Exact supplied-chain interval; no global discovery optimum or generic accuracy guarantee."
+  }
+}

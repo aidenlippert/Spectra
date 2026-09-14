@@ -1,0 +1,28 @@
+{
+  "accepted": true,
+  "fourth_moment_partial_operator": "(4-6*d)I+(12*d-3)C_A",
+  "C_A": "1-n_A_up-n_A_down+2*D_A",
+  "d": "contact doublon probability of B",
+  "scalar_for_arbitrary_A_iff_d": "1/4",
+  "filter": "I+h^2",
+  "A_sparse_amplitudes": {
+    "3": 1,
+    "12": 1,
+    "9": 1,
+    "6": -1
+  },
+  "B_sparse_amplitudes": {
+    "9": 1,
+    "6": -1
+  },
+  "before_norm": 8,
+  "after_norm": 44,
+  "remote_doublon_before": "1/4",
+  "remote_doublon_after": "2/11",
+  "scope": "Exact failure of general remote-observable scalar closure for quadratic hopping filters, even with fixed block spin populations and half contact occupations. Does not rule out finite boundary transfer contraction.",
+  "source_sha256": {
+    "results/marginal_graded_hubbard8/discovery/quadratic_filter_obstruction.py": "076bd7515b64f606f138867304b5899a8024b9dc4e5c322ed3e3ed6bb0faed55",
+    "experiments/marginal_local_hubbard_block.py": "5ef92ae2b2ff1a73678ffafcfe606a5e921614fb697aa64308c9646755feb18c",
+    "experiments/marginal_transfer_verify.py": "5f7bd4bd45adcb397942e09e37065486f9e72f022fe818d2d94ff98c32844bae"
+  }
+}

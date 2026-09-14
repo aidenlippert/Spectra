@@ -1,0 +1,29 @@
+{
+  "kind": "polynomial_metric_transfer_row_diagnostic_v1",
+  "metric_source": "results/marginal_h6/polynomial_metric/candidate.json",
+  "perturbed_source": "results/marginal_h6/charge_spin/direct_transfer_stronger/certificate.json",
+  "scope": "Exact finite-sector diagnostic; evaluates every valid spin-zero determinant with JointPolynomial.weight and SpinZeroOracle.action. This is not the final polynomial decomposition proof.",
+  "states_evaluated": 400,
+  "requested_q_source_count": 380,
+  "note": "The standalone source certificates expose all 400 valid spin-zero determinants; 380 is the Q complement count after the 20-state retained subspace. This row diagnostic evaluates all 400, so it contains the Q rows.",
+  "gamma": "-6.24",
+  "original": {
+    "minimum_row": "-209495806761720916837807/29733817650000000000000",
+    "minimum_float": -7.045708332099121,
+    "minimizing_state": 1638,
+    "minimizing_weight": "198225451/100000000"
+  },
+  "perturbed": {
+    "minimum_row": "-208450509009720916837807/29733817650000000000000",
+    "minimum_float": -7.010553150739488,
+    "minimizing_state": 1638,
+    "minimizing_weight": "198225451/100000000"
+  },
+  "offending_states": [
+    1638
+  ],
+  "status": "INVALIDATED",
+  "invalidation_reason": "Source and target restrictions did not implement Q-only weighted row. State1638 is fully singly occupied and lies in P. Minima over all400 states cannot refute a bound on380 Q states.",
+  "superseded_by": "results/marginal_h6/polynomial_metric/corrected_transfer_rows.json",
+  "historical_invalid_conclusion": "The same metric fails row dominance very substantially under both Hamiltonians at gamma=-6.24. The perturbed Hamiltonian is slightly less negative at the minimizing determinant but remains far below gamma. Therefore a new numerator decomposition cannot be obtained from simple weighted Q-row diagonal dominance with this metric; the metric itself must be reoptimized or the proof must retain coherent off-diagonal PSD structure."
+}

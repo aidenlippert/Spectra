@@ -1,0 +1,861 @@
+{
+  "transfer_worlds": 64,
+  "retention_worlds": 128,
+  "elapsed_seconds_with_profiling": 61.561980917002074,
+  "cpu_seconds_with_profiling": 61.364405000000005,
+  "peak_traced_python_bytes": 80915697,
+  "serialized_result_bytes": 18005418,
+  "profile_total_calls": 73337133,
+  "profile_primitive_calls": 71405765,
+  "selected_function_counts": [
+    {
+      "file": "fractions.py",
+      "line": 24,
+      "function": "_hash_algorithm",
+      "primitive_calls": 727,
+      "total_calls": 727,
+      "own_seconds": 0.0009602380000000001,
+      "cumulative_seconds": 0.005619678
+    },
+    {
+      "file": "fractions.py",
+      "line": 186,
+      "function": "__new__",
+      "primitive_calls": 964262,
+      "total_calls": 964262,
+      "own_seconds": 5.215992461,
+      "cumulative_seconds": 9.27573695
+    },
+    {
+      "file": "fractions.py",
+      "line": 291,
+      "function": "from_float",
+      "primitive_calls": 1280,
+      "total_calls": 1280,
+      "own_seconds": 0.002376137,
+      "cumulative_seconds": 0.007120037
+    },
+    {
+      "file": "fractions.py",
+      "line": 317,
+      "function": "_from_coprime_ints",
+      "primitive_calls": 6414024,
+      "total_calls": 6414024,
+      "own_seconds": 3.130735001,
+      "cumulative_seconds": 5.565367482
+    },
+    {
+      "file": "fractions.py",
+      "line": 397,
+      "function": "numerator",
+      "primitive_calls": 1147729,
+      "total_calls": 1147729,
+      "own_seconds": 0.075241692,
+      "cumulative_seconds": 0.075241692
+    },
+    {
+      "file": "fractions.py",
+      "line": 401,
+      "function": "denominator",
+      "primitive_calls": 1147729,
+      "total_calls": 1147729,
+      "own_seconds": 0.072772112,
+      "cumulative_seconds": 0.072772112
+    },
+    {
+      "file": "fractions.py",
+      "line": 410,
+      "function": "__str__",
+      "primitive_calls": 468952,
+      "total_calls": 468952,
+      "own_seconds": 0.8256723130000001,
+      "cumulative_seconds": 0.8256723130000001
+    },
+    {
+      "file": "fractions.py",
+      "line": 613,
+      "function": "forward",
+      "primitive_calls": 5697850,
+      "total_calls": 5697850,
+      "own_seconds": 1.8505138630000002,
+      "cumulative_seconds": 22.716091344000002
+    },
+    {
+      "file": "fractions.py",
+      "line": 627,
+      "function": "reverse",
+      "primitive_calls": 559283,
+      "total_calls": 559283,
+      "own_seconds": 0.410343173,
+      "cumulative_seconds": 3.0144525680000003
+    },
+    {
+      "file": "fractions.py",
+      "line": 710,
+      "function": "_add",
+      "primitive_calls": 2060465,
+      "total_calls": 2060465,
+      "own_seconds": 6.454502631,
+      "cumulative_seconds": 9.675440513
+    },
+    {
+      "file": "fractions.py",
+      "line": 726,
+      "function": "_sub",
+      "primitive_calls": 21,
+      "total_calls": 21,
+      "own_seconds": 8.1914e-05,
+      "cumulative_seconds": 0.000111081
+    },
+    {
+      "file": "fractions.py",
+      "line": 742,
+      "function": "_mul",
+      "primitive_calls": 4196647,
+      "total_calls": 4196647,
+      "own_seconds": 8.312342301000001,
+      "cumulative_seconds": 12.451976096000001
+    },
+    {
+      "file": "fractions.py",
+      "line": 801,
+      "function": "__pow__",
+      "primitive_calls": 26762,
+      "total_calls": 26762,
+      "own_seconds": 0.033814083,
+      "cumulative_seconds": 0.07822783100000001
+    },
+    {
+      "file": "fractions.py",
+      "line": 851,
+      "function": "__neg__",
+      "primitive_calls": 128833,
+      "total_calls": 128833,
+      "own_seconds": 0.069952161,
+      "cumulative_seconds": 0.18946215500000002
+    },
+    {
+      "file": "fractions.py",
+      "line": 855,
+      "function": "__abs__",
+      "primitive_calls": 16,
+      "total_calls": 16,
+      "own_seconds": 1.6873000000000003e-05,
+      "cumulative_seconds": 3.4083e-05
+    },
+    {
+      "file": "fractions.py",
+      "line": 908,
+      "function": "__hash__",
+      "primitive_calls": 3584,
+      "total_calls": 3584,
+      "own_seconds": 0.003290968,
+      "cumulative_seconds": 0.008910646000000001
+    },
+    {
+      "file": "fractions.py",
+      "line": 912,
+      "function": "__eq__",
+      "primitive_calls": 220097,
+      "total_calls": 220097,
+      "own_seconds": 0.09760186700000001,
+      "cumulative_seconds": 0.25626211600000004
+    },
+    {
+      "file": "fractions.py",
+      "line": 933,
+      "function": "_richcmp",
+      "primitive_calls": 534354,
+      "total_calls": 535634,
+      "own_seconds": 0.464936157,
+      "cumulative_seconds": 0.9503113580000001
+    },
+    {
+      "file": "fractions.py",
+      "line": 955,
+      "function": "__lt__",
+      "primitive_calls": 12480,
+      "total_calls": 12480,
+      "own_seconds": 0.002728363,
+      "cumulative_seconds": 0.022780093
+    },
+    {
+      "file": "fractions.py",
+      "line": 959,
+      "function": "__gt__",
+      "primitive_calls": 60043,
+      "total_calls": 60043,
+      "own_seconds": 0.013501083,
+      "cumulative_seconds": 0.14139363000000002
+    },
+    {
+      "file": "fractions.py",
+      "line": 963,
+      "function": "__le__",
+      "primitive_calls": 231553,
+      "total_calls": 232833,
+      "own_seconds": 0.049627945,
+      "cumulative_seconds": 0.5427239
+    },
+    {
+      "file": "fractions.py",
+      "line": 967,
+      "function": "__ge__",
+      "primitive_calls": 230278,
+      "total_calls": 230278,
+      "own_seconds": 0.049414067000000006,
+      "cumulative_seconds": 0.358367696
+    },
+    {
+      "file": "fractions.py",
+      "line": 987,
+      "function": "__deepcopy__",
+      "primitive_calls": 105408,
+      "total_calls": 105408,
+      "own_seconds": 0.013398745,
+      "cumulative_seconds": 0.013398745
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 8,
+      "function": "__init__",
+      "primitive_calls": 3776,
+      "total_calls": 3776,
+      "own_seconds": 0.0081688,
+      "cumulative_seconds": 0.008495319000000001
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 14,
+      "function": "_validate",
+      "primitive_calls": 5312,
+      "total_calls": 5312,
+      "own_seconds": 0.053146471,
+      "cumulative_seconds": 0.166778788
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 17,
+      "function": "<genexpr>",
+      "primitive_calls": 98688,
+      "total_calls": 98688,
+      "own_seconds": 0.011023464,
+      "cumulative_seconds": 0.011023464
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 21,
+      "function": "<genexpr>",
+      "primitive_calls": 33216,
+      "total_calls": 33216,
+      "own_seconds": 0.006980575,
+      "cumulative_seconds": 0.009018917000000001
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 25,
+      "function": "prior_empty",
+      "primitive_calls": 64,
+      "total_calls": 64,
+      "own_seconds": 0.00014417300000000002,
+      "cumulative_seconds": 0.00043992200000000003
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 29,
+      "function": "extend_belief",
+      "primitive_calls": 1344,
+      "total_calls": 1344,
+      "own_seconds": 0.014841102,
+      "cumulative_seconds": 0.055862337000000005
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 37,
+      "function": "nominal_likelihood",
+      "primitive_calls": 9344,
+      "total_calls": 9344,
+      "own_seconds": 0.153284218,
+      "cumulative_seconds": 5.736135125000001
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 40,
+      "function": "<genexpr>",
+      "primitive_calls": 46720,
+      "total_calls": 46720,
+      "own_seconds": 0.0056127780000000006,
+      "cumulative_seconds": 0.0056127780000000006
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 43,
+      "function": "<genexpr>",
+      "primitive_calls": 36096,
+      "total_calls": 36096,
+      "own_seconds": 0.030486496000000002,
+      "cumulative_seconds": 1.7062801790000002
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 50,
+      "function": "update_belief",
+      "primitive_calls": 1344,
+      "total_calls": 1344,
+      "own_seconds": 0.052716194,
+      "cumulative_seconds": 5.852300999000001
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 52,
+      "function": "<genexpr>",
+      "primitive_calls": 10688,
+      "total_calls": 10688,
+      "own_seconds": 0.001588381,
+      "cumulative_seconds": 0.002111001
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 61,
+      "function": "map_prefix",
+      "primitive_calls": 1344,
+      "total_calls": 1344,
+      "own_seconds": 0.001353755,
+      "cumulative_seconds": 0.041816003000000004
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 63,
+      "function": "<lambda>",
+      "primitive_calls": 4672,
+      "total_calls": 4672,
+      "own_seconds": 0.001129966,
+      "cumulative_seconds": 0.001129966
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 66,
+      "function": "choose_probe",
+      "primitive_calls": 1344,
+      "total_calls": 1344,
+      "own_seconds": 0.002780803,
+      "cumulative_seconds": 0.39365295100000003
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 70,
+      "function": "current_target_decision",
+      "primitive_calls": 1280,
+      "total_calls": 1280,
+      "own_seconds": 0.004646361,
+      "cumulative_seconds": 0.089799927
+    },
+    {
+      "file": "v5_bayes.py",
+      "line": 74,
+      "function": "<genexpr>",
+      "primitive_calls": 5888,
+      "total_calls": 5888,
+      "own_seconds": 0.000973131,
+      "cumulative_seconds": 0.000973131
+    },
+    {
+      "file": "v5_complementarity.py",
+      "line": 19,
+      "function": "certificate",
+      "primitive_calls": 1,
+      "total_calls": 1,
+      "own_seconds": 0.000210997,
+      "cumulative_seconds": 0.002995708
+    },
+    {
+      "file": "v5_complementarity.py",
+      "line": 25,
+      "function": "<genexpr>",
+      "primitive_calls": 12,
+      "total_calls": 12,
+      "own_seconds": 3.3586e-05,
+      "cumulative_seconds": 0.000607708
+    },
+    {
+      "file": "v5_complementarity.py",
+      "line": 38,
+      "function": "<genexpr>",
+      "primitive_calls": 4,
+      "total_calls": 4,
+      "own_seconds": 5.792000000000001e-06,
+      "cumulative_seconds": 7.770900000000001e-05
+    },
+    {
+      "file": "v5_complementarity.py",
+      "line": 62,
+      "function": "retained_policy",
+      "primitive_calls": 8192,
+      "total_calls": 8192,
+      "own_seconds": 0.087292191,
+      "cumulative_seconds": 8.511026006
+    },
+    {
+      "file": "v5_complementarity.py",
+      "line": 67,
+      "function": "<genexpr>",
+      "primitive_calls": 16384,
+      "total_calls": 16384,
+      "own_seconds": 0.0022079440000000003,
+      "cumulative_seconds": 0.0022079440000000003
+    },
+    {
+      "file": "v5_complementarity.py",
+      "line": 78,
+      "function": "run",
+      "primitive_calls": 1,
+      "total_calls": 1,
+      "own_seconds": 0.358109585,
+      "cumulative_seconds": 13.845940083
+    },
+    {
+      "file": "v5_complementarity.py",
+      "line": 86,
+      "function": "<genexpr>",
+      "primitive_calls": 384,
+      "total_calls": 384,
+      "own_seconds": 0.00038095,
+      "cumulative_seconds": 0.00038095
+    },
+    {
+      "file": "v5_core.py",
+      "line": 31,
+      "function": "check",
+      "primitive_calls": 55232,
+      "total_calls": 55232,
+      "own_seconds": 0.5210906390000001,
+      "cumulative_seconds": 1.4272867200000001
+    },
+    {
+      "file": "v5_core.py",
+      "line": 33,
+      "function": "<genexpr>",
+      "primitive_calls": 180352,
+      "total_calls": 180352,
+      "own_seconds": 0.024724830000000003,
+      "cumulative_seconds": 0.024724830000000003
+    },
+    {
+      "file": "v5_core.py",
+      "line": 57,
+      "function": "_record_update",
+      "primitive_calls": 29504,
+      "total_calls": 29504,
+      "own_seconds": 0.783651247,
+      "cumulative_seconds": 5.908760026
+    },
+    {
+      "file": "v5_core.py",
+      "line": 61,
+      "function": "<genexpr>",
+      "primitive_calls": 147520,
+      "total_calls": 147520,
+      "own_seconds": 0.10601840100000001,
+      "cumulative_seconds": 2.1058135790000003
+    },
+    {
+      "file": "v5_core.py",
+      "line": 62,
+      "function": "<genexpr>",
+      "primitive_calls": 147520,
+      "total_calls": 147520,
+      "own_seconds": 0.100705657,
+      "cumulative_seconds": 2.08913939
+    },
+    {
+      "file": "v5_core.py",
+      "line": 64,
+      "function": "<genexpr>",
+      "primitive_calls": 147520,
+      "total_calls": 147520,
+      "own_seconds": 0.040413087,
+      "cumulative_seconds": 0.24518021
+    },
+    {
+      "file": "v5_core.py",
+      "line": 74,
+      "function": "acquire_next",
+      "primitive_calls": 12480,
+      "total_calls": 12480,
+      "own_seconds": 0.348101847,
+      "cumulative_seconds": 21.053571506
+    },
+    {
+      "file": "v5_core.py",
+      "line": 87,
+      "function": "<genexpr>",
+      "primitive_calls": 62400,
+      "total_calls": 62400,
+      "own_seconds": 0.043785776000000005,
+      "cumulative_seconds": 0.6999269800000001
+    },
+    {
+      "file": "v5_core.py",
+      "line": 96,
+      "function": "replay_records",
+      "primitive_calls": 13760,
+      "total_calls": 13760,
+      "own_seconds": 0.49994558800000005,
+      "cumulative_seconds": 9.665439335
+    },
+    {
+      "file": "v5_core.py",
+      "line": 106,
+      "function": "<genexpr>",
+      "primitive_calls": 85120,
+      "total_calls": 85120,
+      "own_seconds": 0.061524151000000006,
+      "cumulative_seconds": 0.9532919190000001
+    },
+    {
+      "file": "v5_core.py",
+      "line": 115,
+      "function": "perturb_probe",
+      "primitive_calls": 23296,
+      "total_calls": 23296,
+      "own_seconds": 0.456646843,
+      "cumulative_seconds": 1.211448866
+    },
+    {
+      "file": "v5_core.py",
+      "line": 126,
+      "function": "make_source",
+      "primitive_calls": 17536,
+      "total_calls": 17536,
+      "own_seconds": 1.3891934190000002,
+      "cumulative_seconds": 9.412248385
+    },
+    {
+      "file": "v5_core.py",
+      "line": 148,
+      "function": "read",
+      "primitive_calls": 23296,
+      "total_calls": 23296,
+      "own_seconds": 4.481173054,
+      "cumulative_seconds": 15.262098025
+    },
+    {
+      "file": "v5_core.py",
+      "line": 151,
+      "function": "<genexpr>",
+      "primitive_calls": 116480,
+      "total_calls": 116480,
+      "own_seconds": 0.014995588,
+      "cumulative_seconds": 0.014995588
+    },
+    {
+      "file": "v5_core.py",
+      "line": 153,
+      "function": "<genexpr>",
+      "primitive_calls": 116480,
+      "total_calls": 116480,
+      "own_seconds": 0.121208724,
+      "cumulative_seconds": 0.25358299700000003
+    },
+    {
+      "file": "v5_core.py",
+      "line": 174,
+      "function": "<genexpr>",
+      "primitive_calls": 116480,
+      "total_calls": 116480,
+      "own_seconds": 0.033686435,
+      "cumulative_seconds": 0.198455819
+    },
+    {
+      "file": "v5_core.py",
+      "line": 180,
+      "function": "resource_lower_bounds",
+      "primitive_calls": 1,
+      "total_calls": 1,
+      "own_seconds": 8.96e-06,
+      "cumulative_seconds": 0.00011687500000000001
+    },
+    {
+      "file": "v5_frame.py",
+      "line": 12,
+      "function": "dot",
+      "primitive_calls": 71888,
+      "total_calls": 71888,
+      "own_seconds": 0.206714149,
+      "cumulative_seconds": 3.4351434920000004
+    },
+    {
+      "file": "v5_frame.py",
+      "line": 15,
+      "function": "<genexpr>",
+      "primitive_calls": 359440,
+      "total_calls": 359440,
+      "own_seconds": 0.065628112,
+      "cumulative_seconds": 1.2445126590000002
+    },
+    {
+      "file": "v5_frame.py",
+      "line": 18,
+      "function": "_combine",
+      "primitive_calls": 324693,
+      "total_calls": 324693,
+      "own_seconds": 0.9244685560000001,
+      "cumulative_seconds": 16.454789212
+    },
+    {
+      "file": "v5_frame.py",
+      "line": 19,
+      "function": "<genexpr>",
+      "primitive_calls": 1623465,
+      "total_calls": 1623465,
+      "own_seconds": 0.763352153,
+      "cumulative_seconds": 15.530320656
+    },
+    {
+      "file": "v5_frame.py",
+      "line": 22,
+      "function": "_check",
+      "primitive_calls": 71814,
+      "total_calls": 71814,
+      "own_seconds": 0.097542873,
+      "cumulative_seconds": 0.180309869
+    },
+    {
+      "file": "v5_frame.py",
+      "line": 23,
+      "function": "<genexpr>",
+      "primitive_calls": 249746,
+      "total_calls": 249746,
+      "own_seconds": 0.0348889,
+      "cumulative_seconds": 0.0348889
+    },
+    {
+      "file": "v5_frame.py",
+      "line": 27,
+      "function": "frame",
+      "primitive_calls": 60997,
+      "total_calls": 60997,
+      "own_seconds": 0.648964518,
+      "cumulative_seconds": 18.502770872000003
+    },
+    {
+      "file": "v5_frame.py",
+      "line": 38,
+      "function": "null_probe",
+      "primitive_calls": 10817,
+      "total_calls": 10817,
+      "own_seconds": 0.024095648,
+      "cumulative_seconds": 3.0820411880000003
+    },
+    {
+      "file": "v5_run.py",
+      "line": 24,
+      "function": "serialize",
+      "primitive_calls": 1,
+      "total_calls": 916360,
+      "own_seconds": 1.442019898,
+      "cumulative_seconds": 2.3373082910000003
+    },
+    {
+      "file": "v5_run.py",
+      "line": 31,
+      "function": "world",
+      "primitive_calls": 64,
+      "total_calls": 64,
+      "own_seconds": 0.095868323,
+      "cumulative_seconds": 0.18317633500000002
+    },
+    {
+      "file": "v5_run.py",
+      "line": 57,
+      "function": "run_world",
+      "primitive_calls": 448,
+      "total_calls": 448,
+      "own_seconds": 0.220463704,
+      "cumulative_seconds": 43.884387701
+    },
+    {
+      "file": "v5_run.py",
+      "line": 65,
+      "function": "source",
+      "primitive_calls": 9216,
+      "total_calls": 9216,
+      "own_seconds": 0.042756257000000006,
+      "cumulative_seconds": 4.886471262000001
+    },
+    {
+      "file": "v5_run.py",
+      "line": 71,
+      "function": "note",
+      "primitive_calls": 8960,
+      "total_calls": 8960,
+      "own_seconds": 0.023754492000000002,
+      "cumulative_seconds": 3.446447189
+    },
+    {
+      "file": "v5_run.py",
+      "line": 80,
+      "function": "from_scratch",
+      "primitive_calls": 2560,
+      "total_calls": 2560,
+      "own_seconds": 0.029759858,
+      "cumulative_seconds": 12.228196014
+    },
+    {
+      "file": "v5_run.py",
+      "line": 86,
+      "function": "bayes_read",
+      "primitive_calls": 1344,
+      "total_calls": 1344,
+      "own_seconds": 0.008294176,
+      "cumulative_seconds": 7.93051066
+    },
+    {
+      "file": "v5_run.py",
+      "line": 133,
+      "function": "<genexpr>",
+      "primitive_calls": 12288,
+      "total_calls": 12288,
+      "own_seconds": 0.008064806,
+      "cumulative_seconds": 0.008064806
+    },
+    {
+      "file": "v5_run.py",
+      "line": 146,
+      "function": "<genexpr>",
+      "primitive_calls": 9664,
+      "total_calls": 9664,
+      "own_seconds": 0.0010426650000000001,
+      "cumulative_seconds": 0.0010426650000000001
+    },
+    {
+      "file": "v5_run.py",
+      "line": 147,
+      "function": "<genexpr>",
+      "primitive_calls": 9664,
+      "total_calls": 9664,
+      "own_seconds": 0.0006006270000000001,
+      "cumulative_seconds": 0.0006006270000000001
+    },
+    {
+      "file": "v5_run.py",
+      "line": 148,
+      "function": "<genexpr>",
+      "primitive_calls": 9664,
+      "total_calls": 9664,
+      "own_seconds": 0.0006503040000000001,
+      "cumulative_seconds": 0.0006503040000000001
+    },
+    {
+      "file": "v5_run.py",
+      "line": 149,
+      "function": "<genexpr>",
+      "primitive_calls": 72128,
+      "total_calls": 72128,
+      "own_seconds": 0.18468487900000002,
+      "cumulative_seconds": 4.560869061
+    },
+    {
+      "file": "v5_run.py",
+      "line": 156,
+      "function": "run",
+      "primitive_calls": 1,
+      "total_calls": 1,
+      "own_seconds": 0.008273047,
+      "cumulative_seconds": 46.415845208
+    },
+    {
+      "file": "v5_run.py",
+      "line": 167,
+      "function": "<genexpr>",
+      "primitive_calls": 455,
+      "total_calls": 455,
+      "own_seconds": 5.7373e-05,
+      "cumulative_seconds": 5.7373e-05
+    },
+    {
+      "file": "v5_run.py",
+      "line": 168,
+      "function": "<genexpr>",
+      "primitive_calls": 455,
+      "total_calls": 455,
+      "own_seconds": 2.3667000000000002e-05,
+      "cumulative_seconds": 2.3667000000000002e-05
+    },
+    {
+      "file": "v5_run.py",
+      "line": 169,
+      "function": "<genexpr>",
+      "primitive_calls": 455,
+      "total_calls": 455,
+      "own_seconds": 2.3133e-05,
+      "cumulative_seconds": 2.3133e-05
+    },
+    {
+      "file": "v5_run.py",
+      "line": 170,
+      "function": "<genexpr>",
+      "primitive_calls": 455,
+      "total_calls": 455,
+      "own_seconds": 5.3492e-05,
+      "cumulative_seconds": 5.3492e-05
+    },
+    {
+      "file": "v5_run.py",
+      "line": 171,
+      "function": "<genexpr>",
+      "primitive_calls": 455,
+      "total_calls": 455,
+      "own_seconds": 2.3082e-05,
+      "cumulative_seconds": 2.3082e-05
+    },
+    {
+      "file": "v5_run.py",
+      "line": 172,
+      "function": "<genexpr>",
+      "primitive_calls": 455,
+      "total_calls": 455,
+      "own_seconds": 2.3712000000000003e-05,
+      "cumulative_seconds": 2.3712000000000003e-05
+    },
+    {
+      "file": "v5_run.py",
+      "line": 173,
+      "function": "<genexpr>",
+      "primitive_calls": 455,
+      "total_calls": 455,
+      "own_seconds": 2.146e-05,
+      "cumulative_seconds": 2.146e-05
+    },
+    {
+      "file": "v5_run.py",
+      "line": 174,
+      "function": "<genexpr>",
+      "primitive_calls": 455,
+      "total_calls": 455,
+      "own_seconds": 3.6997000000000005e-05,
+      "cumulative_seconds": 3.6997000000000005e-05
+    },
+    {
+      "file": "v5_run.py",
+      "line": 178,
+      "function": "<genexpr>",
+      "primitive_calls": 8974,
+      "total_calls": 8974,
+      "own_seconds": 0.000490319,
+      "cumulative_seconds": 0.000490319
+    },
+    {
+      "file": "v5_run.py",
+      "line": 179,
+      "function": "<genexpr>",
+      "primitive_calls": 8974,
+      "total_calls": 8974,
+      "own_seconds": 0.000472959,
+      "cumulative_seconds": 0.000472959
+    }
+  ],
+  "scope": "fixture generation, acquisition, reuse, all baselines, summaries and serialization",
+  "exclusions": "imports, native allocator memory, proof construction, previous research and verification reruns",
+  "not_claimed": "hardware energy, physical elapsed time, algorithm-independent bit complexity, or speedup over stateful Bayes"
+}

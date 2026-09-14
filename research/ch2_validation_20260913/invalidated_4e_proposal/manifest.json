@@ -1,0 +1,16 @@
+{
+  "status": "numerical_active_space_control; exact_replay_pending",
+  "observable": "Delta_ST = E_T - E_S (electronic, fixed geometry)",
+  "required_state_proof": "separate S=0 and S=1 sectors; M_S=0 alone is insufficient",
+  "geometry": "C(0,0,0); H(0,0,1.117); H(0,1.047,-0.389) Angstrom",
+  "basis": "STO-3G",
+  "active_space": "4 spatial orbitals, 4 electrons; one RHF core spatial orbital frozen",
+  "pyscf_import": "success in .venv-molecule, PySCF 2.14.0",
+  "active_dimension": 36,
+  "gap_Ha_numerical": 0.007585847149854885,
+  "gap_kcal_mol_numerical": 4.762,
+  "conventional_baseline": "not run",
+  "solver_result": "S=0 -15.096934954026468 Ha; S=1 -15.089349106876613 Ha",
+  "model_error": "not assessed; STO-3G active-space result is not an experimental prediction",
+  "next_required_input": "rational integral export and exact singlet/triplet eigenvalue replay"
+}

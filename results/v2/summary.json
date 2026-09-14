@@ -1,0 +1,477 @@
+{
+  "protocol": {
+    "protocol_version": 2,
+    "registered_before_integrated_run": true,
+    "dimension": 6,
+    "world_seeds": [
+      17,
+      29,
+      43
+    ],
+    "visibility": "1/2",
+    "a_channel_error": "1/10",
+    "delta_a": "1/1000",
+    "delta_b_conditional_on_a": "1/1000",
+    "evaluation_trials_per_world": 8192,
+    "evaluation_family_failure": "1/100",
+    "calibration_contexts": "six coordinate vectors for each law",
+    "heldout_contexts": "all nonzero binary vectors except coordinate vectors; independent draws with replacement",
+    "b_acquisition": "A compiles a known-positive two-qubit reference measurement; no direct B calibration access",
+    "baselines": [
+      "frozen",
+      "A_only",
+      "B_only",
+      "AB",
+      "exact_lookup",
+      "structured_retrieval",
+      "conventional_GF2"
+    ],
+    "primary_gate": "exact positive complementary risk saving, certified sequential noisy law acquisition, unseen-context transfer and explicit same-data conventional tie",
+    "secondary_gate": "fixed-horizon target-shot budget amortization against a reset target-only comparator at error 3/10",
+    "disallowed_claims": [
+      "unrestricted scientific intelligence",
+      "novel physical law",
+      "superiority to every conventional algorithm",
+      "optimal globally learning baseline beaten",
+      "expected stopping-time lower bound",
+      "physical experimental validation"
+    ]
+  },
+  "protocol_sha256": "b82061d7058717cdedb145b2e294a91aded91d0dcacd04bb1d3a3a052d5db6b9",
+  "theorem": {
+    "one_shot_risks": {
+      "none": "7/16",
+      "A": "3/8",
+      "B": "3/8",
+      "AB": "1/4"
+    },
+    "ideal_complementarity": "1/16",
+    "optimal_reset_four_shot_risk": "103/256",
+    "certificate_nodes_checked": 520
+  },
+  "runtime_seconds": {
+    "policy_generation_and_checking": 0.023958749952726066,
+    "total": 2.0298423339845613
+  },
+  "claim": "finite model-conditional sequential acquisition and complementary transfer; conventional structured inference ties",
+  "physical_experiments_performed": false,
+  "worlds": [
+    {
+      "seed": 17,
+      "evaluator_truth": {
+        "mask_a": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "mask_b": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "evaluation": {
+        "methods": {
+          "frozen": {
+            "errors": 3676,
+            "trials": 8192,
+            "empirical_error": 0.44873046875,
+            "simultaneous_hoeffding_interval": [
+              0.4261648637055429,
+              0.4712960737944571
+            ],
+            "exact_conditional_risk": "7/16"
+          },
+          "A_only": {
+            "errors": 3127,
+            "trials": 8192,
+            "empirical_error": 0.3817138671875,
+            "simultaneous_hoeffding_interval": [
+              0.3591482621430429,
+              0.4042794722319571
+            ],
+            "exact_conditional_risk": "3/8"
+          },
+          "B_only": {
+            "errors": 3115,
+            "trials": 8192,
+            "empirical_error": 0.3802490234375,
+            "simultaneous_hoeffding_interval": [
+              0.3576834183930429,
+              0.4028146284819571
+            ],
+            "exact_conditional_risk": "3/8"
+          },
+          "AB": {
+            "errors": 2083,
+            "trials": 8192,
+            "empirical_error": 0.2542724609375,
+            "simultaneous_hoeffding_interval": [
+              0.2317068558930429,
+              0.2768380659819571
+            ],
+            "exact_conditional_risk": "1/4"
+          },
+          "exact_lookup": {
+            "errors": 3676,
+            "trials": 8192,
+            "empirical_error": 0.44873046875,
+            "simultaneous_hoeffding_interval": [
+              0.4261648637055429,
+              0.4712960737944571
+            ],
+            "exact_conditional_risk": "7/16"
+          },
+          "structured_retrieval": {
+            "errors": 2083,
+            "trials": 8192,
+            "empirical_error": 0.2542724609375,
+            "simultaneous_hoeffding_interval": [
+              0.2317068558930429,
+              0.2768380659819571
+            ],
+            "exact_conditional_risk": "1/4"
+          },
+          "conventional_GF2": {
+            "errors": 2083,
+            "trials": 8192,
+            "empirical_error": 0.2542724609375,
+            "simultaneous_hoeffding_interval": [
+              0.2317068558930429,
+              0.2768380659819571
+            ],
+            "exact_conditional_risk": "1/4"
+          }
+        },
+        "exact_complementarity": "1/16",
+        "unique_target_pairs_sampled": 3007,
+        "unseen_target_pairs_exhaustively_checked": 3249,
+        "exact_lookup_hits": 0,
+        "conventional_action_tie": true,
+        "shared_target_shots_per_method": 8192,
+        "total_simulated_method_shots": 57344,
+        "paired_randomness": true,
+        "confidence_scope": "conditional on fixed acquired laws; union over all worlds and methods"
+      },
+      "both_masks_recovered": true,
+      "guarantees": {
+        "acquisition_failure_union_bound": "282073460023381537152834798930597782127270024791142981157238394343601982942398782345757657882487619588075093986451051936119351196211477489772636122920872367563713312424320994175619349948204884366833321970612166489803245251794740627694564060037773656726026118360635539832797306594433869506540347210004223847/3781828041845037375798858040318702976142792179735147329577893497406656589939146450061213119411147067293024943855033659706416832420890967105002263721341162589846128969990752737049250037473803470791806023092241154687677021643143524264469005010151029383402843109251989517360925674438476562500000000000000000000000",
+        "AB_unconditional_error_upper_bound": "3782110115305060757336010875117633573924919449759938472559050735801000191922088848843558877069029554912613018949020110758352951772087178582492036357464083462213692683303177058043425656823751675676172856414211766854166824888395319005096699574211067157059569135370350152900758471745070996369506540347210004223847/15127312167380149503195432161274811904571168718940589318311573989626626359756585800244852477644588269172099775420134638825667329683563868420009054885364650359384515879963010948197000149895213883167224092368964618750708086572574097057876020040604117533611372437007958069443702697753906250000000000000000000000000",
+        "complementarity_unconditional_lower_bound": "945174937001235962412561675280745146253570774908995689413316135957320545501844213732957522194904279203668160869771963874668088754026530298760793294212369775093968529185263863268136890018502662813584672451089676505429452165534086325489556688477719572193984751194636743800398621303024706755493459652789995776153/15127312167380149503195432161274811904571168718940589318311573989626626359756585800244852477644588269172099775420134638825667329683563868420009054885364650359384515879963010948197000149895213883167224092368964618750708086572574097057876020040604117533611372437007958069443702697753906250000000000000000000000000"
+      },
+      "fixed_horizon_budget": {
+        "target_error_threshold": "3/10",
+        "reset_target_only_minimum_shots_per_task_lower_bound": 5,
+        "learner_acquisition_plus_target_shots": 10976,
+        "reset_target_only_shot_budget_lower_bound": 40960,
+        "strict_shot_break_even_tasks": 697,
+        "scope": "committed fixed-horizon budgets; not expected stopping times or globally learning baseline"
+      },
+      "runtime_seconds": {
+        "acquisition_with_independent_verification_and_baseline": 0.014762167003937066,
+        "evaluation_and_exhaustive_risk_check": 0.6456795000704005
+      },
+      "acquisition_cost": {
+        "a_single_qubit_preparations_and_shots": 174,
+        "b_two_qubit_preparations_and_shots": 2610,
+        "total_acquisition_shots": 2784,
+        "acquisition_qubits_prepared": 5394,
+        "postprocessing_coin_draws": 2610,
+        "learned_rule_storage_bits": 12,
+        "retained_record_outcome_bits": 8004,
+        "context_bits_in_calibration_records": 72,
+        "learner_gaussian_elimination_xors": 0,
+        "verifier_gaussian_elimination_xors": 0,
+        "majority_bits_scanned_per_learner_or_verifier_pass": 2784,
+        "conventional_enumeration_bit_products": 1512,
+        "shots_per_A_context": 29,
+        "shots_per_B_context": 435,
+        "certificate_arithmetic": "exact binomial-tail integers; wall time reported separately"
+      }
+    },
+    {
+      "seed": 29,
+      "evaluator_truth": {
+        "mask_a": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "mask_b": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "evaluation": {
+        "methods": {
+          "frozen": {
+            "errors": 3590,
+            "trials": 8192,
+            "empirical_error": 0.438232421875,
+            "simultaneous_hoeffding_interval": [
+              0.4156668168305429,
+              0.4607980269194571
+            ],
+            "exact_conditional_risk": "7/16"
+          },
+          "A_only": {
+            "errors": 3110,
+            "trials": 8192,
+            "empirical_error": 0.379638671875,
+            "simultaneous_hoeffding_interval": [
+              0.3570730668305429,
+              0.4022042769194571
+            ],
+            "exact_conditional_risk": "3/8"
+          },
+          "B_only": {
+            "errors": 3092,
+            "trials": 8192,
+            "empirical_error": 0.37744140625,
+            "simultaneous_hoeffding_interval": [
+              0.3548758012055429,
+              0.4000070112944571
+            ],
+            "exact_conditional_risk": "3/8"
+          },
+          "AB": {
+            "errors": 2080,
+            "trials": 8192,
+            "empirical_error": 0.25390625,
+            "simultaneous_hoeffding_interval": [
+              0.2313406449555429,
+              0.2764718550444571
+            ],
+            "exact_conditional_risk": "1/4"
+          },
+          "exact_lookup": {
+            "errors": 3590,
+            "trials": 8192,
+            "empirical_error": 0.438232421875,
+            "simultaneous_hoeffding_interval": [
+              0.4156668168305429,
+              0.4607980269194571
+            ],
+            "exact_conditional_risk": "7/16"
+          },
+          "structured_retrieval": {
+            "errors": 2080,
+            "trials": 8192,
+            "empirical_error": 0.25390625,
+            "simultaneous_hoeffding_interval": [
+              0.2313406449555429,
+              0.2764718550444571
+            ],
+            "exact_conditional_risk": "1/4"
+          },
+          "conventional_GF2": {
+            "errors": 2080,
+            "trials": 8192,
+            "empirical_error": 0.25390625,
+            "simultaneous_hoeffding_interval": [
+              0.2313406449555429,
+              0.2764718550444571
+            ],
+            "exact_conditional_risk": "1/4"
+          }
+        },
+        "exact_complementarity": "1/16",
+        "unique_target_pairs_sampled": 3006,
+        "unseen_target_pairs_exhaustively_checked": 3249,
+        "exact_lookup_hits": 0,
+        "conventional_action_tie": true,
+        "shared_target_shots_per_method": 8192,
+        "total_simulated_method_shots": 57344,
+        "paired_randomness": true,
+        "confidence_scope": "conditional on fixed acquired laws; union over all worlds and methods"
+      },
+      "both_masks_recovered": true,
+      "guarantees": {
+        "acquisition_failure_union_bound": "282073460023381537152834798930597782127270024791142981157238394343601982942398782345757657882487619588075093986451051936119351196211477489772636122920872367563713312424320994175619349948204884366833321970612166489803245251794740627694564060037773656726026118360635539832797306594433869506540347210004223847/3781828041845037375798858040318702976142792179735147329577893497406656589939146450061213119411147067293024943855033659706416832420890967105002263721341162589846128969990752737049250037473803470791806023092241154687677021643143524264469005010151029383402843109251989517360925674438476562500000000000000000000000",
+        "AB_unconditional_error_upper_bound": "3782110115305060757336010875117633573924919449759938472559050735801000191922088848843558877069029554912613018949020110758352951772087178582492036357464083462213692683303177058043425656823751675676172856414211766854166824888395319005096699574211067157059569135370350152900758471745070996369506540347210004223847/15127312167380149503195432161274811904571168718940589318311573989626626359756585800244852477644588269172099775420134638825667329683563868420009054885364650359384515879963010948197000149895213883167224092368964618750708086572574097057876020040604117533611372437007958069443702697753906250000000000000000000000000",
+        "complementarity_unconditional_lower_bound": "945174937001235962412561675280745146253570774908995689413316135957320545501844213732957522194904279203668160869771963874668088754026530298760793294212369775093968529185263863268136890018502662813584672451089676505429452165534086325489556688477719572193984751194636743800398621303024706755493459652789995776153/15127312167380149503195432161274811904571168718940589318311573989626626359756585800244852477644588269172099775420134638825667329683563868420009054885364650359384515879963010948197000149895213883167224092368964618750708086572574097057876020040604117533611372437007958069443702697753906250000000000000000000000000"
+      },
+      "fixed_horizon_budget": {
+        "target_error_threshold": "3/10",
+        "reset_target_only_minimum_shots_per_task_lower_bound": 5,
+        "learner_acquisition_plus_target_shots": 10976,
+        "reset_target_only_shot_budget_lower_bound": 40960,
+        "strict_shot_break_even_tasks": 697,
+        "scope": "committed fixed-horizon budgets; not expected stopping times or globally learning baseline"
+      },
+      "runtime_seconds": {
+        "acquisition_with_independent_verification_and_baseline": 0.014333125087432563,
+        "evaluation_and_exhaustive_risk_check": 0.6608777079964057
+      },
+      "acquisition_cost": {
+        "a_single_qubit_preparations_and_shots": 174,
+        "b_two_qubit_preparations_and_shots": 2610,
+        "total_acquisition_shots": 2784,
+        "acquisition_qubits_prepared": 5394,
+        "postprocessing_coin_draws": 2610,
+        "learned_rule_storage_bits": 12,
+        "retained_record_outcome_bits": 8004,
+        "context_bits_in_calibration_records": 72,
+        "learner_gaussian_elimination_xors": 0,
+        "verifier_gaussian_elimination_xors": 0,
+        "majority_bits_scanned_per_learner_or_verifier_pass": 2784,
+        "conventional_enumeration_bit_products": 1512,
+        "shots_per_A_context": 29,
+        "shots_per_B_context": 435,
+        "certificate_arithmetic": "exact binomial-tail integers; wall time reported separately"
+      }
+    },
+    {
+      "seed": 43,
+      "evaluator_truth": {
+        "mask_a": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "mask_b": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "evaluation": {
+        "methods": {
+          "frozen": {
+            "errors": 3586,
+            "trials": 8192,
+            "empirical_error": 0.437744140625,
+            "simultaneous_hoeffding_interval": [
+              0.4151785355805429,
+              0.4603097456694571
+            ],
+            "exact_conditional_risk": "7/16"
+          },
+          "A_only": {
+            "errors": 3063,
+            "trials": 8192,
+            "empirical_error": 0.3739013671875,
+            "simultaneous_hoeffding_interval": [
+              0.3513357621430429,
+              0.3964669722319571
+            ],
+            "exact_conditional_risk": "3/8"
+          },
+          "B_only": {
+            "errors": 3084,
+            "trials": 8192,
+            "empirical_error": 0.37646484375,
+            "simultaneous_hoeffding_interval": [
+              0.3538992387055429,
+              0.3990304487944571
+            ],
+            "exact_conditional_risk": "3/8"
+          },
+          "AB": {
+            "errors": 2039,
+            "trials": 8192,
+            "empirical_error": 0.2489013671875,
+            "simultaneous_hoeffding_interval": [
+              0.2263357621430429,
+              0.2714669722319571
+            ],
+            "exact_conditional_risk": "1/4"
+          },
+          "exact_lookup": {
+            "errors": 3586,
+            "trials": 8192,
+            "empirical_error": 0.437744140625,
+            "simultaneous_hoeffding_interval": [
+              0.4151785355805429,
+              0.4603097456694571
+            ],
+            "exact_conditional_risk": "7/16"
+          },
+          "structured_retrieval": {
+            "errors": 2039,
+            "trials": 8192,
+            "empirical_error": 0.2489013671875,
+            "simultaneous_hoeffding_interval": [
+              0.2263357621430429,
+              0.2714669722319571
+            ],
+            "exact_conditional_risk": "1/4"
+          },
+          "conventional_GF2": {
+            "errors": 2039,
+            "trials": 8192,
+            "empirical_error": 0.2489013671875,
+            "simultaneous_hoeffding_interval": [
+              0.2263357621430429,
+              0.2714669722319571
+            ],
+            "exact_conditional_risk": "1/4"
+          }
+        },
+        "exact_complementarity": "1/16",
+        "unique_target_pairs_sampled": 3018,
+        "unseen_target_pairs_exhaustively_checked": 3249,
+        "exact_lookup_hits": 0,
+        "conventional_action_tie": true,
+        "shared_target_shots_per_method": 8192,
+        "total_simulated_method_shots": 57344,
+        "paired_randomness": true,
+        "confidence_scope": "conditional on fixed acquired laws; union over all worlds and methods"
+      },
+      "both_masks_recovered": true,
+      "guarantees": {
+        "acquisition_failure_union_bound": "282073460023381537152834798930597782127270024791142981157238394343601982942398782345757657882487619588075093986451051936119351196211477489772636122920872367563713312424320994175619349948204884366833321970612166489803245251794740627694564060037773656726026118360635539832797306594433869506540347210004223847/3781828041845037375798858040318702976142792179735147329577893497406656589939146450061213119411147067293024943855033659706416832420890967105002263721341162589846128969990752737049250037473803470791806023092241154687677021643143524264469005010151029383402843109251989517360925674438476562500000000000000000000000",
+        "AB_unconditional_error_upper_bound": "3782110115305060757336010875117633573924919449759938472559050735801000191922088848843558877069029554912613018949020110758352951772087178582492036357464083462213692683303177058043425656823751675676172856414211766854166824888395319005096699574211067157059569135370350152900758471745070996369506540347210004223847/15127312167380149503195432161274811904571168718940589318311573989626626359756585800244852477644588269172099775420134638825667329683563868420009054885364650359384515879963010948197000149895213883167224092368964618750708086572574097057876020040604117533611372437007958069443702697753906250000000000000000000000000",
+        "complementarity_unconditional_lower_bound": "945174937001235962412561675280745146253570774908995689413316135957320545501844213732957522194904279203668160869771963874668088754026530298760793294212369775093968529185263863268136890018502662813584672451089676505429452165534086325489556688477719572193984751194636743800398621303024706755493459652789995776153/15127312167380149503195432161274811904571168718940589318311573989626626359756585800244852477644588269172099775420134638825667329683563868420009054885364650359384515879963010948197000149895213883167224092368964618750708086572574097057876020040604117533611372437007958069443702697753906250000000000000000000000000"
+      },
+      "fixed_horizon_budget": {
+        "target_error_threshold": "3/10",
+        "reset_target_only_minimum_shots_per_task_lower_bound": 5,
+        "learner_acquisition_plus_target_shots": 10976,
+        "reset_target_only_shot_budget_lower_bound": 40960,
+        "strict_shot_break_even_tasks": 697,
+        "scope": "committed fixed-horizon budgets; not expected stopping times or globally learning baseline"
+      },
+      "runtime_seconds": {
+        "acquisition_with_independent_verification_and_baseline": 0.013572291005402803,
+        "evaluation_and_exhaustive_risk_check": 0.6346745829796419
+      },
+      "acquisition_cost": {
+        "a_single_qubit_preparations_and_shots": 174,
+        "b_two_qubit_preparations_and_shots": 2610,
+        "total_acquisition_shots": 2784,
+        "acquisition_qubits_prepared": 5394,
+        "postprocessing_coin_draws": 2610,
+        "learned_rule_storage_bits": 12,
+        "retained_record_outcome_bits": 8004,
+        "context_bits_in_calibration_records": 72,
+        "learner_gaussian_elimination_xors": 0,
+        "verifier_gaussian_elimination_xors": 0,
+        "majority_bits_scanned_per_learner_or_verifier_pass": 2784,
+        "conventional_enumeration_bit_products": 1512,
+        "shots_per_A_context": 29,
+        "shots_per_B_context": 435,
+        "certificate_arithmetic": "exact binomial-tail integers; wall time reported separately"
+      }
+    }
+  ]
+}

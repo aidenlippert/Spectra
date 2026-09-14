@@ -1,0 +1,49 @@
+{
+  "scope": "Exact uniform Q-gap only. Existing metric/positive directions inherited; reference replay remains finite coefficient algebra. No new energy witness or response for the larger perturbations. Interval endpoint is sufficient, not asserted optimal.",
+  "rows": [
+    {
+      "name": "monotone_1x",
+      "hopping_strength": "1/50",
+      "hopping_strength_float": 0.02,
+      "gap": "-783/125",
+      "changed_groups": 4,
+      "certifies_entire_reference_target_segment": true,
+      "determinant_actions": 0,
+      "direct_compiler_refusal": null,
+      "elapsed_with_independent_replay": 31.258413457893766
+    },
+    {
+      "name": "monotone_3x",
+      "hopping_strength": "3/50",
+      "hopping_strength_float": 0.06,
+      "gap": "-783/125",
+      "changed_groups": 4,
+      "certifies_entire_reference_target_segment": true,
+      "determinant_actions": 0,
+      "direct_compiler_refusal": null,
+      "elapsed_with_independent_replay": 30.10530337493401
+    },
+    {
+      "name": "monotone_mixed_sign",
+      "hopping_strength": "3/20",
+      "hopping_strength_float": 0.15,
+      "gap": "-783/125",
+      "changed_groups": 4,
+      "certifies_entire_reference_target_segment": true,
+      "determinant_actions": 0,
+      "direct_compiler_refusal": "Joint polynomial requires fixed-sign grouped amplitudes",
+      "elapsed_with_independent_replay": 32.49095933290664
+    },
+    {
+      "name": "monotone_limit",
+      "hopping_strength": "14275927873493/50000000000000",
+      "hopping_strength_float": 0.28551855746986,
+      "gap": "-783/125",
+      "changed_groups": 4,
+      "certifies_entire_reference_target_segment": true,
+      "determinant_actions": 0,
+      "direct_compiler_refusal": null,
+      "elapsed_with_independent_replay": 34.12326154101174
+    }
+  ]
+}

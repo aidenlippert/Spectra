@@ -1,0 +1,84 @@
+{
+  "accepted_model": "Neutral CH2: eight total electrons, one frozen core, six active electrons in all six remaining STO-3G orbitals",
+  "chemistry_runtime": "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+  "pyscf_version": "2.14.0",
+  "certificate_runtime": "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+  "exact_replay_flag": "-S",
+  "measured_stages": [
+    {
+      "stage": "Corrected RHF, core-aware fixture and two conventional FCI controls",
+      "seconds": 0.14331687499361578,
+      "receipt": "results/ch2_validation_20260913/generation.json"
+    },
+    {
+      "stage": "Certificate proposals and initial exact acceptance",
+      "seconds": 2.1985157919989433,
+      "receipt": "results/ch2_validation_20260913/certificate_discovery.json"
+    },
+    {
+      "stage": "Separate exact replay",
+      "seconds": 1.063732374997926,
+      "receipt": "results/ch2_validation_20260913/exact_replay.json"
+    },
+    {
+      "stage": "Initial five-test run with one irrelevant denominator assertion failure",
+      "seconds": 2.8460295830009272,
+      "receipt": "results/ch2_validation_20260913/initial_tests.json"
+    },
+    {
+      "stage": "Final five focused tests",
+      "seconds": 2.781357500003651,
+      "receipt": "results/ch2_validation_20260913/tests.json"
+    }
+  ],
+  "sum_recorded_separate_stage_seconds": 9.032952124995063,
+  "additional_combined_replay": "results/composable_response_20260913/independent_replay.json; charged in main ledger, not included in this sum",
+  "basis_dimensions": {
+    "M_S_0": 400,
+    "M_S_1": 225
+  },
+  "H_and_S2_entries_per_preparation": {
+    "M_S_0": 320000,
+    "M_S_1": 101250
+  },
+  "explicit_preparation_repetitions": {
+    "spin_0": 10,
+    "spin_1": 6,
+    "total_determinant_labels_with_repeats": 5350,
+    "accounting": "Each spin: two discovery preparations, one standalone replay and one combined replay. Each of the two five-test runs prepares both accepted spins, plus two additional spin-0 matrices for factor and spin tampering."
+  },
+  "conventional_FCI_calls": 2,
+  "conventional_FCI_comparators": [
+    {
+      "target_spin": 0,
+      "electrons": [
+        3,
+        3
+      ],
+      "energy_total_Ha": -38.429076457852574,
+      "measured_S2": 1.3322676295501878e-15,
+      "FCI_seconds": 0.022602915996685624
+    },
+    {
+      "target_spin": 1,
+      "electrons": [
+        4,
+        2
+      ],
+      "energy_total_Ha": -38.469690762594965,
+      "measured_S2": 1.9999999999999982,
+      "FCI_seconds": 0.006346166992443614
+    }
+  ],
+  "certificate_bytes": {
+    "0": 463986,
+    "1": 156263
+  },
+  "fixture_bytes": 315452,
+  "peak_memory_measured": false,
+  "invalidated_proposal_cost": "Earlier erroneous proposals are archived. Their self-reported stage timers do not cover all failed work; total invalidated discovery cost is unknown, not zero.",
+  "timing_scope": "Generation timer starts after chemistry imports. Other main stage timers start after source imports. These are reproducible small-model component timings, not a complete chemistry service cost.",
+  "enumeration_free": false,
+  "physical_model_error_certified": false,
+  "advantage_over_conventional_FCI_established": false
+}

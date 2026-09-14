@@ -1,0 +1,171 @@
+{
+  "geometry_spacing_Angstrom": "1.6",
+  "FCI_used": false,
+  "model_construction": {
+    "construction_seconds": 4.248305790999439,
+    "coefficient_rows": 919,
+    "base_preparation": {
+      "monomial_word_pairs": 5724,
+      "monomial_map_nonzeros": 6246
+    },
+    "spin_preparation": {
+      "monomial_word_pairs": 105444,
+      "CAR_word_products": 210888,
+      "monomial_map_nonzeros": 48672,
+      "max_surviving_degree": 4
+    },
+    "base_map_nonzeros": 6180,
+    "pricing_map_nonzeros": 48672,
+    "spin_frame_dimensions": [
+      30,
+      30,
+      93,
+      93,
+      93,
+      93,
+      30,
+      30
+    ],
+    "base_Gram_dimensions": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      6,
+      9,
+      18,
+      18,
+      6,
+      9,
+      6,
+      9,
+      18,
+      18,
+      6,
+      9,
+      18,
+      18,
+      36,
+      36,
+      18,
+      18
+    ],
+    "fixture_sha256": "257b5797ec6800ade5439729ff8085114a31cad633442aa61147596f79d1dfbb",
+    "tail_sha256": "05d60011d4c7fff5b32c8f6c3e1db2c22b49b5925577e5ee292a2dd34c4ba236",
+    "symmetry": {
+      "original_dimensions": [
+        12,
+        12,
+        66,
+        66,
+        144
+      ],
+      "symmetry_dimensions": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        6,
+        9,
+        18,
+        18,
+        6,
+        9,
+        6,
+        9,
+        18,
+        18,
+        6,
+        9,
+        18,
+        18,
+        36,
+        36,
+        18,
+        18
+      ],
+      "parity_masks": [
+        819,
+        1365,
+        2457
+      ],
+      "alpha_charge_quotient": true
+    },
+    "many_body_states_enumerated": 0
+  },
+  "old_full_solve": {
+    "wall_seconds": 163.975331499998,
+    "solve_seconds": 153.69474129100126,
+    "status": "user_limit",
+    "directions": 492
+  },
+  "tail_discovery": {
+    "proposal_seconds": 0.021289624994096812,
+    "eigenvalues_descending": [
+      0.9931836707334559,
+      0.7221747100570651,
+      0.5310682690221441,
+      0.43513965716295383,
+      0.3782924129811698,
+      0.008982584272947788,
+      0.007900440994881285,
+      0.0067911795116977255,
+      0.006172920962391696,
+      0.00584294646987178,
+      1.8476893253006309e-06,
+      1.8331375594231625e-06,
+      1.7276474693365824e-06,
+      1.6317699955248924e-06,
+      2.1263361280354378e-10,
+      1.075158378654925e-10,
+      3.380393743609817e-11,
+      4.646444993087904e-13,
+      1.2746540236351738e-14,
+      -9.062599090781878e-17,
+      -3.597273401062526e-13
+    ],
+    "exact_shift_retries": 0,
+    "largest_numeric_matrix": 21,
+    "physical_sector_enumerated": false
+  },
+  "trace_mixture": "1/1000000",
+  "frozen_C_exact_moment": "2840319216396387597191/17187500000000000000000",
+  "frozen_C_rejects": false,
+  "parametric_T1_search": [
+    {
+      "spatial_count": 3,
+      "subsets_tested": 20,
+      "minimum_eigenvalue": 0.14526878844899943,
+      "best_support": [
+        0,
+        2,
+        5
+      ],
+      "rounding_attempts": []
+    },
+    {
+      "spatial_count": 4,
+      "subsets_tested": 15,
+      "minimum_eigenvalue": 0.12705116633246216,
+      "best_support": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rounding_attempts": []
+    }
+  ],
+  "parametric_separator_found": false,
+  "wall_seconds": 182.00985445900005,
+  "many_body_states_enumerated": 0,
+  "scope": "One new fixed-full-family solve proposes a witness. Exact acceptance is a separate process; no T1 energy optimization."
+}

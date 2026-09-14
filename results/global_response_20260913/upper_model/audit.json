@@ -1,0 +1,45 @@
+{
+  "kind": "global_response_upper_audit_v1",
+  "source": "/Users/aidenlippert/Documents/Spectra/results/compact_response_20260913/trial_discovery.json",
+  "full_sector_enumeration_avoided_by_this_audit": false,
+  "reason": "The response vectors are generated from inherited upper witnesses; replay is exact but discovery is not independent.",
+  "rows": [
+    {
+      "case": "h6",
+      "sector_dimension": 924,
+      "source_support": 148,
+      "response_support": 52,
+      "final_support": 200,
+      "source_support_fraction": 0.16017316017316016,
+      "final_support_fraction": 0.21645021645021645,
+      "response_actions": 25,
+      "hamiltonian_action_calls": 28,
+      "word_state_checks": 1512864,
+      "candidate_upper_Ha": "-158326465634953912952730424854923/24999999998195005586250000000000",
+      "accepted_upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "candidate_gain_mHa": -3.77598552301437e-07,
+      "source_provenance": "inherited 200-amplitude FCI witness",
+      "source_dependency_is_new": false,
+      "scope": "Exact variational replay audit; not an enumeration-free upper-bound construction."
+    },
+    {
+      "case": "fresh_h6_1p6",
+      "sector_dimension": 924,
+      "source_support": 1,
+      "response_support": 52,
+      "final_support": 53,
+      "source_support_fraction": 0.0010822510822510823,
+      "final_support_fraction": 0.05735930735930736,
+      "response_actions": 72,
+      "hamiltonian_action_calls": 75,
+      "word_state_checks": 3436992,
+      "candidate_upper_Ha": "-556331734761689169065957839880719/100000000004115053854000000000000",
+      "accepted_upper_Ha": "-556331734761689169065957839880719/100000000004115053854000000000000",
+      "candidate_gain_mHa": 20.933187933958187,
+      "source_provenance": "single Hartree-Fock determinant; no FCI",
+      "source_dependency_is_new": false,
+      "scope": "Exact variational replay audit; not an enumeration-free upper-bound construction."
+    }
+  ],
+  "decision": "Do not claim a compact upper solver from these trials. The response-lifted witness remains a valid variational upper certificate, but its H6 result retains 200-state inherited support and its fresh-transfer result retains 54-state support from an HF seed."
+}

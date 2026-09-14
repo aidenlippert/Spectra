@@ -1,0 +1,125 @@
+{
+  "states": [
+    {
+      "spin": 0,
+      "discovery": {
+        "determinants_enumerated": 400,
+        "Hamiltonian_word_state_checks": 431600,
+        "spin_word_state_checks": 43200,
+        "H_and_S2_matrix_entries": 320000,
+        "preparation_seconds": 0.18994650000240654,
+        "upper_replay": {
+          "method": "bounded_streaming_integer_reference_upper_v1",
+          "witness_states": 200,
+          "hamiltonian_terms": 1079,
+          "word_state_checks": 215800,
+          "contributing_word_state_pairs": 29000,
+          "action_cache_states": 0,
+          "replay_seconds": 0.04700491699622944,
+          "upper": "-5764361468776387501714130890370123/150000000002576118772000000000000",
+          "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+        },
+        "construction_seconds": 0.8604292910022195,
+        "numerical_penalized_eigenvalue_Ha": -38.42907645784923,
+        "width_Ha": "1499992610389300618675451477/150000000002576118772000000000000",
+        "factor_entries": 80200
+      },
+      "receipt": {
+        "total_spin": 0,
+        "spin_projection": 0,
+        "lower_Ha": "-192145432289/5000000000",
+        "upper_Ha": "-5764361468776387501714130890370123/150000000002576118772000000000000",
+        "width_Ha": "1499992610389300618675451477/150000000002576118772000000000000",
+        "width_mHa": 0.00999995073575693,
+        "exact_spin_purity": true,
+        "exact_H_commutes_S2": true,
+        "cost": {
+          "determinants_enumerated": 400,
+          "Hamiltonian_word_state_checks": 431600,
+          "spin_word_state_checks": 43200,
+          "H_and_S2_matrix_entries": 320000,
+          "preparation_seconds": 0.18692016699060332
+        },
+        "upper_replay": {
+          "method": "bounded_streaming_integer_reference_upper_v1",
+          "witness_states": 200,
+          "hamiltonian_terms": 1079,
+          "word_state_checks": 215800,
+          "contributing_word_state_pairs": 29000,
+          "action_cache_states": 0,
+          "replay_seconds": 0.0383990420086775,
+          "upper": "-5764361468776387501714130890370123/150000000002576118772000000000000",
+          "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+        },
+        "replay_seconds": 0.8029486660088878
+      },
+      "certificate_bytes": 463986
+    },
+    {
+      "spin": 1,
+      "discovery": {
+        "determinants_enumerated": 225,
+        "Hamiltonian_word_state_checks": 242775,
+        "spin_word_state_checks": 24300,
+        "H_and_S2_matrix_entries": 101250,
+        "preparation_seconds": 0.06885475000308361,
+        "upper_replay": {
+          "method": "bounded_streaming_integer_reference_upper_v1",
+          "witness_states": 125,
+          "hamiltonian_terms": 1079,
+          "word_state_checks": 134875,
+          "contributing_word_state_pairs": 16550,
+          "action_cache_states": 0,
+          "replay_seconds": 0.0312487500050338,
+          "upper": "-76939381518555561422311435878351559/1999999999827675343962000000000000",
+          "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+        },
+        "construction_seconds": 0.2303369169967482,
+        "numerical_penalized_eigenvalue_Ha": -38.46969076259243,
+        "width_Ha": "20000015160625888732827069641/1999999999827675343962000000000000",
+        "factor_entries": 25425
+      },
+      "receipt": {
+        "total_spin": 1,
+        "spin_projection": 1,
+        "lower_Ha": "-192348503813/5000000000",
+        "upper_Ha": "-76939381518555561422311435878351559/1999999999827675343962000000000000",
+        "width_Ha": "20000015160625888732827069641/1999999999827675343962000000000000",
+        "width_mHa": 0.010000007581174569,
+        "exact_spin_purity": true,
+        "exact_H_commutes_S2": true,
+        "cost": {
+          "determinants_enumerated": 225,
+          "Hamiltonian_word_state_checks": 242775,
+          "spin_word_state_checks": 24300,
+          "H_and_S2_matrix_entries": 101250,
+          "preparation_seconds": 0.07020529199508019
+        },
+        "upper_replay": {
+          "method": "bounded_streaming_integer_reference_upper_v1",
+          "witness_states": 125,
+          "hamiltonian_terms": 1079,
+          "word_state_checks": 134875,
+          "contributing_word_state_pairs": 16550,
+          "action_cache_states": 0,
+          "replay_seconds": 0.035368084005312994,
+          "upper": "-76939381518555561422311435878351559/1999999999827675343962000000000000",
+          "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+        },
+        "replay_seconds": 0.22224608399847057
+      },
+      "certificate_bytes": 156263
+    }
+  ],
+  "gap_convention": "E_T-E_S",
+  "gap_lower_Ha": "-6093645712715016573625685157077/150000000002576118772000000000000",
+  "gap_upper_Ha": "-81208609577840528006384680547959/1999999999827675343962000000000000",
+  "gap_width_mHa": 0.0199999583169315,
+  "gap_lower_approx_kcal_mol": -25.492136105749896,
+  "gap_upper_approx_kcal_mol": -25.479585942426414,
+  "wall_seconds": 2.1985157919989433,
+  "numerical_packages_loaded": [
+    "numpy"
+  ],
+  "scope": "Exact gap for the declared frozen-core fixed-geometry rational Hamiltonian. No physical-model error or zero-point correction is certified."
+}

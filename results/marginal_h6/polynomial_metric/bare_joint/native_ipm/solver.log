@@ -1,0 +1,63 @@
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+LP has 801 rows; 192885 cols; 11327245 nonzeros
+Coefficient ranges:
+  Matrix  [6e-04, 2e+02]
+  Cost    [0e+00, 0e+00]
+  Bound   [1e-04, 1e-04]
+  RHS     [1e-03, 1e+00]
+Presolving model
+801 rows, 189324 cols, 11322724 nonzeros 5s
+800 rows, 133759 cols, 8911748 nonzeros 8s
+Dependent equations search running on 800 equations with time limit of 1.20s
+Dependent equations search removed 0 rows and 0 nonzeros in 0.10s (limit = 1.20s)
+800 rows, 133759 cols, 8911748 nonzeros 10s
+Presolve reductions: rows 800(-1); columns 133759(-59126); nonzeros 8911748(-2415497) 
+Solving the presolved LP
+IPX model has 800 rows, 133759 columns and 8911748 nonzeros
+Input
+    Number of variables:                                133759
+    Number of free variables:                           47
+    Number of constraints:                              800
+    Number of equality constraints:                     800
+    Number of matrix entries:                           8911748
+    Matrix range:                                       [1e-03, 2e+02]
+    RHS range:                                          [2e-03, 3e+01]
+    Objective range:                                    [0e+00, 0e+00]
+    Bounds range:                                       [0e+00, 0e+00]
+Preprocessing
+    Dualized model:                                     no
+    Number of dense columns:                            0
+    Range of scaling factors:                           [1.25e-01, 4.00e+00]
+    Scaled cost norm:                                   0
+    Scaled bounds norm:                                 3.18273
+IPX version 1.0
+Interior point solve
+ Iter       primal obj         dual obj       pinf       dinf       gap      time
+   0    0.00000000e+00  -1.08140020e-02   5.28e-01   1.50e+00  1.08e-02      10.8
+ Constructing starting basis...
+ Iter       primal obj         dual obj       pinf       dinf       gap      time
+   1    0.00000000e+00  -3.51427319e+01   4.92e-01   8.15e-01  1.89e+00      29.0
+   2    0.00000000e+00  -4.91915751e+01   2.23e-01   4.42e-01  1.92e+00      40.3
+   3    0.00000000e+00  -6.17466452e+01   1.77e-02   1.26e-01  1.94e+00      63.0
+   4    0.00000000e+00  -6.56963616e+01   1.32e-03   5.10e-02  1.94e+00      76.4
+   5    0.00000000e+00  -5.97559326e+01   1.99e-04   5.75e-03  1.94e+00      82.4
+   6    0.00000000e+00  -3.97878980e+01   8.13e-05   1.61e-03  1.90e+00      88.8
+   7    0.00000000e+00  -2.24478506e+01   3.98e-05   5.07e-04  1.84e+00      95.3
+   8    0.00000000e+00  -1.40711699e+01   3.22e-05   2.17e-04  1.75e+00     100.8
+   9    0.00000000e+00  -1.00330813e+01   2.25e-05   1.18e-04  1.67e+00     105.4
+  10    0.00000000e+00  -6.86480275e+00   1.54e-05   5.87e-05  1.55e+00     109.9
+  11    0.00000000e+00  -5.09347617e+00   1.03e-05   3.47e-05  1.44e+00     113.8
+  12    0.00000000e+00  -4.36260071e+00   7.10e-06   2.10e-05  1.37e+00     117.9
+Summary
+    Runtime:                                            120.04s
+    Status interior point solve:                        time limit
+    Status crossover:                                   not run
+WARNING: Ipx: Stopped
+WARNING: Ipx: IPM       reached time limit
+WARNING: Ipx: Crossover not run
+Model status        : Time limit reached
+IPM       iterations: 12
+Objective value     :  0.0000000000e+00
+HiGHS run time      :        120.06
+{"solver_version": "1.15.1", "method": "native IPM feasibility with fixed numerator floor", "floor": "1/10000", "status": "Time limit reached", "seconds": 120.08944799995515, "iterations": 12, "source_sha256": "9b7255212be2f6d31ff451bed7ad65c08e3d8af6db86214bb36edd40a9b87e9e", "prepared_source": "results/marginal_h6/polynomial_metric/bare_joint/search", "shape": [801, 192885], "nonzeros": 11327245, "value_valid": false, "scope": "Same bare-H model, no imported metric or atom weights; fixed positive numerator floor rather than bound optimization. Exact export is the acceptance gate.", "exact_accepted": false}

@@ -1,0 +1,606 @@
+{
+  "status": "Exact bounded-degree identity reconstruction, fresh coefficient-space positivity transfer and uniform monotone hopping-family gap accepted; overall goal remains active.",
+  "reports": [
+    "research/marginal_bounded_quotient.md",
+    "research/marginal_monotone_transfer.md"
+  ],
+  "previous_goal_turn": "progress",
+  "tests_passed": 360,
+  "elapsed_seconds": 269.733,
+  "gap_replays": [
+    "results/marginal_h6/polynomial_metric/bounded_quotient/proof/independent_replay.json",
+    "results/marginal_h6/polynomial_metric/bounded_quotient/transfer_proof/independent_replay.json",
+    "results/marginal_h6/polynomial_metric/bounded_quotient/monotone_1x/independent_replay.json",
+    "results/marginal_h6/polynomial_metric/bounded_quotient/monotone_3x/independent_replay.json",
+    "results/marginal_h6/polynomial_metric/bounded_quotient/monotone_mixed_sign/independent_replay.json",
+    "results/marginal_h6/polynomial_metric/bounded_quotient/monotone_limit/independent_replay.json"
+  ],
+  "energy_replays": [
+    {
+      "certificate": "results/marginal_h6/polynomial_metric/bounded_quotient/proof/energy_certificate.json",
+      "independent": "results/marginal_h6/polynomial_metric/bounded_quotient/proof/energy_independent_replay.json",
+      "width": "2295601526046809368899863277754891278619030352024684271985625639081299021722266140619542721428432624229670752569708911348438501594120482947631258185274695561509257974731861007719075509200876617311205888914697988127868245709362749612511779840455231748045362766130270627372000038693933458183187792261404940455920843328179864151330347356491928381678833211882105576244798761717516969344778224632121228831027423479751625617453118851405609438001608223103/309506217638389711781521511746888373372704528346449641442506190128728408534599334595182887126121097000958446233538392455119001278020037463085078160337666270722890688531520338850048431112178158059327853960352759655797195731204425344911510677038225960739504642688993819750684260544414958791113444099309774953462084710589800964087767659688428936212740699024999088140590711145068007179114905492848396934110965407310310694206569859855332327437255859375000000000000",
+      "width_float": 7.416980322924775e-12,
+      "retained_dimension": 20,
+      "response_dimension": 17,
+      "witness_support": 400,
+      "scope": "Existing witness and response reused and exactly rechecked."
+    },
+    {
+      "certificate": "results/marginal_h6/polynomial_metric/bounded_quotient/transfer_proof/energy_certificate.json",
+      "independent": "results/marginal_h6/polynomial_metric/bounded_quotient/transfer_proof/energy_independent_replay.json",
+      "width": "694954577539323988002693375595486871398803600567477389461801169590419151327284832268851935392772679219378830921302003406851903602570380333978797978661790983041138105825913657965225677422277273315410384015784965201796609731775669925452932041145910418343736870951653733812627956232047622171594636454083990848490193957100026855239947888294972546216230582981295608777173310871734775780611569272278361603820670599421091142802016730011353240805683901851/176860695724059107895009964016161483592647384795942037063835584949788612435727950142437934458593835247617026872468933007525757194585590139922617047149856881636821205194323938888785832353088910930645295204701826798812236634426290348180911791258595058424307543827915412464445443582176860423538152977555016448306893004323794621087688271346231469278541542620755993606671946852796874040687410917082881488098737666091932047642753442984767778217773437500000000000000",
+      "width_float": 3.9293895949815965e-12,
+      "retained_dimension": 20,
+      "response_dimension": 17,
+      "witness_support": 400,
+      "scope": "Existing witness and response reused and exactly rechecked."
+    },
+    {
+      "certificate": "results/marginal_h6/polynomial_metric/bounded_quotient/monotone_1x/energy_certificate.json",
+      "independent": "results/marginal_h6/polynomial_metric/bounded_quotient/monotone_1x/energy_independent_replay.json",
+      "width": "694954577539323988002693375595486871398803600567477389461801169590419151327284832268851935392772679219378830921302003406851903602570380333978797978661790983041138105825913657965225677422277273315410384015784965201796609731775669925452932041145910418343736870951653733812627956232047622171594636454083990848490193957100026855239947888294972546216230582981295608777173310871734775780611569272278361603820670599421091142802016730011353240805683901851/176860695724059107895009964016161483592647384795942037063835584949788612435727950142437934458593835247617026872468933007525757194585590139922617047149856881636821205194323938888785832353088910930645295204701826798812236634426290348180911791258595058424307543827915412464445443582176860423538152977555016448306893004323794621087688271346231469278541542620755993606671946852796874040687410917082881488098737666091932047642753442984767778217773437500000000000000",
+      "width_float": 3.9293895949815965e-12,
+      "retained_dimension": 20,
+      "response_dimension": 17,
+      "witness_support": 400,
+      "scope": "Existing witness and response reused and exactly rechecked."
+    }
+  ],
+  "new_stdlib_replay_count": 9,
+  "proofs": {
+    "proof": {
+      "certificate": "results/marginal_h6/polynomial_metric/bounded_quotient/proof/certificate.json",
+      "certificate_bytes": 830649,
+      "receipt": {
+        "complement_lower": "-783/125",
+        "weight_positivity": {
+          "lower": "996951691/1000000000000",
+          "residual_l1": "3048309/1000000000000",
+          "positive_indicators": 349,
+          "charge_indicators": 51,
+          "number_multiplier_terms": 1364
+        },
+        "numerator_positivity": {
+          "lower": "2049066165240671382619/150000000000000000000000",
+          "residual_l1": "6215793809328617381/150000000000000000000000",
+          "positive_indicators": 294,
+          "charge_indicators": 15,
+          "number_multiplier_terms": 1364
+        },
+        "compilation": {
+          "polynomial_products": 1120337,
+          "coefficient_products": 10200892,
+          "peak_terms": 1764,
+          "occupation_endpoint_evaluations": 0,
+          "metric_scale": 2000000000,
+          "numerator_scale": 600000000000000000000000,
+          "weight_terms": 1640,
+          "numerator_terms": 1764,
+          "numerator_degree": 6,
+          "transition_groups": 1140,
+          "determinant_actions": 0,
+          "target_valence_exclusion": true,
+          "projector_free_zero_metric": true
+        },
+        "verification_coefficient_products": 10236800,
+        "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+      }
+    },
+    "transfer_proof": {
+      "certificate": "results/marginal_h6/polynomial_metric/bounded_quotient/transfer_proof/certificate.json",
+      "certificate_bytes": 838862,
+      "receipt": {
+        "complement_lower": "-783/125",
+        "weight_positivity": {
+          "lower": "996951691/1000000000000",
+          "residual_l1": "3048309/1000000000000",
+          "positive_indicators": 349,
+          "charge_indicators": 51,
+          "number_multiplier_terms": 1364
+        },
+        "numerator_positivity": {
+          "lower": "4110222804202339813579/300000000000000000000000",
+          "residual_l1": "344024797660186421/300000000000000000000000",
+          "positive_indicators": 299,
+          "charge_indicators": 93,
+          "number_multiplier_terms": 1364
+        },
+        "compilation": {
+          "polynomial_products": 1120337,
+          "coefficient_products": 10200892,
+          "peak_terms": 1764,
+          "occupation_endpoint_evaluations": 0,
+          "metric_scale": 2000000000,
+          "numerator_scale": 600000000000000000000000,
+          "weight_terms": 1640,
+          "numerator_terms": 1764,
+          "numerator_degree": 6,
+          "transition_groups": 1140,
+          "determinant_actions": 0,
+          "target_valence_exclusion": true,
+          "projector_free_zero_metric": true
+        },
+        "verification_coefficient_products": 10238304,
+        "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+      }
+    },
+    "monotone_1x": {
+      "certificate": "results/marginal_h6/polynomial_metric/bounded_quotient/monotone_1x/certificate.json",
+      "certificate_bytes": 1428317,
+      "receipt": {
+        "complement_lower": "-783/125",
+        "reference_gap": {
+          "complement_lower": "-783/125",
+          "weight_positivity": {
+            "lower": "996951691/1000000000000",
+            "residual_l1": "3048309/1000000000000",
+            "positive_indicators": 349,
+            "charge_indicators": 51,
+            "number_multiplier_terms": 1364
+          },
+          "numerator_positivity": {
+            "lower": "2049066165240671382619/150000000000000000000000",
+            "residual_l1": "6215793809328617381/150000000000000000000000",
+            "positive_indicators": 294,
+            "charge_indicators": 15,
+            "number_multiplier_terms": 1364
+          },
+          "compilation": {
+            "polynomial_products": 1120337,
+            "coefficient_products": 10200892,
+            "peak_terms": 1764,
+            "occupation_endpoint_evaluations": 0,
+            "metric_scale": 2000000000,
+            "numerator_scale": 600000000000000000000000,
+            "weight_terms": 1640,
+            "numerator_terms": 1764,
+            "numerator_degree": 6,
+            "transition_groups": 1140,
+            "determinant_actions": 0,
+            "target_valence_exclusion": true,
+            "projector_free_zero_metric": true
+          },
+          "verification_coefficient_products": 10236800,
+          "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+        },
+        "changed_groups": [
+          {
+            "create": 1,
+            "annihilate": 4,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "1/50",
+            "maximum_squared_magnitude_change": "-13275927873493/2500000000000000"
+          },
+          {
+            "create": 2,
+            "annihilate": 8,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "1/50",
+            "maximum_squared_magnitude_change": "-13275927873493/2500000000000000"
+          },
+          {
+            "create": 4,
+            "annihilate": 1,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "1/50",
+            "maximum_squared_magnitude_change": "-13275927873493/2500000000000000"
+          },
+          {
+            "create": 8,
+            "annihilate": 2,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "1/50",
+            "maximum_squared_magnitude_change": "-13275927873493/2500000000000000"
+          }
+        ],
+        "determinant_actions": 0,
+        "target_amplitude_sign_required": false,
+        "certifies_reference_target_segment": true,
+        "scope": "Exact off-diagonal contraction transfers this checked weighted-Q-row reference gap with the same positive metric and full valence complement. Diagonal unchanged; constant coherent-amplitude shifts only. Every convex interpolation between reference and target inherits the bound. No new numerator discovery, physical state loop or target fixed-sign assumption."
+      }
+    },
+    "monotone_3x": {
+      "certificate": "results/marginal_h6/polynomial_metric/bounded_quotient/monotone_3x/certificate.json",
+      "certificate_bytes": 1428313,
+      "receipt": {
+        "complement_lower": "-783/125",
+        "reference_gap": {
+          "complement_lower": "-783/125",
+          "weight_positivity": {
+            "lower": "996951691/1000000000000",
+            "residual_l1": "3048309/1000000000000",
+            "positive_indicators": 349,
+            "charge_indicators": 51,
+            "number_multiplier_terms": 1364
+          },
+          "numerator_positivity": {
+            "lower": "2049066165240671382619/150000000000000000000000",
+            "residual_l1": "6215793809328617381/150000000000000000000000",
+            "positive_indicators": 294,
+            "charge_indicators": 15,
+            "number_multiplier_terms": 1364
+          },
+          "compilation": {
+            "polynomial_products": 1120337,
+            "coefficient_products": 10200892,
+            "peak_terms": 1764,
+            "occupation_endpoint_evaluations": 0,
+            "metric_scale": 2000000000,
+            "numerator_scale": 600000000000000000000000,
+            "weight_terms": 1640,
+            "numerator_terms": 1764,
+            "numerator_degree": 6,
+            "transition_groups": 1140,
+            "determinant_actions": 0,
+            "target_valence_exclusion": true,
+            "projector_free_zero_metric": true
+          },
+          "verification_coefficient_products": 10236800,
+          "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+        },
+        "changed_groups": [
+          {
+            "create": 1,
+            "annihilate": 4,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "3/50",
+            "maximum_squared_magnitude_change": "-33827783620479/2500000000000000"
+          },
+          {
+            "create": 2,
+            "annihilate": 8,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "3/50",
+            "maximum_squared_magnitude_change": "-33827783620479/2500000000000000"
+          },
+          {
+            "create": 4,
+            "annihilate": 1,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "3/50",
+            "maximum_squared_magnitude_change": "-33827783620479/2500000000000000"
+          },
+          {
+            "create": 8,
+            "annihilate": 2,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "3/50",
+            "maximum_squared_magnitude_change": "-33827783620479/2500000000000000"
+          }
+        ],
+        "determinant_actions": 0,
+        "target_amplitude_sign_required": false,
+        "certifies_reference_target_segment": true,
+        "scope": "Exact off-diagonal contraction transfers this checked weighted-Q-row reference gap with the same positive metric and full valence complement. Diagonal unchanged; constant coherent-amplitude shifts only. Every convex interpolation between reference and target inherits the bound. No new numerator discovery, physical state loop or target fixed-sign assumption."
+      }
+    },
+    "monotone_mixed_sign": {
+      "certificate": "results/marginal_h6/polynomial_metric/bounded_quotient/monotone_mixed_sign/certificate.json",
+      "certificate_bytes": 1428305,
+      "receipt": {
+        "complement_lower": "-783/125",
+        "reference_gap": {
+          "complement_lower": "-783/125",
+          "weight_positivity": {
+            "lower": "996951691/1000000000000",
+            "residual_l1": "3048309/1000000000000",
+            "positive_indicators": 349,
+            "charge_indicators": 51,
+            "number_multiplier_terms": 1364
+          },
+          "numerator_positivity": {
+            "lower": "2049066165240671382619/150000000000000000000000",
+            "residual_l1": "6215793809328617381/150000000000000000000000",
+            "positive_indicators": 294,
+            "charge_indicators": 15,
+            "number_multiplier_terms": 1364
+          },
+          "compilation": {
+            "polynomial_products": 1120337,
+            "coefficient_products": 10200892,
+            "peak_terms": 1764,
+            "occupation_endpoint_evaluations": 0,
+            "metric_scale": 2000000000,
+            "numerator_scale": 600000000000000000000000,
+            "weight_terms": 1640,
+            "numerator_terms": 1764,
+            "numerator_degree": 6,
+            "transition_groups": 1140,
+            "determinant_actions": 0,
+            "target_valence_exclusion": true,
+            "projector_free_zero_metric": true
+          },
+          "verification_coefficient_products": 10236800,
+          "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+        },
+        "changed_groups": [
+          {
+            "create": 1,
+            "annihilate": 4,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "3/20",
+            "maximum_squared_magnitude_change": "-20327783620479/1000000000000000"
+          },
+          {
+            "create": 2,
+            "annihilate": 8,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "3/20",
+            "maximum_squared_magnitude_change": "-20327783620479/1000000000000000"
+          },
+          {
+            "create": 4,
+            "annihilate": 1,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "3/20",
+            "maximum_squared_magnitude_change": "-20327783620479/1000000000000000"
+          },
+          {
+            "create": 8,
+            "annihilate": 2,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "3/20",
+            "maximum_squared_magnitude_change": "-20327783620479/1000000000000000"
+          }
+        ],
+        "determinant_actions": 0,
+        "target_amplitude_sign_required": false,
+        "certifies_reference_target_segment": true,
+        "scope": "Exact off-diagonal contraction transfers this checked weighted-Q-row reference gap with the same positive metric and full valence complement. Diagonal unchanged; constant coherent-amplitude shifts only. Every convex interpolation between reference and target inherits the bound. No new numerator discovery, physical state loop or target fixed-sign assumption."
+      }
+    },
+    "monotone_limit": {
+      "certificate": "results/marginal_h6/polynomial_metric/bounded_quotient/monotone_limit/certificate.json",
+      "certificate_bytes": 1428313,
+      "receipt": {
+        "complement_lower": "-783/125",
+        "reference_gap": {
+          "complement_lower": "-783/125",
+          "weight_positivity": {
+            "lower": "996951691/1000000000000",
+            "residual_l1": "3048309/1000000000000",
+            "positive_indicators": 349,
+            "charge_indicators": 51,
+            "number_multiplier_terms": 1364
+          },
+          "numerator_positivity": {
+            "lower": "2049066165240671382619/150000000000000000000000",
+            "residual_l1": "6215793809328617381/150000000000000000000000",
+            "positive_indicators": 294,
+            "charge_indicators": 15,
+            "number_multiplier_terms": 1364
+          },
+          "compilation": {
+            "polynomial_products": 1120337,
+            "coefficient_products": 10200892,
+            "peak_terms": 1764,
+            "occupation_endpoint_evaluations": 0,
+            "metric_scale": 2000000000,
+            "numerator_scale": 600000000000000000000000,
+            "weight_terms": 1640,
+            "numerator_terms": 1764,
+            "numerator_degree": 6,
+            "transition_groups": 1140,
+            "determinant_actions": 0,
+            "target_valence_exclusion": true,
+            "projector_free_zero_metric": true
+          },
+          "verification_coefficient_products": 10236800,
+          "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+        },
+        "changed_groups": [
+          {
+            "create": 1,
+            "annihilate": 4,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "14275927873493/50000000000000",
+            "maximum_squared_magnitude_change": "0"
+          },
+          {
+            "create": 2,
+            "annihilate": 8,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "14275927873493/50000000000000",
+            "maximum_squared_magnitude_change": "0"
+          },
+          {
+            "create": 4,
+            "annihilate": 1,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "14275927873493/50000000000000",
+            "maximum_squared_magnitude_change": "0"
+          },
+          {
+            "create": 8,
+            "annihilate": 2,
+            "reference_range": [
+              "-4274038918973/25000000000000",
+              "-14275927873493/100000000000000"
+            ],
+            "shift": "14275927873493/50000000000000",
+            "maximum_squared_magnitude_change": "0"
+          }
+        ],
+        "determinant_actions": 0,
+        "target_amplitude_sign_required": false,
+        "certifies_reference_target_segment": true,
+        "scope": "Exact off-diagonal contraction transfers this checked weighted-Q-row reference gap with the same positive metric and full valence complement. Diagonal unchanged; constant coherent-amplitude shifts only. Every convex interpolation between reference and target inherits the bound. No new numerator discovery, physical state loop or target fixed-sign assumption."
+      }
+    }
+  },
+  "monotone_family": {
+    "scope": "Exact uniform Q-gap only. Existing metric/positive directions inherited; reference replay remains finite coefficient algebra. No new energy witness or response for the larger perturbations. Interval endpoint is sufficient, not asserted optimal.",
+    "rows": [
+      {
+        "name": "monotone_1x",
+        "hopping_strength": "1/50",
+        "hopping_strength_float": 0.02,
+        "gap": "-783/125",
+        "changed_groups": 4,
+        "certifies_entire_reference_target_segment": true,
+        "determinant_actions": 0,
+        "direct_compiler_refusal": null,
+        "elapsed_with_independent_replay": 31.258413457893766
+      },
+      {
+        "name": "monotone_3x",
+        "hopping_strength": "3/50",
+        "hopping_strength_float": 0.06,
+        "gap": "-783/125",
+        "changed_groups": 4,
+        "certifies_entire_reference_target_segment": true,
+        "determinant_actions": 0,
+        "direct_compiler_refusal": null,
+        "elapsed_with_independent_replay": 30.10530337493401
+      },
+      {
+        "name": "monotone_mixed_sign",
+        "hopping_strength": "3/20",
+        "hopping_strength_float": 0.15,
+        "gap": "-783/125",
+        "changed_groups": 4,
+        "certifies_entire_reference_target_segment": true,
+        "determinant_actions": 0,
+        "direct_compiler_refusal": "Joint polynomial requires fixed-sign grouped amplitudes",
+        "elapsed_with_independent_replay": 32.49095933290664
+      },
+      {
+        "name": "monotone_limit",
+        "hopping_strength": "14275927873493/50000000000000",
+        "hopping_strength_float": 0.28551855746986,
+        "gap": "-783/125",
+        "changed_groups": 4,
+        "certifies_entire_reference_target_segment": true,
+        "determinant_actions": 0,
+        "direct_compiler_refusal": null,
+        "elapsed_with_independent_replay": 34.12326154101174
+      }
+    ]
+  },
+  "coefficient_space_lp": {
+    "success": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "solve_seconds": 15.94293000001926,
+    "preparation_seconds": 22.85703866602853,
+    "rows": 400,
+    "columns": 20110,
+    "nonzeros": 1480387,
+    "quotients": [
+      {
+        "variables": 6,
+        "population": 3,
+        "maximum_degree": 3,
+        "monomials": 42,
+        "relations": 22,
+        "quotient_dimension": 20,
+        "configuration_evaluations": 0
+      },
+      {
+        "variables": 6,
+        "population": 3,
+        "maximum_degree": 3,
+        "monomials": 42,
+        "relations": 22,
+        "quotient_dimension": 20,
+        "configuration_evaluations": 0
+      }
+    ],
+    "configuration_evaluations": 0,
+    "seed": "results/marginal_h6/polynomial_metric/vanishing_metric_proof/certificate.json",
+    "source": "results/marginal_h6/polynomial_metric/vanishing_metric_transfer/candidate.json",
+    "scope": "Numerical coefficient-space proposal using inherited original-H positive directions plus all degree<=4 indicators/localizers. No physical state evaluation; metric inherited; exact export is required for acceptance.",
+    "bound": 0.013701889430047094,
+    "minimum_coefficient": -1.7367759064246258e-08,
+    "max_equation_residual": 6.394884621840902e-14
+  },
+  "threefold_lp_proposal": {
+    "success": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "solve_seconds": 17.428130750078708,
+    "preparation_seconds": 23.697601457941346,
+    "rows": 400,
+    "columns": 20110,
+    "nonzeros": 1480387,
+    "quotients": [
+      {
+        "variables": 6,
+        "population": 3,
+        "maximum_degree": 3,
+        "monomials": 42,
+        "relations": 22,
+        "quotient_dimension": 20,
+        "configuration_evaluations": 0
+      },
+      {
+        "variables": 6,
+        "population": 3,
+        "maximum_degree": 3,
+        "monomials": 42,
+        "relations": 22,
+        "quotient_dimension": 20,
+        "configuration_evaluations": 0
+      }
+    ],
+    "configuration_evaluations": 0,
+    "seed": "results/marginal_h6/polynomial_metric/vanishing_metric_proof/certificate.json",
+    "source": "results/marginal_h6/polynomial_metric/bounded_quotient/transfer_3x/candidate.json",
+    "scope": "Numerical coefficient-space proposal using inherited original-H positive directions plus all degree<=4 indicators/localizers. No physical state evaluation; metric inherited; exact export is required for acceptance.",
+    "bound": 0.013701877620634437,
+    "minimum_coefficient": -5.5583519870117115e-09,
+    "max_equation_residual": 1.4566126083082054e-13
+  },
+  "threefold_scope": "The3x numerical numerator proposal was not exported as its own certificate; an independently accepted monotone transfer proves this target gap.",
+  "remaining": [
+    "Metric and positive seed directions still inherit explicit finite-sector discovery.",
+    "H6 degree reaches the full slice quotient:400 coordinates and1364 multiplier terms remain.",
+    "Useful molecular accuracy at a controlled positivity degree and construction cost remains unproved.",
+    "Retained-response and upper-witness construction still use explicit configurations.",
+    "Larger-system molecular transfer, general representability, thermodynamics, kinetics and synthesis remain open."
+  ]
+}

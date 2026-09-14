@@ -1,0 +1,10 @@
+{
+  "status": "blocked_input_schema",
+  "input": "results/marginal_h6/localized_orbital_target.json",
+  "scope": "Hamiltonian-derived locality-only SDP; no source certificate reuse",
+  "reason": "The requested fixture contains target orbital metadata and no hamiltonian field or exact CAR coefficients (hamiltonian length 0). A locality-only run cannot infer H from geometry or copy a source certificate.",
+  "observed_keys": ["status", "source_sha256", "geometry", "unit", "basis", "pyscf_version", "orbital_basis", "source_orbital_basis", "rotation_convention", "orthogonality_max_abs", "canonical_phase_alignment", "target_rotation", "superseded_failure", "scope"],
+  "numerical_infeasible_attempts": 0,
+  "generation_seconds": 0.0,
+  "required_next_input": "an H6 certificate or Hamiltonian JSON carrying modes, particles, and exact hamiltonian CAR terms"
+}

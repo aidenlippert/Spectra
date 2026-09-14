@@ -1,0 +1,24 @@
+{
+  "name": "dense_normal_conditioning_r2",
+  "command": [
+    "/usr/bin/env",
+    "OPENBLAS_NUM_THREADS=4",
+    "OMP_NUM_THREADS=4",
+    "VECLIB_MAXIMUM_THREADS=4",
+    ".venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.sector_quotient_20260914.normal",
+    "normal_r2"
+  ],
+  "timeout_seconds": 600,
+  "status": "passed",
+  "started_UTC": "2026-09-14T21:50:46.507185+00:00",
+  "pid": 59850,
+  "exit_code": 0,
+  "wall_seconds": 66.13275550000253,
+  "child_user_seconds": 49.959559,
+  "child_system_seconds": 13.504256,
+  "peak_child_RSS_bytes": 1465057280,
+  "finished_UTC": "2026-09-14T21:51:52.641040+00:00"
+}

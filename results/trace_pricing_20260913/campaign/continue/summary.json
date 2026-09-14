@@ -1,0 +1,1220 @@
+{
+  "arm": "continue",
+  "budget_seconds": 360.0,
+  "source": "/Users/aidenlippert/Documents/Spectra/results/spin_completion_20260913/campaign/adaptive/round_4_batch_2",
+  "source_hashes": {
+    "certificate.json": "c5e751d73d03c70464eba47c706c4e350ea89f7ae6c6d42142183a8d4914a3ee",
+    "span.json": "0a516194de071cc76c7d5a5fb771b7607c113e40dacaafd5f89b548bd3d4ba78",
+    "dual_proposal.json": "b2bdb43c89b9814eaad3c2c7f5e2cf5ce981c3fdeba55c2506484f4de8f8b646"
+  },
+  "source_replay": {
+    "retained": {
+      "lower": "-114128511154893749332359608196431416918960668290827033056517529/18000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -6.340472841938541,
+      "residual_l1": "26284149749332359608196431416918960668290827033056517529/18000000000000000000000000000000000000000000000000000000000000",
+      "residual_l1_float": 1.4602305416295756e-06,
+      "multiplier_terms": 37,
+      "square_polynomial_terms": 919,
+      "residual_terms": 919,
+      "residual_max_degree": 4,
+      "mode_count": 12,
+      "particle_number": 6,
+      "factor_rows": 348,
+      "factor_nonzeros": 17088
+    },
+    "tail": {
+      "lower_operator_shift_Ha": "-227/62500000000",
+      "upper_operator_shift_Ha": "6770477/62500000000",
+      "tail_interval_width_Ha": "423169/3906250000",
+      "tail_interval_width_mHa": 0.108331264,
+      "factors": 10,
+      "factor_nonzeros": 105,
+      "coefficient_dimension": 21,
+      "modes": 12,
+      "particles": 6,
+      "number_centered": true,
+      "mismatch_paired_norm_Ha": "1/31250000000",
+      "mismatch_terms": 54,
+      "casimir_bound": "24",
+      "lower_psd": {
+        "dimension": 21,
+        "rank": 21
+      },
+      "upper_psd": {
+        "dimension": 21,
+        "rank": 21
+      },
+      "replay_seconds": 0.12680479200207628,
+      "many_body_states_enumerated": 0,
+      "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+    },
+    "original_lower_Ha": "-114128511220269749332359608196431416918960668290827033056517529/18000000000000000000000000000000000000000000000000000000000000",
+    "original_lower_float_Ha": -6.340472845570542,
+    "expand_seconds": 0.6140405420010211,
+    "SOS_replay_seconds": 4.510524500001338,
+    "replay_seconds": 5.124565417005215,
+    "expanded_certificate_bytes": 645205,
+    "many_body_states_enumerated": 0,
+    "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+  },
+  "source_directions": 64,
+  "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+  "reference_replay": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 200,
+    "hamiltonian_terms": 918,
+    "word_state_checks": 183600,
+    "contributing_word_state_pairs": 23424,
+    "action_cache_states": 0,
+    "replay_seconds": 0.14371570799994515,
+    "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  },
+  "model_construction": {
+    "construction_seconds": 4.292593416997988,
+    "coefficient_rows": 919,
+    "base_preparation": {
+      "monomial_word_pairs": 5724,
+      "monomial_map_nonzeros": 6246
+    },
+    "spin_preparation": {
+      "monomial_word_pairs": 105444,
+      "CAR_word_products": 210888,
+      "monomial_map_nonzeros": 48672,
+      "max_surviving_degree": 4
+    },
+    "base_map_nonzeros": 6180,
+    "pricing_map_nonzeros": 48672,
+    "spin_frame_dimensions": [
+      30,
+      30,
+      93,
+      93,
+      93,
+      93,
+      30,
+      30
+    ],
+    "base_Gram_dimensions": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      6,
+      9,
+      18,
+      18,
+      6,
+      9,
+      6,
+      9,
+      18,
+      18,
+      6,
+      9,
+      18,
+      18,
+      36,
+      36,
+      18,
+      18
+    ],
+    "fixture_sha256": "99b91888d68ba7ea1d43c0b6c68594190521406c5b454b98933cbeba7d8f89df",
+    "tail_sha256": "7176d95d7bbce5cdef61b50e9950d765154acf9e5fcda10b864c1e803a2e29c5",
+    "symmetry": {
+      "original_dimensions": [
+        12,
+        12,
+        66,
+        66,
+        144
+      ],
+      "symmetry_dimensions": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        6,
+        9,
+        18,
+        18,
+        6,
+        9,
+        6,
+        9,
+        18,
+        18,
+        6,
+        9,
+        18,
+        18,
+        36,
+        36,
+        18,
+        18
+      ],
+      "parity_masks": [
+        819,
+        1365,
+        2457
+      ],
+      "alpha_charge_quotient": true
+    },
+    "many_body_states_enumerated": 0,
+    "pricing_rule": "uniform_fixed_N_trace",
+    "trace_metric_construction_seconds": 0.011262082996836398,
+    "trace_metric_entries": 38196,
+    "trace_metric_statistics": [
+      {
+        "dimension": 30,
+        "minimum_eigenvalue": 5.710591568943358e-11,
+        "condition_estimate": 7163722079.717112,
+        "QR_metric_condition_estimate": 1.0000000000000009,
+        "QR_reconstruction_relative_error": 4.450648113851816e-16
+      },
+      {
+        "dimension": 30,
+        "minimum_eigenvalue": 3.2296168545603536e-11,
+        "condition_estimate": 12666855776.62088,
+        "QR_metric_condition_estimate": 1.000000000000001,
+        "QR_reconstruction_relative_error": 4.755351868613249e-16
+      },
+      {
+        "dimension": 93,
+        "minimum_eigenvalue": 5.7105596701215437e-11,
+        "condition_estimate": 36303144733.33411,
+        "QR_metric_condition_estimate": 116.80376894658187,
+        "QR_reconstruction_relative_error": 5.780592292788275e-16
+      },
+      {
+        "dimension": 93,
+        "minimum_eigenvalue": 3.229600673013754e-11,
+        "condition_estimate": 62233542361.081215,
+        "QR_metric_condition_estimate": 114.2716787192209,
+        "QR_reconstruction_relative_error": 5.69185955806108e-16
+      },
+      {
+        "dimension": 93,
+        "minimum_eigenvalue": 5.7105572471908155e-11,
+        "condition_estimate": 36303160136.38516,
+        "QR_metric_condition_estimate": 116.80376894658112,
+        "QR_reconstruction_relative_error": 5.639226663882419e-16
+      },
+      {
+        "dimension": 93,
+        "minimum_eigenvalue": 3.2296159067322395e-11,
+        "condition_estimate": 62233248812.77946,
+        "QR_metric_condition_estimate": 114.2716787192213,
+        "QR_reconstruction_relative_error": 5.488664940782321e-16
+      },
+      {
+        "dimension": 30,
+        "minimum_eigenvalue": 5.710591568943358e-11,
+        "condition_estimate": 7163722079.717112,
+        "QR_metric_condition_estimate": 1.0000000000000009,
+        "QR_reconstruction_relative_error": 4.450648113851816e-16
+      },
+      {
+        "dimension": 30,
+        "minimum_eigenvalue": 3.2296168545603536e-11,
+        "condition_estimate": 12666855776.62088,
+        "QR_metric_condition_estimate": 1.000000000000001,
+        "QR_reconstruction_relative_error": 4.755351868613249e-16
+      }
+    ]
+  },
+  "trials": [
+    {
+      "case": "round_1_batch_1",
+      "accepted": true,
+      "directions": 72,
+      "lower_Ha": "-19020033513291787093437028058254668238548942481097584660380931/3000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 6.952544864261877,
+      "certificate_bytes": 100907,
+      "trial_wall_seconds": 7.212334584000928,
+      "complete_at_seconds": 18.054039041002397
+    },
+    {
+      "case": "round_1_batch_2",
+      "accepted": true,
+      "directions": 80,
+      "lower_Ha": "-76077374191031796101965430429298220415814513696120258149940899/12000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 6.7225563529825205,
+      "certificate_bytes": 108342,
+      "trial_wall_seconds": 7.812494416997652,
+      "complete_at_seconds": 25.86773754099704
+    },
+    {
+      "case": "round_2_batch_1",
+      "accepted": true,
+      "directions": 88,
+      "lower_Ha": "-45644206359570915536833697548529061147861973057821680354175481/7200000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 6.414479262960003,
+      "certificate_bytes": 115056,
+      "trial_wall_seconds": 8.459214291004173,
+      "complete_at_seconds": 34.3376387909957
+    },
+    {
+      "case": "round_2_batch_2",
+      "accepted": true,
+      "directions": 96,
+      "lower_Ha": "-57051585466519770148062692968993547270333535580362151607626177/9000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 6.006425602529529,
+      "certificate_bytes": 122967,
+      "trial_wall_seconds": 8.6557848750017,
+      "complete_at_seconds": 42.99488058299903
+    },
+    {
+      "case": "round_3_batch_1",
+      "accepted": true,
+      "directions": 104,
+      "lower_Ha": "-228192799463845633923955424745996113347803194347911943528261571/36000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 5.630247762711566,
+      "certificate_bytes": 130695,
+      "trial_wall_seconds": 9.105373375001363,
+      "complete_at_seconds": 52.11117883300176
+    },
+    {
+      "case": "round_3_batch_2",
+      "accepted": true,
+      "directions": 112,
+      "lower_Ha": "-15212276321773918642340579594843193149381176050818421317211071/2400000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 5.389841172798946,
+      "certificate_bytes": 137271,
+      "trial_wall_seconds": 9.227459999994608,
+      "complete_at_seconds": 61.3404407909984
+    },
+    {
+      "case": "round_4_batch_1",
+      "accepted": true,
+      "directions": 120,
+      "lower_Ha": "-7605688526466919461365794730602754831390722067038221036046591/1200000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 5.01514582276573,
+      "certificate_bytes": 146402,
+      "trial_wall_seconds": 9.580208875006065,
+      "complete_at_seconds": 70.93407883300097
+    },
+    {
+      "case": "round_4_batch_2",
+      "accepted": true,
+      "directions": 128,
+      "lower_Ha": "-228162642721025442947843040384144479361803141984468801445602197/36000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.792560462150705,
+      "certificate_bytes": 154406,
+      "trial_wall_seconds": 9.482617583998945,
+      "complete_at_seconds": 80.41879633299686
+    },
+    {
+      "case": "round_5_batch_1",
+      "accepted": true,
+      "directions": 136,
+      "lower_Ha": "-114078302974241079323056262375627838354742298737066081077770359/18000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.624872335948363,
+      "certificate_bytes": 164515,
+      "trial_wall_seconds": 9.907588624999335,
+      "complete_at_seconds": 90.33941004100052
+    },
+    {
+      "case": "round_5_batch_2",
+      "accepted": true,
+      "directions": 144,
+      "lower_Ha": "-114073867566892741903990171185678483511643195002947537532433473/18000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.378460816596284,
+      "certificate_bytes": 171455,
+      "trial_wall_seconds": 11.53750429199863,
+      "complete_at_seconds": 101.87965974999679
+    },
+    {
+      "case": "round_6_batch_1",
+      "accepted": true,
+      "directions": 152,
+      "lower_Ha": "-22814213791891481290404416516111006426920318558896861222447731/3600000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.222982625744315,
+      "certificate_bytes": 179772,
+      "trial_wall_seconds": 11.30205308299628,
+      "complete_at_seconds": 113.19532125000114
+    },
+    {
+      "case": "round_6_batch_2",
+      "accepted": true,
+      "directions": 160,
+      "lower_Ha": "-4562731373029892241451399743539939388121924278033475442655583/720000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.068280752960958,
+      "certificate_bytes": 188773,
+      "trial_wall_seconds": 12.304488209003466,
+      "complete_at_seconds": 125.5028055829971
+    },
+    {
+      "case": "round_7_batch_1",
+      "accepted": true,
+      "directions": 168,
+      "lower_Ha": "-111392542721020537720803691468475768274429140625108142212727/17578125000000000000000000000000000000000000000000000000000",
+      "width_mHa": 3.939359673945658,
+      "certificate_bytes": 196855,
+      "trial_wall_seconds": 14.99169395800709,
+      "complete_at_seconds": 140.51238141599606
+    },
+    {
+      "case": "round_7_batch_2",
+      "accepted": true,
+      "directions": 176,
+      "lower_Ha": "-76042914457519259034426757423665656298031580055389439151852003/12000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 3.8509118936044313,
+      "certificate_bytes": 206218,
+      "trial_wall_seconds": 15.693683874997078,
+      "complete_at_seconds": 156.20858045799832
+    },
+    {
+      "case": "round_8_batch_1",
+      "accepted": true,
+      "directions": 184,
+      "lower_Ha": "-228127166954491003606279875039897023443155115800726715337218247/36000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 3.8071225028607234,
+      "certificate_bytes": 216904,
+      "trial_wall_seconds": 16.809732790999988,
+      "complete_at_seconds": 173.03333429100167
+    },
+    {
+      "case": "round_8_batch_2",
+      "accepted": true,
+      "directions": 192,
+      "lower_Ha": "-76040496222660309620952126477796808828781006320856648918678817/12000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 3.6493923220253137,
+      "certificate_bytes": 226697,
+      "trial_wall_seconds": 19.833513583995227,
+      "complete_at_seconds": 192.86962970800232
+    },
+    {
+      "case": "round_9_batch_1",
+      "accepted": true,
+      "directions": 200,
+      "lower_Ha": "-114058707083617046434077899198633517515071710832575591080021903/18000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 3.5362117457243136,
+      "certificate_bytes": 232332,
+      "trial_wall_seconds": 37.933171707998554,
+      "complete_at_seconds": 230.81981058300153
+    },
+    {
+      "case": "round_9_batch_2",
+      "accepted": true,
+      "directions": 208,
+      "lower_Ha": "-228113790824655701505807957070068817656366574616672895642210577/36000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 3.435563340768998,
+      "certificate_bytes": 240940,
+      "trial_wall_seconds": 42.76266208299785,
+      "complete_at_seconds": 273.5862950829978
+    },
+    {
+      "case": "round_10_batch_1",
+      "accepted": true,
+      "directions": 216,
+      "lower_Ha": "-38018844283791101479197911569716360339043929309775185012654761/6000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 3.415421065516425,
+      "certificate_bytes": 252023,
+      "trial_wall_seconds": 45.01563850000093,
+      "complete_at_seconds": 318.6196335409986
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "from_case": "inherited",
+      "pricing": {
+        "seconds": 0.014747500004887115,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.026010450267486475,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.025410908140735045,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.03938291378361067,
+            "negative_eigenvalues": 14,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.03332352637746484,
+            "negative_eigenvalues": 14,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.03938286608671351,
+            "negative_eigenvalues": 14,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.0333234226612401,
+            "negative_eigenvalues": 14,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.02601049254645029,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.02541082793461676,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Generalized trace-normalized floating proposals only. Exact energy replay decides every gain."
+      },
+      "choices": [
+        {
+          "case": "round_1_batch_1",
+          "gain_mHa": 0.4616744732792651,
+          "gain_Ha_per_second": 6.388117194641976e-05
+        },
+        {
+          "case": "round_1_batch_2",
+          "gain_mHa": 0.6916629845586211,
+          "gain_Ha_per_second": 8.836611821798591e-05
+        }
+      ],
+      "selected": "round_1_batch_2"
+    },
+    {
+      "round": 2,
+      "from_case": "round_1_batch_2",
+      "pricing": {
+        "seconds": 0.007841083999664988,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.015898262530869435,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.016704973377819187,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.022093380609906694,
+            "negative_eigenvalues": 12,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.023981567115956212,
+            "negative_eigenvalues": 12,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.0220932981976407,
+            "negative_eigenvalues": 12,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.02398155931191531,
+            "negative_eigenvalues": 12,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.015898211831135257,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.01670513454979778,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Generalized trace-normalized floating proposals only. Exact energy replay decides every gain."
+      },
+      "choices": [
+        {
+          "case": "round_2_batch_1",
+          "gain_mHa": 0.30807709002251726,
+          "gain_Ha_per_second": 3.638538740776543e-05
+        },
+        {
+          "case": "round_2_batch_2",
+          "gain_mHa": 0.716130750452992,
+          "gain_Ha_per_second": 8.265947235509907e-05
+        }
+      ],
+      "selected": "round_2_batch_2"
+    },
+    {
+      "round": 3,
+      "from_case": "round_2_batch_2",
+      "pricing": {
+        "seconds": 0.007779708001180552,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.008345572020336717,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.008642390018049614,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.01712587193198774,
+            "negative_eigenvalues": 12,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.019296987462693045,
+            "negative_eigenvalues": 12,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.017125758085581106,
+            "negative_eigenvalues": 12,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.019297098443313735,
+            "negative_eigenvalues": 12,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.00834556017255886,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.008642251086609716,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Generalized trace-normalized floating proposals only. Exact energy replay decides every gain."
+      },
+      "choices": [
+        {
+          "case": "round_3_batch_1",
+          "gain_mHa": 0.376177839817963,
+          "gain_Ha_per_second": 4.1278560383188725e-05
+        },
+        {
+          "case": "round_3_batch_2",
+          "gain_mHa": 0.6165844297305821,
+          "gain_Ha_per_second": 6.676431248414147e-05
+        }
+      ],
+      "selected": "round_3_batch_2"
+    },
+    {
+      "round": 4,
+      "from_case": "round_3_batch_2",
+      "pricing": {
+        "seconds": 0.009786458002054133,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0032717798149142423,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.002289870808612424,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.010852359730074404,
+            "negative_eigenvalues": 10,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.011017523938097545,
+            "negative_eigenvalues": 11,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.010852485541758952,
+            "negative_eigenvalues": 10,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.011017537767801922,
+            "negative_eigenvalues": 11,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.003271920574242893,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.002289752943325958,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Generalized trace-normalized floating proposals only. Exact energy replay decides every gain."
+      },
+      "choices": [
+        {
+          "case": "round_4_batch_1",
+          "gain_mHa": 0.3746953500332165,
+          "gain_Ha_per_second": 3.907148408545522e-05
+        },
+        {
+          "case": "round_4_batch_2",
+          "gain_mHa": 0.5972807106482413,
+          "gain_Ha_per_second": 6.29219645524417e-05
+        }
+      ],
+      "selected": "round_4_batch_2"
+    },
+    {
+      "round": 5,
+      "from_case": "round_4_batch_2",
+      "pricing": {
+        "seconds": 0.009582709004462231,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0012842477827178884,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0011422861215307292,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.011159226343957517,
+            "negative_eigenvalues": 9,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.012701112914186491,
+            "negative_eigenvalues": 10,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.011159134078285933,
+            "negative_eigenvalues": 9,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.012701295024835624,
+            "negative_eigenvalues": 10,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0012843135574756945,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.001142132748277908,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Generalized trace-normalized floating proposals only. Exact energy replay decides every gain."
+      },
+      "choices": [
+        {
+          "case": "round_5_batch_1",
+          "gain_mHa": 0.16768812620234172,
+          "gain_Ha_per_second": 1.690886650585294e-05
+        },
+        {
+          "case": "round_5_batch_2",
+          "gain_mHa": 0.4140996455544205,
+          "gain_Ha_per_second": 3.586182779418288e-05
+        }
+      ],
+      "selected": "round_5_batch_2"
+    },
+    {
+      "round": 6,
+      "from_case": "round_5_batch_2",
+      "pricing": {
+        "seconds": 0.008743165999476332,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0018350877597061719,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.001436745795931297,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.0069389522416454,
+            "negative_eigenvalues": 9,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.008235495722272921,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.006939019273378298,
+            "negative_eigenvalues": 9,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.008235582184663574,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0018351905593841855,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0014364403510054647,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Generalized trace-normalized floating proposals only. Exact energy replay decides every gain."
+      },
+      "choices": [
+        {
+          "case": "round_6_batch_1",
+          "gain_mHa": 0.15547819085196957,
+          "gain_Ha_per_second": 1.3745998728053639e-05
+        },
+        {
+          "case": "round_6_batch_2",
+          "gain_mHa": 0.31018006363532596,
+          "gain_Ha_per_second": 2.5190793073621736e-05
+        }
+      ],
+      "selected": "round_6_batch_2"
+    },
+    {
+      "round": 7,
+      "from_case": "round_6_batch_2",
+      "pricing": {
+        "seconds": 0.012143583000579383,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0006190445371312569,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0006831149048756083,
+            "negative_eigenvalues": 2,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.0055534798537883534,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.004561705571917799,
+            "negative_eigenvalues": 9,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.005553475456646994,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.004561708863163387,
+            "negative_eigenvalues": 9,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0006191614500857615,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0006832946711019329,
+            "negative_eigenvalues": 2,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Generalized trace-normalized floating proposals only. Exact energy replay decides every gain."
+      },
+      "choices": [
+        {
+          "case": "round_7_batch_1",
+          "gain_mHa": 0.12892107901530056,
+          "gain_Ha_per_second": 8.592540319297681e-06
+        },
+        {
+          "case": "round_7_batch_2",
+          "gain_mHa": 0.21736885935652692,
+          "gain_Ha_per_second": 1.3840013201331793e-05
+        }
+      ],
+      "selected": "round_7_batch_2"
+    },
+    {
+      "round": 8,
+      "from_case": "round_7_batch_2",
+      "pricing": {
+        "seconds": 0.010000291993492283,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0001881679951107359,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.00017086826338694788,
+            "negative_eigenvalues": 2,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.0034691082470001814,
+            "negative_eigenvalues": 7,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.0033890018599484206,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.0034690579194373333,
+            "negative_eigenvalues": 7,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.0033889019051388286,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0001881097701633171,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.00017089818255629623,
+            "negative_eigenvalues": 2,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Generalized trace-normalized floating proposals only. Exact energy replay decides every gain."
+      },
+      "choices": [
+        {
+          "case": "round_8_batch_1",
+          "gain_mHa": 0.04378939074370825,
+          "gain_Ha_per_second": 2.60345336799571e-06
+        },
+        {
+          "case": "round_8_batch_2",
+          "gain_mHa": 0.2015195715791178,
+          "gain_Ha_per_second": 1.0155437834171239e-05
+        }
+      ],
+      "selected": "round_8_batch_2"
+    },
+    {
+      "round": 9,
+      "from_case": "round_8_batch_2",
+      "pricing": {
+        "seconds": 0.01078929199866252,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.00012431436245831473,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -3.54823369280061e-05,
+            "negative_eigenvalues": 2,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.00268833001538517,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.00240394331191057,
+            "negative_eigenvalues": 7,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.0026882755640662208,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.0024038013883021197,
+            "negative_eigenvalues": 7,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -0.0001243434941562896,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -3.545038480708322e-05,
+            "negative_eigenvalues": 2,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Generalized trace-normalized floating proposals only. Exact energy replay decides every gain."
+      },
+      "choices": [
+        {
+          "case": "round_9_batch_1",
+          "gain_mHa": 0.11318057630099985,
+          "gain_Ha_per_second": 2.98283503667443e-06
+        },
+        {
+          "case": "round_9_batch_2",
+          "gain_mHa": 0.21382898125631547,
+          "gain_Ha_per_second": 4.99910515477623e-06
+        }
+      ],
+      "selected": "round_9_batch_2"
+    },
+    {
+      "round": 10,
+      "from_case": "round_9_batch_2",
+      "pricing": {
+        "seconds": 0.011758250002458226,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -6.980217103456111e-05,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -3.245879242408686e-05,
+            "negative_eigenvalues": 1,
+            "new_independent_candidates": 1
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.0011660224313122824,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.0018763333253524002,
+            "negative_eigenvalues": 7,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.0011663281147958505,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_normalized_moment": -0.001878525241885095,
+            "negative_eigenvalues": 7,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -6.967812507856067e-05,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_normalized_moment": -3.234391016097242e-05,
+            "negative_eigenvalues": 1,
+            "new_independent_candidates": 1
+          }
+        ],
+        "scope": "Generalized trace-normalized floating proposals only. Exact energy replay decides every gain."
+      },
+      "choices": [
+        {
+          "case": "round_10_batch_1",
+          "gain_mHa": 0.02014227525257307,
+          "gain_Ha_per_second": 4.473337724675712e-07
+        }
+      ],
+      "unrun_bundle": 2,
+      "selected": "round_10_batch_1"
+    }
+  ],
+  "best_case": "round_10_batch_1",
+  "complete": true,
+  "pending_trial": null,
+  "elapsed_seconds": 318.6244821250002,
+  "continuation_case": "round_10_batch_1",
+  "stop": "time_reserve"
+}

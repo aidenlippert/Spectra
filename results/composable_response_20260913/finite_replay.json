@@ -1,0 +1,248 @@
+{
+  "controls": [
+    {
+      "control": "zero_response",
+      "accepted": false,
+      "failed_blocks": 6
+    },
+    {
+      "control": "constant_response",
+      "accepted": false,
+      "failed_blocks": 6
+    },
+    {
+      "control": "polynomial_response",
+      "accepted": true,
+      "failed_blocks": 0
+    },
+    {
+      "control": "direct_full_factor",
+      "accepted": true,
+      "failed_blocks": 0
+    }
+  ],
+  "ablation_shared_block_construction": {
+    "physical_sector_basis_labels_generated": 924,
+    "Hamiltonian_action_sources": 924,
+    "word_state_checks": 848232,
+    "retained_dimension": 714,
+    "eliminated_dimension": 210,
+    "largest_full_conserved_block": 200,
+    "largest_retained_block": 152,
+    "largest_eliminated_block": 52,
+    "full_block_matrix_entries": 132004,
+    "response_matrix_entries": 23910,
+    "retained_matrix_entries": 76646,
+    "block_partition_parity_mask": 819,
+    "preparation_seconds": 0.06519537499116268
+  },
+  "transfer": {
+    "lower_Ha": "-116629388962665604041510541771199/19999999999066784016000000000000",
+    "upper_Ha": "-116601388962666910543888141771199/19999999999066784016000000000000",
+    "width_Ha": "7/5000",
+    "width_mHa": 1.4,
+    "blocks": [
+      {
+        "key": [
+          0,
+          1
+        ],
+        "retained_dimension": 1,
+        "eliminated_dimension": 0,
+        "actual_residual_penalty_Ha": "0",
+        "accepted_residual_penalty_Ha": "0",
+        "retained_margin_Ha": "19532058998291529716723044281011/195312499990886562656250000000000000000",
+        "retained_margin_float_Ha": 1.000041420759189e-07
+      },
+      {
+        "key": [
+          1,
+          0
+        ],
+        "retained_dimension": 15,
+        "eliminated_dimension": 3,
+        "actual_residual_penalty_Ha": "416146433545565707886410283403832303448011803558452633094366977564518307/487999999954459059981862488328807567672320000000000000000000000000000000000000000",
+        "accepted_residual_penalty_Ha": "853/1000000000000",
+        "retained_margin_Ha": "7996787037562296622516222594804332285955433/79999999996267136064000000000000000000000000000000",
+        "retained_margin_float_Ha": 9.995983797419292e-08
+      },
+      {
+        "key": [
+          1,
+          1
+        ],
+        "retained_dimension": 16,
+        "eliminated_dimension": 2,
+        "actual_residual_penalty_Ha": "2940456813995570289506301850064848851444230146206185767303927111047263917/14639999998633771799455874649864227030169600000000000000000000000000000000000000000",
+        "accepted_residual_penalty_Ha": "201/1000000000000",
+        "retained_margin_Ha": "199895691999912365921480962213736130671600657/1999999999906678401600000000000000000000000000000000",
+        "retained_margin_float_Ha": 9.994784600461982e-08
+      },
+      {
+        "key": [
+          2,
+          0
+        ],
+        "retained_dimension": 84,
+        "eliminated_dimension": 24,
+        "actual_residual_penalty_Ha": "45016813034512894033917624841496277627667039157692390768223112919808116109/4879999999544590599818624883288075676723200000000000000000000000000000000000000000",
+        "accepted_residual_penalty_Ha": "369/40000000000",
+        "retained_margin_Ha": "4155897461486328249446625414028006758043917/41666666664722466700000000000000000000000000000000",
+        "retained_margin_float_Ha": 9.97415390803259e-08
+      },
+      {
+        "key": [
+          2,
+          1
+        ],
+        "retained_dimension": 91,
+        "eliminated_dimension": 26,
+        "actual_residual_penalty_Ha": "86727926528289265289693979037621017759636342272101892477909877349331735077/7319999999316885899727937324932113515084800000000000000000000000000000000000000000",
+        "accepted_residual_penalty_Ha": "11849/1000000000000",
+        "retained_margin_Ha": "49868985720260724705428612643808532402337661/499999999976669600400000000000000000000000000000000",
+        "retained_margin_float_Ha": 9.973797144517531e-08
+      },
+      {
+        "key": [
+          3,
+          0
+        ],
+        "retained_dimension": 148,
+        "eliminated_dimension": 52,
+        "actual_residual_penalty_Ha": "331896084405673252304511757774588159183510853943570337556309353195450551461/14639999998633771799455874649864227030169600000000000000000000000000000000000000000",
+        "accepted_residual_penalty_Ha": "22671/1000000000000",
+        "retained_margin_Ha": "49759743712358335456563470847018192932960717/499999999976669600400000000000000000000000000000000",
+        "retained_margin_float_Ha": 9.951948742936033e-08
+      },
+      {
+        "key": [
+          3,
+          1
+        ],
+        "retained_dimension": 152,
+        "eliminated_dimension": 48,
+        "actual_residual_penalty_Ha": "40786589591334462367628245999030713095065696529263031010517301765859793367/1829999999829221474931984331233028378771200000000000000000000000000000000000000000",
+        "accepted_residual_penalty_Ha": "1393/62500000000",
+        "retained_margin_Ha": "49771101671323714363297404966570297821336113/499999999976669600400000000000000000000000000000000",
+        "retained_margin_float_Ha": 9.954220334729215e-08
+      },
+      {
+        "key": [
+          4,
+          0
+        ],
+        "retained_dimension": 84,
+        "eliminated_dimension": 24,
+        "actual_residual_penalty_Ha": "45016813034512894033917624841496277627667039157692390768223112919808116109/4879999999544590599818624883288075676723200000000000000000000000000000000000000000",
+        "accepted_residual_penalty_Ha": "369/40000000000",
+        "retained_margin_Ha": "24939210559871422894460253454609788676678693/249999999988334800200000000000000000000000000000000",
+        "retained_margin_float_Ha": 9.975684224414042e-08
+      },
+      {
+        "key": [
+          4,
+          1
+        ],
+        "retained_dimension": 91,
+        "eliminated_dimension": 26,
+        "actual_residual_penalty_Ha": "86727926528289265289693979037621017759636342272101892477909877349331735077/7319999999316885899727937324932113515084800000000000000000000000000000000000000000",
+        "accepted_residual_penalty_Ha": "11849/1000000000000",
+        "retained_margin_Ha": "99740113416176660284362376441226779744091909/999999999953339200800000000000000000000000000000000",
+        "retained_margin_float_Ha": 9.974011342083062e-08
+      },
+      {
+        "key": [
+          5,
+          0
+        ],
+        "retained_dimension": 15,
+        "eliminated_dimension": 3,
+        "actual_residual_penalty_Ha": "416146433545565707886410283403832303448011803558452633094366977564518307/487999999954459059981862488328807567672320000000000000000000000000000000000000000",
+        "accepted_residual_penalty_Ha": "853/1000000000000",
+        "retained_margin_Ha": "7996787037562296622516222594804332285955433/79999999996267136064000000000000000000000000000000",
+        "retained_margin_float_Ha": 9.995983797419292e-08
+      },
+      {
+        "key": [
+          5,
+          1
+        ],
+        "retained_dimension": 16,
+        "eliminated_dimension": 2,
+        "actual_residual_penalty_Ha": "2940456813995570289506301850064848851444230146206185767303927111047263917/14639999998633771799455874649864227030169600000000000000000000000000000000000000000",
+        "accepted_residual_penalty_Ha": "201/1000000000000",
+        "retained_margin_Ha": "199910116282890821830615004358139335138462803/1999999999906678401600000000000000000000000000000000",
+        "retained_margin_float_Ha": 9.99550581461094e-08
+      },
+      {
+        "key": [
+          6,
+          1
+        ],
+        "retained_dimension": 1,
+        "eliminated_dimension": 0,
+        "actual_residual_penalty_Ha": "0",
+        "accepted_residual_penalty_Ha": "0",
+        "retained_margin_Ha": "19532058998291529716723044281011/195312499990886562656250000000000000000",
+        "retained_margin_float_Ha": 1.000041420759189e-07
+      }
+    ],
+    "response_program_replay": {
+      "response_program_sha256": "c6878abc1e858e783c981c97177dcc7d07ac2712252626c51f1000e60f038197",
+      "target_Ha": "-116629388962665604041510541771199/19999999999066784016000000000000",
+      "order": 32,
+      "polynomial_degree": 31,
+      "D_actions_per_right_hand_side": 31,
+      "exact_program_residual_factor": "2009373932076405945661486162641568476797079587535646185023304749171562914750995120652769341384969744340388060480048225509460762281914881/35733135455825740034763597290744015859438541400694023682762468620222067910904743863012483101007422628314508196158717832156386637679891059201",
+      "residual_factor_float": 5.6232790838084946e-05,
+      "exact_program_residual_penalty_Ha": "27015780335719285341483442501775287774261061082908492437786152995671083601423705937902388136915393229103165647619693942462343542330326926198231299279418518173403610721413720599317795158478411860939611580939063468014199838277773261627364017003672815476347097483821517858799634144561/46732965083860696620678674647127628506271606691590619335116517467651871862589674680583935759407110070562611238800467960366456906103665088698716203083986232389385000087768810314056301810530499095170569805107467382049848492414001789218086391330649382867526153017077940269751335357476600000",
+      "residual_penalty_float_Ha": 5.780882999236277e-07,
+      "delta_Ha": "183/500",
+      "delta_float_Ha": 0.366,
+      "M_Ha": "34741/2500",
+      "M_float_Ha": 13.8964,
+      "coupling_norm_Ha": "81799/10000",
+      "old_delta_float_Ha": 0.009717501697381227,
+      "unrounded_delta_float_Ha": 0.36607192379231296,
+      "coupling_operator_terms": 193,
+      "coupling_max_degree": 6,
+      "scalar_recurrence_rational_bits": 464,
+      "many_body_states_enumerated": 0,
+      "many_body_inverse_entries": 0,
+      "retained_remainder_certified_by_this_rule": false,
+      "replay_seconds": 0.20371216599596664,
+      "scope": "Exact operator-program error certificate on every retained vector. K positivity and any response-action cost are separate."
+    },
+    "upper_replay": {
+      "method": "bounded_streaming_integer_reference_upper_v1",
+      "witness_states": 200,
+      "hamiltonian_terms": 918,
+      "word_state_checks": 183600,
+      "contributing_word_state_pairs": 23424,
+      "action_cache_states": 0,
+      "replay_seconds": 0.031598375004250556,
+      "upper": "-116601388962666910543888141771199/19999999999066784016000000000000",
+      "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+    },
+    "explicit_enumeration_and_matrices": {
+      "physical_sector_basis_labels_generated": 924,
+      "Hamiltonian_action_sources": 924,
+      "word_state_checks": 848232,
+      "retained_dimension": 714,
+      "eliminated_dimension": 210,
+      "largest_full_conserved_block": 200,
+      "largest_retained_block": 152,
+      "largest_eliminated_block": 52,
+      "full_block_matrix_entries": 132004,
+      "response_matrix_entries": 23910,
+      "retained_matrix_entries": 76646,
+      "block_partition_parity_mask": 819,
+      "preparation_seconds": 0.06502012501005083
+    },
+    "matrix_inverse_entries": 0,
+    "replay_seconds": 0.8809434169961605,
+    "scope": "A complete lower bound using explicitly expanded retained closure. The compact program alone does not prove this endpoint."
+  },
+  "wall_seconds": 3.0058239589998266,
+  "numerical_packages_loaded": []
+}

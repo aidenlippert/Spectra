@@ -1,0 +1,36 @@
+{
+  "success": true,
+  "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "solve_seconds": 15.94293000001926,
+  "preparation_seconds": 22.85703866602853,
+  "rows": 400,
+  "columns": 20110,
+  "nonzeros": 1480387,
+  "quotients": [
+    {
+      "variables": 6,
+      "population": 3,
+      "maximum_degree": 3,
+      "monomials": 42,
+      "relations": 22,
+      "quotient_dimension": 20,
+      "configuration_evaluations": 0
+    },
+    {
+      "variables": 6,
+      "population": 3,
+      "maximum_degree": 3,
+      "monomials": 42,
+      "relations": 22,
+      "quotient_dimension": 20,
+      "configuration_evaluations": 0
+    }
+  ],
+  "configuration_evaluations": 0,
+  "seed": "results/marginal_h6/polynomial_metric/vanishing_metric_proof/certificate.json",
+  "source": "results/marginal_h6/polynomial_metric/vanishing_metric_transfer/candidate.json",
+  "scope": "Numerical coefficient-space proposal using inherited original-H positive directions plus all degree<=4 indicators/localizers. No physical state evaluation; metric inherited; exact export is required for acceptance.",
+  "bound": 0.013701889430047094,
+  "minimum_coefficient": -1.7367759064246258e-08,
+  "max_equation_residual": 6.394884621840902e-14
+}

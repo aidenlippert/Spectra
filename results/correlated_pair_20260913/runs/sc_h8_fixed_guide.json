@@ -1,0 +1,24 @@
+{
+  "name": "sc_h8_fixed_guide",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.correlated_pair_20260913.self_consistent.fixed_guide",
+    "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "results/correlated_pair_20260913/self_consistent/h8_fixed",
+    "--iterations",
+    "2"
+  ],
+  "timeout_seconds": 210,
+  "status": "timeout",
+  "started_UTC": "2026-09-14T06:59:16.994797+00:00",
+  "pid": 22326,
+  "exit_code": -15,
+  "wall_seconds": 210.0124685829942,
+  "child_user_seconds": 205.683026,
+  "child_system_seconds": 1.317611,
+  "peak_child_RSS_bytes": 158433280,
+  "finished_UTC": "2026-09-14T07:02:47.005369+00:00"
+}

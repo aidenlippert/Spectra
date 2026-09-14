@@ -1,0 +1,24 @@
+Fri Sep 11 02:21:47 2026    results/marginal_defect_dicke/cycle_initial_profile.prof
+
+         2223674 function calls (2223650 primitive calls) in 1.207 seconds
+
+   Ordered by: cumulative time
+   List reduced from 262 to 14 due to restriction <14>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    1.207    1.207 marginal_defect_dicke.py:295(enlarged_replay)
+        1    0.000    0.000    1.163    1.163 marginal_defect_dicke.py:266(enlarged_prepare)
+      832    0.668    0.001    1.058    0.001 marginal_defect_dicke.py:71(inner)
+        7    0.000    0.000    1.013    0.145 marginal_defect_dicke.py:83(gram)
+   179781    0.075    0.000    0.342    0.000 fractions.py:613(forward)
+    85078    0.089    0.000    0.115    0.000 marginal_defect_dicke.py:53(_atom_overlap)
+    93538    0.051    0.000    0.102    0.000 fractions.py:742(_mul)
+    86604    0.049    0.000    0.094    0.000 fractions.py:710(_add)
+   183686    0.046    0.000    0.065    0.000 fractions.py:317(_from_coprime_ints)
+        1    0.000    0.000    0.051    0.051 marginal_defect_dicke.py:194(closure)
+       20    0.000    0.000    0.047    0.002 marginal_defect_dicke.py:111(apply_polynomial)
+   253560    0.027    0.000    0.046    0.000 {built-in method builtins.isinstance}
+   104963    0.032    0.000    0.044    0.000 fractions.py:186(__new__)
+      360    0.015    0.000    0.039    0.000 marginal_defect_dicke.py:86(apply_word)
+
+

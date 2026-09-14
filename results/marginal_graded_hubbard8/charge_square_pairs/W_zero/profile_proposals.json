@@ -1,0 +1,68 @@
+{
+  "rows": [
+    {
+      "name": "profile_joint_r1_2",
+      "rational_parameters": [
+        "5797/40000",
+        "56963/15625",
+        "653483/1000000",
+        "1148173/1000000",
+        "-15757/100000",
+        "44127/50000",
+        "137971/1000000",
+        "38483/250000"
+      ],
+      "local_minimum": -3.0522799270649354,
+      "active_sector": [
+        3,
+        2,
+        1
+      ],
+      "lower": "-30522801/10000000",
+      "proposed_periodic_density": "-16081547119157221/25000000000000000",
+      "density_float": -0.6432618847662889,
+      "matrix_evaluations": 115,
+      "max_fresh_affine_difference": 1.9539925233402755e-14,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully",
+      "telescoping_coefficients": [
+        "18209/500000",
+        "8079/200000",
+        "-1957/62500",
+        "188171/1000000",
+        "-98509/1000000",
+        "49253/250000",
+        "34669/1000000",
+        "15937/500000",
+        "-13997/250000"
+      ],
+      "free_range_two_profile": true,
+      "range_two_profile_shift": "-157269/500000",
+      "complete_quadratic_charge_family": true,
+      "quadratic_charge_coefficient": "-533/3125",
+      "charge_square_pair_coefficients": {
+        "0,1": "11169/50000",
+        "0,2": "-413/12500",
+        "0,3": "-6241/200000",
+        "1,2": "17481/125000"
+      },
+      "shape_indices": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        31,
+        11,
+        20
+      ],
+      "seed_certificate": "results/marginal_graded_hubbard8/quadratic_charge_telescope/W_zero/profile_joint_r1_2_certificate.json",
+      "seed_sha256": "80ed503f1dec7c3986c5526f45e4eee30c61c972ee544716758cf2e9e0b31715"
+    }
+  ],
+  "seconds": 17.432910833998903,
+  "signed_density": true,
+  "driver_sha256": "1526a23d99ab37cf6beaa4230b80b508f3b2941678a6eb6d264f7ee885635298",
+  "scope": "Numerical proposals only, equal250 evaluation caps, fresh exact-CAR matrix numerical check. No optimizer optimality or exact PSD claim."
+}

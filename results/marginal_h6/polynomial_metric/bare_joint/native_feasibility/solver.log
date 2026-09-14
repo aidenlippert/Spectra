@@ -1,0 +1,54 @@
+Running HiGHS 1.15.1 (git hash: 04024d7): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+LP has 801 rows; 192885 cols; 11327245 nonzeros
+Coefficient ranges:
+  Matrix  [6e-04, 2e+02]
+  Cost    [0e+00, 0e+00]
+  Bound   [5e-03, 5e-03]
+  RHS     [1e-03, 1e+00]
+Presolving model
+801 rows, 189324 cols, 11322724 nonzeros 4s
+800 rows, 133759 cols, 8911748 nonzeros 7s
+Dependent equations search running on 800 equations with time limit of 1.80s
+Dependent equations search removed 0 rows and 0 nonzeros in 0.06s (limit = 1.80s)
+800 rows, 133759 cols, 8911748 nonzeros 9s
+Presolve reductions: rows 800(-1); columns 133759(-59126); nonzeros 8911748(-2415497) 
+Solving the presolved LP
+Using dual simplex solver
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 436(269.838); Du: 0(1.84536e-09) 9.7s
+        928     2.1958455095e-06 Pr: 459(174.173); Du: 0(9.33763e-08) 15.2s
+       1400     2.7478180895e-06 Pr: 419(192.216); Du: 0(7.63316e-08) 20.6s
+       1902     3.2566868071e-06 Pr: 376(151.573); Du: 0(1.02619e-07) 26.4s
+       2405     3.7148738028e-06 Pr: 379(78.8377); Du: 0(8.97273e-08) 32.0s
+       2919     4.1595142240e-06 Pr: 360(120.57); Du: 0(8.59115e-08) 37.8s
+       3406     4.5569692004e-06 Pr: 371(147.933); Du: 0(1.00629e-07) 43.2s
+       4089     5.0808842305e-06 Pr: 386(170.413); Du: 0(1.55937e-07) 50.9s
+       4589     5.5017508848e-06 Pr: 352(112.283); Du: 0(1.15875e-07) 56.6s
+       5103     5.8840046159e-06 Pr: 369(82.2281); Du: 0(8.92719e-08) 62.4s
+       5609     6.1680767294e-06 Pr: 371(172.697); Du: 0(1.41052e-07) 67.9s
+       6125     6.4922952821e-06 Pr: 361(128.126); Du: 0(8.96301e-08) 73.7s
+       6645     6.7918791356e-06 Pr: 355(64.0262); Du: 0(7.5932e-08) 79.4s
+       7171     7.0573451155e-06 Pr: 352(101.387); Du: 0(1.17703e-07) 85.4s
+       7663     7.3283290894e-06 Pr: 359(85.2443); Du: 0(1.43412e-07) 90.8s
+       8183     7.6594279211e-06 Pr: 371(61.0775); Du: 0(6.81403e-08) 96.7s
+       8696     7.9845677096e-06 Pr: 364(77.412); Du: 0(1.27382e-07) 102.5s
+       9197     8.2857751223e-06 Pr: 363(76.4206); Du: 0(9.75913e-08) 108.0s
+       9701     8.5270133986e-06 Pr: 359(69.2555); Du: 0(1.10315e-07) 113.6s
+      10213     8.7600561848e-06 Pr: 367(144.803); Du: 0(9.8542e-08) 119.3s
+      10716     9.0103537704e-06 Pr: 362(86.6019); Du: 0(8.9646e-08) 125.0s
+      11249     9.3318449632e-06 Pr: 368(217.334); Du: 0(1.19973e-07) 131.0s
+      11769     9.6188617367e-06 Pr: 349(91.229); Du: 0(1.07649e-07) 136.9s
+      12307     9.8029542741e-06 Pr: 372(152.852); Du: 0(4.74287e-08) 143.0s
+      12819     1.0066491132e-05 Pr: 353(81.4718); Du: 0(5.65709e-08) 148.7s
+      13304     1.0249384705e-05 Pr: 373(226.311); Du: 0(9.40919e-08) 154.2s
+      13856     1.0447973344e-05 Pr: 340(78.9497); Du: 0(7.18413e-08) 160.3s
+      14339     1.0665838245e-05 Pr: 352(145.177); Du: 0(1.7204e-07) 165.9s
+      14858     1.0883064043e-05 Pr: 362(115.056); Du: 0(9.69815e-08) 171.7s
+      15418     1.1123435429e-05 Pr: 372(255.766); Du: 0(9.68815e-08) 178.0s
+      15603     1.1204447152e-05 180.0s
+Model status        : Time limit reached
+Simplex   iterations: 15603
+Objective value     :  0.0000000000e+00
+HiGHS run time      :        180.02
+{"solver_version": "1.15.1", "method": "dual simplex feasibility with fixed numerator floor", "floor": "1/200", "status": "Time limit reached", "seconds": 180.04630387504585, "iterations": 15603, "source_sha256": "9b7255212be2f6d31ff451bed7ad65c08e3d8af6db86214bb36edd40a9b87e9e", "prepared_source": "results/marginal_h6/polynomial_metric/bare_joint/search", "shape": [801, 192885], "nonzeros": 11327245, "value_valid": false, "scope": "Same bare-H model, no imported metric or atom weights; fixed positive numerator floor rather than bound optimization. Exact export is the acceptance gate.", "exact_accepted": false}

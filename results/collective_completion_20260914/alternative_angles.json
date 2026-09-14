@@ -1,0 +1,90 @@
+{
+  "filter": {
+    "exact_scalar_kernel_checks": 1376,
+    "status": "derived sufficient theorem, no molecular filter witness",
+    "supplied_toy_archives_available_locally": false,
+    "molecular_certificate_accepted": false,
+    "required_final_norm": "Unnormalized Hilbert-Schmidt norm on the whole target sector",
+    "missing_construction": "Compact filter sequence plus deterministic final trace and all operator-norm defect bounds"
+  },
+  "molecules": {
+    "h6": {
+      "case": "h6",
+      "fixture_sha256": "ea50a4ab19a353bc89691bb344fcf8d610f74e1c2c76bf07c6869be2b24dbec8",
+      "state_sha256": "f75d6e27e3fe183445d4db906b86720fecc0d2955253b8f25cccb1fd51742b01",
+      "complete_sector_dimension": 924,
+      "selected_determinant_labels": 49,
+      "Hamiltonian_column_queries": 2,
+      "full_determinant_basis_generated": false,
+      "signed_cycle": {
+        "states": [
+          63,
+          207,
+          3087
+        ],
+        "edge_Ha": [
+          "103864127309/1000000000000",
+          "1764295281/15625000000",
+          "21508150369/250000000000"
+        ],
+        "cycle_product_positive": true,
+        "all_negative_diagonal_sign_gauge_impossible_for_this_cycle": true
+      },
+      "selected_MPS_amplitude_signs": {
+        "positive": 28,
+        "negative": 21,
+        "exact_zero": 0
+      },
+      "longest_nonconstant_operator_span_spin_modes": 12,
+      "spectral_filter_diagnostic": {
+        "target_b_Ha": "-6334551155349393507980232434247671219509587275001168172606372963545099033761295930571332998938561141875144768210171232009407593755583653565961512177479077971940361151634052260009323551206733943/999999383519423276074251305321623806426591727772533977981782828869816843563395515958935372387327253599973269768958211998077216507324994374844782691678987383444664761016382623898324000000000000",
+        "a_Ha": "-6333751155842577969359373033203413920464446001618950145423987537282003180286445214158565850640651280072264789594356065439809131982377793570461636351325734782033605419825239153910204892006733943/999999383519423276074251305321623806426591727772533977981782828869816843563395515958935372387327253599973269768958211998077216507324994374844782691678987383444664761016382623898324000000000000",
+        "certified_spectral_upper_Ha": "9292650750213/125000000000",
+        "normalized_squared_trace_must_be_below": "1/924",
+        "rough_uniform_suppression_degree": 653,
+        "defect_multiplier_approx": 158.78184825228422,
+        "accepts_a_molecular_bound": false
+      },
+      "scope": "A cycle excludes only diagonal sign gauges in this occupation basis. It does not exclude signed routing, another basis, or another compact ansatz."
+    },
+    "h8": {
+      "case": "h8",
+      "fixture_sha256": "ae6221749adf40be04631a5511a5deb27f3a36d6b4a3121f51811bb954c4df07",
+      "state_sha256": "7f3215f9367d1851c194ff6bddde345d2a6f27ac4d4d74ba42b90b253b36248e",
+      "complete_sector_dimension": 12870,
+      "selected_determinant_labels": 49,
+      "Hamiltonian_column_queries": 2,
+      "full_determinant_basis_generated": false,
+      "signed_cycle": {
+        "states": [
+          255,
+          831,
+          3135
+        ],
+        "edge_Ha": [
+          "82686346589/1000000000000",
+          "103377657121/1000000000000",
+          "17462350853/250000000000"
+        ],
+        "cycle_product_positive": true,
+        "all_negative_diagonal_sign_gauge_impossible_for_this_cycle": true
+      },
+      "selected_MPS_amplitude_signs": {
+        "positive": 34,
+        "negative": 15,
+        "exact_zero": 0
+      },
+      "longest_nonconstant_operator_span_spin_modes": 16,
+      "spectral_filter_diagnostic": {
+        "target_b_Ha": "-96421647577714710811427732789556792034428299698863699597315835353940608337379254023709176052973975863367082315592000811116571581217748507192248024988304910893712935392292700332758774055006040818989352474372030424329518737498454703463410118806962767828267189638721/10416666681366128139025077588426157777196472916600533534511978270474724715766654315271523831102045082704716582998560034624027721405606900471966456548039163183196819459817932009693131265884064116310586385813423340702869292372988380208030951789665275378000000000000",
+        "a_Ha": "-96413314244369617908916512727486051108206542520530419170488225771324228557606640700256958833909094227300918542325601963088872359040624021671870451823066479563166377936724845987151019549993333567696304005263379685656956442064556312759243694045531035607964789638721/10416666681366128139025077588426157777196472916600533534511978270474724715766654315271523831102045082704716582998560034624027721405606900471966456548039163183196819459817932009693131265884064116310586385813423340702869292372988380208030951789665275378000000000000",
+        "certified_spectral_upper_Ha": "138052076108063/1000000000000",
+        "normalized_squared_trace_must_be_below": "1/12870",
+        "rough_uniform_suppression_degree": 1164,
+        "defect_multiplier_approx": 214.5563404059103,
+        "accepts_a_molecular_bound": false
+      },
+      "scope": "A cycle excludes only diagonal sign gauges in this occupation basis. It does not exclude signed routing, another basis, or another compact ansatz."
+    }
+  }
+}

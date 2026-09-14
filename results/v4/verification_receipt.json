@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-10",
+  "test_count": 90,
+  "tests_passed": true,
+  "saved_selected_certificates_verified": 448,
+  "saved_candidate_certificates_verified": 840,
+  "source_likelihood_tables_recomputed": 32,
+  "calibration_policy_risks_and_counts_verified": 4,
+  "train_test_exact_context_overlap": 0,
+  "second_learned_increment_positive": false,
+  "calibration_learner_likelihood_table_access": false,
+  "physical_experiments_performed": false,
+  "larger_goal_complete": false,
+  "hashes": {
+    "experiments/v4_calibration.py": "773c664a296cf69b6a0af433c3c61e27b3db056b62082f52a9307447efb89c20",
+    "experiments/v4_learner.py": "208fddc3ca745560e0be5d5a3aad3ead5e005dbab443dec30a4fd877c4bc2c8d",
+    "experiments/v4_moments.py": "794de007840c365a12eb9519c0f973edba3d769e9dffe6d6aa6cc37bab9be353",
+    "experiments/v4_physics.py": "2244b73da71999184d8eeb656368ee3010786339e6db5e569de78b6c15612b9d",
+    "experiments/v4_planner.py": "5e1fc4b63c8da4fcec712aef91843dfc4abf99d8fafa72a703ee506c57396d31",
+    "experiments/v4_run.py": "5939baa7669359e05b3835234c51d579e2e793d0554e176db5dac8cd3cf9f8b9",
+    "experiments/v4_verify.py": "c78629b25c9ad0e89b7bbe851589c8195593617939d01d687e17cba58f8c4872",
+    "tests/test_v4_calibration.py": "17f3b40fd14f5fd5fcd5f9c359d01787bdf800347044d8e1fc8caae46fe7293a",
+    "tests/test_v4_feature_obstruction.py": "33017ef548cea31930f12e52f0ab8b03d74fe1741cc64ec8d3a0103ae5a31ba9",
+    "tests/test_v4_learner.py": "9537e04262fbe7d7b6429b8a9e5027d48ddadda577fbcb5f32d22a961452aaf1",
+    "tests/test_v4_moments.py": "2b465bb365f807d1d43de0bdc7666481b9f6807b5d85f13380767c5768c90464",
+    "tests/test_v4_physics.py": "8fd154cf3679a41e14625f7434f3b52d5366dc99be6be5b9cbeef98a6309f9cb",
+    "tests/test_v4_planner.py": "7f8b1f3cee8140d0b3f65cdc07f08ec46fc70ac60d7a10d1a826b2c55a33d719",
+    "tests/test_v4_run.py": "643fb2fb917394967b24f7c7323e22e1c4a2a0d0fbe7a2758469e3fb929e80ea"
+  },
+  "result_hashes": {
+    "policy_results.json": "3b715d09f42f4ae95345edb92a4ce4deffb8a234781525c0d4e1ca6e05e0c3d4",
+    "calibration_results.json": "a0cb41bcc0e120a51b36199f5873c108ea78223492011f862146d424468fbf73"
+  },
+  "limits": [
+    "V4 policy distillation has supplied physics and calibrated noise.",
+    "The calibration bridge uses supplied target labels and moment vocabulary.",
+    "Source conditions and physical preparation costs remain model assumptions.",
+    "Operation counters and timings are not complete bit-complexity bounds.",
+    "No population generalization or broad scientific-compounding claim."
+  ]
+}

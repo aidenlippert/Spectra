@@ -1,0 +1,53 @@
+{
+  "source": "results/marginal_native_precision/raw_source.json",
+  "backend": "native",
+  "matrix_threshold": 1e-12,
+  "max_weight": 100,
+  "solver_status": {
+    "source": "results/marginal_native_precision/raw_source.json",
+    "rows": 866,
+    "multiplier_rank": 316,
+    "candidate_squares": 1196,
+    "build_seconds": 10.931737583945505,
+    "lp_seconds": 2.97348249994684,
+    "status": "Optimal",
+    "success": true,
+    "maximum_square_weight": 100,
+    "backend": "native",
+    "matrix_threshold": 1e-12,
+    "highs_version": "1.15.1",
+    "largest_square_weight": 100.0,
+    "capped_square_weights": 1,
+    "positive_square_weights": 250,
+    "numerical_objective": 3.2809854842618944,
+    "maximum_numerical_equation_residual": 9.72907397753624e-11,
+    "weighted_numerical_equation_residual": 1.263487948254875e-09
+  },
+  "capped_indices": [
+    377
+  ],
+  "capped_rays": [
+    {
+      "index": 377,
+      "kind": "direct_squares",
+      "weight": 100.0,
+      "polynomial_terms": 36,
+      "square_terms": 485,
+      "column_l2": 2.44948974306538,
+      "column_linf": 1.0,
+      "least_squares_multiplier_l2_residual": 7.042468074418419e-15,
+      "least_squares_relative_residual": 2.8750755516964195e-15,
+      "polynomial": "{((0, 1),): Fraction(1, 1), ((0, 6),): Fraction(-1, 1), ((1, 0), (0, 0), (0, 1)): Fraction(-513923552862, 2055694149179), ((1, 0), (0, 0), (0, 6)): Fraction(513923534180, 2055694149179), ((1, 0), (0, 1), (0, 5)): Fraction(-63, 186881286289), ((1, 0), (0, 5), (0, 6)): Fraction(1699, 2055694149179), ((1, 1), (0, 1), (0, 6)): Fraction(513923512473, 2055694149179), ((1, 2), (0, 1), (0, 2)): Fraction(513923552557, 2055694149179), ((1, 2), (0, 1), (0, 7)): Fraction(-4, 2055694149179), ((1, 2), (0, 2), (0, 6)): Fraction(513923534670, 2055694149179), ((1, 2), (0, 6), (0, 7)): Fraction(-1970, 2055694149179), ((1, 3), (0, 1), (0, 3)): Fraction(513923552435, 2055694149179), ((1, 3), (0, 1), (0, 8)): Fraction(322, 2055694149179), ((1, 3), (0, 3), (0, 6)): Fraction(513923534941, 2055694149179), ((1, 3), (0, 6), (0, 8)): Fraction(-2071, 2055694149179), ((1, 4), (0, 1), (0, 4)): Fraction(46720322945, 186881286289), ((1, 4), (0, 1), (0, 9)): Fraction(530, 2055694149179), ((1, 4), (0, 4), (0, 6)): Fraction(513923535184, 2055694149179), ((1, 4), (0, 6), (0, 9)): Fraction(-2152, 2055694149179), ((1, 5), (0, 0), (0, 1)): Fraction(-1699, 2055694149179), ((1, 5), (0, 0), (0, 6)): Fraction(-63, 186881286289), ((1, 5), (0, 1), (0, 5)): Fraction(513923534180, 2055694149179), ((1, 5), (0, 5), (0, 6)): Fraction(513923552862, 2055694149179), ((1, 6), (0, 1), (0, 6)): Fraction(513923512473, 2055694149179), ((1, 7), (0, 1), (0, 2)): Fraction(1970, 2055694149179), ((1, 7), (0, 1), (0, 7)): Fraction(513923534670, 2055694149179), ((1, 7), (0, 2), (0, 6)): Fraction(-4, 2055694149179), ((1, 7), (0, 6), (0, 7)): Fraction(-513923552557, 2055694149179), ((1, 8), (0, 1), (0, 3)): Fraction(2071, 2055694149179), ((1, 8), (0, 1), (0, 8)): Fraction(513923534941, 2055694149179), ((1, 8), (0, 3), (0, 6)): Fraction(322, 2055694149179), ((1, 8), (0, 6), (0, 8)): Fraction(-513923552435, 2055694149179), ((1, 9), (0, 1), (0, 4)): Fraction(2152, 2055694149179), ((1, 9), (0, 1), (0, 9)): Fraction(513923535184, 2055694149179), ((1, 9), (0, 4), (0, 6)): Fraction(530, 2055694149179), ((1, 9), (0, 6), (0, 9)): Fraction(-46720322945, 186881286289)}",
+      "sector_states": 252,
+      "vanishes_identically_on_N_sector": false,
+      "action_aggregation": "sum amplitudes by destination per source state before testing zero",
+      "aggregated_nonzero_amplitudes": 812,
+      "aggregated_max_abs_exact": "61070/2055694149179",
+      "aggregated_max_abs_float": 2.970772671819397e-08,
+      "unaggregated_monomial_action_count": 1820,
+      "unaggregated_monomial_squared_sum_not_operator_norm": 315.00000070948226,
+      "aggregated_squared_action_norm_exact": "139913213678/4225878434968772706374041",
+      "aggregated_squared_action_norm_float": 3.3108669790458346e-14
+    }
+  ]
+}

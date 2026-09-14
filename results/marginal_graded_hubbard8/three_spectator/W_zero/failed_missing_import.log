@@ -1,0 +1,27 @@
+{"conic_atoms": 9, "extra_sampled_vectors": 225, "sampled_states": 1246}
+{"round": 0, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.00558042588275276, "added": 8, "trust_dual_objective": -0.6429273803562987, "candidate_dual_violation": 4.440892098500626e-15}
+{"round": 1, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.005766752040354373, "added": 8, "trust_dual_objective": -0.642926671302526, "candidate_dual_violation": 4.155701116559385e-09}
+{"round": 2, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.005073983861075604, "added": 8, "trust_dual_objective": -0.6429260851787596, "candidate_dual_violation": 3.8617109510141745e-11}
+{"round": 3, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.004158297312648607, "added": 8, "trust_dual_objective": -0.6429262416091754, "candidate_dual_violation": 4.077871817997902e-09}
+{"round": 4, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.004619420623618531, "added": 8, "trust_dual_objective": -0.6429261403127338, "candidate_dual_violation": 4.038957168717161e-09}
+{"round": 5, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.0033026889453386943, "added": 8, "trust_dual_objective": -0.6429259125823392, "candidate_dual_violation": 4.00004251943642e-09}
+{"round": 6, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.006553924906574249, "added": 9, "trust_dual_objective": -0.6429260071027165, "candidate_dual_violation": 3.9611278701556785e-09}
+{"round": 7, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.02727456937391448, "added": 10, "trust_dual_objective": -0.6429261602043075, "candidate_dual_violation": 2.349529459877431e-10}
+{"round": 8, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.0026490171448108057, "added": 8, "trust_dual_objective": -0.6429262080806448, "candidate_dual_violation": 3.883297239326566e-09}
+{"round": 9, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.00281079466585199, "added": 8, "trust_dual_objective": -0.6429260606793491, "candidate_dual_violation": 3.844382590045825e-09}
+{"round": 10, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.0026512518455668044, "added": 8, "trust_dual_objective": -0.6429261396881654, "candidate_dual_violation": 3.805468384854294e-09}
+{"round": 11, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.0017812869771738349, "added": 8, "trust_dual_objective": -0.6429261057437985, "candidate_dual_violation": 3.7665532914843425e-09}
+{"round": 12, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.021333587652413222, "added": 10, "trust_dual_objective": -0.6429261938525862, "candidate_dual_violation": 2.5622615140719063e-10}
+{"round": 13, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.0017672107615842592, "added": 8, "trust_dual_objective": -0.6429261849252994, "candidate_dual_violation": 7.864713325034245e-10}
+{"round": 14, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.013691545820931683, "added": 10, "trust_dual_objective": -0.6429262471043725, "candidate_dual_violation": 3.6498097877313285e-09}
+{"round": 15, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.024656200934868533, "added": 10, "trust_dual_objective": -0.6429261569395848, "candidate_dual_violation": 3.6108942502721675e-09}
+{"round": 16, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.0289954296467978, "added": 10, "trust_dual_objective": -0.6429260329289026, "candidate_dual_violation": 3.571980045080636e-09}
+{"round": 17, "sampled_upper": 0.0, "minimum_reduced_eigenvalue": -0.0013932388449924282, "added": 8, "trust_dual_objective": -0.6429259519967053, "candidate_dual_violation": 2.4641977347528154e-10}
+Traceback (most recent call last):
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/three_spectator_family_numeric.py", line 162, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/three_spectator_family_numeric.py", line 136, in main
+    diagnostic={'source_sha256':{str(p.resolve().relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [Path(__file__),args.extra_atoms,out/'profile_joint_r1_2_certificate.json']},'accepted':False,'proposal_written':False,'lp_tolerance':1e-10,'support_threshold':1e-14,'scale':args.scale,'extra_atom_file':str(args.extra_atoms),'extra_sampled_vectors':added_atoms,'pricing':pricing,'pricing_eigenvectors':args.pricing_eigenvectors,'pricing_radius':args.pricing_radius,'determinant_anchors':args.determinant_anchors,'states':len(states),'active_sectors':list(exact),'status':result.message,'seconds':time.monotonic()-started}
+                                                                    ^^^^^^^
+NameError: name 'hashlib' is not defined. Did you forget to import 'hashlib'?

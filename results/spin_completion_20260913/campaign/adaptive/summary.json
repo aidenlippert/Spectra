@@ -1,0 +1,461 @@
+{
+  "arm": "adaptive",
+  "budget_seconds": 240.0,
+  "model_construction": {
+    "construction_seconds": 4.392888624999614,
+    "coefficient_rows": 919,
+    "base_preparation": {
+      "monomial_word_pairs": 5724,
+      "monomial_map_nonzeros": 6246
+    },
+    "spin_preparation": {
+      "monomial_word_pairs": 105444,
+      "CAR_word_products": 210888,
+      "monomial_map_nonzeros": 48672,
+      "max_surviving_degree": 4
+    },
+    "base_map_nonzeros": 6180,
+    "pricing_map_nonzeros": 48672,
+    "spin_frame_dimensions": [
+      30,
+      30,
+      93,
+      93,
+      93,
+      93,
+      30,
+      30
+    ],
+    "base_Gram_dimensions": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      6,
+      9,
+      18,
+      18,
+      6,
+      9,
+      6,
+      9,
+      18,
+      18,
+      6,
+      9,
+      18,
+      18,
+      36,
+      36,
+      18,
+      18
+    ],
+    "fixture_sha256": "99b91888d68ba7ea1d43c0b6c68594190521406c5b454b98933cbeba7d8f89df",
+    "tail_sha256": "7176d95d7bbce5cdef61b50e9950d765154acf9e5fcda10b864c1e803a2e29c5",
+    "symmetry": {
+      "original_dimensions": [
+        12,
+        12,
+        66,
+        66,
+        144
+      ],
+      "symmetry_dimensions": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        6,
+        9,
+        18,
+        18,
+        6,
+        9,
+        6,
+        9,
+        18,
+        18,
+        6,
+        9,
+        18,
+        18,
+        36,
+        36,
+        18,
+        18
+      ],
+      "parity_masks": [
+        819,
+        1365,
+        2457
+      ],
+      "alpha_charge_quotient": true
+    },
+    "many_body_states_enumerated": 0
+  },
+  "trials": [
+    {
+      "case": "baseline",
+      "accepted": true,
+      "directions": 0,
+      "lower_Ha": "-380764151731617449436918498428423/60000000000000000000000000000000",
+      "trial_wall_seconds": 2.0036291249998612,
+      "complete_at_seconds": 7.372032957995543,
+      "certificate_bytes": 40629
+    },
+    {
+      "case": "round_1_batch_1",
+      "accepted": true,
+      "directions": 8,
+      "lower_Ha": "-253825984520021758054134584868537163707571392969498579866609/40000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 6.635395541001344,
+      "complete_at_seconds": 21.131890624994412,
+      "certificate_bytes": 51829
+    },
+    {
+      "case": "round_1_batch_2",
+      "accepted": true,
+      "directions": 16,
+      "lower_Ha": "-228432195477519346982631160745082142981335838189992920330613919/36000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 7.06173687500268,
+      "complete_at_seconds": 28.19438133299991,
+      "certificate_bytes": 57959
+    },
+    {
+      "case": "round_2_batch_1",
+      "accepted": true,
+      "directions": 24,
+      "lower_Ha": "-57100331436381563304881531160895514941631815477887289659917831/9000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 7.222519332994125,
+      "complete_at_seconds": 35.42391058299836,
+      "certificate_bytes": 62659
+    },
+    {
+      "case": "round_2_batch_2",
+      "accepted": true,
+      "directions": 32,
+      "lower_Ha": "-114183430042243487450657390158460468598991693422881508218197099/18000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 7.8133009590019356,
+      "complete_at_seconds": 43.23805670799629,
+      "certificate_bytes": 68579
+    },
+    {
+      "case": "round_3_batch_1",
+      "accepted": true,
+      "directions": 40,
+      "lower_Ha": "-114163483778480296157202910135520921046694267769178548721279989/18000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 7.866298707995156,
+      "complete_at_seconds": 51.11139629099489,
+      "certificate_bytes": 73322
+    },
+    {
+      "case": "round_3_batch_2",
+      "accepted": true,
+      "directions": 48,
+      "lower_Ha": "-228308738443043793758064607372991692656063268419439523641422767/36000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 8.465810875000898,
+      "complete_at_seconds": 59.57842141600122,
+      "certificate_bytes": 83015
+    },
+    {
+      "case": "round_4_batch_1",
+      "accepted": true,
+      "directions": 56,
+      "lower_Ha": "-57068836664401523162072929702278820321074302531732494520086601/9000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 7.7807049169932725,
+      "complete_at_seconds": 67.36699816599867,
+      "certificate_bytes": 88521
+    },
+    {
+      "case": "round_4_batch_2",
+      "accepted": true,
+      "directions": 64,
+      "lower_Ha": "-114128511220269749332359608196431416918960668290827033056517529/18000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 8.200187624999671,
+      "complete_at_seconds": 75.56832316600048,
+      "certificate_bytes": 94565
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "pricing": {
+        "seconds": 7.122949249998783,
+        "source": "Accepted full-spin counterexample separators; prior discovery charged separately"
+      },
+      "from_case": "baseline",
+      "choices": [
+        {
+          "case": "round_1_batch_1",
+          "gain_Ha": "50349903169624711433242251234508877285821091504260400173/120000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 0.41958252641353927,
+          "gain_Ha_per_second": 3.0496584639164203e-05
+        },
+        {
+          "case": "round_1_batch_2",
+          "gain_Ha": "26295561451122679519938311971657018664161810007079669386081/36000000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 0.7304322625311855,
+          "gain_Ha_per_second": 5.149442547366272e-05
+        }
+      ],
+      "selected": "round_1_batch_2"
+    },
+    {
+      "round": 2,
+      "pricing": {
+        "seconds": 0.004929542003083043,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.02028753635414533,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.01914622307957238,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.019318452968328775,
+            "negative_eigenvalues": 15,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.020920627489546893,
+            "negative_eigenvalues": 16,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.019318454397915023,
+            "negative_eigenvalues": 15,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.02092062435315599,
+            "negative_eigenvalues": 16,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.02028753686683647,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.019146227817873118,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "from_case": "round_1_batch_2",
+      "choices": [
+        {
+          "case": "round_2_batch_1",
+          "gain_Ha": "6173946398618752621007220300016642961715255688752338188519/7200000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 0.8574925553637156,
+          "gain_Ha_per_second": 0.00011864387700204201
+        },
+        {
+          "case": "round_2_batch_2",
+          "gain_Ha": "65335393032372081316380428161205783352451344229903894219721/36000000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 1.8148720286770024,
+          "gain_Ha_per_second": 0.00023213334890084196
+        }
+      ],
+      "selected": "round_2_batch_2"
+    },
+    {
+      "round": 3,
+      "pricing": {
+        "seconds": 0.004770499996084254,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.00558667928564626,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.007093402538674537,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.013569968430152552,
+            "negative_eigenvalues": 13,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.013499746796665905,
+            "negative_eigenvalues": 13,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.013569966029838395,
+            "negative_eigenvalues": 13,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.013499752429526913,
+            "negative_eigenvalues": 13,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.005586688601610964,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0070934031281907756,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "from_case": "round_2_batch_2",
+      "choices": [
+        {
+          "case": "round_3_batch_1",
+          "gain_Ha": "1994626376319129345448002293954755229742565370295949691711/1800000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 1.1081257646217386,
+          "gain_Ha_per_second": 0.0001407846552151637
+        },
+        {
+          "case": "round_3_batch_2",
+          "gain_Ha": "19373880481060381083390981309748180640039475441164264990477/12000000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 1.614490040088365,
+          "gain_Ha_per_second": 0.000190599672987492
+        }
+      ],
+      "selected": "round_3_batch_2"
+    },
+    {
+      "round": 4,
+      "pricing": {
+        "seconds": 0.004911291995085776,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.00358444456299731,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.004605958297438965,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.007922480099949072,
+            "negative_eigenvalues": 11,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.010142843387798705,
+            "negative_eigenvalues": 12,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.007922480754538906,
+            "negative_eigenvalues": 11,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.010142844117451102,
+            "negative_eigenvalues": 12,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0035844286543821476,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0046059716211253295,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "from_case": "round_3_batch_2",
+      "choices": [
+        {
+          "case": "round_4_batch_1",
+          "gain_Ha": "11130595145900369924296187958803790588686097503181853692121/12000000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 0.9275495954916975,
+          "gain_Ha_per_second": 0.0001191363111915095
+        },
+        {
+          "case": "round_4_batch_2",
+          "gain_Ha": "51716002504295093345390980128858818141931837785457528387709/36000000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 1.4365556251193081,
+          "gain_Ha_per_second": 0.00017508084176095083
+        }
+      ],
+      "selected": "round_4_batch_2"
+    }
+  ],
+  "best_case": "round_4_batch_2",
+  "complete": true,
+  "diagnostic_source": "/Users/aidenlippert/Documents/Spectra/results/spin_completion_20260913/diagnostic",
+  "elapsed_seconds": 75.56971849999536,
+  "continuation_case": "round_4_batch_2",
+  "stop": "round_budget"
+}

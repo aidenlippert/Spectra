@@ -1,0 +1,22 @@
+{
+  "global_program_sha256": "a23882a1c9a99db8841c5fd1444c90c06f66a5ca9662830e3da9a362afb18e4b",
+  "response_selection": "Try the last-two-double union; use last-double if the union gap is not certified positive. Exact tangent/filling acceptance and outward scalar endpoints.",
+  "uniform_response_budget_Ha": "1/1000000",
+  "target_reference_width_Ha": "7/5000",
+  "fresh_geometry_spacing_Angstrom": "173/100",
+  "tail_density_rank": 10,
+  "direct_terminal_family": {
+    "family": "local",
+    "ideal_body": 2,
+    "symmetry": true,
+    "width": 4,
+    "rounds": 5,
+    "seconds": 180,
+    "solver": "SCS",
+    "solver_seconds": 45,
+    "solver_max_iters": 20000,
+    "condition": "row-column",
+    "save_raw": true
+  },
+  "scope": "Frozen before fresh geometry generation and before inspecting any outcome there. Lower discovery excludes reference amplitudes."
+}

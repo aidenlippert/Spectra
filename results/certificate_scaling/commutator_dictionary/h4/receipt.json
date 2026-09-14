@@ -1,0 +1,47 @@
+{
+  "modes": 8,
+  "input": "fixture Hamiltonian only",
+  "linear_generators": 8,
+  "commutator_terms": [
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44
+  ],
+  "adjoint_terms": [
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44,
+    44
+  ],
+  "span_terms": 553,
+  "construction_seconds": 2.227171250007814,
+  "solve_seconds": 0.061589499993715435,
+  "status": "optimal",
+  "baseline": "research/certificate_scaling/full_pair_cone.py",
+  "scope": "H-only polynomial Gram SDP",
+  "exact": {
+    "lower": "-35506604770077/500000000000",
+    "lower_float": -71.013209540154,
+    "residual_l1": "33893385340577/500000000000",
+    "residual_l1_float": 67.786770681154,
+    "multiplier_terms": 17,
+    "square_polynomial_terms": 0,
+    "residual_terms": 185,
+    "residual_max_degree": 4,
+    "mode_count": 8,
+    "particle_number": 4,
+    "factor_rows": 0,
+    "factor_nonzeros": 0
+  },
+  "exact_replay_accepted": true,
+  "invalid_comparison": "Agent draft omitted degree-six square coefficient rows and exported only one block; not the declared dictionary experiment. Any weak exact lower remains separate. Use root corrected runs."
+}

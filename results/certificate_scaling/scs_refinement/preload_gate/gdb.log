@@ -1,0 +1,21 @@
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00007ffff6b66e30 in sneg_tcopy_SKYLAKEX () from /home/ubuntu/spectra-venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-c128ec02.so
+#0  0x00007ffff6b66e30 in sneg_tcopy_SKYLAKEX () from /home/ubuntu/spectra-venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-c128ec02.so
+#1  0x00007fffe6bf4033 in idamax_ () from /home/ubuntu/spectra-venv/lib/python3.10/site-packages/scs/../scs.libs/libopenblas-r0-11edc3fa.3.15.so
+#2  0x00007fffe90fb21f in _scs_norm_inf () from /home/ubuntu/spectra-venv/lib/python3.10/site-packages/scs/_scs_direct.cpython-310-x86_64-linux-gnu.so
+#3  0x00007fffe90f7065 in _scs_enforce_cone_boundaries () from /home/ubuntu/spectra-venv/lib/python3.10/site-packages/scs/_scs_direct.cpython-310-x86_64-linux-gnu.so
+#4  0x00007fffe90f459c in _scs_normalize_a_p () from /home/ubuntu/spectra-venv/lib/python3.10/site-packages/scs/_scs_direct.cpython-310-x86_64-linux-gnu.so
+#5  0x00007fffe910209d in scs_init () from /home/ubuntu/spectra-venv/lib/python3.10/site-packages/scs/_scs_direct.cpython-310-x86_64-linux-gnu.so
+#6  0x00007fffe90f199d in SCS_init () from /home/ubuntu/spectra-venv/lib/python3.10/site-packages/scs/_scs_direct.cpython-310-x86_64-linux-gnu.so
+#7  0x00005555556d5b1b in ?? ()
+#8  0x00005555556ed55b in PyObject_Call ()
+#9  0x00005555556cbceb in _PyEval_EvalFrameDefault ()
+#10 0x00005555556df6ac in _PyFunction_Vectorcall ()
+#11 0x00005555556d49fd in _PyObject_FastCallDictTstate ()
+#12 0x00005555556e8c44 in ?? ()
+#13 0x00005555556d5b1b in ?? ()
+#14 0x00005555556ed55b in PyObject_Call ()
+#15 0x00005555556cbceb in _PyEval_EvalFrameDefault ()

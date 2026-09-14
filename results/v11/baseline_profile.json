@@ -1,0 +1,1893 @@
+{
+  "schema": "v11-baseline-profile-fraction-free-1",
+  "workload": {
+    "model": "v7_headroom",
+    "n": 3,
+    "family": "xxz",
+    "gamma": "2",
+    "T": "1/2",
+    "epsilon": "1/1000",
+    "order": 12,
+    "exact_call": "p,w,c = fraction_free_taylor(Generator(h,F(2),3,512), initial, F(1,2), F(1,1000), 12); check_certificate(fresh Generator, initial, [p], w, eps, expected_time=T); evaluate(p.coefficients,T)"
+  },
+  "imports": [
+    "experiments.v7_headroom.model",
+    "experiments.v7_certificate.Generator",
+    "experiments.v7_certificate.check_certificate",
+    "experiments.v7_certificate.evaluate",
+    "experiments.v8_integer_taylor.fraction_free_taylor"
+  ],
+  "source_sha256": {
+    "experiments.v8_integer_taylor.fraction_free_taylor": "bda958ee2ec73c45afb7161818ce6ec56c018a5d9800444662456b142e2aa3ad",
+    "experiments.v7_certificate.Generator": "84d1fe4694467f75331a1ebd38303a7e3d63ff16fbab914db8d56edb6b2bf8b1",
+    "experiments.v7_certificate.check_certificate": "5811c7c8b2badf975ac595fa880a1509471c96757b72a9c2cb47cc9f456ba2eb",
+    "experiments.v7_certificate.evaluate": "54079e0ceefb3673d1a4119f56b2a9c85f03602b475f43226489b6615e3d2e94"
+  },
+  "protocol": {
+    "warmup": 1,
+    "repeats": 7,
+    "paired": "same process, proposer then fresh check then exact endpoint readout",
+    "counters": "phase seconds are wall-clock self-time; proposer/checker counters are cumulative operation counts; cProfile cumtime is inclusive and tottime self-time"
+  },
+  "rows": [
+    {
+      "construction_seconds": 0.007820165948942304,
+      "check_seconds": 0.005498041049577296,
+      "endpoint_seconds": 0.0005411660531535745,
+      "total_seconds": 0.013859373051673174,
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "endpoint_coefficient": "59041405562860367/233887500000000000",
+      "proposer": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checking_cost": {
+        "pair_checks": 0,
+        "squares": 60,
+        "scalar_bound_ops": 28
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 1449,
+        "column_requests": 303,
+        "cache_hits": 273,
+        "peak_terms": 30,
+        "max_rational_bits": 48,
+        "basis_multiply_adds": 0
+      },
+      "polynomial_entries": 303
+    },
+    {
+      "construction_seconds": 0.007939375005662441,
+      "check_seconds": 0.005487082991749048,
+      "endpoint_seconds": 0.0005273749120533466,
+      "total_seconds": 0.013953832909464836,
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "endpoint_coefficient": "59041405562860367/233887500000000000",
+      "proposer": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checking_cost": {
+        "pair_checks": 0,
+        "squares": 60,
+        "scalar_bound_ops": 28
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 1449,
+        "column_requests": 303,
+        "cache_hits": 273,
+        "peak_terms": 30,
+        "max_rational_bits": 48,
+        "basis_multiply_adds": 0
+      },
+      "polynomial_entries": 303
+    },
+    {
+      "construction_seconds": 0.00836591690313071,
+      "check_seconds": 0.0061602500500157475,
+      "endpoint_seconds": 0.0005337910261005163,
+      "total_seconds": 0.015059957979246974,
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "endpoint_coefficient": "59041405562860367/233887500000000000",
+      "proposer": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checking_cost": {
+        "pair_checks": 0,
+        "squares": 60,
+        "scalar_bound_ops": 28
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 1449,
+        "column_requests": 303,
+        "cache_hits": 273,
+        "peak_terms": 30,
+        "max_rational_bits": 48,
+        "basis_multiply_adds": 0
+      },
+      "polynomial_entries": 303
+    },
+    {
+      "construction_seconds": 0.007803082931786776,
+      "check_seconds": 0.0055802499409765005,
+      "endpoint_seconds": 0.0005479579558596015,
+      "total_seconds": 0.013931290828622878,
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "endpoint_coefficient": "59041405562860367/233887500000000000",
+      "proposer": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checking_cost": {
+        "pair_checks": 0,
+        "squares": 60,
+        "scalar_bound_ops": 28
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 1449,
+        "column_requests": 303,
+        "cache_hits": 273,
+        "peak_terms": 30,
+        "max_rational_bits": 48,
+        "basis_multiply_adds": 0
+      },
+      "polynomial_entries": 303
+    },
+    {
+      "construction_seconds": 0.007908792002126575,
+      "check_seconds": 0.005331249907612801,
+      "endpoint_seconds": 0.0005285829538479447,
+      "total_seconds": 0.01376862486358732,
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "endpoint_coefficient": "59041405562860367/233887500000000000",
+      "proposer": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checking_cost": {
+        "pair_checks": 0,
+        "squares": 60,
+        "scalar_bound_ops": 28
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 1449,
+        "column_requests": 303,
+        "cache_hits": 273,
+        "peak_terms": 30,
+        "max_rational_bits": 48,
+        "basis_multiply_adds": 0
+      },
+      "polynomial_entries": 303
+    },
+    {
+      "construction_seconds": 0.007591875037178397,
+      "check_seconds": 0.005280875018797815,
+      "endpoint_seconds": 0.0005188330542296171,
+      "total_seconds": 0.01339158311020583,
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "endpoint_coefficient": "59041405562860367/233887500000000000",
+      "proposer": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checking_cost": {
+        "pair_checks": 0,
+        "squares": 60,
+        "scalar_bound_ops": 28
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 1449,
+        "column_requests": 303,
+        "cache_hits": 273,
+        "peak_terms": 30,
+        "max_rational_bits": 48,
+        "basis_multiply_adds": 0
+      },
+      "polynomial_entries": 303
+    },
+    {
+      "construction_seconds": 0.007536874967627227,
+      "check_seconds": 0.00527354096993804,
+      "endpoint_seconds": 0.0005133750382810831,
+      "total_seconds": 0.01332379097584635,
+      "status": "certified",
+      "bound": "9235404595038841/20270250000000000000",
+      "endpoint_coefficient": "59041405562860367/233887500000000000",
+      "proposer": {
+        "probes": [
+          {
+            "order": 0,
+            "grouping": "l1",
+            "bound": "12/5"
+          },
+          {
+            "order": 0,
+            "grouping": "firstfit",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 0,
+            "grouping": "weighted",
+            "bound": "7522499389946279/4000000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "l1",
+            "bound": "171/50"
+          },
+          {
+            "order": 1,
+            "grouping": "firstfit",
+            "bound": "8607425282061183/3200000000000000"
+          },
+          {
+            "order": 1,
+            "grouping": "weighted",
+            "bound": "54204739949729563/20000000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "l1",
+            "bound": "3377/750"
+          },
+          {
+            "order": 2,
+            "grouping": "firstfit",
+            "bound": "7592401914428369/2500000000000000"
+          },
+          {
+            "order": 2,
+            "grouping": "weighted",
+            "bound": "685953545830252799/240000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "l1",
+            "bound": "26909/7500"
+          },
+          {
+            "order": 3,
+            "grouping": "firstfit",
+            "bound": "380132041084340477/160000000000000000"
+          },
+          {
+            "order": 3,
+            "grouping": "weighted",
+            "bound": "69176319753769107/32000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "l1",
+            "bound": "158639/62500"
+          },
+          {
+            "order": 4,
+            "grouping": "firstfit",
+            "bound": "1252580885083466929/800000000000000000"
+          },
+          {
+            "order": 4,
+            "grouping": "weighted",
+            "bound": "565459497798950341/400000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "l1",
+            "bound": "790367/562500"
+          },
+          {
+            "order": 5,
+            "grouping": "firstfit",
+            "bound": "798858149185919897/960000000000000000"
+          },
+          {
+            "order": 5,
+            "grouping": "weighted",
+            "bound": "2990278896686539363/3840000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "l1",
+            "bound": "118751707/196875000"
+          },
+          {
+            "order": 6,
+            "grouping": "firstfit",
+            "bound": "1612089403000293671/4480000000000000000"
+          },
+          {
+            "order": 6,
+            "grouping": "weighted",
+            "bound": "607480274091996579/1792000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "l1",
+            "bound": "2441461037/10500000000"
+          },
+          {
+            "order": 7,
+            "grouping": "firstfit",
+            "bound": "176451288801440479/1280000000000000000"
+          },
+          {
+            "order": 7,
+            "grouping": "weighted",
+            "bound": "1333804980608862867/10240000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "l1",
+            "bound": "108024441761/1417500000000"
+          },
+          {
+            "order": 8,
+            "grouping": "firstfit",
+            "bound": "2227515858677381593/46080000000000000000"
+          },
+          {
+            "order": 8,
+            "grouping": "weighted",
+            "bound": "1902120580047273743/46080000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "l1",
+            "bound": "229594674301/9450000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "firstfit",
+            "bound": "391019913582513491/25600000000000000000"
+          },
+          {
+            "order": 9,
+            "grouping": "weighted",
+            "bound": "183718307696213449/12800000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "l1",
+            "bound": "19108695202391/2598750000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "firstfit",
+            "bound": "485759375748156659/112640000000000000000"
+          },
+          {
+            "order": 10,
+            "grouping": "weighted",
+            "bound": "80898219790160331/20480000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "l1",
+            "bound": "556281143014321/311850000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "firstfit",
+            "bound": "181070454095487559/163840000000000000000"
+          },
+          {
+            "order": 11,
+            "grouping": "weighted",
+            "bound": "249830754382125463/245760000000000000000"
+          },
+          {
+            "order": 12,
+            "grouping": "l1",
+            "bound": "9235404595038841/20270250000000000000"
+          }
+        ],
+        "denominator": 10,
+        "initial_denominator": 1,
+        "integer_work": {
+          "multiply_adds": 1449,
+          "exported_fractions": 635,
+          "max_integer_bits": 75
+        },
+        "generator": {
+          "hamiltonian_pairs": 210,
+          "coefficient_multiply_adds": 1449,
+          "column_requests": 303,
+          "cache_hits": 273,
+          "peak_terms": 30,
+          "max_rational_bits": 0,
+          "basis_multiply_adds": 0
+        }
+      },
+      "checking_cost": {
+        "pair_checks": 0,
+        "squares": 60,
+        "scalar_bound_ops": 28
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 1449,
+        "column_requests": 303,
+        "cache_hits": 273,
+        "peak_terms": 30,
+        "max_rational_bits": 48,
+        "basis_multiply_adds": 0
+      },
+      "polynomial_entries": 303
+    }
+  ],
+  "summary": {
+    "construction_seconds": {
+      "mean": 0.007852297542350633,
+      "median": 0.007820165948942304,
+      "min": 0.007536874967627227,
+      "max": 0.00836591690313071
+    },
+    "check_seconds": {
+      "mean": 0.005515898561238178,
+      "median": 0.005487082991749048,
+      "min": 0.00527354096993804,
+      "max": 0.0061602500500157475
+    },
+    "endpoint_seconds": {
+      "mean": 0.0005301544276465263,
+      "median": 0.0005285829538479447,
+      "min": 0.0005133750382810831,
+      "max": 0.0005479579558596015
+    },
+    "total_seconds": {
+      "mean": 0.013898350531235337,
+      "median": 0.013859373051673174,
+      "min": 0.01332379097584635,
+      "max": 0.015059957979246974
+    }
+  },
+  "profiled_run": {
+    "construction_seconds": 0.025431958958506584,
+    "check_seconds": 0.019810792058706284,
+    "endpoint_seconds": 0.0016607920406386256,
+    "total_seconds": 0.04690354305785149,
+    "status": "certified",
+    "bound": "9235404595038841/20270250000000000000",
+    "endpoint_coefficient": "59041405562860367/233887500000000000",
+    "proposer": {
+      "probes": [
+        {
+          "order": 0,
+          "grouping": "l1",
+          "bound": "12/5"
+        },
+        {
+          "order": 0,
+          "grouping": "firstfit",
+          "bound": "7522499389946279/4000000000000000"
+        },
+        {
+          "order": 0,
+          "grouping": "weighted",
+          "bound": "7522499389946279/4000000000000000"
+        },
+        {
+          "order": 1,
+          "grouping": "l1",
+          "bound": "171/50"
+        },
+        {
+          "order": 1,
+          "grouping": "firstfit",
+          "bound": "8607425282061183/3200000000000000"
+        },
+        {
+          "order": 1,
+          "grouping": "weighted",
+          "bound": "54204739949729563/20000000000000000"
+        },
+        {
+          "order": 2,
+          "grouping": "l1",
+          "bound": "3377/750"
+        },
+        {
+          "order": 2,
+          "grouping": "firstfit",
+          "bound": "7592401914428369/2500000000000000"
+        },
+        {
+          "order": 2,
+          "grouping": "weighted",
+          "bound": "685953545830252799/240000000000000000"
+        },
+        {
+          "order": 3,
+          "grouping": "l1",
+          "bound": "26909/7500"
+        },
+        {
+          "order": 3,
+          "grouping": "firstfit",
+          "bound": "380132041084340477/160000000000000000"
+        },
+        {
+          "order": 3,
+          "grouping": "weighted",
+          "bound": "69176319753769107/32000000000000000"
+        },
+        {
+          "order": 4,
+          "grouping": "l1",
+          "bound": "158639/62500"
+        },
+        {
+          "order": 4,
+          "grouping": "firstfit",
+          "bound": "1252580885083466929/800000000000000000"
+        },
+        {
+          "order": 4,
+          "grouping": "weighted",
+          "bound": "565459497798950341/400000000000000000"
+        },
+        {
+          "order": 5,
+          "grouping": "l1",
+          "bound": "790367/562500"
+        },
+        {
+          "order": 5,
+          "grouping": "firstfit",
+          "bound": "798858149185919897/960000000000000000"
+        },
+        {
+          "order": 5,
+          "grouping": "weighted",
+          "bound": "2990278896686539363/3840000000000000000"
+        },
+        {
+          "order": 6,
+          "grouping": "l1",
+          "bound": "118751707/196875000"
+        },
+        {
+          "order": 6,
+          "grouping": "firstfit",
+          "bound": "1612089403000293671/4480000000000000000"
+        },
+        {
+          "order": 6,
+          "grouping": "weighted",
+          "bound": "607480274091996579/1792000000000000000"
+        },
+        {
+          "order": 7,
+          "grouping": "l1",
+          "bound": "2441461037/10500000000"
+        },
+        {
+          "order": 7,
+          "grouping": "firstfit",
+          "bound": "176451288801440479/1280000000000000000"
+        },
+        {
+          "order": 7,
+          "grouping": "weighted",
+          "bound": "1333804980608862867/10240000000000000000"
+        },
+        {
+          "order": 8,
+          "grouping": "l1",
+          "bound": "108024441761/1417500000000"
+        },
+        {
+          "order": 8,
+          "grouping": "firstfit",
+          "bound": "2227515858677381593/46080000000000000000"
+        },
+        {
+          "order": 8,
+          "grouping": "weighted",
+          "bound": "1902120580047273743/46080000000000000000"
+        },
+        {
+          "order": 9,
+          "grouping": "l1",
+          "bound": "229594674301/9450000000000"
+        },
+        {
+          "order": 9,
+          "grouping": "firstfit",
+          "bound": "391019913582513491/25600000000000000000"
+        },
+        {
+          "order": 9,
+          "grouping": "weighted",
+          "bound": "183718307696213449/12800000000000000000"
+        },
+        {
+          "order": 10,
+          "grouping": "l1",
+          "bound": "19108695202391/2598750000000000"
+        },
+        {
+          "order": 10,
+          "grouping": "firstfit",
+          "bound": "485759375748156659/112640000000000000000"
+        },
+        {
+          "order": 10,
+          "grouping": "weighted",
+          "bound": "80898219790160331/20480000000000000000"
+        },
+        {
+          "order": 11,
+          "grouping": "l1",
+          "bound": "556281143014321/311850000000000000"
+        },
+        {
+          "order": 11,
+          "grouping": "firstfit",
+          "bound": "181070454095487559/163840000000000000000"
+        },
+        {
+          "order": 11,
+          "grouping": "weighted",
+          "bound": "249830754382125463/245760000000000000000"
+        },
+        {
+          "order": 12,
+          "grouping": "l1",
+          "bound": "9235404595038841/20270250000000000000"
+        }
+      ],
+      "denominator": 10,
+      "initial_denominator": 1,
+      "integer_work": {
+        "multiply_adds": 1449,
+        "exported_fractions": 635,
+        "max_integer_bits": 75
+      },
+      "generator": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 1449,
+        "column_requests": 303,
+        "cache_hits": 273,
+        "peak_terms": 30,
+        "max_rational_bits": 0,
+        "basis_multiply_adds": 0
+      }
+    },
+    "checking_cost": {
+      "pair_checks": 0,
+      "squares": 60,
+      "scalar_bound_ops": 28
+    },
+    "checking_generator_cost": {
+      "hamiltonian_pairs": 210,
+      "coefficient_multiply_adds": 1449,
+      "column_requests": 303,
+      "cache_hits": 273,
+      "peak_terms": 30,
+      "max_rational_bits": 48,
+      "basis_multiply_adds": 0
+    },
+    "polynomial_entries": 303
+  },
+  "cprofile_top": "         217153 function calls (216509 primitive calls) in 0.047 seconds\n\n   Ordered by: cumulative time\n   List reduced from 93 to 25 due to restriction <25>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.047    0.047 <stdin>:11(run)\n        1    0.000    0.000    0.025    0.025 /Users/aidenlippert/Documents/Spectra/experiments/v8_integer_taylor.py:20(fraction_free_taylor)\n        1    0.000    0.000    0.020    0.020 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:197(check_certificate)\n        1    0.000    0.000    0.019    0.019 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:114(residual_records)\n       37    0.001    0.000    0.014    0.000 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:159(norm_witness)\n       13    0.002    0.000    0.013    0.001 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:88(apply)\n     8071    0.002    0.000    0.012    0.000 /Users/aidenlippert/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/fractions.py:613(forward)\n     4641    0.002    0.000    0.009    0.000 {built-in method builtins.sum}\n       13    0.001    0.000    0.007    0.001 /Users/aidenlippert/Documents/Spectra/experiments/v8_integer_taylor.py:42(apply_integer)\n       60    0.001    0.000    0.007    0.000 /Users/aidenlippert/Documents/Spectra/experiments/pauli.py:28(commutator_i)\n     7389    0.004    0.000    0.006    0.000 /Users/aidenlippert/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/fractions.py:186(__new__)\n     3978    0.002    0.000    0.005    0.000 /Users/aidenlippert/Documents/Spectra/experiments/certificates.py:20(_anti)\n       44    0.001    0.000    0.005    0.000 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:39(clean)\n     4179    0.002    0.000    0.004    0.000 /Users/aidenlippert/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/fractions.py:710(_add)\n     4144    0.002    0.000    0.004    0.000 /Users/aidenlippert/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/fractions.py:742(_mul)\n       70    0.001    0.000    0.004    0.000 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:51(add)\n    21226    0.002    0.000    0.004    0.000 {built-in method builtins.isinstance}\n        2    0.000    0.000    0.003    0.002 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:59(evaluate)\n      840    0.001    0.000    0.003    0.000 /Users/aidenlippert/Documents/Spectra/experiments/pauli.py:20(multiply)\n    10395    0.002    0.000    0.003    0.000 /Users/aidenlippert/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/fractions.py:317(_from_coprime_ints)\n     1023    0.001    0.000    0.003    0.000 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:21(rational)\n       37    0.000    0.000    0.003    0.000 {built-in method builtins.sorted}\n     2160    0.001    0.000    0.002    0.000 /Users/aidenlippert/Documents/Spectra/experiments/pauli.py:16(_check_label)\n     3144    0.001    0.000    0.002    0.000 {built-in method builtins.any}\n      533    0.000    0.000    0.002    0.000 /Users/aidenlippert/Documents/Spectra/experiments/v8_integer_taylor.py:81(<genexpr>)\n\n\n"
+}

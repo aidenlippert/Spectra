@@ -1,0 +1,27 @@
+{
+  "name": "h6_eliminated_low32",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-m",
+    "research.reconstruction_compression_20260914.reduced",
+    "solve",
+    "h6_actual",
+    "low",
+    "32",
+    "--seconds",
+    "65",
+    "--tag",
+    "_eliminated",
+    "--eliminate"
+  ],
+  "timeout_seconds": 180,
+  "status": "passed",
+  "started_UTC": "2026-09-14T08:11:07.959685+00:00",
+  "pid": 34175,
+  "exit_code": 0,
+  "wall_seconds": 77.33861191700271,
+  "child_user_seconds": 75.59988,
+  "child_system_seconds": 0.748475,
+  "peak_child_RSS_bytes": 701136896,
+  "finished_UTC": "2026-09-14T08:12:25.297037+00:00"
+}

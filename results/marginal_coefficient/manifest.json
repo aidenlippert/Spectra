@@ -1,0 +1,23 @@
+{
+  "sha256": {
+    "experiments/marginal_coefficient.py": "b8a8306b28deaddc5e017dd8eb33c738a1b5365e8f33297f637717f308b23617",
+    "experiments/marginal_collective.py": "326f6ff573f075720bf7f10c29cde5059242e3d052bbc8538414910487df0265",
+    "experiments/marginal_hunt_car.py": "d7a184032b22c9fb8862f6af2f6b729fad06bd184e1565ebf7c731dc58a7ce2f",
+    "experiments/marginal_symbolic.py": "3ff97e5fc9d6241bf0f773ae9f05830cf40bca91c9ea7cc16db391adef3d66c9",
+    "results/marginal_coefficient/m6_t1_5_mixed.json": "10baa60d34209c498287fe4716d28be59a823d9d233d5374ecd6149db9fb669b",
+    "results/marginal_coefficient/m6_t1_5_mixed_asymmetric.json": "a5b2ab965101287c8fa86a98c8b242a7d26b7b751365e513bbd8cb90bf988d76",
+    "results/marginal_coefficient/m6_t1_5_mixed_asymmetric_receipt.json": "b0e25cda7dda3a35647841aab9dec8c2e73c1c80ad96cc9be6969e3c5392593c",
+    "results/marginal_coefficient/m6_t1_5_mixed_receipt.json": "57530372faeb0b7993fa86a173a2e9d1cdbfb227a702c67b4e1fafe16d6b0a68",
+    "results/marginal_coefficient/m8_t1_5_local.json": "a6c51c29eaeffd452c7fe24fc020fada5a807cd4289bc00729395ebb32725d91",
+    "results/marginal_coefficient/m8_t1_5_local_receipt.json": "235363c4950db47a9c54a3eae8bf29a604a01e89054e70d1ae2813173eba9909",
+    "results/marginal_coefficient/m8_t1_5_mixed.json": "388995bee8aa427d608086dc62d68248c6cda02927922b12b9e5fd4da1466cc4",
+    "results/marginal_coefficient/m8_t1_5_mixed_receipt.json": "a17b13eea39e82126369f11f8f53602c9de63b95787e3f60adbf4d3d2dab5c06",
+    "results/marginal_coefficient/m8_t1_5_quadratic.json": "3a06b970a16100d33f91b71c2f94a91fbd2a4792eb29fd6f5d09d5dadea4b3c1",
+    "results/marginal_coefficient/m8_t1_5_quadratic_receipt.json": "6676595ed369d2068689f545491675ad77aa03a1403f587b9a124d80eadc9242",
+    "results/marginal_coefficient/replay.json": "483578075e579950200e764110b6f56c001160be8c1e6e74c4a44b17a411b82a",
+    "tests/test_marginal_coefficient.py": "a71af67340b5bd34df3b0dbc2b232e2342710cbc69840d4cd6f4f7f19e40060a",
+    "tests/test_marginal_collective.py": "24a14bf75361db70e66aeb51513686a64d789b2e6438d259dc6ae95dcc705fcc"
+  },
+  "replay_command": "python3 -S -m experiments.marginal_collective results/marginal_coefficient/m8_t1_5_mixed.json",
+  "discovery_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m experiments.marginal_coefficient --modes 8 --t 1/5 --family mixed"
+}

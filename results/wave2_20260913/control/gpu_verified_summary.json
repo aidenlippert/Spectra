@@ -1,0 +1,23 @@
+{
+  "scope": "Fixed selected space benchmark only; basis fromwave1 and notnewHamiltonian-onlydiscovery. Warm GPU assembly compared withoneCPU build. Both compiledterm arithmetic and scalar input setup excluded from GPU assembly clock.",
+  "fixture_sha256": "ec437b52d210f08233a8cc853d0f905dae52bd1f2a923285a25c76ac99385f92",
+  "basis_source_sha256": "f759d79d5ca2d7c4f235e65bbd658981c9d505eda5a1613ee72dcd3095ff1db0",
+  "gpu_assembly_source_sha256": "5d7e631c142ff4b7cdad68175e9b542247e45fc830efc12c11fd44f0b38bc2a0",
+  "gpu_witness_sha256": "8afd97c204fb84324c6af9b076fef235bba09dd47b884f14a2a2814c29305542",
+  "cpu_assembly_seconds": 20.306675038998947,
+  "gpu_first_measured_assembly_seconds": 0.8688117230049102,
+  "gpu_warm_median_assembly_seconds": 0.6690014289997634,
+  "measured_assembly_ratio": 30.35370951204071,
+  "cpu_resident_solve_seconds": 1.0494413739943411,
+  "gpu_resident_solve_seconds": 0.04479860799619928,
+  "max_abs_matrix_difference": 0.0,
+  "exact_float64_csr_match": true,
+  "integer_numerator_abs_sum_bound": 223317261991802,
+  "integer_exactness_limit": 9007199254740992,
+  "memory_final_snapshot_bytes": 3938648064,
+  "peak_memory_instrumented": false,
+  "whole_certificate_speedup_measured": false,
+  "upper": "-1236821975176897518778073497681083201/99999999999914379720248500000000000",
+  "independent_replay": "control/gpu_upper_independent_replay.json",
+  "limitation": "Unexpected storedzeros are refused; CUDAzero-removalcall corruptedspecificcaseandwasremoved. No formal implementation proof. CPU/GPU numerical matrix agreement does not substitute exact upper replay."
+}

@@ -1,0 +1,15 @@
+{
+  "host": "129-159-32-200",
+  "torch": "2.7.0",
+  "device": "NVIDIA A10",
+  "threads": 1,
+  "warmups": 2,
+  "timed_trials": 5,
+  "cases": [
+    {"batch": 8, "n": 368, "cpu_median_seconds": 0.09134031000030518, "gpu_median_seconds": 0.10063396699842997, "gpu_over_cpu": 1.101},
+    {"batch": 16, "n": 112, "cpu_median_seconds": 0.0208361570003035, "gpu_median_seconds": 0.08289167199836811, "gpu_over_cpu": 3.977}
+  ],
+  "max_reconstruction_residuals": {"cpu_8x368": 6.821210263296962e-13, "gpu_8x368": 4.547473508864641e-13, "cpu_16x112": 1.6342482922482304e-13, "gpu_16x112": 1.3500311979441906e-13},
+  "interpretation": "On this isolated Torch eigensolve gate, the A10 is slower than one CPU thread for both target shapes. This provides no GPU benefit claim for the current workload; transfer and end-to-end certificate costs were not included.",
+  "scope": "read-only benchmark; no installs, provisioning, or research jobs"
+}

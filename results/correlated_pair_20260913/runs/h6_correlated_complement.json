@@ -1,0 +1,23 @@
+{
+  "name": "h6_correlated_complement",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.correlated_pair_20260913.complement",
+    "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "results/correlated_pair_20260913/mps/h6_b48_real/state.json",
+    "results/correlated_pair_20260913/complement_h6.json"
+  ],
+  "timeout_seconds": 180,
+  "status": "passed",
+  "started_UTC": "2026-09-14T06:55:48.487808+00:00",
+  "pid": 21777,
+  "exit_code": 0,
+  "wall_seconds": 38.627860291991965,
+  "child_user_seconds": 37.952747,
+  "child_system_seconds": 0.256752,
+  "peak_child_RSS_bytes": 143785984,
+  "finished_UTC": "2026-09-14T06:56:27.115996+00:00"
+}

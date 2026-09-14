@@ -1,0 +1,1891 @@
+{
+  "model": "Uniform open half-filled Hubbard U=4,t=1",
+  "boundary": "Normalized product of adjacent valence singlets",
+  "dimer_product_coefficients": [
+    "-1000000000000",
+    "621320343560/3"
+  ],
+  "dimer_product_qualification": "Each local polynomialH2 boundary has exactly2particles. Product expectations of inter-dimer hopping vanish, so its total Rayleigh energy is B times the exact local quotient.",
+  "chains": [
+    {
+      "sites": 2,
+      "moments": [
+        "1",
+        "0",
+        "4",
+        "16",
+        "80",
+        "384",
+        "1856",
+        "8960",
+        "43264"
+      ],
+      "work": {
+        "sites": 2,
+        "dimers": 1,
+        "U": "4",
+        "t": "1",
+        "maximum_order": 8,
+        "normalized_boundary": true,
+        "maximum_cluster_sites": 2,
+        "cluster_count": 1,
+        "total_source_frame_states": 2,
+        "largest_cluster_source_states": 2,
+        "cluster_work": [
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 2,
+            "source_frame_states": 2,
+            "referenced_frame_states": 2,
+            "original_pauli_terms": 11,
+            "frame_pauli_terms": 11,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 1
+          }
+        ],
+        "connected_cumulant_weights": [
+          [
+            "0",
+            "0",
+            "4",
+            "16",
+            "32",
+            "-256",
+            "-3584",
+            "-14336",
+            "217088"
+          ]
+        ],
+        "chain_cumulants": [
+          "0",
+          "0",
+          "4",
+          "16",
+          "32",
+          "-256",
+          "-3584",
+          "-14336",
+          "217088"
+        ],
+        "scope": "Exact normalized moments of the uniform open half-filled Hubbard chain in one product-of-valence-singlets boundary, through the declared fixed order. All interval weights are recomputed on at most10sites. No full chain configurations or Hamiltonian matrix; no ground-energy, general-boundary or universal representability claim."
+      },
+      "polynomial_coefficients": [
+        "-1000000000000",
+        "621320343560/3"
+      ],
+      "norm": "10544155877286065733894400/9",
+      "upper": "-1364853865046208916316/1647524355825947770921",
+      "upper_float": -0.8284271247461901,
+      "upper_per_site": -0.41421356237309503,
+      "numerical_ritz": -0.8284271247461901,
+      "seconds": 0.006442167000159316,
+      "dimer_product_upper": "-1364853865046208916316/1647524355825947770921",
+      "dimer_product_upper_per_site": -0.41421356237309503
+    },
+    {
+      "sites": 4,
+      "moments": [
+        "1",
+        "0",
+        "9",
+        "36",
+        "310",
+        "2488",
+        "22586",
+        "211880",
+        "2040274"
+      ],
+      "work": {
+        "sites": 4,
+        "dimers": 2,
+        "U": "4",
+        "t": "1",
+        "maximum_order": 8,
+        "normalized_boundary": true,
+        "maximum_cluster_sites": 4,
+        "cluster_count": 2,
+        "total_source_frame_states": 25,
+        "largest_cluster_source_states": 23,
+        "cluster_work": [
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 2,
+            "source_frame_states": 2,
+            "referenced_frame_states": 2,
+            "original_pauli_terms": 11,
+            "frame_pauli_terms": 11,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 1
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 26,
+            "source_frame_states": 23,
+            "referenced_frame_states": 48,
+            "original_pauli_terms": 25,
+            "frame_pauli_terms": 25,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 2
+          }
+        ],
+        "connected_cumulant_weights": [
+          [
+            "0",
+            "0",
+            "4",
+            "16",
+            "32",
+            "-256",
+            "-3584",
+            "-14336",
+            "217088"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "4",
+            "3",
+            "-240",
+            "-3186",
+            "-7920",
+            "479728"
+          ]
+        ],
+        "chain_cumulants": [
+          "0",
+          "0",
+          "9",
+          "36",
+          "67",
+          "-752",
+          "-10354",
+          "-36592",
+          "913904"
+        ],
+        "scope": "Exact normalized moments of the uniform open half-filled Hubbard chain in one product-of-valence-singlets boundary, through the declared fixed order. All interval weights are recomputed on at most10sites. No full chain configurations or Hamiltonian matrix; no ground-energy, general-boundary or universal representability claim."
+      },
+      "polynomial_coefficients": [
+        "265558799730",
+        "-250000000000",
+        "117074709543/2",
+        "-29198546529/8"
+      ],
+      "norm": "20963085240202006352867949/32",
+      "upper": "-1036075178247426120529468/537515006159025803919691",
+      "upper_float": -1.9275279134084295,
+      "upper_per_site": -0.4818819783521074,
+      "numerical_ritz": -1.9275279134084302,
+      "seconds": 0.003605124999921827,
+      "dimer_product_upper": "-2729707730092417832632/1647524355825947770921",
+      "dimer_product_upper_per_site": -0.41421356237309503
+    },
+    {
+      "sites": 6,
+      "moments": [
+        "1",
+        "0",
+        "14",
+        "56",
+        "690",
+        "6592",
+        "76852",
+        "928296",
+        "11926312"
+      ],
+      "work": {
+        "sites": 6,
+        "dimers": 3,
+        "U": "4",
+        "t": "1",
+        "maximum_order": 8,
+        "normalized_boundary": true,
+        "maximum_cluster_sites": 6,
+        "cluster_count": 3,
+        "total_source_frame_states": 189,
+        "largest_cluster_source_states": 164,
+        "cluster_work": [
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 2,
+            "source_frame_states": 2,
+            "referenced_frame_states": 2,
+            "original_pauli_terms": 11,
+            "frame_pauli_terms": 11,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 1
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 26,
+            "source_frame_states": 23,
+            "referenced_frame_states": 48,
+            "original_pauli_terms": 25,
+            "frame_pauli_terms": 25,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 2
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 283,
+            "source_frame_states": 164,
+            "referenced_frame_states": 475,
+            "original_pauli_terms": 39,
+            "frame_pauli_terms": 39,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 3
+          }
+        ],
+        "connected_cumulant_weights": [
+          [
+            "0",
+            "0",
+            "4",
+            "16",
+            "32",
+            "-256",
+            "-3584",
+            "-14336",
+            "217088"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "4",
+            "3",
+            "-240",
+            "-3186",
+            "-7920",
+            "479728"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "36",
+            "1656",
+            "38556"
+          ]
+        ],
+        "chain_cumulants": [
+          "0",
+          "0",
+          "14",
+          "56",
+          "102",
+          "-1248",
+          "-17088",
+          "-57192",
+          "1649276"
+        ],
+        "scope": "Exact normalized moments of the uniform open half-filled Hubbard chain in one product-of-valence-singlets boundary, through the declared fixed order. All interval weights are recomputed on at most10sites. No full chain configurations or Hamiltonian matrix; no ground-energy, general-boundary or universal representability claim."
+      },
+      "polynomial_coefficients": [
+        "351603350477",
+        "-250000000000",
+        "41132731771",
+        "-29150822377/16"
+      ],
+      "norm": "79562876714112090260153053/64",
+      "upper": "-236509760985369635842014342/79562876714112090260153053",
+      "upper_float": -2.9726145000413218,
+      "upper_per_site": -0.49543575000688694,
+      "numerical_ritz": -2.972614500041323,
+      "seconds": 0.015878958999792303,
+      "dimer_product_upper": "-4094561595138626748948/1647524355825947770921",
+      "dimer_product_upper_per_site": -0.4142135623730951
+    },
+    {
+      "sites": 8,
+      "moments": [
+        "1",
+        "0",
+        "19",
+        "76",
+        "1220",
+        "12696",
+        "175868",
+        "2471552",
+        "37743790"
+      ],
+      "work": {
+        "sites": 8,
+        "dimers": 4,
+        "U": "4",
+        "t": "1",
+        "maximum_order": 8,
+        "normalized_boundary": true,
+        "maximum_cluster_sites": 8,
+        "cluster_count": 4,
+        "total_source_frame_states": 739,
+        "largest_cluster_source_states": 550,
+        "cluster_work": [
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 2,
+            "source_frame_states": 2,
+            "referenced_frame_states": 2,
+            "original_pauli_terms": 11,
+            "frame_pauli_terms": 11,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 1
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 26,
+            "source_frame_states": 23,
+            "referenced_frame_states": 48,
+            "original_pauli_terms": 25,
+            "frame_pauli_terms": 25,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 2
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 283,
+            "source_frame_states": 164,
+            "referenced_frame_states": 475,
+            "original_pauli_terms": 39,
+            "frame_pauli_terms": 39,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 3
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 1524,
+            "source_frame_states": 550,
+            "referenced_frame_states": 2262,
+            "original_pauli_terms": 53,
+            "frame_pauli_terms": 53,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 4
+          }
+        ],
+        "connected_cumulant_weights": [
+          [
+            "0",
+            "0",
+            "4",
+            "16",
+            "32",
+            "-256",
+            "-3584",
+            "-14336",
+            "217088"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "4",
+            "3",
+            "-240",
+            "-3186",
+            "-7920",
+            "479728"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "36",
+            "1656",
+            "38556"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "chain_cumulants": [
+          "0",
+          "0",
+          "19",
+          "76",
+          "137",
+          "-1744",
+          "-23822",
+          "-77792",
+          "2384648"
+        ],
+        "scope": "Exact normalized moments of the uniform open half-filled Hubbard chain in one product-of-valence-singlets boundary, through the declared fixed order. All interval weights are recomputed on at most10sites. No full chain configurations or Hamiltonian matrix; no ground-energy, general-boundary or universal representability claim."
+      },
+      "polynomial_coefficients": [
+        "231767838032",
+        "-200000000000",
+        "786804733587/25",
+        "-31271707283/25"
+      ],
+      "norm": "5922315373353710421849072/5",
+      "upper": "-61595880668054440153593098/15422696284775287556898625",
+      "upper_float": -3.9938464410311707,
+      "upper_per_site": -0.49923080512889634,
+      "numerical_ritz": -3.9938464410311694,
+      "seconds": 0.061299040999983845,
+      "dimer_product_upper": "-5459415460184835665264/1647524355825947770921",
+      "dimer_product_upper_per_site": -0.41421356237309503
+    },
+    {
+      "sites": 10,
+      "moments": [
+        "1",
+        "0",
+        "24",
+        "96",
+        "1900",
+        "20800",
+        "330884",
+        "5156648",
+        "89152708"
+      ],
+      "work": {
+        "sites": 10,
+        "dimers": 5,
+        "U": "4",
+        "t": "1",
+        "maximum_order": 8,
+        "normalized_boundary": true,
+        "maximum_cluster_sites": 10,
+        "cluster_count": 5,
+        "total_source_frame_states": 2045,
+        "largest_cluster_source_states": 1306,
+        "cluster_work": [
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 2,
+            "source_frame_states": 2,
+            "referenced_frame_states": 2,
+            "original_pauli_terms": 11,
+            "frame_pauli_terms": 11,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 1
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 26,
+            "source_frame_states": 23,
+            "referenced_frame_states": 48,
+            "original_pauli_terms": 25,
+            "frame_pauli_terms": 25,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 2
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 283,
+            "source_frame_states": 164,
+            "referenced_frame_states": 475,
+            "original_pauli_terms": 39,
+            "frame_pauli_terms": 39,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 3
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 1524,
+            "source_frame_states": 550,
+            "referenced_frame_states": 2262,
+            "original_pauli_terms": 53,
+            "frame_pauli_terms": 53,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 4
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 5149,
+            "source_frame_states": 1306,
+            "referenced_frame_states": 7109,
+            "original_pauli_terms": 67,
+            "frame_pauli_terms": 67,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 5
+          }
+        ],
+        "connected_cumulant_weights": [
+          [
+            "0",
+            "0",
+            "4",
+            "16",
+            "32",
+            "-256",
+            "-3584",
+            "-14336",
+            "217088"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "4",
+            "3",
+            "-240",
+            "-3186",
+            "-7920",
+            "479728"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "36",
+            "1656",
+            "38556"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "chain_cumulants": [
+          "0",
+          "0",
+          "24",
+          "96",
+          "172",
+          "-2240",
+          "-30556",
+          "-98392",
+          "3120020"
+        ],
+        "scope": "Exact normalized moments of the uniform open half-filled Hubbard chain in one product-of-valence-singlets boundary, through the declared fixed order. All interval weights are recomputed on at most10sites. No full chain configurations or Hamiltonian matrix; no ground-energy, general-boundary or universal representability claim."
+      },
+      "polynomial_coefficients": [
+        "170640746799",
+        "-200000000000",
+        "778032464644/25",
+        "-144669871374/125"
+      ],
+      "norm": "26182824500369580313985086009/15625",
+      "upper": "-130235891882806956579707797392/26182824500369580313985086009",
+      "upper_float": -4.974096353927309,
+      "upper_per_site": -0.4974096353927309,
+      "numerical_ritz": -4.9740963539273135,
+      "seconds": 0.20031383399987135,
+      "dimer_product_upper": "-6824269325231044581580/1647524355825947770921",
+      "dimer_product_upper_per_site": -0.41421356237309503
+    },
+    {
+      "sites": 12,
+      "moments": [
+        "1",
+        "0",
+        "29",
+        "116",
+        "2730",
+        "30904",
+        "553150",
+        "9298584",
+        "177388066"
+      ],
+      "work": {
+        "sites": 12,
+        "dimers": 6,
+        "U": "4",
+        "t": "1",
+        "maximum_order": 8,
+        "normalized_boundary": true,
+        "maximum_cluster_sites": 10,
+        "cluster_count": 5,
+        "total_source_frame_states": 2045,
+        "largest_cluster_source_states": 1306,
+        "cluster_work": [
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 2,
+            "source_frame_states": 2,
+            "referenced_frame_states": 2,
+            "original_pauli_terms": 11,
+            "frame_pauli_terms": 11,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 1
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 26,
+            "source_frame_states": 23,
+            "referenced_frame_states": 48,
+            "original_pauli_terms": 25,
+            "frame_pauli_terms": 25,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 2
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 283,
+            "source_frame_states": 164,
+            "referenced_frame_states": 475,
+            "original_pauli_terms": 39,
+            "frame_pauli_terms": 39,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 3
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 1524,
+            "source_frame_states": 550,
+            "referenced_frame_states": 2262,
+            "original_pauli_terms": 53,
+            "frame_pauli_terms": 53,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 4
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 5149,
+            "source_frame_states": 1306,
+            "referenced_frame_states": 7109,
+            "original_pauli_terms": 67,
+            "frame_pauli_terms": 67,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 5
+          }
+        ],
+        "connected_cumulant_weights": [
+          [
+            "0",
+            "0",
+            "4",
+            "16",
+            "32",
+            "-256",
+            "-3584",
+            "-14336",
+            "217088"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "4",
+            "3",
+            "-240",
+            "-3186",
+            "-7920",
+            "479728"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "36",
+            "1656",
+            "38556"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "chain_cumulants": [
+          "0",
+          "0",
+          "29",
+          "116",
+          "207",
+          "-2736",
+          "-37290",
+          "-118992",
+          "3855392"
+        ],
+        "scope": "Exact normalized moments of the uniform open half-filled Hubbard chain in one product-of-valence-singlets boundary, through the declared fixed order. All interval weights are recomputed on at most10sites. No full chain configurations or Hamiltonian matrix; no ground-energy, general-boundary or universal representability claim."
+      },
+      "polynomial_coefficients": [
+        "87975750757",
+        "-500000000000/3",
+        "466098058445/18",
+        "-197881408825/216"
+      ],
+      "norm": "37037231584921171843687330367/23328",
+      "upper": "-218924313622301975491329223020/37037231584921171843687330367",
+      "upper_float": -5.910925418935248,
+      "upper_per_site": -0.492577118244604,
+      "numerical_ritz": -5.910925418935247,
+      "seconds": 0.19519566700000723,
+      "dimer_product_upper": "-8189123190277253497896/1647524355825947770921",
+      "dimer_product_upper_per_site": -0.4142135623730951
+    },
+    {
+      "sites": 16,
+      "moments": [
+        "1",
+        "0",
+        "39",
+        "156",
+        "4840",
+        "57112",
+        "1244432",
+        "23212976",
+        "517153102"
+      ],
+      "work": {
+        "sites": 16,
+        "dimers": 8,
+        "U": "4",
+        "t": "1",
+        "maximum_order": 8,
+        "normalized_boundary": true,
+        "maximum_cluster_sites": 10,
+        "cluster_count": 5,
+        "total_source_frame_states": 2045,
+        "largest_cluster_source_states": 1306,
+        "cluster_work": [
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 2,
+            "source_frame_states": 2,
+            "referenced_frame_states": 2,
+            "original_pauli_terms": 11,
+            "frame_pauli_terms": 11,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 1
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 26,
+            "source_frame_states": 23,
+            "referenced_frame_states": 48,
+            "original_pauli_terms": 25,
+            "frame_pauli_terms": 25,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 2
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 283,
+            "source_frame_states": 164,
+            "referenced_frame_states": 475,
+            "original_pauli_terms": 39,
+            "frame_pauli_terms": 39,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 3
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 1524,
+            "source_frame_states": 550,
+            "referenced_frame_states": 2262,
+            "original_pauli_terms": 53,
+            "frame_pauli_terms": 53,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 4
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 5149,
+            "source_frame_states": 1306,
+            "referenced_frame_states": 7109,
+            "original_pauli_terms": 67,
+            "frame_pauli_terms": 67,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 5
+          }
+        ],
+        "connected_cumulant_weights": [
+          [
+            "0",
+            "0",
+            "4",
+            "16",
+            "32",
+            "-256",
+            "-3584",
+            "-14336",
+            "217088"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "4",
+            "3",
+            "-240",
+            "-3186",
+            "-7920",
+            "479728"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "36",
+            "1656",
+            "38556"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "chain_cumulants": [
+          "0",
+          "0",
+          "39",
+          "156",
+          "277",
+          "-3728",
+          "-50758",
+          "-160192",
+          "5326136"
+        ],
+        "scope": "Exact normalized moments of the uniform open half-filled Hubbard chain in one product-of-valence-singlets boundary, through the declared fixed order. All interval weights are recomputed on at most10sites. No full chain configurations or Hamiltonian matrix; no ground-energy, general-boundary or universal representability claim."
+      },
+      "polynomial_coefficients": [
+        "19718401724",
+        "914018780912/7",
+        "-1000000000000/49",
+        "229472597138/343"
+      ],
+      "norm": "27992325056361568115483584880/16807",
+      "upper": "-93818609960763512068741926788/12246642212158186050524068385",
+      "upper_float": -7.660761891747155,
+      "upper_per_site": -0.4787976182341972,
+      "numerical_ritz": -7.660761891747158,
+      "seconds": 0.21076762500001678,
+      "dimer_product_upper": "-10918830920369671330528/1647524355825947770921",
+      "dimer_product_upper_per_site": -0.41421356237309503
+    },
+    {
+      "sites": 24,
+      "moments": [
+        "1",
+        "0",
+        "59",
+        "236",
+        "10860",
+        "133528",
+        "3928996",
+        "82383840",
+        "2307765454"
+      ],
+      "work": {
+        "sites": 24,
+        "dimers": 12,
+        "U": "4",
+        "t": "1",
+        "maximum_order": 8,
+        "normalized_boundary": true,
+        "maximum_cluster_sites": 10,
+        "cluster_count": 5,
+        "total_source_frame_states": 2045,
+        "largest_cluster_source_states": 1306,
+        "cluster_work": [
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 2,
+            "source_frame_states": 2,
+            "referenced_frame_states": 2,
+            "original_pauli_terms": 11,
+            "frame_pauli_terms": 11,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 1
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 26,
+            "source_frame_states": 23,
+            "referenced_frame_states": 48,
+            "original_pauli_terms": 25,
+            "frame_pauli_terms": 25,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 2
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 283,
+            "source_frame_states": 164,
+            "referenced_frame_states": 475,
+            "original_pauli_terms": 39,
+            "frame_pauli_terms": 39,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 3
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 1524,
+            "source_frame_states": 550,
+            "referenced_frame_states": 2262,
+            "original_pauli_terms": 53,
+            "frame_pauli_terms": 53,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 4
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 5149,
+            "source_frame_states": 1306,
+            "referenced_frame_states": 7109,
+            "original_pauli_terms": 67,
+            "frame_pauli_terms": 67,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 5
+          }
+        ],
+        "connected_cumulant_weights": [
+          [
+            "0",
+            "0",
+            "4",
+            "16",
+            "32",
+            "-256",
+            "-3584",
+            "-14336",
+            "217088"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "4",
+            "3",
+            "-240",
+            "-3186",
+            "-7920",
+            "479728"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "36",
+            "1656",
+            "38556"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "chain_cumulants": [
+          "0",
+          "0",
+          "59",
+          "236",
+          "417",
+          "-5712",
+          "-77694",
+          "-242592",
+          "8267624"
+        ],
+        "scope": "Exact normalized moments of the uniform open half-filled Hubbard chain in one product-of-valence-singlets boundary, through the declared fixed order. All interval weights are recomputed on at most10sites. No full chain configurations or Hamiltonian matrix; no ground-energy, general-boundary or universal representability claim."
+      },
+      "polynomial_coefficients": [
+        "-155057481949",
+        "-391847788479/4",
+        "15625000000",
+        "-29387768559/64"
+      ],
+      "norm": "2207995251410426379727262121/1024",
+      "upper": "-7912712948087924524546835608/735998417136808793242420707",
+      "upper_float": -10.750991800865645,
+      "upper_per_site": -0.4479579917027352,
+      "numerical_ritz": -10.750991800865648,
+      "seconds": 0.2641003329999876,
+      "dimer_product_upper": "-16378246380554506995792/1647524355825947770921",
+      "dimer_product_upper_per_site": -0.4142135623730951
+    },
+    {
+      "sites": 64,
+      "moments": [
+        "1",
+        "0",
+        "159",
+        "636",
+        "76960",
+        "995608",
+        "66791816",
+        "1660279760",
+        "89611272814"
+      ],
+      "work": {
+        "sites": 64,
+        "dimers": 32,
+        "U": "4",
+        "t": "1",
+        "maximum_order": 8,
+        "normalized_boundary": true,
+        "maximum_cluster_sites": 10,
+        "cluster_count": 5,
+        "total_source_frame_states": 2045,
+        "largest_cluster_source_states": 1306,
+        "cluster_work": [
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 2,
+            "source_frame_states": 2,
+            "referenced_frame_states": 2,
+            "original_pauli_terms": 11,
+            "frame_pauli_terms": 11,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 1
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 26,
+            "source_frame_states": 23,
+            "referenced_frame_states": 48,
+            "original_pauli_terms": 25,
+            "frame_pauli_terms": 25,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 2
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 283,
+            "source_frame_states": 164,
+            "referenced_frame_states": 475,
+            "original_pauli_terms": 39,
+            "frame_pauli_terms": 39,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 3
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 1524,
+            "source_frame_states": 550,
+            "referenced_frame_states": 2262,
+            "original_pauli_terms": 53,
+            "frame_pauli_terms": 53,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 4
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 5149,
+            "source_frame_states": 1306,
+            "referenced_frame_states": 7109,
+            "original_pauli_terms": 67,
+            "frame_pauli_terms": 67,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 5
+          }
+        ],
+        "connected_cumulant_weights": [
+          [
+            "0",
+            "0",
+            "4",
+            "16",
+            "32",
+            "-256",
+            "-3584",
+            "-14336",
+            "217088"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "4",
+            "3",
+            "-240",
+            "-3186",
+            "-7920",
+            "479728"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "36",
+            "1656",
+            "38556"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "chain_cumulants": [
+          "0",
+          "0",
+          "159",
+          "636",
+          "1117",
+          "-15632",
+          "-212374",
+          "-654592",
+          "22975064"
+        ],
+        "scope": "Exact normalized moments of the uniform open half-filled Hubbard chain in one product-of-valence-singlets boundary, through the declared fixed order. All interval weights are recomputed on at most10sites. No full chain configurations or Hamiltonian matrix; no ground-energy, general-boundary or universal representability claim."
+      },
+      "polynomial_coefficients": [
+        "334778940679",
+        "432145412116/13",
+        "-1000000000000/169",
+        "284535610841/2197"
+      ],
+      "norm": "896446254341670166830300698605/371293",
+      "upper": "-255679327257978497438130444363944/11653801306441712168793909081865",
+      "upper_float": -21.939564656611243,
+      "upper_per_site": -0.34280569775955066,
+      "numerical_ritz": -21.93956465661124,
+      "seconds": 0.1907088749999275,
+      "dimer_product_upper": "-43675323681478685322112/1647524355825947770921",
+      "dimer_product_upper_per_site": -0.41421356237309503
+    },
+    {
+      "sites": 1000,
+      "moments": [
+        "1",
+        "0",
+        "2499",
+        "9996",
+        "18752500",
+        "249552280",
+        "235745573804",
+        "6547737157568",
+        "4187503428641518"
+      ],
+      "work": {
+        "sites": 1000,
+        "dimers": 500,
+        "U": "4",
+        "t": "1",
+        "maximum_order": 8,
+        "normalized_boundary": true,
+        "maximum_cluster_sites": 10,
+        "cluster_count": 5,
+        "total_source_frame_states": 2045,
+        "largest_cluster_source_states": 1306,
+        "cluster_work": [
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 2,
+            "source_frame_states": 2,
+            "referenced_frame_states": 2,
+            "original_pauli_terms": 11,
+            "frame_pauli_terms": 11,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 1
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 26,
+            "source_frame_states": 23,
+            "referenced_frame_states": 48,
+            "original_pauli_terms": 25,
+            "frame_pauli_terms": 25,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 2
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 283,
+            "source_frame_states": 164,
+            "referenced_frame_states": 475,
+            "original_pauli_terms": 39,
+            "frame_pauli_terms": 39,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 3
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 1524,
+            "source_frame_states": 550,
+            "referenced_frame_states": 2262,
+            "original_pauli_terms": 53,
+            "frame_pauli_terms": 53,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 4
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 5149,
+            "source_frame_states": 1306,
+            "referenced_frame_states": 7109,
+            "original_pauli_terms": 67,
+            "frame_pauli_terms": 67,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 5
+          }
+        ],
+        "connected_cumulant_weights": [
+          [
+            "0",
+            "0",
+            "4",
+            "16",
+            "32",
+            "-256",
+            "-3584",
+            "-14336",
+            "217088"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "4",
+            "3",
+            "-240",
+            "-3186",
+            "-7920",
+            "479728"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "36",
+            "1656",
+            "38556"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "chain_cumulants": [
+          "0",
+          "0",
+          "2499",
+          "9996",
+          "17497",
+          "-247760",
+          "-3363886",
+          "-10295392",
+          "367129160"
+        ],
+        "scope": "Exact normalized moments of the uniform open half-filled Hubbard chain in one product-of-valence-singlets boundary, through the declared fixed order. All interval weights are recomputed on at most10sites. No full chain configurations or Hamiltonian matrix; no ground-energy, general-boundary or universal representability claim."
+      },
+      "polynomial_coefficients": [
+        "-508020666814",
+        "20485732133/25",
+        "400000000",
+        "-375815745939/125000"
+      ],
+      "norm": "14531016590458914629507415282119171/3906250000",
+      "upper": "-1584742846055966080658255091560276368/14531016590458914629507415282119171",
+      "upper_float": -109.05932397713387,
+      "upper_per_site": -0.10905932397713387,
+      "numerical_ritz": -109.05932397713387,
+      "seconds": 0.18326141599982293,
+      "dimer_product_upper": "-682426932523104458158000/1647524355825947770921",
+      "dimer_product_upper_per_site": -0.41421356237309503
+    },
+    {
+      "sites": 1000000,
+      "moments": [
+        "1",
+        "0",
+        "2499999",
+        "9999996",
+        "18750002500000",
+        "249999552000280",
+        "234376374995570503304",
+        "6562485230007157999568",
+        "4101648905783774655593297518"
+      ],
+      "work": {
+        "sites": 1000000,
+        "dimers": 500000,
+        "U": "4",
+        "t": "1",
+        "maximum_order": 8,
+        "normalized_boundary": true,
+        "maximum_cluster_sites": 10,
+        "cluster_count": 5,
+        "total_source_frame_states": 2045,
+        "largest_cluster_source_states": 1306,
+        "cluster_work": [
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 2,
+            "source_frame_states": 2,
+            "referenced_frame_states": 2,
+            "original_pauli_terms": 11,
+            "frame_pauli_terms": 11,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 1
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 26,
+            "source_frame_states": 23,
+            "referenced_frame_states": 48,
+            "original_pauli_terms": 25,
+            "frame_pauli_terms": 25,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 2
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 283,
+            "source_frame_states": 164,
+            "referenced_frame_states": 475,
+            "original_pauli_terms": 39,
+            "frame_pauli_terms": 39,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 3
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 1524,
+            "source_frame_states": 550,
+            "referenced_frame_states": 2262,
+            "original_pauli_terms": 53,
+            "frame_pauli_terms": 53,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 4
+          },
+          {
+            "maximum_moment_order": 8,
+            "maximum_power": 4,
+            "boundary_count": 1,
+            "initial_frame_supports": [
+              1
+            ],
+            "maximum_frame_support": 5149,
+            "source_frame_states": 1306,
+            "referenced_frame_states": 7109,
+            "original_pauli_terms": 67,
+            "frame_pauli_terms": 67,
+            "scope": "Exact local Clifford change of basis and sparse frame moments. Frame coordinates are not fixed-N determinants; the supplied physical boundaries and number-conserving H preserve the physical state. Fixed4096 frame-source and65536 vector-support caps. No scalable closure claim.",
+            "boundary_norm": 1,
+            "normalized_dimer_product": true,
+            "cluster_dimers": 5
+          }
+        ],
+        "connected_cumulant_weights": [
+          [
+            "0",
+            "0",
+            "4",
+            "16",
+            "32",
+            "-256",
+            "-3584",
+            "-14336",
+            "217088"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "4",
+            "3",
+            "-240",
+            "-3186",
+            "-7920",
+            "479728"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "36",
+            "1656",
+            "38556"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "chain_cumulants": [
+          "0",
+          "0",
+          "2499999",
+          "9999996",
+          "17499997",
+          "-247999760",
+          "-3366996886",
+          "-10299995392",
+          "367685443160"
+        ],
+        "scope": "Exact normalized moments of the uniform open half-filled Hubbard chain in one product-of-valence-singlets boundary, through the declared fixed order. All interval weights are recomputed on at most10sites. No full chain configurations or Hamiltonian matrix; no ground-energy, general-boundary or universal representability claim."
+      },
+      "polynomial_coefficients": [
+        "-548608869792",
+        "229144179155/1582",
+        "250000000000/625681",
+        "-213357146097/1979654684"
+      ],
+      "norm": "611462305821792277212522533776106258505439/139965452424397852",
+      "upper": "-15765816180414119985638517954968087079738023032/4280236140752545940487657736432743809538073",
+      "upper_float": -3683.3986868869792,
+      "upper_per_site": -0.003683398686886979,
+      "numerical_ritz": -3683.3986868869797,
+      "seconds": 0.19173708400012401,
+      "dimer_product_upper": "-682426932523104458158000000/1647524355825947770921",
+      "dimer_product_upper_per_site": -0.4142135623730951
+    }
+  ],
+  "source_sha256": {
+    "experiments/marginal_connected_dimer_moments.py": "2a80159bf392025d92d6b9109bf217513a43ca3db3560d7d6ccef2ad2646b823",
+    "experiments/marginal_clifford_moments.py": "39572bceb010ce09768b20b61abbee43d499247ba7c80821e687430d786d257c",
+    "results/marginal_graded_hubbard8/discovery/connected_dimer_probe.py": "67bee0f972783227c0cff9d93b048885f39e31228d1e36483e8e2eb117bfc742"
+  },
+  "scope": "Exact fixed-order scalar moments with analytic connected-interval extension. Explicit rational polynomial states give variational upper bounds only. Numerical Ritz values are discovery diagnostics, not certificates of optimality. No claim that a million-site ground state was solved."
+}

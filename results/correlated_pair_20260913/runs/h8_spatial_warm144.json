@@ -1,0 +1,31 @@
+{
+  "name": "h8_spatial_warm144",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-u",
+    "-m",
+    "research.correlated_pair_20260913.mps_spatial",
+    "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "results/correlated_pair_20260913/mps/h8_spatial_warm144",
+    "--alpha",
+    "4",
+    "--beta",
+    "4",
+    "--bond",
+    "144",
+    "--sweeps",
+    "3",
+    "--initial",
+    "results/correlated_pair_20260913/mps/h8_spatial_warm128/state.json"
+  ],
+  "timeout_seconds": 180,
+  "status": "passed",
+  "started_UTC": "2026-09-14T07:02:22.811115+00:00",
+  "pid": 22856,
+  "exit_code": 0,
+  "wall_seconds": 96.71443175000604,
+  "child_user_seconds": 85.840444,
+  "child_system_seconds": 9.19759,
+  "peak_child_RSS_bytes": 799375360,
+  "finished_UTC": "2026-09-14T07:03:59.525160+00:00"
+}

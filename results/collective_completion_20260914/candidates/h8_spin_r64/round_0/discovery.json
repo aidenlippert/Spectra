@@ -1,0 +1,156 @@
+{
+  "case": "h8",
+  "round": 0,
+  "spin_lifting": true,
+  "rank_cap_initial": 64,
+  "gram_entries": 53248,
+  "gram_dimensions": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    12,
+    16,
+    32,
+    32,
+    12,
+    16,
+    12,
+    16,
+    32,
+    32,
+    12,
+    16,
+    32,
+    32,
+    64,
+    64,
+    32,
+    32,
+    4,
+    4,
+    24,
+    24,
+    24,
+    24,
+    4,
+    4,
+    64,
+    64,
+    64,
+    64,
+    64,
+    64,
+    64,
+    64
+  ],
+  "full_gram_entries": 1206592,
+  "coefficient_equations": 1525,
+  "free_variables": 83,
+  "projected_map_nonzeros": 23479136,
+  "build_seconds": 7.8679097080021165,
+  "prepared_dependency": "results/collective_completion_20260914/prepared/h8",
+  "fixture": "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+  "state": "results/correlated_pair_20260913/mps/h8_spatial_warm144/state.json",
+  "full_Gram_teacher_used": false,
+  "many_body_states_enumerated": 0,
+  "guide": [
+    {
+      "name": "local-triples-(-3, 0, 1, 0)",
+      "lowest": 0.6641389096941704,
+      "highest_retained": 0.7846249598474703
+    },
+    {
+      "name": "local-triples-(-3, 1, 1, 1)",
+      "lowest": 0.6668774416476552,
+      "highest_retained": 0.7887826128422957
+    },
+    {
+      "name": "local-triples-(-2, 0, 0, 1)",
+      "lowest": 0.6641392899570251,
+      "highest_retained": 0.8591203567853815
+    },
+    {
+      "name": "local-triples-(-2, 1, 0, 0)",
+      "lowest": 0.6668778356839645,
+      "highest_retained": 0.8626185950734379
+    },
+    {
+      "name": "local-triples-(-1, 0, 1, 0)",
+      "lowest": 0.6641392348579834,
+      "highest_retained": 0.8591202755549197
+    },
+    {
+      "name": "local-triples-(-1, 1, 1, 1)",
+      "lowest": 0.6668777634726542,
+      "highest_retained": 0.862618584786218
+    },
+    {
+      "name": "local-triples-(0, 0, 0, 1)",
+      "lowest": 0.6641387444019853,
+      "highest_retained": 0.7846243696341534
+    },
+    {
+      "name": "local-triples-(0, 1, 0, 0)",
+      "lowest": 0.6668772250166305,
+      "highest_retained": 0.7887820695171306
+    },
+    {
+      "name": "mixed-(-2, 0, 0, 1)",
+      "lowest": 1.2335196130055807e-11,
+      "highest_retained": 0.07494918529636645
+    },
+    {
+      "name": "mixed-(-2, 1, 0, 0)",
+      "lowest": 1.140376596172904e-11,
+      "highest_retained": 0.07497497597196925
+    },
+    {
+      "name": "mixed-(-1, 0, 1, 0)",
+      "lowest": 3.1138141735599165e-12,
+      "highest_retained": 0.006441557375130937
+    },
+    {
+      "name": "mixed-(-1, 1, 1, 1)",
+      "lowest": 3.0325331964687575e-12,
+      "highest_retained": 0.0063448673821560695
+    },
+    {
+      "name": "mixed-(0, 0, 0, 1)",
+      "lowest": 3.078407173495954e-12,
+      "highest_retained": 0.006441554812245109
+    },
+    {
+      "name": "mixed-(0, 1, 0, 0)",
+      "lowest": 2.8825105444421754e-12,
+      "highest_retained": 0.006344860966593034
+    },
+    {
+      "name": "mixed-(1, 0, 1, 0)",
+      "lowest": 1.2414139345102125e-11,
+      "highest_retained": 0.07494934152949972
+    },
+    {
+      "name": "mixed-(1, 1, 1, 1)",
+      "lowest": 1.1824191956751292e-11,
+      "highest_retained": 0.07497490692522822
+    }
+  ],
+  "solve_seconds": 237.1407258750114,
+  "solver": "SCS",
+  "solver_status": "optimal_inaccurate",
+  "solver_iterations": 825,
+  "status": "requires_independent_exact_replay",
+  "proposed_b": -9.260794813228102,
+  "numeric_coefficient_l1": 1.1793811900298576e-05,
+  "minimum_PSD_eigenvalue": -3.579373057058528e-05,
+  "total_state_action_Ha": 0.005917134649404264,
+  "factor_rows": 902,
+  "certificate_bytes": 1573520,
+  "round_seconds": 245.24752975000592,
+  "total_seconds": 246.33370937498694
+}

@@ -1,0 +1,584 @@
+{
+  "modes": 4,
+  "dictionary_blocks": 7,
+  "upper_bound": "-701562110443215/4999999941037229",
+  "upper_bound_float": -0.14031242374328487,
+  "strategies": {
+    "full": {
+      "traces": [
+        {
+          "budget": 7,
+          "order": [
+            "linear-",
+            "linear+",
+            "pair-",
+            "pair+",
+            "particle-hole",
+            "mixed-",
+            "mixed+"
+          ],
+          "solve": {
+            "b": -0.14031242619673348,
+            "residual_max": 1.371047900211586e-09,
+            "residual_l2": 1.5041211418361444e-09,
+            "gram_rank": [
+              0,
+              0,
+              5,
+              5,
+              10,
+              24,
+              24
+            ],
+            "support_blocks": 7,
+            "wall_seconds": 0.15323033300228417,
+            "solver_status": "optimal",
+            "coefficient_rows": 42
+          },
+          "exact_replay_accepted": true,
+          "exact_replay": {
+            "lower": "-7015693713371/50000000000000",
+            "lower_float": -0.14031387426742,
+            "residual_l1": "72403521/50000000000000",
+            "residual_l1_float": 1.44807042e-06,
+            "multiplier_terms": 23,
+            "square_polynomial_terms": 67,
+            "residual_terms": 67,
+            "residual_max_degree": 6,
+            "mode_count": 4,
+            "particle_number": 2,
+            "factor_rows": 87,
+            "factor_nonzeros": 1036,
+            "status": "optimal",
+            "coefficient_rows": 42,
+            "gram_dimensions": [
+              4,
+              4,
+              6,
+              6,
+              16,
+              28,
+              28
+            ],
+            "coefficient_map_nonzeros": 988,
+            "multiplier_basis_dimension": 32,
+            "build_seconds": 0.0065890000041690655,
+            "solve_seconds": 0.13601145800203085,
+            "proposed_b": -0.14031242619673348
+          },
+          "gap_to_upper": 1.4505241351381315e-06,
+          "certificate_bytes": 14240
+        }
+      ]
+    },
+    "fixed": {
+      "traces": [
+        {
+          "budget": 1,
+          "order": [
+            "linear-"
+          ],
+          "solve": {
+            "b": null,
+            "residual_max": null,
+            "residual_l2": null,
+            "gram_rank": [],
+            "support_blocks": 1,
+            "wall_seconds": 0.0070516250052605756,
+            "solver_status": "No coefficient certificate proposal: infeasible",
+            "coefficient_rows": null
+          }
+        },
+        {
+          "budget": 2,
+          "order": [
+            "linear-",
+            "linear+"
+          ],
+          "solve": {
+            "b": null,
+            "residual_max": null,
+            "residual_l2": null,
+            "gram_rank": [],
+            "support_blocks": 2,
+            "wall_seconds": 0.00836120900203241,
+            "solver_status": "No coefficient certificate proposal: infeasible",
+            "coefficient_rows": null
+          }
+        },
+        {
+          "budget": 3,
+          "order": [
+            "linear-",
+            "linear+",
+            "pair-"
+          ],
+          "solve": {
+            "b": -0.14031242364138527,
+            "residual_max": 1.0182445096637402e-10,
+            "residual_l2": 1.0182445096831639e-10,
+            "gram_rank": [
+              0,
+              0,
+              5
+            ],
+            "support_blocks": 3,
+            "wall_seconds": 0.01659937500517117,
+            "solver_status": "optimal",
+            "coefficient_rows": 42
+          },
+          "exact_replay_accepted": true,
+          "exact_replay": {
+            "lower": "-14031280504347/100000000000000",
+            "lower_float": -0.14031280504347,
+            "residual_l1": "38140247/100000000000000",
+            "residual_l1_float": 3.8140247e-07,
+            "multiplier_terms": 9,
+            "square_polynomial_terms": 31,
+            "residual_terms": 31,
+            "residual_max_degree": 4,
+            "mode_count": 4,
+            "particle_number": 2,
+            "factor_rows": 9,
+            "factor_nonzeros": 26,
+            "status": "optimal",
+            "coefficient_rows": 42,
+            "gram_dimensions": [
+              4,
+              4,
+              6
+            ],
+            "coefficient_map_nonzeros": 45,
+            "multiplier_basis_dimension": 32,
+            "build_seconds": 0.0026641669974196702,
+            "solve_seconds": 0.013105500001984183,
+            "proposed_b": -0.14031242364138527
+          },
+          "gap_to_upper": 3.8130018512050334e-07,
+          "certificate_bytes": 1601
+        }
+      ]
+    },
+    "random": {
+      "traces": [
+        {
+          "budget": 1,
+          "order": [
+            "mixed-"
+          ],
+          "solve": {
+            "b": -0.14031241868832128,
+            "residual_max": 1.1615247652585481e-10,
+            "residual_l2": 1.1619002593517589e-10,
+            "gram_rank": [
+              24
+            ],
+            "support_blocks": 1,
+            "wall_seconds": 0.07805799999914598,
+            "solver_status": "optimal",
+            "coefficient_rows": 42
+          },
+          "exact_replay_accepted": true,
+          "exact_replay": {
+            "lower": "-14031441478573/100000000000000",
+            "lower_float": -0.14031441478573,
+            "residual_l1": "199609773/100000000000000",
+            "residual_l1_float": 1.99609773e-06,
+            "multiplier_terms": 23,
+            "square_polynomial_terms": 60,
+            "residual_terms": 61,
+            "residual_max_degree": 6,
+            "mode_count": 4,
+            "particle_number": 2,
+            "factor_rows": 24,
+            "factor_nonzeros": 382,
+            "status": "optimal",
+            "coefficient_rows": 42,
+            "gram_dimensions": [
+              28
+            ],
+            "coefficient_map_nonzeros": 268,
+            "multiplier_basis_dimension": 32,
+            "build_seconds": 0.0031014999985927716,
+            "solve_seconds": 0.17544708399509545,
+            "proposed_b": -0.14031241868832128
+          },
+          "gap_to_upper": 1.991042445137481e-06,
+          "certificate_bytes": 6831
+        },
+        {
+          "budget": 2,
+          "order": [
+            "mixed-",
+            "pair-"
+          ],
+          "solve": {
+            "b": -0.1403124237665054,
+            "residual_max": 2.3252233471993122e-11,
+            "residual_l2": 2.3252233667246708e-11,
+            "gram_rank": [
+              24,
+              5
+            ],
+            "support_blocks": 2,
+            "wall_seconds": 0.11625237500265939,
+            "solver_status": "optimal",
+            "coefficient_rows": 42
+          },
+          "exact_replay_accepted": true,
+          "exact_replay": {
+            "lower": "-2806268263741/20000000000000",
+            "lower_float": -0.14031341318705,
+            "residual_l1": "19788401/20000000000000",
+            "residual_l1_float": 9.8942005e-07,
+            "multiplier_terms": 23,
+            "square_polynomial_terms": 60,
+            "residual_terms": 61,
+            "residual_max_degree": 6,
+            "mode_count": 4,
+            "particle_number": 2,
+            "factor_rows": 29,
+            "factor_nonzeros": 381,
+            "status": "optimal",
+            "coefficient_rows": 42,
+            "gram_dimensions": [
+              28,
+              6
+            ],
+            "coefficient_map_nonzeros": 289,
+            "multiplier_basis_dimension": 32,
+            "build_seconds": 0.003651042003184557,
+            "solve_seconds": 0.08139341700007208,
+            "proposed_b": -0.1403124237665054
+          },
+          "gap_to_upper": 9.894437651425392e-07,
+          "certificate_bytes": 7006
+        },
+        {
+          "budget": 3,
+          "order": [
+            "mixed-",
+            "pair-",
+            "pair+"
+          ],
+          "solve": {
+            "b": -0.14031242385766093,
+            "residual_max": 1.9121536472266332e-10,
+            "residual_l2": 3.059947139305746e-10,
+            "gram_rank": [
+              24,
+              5,
+              5
+            ],
+            "support_blocks": 3,
+            "wall_seconds": 0.13029720899794484,
+            "solver_status": "optimal",
+            "coefficient_rows": 42
+          },
+          "exact_replay_accepted": true,
+          "exact_replay": {
+            "lower": "-3507848157067/25000000000000",
+            "lower_float": -0.14031392628268,
+            "residual_l1": "37560617/25000000000000",
+            "residual_l1_float": 1.50242468e-06,
+            "multiplier_terms": 23,
+            "square_polynomial_terms": 61,
+            "residual_terms": 61,
+            "residual_max_degree": 6,
+            "mode_count": 4,
+            "particle_number": 2,
+            "factor_rows": 40,
+            "factor_nonzeros": 502,
+            "status": "optimal",
+            "coefficient_rows": 42,
+            "gram_dimensions": [
+              28,
+              6,
+              6
+            ],
+            "coefficient_map_nonzeros": 340,
+            "multiplier_basis_dimension": 32,
+            "build_seconds": 0.005295583003317006,
+            "solve_seconds": 0.08411474999593338,
+            "proposed_b": -0.14031242385766093
+          },
+          "gap_to_upper": 1.5025393951262345e-06,
+          "certificate_bytes": 7720
+        }
+      ]
+    },
+    "adaptive": {
+      "traces": [
+        {
+          "budget": 1,
+          "order": [
+            "mixed-"
+          ],
+          "solve": {
+            "b": -0.14031241868832128,
+            "residual_max": 1.1615247652585481e-10,
+            "residual_l2": 1.1619002593517589e-10,
+            "gram_rank": [
+              24
+            ],
+            "support_blocks": 1,
+            "wall_seconds": 0.08430870799929835,
+            "solver_status": "optimal",
+            "coefficient_rows": 42
+          },
+          "exact_replay_accepted": true,
+          "exact_replay": {
+            "lower": "-14031441478573/100000000000000",
+            "lower_float": -0.14031441478573,
+            "residual_l1": "199609773/100000000000000",
+            "residual_l1_float": 1.99609773e-06,
+            "multiplier_terms": 23,
+            "square_polynomial_terms": 60,
+            "residual_terms": 61,
+            "residual_max_degree": 6,
+            "mode_count": 4,
+            "particle_number": 2,
+            "factor_rows": 24,
+            "factor_nonzeros": 382,
+            "status": "optimal",
+            "coefficient_rows": 42,
+            "gram_dimensions": [
+              28
+            ],
+            "coefficient_map_nonzeros": 268,
+            "multiplier_basis_dimension": 32,
+            "build_seconds": 0.003687917000206653,
+            "solve_seconds": 0.07037141599721508,
+            "proposed_b": -0.14031241868832128
+          },
+          "gap_to_upper": 1.991042445137481e-06,
+          "certificate_bytes": 6831
+        },
+        {
+          "budget": 2,
+          "order": [
+            "mixed-",
+            "particle-hole"
+          ],
+          "solve": {
+            "b": -0.14031241383350887,
+            "residual_max": 3.4188979425309185e-10,
+            "residual_l2": 5.282157819145471e-10,
+            "gram_rank": [
+              24,
+              10
+            ],
+            "support_blocks": 2,
+            "wall_seconds": 0.10032154199871002,
+            "solver_status": "optimal",
+            "coefficient_rows": 42
+          },
+          "exact_replay_accepted": true,
+          "exact_replay": {
+            "lower": "-701570502939/5000000000000",
+            "lower_float": -0.1403141005878,
+            "residual_l1": "8433769/5000000000000",
+            "residual_l1_float": 1.6867538e-06,
+            "multiplier_terms": 23,
+            "square_polynomial_terms": 68,
+            "residual_terms": 69,
+            "residual_max_degree": 6,
+            "mode_count": 4,
+            "particle_number": 2,
+            "factor_rows": 41,
+            "factor_nonzeros": 593,
+            "status": "optimal",
+            "coefficient_rows": 42,
+            "gram_dimensions": [
+              28,
+              16
+            ],
+            "coefficient_map_nonzeros": 392,
+            "multiplier_basis_dimension": 32,
+            "build_seconds": 0.003647083998657763,
+            "solve_seconds": 0.08990191700286232,
+            "proposed_b": -0.14031241383350887
+          },
+          "gap_to_upper": 1.6768445151305045e-06,
+          "certificate_bytes": 8460
+        },
+        {
+          "budget": 3,
+          "order": [
+            "mixed-",
+            "particle-hole",
+            "pair+"
+          ],
+          "solve": {
+            "b": -0.14031241892286048,
+            "residual_max": 3.9234903867479964e-10,
+            "residual_l2": 7.437726082381194e-10,
+            "gram_rank": [
+              24,
+              10,
+              5
+            ],
+            "support_blocks": 3,
+            "wall_seconds": 0.10364387500158045,
+            "solver_status": "optimal",
+            "coefficient_rows": 42
+          },
+          "exact_replay_accepted": true,
+          "exact_replay": {
+            "lower": "-876966783613/6250000000000",
+            "lower_float": -0.14031468537808,
+            "residual_l1": "56661377/25000000000000",
+            "residual_l1_float": 2.26645508e-06,
+            "multiplier_terms": 23,
+            "square_polynomial_terms": 61,
+            "residual_terms": 61,
+            "residual_max_degree": 6,
+            "mode_count": 4,
+            "particle_number": 2,
+            "factor_rows": 42,
+            "factor_nonzeros": 572,
+            "status": "optimal",
+            "coefficient_rows": 42,
+            "gram_dimensions": [
+              28,
+              16,
+              6
+            ],
+            "coefficient_map_nonzeros": 443,
+            "multiplier_basis_dimension": 32,
+            "build_seconds": 0.0044579580062418245,
+            "solve_seconds": 0.09798087500530528,
+            "proposed_b": -0.14031241892286048
+          },
+          "gap_to_upper": 2.2616347951365245e-06,
+          "certificate_bytes": 8350
+        }
+      ]
+    }
+  },
+  "pricing_ledger": [
+    {
+      "candidate": 0,
+      "round": 1,
+      "status": "No coefficient certificate proposal: infeasible",
+      "b": null
+    },
+    {
+      "candidate": 1,
+      "round": 1,
+      "status": "No coefficient certificate proposal: infeasible",
+      "b": null
+    },
+    {
+      "candidate": 2,
+      "round": 1,
+      "status": "optimal",
+      "b": -0.14031242370430533
+    },
+    {
+      "candidate": 3,
+      "round": 1,
+      "status": "optimal",
+      "b": -0.1403124240635667
+    },
+    {
+      "candidate": 4,
+      "round": 1,
+      "status": "optimal",
+      "b": -0.14031242436147764
+    },
+    {
+      "candidate": 5,
+      "round": 1,
+      "status": "optimal",
+      "b": -0.14031241868832128
+    },
+    {
+      "candidate": 6,
+      "round": 1,
+      "status": "optimal",
+      "b": -0.1403124270679188
+    },
+    {
+      "round": 1,
+      "scored": 5,
+      "seconds": 0.2430962919970625
+    },
+    {
+      "candidate": 0,
+      "round": 2,
+      "status": "optimal",
+      "b": -0.1403124237647953
+    },
+    {
+      "candidate": 1,
+      "round": 2,
+      "status": "optimal",
+      "b": -0.1403124235906455
+    },
+    {
+      "candidate": 2,
+      "round": 2,
+      "status": "optimal",
+      "b": -0.1403124237665054
+    },
+    {
+      "candidate": 3,
+      "round": 2,
+      "status": "optimal",
+      "b": -0.1403124240269515
+    },
+    {
+      "candidate": 4,
+      "round": 2,
+      "status": "optimal",
+      "b": -0.14031241383350887
+    },
+    {
+      "candidate": 6,
+      "round": 2,
+      "status": "optimal",
+      "b": -0.14031242281935238
+    },
+    {
+      "round": 2,
+      "scored": 6,
+      "seconds": 0.591048457994475
+    },
+    {
+      "candidate": 0,
+      "round": 3,
+      "status": "optimal",
+      "b": -0.14031242321065096
+    },
+    {
+      "candidate": 1,
+      "round": 3,
+      "status": "optimal",
+      "b": -0.14031242358919563
+    },
+    {
+      "candidate": 2,
+      "round": 3,
+      "status": "optimal",
+      "b": -0.1403124267404999
+    },
+    {
+      "candidate": 3,
+      "round": 3,
+      "status": "optimal",
+      "b": -0.14031241892286048
+    },
+    {
+      "candidate": 6,
+      "round": 3,
+      "status": "optimal",
+      "b": -0.14031242325962548
+    },
+    {
+      "round": 3,
+      "scored": 5,
+      "seconds": 0.6552919999958249
+    }
+  ]
+}

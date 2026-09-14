@@ -1,0 +1,80 @@
+{
+  "scope": "one-body CAR residual domination; local rational verifier",
+  "cases": [
+    {
+      "name": "asymmetric_held_out",
+      "modes": 4,
+      "particles": 2,
+      "edges": [
+        [
+          0,
+          1,
+          "1"
+        ],
+        [
+          0,
+          2,
+          "3/4"
+        ],
+        [
+          1,
+          3,
+          "1/2"
+        ],
+        [
+          2,
+          3,
+          "1/4"
+        ]
+      ],
+      "naive_l1": "5",
+      "local_row_bound": "7/2",
+      "audit_fixed_sector_row_bound": "5/2",
+      "improvement_ratio_l1_over_local": "10/7",
+      "verifier": "rational row sums; fixed-sector matrix only audit"
+    },
+    {
+      "name": "adverse_star",
+      "modes": 4,
+      "particles": 2,
+      "edges": [
+        [
+          0,
+          1,
+          "1"
+        ],
+        [
+          0,
+          2,
+          "1"
+        ],
+        [
+          0,
+          3,
+          "1"
+        ]
+      ],
+      "naive_l1": "6",
+      "local_row_bound": "6",
+      "audit_fixed_sector_row_bound": "2",
+      "improvement_ratio_l1_over_local": "1",
+      "verifier": "rational row sums; fixed-sector matrix only audit"
+    },
+    {
+      "name": "actual_h4_rank1_all_blocks",
+      "fixture": "/Users/aidenlippert/Documents/Spectra/results/marginal_molecule_stress/h4_square_degree3_certificate.json",
+      "blocks": 25,
+      "naive_total_l1": "464099859503235409/1000000000000000000",
+      "structured_onebody_total": "115169790838142689/250000000000000000",
+      "improved_blocks": 1,
+      "improvement_ratio": "464099859503235409/460679163352570756",
+      "scope": "one-body component grouped; higher-body residual remains coefficient-l1"
+    }
+  ],
+  "complexity": {
+    "verifier": "O(|E| + M)",
+    "memory": "O(M)",
+    "global_fock_dimension_constructed": false,
+    "audit_only": "O(binomial(M,N)^2) for the two four-mode checks"
+  }
+}

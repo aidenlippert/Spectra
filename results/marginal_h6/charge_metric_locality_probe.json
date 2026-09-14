@@ -1,0 +1,15 @@
+{
+  "source": "results/marginal_h6/charge_product24/certificate.json",
+  "family": "pair_square",
+  "states": 380,
+  "matrix_dimension": 380,
+  "construction": "Rebuilt the actual Q matrix once from the source certificate; optimized positive exponential feature weights from zero with analytic-gradient SLSQP.",
+  "scope": "Numerical locality proposal only; exact acceptance and optimality are not established.",
+  "results": [
+    {"R": 1, "feature_count": 12, "achieved_bound": -6.296622773981219, "theta": -6.2966227739812135, "optimizer_success": true, "optimizer_status": 0, "iterations": 13},
+    {"R": 2, "feature_count": 16, "achieved_bound": -6.263678258526106, "theta": -6.263678258526103, "optimizer_success": true, "optimizer_status": 0, "iterations": 16},
+    {"R": 3, "feature_count": 20, "achieved_bound": -6.2557067138272915, "theta": -6.255706713827059, "optimizer_success": true, "optimizer_status": 0, "iterations": 15},
+    {"R": 4, "feature_count": 22, "achieved_bound": -6.248386099413061, "theta": -6.248386099413061, "optimizer_success": true, "optimizer_status": 0, "iterations": 15},
+    {"R": 5, "feature_count": 24, "achieved_bound": -6.235591867703217, "theta": -6.235591867703194, "optimizer_success": true, "optimizer_status": 0, "iterations": 17}
+  ]
+}

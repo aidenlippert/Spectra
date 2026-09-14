@@ -1,0 +1,366 @@
+{
+  "case": "h6_actual",
+  "mode": "low",
+  "rank_cap": 32,
+  "teacher_used": false,
+  "all_CAR_rows": 4859,
+  "degree_six_rows": 4360,
+  "sector_multiplier_dimension": 25,
+  "full_gram_entries": 217268,
+  "reduced_gram_entries": 14244,
+  "active_equations_after_exact_elimination": 499,
+  "original_sector_multiplier_dimension": 499,
+  "exact_quartic_ideal_elimination": true,
+  "projected_map_nonzeros": 1811582,
+  "map_build_seconds": 0.9057435830036411,
+  "diagnostics": [
+    {
+      "block": 26,
+      "lowest": 0.7122158355221904,
+      "highest_retained": 0.7122158355221904
+    },
+    {
+      "block": 27,
+      "lowest": 0.71221583552219,
+      "highest_retained": 0.71221583552219
+    },
+    {
+      "block": 28,
+      "lowest": 0.7122419024369244,
+      "highest_retained": 0.8453751006505414
+    },
+    {
+      "block": 29,
+      "lowest": 0.7122419114036972,
+      "highest_retained": 0.8473060314922665
+    },
+    {
+      "block": 30,
+      "lowest": 0.7122419231883854,
+      "highest_retained": 0.8453747605457791
+    },
+    {
+      "block": 31,
+      "lowest": 0.7122419321201794,
+      "highest_retained": 0.8473060642160444
+    },
+    {
+      "block": 32,
+      "lowest": 0.7122158975037685,
+      "highest_retained": 0.7122158975037685
+    },
+    {
+      "block": 33,
+      "lowest": 0.7122158975037683,
+      "highest_retained": 0.7122158975037683
+    },
+    {
+      "block": 42,
+      "lowest": 2.163964523923127e-07,
+      "highest_retained": 0.11051417834672558
+    },
+    {
+      "block": 43,
+      "lowest": 2.195193860626811e-07,
+      "highest_retained": 0.11034051223169483
+    },
+    {
+      "block": 44,
+      "lowest": -1.6041619862696894e-15,
+      "highest_retained": 0.0018217920441804328
+    },
+    {
+      "block": 45,
+      "lowest": -3.9209883834447e-16,
+      "highest_retained": 0.0017873083093999304
+    },
+    {
+      "block": 46,
+      "lowest": -1.5710380743951738e-16,
+      "highest_retained": 0.0018217979209732766
+    },
+    {
+      "block": 47,
+      "lowest": -3.2047977361583544e-16,
+      "highest_retained": 0.0017873035615163966
+    },
+    {
+      "block": 48,
+      "lowest": 2.1654492889306947e-07,
+      "highest_retained": 0.1105140449060252
+    },
+    {
+      "block": 49,
+      "lowest": 2.1998816845717055e-07,
+      "highest_retained": 0.11034059894742002
+    }
+  ],
+  "independent_preparation_receipt": "/Users/aidenlippert/Documents/Spectra/results/reconstruction_compression_20260914/prepared/h6_actual/receipt.json",
+  "numerical_equality_tolerance": 1e-08,
+  "unknown_state_restricted_to_MPS": false,
+  "many_body_states_enumerated": 0,
+  "solve_seconds": 75.47466037500999,
+  "solver_status": "optimal_inaccurate",
+  "solver_iterations": 75,
+  "status": "proposal_requires_exact_replay",
+  "proposed_b": -1.0596012552239893,
+  "minimum_numeric_PSD_eigenvalue": -1.6451400436605037,
+  "full_numeric_coefficient_l1": 0.2379875325790448,
+  "factor_rows": 421,
+  "certificate_bytes": 360496,
+  "total_seconds": 76.40520895799273,
+  "gram_state_actions": [
+    {
+      "name": "linear-(-1, 0, 1, 0)",
+      "dimension": 3,
+      "numeric_trace": -0.14352154118624452,
+      "numeric_state_action_Ha": -0.07745433312758292
+    },
+    {
+      "name": "linear-(-1, 1, 1, 1)",
+      "dimension": 3,
+      "numeric_trace": -0.07730412932388711,
+      "numeric_state_action_Ha": -0.04937485479375927
+    },
+    {
+      "name": "linear-(0, 0, 0, 1)",
+      "dimension": 3,
+      "numeric_trace": 0.003757846882463122,
+      "numeric_state_action_Ha": -0.0035940380205883326
+    },
+    {
+      "name": "linear-(0, 1, 0, 0)",
+      "dimension": 3,
+      "numeric_trace": 0.008185824568759555,
+      "numeric_state_action_Ha": 0.022535872085933835
+    },
+    {
+      "name": "linear+(0, 0, 0, 1)",
+      "dimension": 3,
+      "numeric_trace": 0.2926246345164486,
+      "numeric_state_action_Ha": 0.17351084692233915
+    },
+    {
+      "name": "linear+(0, 1, 0, 0)",
+      "dimension": 3,
+      "numeric_trace": 0.2371380079639014,
+      "numeric_state_action_Ha": 0.11693733034282261
+    },
+    {
+      "name": "linear+(1, 0, 1, 0)",
+      "dimension": 3,
+      "numeric_trace": 0.4942105475370562,
+      "numeric_state_action_Ha": 0.2648018574619563
+    },
+    {
+      "name": "linear+(1, 1, 1, 1)",
+      "dimension": 3,
+      "numeric_trace": 0.3761747983578665,
+      "numeric_state_action_Ha": 0.13993782087952578
+    },
+    {
+      "name": "pair-(-2, 0, 0, 0)",
+      "dimension": 6,
+      "numeric_trace": -0.46951377124601446,
+      "numeric_state_action_Ha": -0.05361792673501484
+    },
+    {
+      "name": "pair-(-2, 1, 0, 1)",
+      "dimension": 9,
+      "numeric_trace": -0.6011930318682678,
+      "numeric_state_action_Ha": -0.06764748870639492
+    },
+    {
+      "name": "pair-(-1, 0, 1, 1)",
+      "dimension": 18,
+      "numeric_trace": -1.5249058820397134,
+      "numeric_state_action_Ha": -0.5197135555458449
+    },
+    {
+      "name": "pair-(-1, 1, 1, 0)",
+      "dimension": 18,
+      "numeric_trace": -1.5401083819541737,
+      "numeric_state_action_Ha": -0.3106775944874205
+    },
+    {
+      "name": "pair-(0, 0, 0, 0)",
+      "dimension": 6,
+      "numeric_trace": -0.5051778412956466,
+      "numeric_state_action_Ha": -0.0591000138452846
+    },
+    {
+      "name": "pair-(0, 1, 0, 1)",
+      "dimension": 9,
+      "numeric_trace": -0.6947418771120744,
+      "numeric_state_action_Ha": -0.08945232257089346
+    },
+    {
+      "name": "pair+(0, 0, 0, 0)",
+      "dimension": 6,
+      "numeric_trace": 0.14350854727978263,
+      "numeric_state_action_Ha": 0.06164611631955563
+    },
+    {
+      "name": "pair+(0, 1, 0, 1)",
+      "dimension": 9,
+      "numeric_trace": 0.3719750244442717,
+      "numeric_state_action_Ha": 0.17174353038851328
+    },
+    {
+      "name": "pair+(1, 0, 1, 1)",
+      "dimension": 18,
+      "numeric_trace": 0.9729857609828463,
+      "numeric_state_action_Ha": 0.2685141775121901
+    },
+    {
+      "name": "pair+(1, 1, 1, 0)",
+      "dimension": 18,
+      "numeric_trace": 0.43808201508825073,
+      "numeric_state_action_Ha": 0.11449704763641706
+    },
+    {
+      "name": "pair+(2, 0, 0, 0)",
+      "dimension": 6,
+      "numeric_trace": 0.12751254850596952,
+      "numeric_state_action_Ha": 0.06276039438708807
+    },
+    {
+      "name": "pair+(2, 1, 0, 1)",
+      "dimension": 9,
+      "numeric_trace": 0.3489618994209991,
+      "numeric_state_action_Ha": 0.18460126108676717
+    },
+    {
+      "name": "particle-hole(-1, 0, 1, 1)",
+      "dimension": 18,
+      "numeric_trace": 1.0746565465715623,
+      "numeric_state_action_Ha": 0.3283131960443938
+    },
+    {
+      "name": "particle-hole(-1, 1, 1, 0)",
+      "dimension": 18,
+      "numeric_trace": 1.0879379841151837,
+      "numeric_state_action_Ha": 0.4386109439161307
+    },
+    {
+      "name": "particle-hole(0, 0, 0, 0)",
+      "dimension": 36,
+      "numeric_trace": 0.763107165620586,
+      "numeric_state_action_Ha": -3.830325171830867
+    },
+    {
+      "name": "particle-hole(0, 1, 0, 1)",
+      "dimension": 36,
+      "numeric_trace": 2.238613760669752,
+      "numeric_state_action_Ha": 0.6986157249830237
+    },
+    {
+      "name": "particle-hole(1, 0, 1, 1)",
+      "dimension": 18,
+      "numeric_trace": 0.9445565514941051,
+      "numeric_state_action_Ha": 0.28632330240892845
+    },
+    {
+      "name": "particle-hole(1, 1, 1, 0)",
+      "dimension": 18,
+      "numeric_trace": 0.9672156905488887,
+      "numeric_state_action_Ha": 0.3807520483480811
+    },
+    {
+      "name": "local-triples-(-3, 0, 1, 0) paired",
+      "dimension": 1,
+      "numeric_trace": -0.18507025562411228,
+      "numeric_state_action_Ha": -0.13180996673963247
+    },
+    {
+      "name": "local-triples-(-3, 1, 1, 1) paired",
+      "dimension": 1,
+      "numeric_trace": -0.13377582403537785,
+      "numeric_state_action_Ha": -0.0952772602880261
+    },
+    {
+      "name": "local-triples-(-2, 0, 0, 1) paired",
+      "dimension": 9,
+      "numeric_trace": -1.1218818493200404,
+      "numeric_state_action_Ha": -0.8639491938481674
+    },
+    {
+      "name": "local-triples-(-2, 1, 0, 0) paired",
+      "dimension": 9,
+      "numeric_trace": -1.0586739801889726,
+      "numeric_state_action_Ha": -0.8193620256767444
+    },
+    {
+      "name": "local-triples-(-1, 0, 1, 0) paired",
+      "dimension": 9,
+      "numeric_trace": -1.1572600250104377,
+      "numeric_state_action_Ha": -0.8915212540377887
+    },
+    {
+      "name": "local-triples-(-1, 1, 1, 1) paired",
+      "dimension": 9,
+      "numeric_trace": -1.0741174685995218,
+      "numeric_state_action_Ha": -0.8290843235589588
+    },
+    {
+      "name": "local-triples-(0, 0, 0, 1) paired",
+      "dimension": 1,
+      "numeric_trace": -0.2052340102627683,
+      "numeric_state_action_Ha": -0.14617092481759517
+    },
+    {
+      "name": "local-triples-(0, 1, 0, 0) paired",
+      "dimension": 1,
+      "numeric_trace": -0.13215073049743453,
+      "numeric_state_action_Ha": -0.09411985112700895
+    },
+    {
+      "name": "mixed-(-2, 0, 0, 1) paired",
+      "dimension": 32,
+      "numeric_trace": -0.007133038101888246,
+      "numeric_state_action_Ha": -0.013435342645958732
+    },
+    {
+      "name": "mixed-(-2, 1, 0, 0) paired",
+      "dimension": 32,
+      "numeric_trace": 0.08840826403466992,
+      "numeric_state_action_Ha": -0.009352528991597848
+    },
+    {
+      "name": "mixed-(-1, 0, 1, 0) paired",
+      "dimension": 32,
+      "numeric_trace": -0.20746387805583993,
+      "numeric_state_action_Ha": -0.00020186438610441564
+    },
+    {
+      "name": "mixed-(-1, 1, 1, 1) paired",
+      "dimension": 32,
+      "numeric_trace": -0.3800101951396528,
+      "numeric_state_action_Ha": -9.707230408371369e-05
+    },
+    {
+      "name": "mixed-(0, 0, 0, 1) paired",
+      "dimension": 32,
+      "numeric_trace": -0.37774803249012334,
+      "numeric_state_action_Ha": -0.00017828195739004072
+    },
+    {
+      "name": "mixed-(0, 1, 0, 0) paired",
+      "dimension": 32,
+      "numeric_trace": -0.4082854983786752,
+      "numeric_state_action_Ha": -5.599108967927133e-05
+    },
+    {
+      "name": "mixed-(1, 0, 1, 0) paired",
+      "dimension": 32,
+      "numeric_trace": -0.010479400245967642,
+      "numeric_state_action_Ha": -0.012287756090567124
+    },
+    {
+      "name": "mixed-(1, 1, 1, 1) paired",
+      "dimension": 32,
+      "numeric_trace": 0.09109373623738899,
+      "numeric_state_action_Ha": -0.009100040992723425
+    }
+  ]
+}

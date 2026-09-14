@@ -1,0 +1,68 @@
+[
+  {
+    "round": 18,
+    "active_atoms": 4148,
+    "search_seconds": 36.534536667051725,
+    "status": "Optimal",
+    "phase_one_l1": 4.313137069861564e-13,
+    "metric_coefficients": [
+      0.670760360150469,
+      0.009558701295376004,
+      0.030530344534672602,
+      -0.03496685463532245,
+      -0.0016352635214386053,
+      0.027097456090187783,
+      -0.06309154089790171,
+      -0.01726485931079503,
+      -0.012060440998905818,
+      0.0161847646344657,
+      -0.06618725934343311,
+      -0.008590242090914718,
+      -0.0211537341760316,
+      -0.015777649843290036,
+      -0.0021585471737965546,
+      0.005518394661909634,
+      0.006158308046590559
+    ],
+    "metric_mean": 1.0000000000000002,
+    "nonzero_atom_weights": 744,
+    "simplex_iterations": 2,
+    "ipm_iterations": 47,
+    "primal_infeasibility": 7.062037138005284e-11,
+    "dual_infeasibility": 2.3836422585277657e-11,
+    "exact_receipt": {
+      "complement_lower": "-14",
+      "weight_positivity": {
+        "lower": "312488859/312500000000",
+        "residual_l1": "11141/312500000000",
+        "positive_indicators": 2088,
+        "charge_indicators": 642,
+        "number_multiplier_terms": 9162
+      },
+      "numerator_positivity": {
+        "lower": "49982434529/50000000000000",
+        "residual_l1": "17565471/50000000000000",
+        "positive_indicators": 3392,
+        "charge_indicators": 1212,
+        "number_multiplier_terms": 9869
+      },
+      "compilation": {
+        "polynomial_products": 16121,
+        "coefficient_products": 219463,
+        "peak_terms": 5469,
+        "occupation_endpoint_evaluations": 0,
+        "metric_scale": 2000000000000,
+        "numerator_scale": 2000000000000,
+        "weight_terms": 1301,
+        "numerator_terms": 10017,
+        "numerator_degree": 6,
+        "transition_groups": 28,
+        "determinant_actions": 0,
+        "target_valence_exclusion": true,
+        "projector_free_zero_metric": true
+      },
+      "verification_coefficient_products": 506986,
+      "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+    }
+  }
+]

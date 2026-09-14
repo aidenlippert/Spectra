@@ -1,0 +1,83 @@
+{
+  "complement_lower": "-783/125",
+  "reference_gap": {
+    "complement_lower": "-783/125",
+    "weight_positivity": {
+      "lower": "996951691/1000000000000",
+      "residual_l1": "3048309/1000000000000",
+      "positive_indicators": 349,
+      "charge_indicators": 51,
+      "number_multiplier_terms": 1364
+    },
+    "numerator_positivity": {
+      "lower": "2049066165240671382619/150000000000000000000000",
+      "residual_l1": "6215793809328617381/150000000000000000000000",
+      "positive_indicators": 294,
+      "charge_indicators": 15,
+      "number_multiplier_terms": 1364
+    },
+    "compilation": {
+      "polynomial_products": 1120337,
+      "coefficient_products": 10200892,
+      "peak_terms": 1764,
+      "occupation_endpoint_evaluations": 0,
+      "metric_scale": 2000000000,
+      "numerator_scale": 600000000000000000000000,
+      "weight_terms": 1640,
+      "numerator_terms": 1764,
+      "numerator_degree": 6,
+      "transition_groups": 1140,
+      "determinant_actions": 0,
+      "target_valence_exclusion": true,
+      "projector_free_zero_metric": true
+    },
+    "verification_coefficient_products": 10236800,
+    "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+  },
+  "changed_groups": [
+    {
+      "create": 1,
+      "annihilate": 4,
+      "reference_range": [
+        "-4274038918973/25000000000000",
+        "-14275927873493/100000000000000"
+      ],
+      "shift": "14275927873493/50000000000000",
+      "maximum_squared_magnitude_change": "0"
+    },
+    {
+      "create": 2,
+      "annihilate": 8,
+      "reference_range": [
+        "-4274038918973/25000000000000",
+        "-14275927873493/100000000000000"
+      ],
+      "shift": "14275927873493/50000000000000",
+      "maximum_squared_magnitude_change": "0"
+    },
+    {
+      "create": 4,
+      "annihilate": 1,
+      "reference_range": [
+        "-4274038918973/25000000000000",
+        "-14275927873493/100000000000000"
+      ],
+      "shift": "14275927873493/50000000000000",
+      "maximum_squared_magnitude_change": "0"
+    },
+    {
+      "create": 8,
+      "annihilate": 2,
+      "reference_range": [
+        "-4274038918973/25000000000000",
+        "-14275927873493/100000000000000"
+      ],
+      "shift": "14275927873493/50000000000000",
+      "maximum_squared_magnitude_change": "0"
+    }
+  ],
+  "determinant_actions": 0,
+  "target_amplitude_sign_required": false,
+  "certifies_reference_target_segment": true,
+  "scope": "Exact off-diagonal contraction transfers this checked weighted-Q-row reference gap with the same positive metric and full valence complement. Diagonal unchanged; constant coherent-amplitude shifts only. Every convex interpolation between reference and target inherits the bound. No new numerator discovery, physical state loop or target fixed-sign assumption."
+}

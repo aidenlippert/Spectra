@@ -1,0 +1,363 @@
+{
+  "case": "h6_actual",
+  "mode": "low",
+  "rank_cap": 32,
+  "teacher_used": false,
+  "all_CAR_rows": 4859,
+  "degree_six_rows": 4360,
+  "sector_multiplier_dimension": 499,
+  "full_gram_entries": 217268,
+  "reduced_gram_entries": 14244,
+  "projected_map_nonzeros": 1811582,
+  "map_build_seconds": 1.0171122500032652,
+  "diagnostics": [
+    {
+      "block": 26,
+      "lowest": 0.7122158355221904,
+      "highest_retained": 0.7122158355221904
+    },
+    {
+      "block": 27,
+      "lowest": 0.71221583552219,
+      "highest_retained": 0.71221583552219
+    },
+    {
+      "block": 28,
+      "lowest": 0.7122419024369244,
+      "highest_retained": 0.8453751006505414
+    },
+    {
+      "block": 29,
+      "lowest": 0.7122419114036972,
+      "highest_retained": 0.8473060314922665
+    },
+    {
+      "block": 30,
+      "lowest": 0.7122419231883854,
+      "highest_retained": 0.8453747605457791
+    },
+    {
+      "block": 31,
+      "lowest": 0.7122419321201794,
+      "highest_retained": 0.8473060642160444
+    },
+    {
+      "block": 32,
+      "lowest": 0.7122158975037685,
+      "highest_retained": 0.7122158975037685
+    },
+    {
+      "block": 33,
+      "lowest": 0.7122158975037683,
+      "highest_retained": 0.7122158975037683
+    },
+    {
+      "block": 42,
+      "lowest": 2.163964523923127e-07,
+      "highest_retained": 0.11051417834672558
+    },
+    {
+      "block": 43,
+      "lowest": 2.195193860626811e-07,
+      "highest_retained": 0.11034051223169483
+    },
+    {
+      "block": 44,
+      "lowest": -1.6041619862696894e-15,
+      "highest_retained": 0.0018217920441804328
+    },
+    {
+      "block": 45,
+      "lowest": -3.9209883834447e-16,
+      "highest_retained": 0.0017873083093999304
+    },
+    {
+      "block": 46,
+      "lowest": -1.5710380743951738e-16,
+      "highest_retained": 0.0018217979209732766
+    },
+    {
+      "block": 47,
+      "lowest": -3.2047977361583544e-16,
+      "highest_retained": 0.0017873035615163966
+    },
+    {
+      "block": 48,
+      "lowest": 2.1654492889306947e-07,
+      "highest_retained": 0.1105140449060252
+    },
+    {
+      "block": 49,
+      "lowest": 2.1998816845717055e-07,
+      "highest_retained": 0.11034059894742002
+    }
+  ],
+  "independent_preparation_receipt": "/Users/aidenlippert/Documents/Spectra/results/reconstruction_compression_20260914/prepared/h6_actual/receipt.json",
+  "numerical_equality_tolerance": 1e-08,
+  "unknown_state_restricted_to_MPS": false,
+  "many_body_states_enumerated": 0,
+  "solve_seconds": 67.1070880000043,
+  "solver_status": "optimal_inaccurate",
+  "solver_iterations": 7250,
+  "status": "proposal_requires_exact_replay",
+  "proposed_b": -6.334953105794254,
+  "minimum_numeric_PSD_eigenvalue": -1.3718923025931678e-05,
+  "full_numeric_coefficient_l1": 1.2532644103701935e-05,
+  "factor_rows": 524,
+  "certificate_bytes": 422748,
+  "total_seconds": 68.18497945800482,
+  "gram_state_actions": [
+    {
+      "name": "linear-(-1, 0, 1, 0)",
+      "dimension": 3,
+      "numeric_trace": 6.731828564222715e-06,
+      "numeric_state_action_Ha": 2.481194138369757e-06
+    },
+    {
+      "name": "linear-(-1, 1, 1, 1)",
+      "dimension": 3,
+      "numeric_trace": 7.227877174806976e-07,
+      "numeric_state_action_Ha": 3.0375870945513165e-07
+    },
+    {
+      "name": "linear-(0, 0, 0, 1)",
+      "dimension": 3,
+      "numeric_trace": 6.73119808317334e-06,
+      "numeric_state_action_Ha": 2.4808124036782534e-06
+    },
+    {
+      "name": "linear-(0, 1, 0, 0)",
+      "dimension": 3,
+      "numeric_trace": 7.225733145479584e-07,
+      "numeric_state_action_Ha": 3.036522657481717e-07
+    },
+    {
+      "name": "linear+(0, 0, 0, 1)",
+      "dimension": 3,
+      "numeric_trace": 7.226624750708905e-07,
+      "numeric_state_action_Ha": 3.669688701482314e-07
+    },
+    {
+      "name": "linear+(0, 1, 0, 0)",
+      "dimension": 3,
+      "numeric_trace": 6.731486819595036e-06,
+      "numeric_state_action_Ha": 2.417713368973898e-06
+    },
+    {
+      "name": "linear+(1, 0, 1, 0)",
+      "dimension": 3,
+      "numeric_trace": 7.218728387390593e-07,
+      "numeric_state_action_Ha": 3.6651717992653923e-07
+    },
+    {
+      "name": "linear+(1, 1, 1, 1)",
+      "dimension": 3,
+      "numeric_trace": 6.7315857693175455e-06,
+      "numeric_state_action_Ha": 2.417726840814983e-06
+    },
+    {
+      "name": "pair-(-2, 0, 0, 0)",
+      "dimension": 6,
+      "numeric_trace": 1.99771202643017e-06,
+      "numeric_state_action_Ha": -1.4067707584860631e-06
+    },
+    {
+      "name": "pair-(-2, 1, 0, 1)",
+      "dimension": 9,
+      "numeric_trace": 5.91596704139811e-06,
+      "numeric_state_action_Ha": 1.1212426679146995e-06
+    },
+    {
+      "name": "pair-(-1, 0, 1, 1)",
+      "dimension": 18,
+      "numeric_trace": 0.5264929460651883,
+      "numeric_state_action_Ha": 0.0001284797509154477
+    },
+    {
+      "name": "pair-(-1, 1, 1, 0)",
+      "dimension": 18,
+      "numeric_trace": 0.31660610020433355,
+      "numeric_state_action_Ha": 8.159884249243493e-05
+    },
+    {
+      "name": "pair-(0, 0, 0, 0)",
+      "dimension": 6,
+      "numeric_trace": 1.9970730324201164e-06,
+      "numeric_state_action_Ha": -1.406669812473427e-06
+    },
+    {
+      "name": "pair-(0, 1, 0, 1)",
+      "dimension": 9,
+      "numeric_trace": 5.9162927968986945e-06,
+      "numeric_state_action_Ha": 1.1213930882996261e-06
+    },
+    {
+      "name": "pair+(0, 0, 0, 0)",
+      "dimension": 6,
+      "numeric_trace": 1.9968519849293775e-06,
+      "numeric_state_action_Ha": -1.356888872354005e-06
+    },
+    {
+      "name": "pair+(0, 1, 0, 1)",
+      "dimension": 9,
+      "numeric_trace": 5.916499838583894e-06,
+      "numeric_state_action_Ha": 1.099538030285003e-06
+    },
+    {
+      "name": "pair+(1, 0, 1, 1)",
+      "dimension": 18,
+      "numeric_trace": 0.3412098633005732,
+      "numeric_state_action_Ha": 0.00012787680395495978
+    },
+    {
+      "name": "pair+(1, 1, 1, 0)",
+      "dimension": 18,
+      "numeric_trace": 0.2863459717320019,
+      "numeric_state_action_Ha": 0.00013757254860282618
+    },
+    {
+      "name": "pair+(2, 0, 0, 0)",
+      "dimension": 6,
+      "numeric_trace": 1.997691464769772e-06,
+      "numeric_state_action_Ha": -1.3562397933927815e-06
+    },
+    {
+      "name": "pair+(2, 1, 0, 1)",
+      "dimension": 9,
+      "numeric_trace": 5.916289204930434e-06,
+      "numeric_state_action_Ha": 1.0997129838157556e-06
+    },
+    {
+      "name": "particle-hole(-1, 0, 1, 1)",
+      "dimension": 18,
+      "numeric_trace": 0.00609973508060893,
+      "numeric_state_action_Ha": 1.6083699959059482e-05
+    },
+    {
+      "name": "particle-hole(-1, 1, 1, 0)",
+      "dimension": 18,
+      "numeric_trace": 0.004601754877448485,
+      "numeric_state_action_Ha": 2.339074877818006e-05
+    },
+    {
+      "name": "particle-hole(0, 0, 0, 0)",
+      "dimension": 36,
+      "numeric_trace": 0.5420549801905213,
+      "numeric_state_action_Ha": 0.0005176330587222163
+    },
+    {
+      "name": "particle-hole(0, 1, 0, 1)",
+      "dimension": 36,
+      "numeric_trace": 0.3475125146167119,
+      "numeric_state_action_Ha": 0.000265896736198391
+    },
+    {
+      "name": "particle-hole(1, 0, 1, 1)",
+      "dimension": 18,
+      "numeric_trace": 0.006102562349586926,
+      "numeric_state_action_Ha": 1.6089921852940322e-05
+    },
+    {
+      "name": "particle-hole(1, 1, 1, 0)",
+      "dimension": 18,
+      "numeric_trace": 0.004598647728967596,
+      "numeric_state_action_Ha": 2.3375952063396902e-05
+    },
+    {
+      "name": "local-triples-(-3, 0, 1, 0) paired",
+      "dimension": 1,
+      "numeric_trace": -1.0918513006746357e-06,
+      "numeric_state_action_Ha": -7.776337863759759e-07
+    },
+    {
+      "name": "local-triples-(-3, 1, 1, 1) paired",
+      "dimension": 1,
+      "numeric_trace": -1.0640276656520292e-06,
+      "numeric_state_action_Ha": -7.578173529110855e-07
+    },
+    {
+      "name": "local-triples-(-2, 0, 0, 1) paired",
+      "dimension": 9,
+      "numeric_trace": -8.522738729797129e-06,
+      "numeric_state_action_Ha": -6.094761000828707e-06
+    },
+    {
+      "name": "local-triples-(-2, 1, 0, 0) paired",
+      "dimension": 9,
+      "numeric_trace": -8.285583459062624e-06,
+      "numeric_state_action_Ha": -5.967728556703549e-06
+    },
+    {
+      "name": "local-triples-(-1, 0, 1, 0) paired",
+      "dimension": 9,
+      "numeric_trace": -8.523320991339492e-06,
+      "numeric_state_action_Ha": -6.0950369067384585e-06
+    },
+    {
+      "name": "local-triples-(-1, 1, 1, 1) paired",
+      "dimension": 9,
+      "numeric_trace": -8.281903721976001e-06,
+      "numeric_state_action_Ha": -5.964912921576023e-06
+    },
+    {
+      "name": "local-triples-(0, 0, 0, 1) paired",
+      "dimension": 1,
+      "numeric_trace": -1.090752036231893e-06,
+      "numeric_state_action_Ha": -7.768509404389606e-07
+    },
+    {
+      "name": "local-triples-(0, 1, 0, 0) paired",
+      "dimension": 1,
+      "numeric_trace": -1.0639115798288707e-06,
+      "numeric_state_action_Ha": -7.577347406924712e-07
+    },
+    {
+      "name": "mixed-(-2, 0, 0, 1) paired",
+      "dimension": 32,
+      "numeric_trace": 0.060653944750465795,
+      "numeric_state_action_Ha": 7.592389174819982e-05
+    },
+    {
+      "name": "mixed-(-2, 1, 0, 0) paired",
+      "dimension": 32,
+      "numeric_trace": 0.08611303968832688,
+      "numeric_state_action_Ha": 0.00010130418501443798
+    },
+    {
+      "name": "mixed-(-1, 0, 1, 0) paired",
+      "dimension": 32,
+      "numeric_trace": 3.890734762551342,
+      "numeric_state_action_Ha": 7.118456291438518e-05
+    },
+    {
+      "name": "mixed-(-1, 1, 1, 1) paired",
+      "dimension": 32,
+      "numeric_trace": 3.8707973085132688,
+      "numeric_state_action_Ha": 8.977513355439913e-05
+    },
+    {
+      "name": "mixed-(0, 0, 0, 1) paired",
+      "dimension": 32,
+      "numeric_trace": 3.8907670028355588,
+      "numeric_state_action_Ha": 7.119184897840219e-05
+    },
+    {
+      "name": "mixed-(0, 1, 0, 0) paired",
+      "dimension": 32,
+      "numeric_trace": 3.8706022030960336,
+      "numeric_state_action_Ha": 8.976674402551743e-05
+    },
+    {
+      "name": "mixed-(1, 0, 1, 0) paired",
+      "dimension": 32,
+      "numeric_trace": 0.06069802168742268,
+      "numeric_state_action_Ha": 7.59803204009108e-05
+    },
+    {
+      "name": "mixed-(1, 1, 1, 1) paired",
+      "dimension": 32,
+      "numeric_trace": 0.08611066676936105,
+      "numeric_state_action_Ha": 0.00010130776395046067
+    }
+  ]
+}

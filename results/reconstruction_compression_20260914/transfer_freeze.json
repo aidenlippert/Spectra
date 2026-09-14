@@ -1,0 +1,76 @@
+{
+  "created_unix_seconds": 1789373756.862366,
+  "source_sha256": {
+    "research/reconstruction_compression_20260914/reduced.py": "dcd6f5658c4f3f765dc997f02d29dae4d366f367d730d8c256e42fc35a41434a",
+    "research/reconstruction_compression_20260914/moments.py": "441ed36edc91cecc27e35fcb264a23ad044d936393611d8e95b34aa150e08668",
+    "research/reconstruction_compression_20260914/ideal_rank.py": "a6d4e6e31845662af40cf7d51a8e8302a0f9745826fee68a753ee4fc53da4b85",
+    "research/reconstruction_compression_20260914/replay.py": "0d6b832a7e6e4221b166dc390c922799ed46988eb7c1150029d6e4038f78e677",
+    "research/reconstruction_compression_20260914/transfer.py": "865fd6882582ae21f6c7000dcec4f53ce0e7286e967634bb095a8ade44499e83",
+    "research/correlated_pair_20260913/mps_spatial.py": "35688813e92d387158a17b130770e7996bd99c285c984e9f422652ebe9f3d21e",
+    "research/correlated_pair_20260913/mps_direct.py": "2547e8891fb56c0abcf2a7579408eaaf4853b8bf8742abd163dea11b7a2c639d",
+    "research/correlated_pair_20260913/mps_round.py": "1dd9059010bd5fd3c021dbb72d0258d10c68d7624322dba574b69d37f9dd5b29",
+    "research/correlated_pair_20260913/mps_exact.py": "834aa2e2f66c62579f4ea622f6fec3560fd0f8c0e529741ec3d35bc1328b34b0",
+    "research/mechanism_transfer_20260913/fixtures.py": "e3dee9afd43cbd75852f404f63af64b25275829f12dd780787bdc9cc54004e81",
+    "experiments/marginal_symbolic.py": "3d7821dd5d05e7ddc3fc2ed43629a87875015393fe6c104d2c834a99574c31fe",
+    "experiments/marginal_coefficient.py": "91905084e18881ce32ef42f0fa8758cfe27205637bd9277f135760888a05c964",
+    "research/certificate_scaling/adaptive_block_discovery.py": "c9e4c227327eb230057cf14ace42705113f1e6edf9549a14b1db352132a89ed6",
+    "research/certificate_scaling/direct_sparse_discovery.py": "03975906f20472bca6a0d20558556459be8176aacb1e187a9c6f8374d7e64c88"
+  },
+  "known_chain_fixtures": [
+    {
+      "path": "results/response_consistency_20260913/fresh_h6_1p6/fixture.json",
+      "spacing_A": "8/5"
+    },
+    {
+      "path": "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+      "spacing_A": "7/5"
+    },
+    {
+      "path": "results/certificate_scaling/active_space_ladder_boys/h6/fixture.json",
+      "spacing_A": "7/5"
+    },
+    {
+      "path": "results/molecular_collective_20260913/campaign/h6/fixture.json",
+      "spacing_A": "7/5"
+    },
+    {
+      "path": "results/global_response_20260913/fresh_h6_1p73/fixture.json",
+      "spacing_A": "173/100"
+    },
+    {
+      "path": "results/correlated_pair_20260913/fresh_h6_1p91/fixture.json",
+      "spacing_A": "191/100"
+    },
+    {
+      "path": "results/mechanism_transfer_20260913/fixtures/h6_1p8/fixture.json",
+      "spacing_A": "9/5"
+    },
+    {
+      "path": "results/mechanism_transfer_20260913/fixtures/h6_1p2/fixture.json",
+      "spacing_A": "6/5"
+    },
+    {
+      "path": "results/mechanism_transfer_20260913/campaign/h6_1p8_inputs_fixed/fixture.json",
+      "spacing_A": "9/5"
+    },
+    {
+      "path": "results/mechanism_transfer_20260913/campaign/h6_train/fixture.json",
+      "spacing_A": "7/5"
+    },
+    {
+      "path": "results/mechanism_transfer_20260913/campaign/h6_1p2_inputs_fixed/fixture.json",
+      "spacing_A": "6/5"
+    }
+  ],
+  "fresh_H6_spacing_A": "207/100",
+  "fixture_family": "Straight STO-3G RHF-canonical H6, rational coefficient grid1e12; FCI disabled",
+  "MPS": "Independent spatial MPS, seed20260913, bonds8/16/48, ten RL sweeps, exact charge projection, rational denominator1e9",
+  "lower_mode": "low",
+  "rank_cap": 32,
+  "solver_seconds": 65,
+  "exact_quartic_ideal_elimination": true,
+  "solver": "SCS direct, epsilon1e-8, max30000iterations",
+  "acceptance": "Existing full exact CAR checker and coefficient L1 remainder; full interval even if target fails",
+  "teacher_or_reference_state_allowed": false,
+  "upper_and_lower_must_be_constructed_on_fresh_input": true
+}

@@ -1,0 +1,19 @@
+{
+  "name": "h8_nonsinglet_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-c",
+    "import json; from pathlib import Path; from research.collective_completion_20260914.spin_screen import check_sector; d=json.loads(Path(\"results/certificate_scaling/active_space_ladder/h8/fixture.json\").read_text()); p=Path(\"results/collective_completion_20260914/candidates/h8_spin_r1_nonsinglet/round_0\"); r=check_sector(d,json.loads((p/\"certificate.json\").read_text())); (p/\"sector_replay.json\").write_text(json.dumps(r,indent=2)); print(r[\"lower_float\"])"
+  ],
+  "timeout_seconds": 60,
+  "status": "passed",
+  "started_UTC": "2026-09-14T19:05:09.030307+00:00",
+  "pid": 33263,
+  "exit_code": 0,
+  "wall_seconds": 1.1979642500082264,
+  "child_user_seconds": 1.080431,
+  "child_system_seconds": 0.016482999999999998,
+  "peak_child_RSS_bytes": 52396032,
+  "finished_UTC": "2026-09-14T19:05:10.228736+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "sc_self_consistent_tests",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-S",
+    "-c",
+    "from research.correlated_pair_20260913.self_consistent.test_builder import test_guide_exact_acceptance,test_bad_moments_refused; test_guide_exact_acceptance(); test_bad_moments_refused(); print(\"PASS\")"
+  ],
+  "timeout_seconds": 180,
+  "status": "passed",
+  "started_UTC": "2026-09-14T06:34:15.615011+00:00",
+  "pid": 18010,
+  "exit_code": 0,
+  "wall_seconds": 0.07024670799728483,
+  "child_user_seconds": 0.035698,
+  "child_system_seconds": 0.008154,
+  "peak_child_RSS_bytes": 15958016,
+  "finished_UTC": "2026-09-14T06:34:15.685928+00:00"
+}

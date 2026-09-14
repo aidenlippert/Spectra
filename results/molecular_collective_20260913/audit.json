@@ -1,0 +1,72 @@
+{
+  "models": [
+    {
+      "system": "h4",
+      "path": "results/molecular_collective_20260913/campaign/h4/retained_model.json",
+      "bytes": 5845,
+      "compact_bytes": 2974,
+      "sha256": "8d895d11895fec71b21f80cf0778306d317ce44a020e2a2a2f3697656d5ee910"
+    },
+    {
+      "system": "h6",
+      "path": "results/molecular_collective_20260913/campaign/h6/retained_model.json",
+      "bytes": 13560,
+      "compact_bytes": 6683,
+      "sha256": "e70a4a791f512c4938d18ae51353992971ce01d66a66f630f5c3933475591c7d"
+    },
+    {
+      "system": "h8",
+      "path": "results/molecular_collective_20260913/campaign/h8/retained_model.json",
+      "bytes": 26081,
+      "compact_bytes": 12902,
+      "sha256": "c7c05973119d825e4596d3a0d025f8d12bf0a8ab11232d63b724eaf92c249b70"
+    },
+    {
+      "system": "h10",
+      "path": "results/molecular_collective_20260913/campaign/h10/retained_model.json",
+      "bytes": 44515,
+      "compact_bytes": 22306,
+      "sha256": "50ac79f2ee448eaa018ff20fbcae7c57d3e9aeaad6e800dfd8ee4e5338eab624"
+    }
+  ],
+  "prior_lower_source": "results/molecular_identity_20260913/h6_coupled/round_1/certificate.json",
+  "prior_lower_sha256": "9b280b2ae819e301d7144fd5da5a56d320878ca5aef699a915744fd3bc3b751c",
+  "prior_lower_replay_seconds": 5.121180292000645,
+  "obstructions": [
+    {
+      "requested_rank": 10,
+      "actual_factors": 10,
+      "certified_true_ground_lower_Ha": "-1239274211470122897523330938315971276227/195312500000000000000000000000000000000",
+      "exact_support_family_ceiling_Ha": "-4290741228591296744868209869394777970620186281665818746228279/625000000000000000000000000000000000000000000000000000000000",
+      "true_ground_minus_any_support_lower_at_least_Ha": "325063751886903472793550866783669886693786281665818746228279/625000000000000000000000000000000000000000000000000000000000",
+      "support_path": "results/molecular_collective_20260913/campaign/h6/rank_10/support.json",
+      "support_sha256": "4f8c5b11b88bdcfbc84356c440aff9b3a6d31a38050964a59ec75c871882e888",
+      "tail_path": "results/molecular_collective_20260913/campaign/h6/rank_10/tail.json",
+      "tail_sha256": "bb925dff565199466c2b289fe9e07511264dc7f81942230017a429501c8dbedf"
+    },
+    {
+      "requested_rank": 21,
+      "actual_factors": 18,
+      "certified_true_ground_lower_Ha": "-1239274211470122897523330938315971276227/195312500000000000000000000000000000000",
+      "exact_support_family_ceiling_Ha": "-343259245254553428028417400077397373506266119904665824993626643/50000000000000000000000000000000000000000000000000000000000000",
+      "true_ground_minus_any_support_lower_at_least_Ha": "26005047118201966262444679868508726792154119904665824993626643/50000000000000000000000000000000000000000000000000000000000000",
+      "support_path": "results/molecular_collective_20260913/campaign/h6/rank_21/support.json",
+      "support_sha256": "c3dac3bbec38a83ca1c17793c09e10153355dcd6683f837fd371b88cb27352b3",
+      "tail_path": "results/molecular_collective_20260913/campaign/h6/rank_21/tail.json",
+      "tail_sha256": "36bf140ad1e3d9493939952df54665c3a37d7b746b96aa1b5257715e284293c3"
+    }
+  ],
+  "noncommuting_pattern_witness": {
+    "patterns": [
+      4,
+      8
+    ],
+    "one_body_entry": [
+      0,
+      10
+    ],
+    "exact_commutator_coefficient": "-59547245253698579597/100000000000000000000"
+  },
+  "wall_seconds": 10.859572541994567,
+  "scope": "Exact obstruction for linear supports of the supplied square factors plus the stated scalar tail bound. Does not exclude joint fermionic constraints, alternative factors, or general compression."
+}

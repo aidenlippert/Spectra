@@ -1,0 +1,39 @@
+{
+  "preserved_file_count": 9864,
+  "preserved_file_changes": [],
+  "transfer_rule_hashes_unchanged": true,
+  "completed_process_wall_seconds": 1076.7838546230341,
+  "completed_child_CPU_seconds": 1053.601453,
+  "initial_aggregate_budget_seconds": 2400,
+  "peak_process_RSS_bytes": 1774616576,
+  "over_1GiB_target": [
+    {
+      "name": "h8_low_rank24",
+      "bytes": 1200816128
+    },
+    {
+      "name": "h8_teacher_rank8",
+      "bytes": 1774616576
+    }
+  ],
+  "failed_or_timed_out": [
+    {
+      "name": "assemble_report",
+      "status": "failed",
+      "wall_seconds": 0.11091137499897741
+    },
+    {
+      "name": "h6_low_rank8",
+      "status": "failed",
+      "wall_seconds": 1.5752554579958087
+    },
+    {
+      "name": "reduced_unit_tests",
+      "status": "failed",
+      "wall_seconds": 1.3613812499970663
+    }
+  ],
+  "completed_run_count": 63,
+  "pending_runs": [],
+  "scope": "Includes bounded failed attempts, tests, preparation, numerical discovery and replay. Excludes editing, file browsing, final inventory, and inherited historical discovery. Some independent processes overlapped; wall sums are not elapsed calendar time."
+}

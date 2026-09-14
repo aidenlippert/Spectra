@@ -1,0 +1,61 @@
+{
+  "case": "parent",
+  "modes": 4,
+  "bond_weight": "1",
+  "alternating_site_weight": "1",
+  "model": {
+    "modes": 4,
+    "particles": 2,
+    "hopping": [
+      "1",
+      "1",
+      "1"
+    ],
+    "interaction": [
+      "-2",
+      "-2",
+      "-2"
+    ],
+    "fields": [
+      "1",
+      "2",
+      "2",
+      "1"
+    ],
+    "energy_unit": "t_reference=1; abstract lattice model"
+  },
+  "amplitude": {
+    "sites": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "bonds": [
+      "1",
+      "1",
+      "1"
+    ]
+  },
+  "claim": {
+    "method": "fixed_N_positive_Jastrow_local_energy_DP_v1",
+    "lower": "0",
+    "upper": "0",
+    "width": "0",
+    "lower_float": 0.0,
+    "upper_float": 0.0,
+    "width_float": 0.0,
+    "partition": "6",
+    "minimum_configuration": "0011",
+    "modes": 4,
+    "particles": 2,
+    "dp_transitions": 18,
+    "peak_dp_states": 6,
+    "factor_table_entries": 40,
+    "factor_lookups": 36,
+    "peak_rational_bits": 2,
+    "wall_seconds": 0.00037208299909252673,
+    "many_body_states_enumerated": 0,
+    "scope": "Exact rational bounds for specified open nearest-neighbor chain; no generic accuracy guarantee."
+  }
+}

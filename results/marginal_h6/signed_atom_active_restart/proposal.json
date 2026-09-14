@@ -1,0 +1,85 @@
+[
+  {
+    "dimension": 200,
+    "all_pairs": 19900,
+    "candidate_atoms": 5363,
+    "initial_atoms": 5107,
+    "initial_exact_threshold": "-694334444397164976862832929/105442830737292000000000000",
+    "active_atoms": 4315,
+    "stopping_reason": "Time limit reached",
+    "history": [
+      {
+        "round": 0,
+        "selected_atoms": 5107,
+        "active_atoms": 4315,
+        "numerical_primal_threshold": -6.578099830594952,
+        "best_numerical_threshold": -6.578099830594952,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -3465.4050201668942,
+        "priced_supports": 7601,
+        "added_atoms": 256
+      },
+      {
+        "round": 1,
+        "selected_atoms": 5363,
+        "active_atoms": 4315,
+        "numerical_primal_threshold": -23.247920330019536,
+        "best_numerical_threshold": -6.578099830594952,
+        "solver_status": "Time limit reached"
+      }
+    ],
+    "elapsed_seconds": 181.03248158306815,
+    "seconds_cap": 180.0,
+    "round_cap": 12,
+    "exact_threshold": "-75928785148298990183392813/11542662334480500000000000",
+    "exact_threshold_float": -6.578099830702214,
+    "scope": "Adaptive all-pair dual LP; row multipliers propose positive atoms. Bounded row/eigenvector/random support pricing is heuristic, not a global optimality test. Exact DD residual determines the exported threshold."
+  },
+  {
+    "dimension": 168,
+    "all_pairs": 14028,
+    "candidate_atoms": 3970,
+    "initial_atoms": 3458,
+    "initial_exact_threshold": "-40930130053092701014436993/6295106448180500000000000",
+    "active_atoms": 2960,
+    "stopping_reason": "Time limit reached",
+    "history": [
+      {
+        "round": 0,
+        "selected_atoms": 3458,
+        "active_atoms": 2962,
+        "numerical_primal_threshold": -6.501896415555598,
+        "best_numerical_threshold": -6.501896415555598,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -707.8568526340596,
+        "priced_supports": 6416,
+        "added_atoms": 256
+      },
+      {
+        "round": 1,
+        "selected_atoms": 3714,
+        "active_atoms": 2960,
+        "numerical_primal_threshold": -6.501896415555454,
+        "best_numerical_threshold": -6.501896415555454,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -825.8329947397483,
+        "priced_supports": 6469,
+        "added_atoms": 256
+      },
+      {
+        "round": 2,
+        "selected_atoms": 3970,
+        "active_atoms": 2960,
+        "numerical_primal_threshold": -28.03744717255051,
+        "best_numerical_threshold": -6.501896415555454,
+        "solver_status": "Time limit reached"
+      }
+    ],
+    "elapsed_seconds": 180.60084320802707,
+    "seconds_cap": 180.0,
+    "round_cap": 12,
+    "exact_threshold": "-73674234095179614341623709/11331191606724900000000000",
+    "exact_threshold_float": -6.5018964158593,
+    "scope": "Adaptive all-pair dual LP; row multipliers propose positive atoms. Bounded row/eigenvector/random support pricing is heuristic, not a global optimality test. Exact DD residual determines the exported threshold."
+  }
+]

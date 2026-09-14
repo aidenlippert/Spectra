@@ -1,0 +1,238 @@
+{
+  "source": "/Users/aidenlippert/Documents/Spectra/results/lambda_runs/cubic_precision/downloaded/h8_scs_quotient_conditioned/certificate.json",
+  "source_sha256": "3d443ce704814bf75504ee142e91b5beafdab8ef7a351f242b63cf046cbd4001",
+  "role": "diagnostic only",
+  "modes": 16,
+  "particles": 8,
+  "quartic_multiplier_terms": 2848,
+  "W": {
+    "nonzeros": 53312,
+    "squared_Frobenius_norm": "212412968425433991304607588328755857/1000000000000000000000000000000000000",
+    "Frobenius_norm_float": 0.4608828142005666,
+    "coefficient_l1": "61175524412921823637/1000000000000000000"
+  },
+  "V": {
+    "nonzeros": 2848,
+    "squared_Frobenius_norm": "2073484201065352975098572956897245258857/119246400000000000000000000000000000000000",
+    "Frobenius_norm_float": 0.13186444976879283,
+    "coefficient_l1": "145994929222361382259/27300000000000000000"
+  },
+  "Z": {
+    "nonzeros": 53312,
+    "squared_Frobenius_norm": "108650931506433635916787311347/546000000000000000000000000000000000000",
+    "Frobenius_norm_float": 1.4106536784356863e-05,
+    "coefficient_l1": "67189958115435427/39000000000000000000"
+  },
+  "V_plus_X4": {
+    "nonzeros": 2848,
+    "squared_Frobenius_norm": "566201672658325227896121258857/119246400000000000000000000000000000000000",
+    "Frobenius_norm_float": 2.1790286260354785e-06,
+    "coefficient_l1": "18443400780728117/273000000000000000000"
+  },
+  "W_plus_lift_X4": {
+    "nonzeros": 53312,
+    "squared_Frobenius_norm": "256683625176892407078755857/1000000000000000000000000000000000000",
+    "Frobenius_norm_float": 1.602134904360093e-05,
+    "coefficient_l1": "1770332591981551/1000000000000000000"
+  },
+  "exact_W_plus_lift_X4_equals_negative_R6": true,
+  "exact_Z_equals_negative_projected_R6": true,
+  "exact_lift_membership": false,
+  "interpretation": "The nonzero numerical-export remainder is retained and paid by the existing residual certificate.",
+  "original_replay": {
+    "lower": "-9258278508845942281/1000000000000000000",
+    "lower_float": -9.258278508845942,
+    "residual_l1": "2666434706942281/1000000000000000000",
+    "residual_l1_float": 0.002666434706942281,
+    "multiplier_terms": 2913,
+    "square_polynomial_terms": 56225,
+    "residual_terms": 56225,
+    "residual_max_degree": 6,
+    "mode_count": 16,
+    "particle_number": 8,
+    "factor_rows": 2574,
+    "factor_nonzeros": 699343
+  },
+  "strong_wedge_replay": {
+    "method": "fixed_N_wedge_spectral_gram_v1",
+    "lower": "-2314013753548521439038541/250000000000000000000000",
+    "lower_float": -9.256055014194086,
+    "bodies": [
+      {
+        "body": 1,
+        "wedge_dimension": 16,
+        "components": [
+          {
+            "dimension": 4,
+            "rank": 4,
+            "integer_product_work": 40,
+            "ell": "-958743859/125000000000000",
+            "residual_gershgorin": "-81812049/20000000000000000000000",
+            "lower": "-153399017521812049/20000000000000000000000"
+          },
+          {
+            "dimension": 4,
+            "rank": 4,
+            "integer_product_work": 40,
+            "ell": "-7664222761/1000000000000000",
+            "residual_gershgorin": "-4643932709/1000000000000000000000000",
+            "lower": "-7664222765643932709/1000000000000000000000000"
+          },
+          {
+            "dimension": 4,
+            "rank": 4,
+            "integer_product_work": 40,
+            "ell": "-391377957/40000000000000",
+            "residual_gershgorin": "-3064060459/1000000000000000000000000",
+            "lower": "-9784448928064060459/1000000000000000000000000"
+          },
+          {
+            "dimension": 4,
+            "rank": 4,
+            "integer_product_work": 40,
+            "ell": "-195686753/20000000000000",
+            "residual_gershgorin": "-260352789/50000000000000000000000",
+            "lower": "-489216882760352789/50000000000000000000000"
+          }
+        ],
+        "spectral_fixed_N_lower": "-9784448928064060459/125000000000000000000000",
+        "chosen_lower": "-9784448928064060459/125000000000000000000000"
+      },
+      {
+        "body": 2,
+        "wedge_dimension": 120,
+        "components": [
+          {
+            "dimension": 32,
+            "rank": 32,
+            "integer_product_work": 16896,
+            "ell": "-7919532567/1000000000000000",
+            "residual_gershgorin": "-40678472593/1000000000000000000000000",
+            "lower": "-7919532607678472593/1000000000000000000000000"
+          },
+          {
+            "dimension": 16,
+            "rank": 16,
+            "integer_product_work": 2176,
+            "ell": "-1399499659/250000000000000",
+            "residual_gershgorin": "-16205643059/1000000000000000000000000",
+            "lower": "-5597998652205643059/1000000000000000000000000"
+          },
+          {
+            "dimension": 32,
+            "rank": 32,
+            "integer_product_work": 16896,
+            "ell": "-7695481479/1000000000000000",
+            "residual_gershgorin": "-40178267881/1000000000000000000000000",
+            "lower": "-7695481519178267881/1000000000000000000000000"
+          },
+          {
+            "dimension": 12,
+            "rank": 12,
+            "integer_product_work": 936,
+            "ell": "-2157231021/500000000000000",
+            "residual_gershgorin": "-12220185283/1000000000000000000000000",
+            "lower": "-4314462054220185283/1000000000000000000000000"
+          },
+          {
+            "dimension": 16,
+            "rank": 16,
+            "integer_product_work": 2176,
+            "ell": "-174954573/31250000000000",
+            "residual_gershgorin": "-526149137/31250000000000000000000",
+            "lower": "-174954573526149137/31250000000000000000000"
+          },
+          {
+            "dimension": 12,
+            "rank": 12,
+            "integer_product_work": 936,
+            "ell": "-539285261/125000000000000",
+            "residual_gershgorin": "-3334741199/250000000000000000000000",
+            "lower": "-1078570525334741199/250000000000000000000000"
+          }
+        ],
+        "spectral_fixed_N_lower": "-55436728253749308151/250000000000000000000000",
+        "chosen_lower": "-55436728253749308151/250000000000000000000000"
+      },
+      {
+        "body": 3,
+        "wedge_dimension": 560,
+        "components": [
+          {
+            "dimension": 112,
+            "rank": 112,
+            "integer_product_work": 708736,
+            "ell": "-29406737/12500000000000",
+            "residual_gershgorin": "-2706547479/40000000000000000000000",
+            "lower": "-94101561106547479/40000000000000000000000"
+          },
+          {
+            "dimension": 112,
+            "rank": 112,
+            "integer_product_work": 708736,
+            "ell": "-18380981/7812500000000",
+            "residual_gershgorin": "-3220843819/50000000000000000000000",
+            "lower": "-117638281620843819/50000000000000000000000"
+          },
+          {
+            "dimension": 112,
+            "rank": 112,
+            "integer_product_work": 708736,
+            "ell": "-1200180897/500000000000000",
+            "residual_gershgorin": "-16442899571/250000000000000000000000",
+            "lower": "-600090464942899571/250000000000000000000000"
+          },
+          {
+            "dimension": 112,
+            "rank": 112,
+            "integer_product_work": 708736,
+            "ell": "-2400439773/1000000000000000",
+            "residual_gershgorin": "-8612619281/125000000000000000000000",
+            "lower": "-300054980237619281/125000000000000000000000"
+          },
+          {
+            "dimension": 28,
+            "rank": 28,
+            "integer_product_work": 11368,
+            "ell": "-44426771/31250000000000",
+            "residual_gershgorin": "-2703512201/200000000000000000000000",
+            "lower": "-284331337103512201/200000000000000000000000"
+          },
+          {
+            "dimension": 28,
+            "rank": 28,
+            "integer_product_work": 11368,
+            "ell": "-1442593573/1000000000000000",
+            "residual_gershgorin": "-13354196789/1000000000000000000000000",
+            "lower": "-1442593586354196789/1000000000000000000000000"
+          },
+          {
+            "dimension": 28,
+            "rank": 28,
+            "integer_product_work": 11368,
+            "ell": "-1421735673/1000000000000000",
+            "residual_gershgorin": "-14874156311/1000000000000000000000000",
+            "lower": "-1421735687874156311/1000000000000000000000000"
+          },
+          {
+            "dimension": 28,
+            "rank": 28,
+            "integer_product_work": 11368,
+            "ell": "-1442848227/1000000000000000",
+            "residual_gershgorin": "-13480378571/1000000000000000000000000",
+            "lower": "-1442848240480378571/1000000000000000000000000"
+          }
+        ],
+        "spectral_fixed_N_lower": "-2100384861663334967/15625000000000000000000",
+        "chosen_lower": "-2100384861663334967/15625000000000000000000"
+      }
+    ],
+    "old_wedge_lower": "-9256785770664843421/1000000000000000000",
+    "many_body_states_enumerated": 0,
+    "scope": "Exact residual bound only; full original SOS discovery cost remains."
+  },
+  "strong_certificate_spin_scope": "Original H on the entire fixed-N sector; no spin averaging or separate screen required.",
+  "new_screened_constructor_original_H_spin_defect": "59/250000000000",
+  "many_body_states_enumerated": 0,
+  "seconds": 47.18273341702297
+}

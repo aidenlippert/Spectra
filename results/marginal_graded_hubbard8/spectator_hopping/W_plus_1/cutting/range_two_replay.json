@@ -1,0 +1,2550 @@
+{
+  "accepted": true,
+  "target": {
+    "U": "4",
+    "t": "1",
+    "V": "1/2",
+    "W": "1"
+  },
+  "sites": 1000000,
+  "lower_per_site": "-1652525458824023/2500000000000000",
+  "upper_per_site": "-3341860816772209727432518555130810740847592283/5403830074722726061318763264797922768384000000",
+  "width_per_site": "2247323170733215072544038506065652382429670022437847/52771778073464121692566047507792214535000000000000000",
+  "lower_replay": {
+    "accepted": true,
+    "target": {
+      "U": "4",
+      "t": "1",
+      "V": "1/2",
+      "W": "1"
+    },
+    "chain_sites": 1000000,
+    "local_sites": 6,
+    "penalty": "2507/20000",
+    "penalized_lower": "-15723969/5000000",
+    "overlap": {
+      "accepted": true,
+      "windows": 5,
+      "block_sites": 6,
+      "support_sites": 10,
+      "ceiling": "2621073531/1000000000",
+      "average_fidelity_ceiling": "2621073531/5000000000",
+      "vector_norm": "11001990723239794642",
+      "gram_dimension": 1280,
+      "maximum_psd_dimension": 180,
+      "spin_sector_split": true,
+      "sectors": [
+        {
+          "sector": [
+            3,
+            3
+          ],
+          "psd": {
+            "dimension": 5,
+            "rank": 5,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            3,
+            4
+          ],
+          "psd": {
+            "dimension": 20,
+            "rank": 20,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "709cc4332c2917a7901e9ea9fa676e692d7d018c75e4e22ef781667395587e1b",
+            "minimum_exact_margin": "8917517974826046146016602723259056121001081326230772"
+          }
+        },
+        {
+          "sector": [
+            3,
+            5
+          ],
+          "psd": {
+            "dimension": 30,
+            "rank": 30,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "e66ce4b88c33ee29409df6f1bd7f98bb95710754b6f2b045dfcf89dca760b7dd",
+            "minimum_exact_margin": "8917517974804348389356230280915458021493111936940891"
+          }
+        },
+        {
+          "sector": [
+            3,
+            6
+          ],
+          "psd": {
+            "dimension": 20,
+            "rank": 20,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "278b757ba034c2ce6e447557c2cafa0c75b81dbd191b9b39306e42f75d492553",
+            "minimum_exact_margin": "8917517974823442241565043121306621549746407237337316"
+          }
+        },
+        {
+          "sector": [
+            3,
+            7
+          ],
+          "psd": {
+            "dimension": 5,
+            "rank": 5,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            4,
+            3
+          ],
+          "psd": {
+            "dimension": 20,
+            "rank": 20,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "709cc4332c2917a7901e9ea9fa676e692d7d018c75e4e22ef781667395587e1b",
+            "minimum_exact_margin": "8917517974826046146016602723259056121001081326230772"
+          }
+        },
+        {
+          "sector": [
+            4,
+            4
+          ],
+          "psd": {
+            "dimension": 80,
+            "rank": 80,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "2226cfea0aec289beb57e928d9c150a5beba692ee9d3ac96132d069037236dd4",
+            "minimum_exact_margin": "8917517974669714626783623083505298946747645703020468"
+          }
+        },
+        {
+          "sector": [
+            4,
+            5
+          ],
+          "psd": {
+            "dimension": 120,
+            "rank": 120,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "35d8dd63e05e82243af9bdcd8627a040107ec1cebe7c88d32b31b34977176412",
+            "minimum_exact_margin": "8917517974583894178440200690851123845829412355700619"
+          }
+        },
+        {
+          "sector": [
+            4,
+            6
+          ],
+          "psd": {
+            "dimension": 80,
+            "rank": 80,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "cd6c4daf6b816e0bf3d0586ffbb20861f326e2fdd1be35b3a6927ac9a71a76e6",
+            "minimum_exact_margin": "8917517974671854498188992966305977296110424760530110"
+          }
+        },
+        {
+          "sector": [
+            4,
+            7
+          ],
+          "psd": {
+            "dimension": 20,
+            "rank": 20,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "c66f34aa6aee5dfd177800a02f37ca794ea7579f96a897e0ab9c1538b22ecc14",
+            "minimum_exact_margin": "8917517974832653466579189932241803998161316900301371"
+          }
+        },
+        {
+          "sector": [
+            5,
+            3
+          ],
+          "psd": {
+            "dimension": 30,
+            "rank": 30,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "e66ce4b88c33ee29409df6f1bd7f98bb95710754b6f2b045dfcf89dca760b7dd",
+            "minimum_exact_margin": "8917517974804348389356230280915458021493111936940891"
+          }
+        },
+        {
+          "sector": [
+            5,
+            4
+          ],
+          "psd": {
+            "dimension": 120,
+            "rank": 120,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "5e99f825556d7a67e8f2c9563aeff05e4345154e83e2f92f4b6f8997bda3f6d6",
+            "minimum_exact_margin": "8917517974593988167556048999931199987355296854166049"
+          }
+        },
+        {
+          "sector": [
+            5,
+            5
+          ],
+          "psd": {
+            "dimension": 180,
+            "rank": 180,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "594ff26ad67ebaa8ec465e20fb992aa26b959f7e90b321dc74a98a750588d00a",
+            "minimum_exact_margin": "8917517923658289826579774395064700946111382880360460"
+          }
+        },
+        {
+          "sector": [
+            5,
+            6
+          ],
+          "psd": {
+            "dimension": 120,
+            "rank": 120,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "9c37985a7c9a97aa304a38bbca1c82091f1a88af714cbb6d2fbb3ff0c1bc89ca",
+            "minimum_exact_margin": "8917517974583240056038306108239114301159119178623520"
+          }
+        },
+        {
+          "sector": [
+            5,
+            7
+          ],
+          "psd": {
+            "dimension": 30,
+            "rank": 30,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "ab26b6f5786c5cb4afd5a97ced849a364b47fe0f53457d050f4aca136ba1be48",
+            "minimum_exact_margin": "8917517974801611323521023060454009681291610815517924"
+          }
+        },
+        {
+          "sector": [
+            6,
+            3
+          ],
+          "psd": {
+            "dimension": 20,
+            "rank": 20,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "278b757ba034c2ce6e447557c2cafa0c75b81dbd191b9b39306e42f75d492553",
+            "minimum_exact_margin": "8917517974823442241565043121306621549746407237337316"
+          }
+        },
+        {
+          "sector": [
+            6,
+            4
+          ],
+          "psd": {
+            "dimension": 80,
+            "rank": 80,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "d69e1657ec411a580c7259e26e320a18b317190c438bb26099a58c87bfb525bb",
+            "minimum_exact_margin": "8917517974672579645725302364670071645715204537328367"
+          }
+        },
+        {
+          "sector": [
+            6,
+            5
+          ],
+          "psd": {
+            "dimension": 120,
+            "rank": 120,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "23a832033a06854fc72e215dea937ea20fca47aa7e301d00b75ebd98a8b96e15",
+            "minimum_exact_margin": "8917517974583679882168910126522271494209178234246015"
+          }
+        },
+        {
+          "sector": [
+            6,
+            6
+          ],
+          "psd": {
+            "dimension": 80,
+            "rank": 80,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "be2e955182a5b683d40618c413dd990bf8cd2e1e757901f9c5ea02ec7dec2b7c",
+            "minimum_exact_margin": "8917517974684062080831021808920463663529036483385962"
+          }
+        },
+        {
+          "sector": [
+            6,
+            7
+          ],
+          "psd": {
+            "dimension": 20,
+            "rank": 20,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "200048b2c47023e899650c3427abed1fed108b07dd1fd8fedb737932dd9715f7",
+            "minimum_exact_margin": "8917517974816231123159643383128198188607503362833363"
+          }
+        },
+        {
+          "sector": [
+            7,
+            3
+          ],
+          "psd": {
+            "dimension": 5,
+            "rank": 5,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            7,
+            4
+          ],
+          "psd": {
+            "dimension": 20,
+            "rank": 20,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "c66f34aa6aee5dfd177800a02f37ca794ea7579f96a897e0ab9c1538b22ecc14",
+            "minimum_exact_margin": "8917517974832653466579189932241803998161316900301371"
+          }
+        },
+        {
+          "sector": [
+            7,
+            5
+          ],
+          "psd": {
+            "dimension": 30,
+            "rank": 30,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "ab26b6f5786c5cb4afd5a97ced849a364b47fe0f53457d050f4aca136ba1be48",
+            "minimum_exact_margin": "8917517974801611323521023060454009681291610815517924"
+          }
+        },
+        {
+          "sector": [
+            7,
+            6
+          ],
+          "psd": {
+            "dimension": 20,
+            "rank": 20,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "200048b2c47023e899650c3427abed1fed108b07dd1fd8fedb737932dd9715f7",
+            "minimum_exact_margin": "8917517974816231123159643383128198188607503362833363"
+          }
+        },
+        {
+          "sector": [
+            7,
+            7
+          ],
+          "psd": {
+            "dimension": 5,
+            "rank": 5,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        }
+      ],
+      "scope": "All-state inequality for consecutive contiguous even fixed-length projectors. Cyclic copies are defined by conjugation with the fermionic mode-translation unitary."
+    },
+    "local_sectors": [
+      {
+        "sector": [
+          0,
+          0,
+          1
+        ],
+        "psd": {
+          "dimension": 1,
+          "rank": 1,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          1,
+          0,
+          1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          1,
+          0,
+          -1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          0,
+          1,
+          1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          0,
+          1,
+          -1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          1,
+          1,
+          1
+        ],
+        "psd": {
+          "dimension": 18,
+          "rank": 18,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          1,
+          1,
+          -1
+        ],
+        "psd": {
+          "dimension": 18,
+          "rank": 18,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          2,
+          0,
+          1
+        ],
+        "psd": {
+          "dimension": 6,
+          "rank": 6,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          2,
+          0,
+          -1
+        ],
+        "psd": {
+          "dimension": 9,
+          "rank": 9,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          2,
+          1,
+          1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "2e15ffd9af45d89c5bc666296d2274122b583da5a02eaf9c588c1c2394b7cf19",
+          "minimum_exact_margin": "145791605408250219230444832837850202723907306698396"
+        }
+      },
+      {
+        "sector": [
+          2,
+          1,
+          -1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "0f4eb6c113a708f7ce63a43eda1f41c4a248c11882f1304c9e5d9cdf497fcbdf",
+          "minimum_exact_margin": "145791605408285087228167986982647283308265969533864"
+        }
+      },
+      {
+        "sector": [
+          0,
+          2,
+          1
+        ],
+        "psd": {
+          "dimension": 6,
+          "rank": 6,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          0,
+          2,
+          -1
+        ],
+        "psd": {
+          "dimension": 9,
+          "rank": 9,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          1,
+          2,
+          1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "1ad94b4856febd334ad5677a0782af20cbdad52bbd2beb89a98f64f902099077",
+          "minimum_exact_margin": "145791605408311278035499808838789078976710806220556"
+        }
+      },
+      {
+        "sector": [
+          1,
+          2,
+          -1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "8c8c511f519a3a7ea2cd964f2fb882efa57c9efe643baed2c06bca3c1e76ed54",
+          "minimum_exact_margin": "145791605408252110063553636893030434848719414796112"
+        }
+      },
+      {
+        "sector": [
+          2,
+          2,
+          1
+        ],
+        "psd": {
+          "dimension": 117,
+          "rank": 117,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "d74d72152405393166f3761e11a3a2118e2b813943a45e386b667989a22c7868",
+          "minimum_exact_margin": "123583489880574379221070687050578452839028695998352"
+        }
+      },
+      {
+        "sector": [
+          2,
+          2,
+          -1
+        ],
+        "psd": {
+          "dimension": 108,
+          "rank": 108,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "59ed7b80218c18e0147ee5cab74b0b7788522ed80b84412eeb082846ac0c05eb",
+          "minimum_exact_margin": "123583489880771733088820734343149101499905680100672"
+        }
+      },
+      {
+        "sector": [
+          3,
+          0,
+          1
+        ],
+        "psd": {
+          "dimension": 10,
+          "rank": 10,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          3,
+          0,
+          -1
+        ],
+        "psd": {
+          "dimension": 10,
+          "rank": 10,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          3,
+          1,
+          1
+        ],
+        "psd": {
+          "dimension": 60,
+          "rank": 60,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "7ed61859b31e1a0882182b8563fd8c6589247a2ad022fc00a752324299ca3501",
+          "minimum_exact_margin": "116422144807986016292787891942908877327272664835994"
+        }
+      },
+      {
+        "sector": [
+          3,
+          1,
+          -1
+        ],
+        "psd": {
+          "dimension": 60,
+          "rank": 60,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "e56dd29296b569361e477826415bd1fbab5063fcdb8fbf2364c82906515d5356",
+          "minimum_exact_margin": "116422144807998290472170066641292543541912349051598"
+        }
+      },
+      {
+        "sector": [
+          3,
+          2,
+          1
+        ],
+        "psd": {
+          "dimension": 150,
+          "rank": 150,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "5cf53ca92263112b469b608c6dbedc8304252c4a2bd1538a28970ef5af25ae5b",
+          "minimum_exact_margin": "7394149116617197840571236372369172447401657445742"
+        }
+      },
+      {
+        "sector": [
+          3,
+          2,
+          -1
+        ],
+        "psd": {
+          "dimension": 150,
+          "rank": 150,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "5dd3d23d8a112ad0f793743008c3091cd8d92b5d75d0af75019fd5c7bbf1cd5d",
+          "minimum_exact_margin": "7394034259038452588344986775223305178425294510406"
+        }
+      },
+      {
+        "sector": [
+          0,
+          3,
+          1
+        ],
+        "psd": {
+          "dimension": 10,
+          "rank": 10,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          0,
+          3,
+          -1
+        ],
+        "psd": {
+          "dimension": 10,
+          "rank": 10,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          1,
+          3,
+          1
+        ],
+        "psd": {
+          "dimension": 60,
+          "rank": 60,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "5150e2713358414b42878a782c8bd1363c227398197f6630fc09f577ac7dd033",
+          "minimum_exact_margin": "116422144807937389079084651856606808501273718490754"
+        }
+      },
+      {
+        "sector": [
+          1,
+          3,
+          -1
+        ],
+        "psd": {
+          "dimension": 60,
+          "rank": 60,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "8558fc47abe493e0db5119fb73b6b0d005dca4c8161ee2bf03f52aebc69e1115",
+          "minimum_exact_margin": "116422144808007355600982540014418964820062701892828"
+        }
+      },
+      {
+        "sector": [
+          2,
+          3,
+          1
+        ],
+        "psd": {
+          "dimension": 150,
+          "rank": 150,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "c67f0acd3294054712e9fc2abe469291dd74957d9844f1f8bc285720c014c90c",
+          "minimum_exact_margin": "7394149116630024535361520503814088962729017444184"
+        }
+      },
+      {
+        "sector": [
+          2,
+          3,
+          -1
+        ],
+        "psd": {
+          "dimension": 150,
+          "rank": 150,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "f0c3fb63035cbbad9c79ed8bb2dac8b76ae9f735f9484822dc1d22a17a31c518",
+          "minimum_exact_margin": "7394034259055208623271109261746574409716663179222"
+        }
+      },
+      {
+        "sector": [
+          3,
+          3,
+          1
+        ],
+        "psd": {
+          "dimension": 200,
+          "rank": 200,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "b26db5225a53c43fc02d501e99d12dbfc5defe1ed9832ac840df90643ac9f35e",
+          "minimum_exact_margin": "122954363239727327532722961687442199910422287296662"
+        }
+      },
+      {
+        "sector": [
+          3,
+          3,
+          -1
+        ],
+        "psd": {
+          "dimension": 200,
+          "rank": 200,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "856803a7a87f8d19e19c353c7d02b3c9f9f6ec43eaf6aae246c1530d585df49f",
+          "minimum_exact_margin": "122945625883618732389118167063692180132039842111290"
+        }
+      },
+      {
+        "sector": [
+          4,
+          0,
+          1
+        ],
+        "psd": {
+          "dimension": 9,
+          "rank": 9,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          4,
+          0,
+          -1
+        ],
+        "psd": {
+          "dimension": 6,
+          "rank": 6,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          4,
+          1,
+          1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "8f993e2ca567da75dab12d793597c9879714a921ff9689040a2e38fbee3d9185",
+          "minimum_exact_margin": "84515758743110697026272020246725385385118006925942"
+        }
+      },
+      {
+        "sector": [
+          4,
+          1,
+          -1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "6b3c12b508917a32c81d6add2043b1bf63e6a898d5950d2bdfa1acb04d7e4d73",
+          "minimum_exact_margin": "84515758743095355823620092828260441262493920940744"
+        }
+      },
+      {
+        "sector": [
+          4,
+          2,
+          1
+        ],
+        "psd": {
+          "dimension": 108,
+          "rank": 108,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "e1528ff68f73366361517d8c6be2f98c36339244219ba5ba42fed7027977af23",
+          "minimum_exact_margin": "101290800481237833991352551935069035352409854393358"
+        }
+      },
+      {
+        "sector": [
+          4,
+          2,
+          -1
+        ],
+        "psd": {
+          "dimension": 117,
+          "rank": 117,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "f7b866ea1b0b467e6df3164f47fafb3da49134128d7d45587a186517887de864",
+          "minimum_exact_margin": "101290800473008508020606347192030379194986111899889"
+        }
+      },
+      {
+        "sector": [
+          4,
+          3,
+          1
+        ],
+        "psd": {
+          "dimension": 150,
+          "rank": 150,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "924902bef46d2226056a1cecf80f676752921351ae4247da3c8d51dc87e9f41c",
+          "minimum_exact_margin": "7394034259035861188295604146937919125185938457596"
+        }
+      },
+      {
+        "sector": [
+          4,
+          3,
+          -1
+        ],
+        "psd": {
+          "dimension": 150,
+          "rank": 150,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "9e4542120cb143cef39ffef48c3ccffd5c117912c894f569f1efeb1b4c30cb9a",
+          "minimum_exact_margin": "7394149116117372372407839593531529672653650520768"
+        }
+      },
+      {
+        "sector": [
+          0,
+          4,
+          1
+        ],
+        "psd": {
+          "dimension": 9,
+          "rank": 9,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          0,
+          4,
+          -1
+        ],
+        "psd": {
+          "dimension": 6,
+          "rank": 6,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          1,
+          4,
+          1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "37156d89192ba6643498b797f67425e51e26b2b3da6f5d9bb52b272b2f728926",
+          "minimum_exact_margin": "84515758743202253988469281645839428257497896103882"
+        }
+      },
+      {
+        "sector": [
+          1,
+          4,
+          -1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "6801999e6b2c103c46ee06098437d2a2bf47893dce11d1e5b22dc60106cf152d",
+          "minimum_exact_margin": "84515758743206902037720153595666354715773104351150"
+        }
+      },
+      {
+        "sector": [
+          2,
+          4,
+          1
+        ],
+        "psd": {
+          "dimension": 108,
+          "rank": 108,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "94d40e0caa261aef9f4f7e58143194e83aea229306a48bddfba143105fd78c3e",
+          "minimum_exact_margin": "101290800481202692871849893374867703557575703917082"
+        }
+      },
+      {
+        "sector": [
+          2,
+          4,
+          -1
+        ],
+        "psd": {
+          "dimension": 117,
+          "rank": 117,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "bfc7094a4eb19c3bd90cab9f06c72b08c71394b49a4b598ca30188daf0ea413f",
+          "minimum_exact_margin": "101290800472613032314018420689238909797480129396810"
+        }
+      },
+      {
+        "sector": [
+          3,
+          4,
+          1
+        ],
+        "psd": {
+          "dimension": 150,
+          "rank": 150,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "3f652270da9292fd538a6a7334cd0a88a4fef1a934a53b81dec168cd96d6fd6d",
+          "minimum_exact_margin": "7394034259038587672501120637597822205519995053662"
+        }
+      },
+      {
+        "sector": [
+          3,
+          4,
+          -1
+        ],
+        "psd": {
+          "dimension": 150,
+          "rank": 150,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "aa81cab042fe72a21b3b3754e7d19aa1edbef1e5b3efe0ddb8301277dce163de",
+          "minimum_exact_margin": "7394149116603406926398566398973005702458858460900"
+        }
+      },
+      {
+        "sector": [
+          4,
+          4,
+          1
+        ],
+        "psd": {
+          "dimension": 117,
+          "rank": 117,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "2188c06debd6bc7316fbd7386d2046366593f1afed7a9d127d7dbfa10a24362e",
+          "minimum_exact_margin": "123583489880140986829141932687051195431067737567556"
+        }
+      },
+      {
+        "sector": [
+          4,
+          4,
+          -1
+        ],
+        "psd": {
+          "dimension": 108,
+          "rank": 108,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "91217b9de42c8fe919488dbbe1542611d5b996007dd7112cb423810257be4bf1",
+          "minimum_exact_margin": "123583489880550418641364554142417300741347771502992"
+        }
+      },
+      {
+        "sector": [
+          5,
+          0,
+          1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          5,
+          0,
+          -1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          5,
+          1,
+          1
+        ],
+        "psd": {
+          "dimension": 18,
+          "rank": 18,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          5,
+          1,
+          -1
+        ],
+        "psd": {
+          "dimension": 18,
+          "rank": 18,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          5,
+          2,
+          1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "cb50d5ed37573359f55aa4101d7712d9871ce32f163c2773bf4f03e87e82390f",
+          "minimum_exact_margin": "84515758743027131512812072136769053454624226383092"
+        }
+      },
+      {
+        "sector": [
+          5,
+          2,
+          -1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "6bc648aa697629325af1c1b0c066805cfbab4b9c42713f4706a664fb0ad88d6e",
+          "minimum_exact_margin": "84515758743158153446275046546563500494637444183520"
+        }
+      },
+      {
+        "sector": [
+          5,
+          3,
+          1
+        ],
+        "psd": {
+          "dimension": 60,
+          "rank": 60,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "117aa2d019862238c4f36ee983135fdf5b891983879d25ae9813382b0246deff",
+          "minimum_exact_margin": "116422144807640716505246441854121296956110685975974"
+        }
+      },
+      {
+        "sector": [
+          5,
+          3,
+          -1
+        ],
+        "psd": {
+          "dimension": 60,
+          "rank": 60,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "21fbef7f742a326712be3b2477cedabb9bed0187d6adb5b106f160027d81a74e",
+          "minimum_exact_margin": "116422144807694620200273179556865684632650118560740"
+        }
+      },
+      {
+        "sector": [
+          5,
+          4,
+          1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "0a46010ec35dcc640955809fac818bdf89cc751bf909a4515d8be3fd2c75bb83",
+          "minimum_exact_margin": "145791605407816367213203564000862521419017685356004"
+        }
+      },
+      {
+        "sector": [
+          5,
+          4,
+          -1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "910706062222360d1378ef58cc10eaaf876b748b817b323857ee637cac749709",
+          "minimum_exact_margin": "145791605407929886903387156416172214903324896111504"
+        }
+      },
+      {
+        "sector": [
+          0,
+          5,
+          1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          0,
+          5,
+          -1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          1,
+          5,
+          1
+        ],
+        "psd": {
+          "dimension": 18,
+          "rank": 18,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          1,
+          5,
+          -1
+        ],
+        "psd": {
+          "dimension": 18,
+          "rank": 18,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          2,
+          5,
+          1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "fff715786ecb8ac75e9a2a67e74f29aca6d984e34b2f41fd8f1204cbc84905ba",
+          "minimum_exact_margin": "84515758743034993713350450101146671423621419559174"
+        }
+      },
+      {
+        "sector": [
+          2,
+          5,
+          -1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "c24c42804bce8ac07ffc98bfdacf8aa8226a29debc4858ac996148882ca122d7",
+          "minimum_exact_margin": "84515758743037428197323039796446630806322950927704"
+        }
+      },
+      {
+        "sector": [
+          3,
+          5,
+          1
+        ],
+        "psd": {
+          "dimension": 60,
+          "rank": 60,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "96616f74ad8c919a6569b97ad951cd996cce1176aeb14f5271d1a200634dfbf4",
+          "minimum_exact_margin": "116422144807686111222227040218875066326956918814632"
+        }
+      },
+      {
+        "sector": [
+          3,
+          5,
+          -1
+        ],
+        "psd": {
+          "dimension": 60,
+          "rank": 60,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "c789f46e28b1b310801b9fa4731f5e86ba7241bff80fbe59a483e1b5e8b3f4ac",
+          "minimum_exact_margin": "116422144807586784010628528898800094862168451904922"
+        }
+      },
+      {
+        "sector": [
+          4,
+          5,
+          1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "ddf743bed8b85ac98682955e2575bf36e77e696d72a26e3bc1c4fd72125718f9",
+          "minimum_exact_margin": "145791605408182874218761823222635852083115304534496"
+        }
+      },
+      {
+        "sector": [
+          4,
+          5,
+          -1
+        ],
+        "psd": {
+          "dimension": 45,
+          "rank": 45,
+          "nullity": 0,
+          "positive_semidefinite": true,
+          "method": "integer_congruence_strict_diagonal_dominance",
+          "matrix_sha256": "36b70d93def7b328fc4182dfa4bffcad074f3fd76e51230598cfd78c95815d58",
+          "minimum_exact_margin": "145791605408027616671408184102931102775161207575684"
+        }
+      },
+      {
+        "sector": [
+          5,
+          5,
+          1
+        ],
+        "psd": {
+          "dimension": 18,
+          "rank": 18,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          5,
+          5,
+          -1
+        ],
+        "psd": {
+          "dimension": 18,
+          "rank": 18,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          0,
+          -1
+        ],
+        "psd": {
+          "dimension": 1,
+          "rank": 1,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          1,
+          1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          1,
+          -1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          2,
+          1
+        ],
+        "psd": {
+          "dimension": 9,
+          "rank": 9,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          2,
+          -1
+        ],
+        "psd": {
+          "dimension": 6,
+          "rank": 6,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          3,
+          1
+        ],
+        "psd": {
+          "dimension": 10,
+          "rank": 10,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          3,
+          -1
+        ],
+        "psd": {
+          "dimension": 10,
+          "rank": 10,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          4,
+          1
+        ],
+        "psd": {
+          "dimension": 6,
+          "rank": 6,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          4,
+          -1
+        ],
+        "psd": {
+          "dimension": 9,
+          "rank": 9,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          5,
+          1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          5,
+          -1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          0,
+          6,
+          -1
+        ],
+        "psd": {
+          "dimension": 1,
+          "rank": 1,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          1,
+          6,
+          1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          1,
+          6,
+          -1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          2,
+          6,
+          1
+        ],
+        "psd": {
+          "dimension": 9,
+          "rank": 9,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          2,
+          6,
+          -1
+        ],
+        "psd": {
+          "dimension": 6,
+          "rank": 6,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          3,
+          6,
+          1
+        ],
+        "psd": {
+          "dimension": 10,
+          "rank": 10,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          3,
+          6,
+          -1
+        ],
+        "psd": {
+          "dimension": 10,
+          "rank": 10,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          4,
+          6,
+          1
+        ],
+        "psd": {
+          "dimension": 6,
+          "rank": 6,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          4,
+          6,
+          -1
+        ],
+        "psd": {
+          "dimension": 9,
+          "rank": 9,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          5,
+          6,
+          1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          5,
+          6,
+          -1
+        ],
+        "psd": {
+          "dimension": 3,
+          "rank": 3,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          6,
+          1
+        ],
+        "psd": {
+          "dimension": 1,
+          "rank": 1,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      }
+    ],
+    "local_sum_dimensions": 4096,
+    "local_maximum_psd_dimension": 200,
+    "periodic_lower_density": "-1652514208824023/2500000000000000",
+    "open_lower_density": "-1652525458824023/2500000000000000",
+    "open_lower_energy": "-1652525458824023/2500000000",
+    "scope": "Exact half-filled open U,t,V,W chain lower with next-nearest density W*q_i*q_(i+2). Fresh all-Fock local positivity and fixed overlapping-projector ceilings are combined. Local range-two profiles sum to five W for six-site windows. Opening removes one nearest bond and two range-two bonds; no general molecular representability claim. Fourteen PH-even one-spectator charge-conditioned hopping telescopes cancel exactly under translation, with no extra physical interaction or opening cost. Compact reflection-odd spin-dot telescopes cancel under translation, without adding a physical spin coupling or an opening penalty. The exact off-diagonal telescope gamma*(B03-2B14+B25) cancels under translation; the target has no range-three hopping and opening adds no auxiliary cost. A PH-even reflection-odd function of five signed charges adds an exactly canceling telescope. Higher products of binary empty/double indicators add exactly canceling reflection-odd telescopes. Reflection-odd pairs of charge squares add an exactly canceling translated telescope. A compact reflection-odd quadratic charge Y contributes Y_left-Y_right; its translated sum is exactly zero.",
+    "joint_overlap": {
+      "accepted": true,
+      "windows": 4,
+      "support_sites": 9,
+      "charged_ratio": "1/2",
+      "ceiling": "595736407/250000000",
+      "average_ceiling": "595736407/1000000000",
+      "gram_dimension": 1280,
+      "maximum_psd_dimension": 132,
+      "sectors": [
+        {
+          "sector": [
+            2,
+            3
+          ],
+          "psd": {
+            "dimension": 4,
+            "rank": 4,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            2,
+            4
+          ],
+          "psd": {
+            "dimension": 12,
+            "rank": 12,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            2,
+            5
+          ],
+          "psd": {
+            "dimension": 12,
+            "rank": 12,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            2,
+            6
+          ],
+          "psd": {
+            "dimension": 4,
+            "rank": 4,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            3,
+            2
+          ],
+          "psd": {
+            "dimension": 4,
+            "rank": 4,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            3,
+            3
+          ],
+          "psd": {
+            "dimension": 28,
+            "rank": 28,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "e68f19128b9c92016d9f9f82fce5cb68e1da1485ad1566e35f6581d7bcfb432d",
+            "minimum_exact_margin": "1901894371241245069677593039942843092907003023240960"
+          }
+        },
+        {
+          "sector": [
+            3,
+            4
+          ],
+          "psd": {
+            "dimension": 64,
+            "rank": 64,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "2cd39387b56066d96fbddd6bc068e5c7f6e8262a123077a01b1897345a43ee06",
+            "minimum_exact_margin": "1901894371232709763756462005672690900508841683613867"
+          }
+        },
+        {
+          "sector": [
+            3,
+            5
+          ],
+          "psd": {
+            "dimension": 64,
+            "rank": 64,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "19c2b03d47e875604c96d39c985916ade12c124c932cd10f98ffec4ca749a98a",
+            "minimum_exact_margin": "1901894371235552501391999279283051527200878222617167"
+          }
+        },
+        {
+          "sector": [
+            3,
+            6
+          ],
+          "psd": {
+            "dimension": 28,
+            "rank": 28,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "6bd9ea7c9b0b4a3ef8c4393815e136196f6a2859f85e2e4427efa134761f357d",
+            "minimum_exact_margin": "1901894371243098936030070300540907527390603764892013"
+          }
+        },
+        {
+          "sector": [
+            3,
+            7
+          ],
+          "psd": {
+            "dimension": 4,
+            "rank": 4,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            4,
+            2
+          ],
+          "psd": {
+            "dimension": 12,
+            "rank": 12,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            4,
+            3
+          ],
+          "psd": {
+            "dimension": 64,
+            "rank": 64,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "4803f8bf5c1044dc4611df84b3d391af48f034077dcb104a9af32b30d908194e",
+            "minimum_exact_margin": "1901894371233225646954134343612242353975401336582598"
+          }
+        },
+        {
+          "sector": [
+            4,
+            4
+          ],
+          "psd": {
+            "dimension": 132,
+            "rank": 132,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "b91c178bc2ce9ddba6fb57ed1f20f040183c9183ea92234748b13e0e3cf9c668",
+            "minimum_exact_margin": "1901894371212262481361706274848764424410979138382748"
+          }
+        },
+        {
+          "sector": [
+            4,
+            5
+          ],
+          "psd": {
+            "dimension": 132,
+            "rank": 132,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "1765731550e1e901f533720e290fe70fa488f9ad5038184d82cd8eb108d28bf7",
+            "minimum_exact_margin": "1901894371107056975168184975361138220323476408486936"
+          }
+        },
+        {
+          "sector": [
+            4,
+            6
+          ],
+          "psd": {
+            "dimension": 64,
+            "rank": 64,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "3d68379cefa23d67513920e1dd1eae7b6df25947ceef1fe09cacfeb08dcd1b62",
+            "minimum_exact_margin": "1901894371234389950311780887441828713935117197661142"
+          }
+        },
+        {
+          "sector": [
+            4,
+            7
+          ],
+          "psd": {
+            "dimension": 12,
+            "rank": 12,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            5,
+            2
+          ],
+          "psd": {
+            "dimension": 12,
+            "rank": 12,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            5,
+            3
+          ],
+          "psd": {
+            "dimension": 64,
+            "rank": 64,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "054e053098e7479b8d1bbb51c98e6c42aa2f6a8a8286458f54f4cd8724745a78",
+            "minimum_exact_margin": "1901894371234491406858000725712687519108434428327829"
+          }
+        },
+        {
+          "sector": [
+            5,
+            4
+          ],
+          "psd": {
+            "dimension": 132,
+            "rank": 132,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "ef79ec6ed72a1b563446db4b0629866f78a7c8366ca5a9dc901a16955951c2e1",
+            "minimum_exact_margin": "1901894371141889248761162062255891597373685669124290"
+          }
+        },
+        {
+          "sector": [
+            5,
+            5
+          ],
+          "psd": {
+            "dimension": 132,
+            "rank": 132,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "1c75c9eb5438d51d9b84b7c4f4a61296bb6843400cdbc9c24915f4a77de2a04b",
+            "minimum_exact_margin": "1901894371213745874349858051917968687213883305231488"
+          }
+        },
+        {
+          "sector": [
+            5,
+            6
+          ],
+          "psd": {
+            "dimension": 64,
+            "rank": 64,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "f6788214082bd67de006cd5ce6e87824f33b260d64e48d219e60eb54f0cdb833",
+            "minimum_exact_margin": "1901894371234286506855109980617348863600000000000000"
+          }
+        },
+        {
+          "sector": [
+            5,
+            7
+          ],
+          "psd": {
+            "dimension": 12,
+            "rank": 12,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            6,
+            2
+          ],
+          "psd": {
+            "dimension": 4,
+            "rank": 4,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            6,
+            3
+          ],
+          "psd": {
+            "dimension": 28,
+            "rank": 28,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "fe675fc6c35389919bab2078692f2eb27c44359f35dd6775ee980111d76351eb",
+            "minimum_exact_margin": "1901894371243098936030070300540907527390603764892013"
+          }
+        },
+        {
+          "sector": [
+            6,
+            4
+          ],
+          "psd": {
+            "dimension": 64,
+            "rank": 64,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "cad5952602bda971cd3c89ced28f7876ebfc238c13ec988179560f0dc42ffe5a",
+            "minimum_exact_margin": "1901894371233379470076630367928441133788566152765290"
+          }
+        },
+        {
+          "sector": [
+            6,
+            5
+          ],
+          "psd": {
+            "dimension": 64,
+            "rank": 64,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "af14d068cff6bca078ebea5567929612fabce8208c231a00a673221124e7dd8e",
+            "minimum_exact_margin": "1901894371235888168587733526448627723557104829512855"
+          }
+        },
+        {
+          "sector": [
+            6,
+            6
+          ],
+          "psd": {
+            "dimension": 28,
+            "rank": 28,
+            "nullity": 0,
+            "positive_semidefinite": true,
+            "method": "integer_congruence_strict_diagonal_dominance",
+            "matrix_sha256": "f4909fe0096b24c248a6356f8da5326af8b835bf21279787e68984bcbd0cf0f9",
+            "minimum_exact_margin": "1901894371243370249896076015551583408191899012561820"
+          }
+        },
+        {
+          "sector": [
+            6,
+            7
+          ],
+          "psd": {
+            "dimension": 4,
+            "rank": 4,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            7,
+            3
+          ],
+          "psd": {
+            "dimension": 4,
+            "rank": 4,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            7,
+            4
+          ],
+          "psd": {
+            "dimension": 12,
+            "rank": 12,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            7,
+            5
+          ],
+          "psd": {
+            "dimension": 12,
+            "rank": 12,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        },
+        {
+          "sector": [
+            7,
+            6
+          ],
+          "psd": {
+            "dimension": 4,
+            "rank": 4,
+            "nullity": 0,
+            "positive_semidefinite": true
+          }
+        }
+      ],
+      "scope": "All-state joint overlapping bound on Phalf + ratio*Pcharged. Unequal source norms and weights are retained by the exact diagonal congruence. This bound retains cross-family overlaps."
+    },
+    "joint_penalty": "39667/250000",
+    "half_local_penalty": "142009/500000",
+    "charged_local_penalty": "39667/500000",
+    "range_two_density_profile": [
+      "3519/4000",
+      "6481/4000",
+      "6481/4000",
+      "3519/4000"
+    ],
+    "closing_interaction_norm": "9/2",
+    "spectator_hopping": {
+      "0,1,2": "2673/31250",
+      "0,1,3": "54631/1000000",
+      "0,1,4": "-1333/1000000",
+      "0,2,1": "71807/500000",
+      "0,2,3": "102643/500000",
+      "0,2,4": "14901/125000",
+      "0,3,1": "27303/500000",
+      "0,3,2": "-1411/200000",
+      "0,3,4": "2043/200000",
+      "0,4,1": "-3529/50000",
+      "1,2,0": "-53543/200000",
+      "1,2,3": "58741/1000000",
+      "1,2,4": "5047/62500",
+      "1,3,0": "873/62500"
+    },
+    "spin_telescope": {
+      "0,1": "-94559/1000000",
+      "0,2": "-53449/1000000",
+      "0,3": "-853/40000",
+      "1,2": "10871/1000000"
+    },
+    "hopping_telescope": "24827/250000",
+    "signed_charge_telescope": {
+      "-1,-1,-1,-1,0": "-799/125000",
+      "-1,-1,-1,-1,1": "-799/125000",
+      "-1,-1,-1,0,-1": "799/125000",
+      "-1,-1,-1,0,0": "23/1000000",
+      "-1,-1,-1,0,1": "-18323/500000",
+      "-1,-1,-1,1,-1": "799/125000",
+      "-1,-1,-1,1,0": "5298/15625",
+      "-1,-1,-1,1,1": "17023/200000",
+      "-1,-1,0,-1,0": "23/1000000",
+      "-1,-1,0,-1,1": "-658741/1000000",
+      "-1,-1,0,0,-1": "799/125000",
+      "-1,-1,0,0,0": "452979/500000",
+      "-1,-1,0,0,1": "-69701/250000",
+      "-1,-1,0,1,-1": "186757/200000",
+      "-1,-1,0,1,0": "220681/250000",
+      "-1,-1,1,-1,0": "122801/200000",
+      "-1,-1,1,-1,1": "-1031451/1000000",
+      "-1,-1,1,0,-1": "885941/1000000",
+      "-1,-1,1,0,0": "262797/250000",
+      "-1,-1,1,0,1": "-25409/1000000",
+      "-1,-1,1,1,-1": "100517/500000",
+      "-1,-1,1,1,0": "47641/40000",
+      "-1,0,-1,-1,0": "-799/125000",
+      "-1,0,-1,-1,1": "-172331/250000",
+      "-1,0,-1,0,0": "124107/125000",
+      "-1,0,-1,0,1": "-458259/1000000",
+      "-1,0,-1,1,-1": "90861/125000",
+      "-1,0,-1,1,0": "51917/40000",
+      "-1,0,0,-1,0": "-703367/1000000",
+      "-1,0,0,-1,1": "-1437603/1000000",
+      "-1,0,0,0,0": "22153/62500",
+      "-1,0,0,1,-1": "-44073/62500",
+      "-1,0,0,1,0": "619153/1000000",
+      "-1,0,1,-1,0": "335261/1000000",
+      "-1,0,1,-1,1": "-444903/500000",
+      "-1,0,1,0,0": "164461/200000",
+      "-1,0,1,1,-1": "-18579/25000",
+      "-1,0,1,1,0": "475889/1000000",
+      "-1,1,-1,-1,0": "-192167/200000",
+      "-1,1,-1,-1,1": "-224631/250000",
+      "-1,1,-1,0,0": "38253/50000",
+      "-1,1,-1,1,0": "2",
+      "-1,1,0,-1,0": "525697/1000000",
+      "-1,1,0,0,0": "745561/500000",
+      "-1,1,0,1,0": "725483/500000",
+      "-1,1,1,-1,0": "325843/250000",
+      "-1,1,1,0,0": "2",
+      "-1,1,1,1,0": "167/5000",
+      "0,-1,-1,0,0": "699721/1000000",
+      "0,-1,-1,1,0": "56213/100000",
+      "0,-1,0,0,0": "537321/1000000",
+      "0,-1,1,0,0": "-183353/1000000"
+    },
+    "signed_charge_components": 52,
+    "higher_charge_indicator_telescope": {
+      "0,1,2": "-8629/25000",
+      "0,1,2,3": "59749/500000",
+      "0,1,2,4": "272859/1000000",
+      "0,1,3": "-5669/125000",
+      "0,1,4": "-34639/250000",
+      "0,2,3": "27817/200000"
+    },
+    "higher_indicator_components": 6,
+    "charge_square_pair_telescope": {
+      "0,1": "458259/1000000",
+      "0,2": "-19617/1000000",
+      "0,3": "-111949/1000000",
+      "1,2": "310971/1000000"
+    },
+    "charge_square_pair_components": 4,
+    "quadratic_charge_telescope": {
+      "0,3": "100519/1000000"
+    },
+    "quadratic_components": 1,
+    "telescoping_diagonal": {
+      "99": "56879/1000000",
+      "101": "15711/500000",
+      "102": "39417/1000000",
+      "105": "34059/1000000",
+      "147": "56879/1000000",
+      "150": "34059/1000000",
+      "153": "39417/1000000",
+      "154": "15711/500000",
+      "198": "-275037/1000000",
+      "201": "-275037/1000000",
+      "218": "-13643/500000",
+      "219": "-56879/1000000",
+      "229": "-13643/500000",
+      "231": "-56879/1000000",
+      "314": "6163/500000",
+      "334": "-6163/500000",
+      "355": "13643/500000",
+      "356": "-15711/500000",
+      "359": "-15711/500000",
+      "361": "15183/1000000",
+      "364": "13643/500000",
+      "370": "-6163/500000",
+      "396": "275037/1000000",
+      "406": "1343/125000",
+      "408": "-39417/1000000",
+      "411": "-39417/1000000",
+      "420": "-34059/1000000",
+      "421": "-15183/1000000",
+      "422": "-1343/125000",
+      "423": "-34059/1000000",
+      "435": "275037/1000000",
+      "458": "6163/500000",
+      "565": "6163/500000",
+      "588": "275037/1000000",
+      "600": "-34059/1000000",
+      "601": "-1343/125000",
+      "602": "-15183/1000000",
+      "603": "-34059/1000000",
+      "612": "-39417/1000000",
+      "615": "-39417/1000000",
+      "617": "1343/125000",
+      "627": "275037/1000000",
+      "653": "-6163/500000",
+      "659": "13643/500000",
+      "662": "15183/1000000",
+      "664": "-15711/500000",
+      "667": "-15711/500000",
+      "668": "13643/500000",
+      "689": "-6163/500000",
+      "709": "6163/500000",
+      "792": "-56879/1000000",
+      "794": "-13643/500000",
+      "804": "-56879/1000000",
+      "805": "-13643/500000",
+      "822": "-275037/1000000",
+      "825": "-275037/1000000",
+      "869": "15711/500000",
+      "870": "39417/1000000",
+      "873": "34059/1000000",
+      "876": "56879/1000000",
+      "918": "34059/1000000",
+      "921": "39417/1000000",
+      "922": "15711/500000",
+      "924": "56879/1000000"
+    },
+    "telescoping_nonzero_entries": 64,
+    "telescoping_scope": "The six-site diagonal is Y(first five sites)-Y(last five sites). Every translated five-site term cancels exactly on the periodic chain, including cyclic copies defined by fermionic translation. Reflection-odd Y makes the local correction reflection-even; all-Fock positivity includes this correction before opening the Hamiltonian chain.",
+    "congruence_witnesses": {
+      "supplied": 73,
+      "used": 73
+    }
+  },
+  "upper_replay": {
+    "accepted": true,
+    "sites": 1000000,
+    "blocks": 125000,
+    "a": "23419/62500",
+    "b": "88791/500000",
+    "energy_lower": "-160409319205066066916760890646278915568568426373/259383843586690850943300636710300292841472",
+    "energy_upper": "-3341860816772209727432518555130810740847592283/5403830074722726061318763264797922768384",
+    "upper_per_site": "-3341860816772209727432518555130810740847592283/5403830074722726061318763264797922768384000000",
+    "width_per_site": "350559371117979126500780677154835913642435208263/2737629325919795918189825158248020056036287957763062971934312729602814913839104000000",
+    "precision_bits": 160,
+    "matrix_squarings": 16,
+    "row_power_products": 8,
+    "transfer_dimension": 48,
+    "norm_scaled_interval": [
+      "2075070748693526807546405093682402342731776",
+      "2075070748693526807546405093682402343059456"
+    ],
+    "numerator_scaled_interval": [
+      "-1283274553640528535334087125170231324548547410984",
+      "-1283274553640528535334087125170231324485475436672"
+    ],
+    "shared_binary_exponent": 84445,
+    "target": {
+      "U": "4",
+      "t": "1",
+      "V": "1/2",
+      "W": "1"
+    },
+    "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+  },
+  "physical_source_replay": {
+    "accepted": true,
+    "sites": 8,
+    "particles": 8,
+    "U": "4",
+    "t": "1",
+    "upper": "-120558410244999997006043477431315508062486123707/28461740687412294825487447957163629238443780483",
+    "norm": "28461740687412294825487447957163629238443780483/16452712980283392",
+    "moment_work": {
+      "maximum_moment_order": 23,
+      "maximum_power": 12,
+      "boundary_count": 14,
+      "maximum_orbit_support": 1250,
+      "unique_determinant_source_actions": 1239,
+      "referenced_determinants": 2169,
+      "orbit_cache_states": 4864,
+      "balanced_sector_dimension": 4900,
+      "materialized_full_sector": false,
+      "symmetry_checks": {
+        "spin_exchange_exact": true,
+        "particle_hole_number_multiplier": "-4",
+        "particle_hole_fixed_number_exact": true
+      },
+      "scope": "Exact signed finite-group orbit contraction from prescribed invariant boundary vectors. Orbits and their images are generated on demand; no full sector matrix. Orbit count can still grow exponentially."
+    },
+    "scope": "Fresh physical H8 polynomial Rayleigh quotient only. No supplied moment table, complement-gap proof, or ground-spin theorem is used."
+  },
+  "exact_24_site": {
+    "accepted": true,
+    "sites": 24,
+    "blocks": 3,
+    "a": "23419/62500",
+    "b": "88791/500000",
+    "norm": "14727610949253214327061424208899876250580870597590092460030163238241773835517086849928921019813063477724433182044098281844908744485156169733497302584292718462264579/7629394531250000000",
+    "energy_numerator": "-855018145289876660677491090261653046112235014780930796813532364778422840225025086529629155108052725765027884345812019596973758427483251200965041514181559863230908753/30517578125000000000",
+    "energy": "-855018145289876660677491090261653046112235014780930796813532364778422840225025086529629155108052725765027884345812019596973758427483251200965041514181559863230908753/58910443797012857308245696835599505002323482390360369840120652952967095342068347399715684079252253910897732728176393127379634977940624678933989210337170873849058316",
+    "upper_per_site": "-855018145289876660677491090261653046112235014780930796813532364778422840225025086529629155108052725765027884345812019596973758427483251200965041514181559863230908753/1413850651128308575397896724054388120055763577368648876162895670871210288209640337593176417902054093861545585476233435057111239470574992294415741048092100972377399584",
+    "target": {
+      "U": "4",
+      "t": "1",
+      "V": "1/2",
+      "W": "1"
+    },
+    "scope": "Exact finite physical norm and U,t,V,W energy, including next-nearest density. Each dressed term occupies at most two adjacent physical blocks. The existing recurrence remains capped at64 blocks; no generic molecular transfer claim."
+  },
+  "enclosed_24_site": {
+    "accepted": true,
+    "sites": 24,
+    "blocks": 3,
+    "a": "23419/62500",
+    "b": "88791/500000",
+    "energy_lower": "-846857408498642590117105262860772786326645924277/58348171956665866452683438139107262151386883606",
+    "energy_upper": "-11761908451370035973848684206399622032314526726/810391277175914811842825529709823085435928939",
+    "upper_per_site": "-1960318075228339328974780701066603672052421121/3241565108703659247371302118839292341743715756",
+    "width_per_site": "27575773288619646006911496061348359491808698147/1134836390228216348832751116826882528679049845016909730042909861966625172494298865413121776816",
+    "precision_bits": 160,
+    "matrix_squarings": 0,
+    "row_power_products": 1,
+    "transfer_dimension": 48,
+    "norm_scaled_interval": [
+      "58348171956665866452683438139107262151386883606",
+      "58348171956665866452683438139107262151386883608"
+    ],
+    "numerator_scaled_interval": [
+      "-846857408498642590117105262860772786326645924277",
+      "-846857408498642590117105262860772786326645924272"
+    ],
+    "shared_binary_exponent": -154,
+    "target": {
+      "U": "4",
+      "t": "1",
+      "V": "1/2",
+      "W": "1"
+    },
+    "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+  },
+  "perturbative_interval": [
+    "-8217617421190763/5000000000000000",
+    "807869973867092524177997929568064407509773093823/2075070748693526807546405093682402343059456000000"
+  ],
+  "fraction_perturbative_width_closed": "40331339238381313040554936217569116531810298999796028871/41194311335942867628411847003898327046663292288412162119",
+  "lower_seconds": 21.539001291002933,
+  "seconds": 24.98787429100048,
+  "source_sha256": {
+    "experiments/marginal_asymmetric_reference.py": "909f2dd66df909c4b67dd08d0e29174cb86fde63bb06f9f2e0c0e237cf032881",
+    "experiments/marginal_boundary_transfer.py": "b7e76483c8293b5e3abdb6fc8803077e33ede266d716144aa14585c68cc6cb96",
+    "experiments/marginal_boundary_unitary.py": "af236ade4bd1c490dda0beb88b15ea3ab317fa6e2bc84414eb80b51c4040be1e",
+    "experiments/marginal_charge_indicator_telescope.py": "0c02eb7b8f8eeeb36d75d4ae79b6f837b5fbd6999f1e767c950787dd04e7bf78",
+    "experiments/marginal_charge_product.py": "bad102f6d1ef7ec33ae524464a7306f92f0f4dc17a9722025c4b2148800c5798",
+    "experiments/marginal_charge_square_pairs.py": "7ee83f4dd8dfc0425930d00fe39a28f6f4b639bfcc7e89149b3615e7e4a142a7",
+    "experiments/marginal_charged_projectors.py": "6e87655790782c3bef1da558e4c67427cc7659cf57096d0ad4bbeb7aaae14ba3",
+    "experiments/marginal_coherent_tree.py": "6613f0f4cf76e22a4266c6058ccb5874e1b7fdf1ff799dd6b7476956ba4a9f60",
+    "experiments/marginal_collective.py": "326f6ff573f075720bf7f10c29cde5059242e3d052bbc8538414910487df0265",
+    "experiments/marginal_congruence_psd.py": "f64057cc6e7d674db22edcde9810e2ead9b373dd2af5206eacdbb938e7de31df",
+    "experiments/marginal_defect_dicke.py": "9be4a47c8eb0110991d158af0cd6ccdfdf7323440b80b871c6b2bf8197106858",
+    "experiments/marginal_determinant_tree.py": "9cd66df9a51235375cfd59d0dd70aa2a4aefb1c3a4d9542d6824e82db5e9e71b",
+    "experiments/marginal_enlarged_schur.py": "48a27deca365e46c35c999720ea9b9d3de456b07e0ccb00e5c3c725216c32089",
+    "experiments/marginal_fixed_point_ldl.py": "480a6134223edcb4534576b5885ca02dac897ed1cd8b3e10c1dca05a4dda6639",
+    "experiments/marginal_general_schur.py": "d40aa1f00c04bea4332d23ca91752f5b121171095816dd505ca47f779e596b7b",
+    "experiments/marginal_h6_complement.py": "3974fb8e613b8aecbf9c8104fc85497077dbd2f404a932a67e8a4a5344dbb891",
+    "experiments/marginal_hopping_telescope.py": "f72a6ce39da10d5de54f9f5d4617ede56fd57d8ff048ef91850dfeb07c054491",
+    "experiments/marginal_hunt_car.py": "e95375f0df0d36c18345f0b60913d4e8186c6ea33c4c50f2db381a14acdb4614",
+    "experiments/marginal_implicit_certificate.py": "8a181156a0a9b34ad0528d6fba6a1464beebd4b6a607be326d6bce295319a242",
+    "experiments/marginal_joint_charge_dp.py": "745829f39f990bdea488419b985083ff67ea1c0eada38b9104e24f4e78f94778",
+    "experiments/marginal_local_hubbard_block.py": "8bd8ffa948513e6b1073f9f1b970a4c87e6f04ca0150f9f407bf928147ce9257",
+    "experiments/marginal_molecular_gershgorin.py": "8801019ea959dff15bde352d35d94cb9aad801a8c4358b77ab18ea225e85313f",
+    "experiments/marginal_orbit_certificate.py": "6aece21dfcb6b569333dea0aa475d5bc49b6068bbc1010dbc83e8eaa08c60148",
+    "experiments/marginal_polynomial_metric.py": "45d52db9af8981d5b5e2847e693c01ff7fde11f37ed71dfc99797687031e07ea",
+    "experiments/marginal_polynomial_sos.py": "95f2733deca3c2a15a96dff4d9adf225adc4dc1da689fe6dd92fe065431e5360",
+    "experiments/marginal_projector_extendibility.py": "55f96eebc4fa549b80546c6021d7cc8752cb0560f4e02320915123e2f729823f",
+    "experiments/marginal_quadratic_charge_telescope.py": "7cf72e3d104a974d670de01a6f2298f6a2e17e1a6640b40d346d07029cf0ab62",
+    "experiments/marginal_range_two_density.py": "2b7b75fd83d59af20f74a8c5a42815c55c295b7b291e16e698c7aec17b71d6be",
+    "experiments/marginal_range_two_transfer.py": "07ba8991dfa5709729f78bd7fcb14b3ca1f4dbfd554ce0d9d2a6fc9c15b10f03",
+    "experiments/marginal_schur_transfer.py": "5a6e57182169b542c9a9079648c188a65e11f84125bc3ee2c7f6fd05d2009768",
+    "experiments/marginal_sector_reference.py": "750f3e16d24d152cec16d1296eab98192d98e4e981a00b92e5ab7c505960ddf8",
+    "experiments/marginal_signed_charge_telescope.py": "d8c19b5f3006682d98c20f2e99c16262cb3ceadd7258404d465e2c529049e6cd",
+    "experiments/marginal_sparse_molecular.py": "4655b3f3c3f1633e19074d5e6cbca2fb2b84c8a5627bd2cf745bd4b4d1e73b10",
+    "experiments/marginal_sparse_response.py": "83b38c5b347d259f5cefa47a6ce5ce10896655d26ef1d8b0e87a006aefc96a53",
+    "experiments/marginal_spectator_hopping.py": "048a696372838f7b1b39eb3f9440f24ed015ba96c85c8143f0a9cb2c0ad256b2",
+    "experiments/marginal_spin_reduction.py": "a465a6a2b74ff4e093a1b3228ef3fcece8e5d6eb3ca531aa2d7dcbed60af32ac",
+    "experiments/marginal_spin_telescope.py": "b15dbd9398d838c38e155e0321f1169e795f0c706e839466aa0c8d029cb2cc92",
+    "experiments/marginal_symbolic.py": "a1fc87c3f4fcd10426b6d68e1131941d96db7b4fe29920678034770734f9713f",
+    "experiments/marginal_symmetry_moments.py": "ca2d72ea53b2886a739c0365625040fd52936344e7413935c5009a73ecca72d9",
+    "experiments/marginal_symmetry_transfer.py": "796d9cbf5f39c49ef6766ec2c54dc3939664bc04ea2dc9d9e2250c3a21e238e0",
+    "experiments/marginal_tiled_upper.py": "ce286a9e5b0396ab432d480efbae0e8c7e51aa3e5a5ce921c3a2072d1041f758",
+    "experiments/marginal_transfer_verify.py": "5f7bd4bd45adcb397942e09e37065486f9e72f022fe818d2d94ff98c32844bae",
+    "experiments/marginal_window_family_bound.py": "749f8c9d21111f03c9ed48588c43d54146ede88ae545fc3c71d016528f7f0a3f",
+    "results/marginal_graded_hubbard8/density_transfer/certificate.json": "299ea10cdc580c15e3cc8f703e49fa1e17cd6f24fd07efc7ee1f46476bbf272c",
+    "results/marginal_graded_hubbard8/discovery/range_two_density_replay.py": "3cdd91e4963c950eae58e4ca089b84f9f4abfae695ed8f90646e97da52f4d556",
+    "results/marginal_graded_hubbard8/joint_projector/signed_density/shape_selection/swap_3_for_20/profile_joint_r1_2_certificate_accelerated_replay.json": "bb41d7accbf57c057950032079b0c6367ef31e282b54163aa725ffd220a964da",
+    "results/marginal_graded_hubbard8/spectator_hopping/W_plus_1/cutting/congruence_witnesses.json": "0a0cf1f31e5ba1552b0285dcdea50c88a8767863b51205b2b28de036bcd66760",
+    "results/marginal_graded_hubbard8/spectator_hopping/W_plus_1/cutting/profile_joint_r1_2_certificate.json": "68155604d2ada876bfc0b02198d47df5b7f8154201fb532978a3acbd23f951b4"
+  },
+  "scope": "Exact half-filled open U,t,V,W chain interval with next-nearest density coupling. All-Fock lower and a freshly evaluated physical filtered-state upper. Sources, nine diagonal shapes and trial-state filter recipe were transferred from the nearest-neighbor model; scalar lower profiles were retuned. The fixed48-dimensional upper recurrence includes six-site dressed patches. Historical norm-perturbation comparison uses N-2 added pairs of norm one. No generic molecular, general representability or requested-accuracy scaling conclusion."
+}

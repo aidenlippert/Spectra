@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/audit_artifacts.py", line 35, in <module>
+    if __name__=='__main__':run()
+                            ^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/audit_artifacts.py", line 25, in run
+    'counts_by_status':{s:sum(r['status']==s for r in receipts) for s in sorted({r['status'] for r in receipts})},
+                                                                                 ~^^^^^^^^^^
+KeyError: 'status'

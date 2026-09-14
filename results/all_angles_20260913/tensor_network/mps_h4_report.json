@@ -1,0 +1,27 @@
+{
+  "fixture": "/Users/aidenlippert/Documents/Spectra/results/certificate_scaling/active_space_ladder/h4/fixture.json",
+  "fixture_sha256": "8e64505deb4cc06a87f75e669b0f3073d15ebca72daa6d086e06eeea0b0f5120",
+  "method": "random-start variational open-boundary MPS; no FCI seed; fixed-N projection by determinant filtering",
+  "rows": [
+    {
+      "bond_dimension": 1,
+      "params": 16,
+      "float_energy": -3.525719766888996,
+      "rounded_rational_energy": -3.5257197668889946,
+      "exact_integer_witness_energy": "-70514395337781747134455692991893/20000000000000522183600000000000",
+      "support": 17,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully."
+    },
+    {
+      "bond_dimension": 2,
+      "params": 56,
+      "float_energy": -3.5613055703796936,
+      "rounded_rational_energy": -3.5613055703849623,
+      "exact_integer_witness_energy": "-59355092835562746468292999471521/16666666665491079435500000000000",
+      "support": 70,
+      "optimizer_success": false,
+      "optimizer_message": "Maximum number of iterations has been exceeded."
+    }
+  ]
+}

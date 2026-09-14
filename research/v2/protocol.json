@@ -1,0 +1,19 @@
+{
+  "protocol_version": 2,
+  "registered_before_integrated_run": true,
+  "dimension": 6,
+  "world_seeds": [17, 29, 43],
+  "visibility": "1/2",
+  "a_channel_error": "1/10",
+  "delta_a": "1/1000",
+  "delta_b_conditional_on_a": "1/1000",
+  "evaluation_trials_per_world": 8192,
+  "evaluation_family_failure": "1/100",
+  "calibration_contexts": "six coordinate vectors for each law",
+  "heldout_contexts": "all nonzero binary vectors except coordinate vectors; independent draws with replacement",
+  "b_acquisition": "A compiles a known-positive two-qubit reference measurement; no direct B calibration access",
+  "baselines": ["frozen", "A_only", "B_only", "AB", "exact_lookup", "structured_retrieval", "conventional_GF2"],
+  "primary_gate": "exact positive complementary risk saving, certified sequential noisy law acquisition, unseen-context transfer and explicit same-data conventional tie",
+  "secondary_gate": "fixed-horizon target-shot budget amortization against a reset target-only comparator at error 3/10",
+  "disallowed_claims": ["unrestricted scientific intelligence", "novel physical law", "superiority to every conventional algorithm", "optimal globally learning baseline beaten", "expected stopping-time lower bound", "physical experimental validation"]
+}

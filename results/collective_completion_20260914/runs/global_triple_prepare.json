@@ -1,0 +1,24 @@
+{
+  "name": "global_triple_prepare",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.collective_completion_20260914.prepare",
+    "h8",
+    "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "results/correlated_pair_20260913/mps/h8_spatial_warm144/state.json",
+    "results/collective_completion_20260914/prepared/h8_global_triples",
+    "--global-triples"
+  ],
+  "timeout_seconds": 90,
+  "status": "passed",
+  "started_UTC": "2026-09-14T19:32:48.215402+00:00",
+  "pid": 37799,
+  "exit_code": 0,
+  "wall_seconds": 27.667491582993534,
+  "child_user_seconds": 26.446135,
+  "child_system_seconds": 0.423409,
+  "peak_child_RSS_bytes": 313475072,
+  "finished_UTC": "2026-09-14T19:33:15.883669+00:00"
+}

@@ -1,0 +1,77 @@
+{
+  "status": "verified",
+  "certificates_replayed": 3,
+  "receipts": [
+    {
+      "arm": "baseline",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12
+    },
+    {
+      "arm": "small_cover",
+      "bound": "4089232435656577/4096000000000000000",
+      "degree": 11
+    },
+    {
+      "arm": "disabled",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12
+    }
+  ],
+  "headroom_gate": "failed",
+  "archive_sha256": "7bf9bd9d2e60769866b2a4f992dcd93bc9dd32277de5b13c683285bb35ecc6df",
+  "historical_hash_checks": {
+    "experiments/v7_certificate.py": true,
+    "experiments/v7_quadratic_certificate.py": true,
+    "experiments/v7_identifiability.py": true,
+    "experiments/v7_verify.py": true,
+    "experiments/v7_block_cost.py": true,
+    "experiments/v7_adaptive_taylor.py": true,
+    "experiments/v7_quadratic_cost.py": true,
+    "experiments/v7_pruning_probe.py": true,
+    "experiments/v7_strong_baseline.py": true,
+    "experiments/v7_grouping_probe.py": true,
+    "experiments/v7_pruned_taylor.py": true,
+    "experiments/v7_reducers.py": true,
+    "experiments/v7_headroom.py": true,
+    "experiments/v7_measured_gate.py": true,
+    "experiments/v7_prediction_requests.py": true,
+    "experiments/v7_quadratic_probe.py": true,
+    "experiments/pauli.py": true,
+    "experiments/certificates.py": true,
+    "experiments/v6_audit.py": true,
+    "experiments/v6_headroom.py": true,
+    "tests/test_v6_audit.py": true,
+    "tests/test_v6_headroom.py": true,
+    "data/v6/pyomo-doe-LICENSE": true,
+    "data/v6/tclab_sine_test_5min_period.csv": true,
+    "data/v6/tclab_step_test.csv": true,
+    "results/v6/headroom_results.json": true,
+    "experiments/v5_account.py": true,
+    "experiments/v5_bayes.py": true,
+    "experiments/v5_complementarity.py": true,
+    "experiments/v5_core.py": true,
+    "experiments/v5_frame.py": true,
+    "experiments/v5_run.py": true,
+    "experiments/v5_verify.py": true,
+    "tests/test_v5_bayes.py": true,
+    "tests/test_v5_core.py": true,
+    "tests/test_v5_frame.py": true,
+    "tests/test_v5_research.py": true,
+    "results/v5/complementarity_results.json": true,
+    "results/v5/transfer_results.json": true,
+    "results/v5/computational_accounting.json": true
+  },
+  "v7_through_v11_archives_unchanged": true,
+  "source_sha256": {
+    "experiments/v12_preflight.py": "38855374a5d25e4dc4f464bfd4e663b31f9047c10f2a8e864fbc0139b6bd492a",
+    "experiments/v12_small_cover.py": "0e43804685d3405b961ba9a99cc422ff6d584e255ff46d2f23817b9032eec185",
+    "experiments/v12_small_cover_taylor.py": "6b5497a36e1442f59e96ffeeef961c178e4e3595ae39ce5be6bd15000a113e54",
+    "tests/test_v12_small_cover.py": "d9536866da6b85abbe26813da07d87c674c16d37f1fcb3875937509eda09ada5"
+  },
+  "source_scope": "complete-cost preflight implementation and focused tests; diagnostic-only helper scripts are not dependencies",
+  "test_suite_count": 201,
+  "test_suite_passed": true,
+  "physical_validation": "not_performed",
+  "acquisition": "not_run"
+}

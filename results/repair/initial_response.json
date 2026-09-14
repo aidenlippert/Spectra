@@ -1,0 +1,30 @@
+{
+  "status": "needs_evidence",
+  "identified_markov_vectors": {
+    "0": [
+      "1/2",
+      "0"
+    ],
+    "1": [
+      "1/4",
+      "1/8"
+    ]
+  },
+  "experiment": {
+    "reset": "declared_zero_reset",
+    "controls": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "observe_each_step": true,
+    "reason": "complete 2D moment bound, not inferred rank saturation"
+  },
+  "class_assumptions": "zero_reset_strictly_proper_LTI",
+  "maximum_dimension": 4
+}

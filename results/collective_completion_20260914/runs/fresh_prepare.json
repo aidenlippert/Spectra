@@ -1,0 +1,23 @@
+{
+  "name": "fresh_prepare",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.collective_completion_20260914.prepare",
+    "fresh_h6_2p23",
+    "results/collective_completion_20260914/transfer/fixture/fixture.json",
+    "results/collective_completion_20260914/transfer/mps/state.json",
+    "results/collective_completion_20260914/prepared/fresh_h6_2p23"
+  ],
+  "timeout_seconds": 60,
+  "status": "failed",
+  "started_UTC": "2026-09-14T19:00:10.887257+00:00",
+  "pid": 32448,
+  "exit_code": 1,
+  "wall_seconds": 6.038472042011563,
+  "child_user_seconds": 5.651126,
+  "child_system_seconds": 0.166515,
+  "peak_child_RSS_bytes": 240254976,
+  "finished_UTC": "2026-09-14T19:00:16.926154+00:00"
+}

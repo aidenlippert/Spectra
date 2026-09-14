@@ -1,0 +1,207 @@
+{
+  "accepted": false,
+  "proposal_written": true,
+  "candidate_count": 123,
+  "basis_size": 3,
+  "pricing": [
+    {
+      "round": 0,
+      "candidate_upper": -0.660535497010207,
+      "minimum_reduced_eigenvalue": -3.559657876728295e-05,
+      "added": 8,
+      "dual_new_coefficients": [
+        0.000753154022161934,
+        -0.00420102742599306
+      ]
+    },
+    {
+      "round": 1,
+      "candidate_upper": -0.6605358638120611,
+      "minimum_reduced_eigenvalue": -1.383718351455343e-06,
+      "added": 2,
+      "dual_new_coefficients": [
+        8.951443612448887e-05,
+        -0.00028565662702915355
+      ]
+    },
+    {
+      "round": 2,
+      "candidate_upper": -0.6605359567354838,
+      "minimum_reduced_eigenvalue": -3.650694555545897e-07,
+      "added": 2,
+      "dual_new_coefficients": [
+        6.790346690903307e-05,
+        -6.922707846212375e-05
+      ]
+    },
+    {
+      "round": 3,
+      "candidate_upper": -0.6605360090598356,
+      "minimum_reduced_eigenvalue": -1.0270052319683032e-07,
+      "added": 2,
+      "dual_new_coefficients": [
+        5.58749487948837e-05,
+        5.316814408258312e-05
+      ]
+    },
+    {
+      "round": 4,
+      "candidate_upper": -0.6605360198446255,
+      "minimum_reduced_eigenvalue": -2.4685553157155482e-08,
+      "added": 2,
+      "dual_new_coefficients": [
+        6.428061865626522e-05,
+        -5.6305596315331925e-06
+      ]
+    },
+    {
+      "round": 5,
+      "candidate_upper": -0.6605360246153585,
+      "minimum_reduced_eigenvalue": -6.32664987065823e-09,
+      "added": 2,
+      "dual_new_coefficients": [
+        6.070076259954439e-05,
+        2.4697500064840313e-05
+      ]
+    },
+    {
+      "round": 6,
+      "candidate_upper": -0.6605360246994395,
+      "minimum_reduced_eigenvalue": -1.5642305228880105e-09,
+      "added": 2,
+      "dual_new_coefficients": [
+        6.264623087838758e-05,
+        9.72723904381653e-06
+      ]
+    },
+    {
+      "round": 7,
+      "candidate_upper": -0.6605360247407909,
+      "minimum_reduced_eigenvalue": -3.89119403365612e-10,
+      "added": 2,
+      "dual_new_coefficients": [
+        6.360302286122639e-05,
+        2.3647823842313203e-06
+      ]
+    },
+    {
+      "round": 8,
+      "candidate_upper": -0.6605360247613078,
+      "minimum_reduced_eigenvalue": -9.712719517551704e-11,
+      "added": 1,
+      "dual_new_coefficients": [
+        6.407769356841887e-05,
+        -1.2882834016698996e-06
+      ]
+    },
+    {
+      "round": 9,
+      "candidate_upper": -0.6605360247715258,
+      "minimum_reduced_eigenvalue": -2.4354740446597134e-11,
+      "added": 2,
+      "dual_new_coefficients": [
+        6.431416534560703e-05,
+        -3.1074528338828444e-06
+      ]
+    },
+    {
+      "round": 10,
+      "candidate_upper": -0.6605360247761092,
+      "minimum_reduced_eigenvalue": -6.204370350815225e-12,
+      "added": 1,
+      "dual_new_coefficients": [
+        6.419659334309629e-05,
+        -2.1977881785475556e-06
+      ]
+    },
+    {
+      "round": 11,
+      "candidate_upper": -0.6605360247761091,
+      "minimum_reduced_eigenvalue": -6.204370350815225e-12,
+      "added": 1,
+      "dual_new_coefficients": [
+        6.41966448341876e-05,
+        -2.1976513743892207e-06
+      ]
+    },
+    {
+      "round": 12,
+      "candidate_upper": -0.6605360247762384,
+      "minimum_reduced_eigenvalue": -5.129230373768223e-12,
+      "added": 2,
+      "dual_new_coefficients": [
+        6.425609968294422e-05,
+        -2.65652546852958e-06
+      ]
+    },
+    {
+      "round": 13,
+      "candidate_upper": -0.6605360247761092,
+      "minimum_reduced_eigenvalue": -6.207923064494025e-12,
+      "added": 0,
+      "dual_new_coefficients": [
+        6.41965953182407e-05,
+        -2.197782909503017e-06
+      ]
+    }
+  ],
+  "numerical_upper": -0.6605360247761092,
+  "seconds": 21.37434475000191,
+  "scope": "Numerical selection only. At most3 exact positive sources cancelling both new moments can cap arbitrary new coefficients with all preceding fields frozen. Independent physical replay is mandatory.",
+  "source_sha256": {
+    "experiments/marginal_asymmetric_reference.py": "909f2dd66df909c4b67dd08d0e29174cb86fde63bb06f9f2e0c0e237cf032881",
+    "experiments/marginal_charge_indicator_telescope.py": "0c02eb7b8f8eeeb36d75d4ae79b6f837b5fbd6999f1e767c950787dd04e7bf78",
+    "experiments/marginal_charge_product.py": "bad102f6d1ef7ec33ae524464a7306f92f0f4dc17a9722025c4b2148800c5798",
+    "experiments/marginal_charge_square_pairs.py": "7ee83f4dd8dfc0425930d00fe39a28f6f4b639bfcc7e89149b3615e7e4a142a7",
+    "experiments/marginal_charged_projectors.py": "6e87655790782c3bef1da558e4c67427cc7659cf57096d0ad4bbeb7aaae14ba3",
+    "experiments/marginal_coherent_projector_telescope.py": "b119a8eb8bfc1b151645ac36af9bb81729cdcd104b9dec47f46a581a03478dfc",
+    "experiments/marginal_coherent_tree.py": "6613f0f4cf76e22a4266c6058ccb5874e1b7fdf1ff799dd6b7476956ba4a9f60",
+    "experiments/marginal_collective.py": "326f6ff573f075720bf7f10c29cde5059242e3d052bbc8538414910487df0265",
+    "experiments/marginal_defect_dicke.py": "9be4a47c8eb0110991d158af0cd6ccdfdf7323440b80b871c6b2bf8197106858",
+    "experiments/marginal_determinant_tree.py": "9cd66df9a51235375cfd59d0dd70aa2a4aefb1c3a4d9542d6824e82db5e9e71b",
+    "experiments/marginal_enlarged_schur.py": "48a27deca365e46c35c999720ea9b9d3de456b07e0ccb00e5c3c725216c32089",
+    "experiments/marginal_fixed_point_ldl.py": "480a6134223edcb4534576b5885ca02dac897ed1cd8b3e10c1dca05a4dda6639",
+    "experiments/marginal_general_schur.py": "d40aa1f00c04bea4332d23ca91752f5b121171095816dd505ca47f779e596b7b",
+    "experiments/marginal_h6_complement.py": "3974fb8e613b8aecbf9c8104fc85497077dbd2f404a932a67e8a4a5344dbb891",
+    "experiments/marginal_hopping_telescope.py": "f72a6ce39da10d5de54f9f5d4617ede56fd57d8ff048ef91850dfeb07c054491",
+    "experiments/marginal_hunt_car.py": "e95375f0df0d36c18345f0b60913d4e8186c6ea33c4c50f2db381a14acdb4614",
+    "experiments/marginal_implicit_certificate.py": "8a181156a0a9b34ad0528d6fba6a1464beebd4b6a607be326d6bce295319a242",
+    "experiments/marginal_local_hubbard_block.py": "8bd8ffa948513e6b1073f9f1b970a4c87e6f04ca0150f9f407bf928147ce9257",
+    "experiments/marginal_molecular_gershgorin.py": "8801019ea959dff15bde352d35d94cb9aad801a8c4358b77ab18ea225e85313f",
+    "experiments/marginal_orbit_certificate.py": "6aece21dfcb6b569333dea0aa475d5bc49b6068bbc1010dbc83e8eaa08c60148",
+    "experiments/marginal_pair_transfer.py": "fc430009989dce3dca885be2e1271884052e2e2121031a1eac5270de45a9f9b9",
+    "experiments/marginal_polynomial_metric.py": "45d52db9af8981d5b5e2847e693c01ff7fde11f37ed71dfc99797687031e07ea",
+    "experiments/marginal_polynomial_sos.py": "95f2733deca3c2a15a96dff4d9adf225adc4dc1da689fe6dd92fe065431e5360",
+    "experiments/marginal_projector_extendibility.py": "bde311f48fc77a2c4c1c223fbc41dab04bbc9c9c8d4dae33620bb64e33d71301",
+    "experiments/marginal_pure_coherence.py": "130f424a7b0f40861a646dbb0c2569b705485b199e9fcd7cc12b5c90b05f5140",
+    "experiments/marginal_quadratic_charge_telescope.py": "7cf72e3d104a974d670de01a6f2298f6a2e17e1a6640b40d346d07029cf0ab62",
+    "experiments/marginal_range_two_density.py": "2b7b75fd83d59af20f74a8c5a42815c55c295b7b291e16e698c7aec17b71d6be",
+    "experiments/marginal_schur_transfer.py": "5a6e57182169b542c9a9079648c188a65e11f84125bc3ee2c7f6fd05d2009768",
+    "experiments/marginal_sector_reference.py": "750f3e16d24d152cec16d1296eab98192d98e4e981a00b92e5ab7c505960ddf8",
+    "experiments/marginal_signed_charge_telescope.py": "d8c19b5f3006682d98c20f2e99c16262cb3ceadd7258404d465e2c529049e6cd",
+    "experiments/marginal_sparse_molecular.py": "4655b3f3c3f1633e19074d5e6cbca2fb2b84c8a5627bd2cf745bd4b4d1e73b10",
+    "experiments/marginal_sparse_response.py": "83b38c5b347d259f5cefa47a6ce5ce10896655d26ef1d8b0e87a006aefc96a53",
+    "experiments/marginal_spectator_hopping.py": "048a696372838f7b1b39eb3f9440f24ed015ba96c85c8143f0a9cb2c0ad256b2",
+    "experiments/marginal_spin_reduction.py": "a465a6a2b74ff4e093a1b3228ef3fcece8e5d6eb3ca531aa2d7dcbed60af32ac",
+    "experiments/marginal_spin_telescope.py": "b15dbd9398d838c38e155e0321f1169e795f0c706e839466aa0c8d029cb2cc92",
+    "experiments/marginal_spin_word_telescope.py": "7e522eb82e96fb3c85ce395d76da58a5398ea959b758e02720ba865fda72be61",
+    "experiments/marginal_symbolic.py": "a1fc87c3f4fcd10426b6d68e1131941d96db7b4fe29920678034770734f9713f",
+    "experiments/marginal_symmetry_transfer.py": "796d9cbf5f39c49ef6766ec2c54dc3939664bc04ea2dc9d9e2250c3a21e238e0",
+    "experiments/marginal_three_spectator_hopping.py": "26668f8dc7e89695b1e889528c38529d42b720a80f8d50e6c47f1b68d23a68a3",
+    "experiments/marginal_transfer_verify.py": "5f7bd4bd45adcb397942e09e37065486f9e72f022fe818d2d94ff98c32844bae",
+    "experiments/marginal_two_spectator_hopping.py": "251a59fc241fa06d5e42155b8ea7a547743e9529af72a53c78b484077924edb3",
+    "experiments/marginal_window_family_bound.py": "749f8c9d21111f03c9ed48588c43d54146ede88ae545fc3c71d016528f7f0a3f",
+    "results/marginal_graded_hubbard8/discovery/full_overlap_density.py": "5518c7321e2caafeeef6b8493bc9d34f9ed772ef214ac7c82d269ae91a034cab",
+    "results/marginal_graded_hubbard8/discovery/full_overlap_telescope.py": "73c8a86e7dc221ba21c285711598e59d28f723eee47d91b97e3a906f85d6296e",
+    "results/marginal_graded_hubbard8/discovery/joint_profile_numeric.py": "a55a38bea45983f3a21c7cb504d50a87136186c6a0ab088d4a23ea9ebedb14f6",
+    "results/marginal_graded_hubbard8/discovery/residual_coherence_fixed_limit.py": "53e36d2a7c062aeffa58ead3cc0872fe1448517d19b33a2a333a3f308587c88a",
+    "results/marginal_graded_hubbard8/discovery/residual_coherence_obstruction.py": "d94d3db79adeb9103e2dfb0b4743ae93179a8c7efff40eefd3c08bf39bf9f1e8",
+    "results/marginal_graded_hubbard8/discovery/signed_charge_numeric.py": "2ab214a90d762614165dc9a236894558443465bc2850aa09f738f23265954632",
+    "results/marginal_graded_hubbard8/discovery/spin_word_fraction_free.py": "d881f99e00c62dc413826934fec79cc8a8953fb9b80ffb67e90b20cd6abdb583",
+    "results/marginal_graded_hubbard8/discovery/spin_word_numeric.py": "79a7f209e60af90e48bcd8afd1d12daea70d044a3ea666ee7877ef85afc35eeb",
+    "results/marginal_graded_hubbard8/joint_projector/signed_density/symmetry_diagonal_candidates.json": "27139cdd0e466faceabbf6193775158e6412ea8b93439b075ad7d75d5bc9613c",
+    "results/marginal_graded_hubbard8/pure_coherence/W_plus_1/scaled/profile_joint_r1_2_certificate.json": "44998f0cb711e63542357cacf6a3253589076c1a92a6017c1807d1a7ee35ba27",
+    "results/marginal_graded_hubbard8/residual_coherence/W_plus_1/telescope_replay.json": "b80a52c51c541913c39334d330468a909576a9beb8df5164981fc69f358674a0",
+    "results/marginal_graded_hubbard8/residual_coherence/W_zero/telescope_replay.json": "3e06c01bb94726355900f4d4202f1710fcb94137bfbfc9a916874e4da22e2e0e"
+  }
+}

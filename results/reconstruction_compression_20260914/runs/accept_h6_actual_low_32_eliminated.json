@@ -1,0 +1,23 @@
+{
+  "name": "accept_h6_actual_low_32_eliminated",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-m",
+    "research.reconstruction_compression_20260914.replay",
+    "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "/Users/aidenlippert/Documents/Spectra/results/reconstruction_compression_20260914/candidates/h6_actual_low_32_eliminated/certificate.json",
+    "/Users/aidenlippert/Documents/Spectra/results/reconstruction_compression_20260914/candidates/h6_actual_low_32_eliminated/interval.json",
+    "--upper-receipt",
+    "results/correlated_pair_20260913/mps/h6_b48_real/interval.json"
+  ],
+  "timeout_seconds": 90,
+  "status": "passed",
+  "started_UTC": "2026-09-14T08:18:15.508090+00:00",
+  "pid": 35334,
+  "exit_code": 0,
+  "wall_seconds": 4.504704541002866,
+  "child_user_seconds": 4.428262,
+  "child_system_seconds": 0.036475,
+  "peak_child_RSS_bytes": 82608128,
+  "finished_UTC": "2026-09-14T08:18:20.013195+00:00"
+}

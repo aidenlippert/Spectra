@@ -1,0 +1,40 @@
+{
+  "coefficient_rows": 21,
+  "joint_quotient_dimension": 36,
+  "total_degree": 6,
+  "charge_feature_degree": 2,
+  "moment_monomials": 121,
+  "moment_map_nonzeros": 633,
+  "candidate_labels": 1896,
+  "materialized_all_atom_matrix": false,
+  "reynolds_rows": 10,
+  "reynolds_coordinates": "coefficient",
+  "reynolds_original_rows": 21,
+  "reynolds_metric_features": 5,
+  "reynolds_seconds": 0.44472766702529043,
+  "reynolds_actions": [
+    "reflection",
+    "particle-hole"
+  ],
+  "reynolds_scope": "Exact quotient invariance of retained compiled metric and numerator columns; numerical independent-row proposals; group expansion and full original exact replay required.",
+  "source_sha256": "53e9abe6269b7a1a6fc831e9c9d58499dae6befe8428d068963b6aeab08ddaec",
+  "gamma": "-14",
+  "exact_accepted": true,
+  "reason": "Exact certificate accepted",
+  "hard_normalization": true,
+  "method": "ipm",
+  "audit": false,
+  "weight_degree": 4,
+  "resume_source": {
+    "path": "results/marginal_graded_hubbard8/checkpoint_sanity/first/checkpoint.json",
+    "sha256": "89e5d97f36f82096316d3ba2330fdb8925b5a53029b35b795b640c0ded83f5b4",
+    "columns": 92,
+    "completed_rounds": 1
+  },
+  "metric_features": 5,
+  "rounds": 1,
+  "active_atoms": 92,
+  "preparation_seconds": 0.8451610839692876,
+  "total_seconds": 1.3488229169743136,
+  "scope": "Resumed atom directions from an earlier bare-H run with identical Hamiltonian, target, normalization and coordinate/block settings. No imported metric or accepted proof weights; exact original export required."
+}

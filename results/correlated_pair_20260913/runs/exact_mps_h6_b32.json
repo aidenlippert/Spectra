@@ -1,0 +1,24 @@
+{
+  "name": "exact_mps_h6_b32",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.correlated_pair_20260913.mps_exact",
+    "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "results/correlated_pair_20260913/mps/h6_b32_real/state.json",
+    "--output",
+    "results/correlated_pair_20260913/mps/h6_b32_real/acceptance.json"
+  ],
+  "timeout_seconds": 120,
+  "status": "passed",
+  "started_UTC": "2026-09-14T06:47:34.515986+00:00",
+  "pid": 20430,
+  "exit_code": 0,
+  "wall_seconds": 0.6503146659961203,
+  "child_user_seconds": 0.553523,
+  "child_system_seconds": 0.025741,
+  "peak_child_RSS_bytes": 23937024,
+  "finished_UTC": "2026-09-14T06:47:35.167152+00:00"
+}

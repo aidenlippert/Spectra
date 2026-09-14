@@ -1,0 +1,341 @@
+{
+  "kind": "full_quotient_fixed_bound_feasibility",
+  "target_b": "-96419564244378437585799927774039106802872860404280379490608932958286513392436100692846121748207755454350541372275401099109646775673467385812153631696995303061076296028400736746356835428752864006166090357094867739661378163639980105787368512616604834773191589638721/10416666681366128139025077588426157777196472916600533534511978270474724715766654315271523831102045082704716582998560034624027721405606900471966456548039163183196819459817932009693131265884064116310586385813423340702869292372988380208030951789665275378000000000000",
+  "target_width_before_residual_mHa": 1.4,
+  "gram_entries": 91752,
+  "coefficient_rows": 8533,
+  "all_compact_span_cross_terms_retained": true,
+  "independent_partner_Gram_blocks": true,
+  "quartic_number_basis_dimension": 1484,
+  "many_body_states_enumerated": 0,
+  "full_Gram_teacher_used": false,
+  "additional_MPS_moments_used": false,
+  "quotient_conditioning": {
+    "ideal_coordinate_count": 1599,
+    "numerical_ideal_rank": 601,
+    "QR_rank_threshold": 1e-11,
+    "dependent_coordinates_removed": 998,
+    "ideal_projector_max_defect": 1.9984014443252818e-15,
+    "dual_normalization_error": 2.4868995751603507e-14,
+    "seconds": 10.296714458992938
+  },
+  "adjoint_check": {
+    "relative_adjoint_error": 4.647304307912776e-15,
+    "preconditioner_probes": 12
+  },
+  "preconditioner": {
+    "dimension": 8533,
+    "dense_bytes": 582496712,
+    "diagonal_regularizer": 1e-10,
+    "normal_probe_relative_errors": [
+      9.29459249770535e-16,
+      9.32629036657467e-16,
+      8.966759752831146e-16,
+      8.855209074204247e-16
+    ],
+    "blocks": [
+      {
+        "pair": 0,
+        "active_rows": 10,
+        "symmetric_Gram_coordinates": 10,
+        "seconds": 0.0006275830091908574,
+        "elapsed_seconds": 10.42748645899701
+      },
+      {
+        "pair": 1,
+        "active_rows": 10,
+        "symmetric_Gram_coordinates": 10,
+        "seconds": 0.00023187501938082278,
+        "elapsed_seconds": 10.427820708981017
+      },
+      {
+        "pair": 2,
+        "active_rows": 10,
+        "symmetric_Gram_coordinates": 10,
+        "seconds": 0.00017750001279637218,
+        "elapsed_seconds": 10.427999125007773
+      },
+      {
+        "pair": 3,
+        "active_rows": 10,
+        "symmetric_Gram_coordinates": 10,
+        "seconds": 0.000172999978531152,
+        "elapsed_seconds": 10.42817279198789
+      },
+      {
+        "pair": 4,
+        "active_rows": 11,
+        "symmetric_Gram_coordinates": 10,
+        "seconds": 0.00018445900059305131,
+        "elapsed_seconds": 10.428357833996415
+      },
+      {
+        "pair": 5,
+        "active_rows": 11,
+        "symmetric_Gram_coordinates": 10,
+        "seconds": 0.00016624998534098268,
+        "elapsed_seconds": 10.42852479199064
+      },
+      {
+        "pair": 6,
+        "active_rows": 11,
+        "symmetric_Gram_coordinates": 10,
+        "seconds": 0.0001557079958729446,
+        "elapsed_seconds": 10.428680958983023
+      },
+      {
+        "pair": 7,
+        "active_rows": 11,
+        "symmetric_Gram_coordinates": 10,
+        "seconds": 0.00016937500913627446,
+        "elapsed_seconds": 10.428850750002312
+      },
+      {
+        "pair": 8,
+        "active_rows": 156,
+        "symmetric_Gram_coordinates": 78,
+        "seconds": 0.0007979999936651438,
+        "elapsed_seconds": 10.429649208992487
+      },
+      {
+        "pair": 9,
+        "active_rows": 272,
+        "symmetric_Gram_coordinates": 136,
+        "seconds": 0.001608582999324426,
+        "elapsed_seconds": 10.431284833990503
+      },
+      {
+        "pair": 10,
+        "active_rows": 288,
+        "symmetric_Gram_coordinates": 528,
+        "seconds": 0.0025052920100279152,
+        "elapsed_seconds": 10.433791416988242
+      },
+      {
+        "pair": 11,
+        "active_rows": 272,
+        "symmetric_Gram_coordinates": 528,
+        "seconds": 0.003978749999077991,
+        "elapsed_seconds": 10.437776459002635
+      },
+      {
+        "pair": 12,
+        "active_rows": 156,
+        "symmetric_Gram_coordinates": 78,
+        "seconds": 0.0007707499898970127,
+        "elapsed_seconds": 10.438549874990713
+      },
+      {
+        "pair": 13,
+        "active_rows": 272,
+        "symmetric_Gram_coordinates": 136,
+        "seconds": 0.0010878749890252948,
+        "elapsed_seconds": 10.43963870900916
+      },
+      {
+        "pair": 14,
+        "active_rows": 177,
+        "symmetric_Gram_coordinates": 78,
+        "seconds": 0.0005649170198012143,
+        "elapsed_seconds": 10.440204416983761
+      },
+      {
+        "pair": 15,
+        "active_rows": 293,
+        "symmetric_Gram_coordinates": 136,
+        "seconds": 0.0011653749970719218,
+        "elapsed_seconds": 10.441370499989716
+      },
+      {
+        "pair": 16,
+        "active_rows": 309,
+        "symmetric_Gram_coordinates": 528,
+        "seconds": 0.0020493330084718764,
+        "elapsed_seconds": 10.44342041699565
+      },
+      {
+        "pair": 17,
+        "active_rows": 293,
+        "symmetric_Gram_coordinates": 528,
+        "seconds": 0.0019166659913025796,
+        "elapsed_seconds": 10.44540766699356
+      },
+      {
+        "pair": 18,
+        "active_rows": 177,
+        "symmetric_Gram_coordinates": 78,
+        "seconds": 0.0006053329852875322,
+        "elapsed_seconds": 10.446014416986145
+      },
+      {
+        "pair": 19,
+        "active_rows": 293,
+        "symmetric_Gram_coordinates": 136,
+        "seconds": 0.0011753750150091946,
+        "elapsed_seconds": 10.447190417005913
+      },
+      {
+        "pair": 20,
+        "active_rows": 444,
+        "symmetric_Gram_coordinates": 528,
+        "seconds": 0.0038926250126678497,
+        "elapsed_seconds": 10.451083958992967
+      },
+      {
+        "pair": 21,
+        "active_rows": 428,
+        "symmetric_Gram_coordinates": 528,
+        "seconds": 0.0039214579737745225,
+        "elapsed_seconds": 10.455133709008805
+      },
+      {
+        "pair": 22,
+        "active_rows": 444,
+        "symmetric_Gram_coordinates": 2080,
+        "seconds": 0.007937499991385266,
+        "elapsed_seconds": 10.463478833989939
+      },
+      {
+        "pair": 23,
+        "active_rows": 428,
+        "symmetric_Gram_coordinates": 2080,
+        "seconds": 0.010528499988140538,
+        "elapsed_seconds": 10.474169249995612
+      },
+      {
+        "pair": 24,
+        "active_rows": 444,
+        "symmetric_Gram_coordinates": 528,
+        "seconds": 0.0035712090029846877,
+        "elapsed_seconds": 10.477949624997564
+      },
+      {
+        "pair": 25,
+        "active_rows": 428,
+        "symmetric_Gram_coordinates": 528,
+        "seconds": 0.003460042004007846,
+        "elapsed_seconds": 10.481536542007234
+      },
+      {
+        "pair": 26,
+        "active_rows": 46,
+        "symmetric_Gram_coordinates": 10,
+        "seconds": 0.0015058749995660037,
+        "elapsed_seconds": 10.483099792007124
+      },
+      {
+        "pair": 27,
+        "active_rows": 46,
+        "symmetric_Gram_coordinates": 10,
+        "seconds": 0.0016389579977840185,
+        "elapsed_seconds": 10.484739749983419
+      },
+      {
+        "pair": 28,
+        "active_rows": 220,
+        "symmetric_Gram_coordinates": 300,
+        "seconds": 0.0063657499849796295,
+        "elapsed_seconds": 10.491108708985848
+      },
+      {
+        "pair": 29,
+        "active_rows": 220,
+        "symmetric_Gram_coordinates": 300,
+        "seconds": 0.0060718749882653356,
+        "elapsed_seconds": 10.497182833991246
+      },
+      {
+        "pair": 30,
+        "active_rows": 220,
+        "symmetric_Gram_coordinates": 300,
+        "seconds": 0.004356290999567136,
+        "elapsed_seconds": 10.501540875004139
+      },
+      {
+        "pair": 31,
+        "active_rows": 220,
+        "symmetric_Gram_coordinates": 300,
+        "seconds": 0.004273541999282315,
+        "elapsed_seconds": 10.505816166987643
+      },
+      {
+        "pair": 32,
+        "active_rows": 46,
+        "symmetric_Gram_coordinates": 10,
+        "seconds": 0.0007352919783443213,
+        "elapsed_seconds": 10.506553416984389
+      },
+      {
+        "pair": 33,
+        "active_rows": 46,
+        "symmetric_Gram_coordinates": 10,
+        "seconds": 0.0004492499865591526,
+        "elapsed_seconds": 10.507078541995725
+      },
+      {
+        "pair": 34,
+        "active_rows": 7694,
+        "symmetric_Gram_coordinates": 1225,
+        "seconds": 2.0181589589919895,
+        "elapsed_seconds": 12.52523833399755
+      },
+      {
+        "pair": 35,
+        "active_rows": 7700,
+        "symmetric_Gram_coordinates": 1275,
+        "seconds": 2.7609843329992145,
+        "elapsed_seconds": 15.287606666999636
+      },
+      {
+        "pair": 36,
+        "active_rows": 8292,
+        "symmetric_Gram_coordinates": 3081,
+        "seconds": 8.937626708997414,
+        "elapsed_seconds": 24.226968584000133
+      },
+      {
+        "pair": 37,
+        "active_rows": 8292,
+        "symmetric_Gram_coordinates": 3160,
+        "seconds": 9.383837707981002,
+        "elapsed_seconds": 33.614116584009025
+      },
+      {
+        "pair": 38,
+        "active_rows": 8292,
+        "symmetric_Gram_coordinates": 3081,
+        "seconds": 9.285981583001558,
+        "elapsed_seconds": 42.90347220900003
+      },
+      {
+        "pair": 39,
+        "active_rows": 8292,
+        "symmetric_Gram_coordinates": 3160,
+        "seconds": 9.718536291009514,
+        "elapsed_seconds": 52.624823249992914
+      },
+      {
+        "pair": 40,
+        "active_rows": 7694,
+        "symmetric_Gram_coordinates": 1225,
+        "seconds": 2.028178958018543,
+        "elapsed_seconds": 54.65625104200444
+      },
+      {
+        "pair": 41,
+        "active_rows": 7700,
+        "symmetric_Gram_coordinates": 1275,
+        "seconds": 2.368787750019692,
+        "elapsed_seconds": 57.02632387500489
+      }
+    ],
+    "seconds": 65.31488291698042,
+    "seed_sha256": "83043051540a444d57b4de0b11898b6b7cbbf19ab30292fd2c105d6eeffe18bf",
+    "prepared_frame_sha256": "59e2fb9bd820b3ce29155255b3927816a24af497109fa443255b4bc8bf18798b",
+    "factor_sha256": "f0c2c7051832f8931ceb9e9d8c3356384c2b9f6146be9d612735e87c420f3170",
+    "ideal_basis_sha256": "c92b89dc76a64d5592755f15e4c3c5d85fe29886665b3c86c48a33082d50724b",
+    "many_body_states_enumerated": 0,
+    "role": "Numerical conditioning only, all final residuals require exact replay"
+  },
+  "setup_seconds": 11.629667166998843
+}

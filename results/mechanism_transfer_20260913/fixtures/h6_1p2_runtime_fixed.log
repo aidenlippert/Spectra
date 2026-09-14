@@ -1,0 +1,33 @@
+{
+  "status": "fixture_and_hf_upper",
+  "natoms": 6,
+  "modes": 12,
+  "particles": 6,
+  "sector_dimension": 924,
+  "hamiltonian_terms": 918,
+  "hf_electronic_upper": "-6843288246253/1000000000000",
+  "hf_float_electronic": -6.843288246254891,
+  "nuclear_repulsion": 3.8365347791699995,
+  "raw_coefficient_l1_difference": "1126430654783905048722465885783/4951760157141521099596496896000000000000",
+  "elapsed_seconds": 0.29181812499882653,
+  "scope": "Finite-basis rational electronic Hamiltonian; HF is a variational upper witness only.",
+  "fci_solve_seconds": 0.02416754200385185,
+  "fci_determinant_dimension": 400,
+  "fci_vector_amplitude_count": 200,
+  "exact_FCI_trial_upper": "-698826391976655084055965094517453/99999999992450208678000000000000",
+  "upper_replay": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 200,
+    "hamiltonian_terms": 918,
+    "word_state_checks": 183600,
+    "contributing_word_state_pairs": 23424,
+    "action_cache_states": 0,
+    "replay_seconds": 0.042837082997721154,
+    "upper": "-698826391976655084055965094517453/99999999992450208678000000000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  },
+  "fixture_HF_integral_seconds": 0.18554708300507627,
+  "fci_electronic": -6.98826392029546,
+  "hf_fci_gap": 0.1449756740424606,
+  "fci_scope": "validation only"
+}

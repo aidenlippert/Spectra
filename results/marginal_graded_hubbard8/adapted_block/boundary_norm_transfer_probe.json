@@ -1,0 +1,86 @@
+{
+  "accepted": true,
+  "dimension": 16,
+  "cases": [
+    {
+      "a": "1/5",
+      "b": "0",
+      "blocks": 1,
+      "norm": "10"
+    },
+    {
+      "a": "1/5",
+      "b": "0",
+      "blocks": 2,
+      "norm": "104"
+    },
+    {
+      "a": "1/5",
+      "b": "0",
+      "blocks": 3,
+      "norm": "5408/5"
+    },
+    {
+      "a": "1/5",
+      "b": "0",
+      "blocks": 4,
+      "norm": "281216/25"
+    },
+    {
+      "a": "1/5",
+      "b": "1/7",
+      "blocks": 1,
+      "norm": "10"
+    },
+    {
+      "a": "1/5",
+      "b": "1/7",
+      "blocks": 2,
+      "norm": "6800/49"
+    },
+    {
+      "a": "1/5",
+      "b": "1/7",
+      "blocks": 3,
+      "norm": "23122592/12005"
+    },
+    {
+      "a": "1/5",
+      "b": "1/7",
+      "blocks": 4,
+      "norm": "78625750016/2941225"
+    },
+    {
+      "a": "0",
+      "b": "1",
+      "blocks": 1,
+      "norm": "10"
+    },
+    {
+      "a": "0",
+      "b": "1",
+      "blocks": 2,
+      "norm": "604"
+    },
+    {
+      "a": "0",
+      "b": "1",
+      "blocks": 3,
+      "norm": "37000"
+    },
+    {
+      "a": "0",
+      "b": "1",
+      "blocks": 4,
+      "norm": "2271088"
+    }
+  ],
+  "formula": "e^T G (B G)^(q-1) e; e_(l,lprime)=delta_(l,lprime)",
+  "scope": "Exact norm-only agreement for a specified two-site block, three gates, and one through four blocks. No energy-insertion, general accuracy/cost, or large-chain interval certificate yet.",
+  "source_sha256": {
+    "results/marginal_graded_hubbard8/discovery/boundary_norm_transfer_probe.py": "1f3c167d1cae429995f4832753a00470dbb1ea41e9433baf53e4e222e5e803d5",
+    "tests/test_marginal_hopping_filter.py": "fbdc34babe9a4b89b5755695d8920bd367d75ad427bc40767bf46a9474dfa3db",
+    "experiments/marginal_local_hubbard_block.py": "5ef92ae2b2ff1a73678ffafcfe606a5e921614fb697aa64308c9646755feb18c",
+    "experiments/marginal_transfer_verify.py": "5f7bd4bd45adcb397942e09e37065486f9e72f022fe818d2d94ff98c32844bae"
+  }
+}

@@ -1,0 +1,39 @@
+Collecting quimb
+  Downloading quimb-1.15.0-py3-none-any.whl.metadata (5.8 kB)
+Collecting autoray>=0.8 (from quimb)
+  Downloading autoray-0.11.0-py3-none-any.whl.metadata (6.2 kB)
+Collecting cotengra>=0.7.1 (from quimb)
+  Downloading cotengra-0.8.2-py3-none-any.whl.metadata (4.4 kB)
+Collecting cytoolz>=0.8.0 (from quimb)
+  Downloading cytoolz-1.1.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (5.2 kB)
+Requirement already satisfied: numba>=0.39 in /opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages (from quimb) (0.65.0)
+Requirement already satisfied: numpy>=1.17 in /opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages (from quimb) (2.2.6)
+Requirement already satisfied: psutil>=4.3.1 in /opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages (from quimb) (7.2.2)
+Collecting scipy>=1.16.0 (from quimb)
+  Downloading scipy-1.18.1-cp312-cp312-macosx_14_0_arm64.whl.metadata (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.4/62.4 kB 3.1 MB/s eta 0:00:00
+Requirement already satisfied: tqdm>=4 in /opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages (from quimb) (4.67.1)
+Collecting toolz>=0.8.0 (from cytoolz>=0.8.0->quimb)
+  Downloading toolz-1.1.0-py3-none-any.whl.metadata (5.1 kB)
+Requirement already satisfied: llvmlite<0.48,>=0.47.0dev0 in /opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages (from numba>=0.39->quimb) (0.47.0)
+Downloading quimb-1.15.0-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 27.2 MB/s eta 0:00:00
+Downloading autoray-0.11.0-py3-none-any.whl (952 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 952.9/952.9 kB 51.3 MB/s eta 0:00:00
+Downloading cotengra-0.8.2-py3-none-any.whl (254 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 254.4/254.4 kB 18.9 MB/s eta 0:00:00
+Downloading cytoolz-1.1.0-cp312-cp312-macosx_11_0_arm64.whl (991 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 991.2/991.2 kB 36.3 MB/s eta 0:00:00
+Downloading scipy-1.18.1-cp312-cp312-macosx_14_0_arm64.whl (20.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.5/20.5 MB 72.2 MB/s eta 0:00:00
+Downloading toolz-1.1.0-py3-none-any.whl (58 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.1/58.1 kB 4.5 MB/s eta 0:00:00
+Installing collected packages: toolz, scipy, autoray, cytoolz, cotengra, quimb
+  Attempting uninstall: scipy
+    Found existing installation: scipy 1.14.1
+    Not uninstalling scipy at /opt/homebrew/Caskroom/miniconda/base/lib/python3.12/site-packages, outside environment /Users/aidenlippert/Documents/Spectra/.venv-correlated
+    Can't uninstall 'scipy'. No files were found to uninstall.
+Successfully installed autoray-0.11.0 cotengra-0.8.2 cytoolz-1.1.0 quimb-1.15.0 scipy-1.18.1 toolz-1.1.0
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip

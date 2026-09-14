@@ -1,0 +1,143 @@
+{
+  "python_executable": "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+  "python_version": "3.12.2",
+  "exact_accepting_interpreter_flag": "-S",
+  "numeric_control_requested_thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "measured_stages": [
+    {
+      "stage": "Lie-gap construction",
+      "seconds": 0.6009328750005807
+    },
+    {
+      "stage": "Initial Lie-gap replay before parser reuse",
+      "seconds": 0.25314795799931744
+    },
+    {
+      "stage": "Final independent Lie-gap replay",
+      "seconds": 0.3689085830046679
+    },
+    {
+      "stage": "Response discovery and exact finite controls",
+      "seconds": 0.029360124994127546
+    },
+    {
+      "stage": "Independent response replay and exact finite controls",
+      "seconds": 0.031424417000380345
+    },
+    {
+      "stage": "Finite-sector response numerical controls",
+      "seconds": 0.012827624996134546
+    },
+    {
+      "stage": "Initial molecular and projected-separator diagnostic",
+      "seconds": 4.592192332995182
+    },
+    {
+      "stage": "Molecular diagnostic with scalar trace and singlet control",
+      "seconds": 4.7343784580007195
+    },
+    {
+      "stage": "Final molecular diagnostic with exported standalone gap",
+      "seconds": 4.678649708002922
+    },
+    {
+      "stage": "Independent molecular and projected-separator replay",
+      "seconds": 4.7875525830022525
+    },
+    {
+      "stage": "Standalone molecular sector-gap data load and check",
+      "seconds": 0.3045562080005766
+    },
+    {
+      "stage": "Initial 17 focused tests",
+      "seconds": 1.878488666996418
+    },
+    {
+      "stage": "Final 20 focused tests",
+      "seconds": 2.4550113340010284
+    },
+    {
+      "stage": "Initial frozen manifest preservation check",
+      "seconds": 0.17040774999622954
+    },
+    {
+      "stage": "Final frozen manifest preservation check",
+      "seconds": 0.22754783400159795
+    }
+  ],
+  "sum_recorded_stage_seconds": 25.125386457992136,
+  "cost_scope": "Sum of recorded stage wall times, including repetitions. Some stages ran concurrently; this is not calendar end-to-end time. Editing, imports before module timers, file reads/exploratory inspections and an initial failed control have no complete timer. No claim of complete experiment cost is made.",
+  "development_attempts": [
+    {
+      "stage": "First exact response control",
+      "outcome": "Refused by an overly narrow nonscalarity diagnostic: the M=5 eliminated matrix has a constant diagonal but nonzero off-diagonal entries. The independent bit action exposed this; the control was fixed to accept either nonzero off-diagonal or diagonal spread. The initial refusal is not a physical failure of the positivity rule.",
+      "complete_wall_time_recorded": false
+    },
+    {
+      "stage": "Diagnostic inspection of that refusal",
+      "basis_states_enumerated": 286,
+      "complete_wall_time_recorded": false
+    }
+  ],
+  "enumeration_accounting": {
+    "response_exact_complete_run": {
+      "runs": 2,
+      "basis_labels_per_run": 286,
+      "note": "Construction control and independent replay regenerate the same states."
+    },
+    "response_numerical_controls": {
+      "runs": 1,
+      "basis_labels": 286,
+      "largest_matrix_dimension": 210,
+      "total_matrix_entries": 47636
+    },
+    "response_failed_control_and_followup": {
+      "failed_run_basis_labels": 20,
+      "followup_basis_labels": 286
+    },
+    "molecular_diagnostics": {
+      "complete_runs": 4,
+      "new_all_up_determinants_per_run": 2,
+      "maximum_spin_ladder_amplitudes_per_run": 64,
+      "singlet_control_determinants": 3,
+      "inherited_upper_amplitudes_per_run": 1200,
+      "upper_word_state_checks_per_run": 3095600,
+      "note": "Initial diagnostic predates the additional singlet control. No full molecular sector basis or inverse was built."
+    },
+    "focused_tests": {
+      "runs": 2,
+      "response_control_basis_labels_per_run": 20,
+      "spin_ladder_amplitudes_per_run": 64,
+      "singlet_determinants_per_run": 1
+    },
+    "formula_specified_large_bath_cases": {
+      "bath_sizes": [
+        64,
+        1024
+      ],
+      "many_body_states_enumerated": 0
+    },
+    "molecular_Lie_and_sector_gap_rules": {
+      "many_body_states_enumerated": 0,
+      "many_body_inverse_entries": 0
+    }
+  },
+  "inherited_work": {
+    "frozen_parent_files": 718,
+    "molecular_fixture_and_tail_construction": "Existing numerical chemistry and factor discovery, preserved without rerunning.",
+    "physical_upper_witnesses": "Existing FCI-derived 200-amplitude H6 and 1000-amplitude H8 witnesses; exact streaming replay charged above. Their FCI discovery is inherited, not removed.",
+    "old_full_family_feasibility": "Reuses hash-bound accepted prior full audit; no new old-family solve or 180-second full audit.",
+    "separator_coefficients": "The earlier fitted 12-term T1 separator is inherited. This pass uses exact spin projection and completion, with no coefficient fit."
+  },
+  "new_molecular_SDP_solves": 0,
+  "new_FCI_runs": 0,
+  "new_fixtures_generated": 0,
+  "standalone_sector_gap_certificate_bytes": 430,
+  "standalone_sector_gap_inherited_input_bytes": 74534,
+  "Lie_gap_certificate_bytes": 215118
+}

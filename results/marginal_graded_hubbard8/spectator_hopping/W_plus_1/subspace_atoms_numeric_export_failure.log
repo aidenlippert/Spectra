@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spectator_subspace_atoms.py", line 130, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spectator_subspace_atoms.py", line 23, in main
+    started=time.monotonic();c=json.loads(args.seed.read_text())
+                                          ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/marginal_graded_hubbard8/spectator_hopping/W_plus_1/subspace48/profile_joint_r1_2_certificate.json'

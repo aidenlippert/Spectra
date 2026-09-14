@@ -1,0 +1,171 @@
+{
+  "accepted": false,
+  "proposal_written": false,
+  "selected_columns": 77,
+  "deficiency": 8,
+  "completions_tried": 16,
+  "nonnegative_completions": 0,
+  "improving_bounded_completions": 0,
+  "preparation_seconds": 14.4262000000017,
+  "integer_reduction_seconds": 9.652552041996387,
+  "pivot_bits": 3217,
+  "ledger_candidates": 4900,
+  "completion_method": "bounded residual LP then exact solve",
+  "residual_dimension": 8,
+  "residual_variable_scale": "9160342321848925681747782666699164338528601661097090775760241840614674015590801798960290648891603329121089470969540537621383675270328371603228844367607185786161933177132930884564147351359994970460839393509725887992722625548712166326239034221980393977043173885522856900998671619508374907308168860925412927298001460786041271122900076861816407775090198508697272528461477208997614206328741617245222752055706677534662607702986549553130126943808582059373626736630521526764124538657005549679591785852629291539917720355903621442168591475905369961743813766333967186652751429207288564165791281663179608592316435036825905336854874735527431844168684774673848799774519177909109190831483563979925511804136935028860478300529733398040198404236278790905595444902420294425927774527584624472467061733672633978600698500648938540478614011759736266349528745531304892173252456237611179968033271423095712056276353639173875537537685955919854053173107415506969249121/250861454019330974362953899926153326042689747855026246978755140831287547709694238887969496730348853183848789301079880472383510196389064309112361429660261098332297855481327550965570472208395082579388162478732922788721062493732033451330059196241265515500864767980056614478902356176813451380115612357348451688824938796408233645201894564251942022955678844091589359473135770060363805780143265530268945530506037550463596065167559048810930427147051246992132959506674251689864091291801505045597006275043254117394176622939158217053138588289002127008883707630204438615787727814852430921167325806700875922013052498664415110692948180492119353813209541106319932311489359492530278829531992734831189759962045797933978832407694606880372195707492894423034055040613482508189672382169598423211407034366735748976128144876266342531733534427339172520220373206553740735712493452199351308594929866122514588549506693650283837736218196127991726581785533655376625612218637500000",
+  "residual_singular_values": [
+    2.373762796894049,
+    1.6024197493168084,
+    1.1941252554254906,
+    0.9526259546731026,
+    0.5351355057462148,
+    0.39047929280890453,
+    0.07786791120306653,
+    0.0023508733281565218
+  ],
+  "residual_attempts": [
+    {
+      "attempt": 0,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 1,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 2,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 3,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 4,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 5,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 6,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 7,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 8,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 9,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 10,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 11,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 12,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 13,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 14,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    },
+    {
+      "attempt": 15,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "added_columns": 2,
+      "failure": "Dependent proposed basis columns"
+    }
+  ],
+  "source_sha256": {
+    "experiments/marginal_asymmetric_reference.py": "909f2dd66df909c4b67dd08d0e29174cb86fde63bb06f9f2e0c0e237cf032881",
+    "experiments/marginal_charge_indicator_telescope.py": "0c02eb7b8f8eeeb36d75d4ae79b6f837b5fbd6999f1e767c950787dd04e7bf78",
+    "experiments/marginal_charge_product.py": "bad102f6d1ef7ec33ae524464a7306f92f0f4dc17a9722025c4b2148800c5798",
+    "experiments/marginal_charge_square_pairs.py": "7ee83f4dd8dfc0425930d00fe39a28f6f4b639bfcc7e89149b3615e7e4a142a7",
+    "experiments/marginal_charged_projectors.py": "6e87655790782c3bef1da558e4c67427cc7659cf57096d0ad4bbeb7aaae14ba3",
+    "experiments/marginal_coherent_tree.py": "6613f0f4cf76e22a4266c6058ccb5874e1b7fdf1ff799dd6b7476956ba4a9f60",
+    "experiments/marginal_collective.py": "326f6ff573f075720bf7f10c29cde5059242e3d052bbc8538414910487df0265",
+    "experiments/marginal_defect_dicke.py": "9be4a47c8eb0110991d158af0cd6ccdfdf7323440b80b871c6b2bf8197106858",
+    "experiments/marginal_determinant_tree.py": "9cd66df9a51235375cfd59d0dd70aa2a4aefb1c3a4d9542d6824e82db5e9e71b",
+    "experiments/marginal_enlarged_schur.py": "48a27deca365e46c35c999720ea9b9d3de456b07e0ccb00e5c3c725216c32089",
+    "experiments/marginal_fixed_point_ldl.py": "480a6134223edcb4534576b5885ca02dac897ed1cd8b3e10c1dca05a4dda6639",
+    "experiments/marginal_general_schur.py": "d40aa1f00c04bea4332d23ca91752f5b121171095816dd505ca47f779e596b7b",
+    "experiments/marginal_h6_complement.py": "3974fb8e613b8aecbf9c8104fc85497077dbd2f404a932a67e8a4a5344dbb891",
+    "experiments/marginal_hopping_telescope.py": "f72a6ce39da10d5de54f9f5d4617ede56fd57d8ff048ef91850dfeb07c054491",
+    "experiments/marginal_hunt_car.py": "e95375f0df0d36c18345f0b60913d4e8186c6ea33c4c50f2db381a14acdb4614",
+    "experiments/marginal_implicit_certificate.py": "8a181156a0a9b34ad0528d6fba6a1464beebd4b6a607be326d6bce295319a242",
+    "experiments/marginal_joint_family_limit.py": "69814c5f7d17411fd935bc1f2b29a1b9be958f73fceea76e25e6bb61d7f685c7",
+    "experiments/marginal_local_hubbard_block.py": "8bd8ffa948513e6b1073f9f1b970a4c87e6f04ca0150f9f407bf928147ce9257",
+    "experiments/marginal_molecular_gershgorin.py": "8801019ea959dff15bde352d35d94cb9aad801a8c4358b77ab18ea225e85313f",
+    "experiments/marginal_orbit_certificate.py": "6aece21dfcb6b569333dea0aa475d5bc49b6068bbc1010dbc83e8eaa08c60148",
+    "experiments/marginal_polynomial_metric.py": "45d52db9af8981d5b5e2847e693c01ff7fde11f37ed71dfc99797687031e07ea",
+    "experiments/marginal_polynomial_sos.py": "95f2733deca3c2a15a96dff4d9adf225adc4dc1da689fe6dd92fe065431e5360",
+    "experiments/marginal_projector_extendibility.py": "55f96eebc4fa549b80546c6021d7cc8752cb0560f4e02320915123e2f729823f",
+    "experiments/marginal_quadratic_charge_telescope.py": "7cf72e3d104a974d670de01a6f2298f6a2e17e1a6640b40d346d07029cf0ab62",
+    "experiments/marginal_range_two_density.py": "2b7b75fd83d59af20f74a8c5a42815c55c295b7b291e16e698c7aec17b71d6be",
+    "experiments/marginal_schur_transfer.py": "5a6e57182169b542c9a9079648c188a65e11f84125bc3ee2c7f6fd05d2009768",
+    "experiments/marginal_sector_reference.py": "750f3e16d24d152cec16d1296eab98192d98e4e981a00b92e5ab7c505960ddf8",
+    "experiments/marginal_signed_charge_telescope.py": "d8c19b5f3006682d98c20f2e99c16262cb3ceadd7258404d465e2c529049e6cd",
+    "experiments/marginal_sparse_molecular.py": "4655b3f3c3f1633e19074d5e6cbca2fb2b84c8a5627bd2cf745bd4b4d1e73b10",
+    "experiments/marginal_sparse_response.py": "83b38c5b347d259f5cefa47a6ce5ce10896655d26ef1d8b0e87a006aefc96a53",
+    "experiments/marginal_spectator_hopping.py": "048a696372838f7b1b39eb3f9440f24ed015ba96c85c8143f0a9cb2c0ad256b2",
+    "experiments/marginal_spin_reduction.py": "a465a6a2b74ff4e093a1b3228ef3fcece8e5d6eb3ca531aa2d7dcbed60af32ac",
+    "experiments/marginal_spin_telescope.py": "b15dbd9398d838c38e155e0321f1169e795f0c706e839466aa0c8d029cb2cc92",
+    "experiments/marginal_symbolic.py": "a1fc87c3f4fcd10426b6d68e1131941d96db7b4fe29920678034770734f9713f",
+    "experiments/marginal_symmetry_transfer.py": "796d9cbf5f39c49ef6766ec2c54dc3939664bc04ea2dc9d9e2250c3a21e238e0",
+    "experiments/marginal_transfer_verify.py": "5f7bd4bd45adcb397942e09e37065486f9e72f022fe818d2d94ff98c32844bae",
+    "experiments/marginal_window_family_bound.py": "749f8c9d21111f03c9ed48588c43d54146ede88ae545fc3c71d016528f7f0a3f",
+    "results/marginal_graded_hubbard8/discovery/fraction_free_completion.py": "ff4b708d541ac2d077e2a31cbaa3fe924810d73f26289e24fa9222d8f7cb1b07",
+    "results/marginal_graded_hubbard8/discovery/spectator_residual_basis_completion.py": "103479db976c3d04cc283645b56a50567ec2c7996ab55cab121b08d2c080bd21",
+    "results/marginal_graded_hubbard8/joint_projector/signed_density/symmetry_diagonal_candidates.json": "27139cdd0e466faceabbf6193775158e6412ea8b93439b075ad7d75d5bc9613c",
+    "results/marginal_graded_hubbard8/spectator_hopping/W_zero/completed_basis/diagonal_family_limit_proposal.json": "c563b54b5835926ff2c46f5f693160888715690fbbe1c42c14eaa5f75a765348",
+    "results/marginal_graded_hubbard8/spectator_hopping/W_zero/completed_basis/range_two_family_limit_replay.json": "85ee1426093c9ece6ad58753327aa64c78f6ad43d70c0308d47f4a697fd874e0",
+    "results/marginal_graded_hubbard8/spectator_hopping/W_zero/thermal/ledger/candidate_ledger.json.gz": "440da68fd04eef6b3490f5cede39252814a82d7286d6ac64ade0d1a9d6867af3",
+    "results/marginal_graded_hubbard8/spectator_hopping/W_zero/thermal/residual_completion/profile_joint_r1_2_certificate.json": "c33762454a2c95d33eee0b41288351baf77e4a114d35cbb516117983b89d40f9"
+  },
+  "seconds": 25.051995791996887
+}

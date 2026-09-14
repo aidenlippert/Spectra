@@ -1,0 +1,149 @@
+{
+  "scope": "CAR SOS restricted SDP; residual is independently reconstructed numerical diagnostic",
+  "modes": 4,
+  "particles": 2,
+  "dictionary_blocks": 7,
+  "budget": 2,
+  "asymmetric": false,
+  "strategies": {
+    "adaptive": {
+      "order": [
+        "mixed-",
+        "particle-hole"
+      ],
+      "trace": [
+        {
+          "b": -0.14031241868832128,
+          "residual_max": 1.1615247652585481e-10,
+          "residual_l2": 1.1619002593517589e-10,
+          "gram_rank": [
+            24
+          ],
+          "support_blocks": 1,
+          "wall_seconds": 0.05821937500149943,
+          "solver_status": "optimal",
+          "coefficient_rows": 42
+        },
+        {
+          "b": -0.14031241383350887,
+          "residual_max": 3.4188979425309185e-10,
+          "residual_l2": 5.282157819145471e-10,
+          "gram_rank": [
+            24,
+            10
+          ],
+          "support_blocks": 2,
+          "wall_seconds": 0.0726327919983305,
+          "solver_status": "optimal",
+          "coefficient_rows": 42
+        }
+      ],
+      "pricing_log": [
+        {
+          "candidate": 0,
+          "status": "No coefficient certificate proposal: infeasible"
+        },
+        {
+          "candidate": 1,
+          "status": "No coefficient certificate proposal: infeasible"
+        },
+        {
+          "round": 1,
+          "candidate_count": 7,
+          "round_wall_seconds": 0.26652358399587683
+        },
+        {
+          "round": 2,
+          "candidate_count": 6,
+          "round_wall_seconds": 0.5027139579979121
+        }
+      ],
+      "exact_replay": {
+        "lower": "-701570502939/5000000000000",
+        "lower_float": -0.1403141005878,
+        "residual_l1": "8433769/5000000000000",
+        "residual_l1_float": 1.6867538e-06,
+        "multiplier_terms": 23,
+        "square_polynomial_terms": 68,
+        "residual_terms": 69,
+        "residual_max_degree": 6,
+        "mode_count": 4,
+        "particle_number": 2,
+        "factor_rows": 41,
+        "factor_nonzeros": 593,
+        "status": "optimal",
+        "coefficient_rows": 42,
+        "gram_dimensions": [
+          28,
+          16
+        ],
+        "coefficient_map_nonzeros": 392,
+        "multiplier_basis_dimension": 32,
+        "build_seconds": 0.0027159590026712976,
+        "solve_seconds": 0.06776766599796247,
+        "proposed_b": -0.14031241383350887
+      },
+      "exact_replay_accepted": true,
+      "certificate_bytes": 8460
+    },
+    "fixed": {
+      "order": [
+        "linear-",
+        "linear+"
+      ],
+      "trace": [
+        {
+          "b": null,
+          "residual_max": null,
+          "residual_l2": null,
+          "gram_rank": [],
+          "support_blocks": 1,
+          "wall_seconds": 0.005518500001926441,
+          "solver_status": "No coefficient certificate proposal: infeasible",
+          "coefficient_rows": null
+        },
+        {
+          "b": null,
+          "residual_max": null,
+          "residual_l2": null,
+          "gram_rank": [],
+          "support_blocks": 2,
+          "wall_seconds": 0.006481417003669776,
+          "solver_status": "No coefficient certificate proposal: infeasible",
+          "coefficient_rows": null
+        }
+      ]
+    },
+    "random": {
+      "order": [
+        "linear-",
+        "particle-hole"
+      ],
+      "trace": [
+        {
+          "b": null,
+          "residual_max": null,
+          "residual_l2": null,
+          "gram_rank": [],
+          "support_blocks": 1,
+          "wall_seconds": 0.005483542001456954,
+          "solver_status": "No coefficient certificate proposal: infeasible",
+          "coefficient_rows": null
+        },
+        {
+          "b": -0.14031241905386624,
+          "residual_max": 6.007544461894554e-11,
+          "residual_l2": 9.461675148406296e-11,
+          "gram_rank": [
+            0,
+            10
+          ],
+          "support_blocks": 2,
+          "wall_seconds": 0.020842208999965806,
+          "solver_status": "optimal",
+          "coefficient_rows": 42
+        }
+      ]
+    }
+  }
+}

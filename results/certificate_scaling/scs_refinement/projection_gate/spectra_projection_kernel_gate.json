@@ -1,0 +1,89 @@
+{
+  "host": "146-235-200-232",
+  "scs": "3.2.8",
+  "library": "/home/ubuntu/spectra-venv/lib/python3.10/site-packages/scs.libs/libopenblas-r0-11edc3fa.3.15.so",
+  "library_sha256": "a392a7a335b114e5f133014cffd2fbfbba7ac72ce8ed8a459aad8c1a5f2e6f4f",
+  "openblas_config": "OpenBLAS 0.3.15 DYNAMIC_ARCH NO_AFFINITY Prescott SINGLE_THREADED",
+  "threads": 1,
+  "source": "/home/ubuntu/spectra-precision-v2/results/h10_scs_quotient_conditioned/raw_round_0.npz",
+  "source_sha256": "acc7eeb0a0e1c7d07555b34dc8b11c8c1d0e006acd0fae77814e345f784e2708",
+  "warmups": 2,
+  "timed_trials": 3,
+  "cases": [
+    {
+      "batch": 8,
+      "size": 725,
+      "source_keys": [
+        "gram_36",
+        "gram_37",
+        "gram_38",
+        "gram_39",
+        "gram_44",
+        "gram_45",
+        "gram_46",
+        "gram_47"
+      ],
+      "drivers": {
+        "dsyev_": {
+          "seconds": [
+            2.2737856669991743,
+            2.279858513000363,
+            2.2748263099965698
+          ],
+          "median_seconds": 2.2748263099965698
+        },
+        "dsyevd_": {
+          "seconds": [
+            1.150595944000088,
+            1.1488808410031197,
+            1.1507645979982044
+          ],
+          "median_seconds": 1.150595944000088
+        }
+      },
+      "eigen_reconstruction_error": {
+        "dsyev_": 2.42861286636753e-17,
+        "dsyevd_": 1.9081958235744878e-17
+      },
+      "PSD_projection_disagreement": 2.42861286636753e-17
+    },
+    {
+      "batch": 8,
+      "size": 225,
+      "source_keys": [
+        "gram_34",
+        "gram_35",
+        "gram_40",
+        "gram_41",
+        "gram_42",
+        "gram_43",
+        "gram_48",
+        "gram_49"
+      ],
+      "drivers": {
+        "dsyev_": {
+          "seconds": [
+            0.09084936299768742,
+            0.09083302599901799,
+            0.09078132600188837
+          ],
+          "median_seconds": 0.09083302599901799
+        },
+        "dsyevd_": {
+          "seconds": [
+            0.04878378200010047,
+            0.048792509998747846,
+            0.04875145599726238
+          ],
+          "median_seconds": 0.04878378200010047
+        }
+      },
+      "eigen_reconstruction_error": {
+        "dsyev_": 4.553649124439119e-18,
+        "dsyevd_": 1.951563910473908e-18
+      },
+      "PSD_projection_disagreement": 4.553649124439119e-18
+    }
+  ],
+  "scope": "Isolated actual-block eigenkernel timing; copies, workspace allocation, reconstruction and complete solver overhead excluded from timed kernel."
+}

@@ -1,0 +1,28 @@
+/home/ubuntu/spectra-venv/lib/python3.10/site-packages/cvxpy/problems/problem.py:1504: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  warnings.warn(
+{"lower": "-12387793628356613967/1000000000000000000", "lower_float": -12.387793628356613, "residual_l1": "18897403598613967/1000000000000000000", "residual_l1_float": 0.018897403598613968, "multiplier_terms": 7151, "square_polynomial_terms": 224051, "residual_terms": 224051, "residual_max_degree": 6, "mode_count": 20, "particle_number": 10, "factor_rows": 4907, "factor_nonzeros": 2656820, "original_dimensions": [20, 20, 190, 190, 400, 240, 240, 3820, 3820], "symmetry_dimensions": [20, 25, 50, 50, 20, 25, 20, 25, 50, 50, 20, 25, 50, 50, 100, 100, 50, 50, 10, 10, 50, 50, 50, 50, 10, 10, 10, 10, 50, 50, 50, 50, 10, 10, 225, 225, 725, 725, 725, 725, 225, 225, 225, 225, 725, 725, 725, 725, 225, 225], "parity_masks": [209715, 349525, 629145], "alpha_charge_quotient": true, "prequotient_symmetry_dimensions": [5, 5, 5, 5, 5, 5, 5, 5, 20, 25, 50, 50, 20, 25, 20, 25, 50, 50, 20, 25, 50, 50, 100, 100, 50, 50, 10, 10, 50, 50, 50, 50, 10, 10, 10, 10, 50, 50, 50, 50, 10, 10, 225, 225, 730, 730, 730, 730, 225, 225, 225, 225, 730, 730, 730, 730, 225, 225], "method": "joint_PSD_blocks", "full_blocks": true, "symmetry": true, "family": "mixed", "width": 4, "rounds_solved": 1, "retained_supports": 50, "stop": "round_budget", "coefficient_rows": 112701, "ideal_body": 2, "complete_pricing_matrix_entries": 4674900, "complete_pricing_map_nonzeros": 2347238, "map_build_seconds": 155.49031628599914, "total_solve_wall_seconds": 626.4299616080025, "total_pricing_seconds": 0.0, "total_exact_export_seconds": 253.30628421799702, "wall_seconds": 1035.495557536, "source_factors_used": false, "source_upper_used": false, "many_body_space_enumerated": false, "omitted_family_optimality_proved": false, "solver": "SCS", "solver_eps": 1e-08, "solver_seconds": 600.0, "solver_max_iters": 150000, "condition": "row-column", "raw_saved": true, "factor_denominator": 1000000000, "free_denominator": 1000000000000, "quotient_linear": true, "anchor_identity": true, "formulation": "primal", "scs_checkpointing": true, "scs_stages_requested": 1}
+spectra_evd_shim real_calls=41300 queries=1 failures=0
+	Command being timed: "/home/ubuntu/spectra-venv/bin/python /home/ubuntu/spectra-evd-refinement/research/certificate_scaling/adaptive_block_discovery.py --fixture /home/ubuntu/spectra-evd-refinement/results/certificate_scaling/active_space_ladder/h10/fixture.json --outputdir /home/ubuntu/spectra-evd-refinement/results/h10_evd_600 --family mixed --ideal-body 2 --symmetry --full --solver SCS --solver-eps 1e-8 --solver-seconds 600 --seconds 1200 --solver-max-iters 150000 --denominator 1000000000 --free-denominator 1000000000000 --save-raw --quotient-linear --anchor-identity --condition row-column --save-scs-state"
+	User time (seconds): 1032.86
+	System time (seconds): 3.61
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 17:16.55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4481032
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2245974
+	Voluntary context switches: 3
+	Involuntary context switches: 3001
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 242680
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+spectra_evd_shim real_calls=0 queries=0 failures=0

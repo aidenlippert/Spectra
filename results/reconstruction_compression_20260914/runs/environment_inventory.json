@@ -1,0 +1,19 @@
+{
+  "name": "environment_inventory",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-B",
+    "-c",
+    "import importlib.util,json; print(json.dumps({m:importlib.util.find_spec(m) is not None for m in [\"cvxpy\",\"scs\",\"clarabel\",\"flint\",\"gmpy2\",\"numpy\",\"scipy\"]}))"
+  ],
+  "timeout_seconds": 30,
+  "status": "passed",
+  "started_UTC": "2026-09-14T07:43:59.334266+00:00",
+  "pid": 29903,
+  "exit_code": 0,
+  "wall_seconds": 0.04034766599943396,
+  "child_user_seconds": 0.013602,
+  "child_system_seconds": 0.0052759999999999994,
+  "peak_child_RSS_bytes": 10043392,
+  "finished_UTC": "2026-09-14T07:43:59.374997+00:00"
+}

@@ -1,0 +1,83 @@
+{
+  "source_sha256": "384a0a1d6181dab16eebe6fca58d86008128253267a4d9c5642ecb2bce66115a",
+  "evaluations": 6,
+  "batch": 3,
+  "ratio": 0.5,
+  "sectors": 94,
+  "gram_blocks": 32,
+  "gram_columns": 1280,
+  "prep_seconds": 11.460854083001323,
+  "cpu": {
+    "profile_kernel_seconds": 0.1139402919980057,
+    "scalar_subset_reference_seconds": 0.1056649579986697,
+    "batched_max_abs_difference": 2.531308496145357e-14,
+    "total_end_to_end_seconds": 11.572328957001446,
+    "gram_kernel_seconds": 0.00580991600145353,
+    "profile_values": [
+      -3.118393160138897,
+      -3.1191220266558046,
+      -3.1189153934257603,
+      -3.1185692255196074,
+      -3.1196351163079656,
+      -3.1193496324153998
+    ],
+    "gram_maxima": [
+      0.8561729885515683,
+      0.8613408441322726,
+      0.8251881975206011,
+      0.708953020073069,
+      0.8561729885515683,
+      1.6453103325747211,
+      1.8991089904080631,
+      1.8876780626019676,
+      1.7596635961171259,
+      0.708953020073069,
+      0.8613408441322726,
+      1.899108990408062,
+      2.3149349834821114,
+      2.382945625275242,
+      1.8876780626019671,
+      0.8251881975206015,
+      0.8251881975206011,
+      1.8876780626019676,
+      2.382945625275242,
+      2.3149349834821122,
+      1.8991089904080631,
+      0.8613408441322724,
+      0.708953020073069,
+      1.7596635961171259,
+      1.887678062601968,
+      1.8991089904080634,
+      1.6453103325747216,
+      0.8561729885515683,
+      0.708953020073069,
+      0.8251881975206015,
+      0.8613408441322724,
+      0.8561729885515683
+    ],
+    "density_objective_values": [
+      -0.6461821666356843,
+      -0.6463279399390658,
+      -0.6462866132930569,
+      -0.6462173797118264,
+      -0.646430557869498,
+      -0.6463734610909848
+    ],
+    "environment": {
+      "OPENBLAS_NUM_THREADS": "1"
+    }
+  },
+  "gpu": {
+    "available": false,
+    "reason": "ModuleNotFoundError: No module named 'cupy'"
+  },
+  "objective_direction": "larger lower-bound density is better; numerical only",
+  "normalization": "Reflection blocks use inverse square-root orbit norms; weighted Gram is symmetrically normalized on both axes.",
+  "penalties": {
+    "alpha": 0.213504,
+    "beta": 0.001,
+    "theta_half": 0.5242147062,
+    "theta_joint": 0.595736407
+  },
+  "scope": "bounded float64 resident-matrix benchmark; no exact certificate or speedup claim"
+}

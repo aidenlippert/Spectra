@@ -1,0 +1,11 @@
+{
+  "scope": "read-only 2x2 PSD smoke; no jobs or provisioning",
+  "local": {"cpus": 8, "ram_bytes": 8589934592, "cvxpy": "1.9.2", "clarabel": "0.11.1", "status": "optimal", "value": 2.9999999956209153},
+  "warm_hosts": [
+    {"host": "129.159.32.200", "interpreter": "/home/ubuntu/spectra-venv/bin/python", "cpus": 30, "ram_bytes": 238546350080, "cvxpy": "1.6.5", "clarabel": "0.11.1", "status": "optimal", "value": 2.9999999956209153},
+    {"host": "146.235.200.232", "interpreter": "/home/ubuntu/spectra-venv/bin/python", "cpus": 30, "ram_bytes": 238546460672, "cvxpy": "1.6.5", "clarabel": "0.11.1", "status": "optimal", "value": 2.9999999956209153}
+  ],
+  "clarabel_options_accepted": ["max_iter", "tol_feas", "tol_gap_abs", "tol_gap_rel", "time_limit", "chordal_decomposition_enable", "chordal_decomposition_compact"],
+  "ram_source": "free -b; remote venv lacks psutil",
+  "limitations": "Option acceptance is established by the tiny smoke only; no claim about scalability or large PSD performance."
+}

@@ -1,0 +1,278 @@
+{
+  "directions": 144,
+  "separate": false,
+  "whiten": true,
+  "anti_dimensions": [
+    8,
+    8,
+    28,
+    28,
+    28,
+    28,
+    8,
+    8
+  ],
+  "Gram_entries": 21504,
+  "constructed_map_nonzeros": 2848360,
+  "used_map_nonzeros": 2848360,
+  "construction_seconds": 2.2494928329979302,
+  "solver_seconds_limit": 45.0,
+  "conditioning": [
+    {
+      "basis_dimension": 8,
+      "support_monomials": 112,
+      "support_component_dimensions": [
+        8
+      ],
+      "coefficient_matrix_entries": 896,
+      "estimated_condition_before": 4.613841311828136,
+      "orthogonality_max_error": 1.9984014443252818e-15,
+      "max_transform_entry": 3.404868476187843,
+      "seconds": 0.0009140830006799661,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    },
+    {
+      "basis_dimension": 8,
+      "support_monomials": 112,
+      "support_component_dimensions": [
+        8
+      ],
+      "coefficient_matrix_entries": 896,
+      "estimated_condition_before": 4.591616360364604,
+      "orthogonality_max_error": 3.6237501323413744e-15,
+      "max_transform_entry": 3.7081499014666255,
+      "seconds": 0.0008279169996967539,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    },
+    {
+      "basis_dimension": 28,
+      "support_monomials": 372,
+      "support_component_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        8,
+        16
+      ],
+      "coefficient_matrix_entries": 10416,
+      "estimated_condition_before": 16.547301257441497,
+      "orthogonality_max_error": 1.4222590051650004e-14,
+      "max_transform_entry": 3.404868476187843,
+      "seconds": 0.005319459000020288,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    },
+    {
+      "basis_dimension": 28,
+      "support_monomials": 372,
+      "support_component_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        8,
+        16
+      ],
+      "coefficient_matrix_entries": 10416,
+      "estimated_condition_before": 16.820005253851523,
+      "orthogonality_max_error": 1.1424035061578321e-14,
+      "max_transform_entry": 3.7081499014666255,
+      "seconds": 0.004921457999444101,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    },
+    {
+      "basis_dimension": 28,
+      "support_monomials": 372,
+      "support_component_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        16,
+        8
+      ],
+      "coefficient_matrix_entries": 10416,
+      "estimated_condition_before": 16.547301257441497,
+      "orthogonality_max_error": 1.4222590051650004e-14,
+      "max_transform_entry": 3.404868476187843,
+      "seconds": 0.004835249994357582,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    },
+    {
+      "basis_dimension": 28,
+      "support_monomials": 372,
+      "support_component_dimensions": [
+        1,
+        1,
+        1,
+        1,
+        16,
+        8
+      ],
+      "coefficient_matrix_entries": 10416,
+      "estimated_condition_before": 16.820005253851523,
+      "orthogonality_max_error": 1.1424035061578321e-14,
+      "max_transform_entry": 3.7081499014666255,
+      "seconds": 0.004857583000557497,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    },
+    {
+      "basis_dimension": 8,
+      "support_monomials": 112,
+      "support_component_dimensions": [
+        8
+      ],
+      "coefficient_matrix_entries": 896,
+      "estimated_condition_before": 4.613841311828136,
+      "orthogonality_max_error": 1.9984014443252818e-15,
+      "max_transform_entry": 3.404868476187843,
+      "seconds": 0.0008668329974170774,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    },
+    {
+      "basis_dimension": 8,
+      "support_monomials": 112,
+      "support_component_dimensions": [
+        8
+      ],
+      "coefficient_matrix_entries": 896,
+      "estimated_condition_before": 4.591616360364604,
+      "orthogonality_max_error": 3.6237501323413744e-15,
+      "max_transform_entry": 3.7081499014666255,
+      "seconds": 0.000813834005384706,
+      "scope": "Numerical congruence only; original exact generators retained for export."
+    }
+  ],
+  "contraction_work": [
+    {
+      "basis_transform_multiply_entries": 7168,
+      "dense_outer_entries": 903168,
+      "dense_sum_entries": 451584,
+      "sparse_dense_multiply_entries": 299520,
+      "contraction_peak_primary_array_bytes": 1978496,
+      "contraction_batches": 3,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 7168,
+      "dense_outer_entries": 903168,
+      "dense_sum_entries": 451584,
+      "sparse_dense_multiply_entries": 299520,
+      "contraction_peak_primary_array_bytes": 1978496,
+      "contraction_batches": 3,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 291648,
+      "dense_outer_entries": 112367808,
+      "dense_sum_entries": 56183904,
+      "sparse_dense_multiply_entries": 18318720,
+      "contraction_peak_primary_array_bytes": 18086016,
+      "contraction_batches": 26,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 291648,
+      "dense_outer_entries": 112367808,
+      "dense_sum_entries": 56183904,
+      "sparse_dense_multiply_entries": 18318720,
+      "contraction_peak_primary_array_bytes": 18086016,
+      "contraction_batches": 26,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 291648,
+      "dense_outer_entries": 112367808,
+      "dense_sum_entries": 56183904,
+      "sparse_dense_multiply_entries": 18318720,
+      "contraction_peak_primary_array_bytes": 18086016,
+      "contraction_batches": 26,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 291648,
+      "dense_outer_entries": 112367808,
+      "dense_sum_entries": 56183904,
+      "sparse_dense_multiply_entries": 18318720,
+      "contraction_peak_primary_array_bytes": 18086016,
+      "contraction_batches": 26,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 7168,
+      "dense_outer_entries": 903168,
+      "dense_sum_entries": 451584,
+      "sparse_dense_multiply_entries": 299520,
+      "contraction_peak_primary_array_bytes": 1978496,
+      "contraction_batches": 3,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    },
+    {
+      "basis_transform_multiply_entries": 7168,
+      "dense_outer_entries": 903168,
+      "dense_sum_entries": 451584,
+      "sparse_dense_multiply_entries": 299520,
+      "contraction_peak_primary_array_bytes": 1978496,
+      "contraction_batches": 3,
+      "scope": "Floating proposal map only; exact final polynomial replay is mandatory."
+    }
+  ],
+  "status": "optimal_inaccurate",
+  "floating_lower_Ha": -9.278821971783287,
+  "clipped_negative_Gram_mass": 1.8071641026609485e-06,
+  "solve_seconds": 18.808536084005027,
+  "export_seconds": 0.08094491600058973,
+  "accept_seconds": 30.92210916699696,
+  "wall_seconds": 52.06108320799831,
+  "certificate_bytes": 252404,
+  "accepted": {
+    "retained": {
+      "lower": "-593845021099845312113496506296891273190783344781578326700792697/64000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -9.278828454685083,
+      "residual_l1": "581976645312113496506296891273190783344781578326700792697/64000000000000000000000000000000000000000000000000000000000000",
+      "residual_l1_float": 9.093385083001774e-06,
+      "multiplier_terms": 65,
+      "square_polynomial_terms": 2913,
+      "residual_terms": 2913,
+      "residual_max_degree": 4,
+      "mode_count": 16,
+      "particle_number": 8,
+      "factor_rows": 621,
+      "factor_nonzeros": 82949
+    },
+    "tail": {
+      "lower_operator_shift_Ha": "-2031/250000000000",
+      "upper_operator_shift_Ha": "46789531/250000000000",
+      "tail_interval_width_Ha": "23395781/125000000000",
+      "tail_interval_width_mHa": 0.187166248,
+      "factors": 14,
+      "factor_nonzeros": 252,
+      "coefficient_dimension": 36,
+      "modes": 16,
+      "particles": 8,
+      "number_centered": true,
+      "mismatch_paired_norm_Ha": "31/250000000000",
+      "mismatch_terms": 236,
+      "casimir_bound": "40",
+      "lower_psd": {
+        "dimension": 36,
+        "rank": 36
+      },
+      "upper_psd": {
+        "dimension": 36,
+        "rank": 36
+      },
+      "replay_seconds": 0.2931111249999958,
+      "many_body_states_enumerated": 0,
+      "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+    },
+    "original_lower_Ha": "-593845021619781312113496506296891273190783344781578326700792697/64000000000000000000000000000000000000000000000000000000000000",
+    "original_lower_float_Ha": -9.278828462809082,
+    "expand_seconds": 3.131224791999557,
+    "SOS_replay_seconds": 27.770428666000953,
+    "replay_seconds": 30.901653667002392,
+    "expanded_certificate_bytes": 2771398,
+    "many_body_states_enumerated": 0,
+    "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+  }
+}

@@ -1,0 +1,600 @@
+{
+  "scope": "First broad campaign: finite-H results, constructed examples, diagnostics, and explicitly unexecuted routes.",
+  "subagents": 11,
+  "existing_lambda_instances_used": 2,
+  "new_instances_launched": 0,
+  "rows": [
+    {
+      "system": "H4",
+      "lower": "-3667000108966591573/1000000000000000000",
+      "upper": "-1833305910880269221718521248061115511/500000000000054289393155000000000000",
+      "width": "38828720645128798418773413910279176563/100000000000010857878631000000000000000000",
+      "lower_float": -3.6670001089665916,
+      "upper_float": -3.6666118217601404,
+      "width_float": 0.0003882872064512458,
+      "passes_0_0016_Ha": true,
+      "witness_states": 16,
+      "upper_discovery_through_first_pass_seconds": 0.2980237500014482,
+      "complete_two_sided_replay_seconds": 0.3946945830102777,
+      "interval_path": "results/all_angles_20260913/intervals/h4.json",
+      "interval_sha256": "5141ec160520343eb8a7666889a2b6caa766dde5025c6755f7074b5465a1acfd",
+      "fixture_sha256": "8e64505deb4cc06a87f75e669b0f3073d15ebca72daa6d086e06eeea0b0f5120"
+    },
+    {
+      "system": "H6",
+      "lower": "-3166556810312917952757997/500000000000000000000000",
+      "upper": "-6331919421064588657147994846356127181/1000000000000260938274080000000000000",
+      "width": "3731873634061875330368122357860801331861361/3125000000000815432106500000000000000000000000",
+      "lower_float": -6.333113620625836,
+      "upper_float": -6.331919421062937,
+      "width_float": 0.0011941995628994885,
+      "passes_0_0016_Ha": true,
+      "witness_states": 128,
+      "upper_discovery_through_first_pass_seconds": 0.5316714169894112,
+      "complete_two_sided_replay_seconds": 5.965652208993561,
+      "interval_path": "results/all_angles_20260913/intervals/h6.json",
+      "interval_sha256": "3e1fcb051135754b7323aff353535ee4e3e2b967054257a9c1112520de4b54bd",
+      "fixture_sha256": "ea50a4ab19a353bc89691bb344fcf8d610f74e1c2c76bf07c6869be2b24dbec8"
+    },
+    {
+      "system": "H8",
+      "lower": "-2314013753548521439038541/250000000000000000000000",
+      "upper": "-2313796119121000550331564214449782149/249999999999851130981303250000000000",
+      "width": "217634426142948880010579611151663898108634233/249999999999851130981303250000000000000000000000",
+      "lower_float": -9.256055014194086,
+      "upper_float": -9.255184476489513,
+      "width_float": 0.0008705377045723139,
+      "passes_0_0016_Ha": true,
+      "witness_states": 2048,
+      "upper_discovery_through_first_pass_seconds": 3.052819807002379,
+      "complete_two_sided_replay_seconds": 58.66239906999908,
+      "interval_path": "results/all_angles_20260913/intervals/h8.json",
+      "interval_sha256": "a26379834a79244e3104c2e526f4305084a5e7055b31269df35106332900681d",
+      "fixture_sha256": "ae6221749adf40be04631a5511a5deb27f3a36d6b4a3121f51811bb954c4df07"
+    },
+    {
+      "system": "H10",
+      "lower": "-494778282983091551017191/40000000000000000000000",
+      "upper": "-12368219751768143779256625687156302849/999999999999076575847699000000000000",
+      "width": "49492911908909630385366904733561146546793509/39999999999963063033907960000000000000000000000",
+      "lower_float": -12.369457074577289,
+      "upper_float": -12.368219751779565,
+      "width_float": 0.0012373227977238834,
+      "passes_0_0016_Ha": true,
+      "witness_states": 24576,
+      "upper_discovery_through_first_pass_seconds": 66.55954474399914,
+      "complete_two_sided_replay_seconds": 273.1080397980004,
+      "interval_path": "results/all_angles_20260913/intervals/h10.json",
+      "interval_sha256": "6ae786c06481b1d4dc8f43aee9b248fa2c0c2680e7787743a45e5c9317f3c48b",
+      "fixture_sha256": "ec437b52d210f08233a8cc853d0f905dae52bd1f2a923285a25c76ac99385f92"
+    }
+  ],
+  "coverage_counts": {
+    "constructed_toy_experiment": 2,
+    "idealized_prerequisite_test": 1,
+    "mathematical_counterexample": 1,
+    "mathematical_derivation": 1,
+    "molecular_diagnostic": 3,
+    "molecular_experiment": 8,
+    "preflight_only": 1,
+    "reference_only": 1,
+    "replay_only": 1,
+    "representative_inner_cone_test": 1,
+    "screened_not_executed": 49,
+    "toy_prerequisite_test": 2,
+    "toy_relaxation_test": 1
+  },
+  "coverage_routes": 72,
+  "selected_refinement_all_runs": [
+    {
+      "path": "results/all_angles_20260913/selected_refinement/h10/receipt.json",
+      "seconds": 40.08766396300052,
+      "final_basis": 16384,
+      "final_upper": "-12367439932434712033946363437104418581/999999999999880320464384000000000000"
+    },
+    {
+      "path": "results/all_angles_20260913/selected_refinement/h10_extended/receipt.json",
+      "seconds": 100.65986484200039,
+      "final_basis": 31752,
+      "final_upper": "-12368299456420232481883174525224178619/1000000000000684794786986000000000000"
+    },
+    {
+      "path": "results/all_angles_20260913/selected_refinement/h4/receipt.json",
+      "seconds": 0.3141987910057651,
+      "final_basis": 20,
+      "final_upper": "-183349997798288519051850095849136131/50000000000021421419561850000000000"
+    },
+    {
+      "path": "results/all_angles_20260913/selected_refinement/h6/receipt.json",
+      "seconds": 0.6704154579929309,
+      "final_basis": 200,
+      "final_upper": "-3166529313114912582697419221290621819/499999999999749305733616500000000000"
+    },
+    {
+      "path": "results/all_angles_20260913/selected_refinement/h8/receipt.json",
+      "seconds": 4.16584309099926,
+      "final_basis": 2468,
+      "final_upper": "-84139131173734188376152328914269381/9090909090904408322992000000000000"
+    }
+  ],
+  "selected_refinement_all_runs_sum_seconds": 145.89798614499887,
+  "timing_scope": "Run sum includes initial unsuccessful H10 and independent extended rerun. It excludes other agent experiments, previous lower discovery, full interval replay, setup, and queue time; it is not total campaign cost.",
+  "spin_matched": [
+    {
+      "variant": "h6_restricted",
+      "lower": "-79165534176554151/12500000000000000",
+      "lower_float": -6.333242734124332,
+      "width_float": 0.001323313061395663,
+      "ideal_variables": 499,
+      "coefficient_rows": 9419,
+      "receipt": {
+        "modes": 12,
+        "particles": 6,
+        "spin_parity_masks": [
+          819,
+          3276
+        ],
+        "decompositions": [
+          {
+            "family": "pair-",
+            "original_dimension": 66,
+            "highest_weight_dimension": 36,
+            "descendant_dimension": 66,
+            "local_pattern_count": 21,
+            "max_local_dimension": 4,
+            "ladder_word_letter_visits": 648,
+            "invariant_Gram_entries": 342,
+            "seconds": 0.0105397820007056,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          },
+          {
+            "family": "pair+",
+            "original_dimension": 66,
+            "highest_weight_dimension": 36,
+            "descendant_dimension": 66,
+            "local_pattern_count": 21,
+            "max_local_dimension": 4,
+            "ladder_word_letter_visits": 648,
+            "invariant_Gram_entries": 342,
+            "seconds": 0.00951508399884915,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          },
+          {
+            "family": "particle-hole",
+            "original_dimension": 144,
+            "highest_weight_dimension": 72,
+            "descendant_dimension": 144,
+            "local_pattern_count": 36,
+            "max_local_dimension": 4,
+            "ladder_word_letter_visits": 1440,
+            "invariant_Gram_entries": 1296,
+            "seconds": 0.021061841998744057,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          },
+          {
+            "family": "local-triples-",
+            "original_dimension": 40,
+            "highest_weight_dimension": 18,
+            "descendant_dimension": 40,
+            "local_pattern_count": 14,
+            "max_local_dimension": 8,
+            "ladder_word_letter_visits": 570,
+            "invariant_Gram_entries": 130,
+            "seconds": 0.007500934996642172,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          },
+          {
+            "family": "local-triples+",
+            "original_dimension": 40,
+            "highest_weight_dimension": 18,
+            "descendant_dimension": 40,
+            "local_pattern_count": 14,
+            "max_local_dimension": 8,
+            "ladder_word_letter_visits": 570,
+            "invariant_Gram_entries": 130,
+            "seconds": 0.007866905001719715,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          },
+          {
+            "family": "mixed-",
+            "original_dimension": 792,
+            "highest_weight_dimension": 306,
+            "descendant_dimension": 792,
+            "local_pattern_count": 126,
+            "max_local_dimension": 8,
+            "ladder_word_letter_visits": 13554,
+            "invariant_Gram_entries": 27378,
+            "seconds": 0.20594233600058942,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          },
+          {
+            "family": "mixed+",
+            "original_dimension": 792,
+            "highest_weight_dimension": 306,
+            "descendant_dimension": 792,
+            "local_pattern_count": 126,
+            "max_local_dimension": 8,
+            "ladder_word_letter_visits": 13554,
+            "invariant_Gram_entries": 27378,
+            "seconds": 0.19133197400151403,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          }
+        ],
+        "Gram_dimensions": [
+          12,
+          9,
+          6,
+          9,
+          12,
+          9,
+          6,
+          9,
+          18,
+          18,
+          18,
+          18,
+          8,
+          8,
+          1,
+          1,
+          8,
+          8,
+          1,
+          1,
+          108,
+          108,
+          45,
+          45,
+          108,
+          108,
+          45,
+          45
+        ],
+        "Gram_entries": 56996,
+        "coefficient_rows": 9419,
+        "gram_map_nonzeros": 391588,
+        "polynomial_word_pair_products": 246590,
+        "ideal_variables": 499,
+        "basis_seconds": 0.5040719200005697,
+        "construction_seconds": 7.226226883998606,
+        "solver": "SCS",
+        "solver_seconds_budget": 120.0,
+        "source_factors_used": false,
+        "source_upper_used": false,
+        "scope": "Invariant SOS in full chosen mixed-cubic word span. Original H retained; full exact residual is charged. No fixed-accuracy scaling theorem.",
+        "status": "optimal_inaccurate",
+        "solver_options": {
+          "eps": 1e-08,
+          "max_iters": 150000,
+          "time_limit_secs": 120.0
+        },
+        "solver_iterations": 8650,
+        "solver_reported_seconds": 120.04159102000001,
+        "numeric_lower": -6.333078791743196,
+        "raw_b": -6.333078083018357,
+        "negative_eigenvalue_mass": 2.2226841017947157e-06,
+        "solve_seconds": 120.4932325990012,
+        "export_seconds": 11.340921197999705,
+        "wall_seconds": 139.06038097899727,
+        "exact": {
+          "lower": "-79165534176554151/12500000000000000",
+          "lower_float": -6.333242734124332,
+          "residual_l1": "2058138829151/12500000000000000",
+          "residual_l1_float": 0.00016465110633208,
+          "multiplier_terms": 919,
+          "square_polynomial_terms": 9419,
+          "residual_terms": 9419,
+          "residual_max_degree": 6,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 1583,
+          "factor_nonzeros": 135882
+        },
+        "certificate_bytes": 1061447
+      }
+    },
+    {
+      "variant": "h6_full",
+      "lower": "-6333240040247166731/1000000000000000000",
+      "lower_float": -6.3332400402471665,
+      "width_float": 0.001320619184230314,
+      "ideal_variables": 1174,
+      "coefficient_rows": 20021,
+      "receipt": {
+        "modes": 12,
+        "particles": 6,
+        "spin_parity_masks": [
+          819,
+          3276
+        ],
+        "decompositions": [
+          {
+            "family": "pair-",
+            "original_dimension": 66,
+            "highest_weight_dimension": 36,
+            "descendant_dimension": 66,
+            "local_pattern_count": 21,
+            "max_local_dimension": 4,
+            "ladder_word_letter_visits": 648,
+            "invariant_Gram_entries": 342,
+            "seconds": 0.010518425002373988,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          },
+          {
+            "family": "pair+",
+            "original_dimension": 66,
+            "highest_weight_dimension": 36,
+            "descendant_dimension": 66,
+            "local_pattern_count": 21,
+            "max_local_dimension": 4,
+            "ladder_word_letter_visits": 648,
+            "invariant_Gram_entries": 342,
+            "seconds": 0.009457309999561403,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          },
+          {
+            "family": "particle-hole",
+            "original_dimension": 144,
+            "highest_weight_dimension": 72,
+            "descendant_dimension": 144,
+            "local_pattern_count": 36,
+            "max_local_dimension": 4,
+            "ladder_word_letter_visits": 1440,
+            "invariant_Gram_entries": 1296,
+            "seconds": 0.020925883000018075,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          },
+          {
+            "family": "local-triples-",
+            "original_dimension": 40,
+            "highest_weight_dimension": 18,
+            "descendant_dimension": 40,
+            "local_pattern_count": 14,
+            "max_local_dimension": 8,
+            "ladder_word_letter_visits": 570,
+            "invariant_Gram_entries": 130,
+            "seconds": 0.007485805999749573,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          },
+          {
+            "family": "local-triples+",
+            "original_dimension": 40,
+            "highest_weight_dimension": 18,
+            "descendant_dimension": 40,
+            "local_pattern_count": 14,
+            "max_local_dimension": 8,
+            "ladder_word_letter_visits": 570,
+            "invariant_Gram_entries": 130,
+            "seconds": 0.007848922999983188,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          },
+          {
+            "family": "mixed-",
+            "original_dimension": 792,
+            "highest_weight_dimension": 306,
+            "descendant_dimension": 792,
+            "local_pattern_count": 126,
+            "max_local_dimension": 8,
+            "ladder_word_letter_visits": 13554,
+            "invariant_Gram_entries": 27378,
+            "seconds": 0.20473732900063624,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          },
+          {
+            "family": "mixed+",
+            "original_dimension": 792,
+            "highest_weight_dimension": 306,
+            "descendant_dimension": 792,
+            "local_pattern_count": 126,
+            "max_local_dimension": 8,
+            "ladder_word_letter_visits": 13554,
+            "invariant_Gram_entries": 27378,
+            "seconds": 0.18962350700167008,
+            "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+          }
+        ],
+        "Gram_dimensions": [
+          12,
+          9,
+          6,
+          9,
+          12,
+          9,
+          6,
+          9,
+          18,
+          18,
+          18,
+          18,
+          8,
+          8,
+          1,
+          1,
+          8,
+          8,
+          1,
+          1,
+          108,
+          108,
+          45,
+          45,
+          108,
+          108,
+          45,
+          45
+        ],
+        "Gram_entries": 56996,
+        "coefficient_rows": 20021,
+        "gram_map_nonzeros": 391588,
+        "polynomial_word_pair_products": 246590,
+        "ideal_variables": 1174,
+        "basis_seconds": 0.5009313410009781,
+        "construction_seconds": 7.98599636900326,
+        "solver": "SCS",
+        "solver_seconds_budget": 120.0,
+        "source_factors_used": false,
+        "source_upper_used": false,
+        "scope": "Invariant SOS in full chosen mixed-cubic word span. Original H retained; full exact residual is charged. No fixed-accuracy scaling theorem.",
+        "status": "optimal_inaccurate",
+        "solver_options": {
+          "eps": 1e-08,
+          "max_iters": 150000,
+          "time_limit_secs": 120.0
+        },
+        "solver_iterations": 7825,
+        "solver_reported_seconds": 120.186238738,
+        "numeric_lower": -6.333078629386469,
+        "raw_b": -6.333077897834534,
+        "negative_eigenvalue_mass": 2.191790108670695e-06,
+        "solve_seconds": 120.71776800799853,
+        "export_seconds": 12.210465847998421,
+        "wall_seconds": 140.91423055000269,
+        "exact": {
+          "lower": "-6333240040247166731/1000000000000000000",
+          "lower_float": -6.3332400402471665,
+          "residual_l1": "162142412166731/1000000000000000000",
+          "residual_l1_float": 0.000162142412166731,
+          "multiplier_terms": 1873,
+          "square_polynomial_terms": 9419,
+          "residual_terms": 18005,
+          "residual_max_degree": 6,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 1568,
+          "factor_nonzeros": 135462
+        },
+        "certificate_bytes": 1125838
+      }
+    }
+  ],
+  "gpu": [
+    {
+      "tag": "h8",
+      "n": 849,
+      "assemble_seconds": 2.639746134998859,
+      "matrix_sha256": "afa6c3880de776beaec8bb6cf0e89a0131fe1eac811d0252b8f147faaaf6f84e",
+      "basis_sha256": "fa188d7a92325df4223504e70f455b6b1899a82cb73c932e870f50c8a2d3fff9",
+      "cpu": {
+        "times": [
+          0.02153858100064099,
+          0.02138198199827457,
+          0.02161847200113698
+        ],
+        "median_seconds": 0.02153858100064099,
+        "energy": -9.202521547729072
+      },
+      "gpu": {
+        "times": [
+          0.03462119799951324,
+          0.034528526000940474,
+          0.034626947999640834
+        ],
+        "median_seconds": 0.03462119799951324,
+        "energy": -9.202521547729072
+      },
+      "upper_rational": "-9202521547724778217328717060175067289/999999999999533478211157000000000000",
+      "upper_stats": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 185,
+        "hamiltonian_terms": 2912,
+        "word_state_checks": 538720,
+        "contributing_word_state_pairs": 24884,
+        "action_cache_states": 0,
+        "replay_seconds": 0.13815724899905035,
+        "upper": "-9202521547724778217328717060175067289/999999999999533478211157000000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "witness_support": 185,
+      "gpu_cpu_energy_absdiff": 0.0
+    },
+    {
+      "tag": "h10",
+      "n": 2126,
+      "assemble_seconds": 15.645769951002876,
+      "matrix_sha256": "7f85a67689545c136979a292eeb8f8432ff17a2911749dd196250f45d76faa2b",
+      "basis_sha256": "baee0a8d0c4f2cb4cb7eb71d76ab4c002cdc031e8d62937daf544441ba022cdb",
+      "cpu": {
+        "times": [
+          0.1480901359973359,
+          0.14765366500068922,
+          0.14660598900081823
+        ],
+        "median_seconds": 0.14765366500068922,
+        "energy": -12.287394769973911
+      },
+      "gpu": {
+        "times": [
+          0.21177720699779456,
+          0.2116481550001481,
+          0.21212374300012016
+        ],
+        "median_seconds": 0.21177720699779456,
+        "energy": -12.287394769973911
+      },
+      "upper_rational": "-12287394769979719925740411407189282017/1000000000000472615876545000000000000",
+      "upper_stats": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 442,
+        "hamiltonian_terms": 7150,
+        "word_state_checks": 3160300,
+        "contributing_word_state_pairs": 96360,
+        "action_cache_states": 0,
+        "replay_seconds": 0.5961429859999043,
+        "upper": "-12287394769979719925740411407189282017/1000000000000472615876545000000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "witness_support": 442,
+      "gpu_cpu_energy_absdiff": 0.0
+    }
+  ],
+  "artifact_bindings": [
+    {
+      "path": "results/all_angles_20260913/selected_refinement/h4/step_01_upper.json",
+      "sha256": "d8b6269f04a2ab99e509ac082ce868bcde3eca2d601eaa761fe3ec15511f0363"
+    },
+    {
+      "path": "results/certificate_scaling/cubic_precision/local_h4_quotient/certificate.json",
+      "sha256": "4b012777ba9ba4a8ea9e7caa1bee278372ad905581bf87d0130ca6e6136f1128"
+    },
+    {
+      "path": "results/all_angles_20260913/selected_refinement/h6/step_03_upper.json",
+      "sha256": "405255062a1af4e9c38332879fbc69c1e9ed983ecad381bad8fa5518748f45c6"
+    },
+    {
+      "path": "results/lambda_runs/cubic_precision/downloaded/precision_scs/h6_row-column/certificate.json",
+      "sha256": "07dd51f6cbec4c2abc90677475e47009887fbdee2d7f09a5dc986fcc4c791f1e"
+    },
+    {
+      "path": "results/certificate_scaling/cubic_precision/wedge_spectral/h6_conditioned/witness.json",
+      "sha256": "03c022cf3a6ed6781216addffd07b16b22e5fe0a2366823fdddac8626b8aac58"
+    },
+    {
+      "path": "results/all_angles_20260913/selected_refinement/h8/step_06_upper.json",
+      "sha256": "75f7314e1a40f5d8135c9f6a75ab086dfca1a5da08d8199c67e7c75ac4bee678"
+    },
+    {
+      "path": "results/lambda_runs/cubic_precision/downloaded/h8_scs_quotient_conditioned/certificate.json",
+      "sha256": "3d443ce704814bf75504ee142e91b5beafdab8ef7a351f242b63cf046cbd4001"
+    },
+    {
+      "path": "results/certificate_scaling/cubic_precision/wedge_spectral/h8_conditioned/witness.json",
+      "sha256": "bdf235cf78657b4ea2f616b3d392fd7395bca190fb2390783411bd7fcea05c06"
+    },
+    {
+      "path": "results/all_angles_20260913/selected_refinement/h10_extended/step_09_upper.json",
+      "sha256": "f759d79d5ca2d7c4f235e65bbd658981c9d505eda5a1613ee72dcd3095ff1db0"
+    },
+    {
+      "path": "results/lambda_runs/scs_refinement/downloaded/h10_evd_1800/certificate.json",
+      "sha256": "397eb5bbed0dc09b24169d08307f448aea1d47749828d7d32f1470a912cdf7c0"
+    },
+    {
+      "path": "results/certificate_scaling/scs_refinement/h10_evd_1800_spectral/witness.json",
+      "sha256": "24756bfae23b26704bda8c8cf83ab1e2dc38e57c508b2ff9948a2ee30354bc58"
+    }
+  ],
+  "remote_local_hash_matches": 44,
+  "focused_tests": "6 passed; control/pytest.log. No whole-repository regression claim.",
+  "formal_proof": false,
+  "fixed_accuracy_scaling_proved": false
+}

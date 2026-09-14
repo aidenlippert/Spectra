@@ -1,0 +1,365 @@
+{
+  "python_executable": "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+  "python_version": "3.12.2",
+  "exact_interpreter_flag": "-S",
+  "numerical_thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "measured_stages": [
+    {
+      "stage": "Initial preservation of 744 parent files",
+      "seconds": 0.17429070800426416,
+      "receipt": "results/compact_response_20260913/preservation_before.json"
+    },
+    {
+      "stage": "Initial weaker sector endpoints and operator-coupling probe",
+      "seconds": 1.2273914169927593,
+      "receipt": "results/compact_response_20260913/initial_bounds.json"
+    },
+    {
+      "stage": "Strengthened hopping-out endpoint probe",
+      "seconds": 0.7449474580062088,
+      "receipt": "results/compact_response_20260913/leakage_probe.json"
+    },
+    {
+      "stage": "H6/H8 program construction and initial exact checks",
+      "seconds": 2.3108930830057943,
+      "receipt": "results/compact_response_20260913/program_discovery.json"
+    },
+    {
+      "stage": "Fresh-process H6/H8 program replay",
+      "seconds": 1.3654691249976167,
+      "receipt": "results/compact_response_20260913/program_replay.json"
+    },
+    {
+      "stage": "H6 all-degree control, rounded response and retained-factor construction",
+      "seconds": 1.1011527920054505,
+      "receipt": "results/compact_response_20260913/closure_discovery.json"
+    },
+    {
+      "stage": "Fresh-process H6 closure and scalar-obstruction replay",
+      "seconds": 1.0734999580017757,
+      "receipt": "results/compact_response_20260913/closure_replay.json"
+    },
+    {
+      "stage": "Two H6 sparse trials, fresh-case program and initial exact upper checks",
+      "seconds": 1.7667235839908244,
+      "receipt": "results/compact_response_20260913/trial_discovery.json"
+    },
+    {
+      "stage": "Fresh-process two-trial replay",
+      "seconds": 0.6593850830104202,
+      "receipt": "results/compact_response_20260913/trial_replay.json"
+    },
+    {
+      "stage": "15 focused exact tests",
+      "seconds": 5.480933291997644,
+      "receipt": "results/compact_response_20260913/tests.json"
+    },
+    {
+      "stage": "Read-only combined exact replay integration",
+      "seconds": 3.1497861670068232,
+      "receipt": "results/compact_response_20260913/independent_replay.json"
+    },
+    {
+      "stage": "Cold-process H6 construction, serialization and independent replay benchmark",
+      "seconds": 2.473916457995074,
+      "receipt": "results/compact_response_20260913/cold_benchmark.json"
+    },
+    {
+      "stage": "Final parent preservation",
+      "seconds": 0.16499366700008977,
+      "receipt": "results/compact_response_20260913/preservation_after.json"
+    }
+  ],
+  "sum_recorded_stage_seconds": 21.693382792014745,
+  "timing_scope": "Recorded stage wall times, with repeats included and nested substage timers not added again. Some independent tasks ran concurrently. This sum is not calendar end-to-end time. The separate cold benchmark includes process startup/imports/input reading/output writing for the new H6 calculation. Historical chemistry, factor and FCI discovery remain inherited. Editing, literature lookup and exploratory file inspection are outside these timers.",
+  "cold_H6_benchmark": {
+    "new_H6_construction_and_independent_replay_cold_seconds": 2.473916457995074,
+    "construction_cold_seconds": 1.4168133339990163,
+    "independent_replay_cold_seconds": 1.056417749990942,
+    "producer": {
+      "program": {
+        "construction_seconds": 0.31999270799860824,
+        "bounds_seconds": 0.3176372089947108,
+        "many_body_states_enumerated": 0,
+        "many_body_inverse_entries": 0
+      },
+      "closure": {
+        "physical_sector_basis_labels_generated": 924,
+        "Hamiltonian_action_sources": 924,
+        "word_state_checks": 848232,
+        "retained_dimension": 714,
+        "eliminated_dimension": 210,
+        "largest_full_conserved_block": 200,
+        "largest_retained_block": 152,
+        "largest_eliminated_block": 52,
+        "full_block_matrix_entries": 132004,
+        "response_matrix_entries": 23910,
+        "retained_matrix_entries": 76646,
+        "block_partition_parity_mask": 819,
+        "preparation_seconds": 0.06584125000517815,
+        "construction_seconds": 0.9260649999923771,
+        "all_degree_curve_D_actions_on_individual_columns": 36312,
+        "selected_response_D_actions_on_individual_columns": 17800,
+        "numerical_degree_curve": [
+          {
+            "order": 1,
+            "minimum_K_minus_Frobenius_residual_float_Ha": -5.42610895756432
+          },
+          {
+            "order": 2,
+            "minimum_K_minus_Frobenius_residual_float_Ha": -0.7104066035927705
+          },
+          {
+            "order": 4,
+            "minimum_K_minus_Frobenius_residual_float_Ha": -0.9128039821120557
+          },
+          {
+            "order": 8,
+            "minimum_K_minus_Frobenius_residual_float_Ha": -0.028831293400149224
+          },
+          {
+            "order": 16,
+            "minimum_K_minus_Frobenius_residual_float_Ha": 0.0009605445373156743
+          },
+          {
+            "order": 26,
+            "minimum_K_minus_Frobenius_residual_float_Ha": 0.0010161114289181398
+          }
+        ],
+        "scope": "Explicit finite H6 retained-closure control. Response columns and retained factors are expanded and charged. No matrix inverse is used."
+      },
+      "matches_archived_certificate": true,
+      "certificate_bytes": 655484,
+      "seconds_after_imports": 1.3434472499939147,
+      "peak_resident_bytes": 55951360
+    },
+    "replayer": {
+      "width_mHa": 1.0,
+      "internal_replay_seconds": 1.00451716700627,
+      "peak_resident_bytes": 33996800,
+      "numerical_packages_loaded": []
+    },
+    "scope": "Includes process startup, imports, loading inherited inputs, deriving endpoints and response, all degree diagnostics and retained solves, temporary certificate serialization, fresh-process exact lower and upper replay. Excludes historical Hamiltonian/tail/FCI discovery, this research session and tool orchestration. One measured run, not a scaling or speedup claim."
+  },
+  "shared_inputs": [
+    {
+      "case": "h6",
+      "files": [
+        {
+          "role": "fixture",
+          "path": "results/molecular_collective_20260913/campaign/h6/fixture.json",
+          "bytes": 70867,
+          "sha256": "d89de5e7fda0e7dcc4490fd8c61ce1d0561ed3239e08989be458453937ce5c36"
+        },
+        {
+          "role": "tail",
+          "path": "results/molecular_collective_20260913/campaign/h6/rank_10/tail.json",
+          "bytes": 3667,
+          "sha256": "bb925dff565199466c2b289fe9e07511264dc7f81942230017a429501c8dbedf"
+        },
+        {
+          "role": "upper",
+          "path": "results/certificate_scaling/active_space_ladder_references_aligned/h6/upper.json",
+          "bytes": 5885,
+          "sha256": "0cf0b58228f1861bf80738bbab945ee18d60c2e7b3cc27ce0c418c13ff6330cc"
+        }
+      ],
+      "total_shared_input_bytes": 80419
+    },
+    {
+      "case": "h8",
+      "files": [
+        {
+          "role": "fixture",
+          "path": "results/molecular_collective_20260913/campaign/h8/fixture.json",
+          "bytes": 225687,
+          "sha256": "c6f92ee95c502dbf68481e0d99560ea58362448287a852c61947beb9dac2438c"
+        },
+        {
+          "role": "tail",
+          "path": "results/molecular_collective_20260913/campaign/h8/rank_14/tail.json",
+          "bytes": 7903,
+          "sha256": "1c37f7f3449429fe91f3081544031de23e6eca2bd908dbc0a030431c00998040"
+        },
+        {
+          "role": "upper",
+          "path": "results/certificate_scaling/active_space_ladder_references_aligned/h8/upper.json",
+          "bytes": 29638,
+          "sha256": "3185847f8c6d2befd8988bbe847d6e7103586b0fa8a49a8942e3f6875c82a325"
+        }
+      ],
+      "total_shared_input_bytes": 263228
+    },
+    {
+      "case": "fresh_h6_1p6",
+      "files": [
+        {
+          "role": "fixture",
+          "path": "results/response_consistency_20260913/fresh_h6_1p6/fixture.json",
+          "bytes": 245537,
+          "sha256": "b65f2f1e132462bc1da3d5b06fc4b8edc670df65ed7fd20b7a0da7d531619fb6"
+        },
+        {
+          "role": "tail",
+          "path": "results/response_consistency_20260913/fresh_h6_1p6/tail.json",
+          "bytes": 5890,
+          "sha256": "e132c8c95dec537cbca5aa6f339ca449e71c4f2f9f996f71643dd90fb4db4677"
+        },
+        {
+          "role": "upper",
+          "path": "results/response_consistency_20260913/fresh_h6_1p6/upper.json",
+          "bytes": 141,
+          "sha256": "8af2b1323dbe9347d3301eb9c713d11000805de7e14b94ebc06075bb402a953d"
+        }
+      ],
+      "total_shared_input_bytes": 251568
+    }
+  ],
+  "H6_explicit_control_counts_per_block_construction": {
+    "physical_sector_basis_labels_generated": 924,
+    "Hamiltonian_action_sources": 924,
+    "word_state_checks": 848232,
+    "retained_dimension": 714,
+    "eliminated_dimension": 210,
+    "largest_full_conserved_block": 200,
+    "largest_retained_block": 152,
+    "largest_eliminated_block": 52,
+    "full_block_matrix_entries": 132004,
+    "response_matrix_entries": 23910,
+    "retained_matrix_entries": 76646,
+    "block_partition_parity_mask": 819,
+    "preparation_seconds": 0.06871133300592192,
+    "construction_seconds": 1.1011527920054505,
+    "all_degree_curve_D_actions_on_individual_columns": 36312,
+    "selected_response_D_actions_on_individual_columns": 17800,
+    "numerical_degree_curve": [
+      {
+        "order": 1,
+        "minimum_K_minus_Frobenius_residual_float_Ha": -5.42610895756432
+      },
+      {
+        "order": 2,
+        "minimum_K_minus_Frobenius_residual_float_Ha": -0.7104066035927705
+      },
+      {
+        "order": 4,
+        "minimum_K_minus_Frobenius_residual_float_Ha": -0.9128039821120557
+      },
+      {
+        "order": 8,
+        "minimum_K_minus_Frobenius_residual_float_Ha": -0.028831293400149224
+      },
+      {
+        "order": 16,
+        "minimum_K_minus_Frobenius_residual_float_Ha": 0.0009605445373156743
+      },
+      {
+        "order": 26,
+        "minimum_K_minus_Frobenius_residual_float_Ha": 0.0010161114289181398
+      }
+    ],
+    "scope": "Explicit finite H6 retained-closure control. Response columns and retained factors are expanded and charged. No matrix inverse is used.",
+    "expanded_certificate_bytes": 654983
+  },
+  "H6_explicit_repeated_block_constructions": {
+    "proposal": 1,
+    "standalone_closure_and_scalar_replay": 2,
+    "focused_tests": 6,
+    "combined_read_only_replay": 2,
+    "cold_benchmark_proposal_and_replay": 2,
+    "total": 13,
+    "basis_labels_generated_including_repeats": 12012,
+    "word_state_checks_including_repeats": 11027016,
+    "accounting_method": "The six test constructions are setup, successful full proof, two block-coverage refusals, response tamper and retained-factor tamper. Caps/binding/denominator refusals occur before enumeration."
+  },
+  "numerical_full_closure_proposals": {
+    "runs": 2,
+    "symmetric_eigensolves_per_run": 84,
+    "Cholesky_factorizations_per_run": 12,
+    "D_actions_on_columns_all_degree_diagnostics_per_run": 36312,
+    "D_actions_on_columns_selected_order_per_run": 17800,
+    "matrix_inversions": 0
+  },
+  "sparse_trials": [
+    {
+      "case": "h6",
+      "cost": {
+        "Hamiltonian_action_calls": 28,
+        "Hamiltonian_action_sources": 1648,
+        "word_state_checks": 1512864,
+        "distinct_source_states": 200,
+        "distinct_generated_destination_states_including_projected_out": 200,
+        "maximum_stored_vector_support": 200,
+        "Hamiltonian_action_cache_states": 0,
+        "full_sector_basis_enumerated": false,
+        "many_body_matrix_entries": 0
+      },
+      "D_actions": 25,
+      "retained_vector_states": 148,
+      "response_vector_states": 52,
+      "final_witness_states": 200
+    },
+    {
+      "case": "fresh_h6_1p6",
+      "cost": {
+        "Hamiltonian_action_calls": 75,
+        "Hamiltonian_action_sources": 3744,
+        "word_state_checks": 3436992,
+        "distinct_source_states": 53,
+        "distinct_generated_destination_states_including_projected_out": 200,
+        "maximum_stored_vector_support": 200,
+        "Hamiltonian_action_cache_states": 0,
+        "full_sector_basis_enumerated": false,
+        "many_body_matrix_entries": 0
+      },
+      "D_actions": 72,
+      "retained_vector_states": 1,
+      "response_vector_states": 52,
+      "final_witness_states": 53
+    }
+  ],
+  "independent_CAR_action_tests": {
+    "source_states": 32,
+    "Hamiltonian_terms_per_source": 918,
+    "word_state_checks": 29376,
+    "full_matrix_created_by_independent_action": false
+  },
+  "upper_replay_word_state_checks": {
+    "explicit_categories": {
+      "H6_complete_closure_frozen_checks": 4,
+      "H6_trial_source_checks": 4,
+      "H6_trial_candidate_checks": 4,
+      "fresh_HF_source_checks": 6,
+      "fresh_response_candidate_checks": 6
+    },
+    "checks_per_H6_witness": 183600,
+    "checks_per_fresh_HF": 918,
+    "checks_per_fresh_response": 48654,
+    "total": 2500632,
+    "scope": "Includes initial trial proposal checks, trial run acceptance checks, standalone and combined replays, complete-bound tests and cold replay, and fresh-trial acceptance/false-energy test. Wrong-binding tests do not run upper actions."
+  },
+  "inherited_work": {
+    "parent_manifest": "results/positive_response_20260913/manifest.json",
+    "parent_manifest_sha256": "532c427b0fb8adb2c3fb67578b06abf119e29f99913ef8c8c971295d3fd56324",
+    "parent_files_preserved": 744,
+    "prior_pass_cost_ledger": "results/positive_response_20260913/cost_ledger.json",
+    "earlier_physical_fixture_cost_ledger": "results/response_consistency_20260913/cost_ledger.json",
+    "fixture_and_tail_construction": "Existing numerical molecular integrals, orbital choices and factor/tail discovery; not rerun and not counted as free. Shared inputs are byte/hash accounted above.",
+    "upper_reference_discovery": "Frozen H6 uses 200 inherited FCI amplitudes. H8 supplies an inherited 1000-amplitude FCI upper only as a program target; no new H8 upper replay or complete bound is claimed. Fresh H6 1.6 A starts from the archived single Hartree-Fock determinant and uses no FCI.",
+    "old_family_witness": "Prior accepted family audit is hash-preserved, with no new 492-generator solve or claimed stronger witness."
+  },
+  "new_molecular_SDP_solves": 0,
+  "new_fixtures_generated": 0,
+  "unmeasured_or_not_established": [
+    "Whole research-session elapsed cost, including literature and human-facing drafting.",
+    "Historical end-to-end fixture/tail/reference construction cost is not consolidated into a new solver runtime.",
+    "Asymptotic or cross-system scaling.",
+    "Competitive speed or guarantee advantage over all established methods."
+  ],
+  "new_PySCF_FCI_calls": 0
+}

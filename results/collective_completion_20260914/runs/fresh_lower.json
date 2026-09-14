@@ -1,0 +1,32 @@
+{
+  "name": "fresh_lower",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.collective_completion_20260914.search",
+    "fresh_h6_2p23",
+    "32",
+    "--spin",
+    "--seconds",
+    "120",
+    "--rounds",
+    "2",
+    "--add-rank",
+    "8",
+    "--prepared",
+    "results/collective_completion_20260914/prepared/fresh_h6_2p23_ready",
+    "--solver",
+    "CLARABEL"
+  ],
+  "timeout_seconds": 360,
+  "status": "passed",
+  "started_UTC": "2026-09-14T19:02:07.606503+00:00",
+  "pid": 32772,
+  "exit_code": 0,
+  "wall_seconds": 40.04428616599762,
+  "child_user_seconds": 46.137513,
+  "child_system_seconds": 26.025575,
+  "peak_child_RSS_bytes": 1571127296,
+  "finished_UTC": "2026-09-14T19:02:47.650731+00:00"
+}

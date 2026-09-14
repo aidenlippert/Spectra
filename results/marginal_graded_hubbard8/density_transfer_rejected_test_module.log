@@ -1,0 +1,42 @@
+test_density_only_all_fock_lower_cannot_ignore_interaction (tests.test_marginal_density_transfer.DensityTransferTests.test_density_only_all_fock_lower_cannot_ignore_interaction) ... ok
+test_direct_car_density_energies (tests.test_marginal_density_transfer.DensityTransferTests.test_direct_car_density_energies) ... ok
+test_local_density_action_diagonal_and_profile_refusal (tests.test_marginal_density_transfer.DensityTransferTests.test_local_density_action_diagonal_and_profile_refusal) ... ok
+test_target_window_mismatch_rejected_before_source_work (tests.test_marginal_density_transfer.DensityTransferTests.test_target_window_mismatch_rejected_before_source_work) ... ok
+test_charged_noneigenstate_by_direct_car (tests.test_marginal_boundary_transfer.BoundaryTransferTests.test_charged_noneigenstate_by_direct_car) ... ok
+test_direct_car_reference_for_one_two_three_blocks (tests.test_marginal_boundary_transfer.BoundaryTransferTests.test_direct_car_reference_for_one_two_three_blocks) ... ok
+test_refusal_gates (tests.test_marginal_boundary_transfer.BoundaryTransferTests.test_refusal_gates) ... ok
+test_large_linear_valence_formula (tests.test_marginal_boundary_transfer_intervals.BoundaryTransferIntervalTests.test_large_linear_valence_formula) ... ok
+test_precision_and_size_refusals (tests.test_marginal_boundary_transfer_intervals.BoundaryTransferIntervalTests.test_precision_and_size_refusals) ... ok
+test_signed_matrix_interval_product_and_scale (tests.test_marginal_boundary_transfer_intervals.BoundaryTransferIntervalTests.test_signed_matrix_interval_product_and_scale) ... ok
+test_small_exact_contracts_are_enclosed (tests.test_marginal_boundary_transfer_intervals.BoundaryTransferIntervalTests.test_small_exact_contracts_are_enclosed) ... ok
+test_zero_norm_filter_is_refused (tests.test_marginal_boundary_transfer_intervals.BoundaryTransferIntervalTests.test_zero_norm_filter_is_refused) ... ok
+test_complete_basis_and_original_car_congruence (tests.test_marginal_local_hubbard_block.LocalBlockTests.test_complete_basis_and_original_car_congruence) ... ok
+test_noncommuting_reflection_is_rejected (tests.test_marginal_local_hubbard_block.LocalBlockTests.test_noncommuting_reflection_is_rejected) ... ok
+test_refusals (tests.test_marginal_local_hubbard_block.LocalBlockTests.test_refusals) ... ok
+test_six_site_local_coverage_respects_existing_psd_cap (tests.test_marginal_local_hubbard_block.LocalBlockTests.test_six_site_local_coverage_respects_existing_psd_cap) ... ok
+test_tight_threshold_uses_amplitude_gram_not_state_labels (tests.test_marginal_local_hubbard_block.LocalBlockTests.test_tight_threshold_uses_amplitude_gram_not_state_labels) ... ok
+test_weighted_profiles_and_centered_upper (tests.test_marginal_local_hubbard_block.LocalBlockTests.test_weighted_profiles_and_centered_upper) ... ok
+test_marginal_local_hubbard_chain (unittest.loader._FailedTest.test_marginal_local_hubbard_chain) ... ERROR
+test_global_quartic_certificate_and_rejects_stronger_claim (tests.test_marginal_boundary_unitary.BoundaryUnitaryTests.test_global_quartic_certificate_and_rejects_stronger_claim) ... ok
+test_h8_reduced_observables_match_independent_stream (tests.test_marginal_boundary_unitary.BoundaryUnitaryTests.test_h8_reduced_observables_match_independent_stream) ... ok
+test_physical_replay_and_fixed_size_arithmetic (tests.test_marginal_boundary_unitary.BoundaryUnitaryTests.test_physical_replay_and_fixed_size_arithmetic) ... ok
+test_rotation_and_identity (tests.test_marginal_boundary_unitary.BoundaryUnitaryTests.test_rotation_and_identity) ... ok
+test_transfer_to_density_interaction_by_direct_three_block_state (tests.test_marginal_boundary_unitary.BoundaryUnitaryTests.test_transfer_to_density_interaction_by_direct_three_block_state) ... ok
+test_transferred_source_energy_and_target_refusals (tests.test_marginal_boundary_unitary.BoundaryUnitaryTests.test_transferred_source_energy_and_target_refusals) ... ok
+test_two_and_three_blocks_direct_full_hubbard_contraction (tests.test_marginal_boundary_unitary.BoundaryUnitaryTests.test_two_and_three_blocks_direct_full_hubbard_contraction) ... ok
+
+======================================================================
+ERROR: test_marginal_local_hubbard_chain (unittest.loader._FailedTest.test_marginal_local_hubbard_chain)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_marginal_local_hubbard_chain
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/unittest/loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'tests.test_marginal_local_hubbard_chain'
+
+
+----------------------------------------------------------------------
+Ran 26 tests in 21.340s
+
+FAILED (errors=1)

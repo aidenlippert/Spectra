@@ -1,0 +1,402 @@
+{
+  "arm": "adaptive",
+  "budget_seconds": 180.0,
+  "model_construction": {
+    "construction_seconds": 3.9446386249983334,
+    "coefficient_rows": 919,
+    "base_preparation": {
+      "monomial_word_pairs": 5724,
+      "monomial_map_nonzeros": 6246
+    },
+    "spin_preparation": {
+      "monomial_word_pairs": 97344,
+      "CAR_word_products": 194688,
+      "monomial_map_nonzeros": 41328,
+      "max_surviving_degree": 4
+    },
+    "base_map_nonzeros": 6180,
+    "pricing_map_nonzeros": 41328,
+    "spin_frame_dimensions": [
+      63,
+      63,
+      63,
+      63
+    ],
+    "base_Gram_dimensions": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      6,
+      9,
+      18,
+      18,
+      6,
+      9,
+      6,
+      9,
+      18,
+      18,
+      6,
+      9,
+      18,
+      18,
+      36,
+      36,
+      18,
+      18
+    ],
+    "fixture_sha256": "99b91888d68ba7ea1d43c0b6c68594190521406c5b454b98933cbeba7d8f89df",
+    "tail_sha256": "7176d95d7bbce5cdef61b50e9950d765154acf9e5fcda10b864c1e803a2e29c5",
+    "symmetry": {
+      "original_dimensions": [
+        12,
+        12,
+        66,
+        66,
+        144
+      ],
+      "symmetry_dimensions": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        6,
+        9,
+        18,
+        18,
+        6,
+        9,
+        6,
+        9,
+        18,
+        18,
+        6,
+        9,
+        18,
+        18,
+        36,
+        36,
+        18,
+        18
+      ],
+      "parity_masks": [
+        819,
+        1365,
+        2457
+      ],
+      "alpha_charge_quotient": true
+    },
+    "many_body_states_enumerated": 0
+  },
+  "trials": [
+    {
+      "case": "baseline",
+      "accepted": true,
+      "directions": 0,
+      "lower_Ha": "-380764151731617449436918498428423/60000000000000000000000000000000",
+      "trial_wall_seconds": 1.9846012909983983,
+      "complete_at_seconds": 6.669085834000725,
+      "certificate_bytes": 40626
+    },
+    {
+      "case": "round_1_batch_1",
+      "accepted": true,
+      "directions": 4,
+      "lower_Ha": "-114226946444098034378707577130825448473400876603804621015923809/18000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 6.062728332995903,
+      "complete_at_seconds": 12.735303958994336,
+      "certificate_bytes": 45551
+    },
+    {
+      "case": "round_1_batch_2",
+      "accepted": true,
+      "directions": 8,
+      "lower_Ha": "-114224831886225110677057153166308936076907971644934953390383827/18000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 6.257948833001137,
+      "complete_at_seconds": 18.99384774999635,
+      "certificate_bytes": 49144
+    },
+    {
+      "case": "round_2_batch_1",
+      "accepted": true,
+      "directions": 12,
+      "lower_Ha": "-19036900277998146152458182269868899227641315284515906542818327/3000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 6.625251041994488,
+      "complete_at_seconds": 25.623924416999216,
+      "certificate_bytes": 51177
+    },
+    {
+      "case": "round_2_batch_2",
+      "accepted": true,
+      "directions": 16,
+      "lower_Ha": "-6345577534644279144296746492042534242127793028912956474084931/1000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 7.146944583000732,
+      "complete_at_seconds": 32.77147312499437,
+      "certificate_bytes": 54191
+    },
+    {
+      "case": "round_3_batch_1",
+      "accepted": true,
+      "directions": 20,
+      "lower_Ha": "-76143101185958321083048855804526934607382562676691380942959529/12000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 7.374670791999961,
+      "complete_at_seconds": 40.150587833995814,
+      "certificate_bytes": 55705
+    },
+    {
+      "case": "round_3_batch_2",
+      "accepted": true,
+      "directions": 24,
+      "lower_Ha": "-228418883692402111726785868569168619232892724072483086829248551/36000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 7.285942875001638,
+      "complete_at_seconds": 47.43765062499733,
+      "certificate_bytes": 60218
+    },
+    {
+      "case": "round_4_batch_1",
+      "accepted": true,
+      "directions": 28,
+      "lower_Ha": "-45680973078120854382529336147735543815070830295160093919958351/7200000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 7.793747916999564,
+      "complete_at_seconds": 55.235753417000524,
+      "certificate_bytes": 63500
+    },
+    {
+      "case": "round_4_batch_2",
+      "accepted": true,
+      "directions": 32,
+      "lower_Ha": "-57100389351415187926479235865276301474582228099115332616102367/9000000000000000000000000000000000000000000000000000000000000",
+      "trial_wall_seconds": 7.734235833995626,
+      "complete_at_seconds": 62.971038249997946,
+      "certificate_bytes": 67798
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "pricing": {
+        "seconds": 0.002311541000381112,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.007398839095173966,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.011518139187064836,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.007398839095289805,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.011518139187285732,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "from_case": "baseline",
+      "choices": [
+        {
+          "case": "round_1_batch_1",
+          "gain_Ha": "2299075387200452367972397701451526599123396195378984076191/18000000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 0.12772641040002514,
+          "gain_Ha_per_second": 2.1059451059447954e-05
+        },
+        {
+          "case": "round_1_batch_2",
+          "gain_Ha": "4413633260124154018396362217963923092028355065046609616173/18000000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 0.24520184778467521,
+          "gain_Ha_per_second": 3.9167995120935164e-05
+        }
+      ],
+      "selected": "round_1_batch_2"
+    },
+    {
+      "round": 2,
+      "pricing": {
+        "seconds": 0.0027486249964567833,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.008101903190217214,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.006464041965179123,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.008101903190152925,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.006464041965067754,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "from_case": "round_1_batch_2",
+      "choices": [
+        {
+          "case": "round_2_batch_1",
+          "gain_Ha": "686043647246752461611909419108142212015987567902826694773/3600000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 0.19056767979076458,
+          "gain_Ha_per_second": 2.875191450896386e-05
+        },
+        {
+          "case": "round_2_batch_2",
+          "gain_Ha": "4436262628086079715716309543319718607697124501736856855069/18000000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 0.2464590348936711,
+          "gain_Ha_per_second": 3.447127418250588e-05
+        }
+      ],
+      "selected": "round_2_batch_2"
+    },
+    {
+      "round": 3,
+      "pricing": {
+        "seconds": 0.0027532919993973337,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.00355943916120275,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.003411887211517061,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.0035594391612102667,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.0034118872117027254,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "from_case": "round_2_batch_2",
+      "choices": [
+        {
+          "case": "round_3_batch_1",
+          "gain_Ha": "3829229773028648512102099983476298150953670264096746059643/12000000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 0.3191024810857207,
+          "gain_Ha_per_second": 4.325391592680854e-05
+        },
+        {
+          "case": "round_3_batch_2",
+          "gain_Ha": "4381510958387493579401028872522696741564993676669247561793/7200000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 0.6085431886649296,
+          "gain_Ha_per_second": 8.349136453513568e-05
+        }
+      ],
+      "selected": "round_3_batch_2"
+    },
+    {
+      "round": 4,
+      "pricing": {
+        "seconds": 0.0025937500031432137,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.0015402632753157269,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.0020071787421828196,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.0015402632743641929,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 63,
+            "minimum_proposed_moment": -0.002007178744846834,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "from_case": "round_3_batch_2",
+      "choices": [
+        {
+          "case": "round_4_batch_1",
+          "gain_Ha": "389397272162217059421884180302782153849238796739367484911/1000000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 0.38939727216221703,
+          "gain_Ha_per_second": 4.9946152797574905e-05
+        },
+        {
+          "case": "round_4_batch_2",
+          "gain_Ha": "5775428913786673622975036021137778187937225340585454946361/12000000000000000000000000000000000000000000000000000000000000",
+          "gain_mHa": 0.48128574281555614,
+          "gain_Ha_per_second": 6.220710144772302e-05
+        }
+      ],
+      "selected": "round_4_batch_2"
+    }
+  ],
+  "best_case": "round_4_batch_2",
+  "complete": true,
+  "elapsed_seconds": 62.972446125000715,
+  "continuation_case": "round_4_batch_2",
+  "stop": "round_budget"
+}

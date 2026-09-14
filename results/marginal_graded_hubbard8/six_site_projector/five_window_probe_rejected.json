@@ -1,0 +1,219 @@
+{
+  "kind": "five_window_overlap_probe_v1",
+  "windows": 5,
+  "block_sites": 6,
+  "column_count": 1280,
+  "maximum_sector_dimension": 341,
+  "numerical_sum_maximum": 1.2198219122052283,
+  "rational_ceiling": "1.219821913",
+  "average_fidelity_ceiling": 0.24396438260000003,
+  "accepted_m4_average_ceiling": 0.5424350565,
+  "improvement_over_m4": 0.2984706739,
+  "seconds": 5.21578720800062,
+  "source_sha256": "936b0895439a610dc14bf04ef79cae6b6778dc5dae62fa3a29b15b9340cb4778",
+  "sectors": [
+    {
+      "sector": [
+        3,
+        3
+      ],
+      "dimension": 341,
+      "maximum": 1.2198219122052283
+    },
+    {
+      "sector": [
+        3,
+        4
+      ],
+      "dimension": 112,
+      "maximum": 1.2046493931719457
+    },
+    {
+      "sector": [
+        3,
+        5
+      ],
+      "dimension": 34,
+      "maximum": 1.1778562677259587
+    },
+    {
+      "sector": [
+        3,
+        6
+      ],
+      "dimension": 8,
+      "maximum": 1.1244842603178704
+    },
+    {
+      "sector": [
+        3,
+        7
+      ],
+      "dimension": 1,
+      "maximum": 1.0
+    },
+    {
+      "sector": [
+        4,
+        3
+      ],
+      "dimension": 112,
+      "maximum": 1.2046493931719457
+    },
+    {
+      "sector": [
+        4,
+        4
+      ],
+      "dimension": 180,
+      "maximum": 1.2046493931719457
+    },
+    {
+      "sector": [
+        4,
+        5
+      ],
+      "dimension": 92,
+      "maximum": 1.1778562677259587
+    },
+    {
+      "sector": [
+        4,
+        6
+      ],
+      "dimension": 28,
+      "maximum": 1.1244842603178704
+    },
+    {
+      "sector": [
+        4,
+        7
+      ],
+      "dimension": 4,
+      "maximum": 1.0
+    },
+    {
+      "sector": [
+        5,
+        3
+      ],
+      "dimension": 34,
+      "maximum": 1.1778562677259587
+    },
+    {
+      "sector": [
+        5,
+        4
+      ],
+      "dimension": 92,
+      "maximum": 1.1778562677259587
+    },
+    {
+      "sector": [
+        5,
+        5
+      ],
+      "dimension": 88,
+      "maximum": 1.1778562677259587
+    },
+    {
+      "sector": [
+        5,
+        6
+      ],
+      "dimension": 36,
+      "maximum": 1.1244842603178704
+    },
+    {
+      "sector": [
+        5,
+        7
+      ],
+      "dimension": 6,
+      "maximum": 1.0
+    },
+    {
+      "sector": [
+        6,
+        3
+      ],
+      "dimension": 8,
+      "maximum": 1.1244842603178704
+    },
+    {
+      "sector": [
+        6,
+        4
+      ],
+      "dimension": 28,
+      "maximum": 1.1244842603178704
+    },
+    {
+      "sector": [
+        6,
+        5
+      ],
+      "dimension": 36,
+      "maximum": 1.1244842603178704
+    },
+    {
+      "sector": [
+        6,
+        6
+      ],
+      "dimension": 20,
+      "maximum": 1.1244842603178704
+    },
+    {
+      "sector": [
+        6,
+        7
+      ],
+      "dimension": 4,
+      "maximum": 1.0
+    },
+    {
+      "sector": [
+        7,
+        3
+      ],
+      "dimension": 1,
+      "maximum": 1.0
+    },
+    {
+      "sector": [
+        7,
+        4
+      ],
+      "dimension": 4,
+      "maximum": 1.0
+    },
+    {
+      "sector": [
+        7,
+        5
+      ],
+      "dimension": 6,
+      "maximum": 1.0
+    },
+    {
+      "sector": [
+        7,
+        6
+      ],
+      "dimension": 4,
+      "maximum": 1.0
+    },
+    {
+      "sector": [
+        7,
+        7
+      ],
+      "dimension": 1,
+      "maximum": 1.0
+    }
+  ],
+  "scope": "Numerical-only low-rank Gram probe; no exact PSD certificate or physical conclusion.",
+  "accepted": false,
+  "rejection": "Incorrect spin-sector assignment counted only sites through the projector right edge, omitting the right environment. Nonorthogonal columns were falsely separated, invalidating the claimed spectral ceiling. Corrected numerical probe and independent exact production replay supersede this output."
+}

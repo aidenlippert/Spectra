@@ -1,0 +1,43 @@
+[
+  {
+    "round": 0,
+    "active_atoms": 92,
+    "search_seconds": 0.011159625020809472,
+    "status": "Optimal",
+    "phase_one_l1": 0.0,
+    "exact_receipt": {
+      "complement_lower": "-14",
+      "weight_positivity": {
+        "lower": "44999531/50000000000",
+        "residual_l1": "469/50000000000",
+        "positive_indicators": 8,
+        "charge_indicators": 8,
+        "number_multiplier_terms": 41
+      },
+      "numerator_positivity": {
+        "lower": "99634699/1000000000000",
+        "residual_l1": "365301/1000000000000",
+        "positive_indicators": 17,
+        "charge_indicators": 12,
+        "number_multiplier_terms": 70
+      },
+      "compilation": {
+        "polynomial_products": 153,
+        "coefficient_products": 807,
+        "peak_terms": 43,
+        "occupation_endpoint_evaluations": 0,
+        "metric_scale": 2000000000,
+        "numerator_scale": 2000000000,
+        "weight_terms": 13,
+        "numerator_terms": 77,
+        "numerator_degree": 4,
+        "transition_groups": 12,
+        "determinant_actions": 0,
+        "target_valence_exclusion": true,
+        "projector_free_zero_metric": true
+      },
+      "verification_coefficient_products": 1552,
+      "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+    }
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "name": "h6_low32_spectral_independent_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-m",
+    "research.certificate_scaling.wedge_spectral_bound",
+    "--certificate",
+    "results/reconstruction_compression_20260914/candidates/h6_actual_low_32/certificate.json",
+    "--proof",
+    "results/reconstruction_compression_20260914/candidates/h6_actual_low_32/spectral/witness.json",
+    "--out",
+    "results/reconstruction_compression_20260914/candidates/h6_actual_low_32/spectral_replay"
+  ],
+  "timeout_seconds": 90,
+  "status": "passed",
+  "started_UTC": "2026-09-14T08:22:02.131983+00:00",
+  "pid": 35969,
+  "exit_code": 0,
+  "wall_seconds": 5.607958124994184,
+  "child_user_seconds": 5.505503,
+  "child_system_seconds": 0.047347,
+  "peak_child_RSS_bytes": 92848128,
+  "finished_UTC": "2026-09-14T08:22:07.740332+00:00"
+}

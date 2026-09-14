@@ -1,0 +1,121 @@
+{
+  "closure": {
+    "six_mode_allowed_closure": {
+      "terms": 23,
+      "degree6_terms": 5,
+      "max_degree": 6,
+      "quartic_truncation_L1_operator_penalty": "23/147"
+    },
+    "four_mode_resonant_example": {
+      "U": "5/2",
+      "epsilon": "1/4",
+      "positive_factors": 8,
+      "lower_Ha": "-7/104",
+      "base_Ha": "-1/104",
+      "residual_L1_Ha": "3/52",
+      "full_CAR_residual_terms": 10,
+      "exact_ground_energy_formula": "((4+U)-sqrt((4+U)^2+4*epsilon^2))/2; all other diagonal sectors nonnegative"
+    },
+    "scope": "Exact toy mechanism and closure, not a molecular ground-energy certificate."
+  },
+  "cases": {
+    "h6": {
+      "fixture_sha256": "99b91888d68ba7ea1d43c0b6c68594190521406c5b454b98933cbeba7d8f89df",
+      "chemical_potential": "86632924249/1000000000000",
+      "weights": [
+        "79962864701/200000000000",
+        "79962864701/200000000000",
+        "79973734207/250000000000",
+        "79973734207/250000000000",
+        "96355134839/500000000000",
+        "96355134839/500000000000",
+        "96355134839/500000000000",
+        "96355134839/500000000000",
+        "196982980411/500000000000",
+        "196982980411/500000000000",
+        "11474282509/20000000000",
+        "11474282509/20000000000"
+      ],
+      "pair_density_terms": 66,
+      "attractive_pairs": 36,
+      "flow": {
+        "feasible": false,
+        "flow_Ha": "2072809885961/500000000000",
+        "required_Ha": "2446676069303/250000000000",
+        "cut_capacity_Ha": "2072809885961/500000000000",
+        "subset": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "subset_required_Ha": "2446676069303/250000000000",
+        "subset_capacity_Ha": "2072809885961/500000000000",
+        "subset_deficit_Ha": "564108450529/100000000000",
+        "allocation": null
+      },
+      "scope": "Restricted PH attractive-density parent family; positive U dropped, remaining offdiagonal H not tested by this cut."
+    },
+    "h8": {
+      "fixture_sha256": "22905765c6591d88acb76653755c364a78d7ed8024df4893f0400f1ec91b0edf",
+      "chemical_potential": "36042216223/400000000000",
+      "weights": [
+        "815021769219/2000000000000",
+        "815021769219/2000000000000",
+        "716760009877/2000000000000",
+        "716760009877/2000000000000",
+        "22160468477/80000000000",
+        "22160468477/80000000000",
+        "335382022061/2000000000000",
+        "335382022061/2000000000000",
+        "335382022061/2000000000000",
+        "335382022061/2000000000000",
+        "650589233893/2000000000000",
+        "650589233893/2000000000000",
+        "966056496383/2000000000000",
+        "966056496383/2000000000000",
+        "1210797077241/2000000000000",
+        "1210797077241/2000000000000"
+      ],
+      "pair_density_terms": 120,
+      "attractive_pairs": 64,
+      "flow": {
+        "feasible": false,
+        "flow_Ha": "279200017133/50000000000",
+        "required_Ha": "7333234450117/500000000000",
+        "cut_capacity_Ha": "279200017133/50000000000",
+        "subset": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "subset_required_Ha": "7333234450117/500000000000",
+        "subset_capacity_Ha": "279200017133/50000000000",
+        "subset_deficit_Ha": "4541234278787/500000000000",
+        "allocation": null
+      },
+      "scope": "Restricted PH attractive-density parent family; positive U dropped, remaining offdiagonal H not tested by this cut."
+    }
+  }
+}

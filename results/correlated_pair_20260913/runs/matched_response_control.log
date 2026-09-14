@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/response_control.py", line 32, in <module>
+    if __name__=='__main__':run()
+                            ^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/response_control.py", line 15, in run
+    b=L-F(2,10**6);build=time.monotonic();cert,discovery=gp.propose(data,tail,b,F(1,10**6));rec=gp.check(data,tail,cert)
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/research/global_response_20260913/global_program.py", line 105, in propose
+    start=time.monotonic();fg,fs=spatial_gap.propose(data,tail,data['modes']//2-1);jg,js=joint.propose_gap(data,tail)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/research/composable_response_20260913/spatial_gap.py", line 57, in propose
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

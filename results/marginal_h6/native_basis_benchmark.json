@@ -1,0 +1,26 @@
+{
+  "kind": "native_basis_matched_first_lp_diagnostic_v1",
+  "basis_free_initial_state_sha256": "f40cde8cbbd3b9e768c6fa5a445614f89fd4be9325dc949206c5160cfcd96197",
+  "matching_initial_state_verified": true,
+  "blocks": [
+    {
+      "dimension": 200,
+      "initial_atoms": 8867,
+      "initial_pairs": 6965,
+      "warm_first_lp_seconds": 15.167385125067085,
+      "cold_first_lp_seconds": 64.15894650004338,
+      "cold_over_warm_ratio": 4.230059827122615,
+      "first_numerical_primal_threshold_difference": 2.8674307372966723e-10
+    },
+    {
+      "dimension": 168,
+      "initial_atoms": 9563,
+      "initial_pairs": 5604,
+      "warm_first_lp_seconds": 19.44723399996292,
+      "cold_first_lp_seconds": 62.48328649997711,
+      "cold_over_warm_ratio": 3.2129652216914883,
+      "first_numerical_primal_threshold_difference": 1.5784440421384716e-10
+    }
+  ],
+  "scope": "Single paired run on identical initial H/P/metric/dictionary models, with saved basis present or omitted. Compares first LP solve only. Later pricing paths and round budgets differ; concurrent workloads and timing variability preclude a general end-to-end speedup or scaling claim."
+}

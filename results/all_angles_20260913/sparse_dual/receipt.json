@@ -1,0 +1,23 @@
+{
+  "hypothesis": "Adaptive local quadratic blocks retain a sparse interaction graph while exact replay preserves the lower bound.",
+  "falsifier": "A malformed factor must be rejected; a future H6/H10 run falsifies scaling if block support or full pricing grows superlinearly.",
+  "source": "/Users/aidenlippert/Documents/Spectra/results/certificate_scaling/active_space_ladder/h4/fixture.json",
+  "method": "Hamiltonian-only direct H-ranked sparse quadratic LP (64-atom family)",
+  "baseline_provenance": "The paired 512 run is a larger512-atomLP, not the full quadratic PSD/SOS cone.",
+  "blocks": 21,
+  "block_word_count": 25,
+  "unique_words": 21,
+  "interaction_edges": 4,
+  "max_block_order": 2,
+  "factor_nonzeros": 25,
+  "exact_replay": {
+    "lower_float": -14.023370436342,
+    "residual_l1_float": 10.425057205342
+  },
+  "corrupt_replay": {
+    "accepted": false,
+    "error": "ValueError"
+  },
+  "wall_seconds": 1.5837739580019843,
+  "scope": "Frozen rational H4 Hamiltonian; discovery cost and omitted-family optimality are not certified."
+}

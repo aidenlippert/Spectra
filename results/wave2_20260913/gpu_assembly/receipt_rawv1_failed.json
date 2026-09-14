@@ -1,0 +1,25 @@
+{
+  "n": 24576,
+  "terms": 7150,
+  "denominator": 1000000000000,
+  "sum_abs_integer_coeff": 223317261991802,
+  "matrix_nnz": 8716230,
+  "shape": [
+    24576,
+    24576
+  ],
+  "cold_jit_assemble_seconds": 4.1236863330050255,
+  "warm_assemble_seconds": [
+    0.6603655930011882,
+    0.6589817639978719,
+    0.6582149579990073
+  ],
+  "gpu_memory_bytes": 3938648064,
+  "host_transfer_bytes": 104693068,
+  "cpu_csr_match": false,
+  "gpu_csr_sha256": "dc6a4bc5df7a7e8a336b21a157720af19d7a35d07b1be081fdcfb3f59c6b89e8",
+  "cpu_csr_sha256": "8d374159099797b0ec3df19dc3a15a205e928cef75a33891f88d02c470b8d5ec",
+  "fixture_path": "/home/ubuntu/spectra-wave2-20260913/gpu/src/h10.json",
+  "basis_source": "/home/ubuntu/spectra-wave2-20260913/gpu/src/h10_ref.json",
+  "cpu_source": "/home/ubuntu/spectra-wave2-20260913/gpu/results/h10_csr.npz"
+}

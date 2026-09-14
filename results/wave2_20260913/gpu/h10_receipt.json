@@ -1,0 +1,41 @@
+{
+  "n": 24576,
+  "nnz": 8716230,
+  "assembly_seconds": 20.306675038998947,
+  "transfer_times": [
+    0.010412195995741058,
+    0.011324390994559508,
+    0.009193659003358334
+  ],
+  "cpu_times": [
+    1.048585775999527,
+    1.0512823009994463,
+    1.0494413739943411
+  ],
+  "gpu_times": [
+    0.04386059199896408,
+    0.04479860799619928,
+    0.04483174900087761
+  ],
+  "cpu_median": 1.0494413739943411,
+  "gpu_median": 0.04479860799619928,
+  "cpu_energy": -12.368219751779606,
+  "gpu_energy": -12.368219751779566,
+  "energy_absdiff": 3.907985046680551e-14,
+  "cpu_residual": 1.6540277307502966e-10,
+  "gpu_residual": 3.347063867082755e-14,
+  "csr_sha256": "8131012654173e2b82dda6621077984ced8fb107659455d463c50230dc29fe36",
+  "witness_sha256": "8afd97c204fb84324c6af9b076fef235bba09dd47b884f14a2a2814c29305542",
+  "upper": "-1236821975176897518778073497681083201/99999999999914379720248500000000000",
+  "upper_stats": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 24576,
+    "hamiltonian_terms": 7150,
+    "word_state_checks": 175718400,
+    "contributing_word_state_pairs": 13982832,
+    "action_cache_states": 0,
+    "replay_seconds": 15.190151338996657,
+    "upper": "-1236821975176897518778073497681083201/99999999999914379720248500000000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  }
+}

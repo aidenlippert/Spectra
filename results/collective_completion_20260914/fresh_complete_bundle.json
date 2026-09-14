@@ -1,0 +1,60 @@
+{
+  "lower_Ha": "-14661182053175413159/3000000000000000000",
+  "upper_Ha": "-20493481/4194304",
+  "width_Ha": "49635049292938669/48000000000000000000",
+  "width_mHa": 1.0340635269362222,
+  "target_1p6mHa_met": true,
+  "upper": {
+    "method": "outward_binary64_charge_MPS_v1",
+    "fixture_sha256": "372daf1ba21e63657ed49a1e2e44faab2e2e17786dc3ddb045647a0997b90ef4",
+    "state_sha256": "aa48c577f49cf2999d58c98e7fb5554983f4f4f268ca5218ddbb1dd54f731cc3",
+    "endpoint_Ha": "-20493481/4194304",
+    "norm_enclosure": [
+      "4503599627302301/4503599627370496",
+      "4503599627306553/4503599627370496"
+    ],
+    "endpoint_inequality_enclosure": [
+      "4611454711889919/604462909807314587353088",
+      "4621803972460545/604462909807314587353088"
+    ],
+    "transfer_steps": 5320,
+    "enclosure_seconds": 0.6558343749929918,
+    "arithmetic": "IEEE-754 binary64; adjacent outward bounds after every addition and multiplication; fastmath=False",
+    "status": "certified_upper",
+    "total_seconds": 0.655839749990264
+  },
+  "lower": {
+    "lower": "-14661182053175413159/3000000000000000000",
+    "lower_float": -4.8870606843918045,
+    "residual_l1": "497402413159/3000000000000000000",
+    "residual_l1_float": 1.6580080438633334e-07,
+    "multiplier_terms": 37,
+    "square_polynomial_terms": 919,
+    "residual_terms": 919,
+    "residual_max_degree": 4,
+    "mode_count": 12,
+    "particle_number": 6,
+    "factor_rows": 726,
+    "factor_nonzeros": 63348,
+    "kind": "balanced_spin_sos_v1",
+    "original_H_spin_defect_Ha": "21/500000000000",
+    "balanced_spin_counts": [
+      3,
+      3
+    ],
+    "valid_on": "Entire fixed-N sector",
+    "lifting": "Exact SU(2) projection, every even-N multiplet meets M_S=0, original-H coefficient-norm perturbation",
+    "many_body_states_enumerated": 0,
+    "replay_seconds": 7.608342042003642
+  },
+  "source_endpoint_allowance_Ha": "8689861015387248905742037386684311700331671410698843803974838296719934758088274381050296916738564436604105124357235903697460486338988356923967238318637043981254855695184607099969365901/1137777777761086005782616927652196641545568862308724152802183214072387098843515129969522437562095356558289381281186023848165292583531758968726998641656336850797295041178005441424384000000000000",
+  "total_replay_seconds": 8.280297833989607,
+  "all_input_sha256": {
+    "results/collective_completion_20260914/transfer/fixture/fixture.json": "b0353a41acb405a2d9c32357b025669b380d694877f5b6cf1de6af0fae9b0151",
+    "results/collective_completion_20260914/transfer/mps/state.json": "0103dd6c6d5ca63b4fa4bbb367c64f5173fcdceab5f4279677a0462bb9bf2664",
+    "results/collective_completion_20260914/candidates/fresh_h6_2p23_spin_r32/round_1/certificate.json": "2220de8ef88f64415ee3d37a046fefc54b40e9bfdbbf0b8ee0f5aa119a3370f2",
+    "results/collective_completion_20260914/transfer/mps/exact_upper.json": "1bfee874b5280eca10334a78595e8b4f1f4bad14a1c21f7d6a182d95cfcd9d4e"
+  },
+  "lower_full_determinant_enumeration": false,
+  "inherited_full_cubic_proof_used": false
+}

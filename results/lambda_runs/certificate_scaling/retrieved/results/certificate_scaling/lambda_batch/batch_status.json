@@ -1,0 +1,181 @@
+{
+  "wall_seconds": 42.85492791799999,
+  "jobs": [
+    {
+      "returncode": 0,
+      "status": "finished",
+      "name": "h4_gpu",
+      "command": [
+        "research/certificate_scaling/low_rank_compression.py",
+        "--campaign",
+        "--fixture",
+        "results/marginal_molecule_stress/h4_square_degree3_certificate.json",
+        "--outputdir",
+        "results/certificate_scaling/lambda_batch/h4_gpu",
+        "--backend",
+        "cupy"
+      ],
+      "timeout_seconds": 180,
+      "wall_seconds": 5.57372428900004
+    },
+    {
+      "returncode": 0,
+      "status": "finished",
+      "name": "h4_cpu",
+      "command": [
+        "research/certificate_scaling/low_rank_compression.py",
+        "--campaign",
+        "--fixture",
+        "results/marginal_molecule_stress/h4_square_degree3_certificate.json",
+        "--outputdir",
+        "results/certificate_scaling/lambda_batch/h4_cpu",
+        "--backend",
+        "numpy"
+      ],
+      "timeout_seconds": 180,
+      "wall_seconds": 4.672637253000005
+    },
+    {
+      "returncode": 0,
+      "status": "finished",
+      "name": "heldout_gpu",
+      "command": [
+        "research/certificate_scaling/low_rank_compression.py",
+        "--campaign",
+        "--fixture",
+        "results/marginal_molecule_stress/accepted_degree3_certificate.json",
+        "--outputdir",
+        "results/certificate_scaling/lambda_batch/heldout_gpu",
+        "--backend",
+        "cupy"
+      ],
+      "timeout_seconds": 180,
+      "wall_seconds": 4.271828408999966
+    },
+    {
+      "returncode": 0,
+      "status": "finished",
+      "name": "locality_gpu",
+      "command": [
+        "research/certificate_scaling/locality_compression.py",
+        "--sites",
+        "8",
+        "16",
+        "32",
+        "64",
+        "--clusters",
+        "2",
+        "3",
+        "4",
+        "--couplings",
+        "0",
+        "1",
+        "2",
+        "4",
+        "8",
+        "--global-max-sites",
+        "0",
+        "--backend",
+        "cupy",
+        "--output",
+        "results/certificate_scaling/lambda_batch/locality_gpu.json"
+      ],
+      "timeout_seconds": 180,
+      "wall_seconds": 6.474779403000014
+    },
+    {
+      "returncode": 0,
+      "status": "finished",
+      "name": "sparse_factors",
+      "command": [
+        "-S",
+        "research/certificate_scaling/sparse_factor_campaign.py",
+        "--fixture",
+        "results/marginal_molecule_stress/h4_square_degree3_certificate.json",
+        "--outputdir",
+        "results/certificate_scaling/lambda_batch/sparse_factors"
+      ],
+      "timeout_seconds": 180,
+      "wall_seconds": 8.126677583999992
+    },
+    {
+      "returncode": 0,
+      "status": "finished",
+      "name": "ideal_repair_8",
+      "command": [
+        "research/certificate_scaling/ideal_repair.py",
+        "--input",
+        "results/certificate_scaling/lambda_batch/h4_gpu/rank_8.json",
+        "--output",
+        "results/certificate_scaling/lambda_batch/ideal_rank_8.json",
+        "--receipt",
+        "results/certificate_scaling/lambda_batch/ideal_rank_8_receipt.json"
+      ],
+      "timeout_seconds": 180,
+      "wall_seconds": 3.0189577670000176
+    },
+    {
+      "returncode": 0,
+      "status": "finished",
+      "name": "ideal_repair_32",
+      "command": [
+        "research/certificate_scaling/ideal_repair.py",
+        "--input",
+        "results/certificate_scaling/lambda_batch/h4_gpu/rank_32.json",
+        "--output",
+        "results/certificate_scaling/lambda_batch/ideal_rank_32.json",
+        "--receipt",
+        "results/certificate_scaling/lambda_batch/ideal_rank_32_receipt.json"
+      ],
+      "timeout_seconds": 180,
+      "wall_seconds": 3.420193870999981
+    },
+    {
+      "returncode": 0,
+      "status": "finished",
+      "name": "ideal_repair_64",
+      "command": [
+        "research/certificate_scaling/ideal_repair.py",
+        "--input",
+        "results/certificate_scaling/lambda_batch/h4_gpu/rank_64.json",
+        "--output",
+        "results/certificate_scaling/lambda_batch/ideal_rank_64.json",
+        "--receipt",
+        "results/certificate_scaling/lambda_batch/ideal_rank_64_receipt.json"
+      ],
+      "timeout_seconds": 180,
+      "wall_seconds": 3.8718914539999787
+    },
+    {
+      "returncode": 0,
+      "status": "finished",
+      "name": "structured_replay",
+      "command": [
+        "-S",
+        "research/certificate_scaling/full_residual_replay.py",
+        "results/certificate_scaling/lambda_batch/ideal_rank_8.json",
+        "results/certificate_scaling/lambda_batch/ideal_rank_32.json",
+        "results/certificate_scaling/lambda_batch/ideal_rank_64.json",
+        "--output",
+        "results/certificate_scaling/lambda_batch/structured_replay.json"
+      ],
+      "timeout_seconds": 180,
+      "wall_seconds": 3.41972754599999
+    },
+    {
+      "returncode": 0,
+      "status": "finished",
+      "name": "pricing_m6",
+      "command": [
+        "-m",
+        "research.certificate_scaling.operator_pricing_sos",
+        "--modes",
+        "6",
+        "--budget",
+        "2"
+      ],
+      "timeout_seconds": 300,
+      "wall_seconds": 13.140032948999988
+    }
+  ]
+}

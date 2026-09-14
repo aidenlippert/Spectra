@@ -1,0 +1,43 @@
+[
+  {
+    "round": 17,
+    "active_atoms": 4148,
+    "search_seconds": 24.869457332999445,
+    "status": "Optimal",
+    "phase_one_l1": -7.2076142767745e-13,
+    "exact_receipt": {
+      "complement_lower": "-14",
+      "weight_positivity": {
+        "lower": "44998795183/50000000000000",
+        "residual_l1": "1204817/50000000000000",
+        "positive_indicators": 1624,
+        "charge_indicators": 418,
+        "number_multiplier_terms": 8386
+      },
+      "numerator_positivity": {
+        "lower": "1239247257/12500000000000",
+        "residual_l1": "10752743/12500000000000",
+        "positive_indicators": 3376,
+        "charge_indicators": 1260,
+        "number_multiplier_terms": 9862
+      },
+      "compilation": {
+        "polynomial_products": 16121,
+        "coefficient_products": 219463,
+        "peak_terms": 5469,
+        "occupation_endpoint_evaluations": 0,
+        "metric_scale": 2000000000000,
+        "numerator_scale": 2000000000000,
+        "weight_terms": 1301,
+        "numerator_terms": 10017,
+        "numerator_degree": 6,
+        "transition_groups": 28,
+        "determinant_actions": 0,
+        "target_valence_exclusion": true,
+        "projector_free_zero_metric": true
+      },
+      "verification_coefficient_products": 488048,
+      "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+    }
+  }
+]

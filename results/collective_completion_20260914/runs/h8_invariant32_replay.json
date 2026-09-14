@@ -1,0 +1,25 @@
+{
+  "name": "h8_invariant32_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-m",
+    "research.collective_completion_20260914.spin_screen",
+    "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "results/collective_completion_20260914/candidates/h8_spin_r32_invariant/round_0/certificate.json",
+    "results/collective_completion_20260914/candidates/h8_spin_r1_nonsinglet/round_0/certificate.json",
+    "results/collective_completion_20260914/candidates/h8_spin_r32_invariant/round_0/interval.json",
+    "--upper",
+    "results/correlated_pair_20260913/mps/h8_spatial_warm144/interval.json"
+  ],
+  "timeout_seconds": 120,
+  "status": "passed",
+  "started_UTC": "2026-09-14T19:25:41.171381+00:00",
+  "pid": 36538,
+  "exit_code": 0,
+  "wall_seconds": 32.56894500000635,
+  "child_user_seconds": 31.166875,
+  "child_system_seconds": 0.317119,
+  "peak_child_RSS_bytes": 135790592,
+  "finished_UTC": "2026-09-14T19:26:13.740900+00:00"
+}

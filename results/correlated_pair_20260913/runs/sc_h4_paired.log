@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/self_consistent/run_builder.py", line 11, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/self_consistent/run_builder.py", line 9, in main
+    f=json.loads(a.fixture.read_text()); cert,rec=paired_cubic_certificate(f); a.out.mkdir(parents=True,exist_ok=True); (a.out/'certificate.json').write_text(json.dumps(cert,separators=(',',':'))+'\n'); (a.out/'receipt.json').write_text(json.dumps(rec,indent=2)+'\n'); print(json.dumps(rec,indent=2))
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/self_consistent/builder.py", line 29, in paired_cubic_certificate
+    linear=((0,i),); cubic=canonical(((1,j),(0,k),(0,i)))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/experiments/marginal_symbolic.py", line 37, in canonical
+    for w,v in product(p, {(): 1}).items()}
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/experiments/marginal_symbolic.py", line 25, in product
+    for left, a in p.items():
+                   ^^^^^^^
+AttributeError: 'tuple' object has no attribute 'items'

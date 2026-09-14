@@ -1,0 +1,36 @@
+/home/ubuntu/spectra-venv/lib/python3.10/site-packages/cvxpy/problems/problem.py:164: UserWarning: Constraint #365 contains too many subexpressions. Consider vectorizing your CVXPY code to speed up compilation.
+  warnings.warn(f"Constraint #{i} contains too many subexpressions. "
+/home/ubuntu/spectra-venv/lib/python3.10/site-packages/cvxpy/problems/problem.py:1504: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  warnings.warn(
+{
+  "lower": "-34079227336071/1000000000000",
+  "lower_float": -34.079227336071,
+  "residual_l1": "26532097895071/1000000000000",
+  "residual_l1_float": 26.532097895071,
+  "multiplier_terms": 37,
+  "square_polynomial_terms": 283,
+  "residual_terms": 919,
+  "residual_max_degree": 4,
+  "mode_count": 12,
+  "particle_number": 6,
+  "factor_rows": 581,
+  "factor_nonzeros": 1005,
+  "word_pair_candidates_scanned": 14718,
+  "nonzero_H_overlap_pairs": 2562,
+  "monomial_candidates": 300,
+  "retained_atoms": 1024,
+  "method": "direct_H_pair_SDP_l1",
+  "budget": 1024,
+  "pair_blocks": 362,
+  "singleton_blocks": 300,
+  "coefficient_rows": 2107,
+  "max_degree": 4,
+  "gram_scalar_variables": 1748,
+  "build_seconds": 1.567623623000003,
+  "solve_seconds": 2.949881490999985,
+  "wall_seconds": 4.601802165000009,
+  "certificate_bytes": 110693,
+  "source_factors_used": false,
+  "source_upper_used": false,
+  "sdp_status": "optimal_inaccurate"
+}

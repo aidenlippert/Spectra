@@ -1,0 +1,26 @@
+/home/ubuntu/spectra-venv/lib/python3.10/site-packages/cvxpy/problems/problem.py:1504: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  warnings.warn(
+{"modes": 12, "particles": 6, "spin_parity_masks": [819, 3276], "Gram_entries": 56996, "coefficient_rows": 9419, "gram_map_nonzeros": 391588, "polynomial_word_pair_products": 246590, "ideal_variables": 499, "basis_seconds": 0.501682931000687, "construction_seconds": 17.21185464500013, "solver": "CLARABEL", "solver_seconds_budget": 120.0, "source_factors_used": false, "source_upper_used": false, "scope": "Invariant SOS in full chosen mixed-cubic word span. Original H retained; full exact residual is charged. No fixed-accuracy scaling theorem.", "status": "user_limit", "numeric_lower": -5.64703103620592, "raw_b": -5.455789310525044, "negative_eigenvalue_mass": 0.4037226289837127, "solve_seconds": 156.91550988100062, "export_seconds": 10.892468797999754, "wall_seconds": 185.01983357800054, "exact": {"lower": "-1690364073704714527/125000000000000000", "lower_float": -13.522912589637716, "residual_l1": "1008390409889089527/125000000000000000", "residual_l1_float": 8.067123279112716, "multiplier_terms": 919, "square_polynomial_terms": 9419, "residual_terms": 9419, "residual_max_degree": 6, "mode_count": 12, "particle_number": 6, "factor_rows": 770, "factor_nonzeros": 87414}, "certificate_bytes": 923963}
+	Command being timed: "/home/ubuntu/spectra-venv/bin/python -m research.certificate_scaling.spin_invariant_discovery --fixture results/certificate_scaling/active_space_ladder/h6/fixture.json --out results/h6_clarabel --solver CLARABEL --seconds 120"
+	User time (seconds): 1257.47
+	System time (seconds): 42.15
+	Percent of CPU this job got: 697%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:06.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 13338712
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4504760
+	Voluntary context switches: 2007484
+	Involuntary context switches: 1105696
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 2016
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

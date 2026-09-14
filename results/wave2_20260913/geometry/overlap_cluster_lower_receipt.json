@@ -1,0 +1,271 @@
+[
+  {
+    "variant": "H4_disjoint4",
+    "fixture": "results/certificate_scaling/active_space_ladder/h4/fixture.json",
+    "fixture_sha256": "8e64505deb4cc06a87f75e669b0f3073d15ebca72daa6d086e06eeea0b0f5120",
+    "clusters": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        6,
+        7
+      ],
+      []
+    ],
+    "max_cluster_width": 4,
+    "assigned_terms": 28,
+    "total_terms": 184,
+    "omitted_residual_l1_exact": "7923667790267/500000000000",
+    "block_cost": [
+      {
+        "cluster": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "terms": 14,
+        "dimension": 16,
+        "gershgorin_lower_exact": "-3525719766889/1000000000000"
+      },
+      {
+        "cluster": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "terms": 14,
+        "dimension": 16,
+        "gershgorin_lower_exact": "-44401947857/20000000000"
+      },
+      {
+        "cluster": [],
+        "terms": 0,
+        "dimension": 1,
+        "gershgorin_lower_exact": "0"
+      }
+    ],
+    "all_blocks_hermitian": true,
+    "sum_block_lower_exact": "-5745817159739/1000000000000",
+    "global_lower_exact": "-21593152740273/1000000000000",
+    "global_lower": -21.593152740273,
+    "assignment": "first fitting cluster, weight 1; fitting clusters receive zero weight; nonfitting words charged L1"
+  },
+  {
+    "variant": "H4_overlap6",
+    "fixture": "results/certificate_scaling/active_space_ladder/h4/fixture.json",
+    "fixture_sha256": "8e64505deb4cc06a87f75e669b0f3073d15ebca72daa6d086e06eeea0b0f5120",
+    "clusters": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    ],
+    "max_cluster_width": 6,
+    "assigned_terms": 108,
+    "total_terms": 184,
+    "omitted_residual_l1_exact": "1707765065373/250000000000",
+    "block_cost": [
+      {
+        "cluster": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "terms": 61,
+        "dimension": 64,
+        "gershgorin_lower_exact": "-3778526364757/1000000000000"
+      },
+      {
+        "cluster": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "terms": 47,
+        "dimension": 64,
+        "gershgorin_lower_exact": "-1870131315389/1000000000000"
+      }
+    ],
+    "all_blocks_hermitian": true,
+    "sum_block_lower_exact": "-2824328840073/500000000000",
+    "global_lower_exact": "-6239858970819/500000000000",
+    "global_lower": -12.479717941638,
+    "assignment": "first fitting cluster, weight 1; fitting clusters receive zero weight; nonfitting words charged L1"
+  },
+  {
+    "variant": "H6_disjoint4",
+    "fixture": "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "fixture_sha256": "ea50a4ab19a353bc89691bb344fcf8d610f74e1c2c76bf07c6869be2b24dbec8",
+    "clusters": [
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10,
+        11
+      ]
+    ],
+    "max_cluster_width": 4,
+    "assigned_terms": 42,
+    "total_terms": 918,
+    "omitted_residual_l1_exact": "25026632308533/500000000000",
+    "block_cost": [
+      {
+        "cluster": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "terms": 14,
+        "dimension": 16,
+        "gershgorin_lower_exact": "-2628194131647/500000000000"
+      },
+      {
+        "cluster": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "terms": 14,
+        "dimension": 16,
+        "gershgorin_lower_exact": "-67355090583/15625000000"
+      },
+      {
+        "cluster": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "terms": 14,
+        "dimension": 16,
+        "gershgorin_lower_exact": "-851312567549/250000000000"
+      }
+    ],
+    "all_blocks_hermitian": true,
+    "sum_block_lower_exact": "-6486182165401/500000000000",
+    "global_lower_exact": "-15756407236967/250000000000",
+    "global_lower": -63.025628947868,
+    "assignment": "first fitting cluster, weight 1; fitting clusters receive zero weight; nonfitting words charged L1"
+  },
+  {
+    "variant": "H6_overlap6",
+    "fixture": "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "fixture_sha256": "ea50a4ab19a353bc89691bb344fcf8d610f74e1c2c76bf07c6869be2b24dbec8",
+    "clusters": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    ],
+    "max_cluster_width": 6,
+    "assigned_terms": 166,
+    "total_terms": 918,
+    "omitted_residual_l1_exact": "1167235190351/31250000000",
+    "block_cost": [
+      {
+        "cluster": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "terms": 61,
+        "dimension": 64,
+        "gershgorin_lower_exact": "-6125774106371/1000000000000"
+      },
+      {
+        "cluster": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "terms": 58,
+        "dimension": 64,
+        "gershgorin_lower_exact": "-818373622513/200000000000"
+      },
+      {
+        "cluster": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "terms": 47,
+        "dimension": 64,
+        "gershgorin_lower_exact": "-2476809707601/1000000000000"
+      }
+    ],
+    "all_blocks_hermitian": true,
+    "sum_block_lower_exact": "-12694451926537/1000000000000",
+    "global_lower_exact": "-50045978017769/1000000000000",
+    "global_lower": -50.045978017769,
+    "assignment": "first fitting cluster, weight 1; fitting clusters receive zero weight; nonfitting words charged L1"
+  }
+]

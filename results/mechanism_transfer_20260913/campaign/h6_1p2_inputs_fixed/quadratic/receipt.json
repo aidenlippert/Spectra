@@ -1,0 +1,71 @@
+{
+  "directions": 0,
+  "separate": false,
+  "whiten": true,
+  "anti_dimensions": [],
+  "Gram_entries": 5724,
+  "constructed_map_nonzeros": 6180,
+  "used_map_nonzeros": 6180,
+  "construction_seconds": 0.0028472499980125576,
+  "solver_seconds_limit": 45.0,
+  "conditioning": [],
+  "contraction_work": [],
+  "status": "optimal",
+  "floating_lower_Ha": -6.999020497337819,
+  "clipped_negative_Gram_mass": 5.916443656701777e-09,
+  "solve_seconds": 1.4288811669975985,
+  "export_seconds": 0.024203833003412,
+  "accept_seconds": 0.4754479999974137,
+  "wall_seconds": 1.931380416994216,
+  "certificate_bytes": 39994,
+  "accepted": {
+    "retained": {
+      "lower": "-699902052357370087493109752354441/100000000000000000000000000000000",
+      "lower_float": -6.999020523573701,
+      "residual_l1": "4245370087493109752354441/100000000000000000000000000000000",
+      "residual_l1_float": 4.24537008749311e-08,
+      "multiplier_terms": 37,
+      "square_polynomial_terms": 919,
+      "residual_terms": 919,
+      "residual_max_degree": 4,
+      "mode_count": 12,
+      "particle_number": 6,
+      "factor_rows": 221,
+      "factor_nonzeros": 4206
+    },
+    "tail": {
+      "lower_operator_shift_Ha": "-1817/500000000000",
+      "upper_operator_shift_Ha": "270046217/500000000000",
+      "tail_interval_width_Ha": "135024017/250000000000",
+      "tail_interval_width_mHa": 0.540096068,
+      "factors": 10,
+      "factor_nonzeros": 105,
+      "coefficient_dimension": 21,
+      "modes": 12,
+      "particles": 6,
+      "number_centered": true,
+      "mismatch_paired_norm_Ha": "17/500000000000",
+      "mismatch_terms": 54,
+      "casimir_bound": "24",
+      "lower_psd": {
+        "dimension": 21,
+        "rank": 21
+      },
+      "upper_psd": {
+        "dimension": 21,
+        "rank": 21
+      },
+      "replay_seconds": 0.20052404099988053,
+      "many_body_states_enumerated": 0,
+      "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+    },
+    "original_lower_Ha": "-699902052720770087493109752354441/100000000000000000000000000000000",
+    "original_lower_float_Ha": -6.999020527207701,
+    "expand_seconds": 0.3822889579969342,
+    "SOS_replay_seconds": 0.0906013330022688,
+    "replay_seconds": 0.47289050000108546,
+    "expanded_certificate_bytes": 147153,
+    "many_body_states_enumerated": 0,
+    "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+  }
+}

@@ -1,0 +1,252 @@
+[
+  {
+    "label": "h4_full",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/adaptive_block_discovery.py",
+      "--fixture",
+      "results/certificate_scaling/active_space_ladder/h4/fixture.json",
+      "--outputdir",
+      "/home/ubuntu/structural-results/canonical/h4_full",
+      "--symmetry",
+      "--width",
+      "4",
+      "--rounds",
+      "5",
+      "--seconds",
+      "180",
+      "--full"
+    ],
+    "fixture": "results/certificate_scaling/active_space_ladder/h4/fixture.json",
+    "exit_code": 0,
+    "wall_seconds": 0.816392321999956
+  },
+  {
+    "label": "h6_full",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/adaptive_block_discovery.py",
+      "--fixture",
+      "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+      "--outputdir",
+      "/home/ubuntu/structural-results/canonical/h6_full",
+      "--symmetry",
+      "--width",
+      "4",
+      "--rounds",
+      "5",
+      "--seconds",
+      "180",
+      "--full"
+    ],
+    "fixture": "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "exit_code": 0,
+    "wall_seconds": 1.768131082999389
+  },
+  {
+    "label": "h8_full",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/adaptive_block_discovery.py",
+      "--fixture",
+      "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+      "--outputdir",
+      "/home/ubuntu/structural-results/canonical/h8_full",
+      "--symmetry",
+      "--width",
+      "4",
+      "--rounds",
+      "5",
+      "--seconds",
+      "180",
+      "--full"
+    ],
+    "fixture": "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "exit_code": 0,
+    "wall_seconds": 6.276345144000516
+  },
+  {
+    "label": "h4_adaptive",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/adaptive_block_discovery.py",
+      "--fixture",
+      "results/certificate_scaling/active_space_ladder/h4/fixture.json",
+      "--outputdir",
+      "/home/ubuntu/structural-results/canonical/h4_adaptive",
+      "--symmetry",
+      "--width",
+      "4",
+      "--rounds",
+      "5",
+      "--seconds",
+      "180"
+    ],
+    "fixture": "results/certificate_scaling/active_space_ladder/h4/fixture.json",
+    "exit_code": 0,
+    "wall_seconds": 9.232699751999462
+  },
+  {
+    "label": "h6_adaptive",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/adaptive_block_discovery.py",
+      "--fixture",
+      "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+      "--outputdir",
+      "/home/ubuntu/structural-results/canonical/h6_adaptive",
+      "--symmetry",
+      "--width",
+      "4",
+      "--rounds",
+      "5",
+      "--seconds",
+      "180"
+    ],
+    "fixture": "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "exit_code": 0,
+    "wall_seconds": 10.83610279000095
+  },
+  {
+    "label": "h4_full_nosym",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/adaptive_block_discovery.py",
+      "--fixture",
+      "results/certificate_scaling/active_space_ladder/h4/fixture.json",
+      "--outputdir",
+      "/home/ubuntu/structural-results/canonical/h4_full_nosym",
+      "--full",
+      "--seconds",
+      "120"
+    ],
+    "fixture": "results/certificate_scaling/active_space_ladder/h4/fixture.json",
+    "exit_code": 0,
+    "wall_seconds": 1.8176248149993626
+  },
+  {
+    "label": "h6_full_nosym",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/adaptive_block_discovery.py",
+      "--fixture",
+      "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+      "--outputdir",
+      "/home/ubuntu/structural-results/canonical/h6_full_nosym",
+      "--full",
+      "--seconds",
+      "120"
+    ],
+    "fixture": "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "exit_code": 0,
+    "wall_seconds": 8.429128789999595
+  },
+  {
+    "label": "square_mixed_full",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/adaptive_block_discovery.py",
+      "--fixture",
+      "results/marginal_molecule_stress/h4_square_degree3_certificate.json",
+      "--outputdir",
+      "/home/ubuntu/structural-results/canonical/square_mixed_full",
+      "--symmetry",
+      "--full",
+      "--family",
+      "mixed",
+      "--ideal-body",
+      "2",
+      "--seconds",
+      "180"
+    ],
+    "fixture": "results/marginal_molecule_stress/h4_square_degree3_certificate.json",
+    "exit_code": 0,
+    "wall_seconds": 3.8192494539998734
+  },
+  {
+    "label": "rectangle_mixed_full",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/adaptive_block_discovery.py",
+      "--fixture",
+      "results/marginal_molecule/h4_compact_certificate.json",
+      "--outputdir",
+      "/home/ubuntu/structural-results/canonical/rectangle_mixed_full",
+      "--symmetry",
+      "--full",
+      "--family",
+      "mixed",
+      "--ideal-body",
+      "2",
+      "--seconds",
+      "180"
+    ],
+    "fixture": "results/marginal_molecule/h4_compact_certificate.json",
+    "exit_code": 0,
+    "wall_seconds": 6.226870255999529
+  },
+  {
+    "label": "h10_full",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/adaptive_block_discovery.py",
+      "--fixture",
+      "results/certificate_scaling/active_space_ladder/h10/fixture.json",
+      "--outputdir",
+      "/home/ubuntu/structural-results/canonical/h10_full",
+      "--symmetry",
+      "--width",
+      "4",
+      "--rounds",
+      "5",
+      "--seconds",
+      "180",
+      "--full"
+    ],
+    "fixture": "results/certificate_scaling/active_space_ladder/h10/fixture.json",
+    "exit_code": 0,
+    "wall_seconds": 34.3315718190006
+  },
+  {
+    "label": "h8_adaptive",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/adaptive_block_discovery.py",
+      "--fixture",
+      "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+      "--outputdir",
+      "/home/ubuntu/structural-results/canonical/h8_adaptive",
+      "--symmetry",
+      "--width",
+      "4",
+      "--rounds",
+      "5",
+      "--seconds",
+      "180"
+    ],
+    "fixture": "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "exit_code": 0,
+    "wall_seconds": 40.289394478999384
+  },
+  {
+    "label": "h10_adaptive",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/adaptive_block_discovery.py",
+      "--fixture",
+      "results/certificate_scaling/active_space_ladder/h10/fixture.json",
+      "--outputdir",
+      "/home/ubuntu/structural-results/canonical/h10_adaptive",
+      "--symmetry",
+      "--width",
+      "4",
+      "--rounds",
+      "5",
+      "--seconds",
+      "180"
+    ],
+    "fixture": "results/certificate_scaling/active_space_ladder/h10/fixture.json",
+    "exit_code": 0,
+    "wall_seconds": 50.263763089998974
+  }
+]

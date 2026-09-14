@@ -1,0 +1,20 @@
+{
+  "status": "numerical_no_obstruction_found",
+  "family": "B=4 diag(u_i^2)-u u^T",
+  "target_lower": "-78311238763/12500000000",
+  "blocks": [
+    {
+      "dimension": 200,
+      "largest_D_normalized_eigenvalue": 2.4800516991085217,
+      "threshold_for_negative_trace": 4.0,
+      "trace_B_sign": "positive for top eigenvector"
+    },
+    {
+      "dimension": 168,
+      "largest_D_normalized_eigenvalue": 2.12195959956127,
+      "threshold_for_negative_trace": 4.0,
+      "trace_B_sign": "positive for top eigenvector"
+    }
+  ],
+  "scope": "Numerical diagnostic only; A=H_Q-gamma I, D=diag(A). Since lambda_max(D^-1/2 A D^-1/2)<4 in both blocks, this rank-one analytic FW4 dual family produced no negative trace witness."
+}

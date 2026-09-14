@@ -1,0 +1,82 @@
+{
+  "status": "Shared spin-polynomial gap certificates and direct finite transfer verified; charge enumeration and general scaling remain open",
+  "report": "research/marginal_charge_spin.md",
+  "tests_passed": 332,
+  "elapsed_seconds": 273.719,
+  "stdlib_replays": [
+    {
+      "receipt": "results/marginal_h6/charge_spin/proof/receipt.json",
+      "independent": "results/marginal_h6/charge_spin/proof/independent_replay.json",
+      "matching_fields": 17
+    },
+    {
+      "receipt": "results/marginal_h6/charge_spin/proof/energy_receipt.json",
+      "independent": "results/marginal_h6/charge_spin/proof/independent_energy_replay.json",
+      "matching_fields": 25
+    },
+    {
+      "receipt": "results/marginal_h6/charge_spin/proof/transfer_energy_receipt.json",
+      "independent": "results/marginal_h6/charge_spin/proof/independent_transfer_replay.json",
+      "matching_fields": 26
+    },
+    {
+      "receipt": "results/marginal_h6/charge_spin/direct_transfer/receipt.json",
+      "independent": "results/marginal_h6/charge_spin/direct_transfer/independent_replay.json",
+      "matching_fields": 17
+    },
+    {
+      "receipt": "results/marginal_h6/charge_spin/direct_transfer_stronger/receipt.json",
+      "independent": "results/marginal_h6/charge_spin/direct_transfer_stronger/independent_replay.json",
+      "matching_fields": 17
+    },
+    {
+      "receipt": "results/marginal_h6/charge_spin/direct_transfer_stronger/energy_receipt.json",
+      "independent": "results/marginal_h6/charge_spin/direct_transfer_stronger/independent_energy_replay.json",
+      "matching_fields": 25
+    }
+  ],
+  "gap_receipt": {
+    "charge_patterns": 140,
+    "covered_Q_configurations": 380,
+    "cardinality_certificates": 112,
+    "quadratic_psd_certificates": 28,
+    "maximum_psd_dimension": 3,
+    "metric_scalar_evaluations": 178164,
+    "metric_kernels": 8910,
+    "transition_groups": 35550,
+    "polynomial_terms": 620,
+    "maximum_polynomial_degree": 2,
+    "spin_endpoint_evaluations": 0,
+    "determinant_actions": 0,
+    "complement_lower": "-783/125",
+    "source_hamiltonian_terms": 1818,
+    "coherent_transition_groups": 1140,
+    "fixed_sign_groups": 1140,
+    "scope": "Complete explicit ionic charge-pattern coverage with exact grouped row polynomials on the balanced spin slice. Metric kernels are shared across spin occupations; coefficient-count or projected PSD inequalities certify each whole slice. No spin endpoint evaluation or determinant action. Charge-pattern count remains combinatorial; the four-spin PSD gauge is special and general scaling is not established."
+  },
+  "energy_certificates": [
+    "results/marginal_h6/charge_spin/proof/energy_certificate.json",
+    "results/marginal_h6/charge_spin/proof/transfer_energy_certificate.json",
+    "results/marginal_h6/charge_spin/direct_transfer_stronger/energy_certificate.json"
+  ],
+  "direct_transfer_target": "-783/125",
+  "old_transferred_target": "-788/125",
+  "direct_transfer_fresh_response": 17,
+  "direct_transfer_width": 3.9293895949815965e-12,
+  "direct_transfer_spin_symmetric_width": 3.331192213308058e-14,
+  "charge_patterns_fully_determining_occupations": 20,
+  "charge_patterns_with_nontrivial_spin_slices": 120,
+  "metric_evaluation_comparison": {
+    "prior_simplex": 862272,
+    "charge_spin": 178164,
+    "scope": "Counted scalar metric operations only; no total-runtime or asymptotic speedup claim."
+  },
+  "validation_only_exhaustive_rows": "results/marginal_h6/charge_spin/proof/independent_row_validation.json",
+  "remaining": [
+    "Combinatorial charge-pattern count",
+    "General higher-degree spin positivity and possible amplitude sign changes",
+    "Full-sector upper and response construction",
+    "Larger molecule and system-size transfer",
+    "General marginal representability and materials/synthesis modeling"
+  ]
+}

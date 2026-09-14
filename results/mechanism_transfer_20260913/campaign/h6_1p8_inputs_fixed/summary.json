@@ -1,0 +1,234 @@
+{
+  "case": "h6_1p8",
+  "upper_Ha": "-544525922946759760381016612667013/100000000004607084597000000000000",
+  "reference_replay": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 200,
+    "hamiltonian_terms": 918,
+    "word_state_checks": 183600,
+    "contributing_word_state_pairs": 23424,
+    "action_cache_states": 0,
+    "replay_seconds": 0.048578249996353406,
+    "upper": "-544525922946759760381016612667013/100000000004607084597000000000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  },
+  "tail": {
+    "lower_operator_shift_Ha": "-227/62500000000",
+    "upper_operator_shift_Ha": "178651/31250000000",
+    "tail_interval_width_Ha": "357529/62500000000",
+    "tail_interval_width_mHa": 0.005720464,
+    "factors": 10,
+    "factor_nonzeros": 105,
+    "coefficient_dimension": 21,
+    "modes": 12,
+    "particles": 6,
+    "number_centered": true,
+    "mismatch_paired_norm_Ha": "1/31250000000",
+    "mismatch_terms": 60,
+    "casimir_bound": "24",
+    "lower_psd": {
+      "dimension": 21,
+      "rank": 21
+    },
+    "upper_psd": {
+      "dimension": 21,
+      "rank": 21
+    },
+    "replay_seconds": 0.07747295900480822,
+    "many_body_states_enumerated": 0,
+    "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+  },
+  "tail_discovery": {
+    "proposal_seconds": 0.019335625001986045,
+    "eigenvalues_descending": [
+      0.966044390080528,
+      0.7216599020766736,
+      0.5489160608906617,
+      0.4605150218323519,
+      0.40818168634448504,
+      0.005601995693868767,
+      0.005000131315377647,
+      0.004395305240920971,
+      0.0039984043588200445,
+      0.0037850797538071367,
+      4.7628727970059425e-07,
+      4.426989108763037e-07,
+      3.736758403314559e-07,
+      3.4843281189678945e-07,
+      5.50900931724887e-12,
+      3.634672284063007e-12,
+      2.445443462425649e-12,
+      1.3587166621318652e-12,
+      3.8481161291662006e-13,
+      1.6188051301994355e-13,
+      9.440520081267512e-17
+    ],
+    "exact_shift_retries": 0,
+    "largest_numeric_matrix": 21,
+    "physical_sector_enumerated": false
+  },
+  "tail_preparation_seconds": 0.21580537500267383,
+  "frozen_rule_sha256": "40ab7c4df44b1f874337f39ec198123a8dbb872392cf9cd511539b8e45df943e",
+  "budget_seconds": 240.0,
+  "source_fixture_sha256": "f05f20f0ad83ef01ef5817da73bd94b2645a42bcf613b172c45244e3bd7e099e",
+  "trials": [
+    {
+      "arm": "quadratic",
+      "accepted": true,
+      "complete_at_seconds": 7.337999916002445,
+      "inside_budget": true,
+      "lower_Ha": "-307027111148099694913119558688579/56250000000000000000000000000000",
+      "width_Ha": "24375983489744281503862832197683707351196610239221/1875000000086382836193750000000000000000000000000000",
+      "width_mHa": 13.000524527264671,
+      "trial_seconds": 2.0158926250005607,
+      "directions": 0
+    },
+    {
+      "arm": "coupled",
+      "accepted": true,
+      "complete_at_seconds": 15.135737875003542,
+      "inside_budget": true,
+      "lower_Ha": "-5456944510851838194750639697952623636148188483709687661430743/1000000000000000000000000000000000000000000000000000000000000",
+      "width_Ha": "1168528163564664096676560224421322023153113160805217715825987444658527057565571/100000000004607084597000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 11.68528163510829,
+      "trial_seconds": 7.797329875000287,
+      "directions": 108
+    },
+    {
+      "arm": "separate",
+      "accepted": true,
+      "complete_at_seconds": 20.971353875000204,
+      "inside_budget": true,
+      "lower_Ha": "-2456216889144650278209503793145881147604781715708331184865943/450000000000000000000000000000000000000000000000000000000000",
+      "width_Ha": "195007866579711548787492805374344808297878259985263924193795182123548501726657/15000000000691062689550000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 13.000524438048492,
+      "trial_seconds": 5.835045334002643,
+      "directions": 108
+    }
+  ],
+  "model_construction": {
+    "construction_seconds": 4.290812999999616,
+    "coefficient_rows": 919,
+    "base_preparation": {
+      "monomial_word_pairs": 5724,
+      "monomial_map_nonzeros": 6246
+    },
+    "spin_preparation": {
+      "monomial_word_pairs": 105444,
+      "CAR_word_products": 210888,
+      "monomial_map_nonzeros": 48672,
+      "max_surviving_degree": 4
+    },
+    "base_map_nonzeros": 6180,
+    "pricing_map_nonzeros": 48672,
+    "spin_frame_dimensions": [
+      30,
+      30,
+      93,
+      93,
+      93,
+      93,
+      30,
+      30
+    ],
+    "base_Gram_dimensions": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      6,
+      9,
+      18,
+      18,
+      6,
+      9,
+      6,
+      9,
+      18,
+      18,
+      6,
+      9,
+      18,
+      18,
+      36,
+      36,
+      18,
+      18
+    ],
+    "fixture_sha256": "7f3981b02949ea3a6df91612b57784823942e9d1fc2f201e31ecb6a1849e578a",
+    "tail_sha256": "70a64d2d1d5c05cca5ed77ec3b7b7cd409eac4e894a136d4baee63f16d427c9c",
+    "symmetry": {
+      "original_dimensions": [
+        12,
+        12,
+        66,
+        66,
+        144
+      ],
+      "symmetry_dimensions": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        6,
+        9,
+        18,
+        18,
+        6,
+        9,
+        6,
+        9,
+        18,
+        18,
+        6,
+        9,
+        18,
+        18,
+        36,
+        36,
+        18,
+        18
+      ],
+      "parity_masks": [
+        819,
+        1365,
+        2457
+      ],
+      "alpha_charge_quotient": true
+    },
+    "many_body_states_enumerated": 0
+  },
+  "rule_construction": {
+    "seconds": 0.0065810419982881285,
+    "powers": [
+      0.5,
+      1.0
+    ],
+    "raw_symmetry_components": 108,
+    "accepted_directions": 108,
+    "dimensions": [
+      6,
+      6,
+      21,
+      21,
+      21,
+      21,
+      6,
+      6
+    ],
+    "removed": [],
+    "scope": "A recorded numerical template subspace, not an exact completeness or energy claim."
+  },
+  "pending_arm": null,
+  "best_arm": "coupled",
+  "wall_seconds": 20.971910333006235,
+  "complete": true
+}

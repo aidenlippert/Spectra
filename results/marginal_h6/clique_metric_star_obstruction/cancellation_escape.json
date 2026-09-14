@@ -1,0 +1,134 @@
+{
+  "source": "results/marginal_h6/clique_metric_star_obstruction/certificate.json",
+  "escapes": [
+    {
+      "states": [
+        1452,
+        1968
+      ],
+      "transformed_square_amplitudes": [
+        1,
+        -1
+      ],
+      "local_dual_matrix": [
+        [
+          "0",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "0"
+        ]
+      ],
+      "exact_unnormalized_dual_pairing": "-1"
+    },
+    {
+      "states": [
+        1458,
+        1968
+      ],
+      "transformed_square_amplitudes": [
+        1,
+        -1
+      ],
+      "local_dual_matrix": [
+        [
+          "0",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "0"
+        ]
+      ],
+      "exact_unnormalized_dual_pairing": "-1"
+    },
+    {
+      "states": [
+        1968,
+        2868
+      ],
+      "transformed_square_amplitudes": [
+        1,
+        1
+      ],
+      "local_dual_matrix": [
+        [
+          "0",
+          "-1/2"
+        ],
+        [
+          "-1/2",
+          "0"
+        ]
+      ],
+      "exact_unnormalized_dual_pairing": "-1"
+    },
+    {
+      "states": [
+        2262,
+        3282
+      ],
+      "transformed_square_amplitudes": [
+        1,
+        -1
+      ],
+      "local_dual_matrix": [
+        [
+          "0",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "0"
+        ]
+      ],
+      "exact_unnormalized_dual_pairing": "-1"
+    },
+    {
+      "states": [
+        2613,
+        2868
+      ],
+      "transformed_square_amplitudes": [
+        1,
+        1
+      ],
+      "local_dual_matrix": [
+        [
+          "0",
+          "-1/2"
+        ],
+        [
+          "-1/2",
+          "0"
+        ]
+      ],
+      "exact_unnormalized_dual_pairing": "-1"
+    },
+    {
+      "states": [
+        3372,
+        3972
+      ],
+      "transformed_square_amplitudes": [
+        1,
+        1
+      ],
+      "local_dual_matrix": [
+        [
+          "0",
+          "-1/2"
+        ],
+        [
+          "-1/2",
+          "0"
+        ]
+      ],
+      "exact_unnormalized_dual_pairing": "-1"
+    }
+  ],
+  "count": 6,
+  "derivation": "The unnormalized dual has B_ii=y_i and B_ij=sign(H_ij)*(z_ij-y_i-y_j)/2, with y_row=1 and z_edge=1 on the cover. Every covered edge away from the row has two zero diagonal entries and off-diagonal sign(H_ij)/2. Its opposite-sign two-coordinate square has exact pairing -1.",
+  "scope": "These are positive square directions excluded by sign-matched residual edges. They show precisely how cancellation can escape this fixed-family dual, not that these directions yield a sufficient H6 gap or overturn the existing general FW3 obstruction."
+}

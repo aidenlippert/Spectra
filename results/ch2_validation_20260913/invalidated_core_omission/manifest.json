@@ -1,0 +1,17 @@
+{
+  "status": "corrected_neutral_CH2_numerical_control; exact_replay_pending",
+  "observable": "Delta_ST = E_T - E_S (electronic, fixed geometry)",
+  "required_state_proof": "separate S=0 and S=1 sectors; M_S=0 alone is insufficient",
+  "geometry": "C(0,0,0); H(0,0,1.117); H(0,1.047,-0.389) Angstrom",
+  "basis": "STO-3G",
+  "active_space": "7 STO-3G spatial orbitals; one RHF core frozen; 6 active orbitals, 6 active electrons (3 alpha, 3 beta)",
+  "pyscf_import": "success in .venv-molecule, PySCF 2.14.0",
+  "active_dimension_Ms0": 400,
+  "gap_Ha_numerical": -0.07924220093182655,
+  "gap_kcal_mol_numerical": -49.72,
+  "conventional_baseline": "not run",
+  "solver_result": "S=0 -19.66114749725123 Ha; S=1 -19.740389698183055 Ha (active electronic parts; common core constant omitted)",
+  "model_error": "not assessed; STO-3G result is not an experimental prediction",
+  "next_required_input": "rational integral export and exact singlet/triplet eigenvalue replay",
+  "invalidated_proposal": "4 active electrons after one frozen core was not neutral CH2"
+}

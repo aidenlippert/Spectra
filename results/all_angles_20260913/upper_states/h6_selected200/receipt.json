@@ -1,0 +1,28 @@
+{
+  "kind": "hamiltonian_only_selected_ci_v1",
+  "fixture": "/Users/aidenlippert/Documents/Spectra/results/certificate_scaling/active_space_ladder/h6/fixture.json",
+  "seed_cisd_basis": 262,
+  "added": 131,
+  "final_basis": 393,
+  "witness_support": 191,
+  "upper": "-395753183636110404241574307278106523/62499999999974357864066875000000000",
+  "upper_float": -6.332050938180364,
+  "discovery_seconds": 0.5016794160037534,
+  "matrix_entries": 154449,
+  "candidate_count": 131,
+  "replay": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 191,
+    "hamiltonian_terms": 918,
+    "word_state_checks": 175338,
+    "contributing_word_state_pairs": 21645,
+    "action_cache_states": 0,
+    "replay_seconds": 0.03564929199637845,
+    "upper": "-395753183636110404241574307278106523/62499999999974357864066875000000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  },
+  "scope": "bounded projected diagonalization; dense cost is not claimed scalable",
+  "discovery_inputs": [
+    "fixture Hamiltonian only"
+  ]
+}

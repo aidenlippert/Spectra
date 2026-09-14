@@ -1,0 +1,31 @@
+{
+  "returncode": 0,
+  "status": "finished",
+  "name": "locality_gpu",
+  "command": [
+    "research/certificate_scaling/locality_compression.py",
+    "--sites",
+    "8",
+    "16",
+    "32",
+    "64",
+    "--clusters",
+    "2",
+    "3",
+    "4",
+    "--couplings",
+    "0",
+    "1",
+    "2",
+    "4",
+    "8",
+    "--global-max-sites",
+    "0",
+    "--backend",
+    "cupy",
+    "--output",
+    "results/certificate_scaling/lambda_batch/locality_gpu.json"
+  ],
+  "timeout_seconds": 180,
+  "wall_seconds": 6.474779403000014
+}

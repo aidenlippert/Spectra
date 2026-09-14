@@ -1,0 +1,65 @@
+{
+  "schema": "h8-singlet-krylov-response-diagnostic-v1",
+  "source": "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/singlet_valence_embedding/certificate.json",
+  "gamma": "-3.81",
+  "tau": "-4.3",
+  "alpha": "20",
+  "polynomial": "Neumann p_d(A)=sum_{k=0}^d ((alpha-A)/(alpha-tau))^k/(alpha-tau)",
+  "results": [
+    {
+      "order": 0,
+      "raw_directions": 14,
+      "independent_directions": 14,
+      "min_schur_eigenvalue": -10.612291720345155,
+      "negative_count": 6,
+      "max_support": 280,
+      "response_support_total": 3920
+    },
+    {
+      "order": 1,
+      "raw_directions": 14,
+      "independent_directions": 14,
+      "min_schur_eigenvalue": -7.325753352850205,
+      "negative_count": 5,
+      "max_support": 880,
+      "response_support_total": 12320
+    },
+    {
+      "order": 2,
+      "raw_directions": 14,
+      "independent_directions": 14,
+      "min_schur_eigenvalue": -5.339099008017889,
+      "negative_count": 3,
+      "max_support": 1720,
+      "response_support_total": 24080
+    },
+    {
+      "order": 3,
+      "raw_directions": 14,
+      "independent_directions": 14,
+      "min_schur_eigenvalue": -3.9884406906144054,
+      "negative_count": 2,
+      "max_support": 2580,
+      "response_support_total": 36120
+    },
+    {
+      "order": 4,
+      "raw_directions": 14,
+      "independent_directions": 14,
+      "min_schur_eigenvalue": -3.0234911315674418,
+      "negative_count": 1,
+      "max_support": 3276,
+      "response_support_total": 45864
+    },
+    {
+      "order": 5,
+      "raw_directions": 14,
+      "independent_directions": 14,
+      "min_schur_eigenvalue": -2.3145698612050807,
+      "negative_count": 1,
+      "max_support": 3800,
+      "response_support_total": 53200
+    }
+  ],
+  "scope": "Numerical response probe only; no exact certificate or energy interval."
+}

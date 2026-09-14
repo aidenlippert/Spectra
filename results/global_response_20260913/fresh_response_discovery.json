@@ -1,0 +1,64 @@
+{
+  "case": "fresh_h6_1p73",
+  "discovery": {
+    "first_gap_discovery": {
+      "construction_seconds": 0.7115133750048699,
+      "iterations": 37,
+      "optimizer_success": true,
+      "optimizer_message": "Optimization terminated successfully.",
+      "acceptance": {
+        "lower_H_QQ_Ha": "-51270166467/10000000000",
+        "proved_lower_H_QQ_Ha": "-153810499399684710268387754698411/30000000000000000000000000000000",
+        "largest_matrix_dimension": 21,
+        "new_orbital_matrix_dimension": 5,
+        "tail_coefficient_matrix_dimension": 21,
+        "new_orbital_PSD_checks": 2,
+        "density_tangents": 10,
+        "many_body_states_enumerated": 0,
+        "many_body_matrix_entries": 0,
+        "replay_seconds": 0.2045811669959221
+      },
+      "many_body_states_enumerated": 0
+    },
+    "joint_gap_discovery": {
+      "construction_seconds": 0.6580846249999013,
+      "optimizer_iterations": 52,
+      "optimizer_success": true,
+      "optimizer_message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+      "acceptance": {
+        "lower_H_joint_Ha": "-28336674319/5000000000",
+        "proved_lower_H_joint_Ha": "-56673348637899036205989236301/10000000000000000000000000000",
+        "largest_matrix_dimension": 21,
+        "new_orbital_matrix_dimension": 6,
+        "tail_coefficient_matrix_dimension": 21,
+        "new_orbital_PSD_checks": 2,
+        "many_body_states_enumerated": 0,
+        "many_body_matrix_entries": 0,
+        "replay_seconds": 0.19691904200590216
+      }
+    },
+    "construction_seconds": 2.5390428329992574
+  },
+  "receipt": {
+    "status": "certified_response",
+    "partition": "last_double",
+    "target_Ha": "-5569832684580844342518870986531/1000000000051724212270000000000",
+    "gap_lower_Ha": "221408018807826722586568295761/500000000025862106135000000000",
+    "gap_lower_float_Ha": 0.4428160375927491,
+    "order": 28,
+    "H_actions_per_K_vector": 57,
+    "D_actions_per_supplied_response_rhs": 27,
+    "residual_penalty_Ha": "5203022867491183339703795148174600056433417250577299630924620989790707623213791291416407924120026850962374994179584115390621524471502473656224843717839726724859621365680579590417299106327817500607851392583391931647854872138706965435490221016265164402511412362544010769/6669647935324099837606525980486165928311313211280445729978490125137723118786874554250342120208850842790412122451258604585023152028662422877464047960215127145030952436637702161098886697810411211994759803231658167639965222210174493281669341976408907825812391232657178530209200",
+    "many_body_states_enumerated": 0,
+    "many_body_matrix_entries": 0,
+    "new_orbital_matrix_dimension": 6,
+    "shared_tail_coefficient_dimension": 21,
+    "internal_coupling_squared_bound_Ha2": null,
+    "external_coupling_bounds_Ha": null,
+    "local_coupling_work": null,
+    "terminal_positivity_proved_here": false,
+    "replay_seconds": 0.5918469169992022
+  },
+  "wall_seconds": 3.13230774999829,
+  "frozen_rule_sha256": "a6d2138b54ccc4486c3c65621c36b235eba5722ff675173ee3f2f54f72142c50"
+}

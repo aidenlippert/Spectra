@@ -1,0 +1,85 @@
+{
+  "lower_Ha": "-6943314833015059373/750000000000000000",
+  "upper_Ha": "-155271089/16777216",
+  "width_Ha": "552001335107152613/192000000000000000000",
+  "width_mHa": 2.8750069536830867,
+  "target_1p6mHa_met": false,
+  "upper": {
+    "method": "outward_binary64_charge_MPS_v1",
+    "fixture_sha256": "22905765c6591d88acb76653755c364a78d7ed8024df4893f0400f1ec91b0edf",
+    "state_sha256": "c0825551e374612ec50b4b1374b08a8ca60a8fac60ea87542f6c1e191236d07a",
+    "endpoint_Ha": "-155271089/16777216",
+    "norm_enclosure": [
+      "4503599632266509/4503599627370496",
+      "4503599635184983/4503599627370496"
+    ],
+    "endpoint_inequality_enclosure": [
+      "5927699561316351/151115727451828646838272",
+      "4692471831855105/75557863725914323419136"
+    ],
+    "transfer_steps": 19829,
+    "enclosure_seconds": 4.271634125005221,
+    "arithmetic": "IEEE-754 binary64; adjacent outward bounds after every addition and multiplication; fastmath=False",
+    "status": "certified_upper",
+    "total_seconds": 4.271636417004629
+  },
+  "lower": {
+    "kind": "complete_spin_screen_v1",
+    "lower": "-6943314833015059373/750000000000000000",
+    "lower_float": -9.257753110686746,
+    "singlet": {
+      "lower": "-6943314832838059373/750000000000000000",
+      "lower_float": -9.257753110450746,
+      "residual_l1": "408830059373/750000000000000000",
+      "residual_l1_float": 5.451067458306667e-07,
+      "multiplier_terms": 65,
+      "square_polynomial_terms": 2913,
+      "residual_terms": 2913,
+      "residual_max_degree": 4,
+      "mode_count": 16,
+      "particle_number": 8,
+      "factor_rows": 1413,
+      "factor_nonzeros": 287679,
+      "unaveraged_residual_l1": "5586664765733271907/50000000000000000",
+      "spin_twirl": true,
+      "positivity": "Exact SU(2) average of positive squares; ideals have zero singlet compression",
+      "restricted_to": "S=0",
+      "original_H_spin_defect_Ha": "59/250000000000",
+      "lower_for": "Exact SU(2) average of input H in the stated sector",
+      "replay_seconds": 30.609251208006754
+    },
+    "all_nonsinglets": {
+      "lower": "-55311348658777663/6000000000000000",
+      "lower_float": -9.218558109796277,
+      "residual_l1": "3131947663/6000000000000000",
+      "residual_l1_float": 5.219912771666667e-07,
+      "multiplier_terms": 65,
+      "square_polynomial_terms": 2913,
+      "residual_terms": 2913,
+      "residual_max_degree": 4,
+      "mode_count": 16,
+      "particle_number": 8,
+      "factor_rows": 316,
+      "factor_nonzeros": 10758,
+      "restricted_to": "M_S=1",
+      "original_H_spin_defect_Ha": "59/250000000000",
+      "lower_for": "Exact SU(2) average of input H in the stated sector",
+      "replay_seconds": 1.240170292003313
+    },
+    "valid_on": "Entire fixed-N sector",
+    "argument": "Every integer-spin S>=1 multiplet meets M_S=1; S=0 is certified separately; original-H spin defect charged once",
+    "many_body_states_enumerated": 0,
+    "replay_seconds": 31.85216812499857
+  },
+  "source_endpoint_allowance_Ha": "1080859437679430637588679818661992472617200230883748637559826817169037305179664026361299261581348727806273323418127888801479406749477119026857781930414233925199129972388593125431045227104518353378837805668464012301726674829245871925461630020136401001470334983/21333333363437830428723358901096771127698376533197892678680531497932236217890108037676080806096988329379259561981050950910008773438682932166587303010384206199187086253707124755851532832530563310204080918145891001759476310779880202666047389265234483974144000000000000",
+  "total_replay_seconds": 36.17998991700006,
+  "all_input_sha256": {
+    "results/certificate_scaling/active_space_ladder/h8/fixture.json": "ae6221749adf40be04631a5511a5deb27f3a36d6b4a3121f51811bb954c4df07",
+    "results/correlated_pair_20260913/mps/h8_spatial_warm144/state.json": "7f3215f9367d1851c194ff6bddde345d2a6f27ac4d4d74ba42b90b253b36248e",
+    "results/collective_completion_20260914/candidates/h8_spin_r32_invariant_dual48/round_0/certificate.json": "f129e0261338c832cb3ada4c635aec33eb2c86305bfd3be2685dd866b8a51aaf",
+    "results/correlated_pair_20260913/mps/h8_spatial_warm144/interval.json": "fe9df4f967f3edcec0f67f5dba9183c3b48c9465ae3424af79f1fc3cd966b767",
+    "results/collective_completion_20260914/candidates/h8_spin_r1_nonsinglet/round_0/certificate.json": "797ddb67604580fa9b74d2f33524d29096f73eac95358a4c0a28d0847d29f24d"
+  },
+  "lower_full_determinant_enumeration": false,
+  "inherited_full_cubic_proof_used": false
+}

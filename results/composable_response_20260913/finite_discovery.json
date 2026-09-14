@@ -1,0 +1,146 @@
+{
+  "ablations": {
+    "controls": [
+      {
+        "control": "zero_response",
+        "accepted": false,
+        "failed_blocks": 6,
+        "worst_negative_expectation_Ha": -9.714421171778593,
+        "certificate_or_obstruction_bytes": 63109,
+        "seconds": 0.2787305419915356,
+        "D_actions_on_columns": 0
+      },
+      {
+        "control": "constant_response",
+        "accepted": false,
+        "failed_blocks": 6,
+        "worst_negative_expectation_Ha": -5.426108957685525,
+        "certificate_or_obstruction_bytes": 111305,
+        "seconds": 0.38701491699612234,
+        "D_actions_on_columns": 0
+      },
+      {
+        "control": "polynomial_response",
+        "accepted": true,
+        "failed_blocks": 0,
+        "worst_negative_expectation_Ha": null,
+        "certificate_or_obstruction_bytes": 654490,
+        "seconds": 0.6353871250030352,
+        "D_actions_on_columns": 17800
+      },
+      {
+        "control": "direct_full_factor",
+        "accepted": true,
+        "failed_blocks": 0,
+        "worst_negative_expectation_Ha": null,
+        "certificate_or_obstruction_bytes": 697123,
+        "seconds": 0.44271791700157337,
+        "D_actions_on_columns": 0
+      }
+    ],
+    "shared_block_construction": {
+      "physical_sector_basis_labels_generated": 924,
+      "Hamiltonian_action_sources": 924,
+      "word_state_checks": 848232,
+      "retained_dimension": 714,
+      "eliminated_dimension": 210,
+      "largest_full_conserved_block": 200,
+      "largest_retained_block": 152,
+      "largest_eliminated_block": 52,
+      "full_block_matrix_entries": 132004,
+      "response_matrix_entries": 23910,
+      "retained_matrix_entries": 76646,
+      "block_partition_parity_mask": 819,
+      "preparation_seconds": 0.07663058298930991
+    },
+    "wall_seconds": 1.8373710419982672
+  },
+  "transfer": {
+    "case": "fresh_h6_1p6",
+    "upper_discovery": "Full diagonalization of the 200-state block containing HF; enumerated FCI reference work.",
+    "reference_block_dimension": 200,
+    "reference_basis_construction": {
+      "physical_sector_basis_labels_generated": 924,
+      "Hamiltonian_action_sources": 924,
+      "word_state_checks": 848232,
+      "retained_dimension": 714,
+      "eliminated_dimension": 210,
+      "largest_full_conserved_block": 200,
+      "largest_retained_block": 152,
+      "largest_eliminated_block": 52,
+      "full_block_matrix_entries": 132004,
+      "response_matrix_entries": 23910,
+      "retained_matrix_entries": 76646,
+      "block_partition_parity_mask": 819,
+      "preparation_seconds": 0.06477745799929835
+    },
+    "upper_replay": {
+      "method": "bounded_streaming_integer_reference_upper_v1",
+      "witness_states": 200,
+      "hamiltonian_terms": 918,
+      "word_state_checks": 183600,
+      "contributing_word_state_pairs": 23424,
+      "action_cache_states": 0,
+      "replay_seconds": 0.037990457989508286,
+      "upper": "-116601388962666910543888141771199/19999999999066784016000000000000",
+      "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+    },
+    "program_discovery": {
+      "construction_seconds": 0.3087270419928245,
+      "bounds_seconds": 0.3059112090122653,
+      "many_body_states_enumerated": 0,
+      "many_body_inverse_entries": 0
+    },
+    "closure_discovery": {
+      "physical_sector_basis_labels_generated": 924,
+      "Hamiltonian_action_sources": 924,
+      "word_state_checks": 848232,
+      "retained_dimension": 714,
+      "eliminated_dimension": 210,
+      "largest_full_conserved_block": 200,
+      "largest_retained_block": 152,
+      "largest_eliminated_block": 52,
+      "full_block_matrix_entries": 132004,
+      "response_matrix_entries": 23910,
+      "retained_matrix_entries": 76646,
+      "block_partition_parity_mask": 819,
+      "preparation_seconds": 0.06499916699249297,
+      "construction_seconds": 0.9238567080028588,
+      "all_degree_curve_D_actions_on_individual_columns": 40584,
+      "selected_response_D_actions_on_individual_columns": 22072,
+      "numerical_degree_curve": [
+        {
+          "order": 1,
+          "minimum_K_minus_Frobenius_residual_float_Ha": -8.918769738119256
+        },
+        {
+          "order": 2,
+          "minimum_K_minus_Frobenius_residual_float_Ha": -1.5619958146169592
+        },
+        {
+          "order": 4,
+          "minimum_K_minus_Frobenius_residual_float_Ha": -2.006026247290344
+        },
+        {
+          "order": 8,
+          "minimum_K_minus_Frobenius_residual_float_Ha": -0.12577788023971764
+        },
+        {
+          "order": 16,
+          "minimum_K_minus_Frobenius_residual_float_Ha": 0.0006800594447276847
+        },
+        {
+          "order": 32,
+          "minimum_K_minus_Frobenius_residual_float_Ha": 0.0014516218510157858
+        }
+      ],
+      "scope": "Explicit finite H6 retained-closure control. Response columns and retained factors are expanded and charged. No matrix inverse is used."
+    },
+    "new_full_width_mHa": 1.4,
+    "target_Ha": "-116629388962665604041510541771199/19999999999066784016000000000000",
+    "upper_Ha": "-116601388962666910543888141771199/19999999999066784016000000000000",
+    "certificate_bytes": 662080,
+    "wall_seconds": 1.3488965830038069,
+    "scope": "Full-interval transfer using the unchanged response rule and explicitly enumerated upper and retained proof."
+  }
+}

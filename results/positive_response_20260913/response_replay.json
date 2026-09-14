@@ -1,0 +1,190 @@
+{
+  "cases": [
+    {
+      "lower": "-32965353121337/70368744177664",
+      "upper": "-275624507168365405735502217216/588355609680145007008677654125",
+      "width": "79282770128967557089020101701/41401845383075656919285126146832375742464000",
+      "width_float": 1.914957398526418e-15,
+      "eliminated_gap": "270379881873181/351843720888320",
+      "response_coefficient": "70368744177664/270379881873181",
+      "scalar_determinant_slack": "293227327342921/123794003928538027489912422400",
+      "collective_norm_squared": 9,
+      "many_body_states_enumerated": 0,
+      "many_body_inverse_entries": 0,
+      "response_residual_formula": "-lambda_eliminated*(g/d)*L_(q-1)*J_-",
+      "positive_residual_block": "[-X0,I]^dagger*(lambda_eliminated*L_(q-1))*[-X0,I]",
+      "local_positive_identity": "n_k*(I-Swap_ij) = F_i^dagger*F_i/2, F_i=n_k*(I-Swap_ij)",
+      "reference_trial_annihilated_by_added_terms": true,
+      "conceptual_local_terms": 10,
+      "scalar_parameters_read": 8,
+      "replay_seconds": 0.00013749999925494194,
+      "scope": "Formula-specified control with a common zero of the added positive terms; no arbitrary bath terms accepted and no molecular scaling claim.",
+      "explicit_control": {
+        "bath_spins": 5,
+        "excitations": 3,
+        "basis_states_enumerated": 20,
+        "eliminated_block_diagonal_spread": "0",
+        "eliminated_block_offdiagonal_example": {
+          "source": 3,
+          "target": 18,
+          "coefficient": "-10"
+        },
+        "nonscalar_eliminated_block_proved": true,
+        "noncommutation_example": {
+          "retained_state": 7,
+          "squared_norm": "2"
+        },
+        "nonzero_residual_squared_norm": "2971056094284912659757898137600/73105280521755311505367058761",
+        "scalar_error_test_counterexample": {
+          "retained_state": 11,
+          "K_expectation": "86022143432528531758682575989597891651191877/25721633915358812522892824236376496558571520",
+          "K_minus_EdaggerE_over_d": "-344540272828048428835427275013655058500824159482758510889263/6954612339619921826087994870337472170246942749099158405120",
+          "expectation_float": -49.54126211539175
+        },
+        "exact_congruence_quadratic_identity": true,
+        "dicke_vectors_annihilated": true,
+        "wall_seconds": 0.0016530830034753308
+      },
+      "certificate_bytes": 364
+    },
+    {
+      "lower": "-815526902451529/1231453023109120",
+      "upper": "-146166071080850178847291736064/220712093699688140586498551887",
+      "width": "57689527422004571940265258807/5546868878024986092795971522595249518018560",
+      "width_float": 1.040037698575371e-14,
+      "eliminated_gap": "113847259565941/246290604621824",
+      "response_coefficient": "35184372088832/113847259565941",
+      "scalar_determinant_slack": "506727413922427/43327901374988309621469347840",
+      "collective_norm_squared": 15,
+      "many_body_states_enumerated": 0,
+      "many_body_inverse_entries": 0,
+      "response_residual_formula": "-lambda_eliminated*(g/d)*L_(q-1)*J_-",
+      "positive_residual_block": "[-X0,I]^dagger*(lambda_eliminated*L_(q-1))*[-X0,I]",
+      "local_positive_identity": "n_k*(I-Swap_ij) = F_i^dagger*F_i/2, F_i=n_k*(I-Swap_ij)",
+      "reference_trial_annihilated_by_added_terms": true,
+      "conceptual_local_terms": 14,
+      "scalar_parameters_read": 8,
+      "replay_seconds": 8.024999988265336e-05,
+      "scope": "Formula-specified control with a common zero of the added positive terms; no arbitrary bath terms accepted and no molecular scaling claim.",
+      "explicit_control": {
+        "bath_spins": 7,
+        "excitations": 3,
+        "basis_states_enumerated": 56,
+        "eliminated_block_diagonal_spread": "17",
+        "eliminated_block_offdiagonal_example": {
+          "source": 3,
+          "target": 66,
+          "coefficient": "-17"
+        },
+        "nonscalar_eliminated_block_proved": true,
+        "noncommutation_example": {
+          "retained_state": 7,
+          "squared_norm": "2"
+        },
+        "nonzero_residual_squared_norm": "1431058685413899597783387602944/12961198510674744531727215481",
+        "scalar_error_test_counterexample": {
+          "retained_state": 11,
+          "K_expectation": "124132403344524735411353633944593443798223489/15961107089087837904833027038751922816286720",
+          "K_minus_EdaggerE_over_d": "-419901253139928852198764523041792358590463842716162757698571/1817128301731164062807003052733901348952105580672602603520",
+          "expectation_float": -231.0795846060469
+        },
+        "exact_congruence_quadratic_identity": true,
+        "dicke_vectors_annihilated": true,
+        "wall_seconds": 0.004639915998268407
+      },
+      "certificate_bytes": 365
+    },
+    {
+      "lower": "-83638804810253/281474976710656",
+      "upper": "-20508835006426233743161415434240/69019683732843974987578032736667",
+      "width": "220751201379639918886160175385311/19427313871279100634221094951452812577500823552",
+      "width_float": 1.1362929679434143e-14,
+      "eliminated_gap": "1403356442538561/1407374883553280",
+      "response_coefficient": "1407374883553280/12630207982847049",
+      "scalar_determinant_slack": "157302303739966751/10695801939425685575128433295360",
+      "collective_norm_squared": 24,
+      "many_body_states_enumerated": 0,
+      "many_body_inverse_entries": 0,
+      "response_residual_formula": "-lambda_eliminated*(g/d)*L_(q-1)*J_-",
+      "positive_residual_block": "[-X0,I]^dagger*(lambda_eliminated*L_(q-1))*[-X0,I]",
+      "local_positive_identity": "n_k*(I-Swap_ij) = F_i^dagger*F_i/2, F_i=n_k*(I-Swap_ij)",
+      "reference_trial_annihilated_by_added_terms": true,
+      "conceptual_local_terms": 18,
+      "scalar_parameters_read": 8,
+      "replay_seconds": 9.870800568023697e-05,
+      "scope": "Formula-specified control with a common zero of the added positive terms; no arbitrary bath terms accepted and no molecular scaling claim.",
+      "explicit_control": {
+        "bath_spins": 9,
+        "excitations": 4,
+        "basis_states_enumerated": 210,
+        "eliminated_block_diagonal_spread": "200",
+        "eliminated_block_offdiagonal_example": {
+          "source": 7,
+          "target": 262,
+          "coefficient": "-100"
+        },
+        "nonscalar_eliminated_block_proved": true,
+        "noncommutation_example": {
+          "retained_state": 15,
+          "squared_norm": "2"
+        },
+        "nonzero_residual_squared_norm": "316912650057057350374175801344000000/159522153689973322406607728008401",
+        "scalar_error_test_counterexample": {
+          "retained_state": 27,
+          "K_expectation": "147282400470139212730563446513853575309027363551/14967164831572976005913951296923140276304740352",
+          "K_minus_EdaggerE_over_d": "-124921965591016672527610258661646356809629299328983959463469829667/63012801578773536389602641542797101630132422035390514558140416",
+          "expectation_float": -1982.4855023284322
+        },
+        "exact_congruence_quadratic_identity": true,
+        "dicke_vectors_annihilated": true,
+        "wall_seconds": 0.024073000000498723
+      },
+      "certificate_bytes": 370
+    },
+    {
+      "lower": "-426698206195209/1125899906842624",
+      "upper": "-8627657249925037594562663546880/22765219897637694820681713705961",
+      "width": "794431632931826967038454986727729/25631358962002130871689293278042509869437681664",
+      "width_float": 3.09945186328026e-14,
+      "eliminated_gap": "3822340891239981/5629499534213120",
+      "response_coefficient": "87960930222080/3822340891239981",
+      "scalar_determinant_slack": "207839032555285909/6338253001141147007483516026880",
+      "collective_norm_squared": 1054,
+      "many_body_states_enumerated": 0,
+      "many_body_inverse_entries": 0,
+      "response_residual_formula": "-lambda_eliminated*(g/d)*L_(q-1)*J_-",
+      "positive_residual_block": "[-X0,I]^dagger*(lambda_eliminated*L_(q-1))*[-X0,I]",
+      "local_positive_identity": "n_k*(I-Swap_ij) = F_i^dagger*F_i/2, F_i=n_k*(I-Swap_ij)",
+      "reference_trial_annihilated_by_added_terms": true,
+      "conceptual_local_terms": 128,
+      "scalar_parameters_read": 8,
+      "replay_seconds": 8.312499994644895e-05,
+      "scope": "Formula-specified control with a common zero of the added positive terms; no arbitrary bath terms accepted and no molecular scaling claim.",
+      "certificate_bytes": 370
+    },
+    {
+      "lower": "-133120618464578811/180143985094819840",
+      "upper": "-1752453534106969732292417255636992/2371488105818263637921366697305605",
+      "width": "15578724308601221038513380290647800575/17088372719482712810853717628977694814230835888128",
+      "width_float": 9.116563972671125e-13,
+      "eliminated_gap": "12212604885330175/36028797018963968",
+      "response_coefficient": "35184372088832/12212604885330175",
+      "scalar_determinant_slack": "1275626654172234853889/1298074214633706907132624082305024",
+      "collective_norm_squared": 262654,
+      "many_body_states_enumerated": 0,
+      "many_body_inverse_entries": 0,
+      "response_residual_formula": "-lambda_eliminated*(g/d)*L_(q-1)*J_-",
+      "positive_residual_block": "[-X0,I]^dagger*(lambda_eliminated*L_(q-1))*[-X0,I]",
+      "local_positive_identity": "n_k*(I-Swap_ij) = F_i^dagger*F_i/2, F_i=n_k*(I-Swap_ij)",
+      "reference_trial_annihilated_by_added_terms": true,
+      "conceptual_local_terms": 2048,
+      "scalar_parameters_read": 8,
+      "replay_seconds": 6.399999983841553e-05,
+      "scope": "Formula-specified control with a common zero of the added positive terms; no arbitrary bath terms accepted and no molecular scaling claim.",
+      "certificate_bytes": 383
+    }
+  ],
+  "numerical_packages_loaded": [],
+  "basis_states_enumerated_in_controls": 286,
+  "wall_seconds": 0.031424417000380345
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "system": "H4",
+    "method": "coefficient",
+    "certificate": "results/certificate_scaling/cubic_precision/local_h4_quotient/certificate.json",
+    "proof": null,
+    "reference": "results/all_angles_20260913/selected_refinement/h4/step_01_upper.json",
+    "fixture": "results/certificate_scaling/active_space_ladder/h4/fixture.json",
+    "fixture_sha256": "8e64505deb4cc06a87f75e669b0f3073d15ebca72daa6d086e06eeea0b0f5120",
+    "selected_basis": 16,
+    "upper_discovery_through_pass_seconds": 0.2980237500014482,
+    "all_run_seconds": 0.3141987910057651,
+    "upper_method": "signed_residual_sparse_selected_ci_v1",
+    "old_interval": "results/certificate_scaling/cubic_precision/intervals/final_h4.json"
+  },
+  {
+    "system": "H6",
+    "method": "spectral",
+    "certificate": "results/lambda_runs/cubic_precision/downloaded/precision_scs/h6_row-column/certificate.json",
+    "proof": "results/certificate_scaling/cubic_precision/wedge_spectral/h6_conditioned/witness.json",
+    "reference": "results/all_angles_20260913/selected_refinement/h6/step_03_upper.json",
+    "fixture": "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "fixture_sha256": "ea50a4ab19a353bc89691bb344fcf8d610f74e1c2c76bf07c6869be2b24dbec8",
+    "selected_basis": 128,
+    "upper_discovery_through_pass_seconds": 0.5316714169894112,
+    "all_run_seconds": 0.6704154579929309,
+    "upper_method": "signed_residual_sparse_selected_ci_v1",
+    "old_interval": "results/certificate_scaling/cubic_precision/intervals/final_h6.json"
+  },
+  {
+    "system": "H8",
+    "method": "spectral",
+    "certificate": "results/lambda_runs/cubic_precision/downloaded/h8_scs_quotient_conditioned/certificate.json",
+    "proof": "results/certificate_scaling/cubic_precision/wedge_spectral/h8_conditioned/witness.json",
+    "reference": "results/all_angles_20260913/selected_refinement/h8/step_06_upper.json",
+    "fixture": "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "fixture_sha256": "ae6221749adf40be04631a5511a5deb27f3a36d6b4a3121f51811bb954c4df07",
+    "selected_basis": 2048,
+    "upper_discovery_through_pass_seconds": 3.052819807002379,
+    "all_run_seconds": 4.16584309099926,
+    "upper_method": "signed_residual_sparse_selected_ci_v1",
+    "old_interval": "results/certificate_scaling/cubic_precision/intervals/final_h8.json"
+  },
+  {
+    "system": "H10",
+    "method": "spectral",
+    "certificate": "results/lambda_runs/scs_refinement/downloaded/h10_evd_1800/certificate.json",
+    "proof": "results/certificate_scaling/scs_refinement/h10_evd_1800_spectral/witness.json",
+    "reference": "results/all_angles_20260913/selected_refinement/h10_extended/step_09_upper.json",
+    "fixture": "results/certificate_scaling/active_space_ladder/h10/fixture.json",
+    "fixture_sha256": "ec437b52d210f08233a8cc853d0f905dae52bd1f2a923285a25c76ac99385f92",
+    "selected_basis": 24576,
+    "upper_discovery_through_pass_seconds": 66.55954474399914,
+    "all_run_seconds": 100.65986484200039,
+    "upper_method": "signed_residual_sparse_selected_ci_v1",
+    "old_interval": "results/certificate_scaling/scs_refinement/intervals/h10_evd_1800.json"
+  }
+]

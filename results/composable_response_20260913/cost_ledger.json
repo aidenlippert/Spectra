@@ -1,0 +1,452 @@
+{
+  "python_executable": "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+  "exact_interpreter_flag": "-S",
+  "numerical_thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "measured_stages": [
+    {
+      "stage": "Initial preservation",
+      "seconds": 0.1890433749940712,
+      "receipt": "results/composable_response_20260913/preservation_before.json"
+    },
+    {
+      "stage": "Initial direct CAR-product probe",
+      "seconds": 11.675606000004336,
+      "receipt": "results/composable_response_20260913/initial_recursion_probe.json"
+    },
+    {
+      "stage": "Orbital tangent discovery probe",
+      "seconds": 1.0387916249892442,
+      "receipt": "results/composable_response_20260913/spatial_tangent_probe.json"
+    },
+    {
+      "stage": "Local transition bound probe",
+      "seconds": 2.1203290409903275,
+      "receipt": "results/composable_response_20260913/local_coupling_probe.json"
+    },
+    {
+      "stage": "Scalar recursive envelopes and initial exact checks",
+      "seconds": 15.084322290989803,
+      "receipt": "results/composable_response_20260913/recursive_discovery.json"
+    },
+    {
+      "stage": "Separate scalar obstruction replay",
+      "seconds": 5.251812082991819,
+      "receipt": "results/composable_response_20260913/recursive_replay.json"
+    },
+    {
+      "stage": "Joint occupation numerical probe",
+      "seconds": 1.057951958006015,
+      "receipt": "results/composable_response_20260913/joint_sector_probe.json"
+    },
+    {
+      "stage": "Joint response construction and initial exact checks",
+      "seconds": 22.41439570901275,
+      "receipt": "results/composable_response_20260913/joint_discovery.json"
+    },
+    {
+      "stage": "Separate joint exact replay",
+      "seconds": 7.282111583001097,
+      "receipt": "results/composable_response_20260913/joint_replay.json"
+    },
+    {
+      "stage": "Initial 8 focused tests",
+      "seconds": 2.799210041994229,
+      "receipt": "results/composable_response_20260913/pre_joint_tests.json"
+    },
+    {
+      "stage": "First 14 joint/control focused tests",
+      "seconds": 5.766245290986262,
+      "receipt": "results/composable_response_20260913/before_matrix_accounting_tests.json"
+    },
+    {
+      "stage": "Final 14 tests after matrix-accounting correction",
+      "seconds": 5.7166634170134785,
+      "receipt": "results/composable_response_20260913/tests.json"
+    },
+    {
+      "stage": "Separate finite control/transfer replay",
+      "seconds": 3.0058239589998266,
+      "receipt": "results/composable_response_20260913/finite_replay.json"
+    },
+    {
+      "stage": "Read-only combined exact replay including CH2 and parent",
+      "seconds": 18.396206334000453,
+      "receipt": "results/composable_response_20260913/independent_replay.json"
+    },
+    {
+      "stage": "Final parent preservation",
+      "seconds": 0.1725927910010796,
+      "receipt": "results/composable_response_20260913/preservation_after.json"
+    },
+    {
+      "stage": "Finite ablations construction and initial checks",
+      "seconds": 1.8373710419982672,
+      "receipt": "results/composable_response_20260913/finite_discovery.json",
+      "subrecord": "ablations"
+    },
+    {
+      "stage": "Finite transfer construction and initial checks",
+      "seconds": 1.3488965830038069,
+      "receipt": "results/composable_response_20260913/finite_discovery.json",
+      "subrecord": "transfer"
+    },
+    {
+      "stage": "Four cold profiles, including numerical discovery repetitions and independent exact replays",
+      "seconds": 27.13302670799021,
+      "receipt": "results/composable_response_20260913/profiles.json"
+    }
+  ],
+  "sum_recorded_stage_seconds": 132.29039983196708,
+  "timing_scope": "Recorded stage wall times including failed approaches, tests and repetitions. Nested substage timers are not added twice. This is not calendar research time or a fresh complete solver cost. The combined replay includes CH2 and is not additive to a second combined ledger total.",
+  "profiles": [
+    {
+      "case": "h6",
+      "mode": "discover",
+      "inside_child_wall_seconds": 4.103136458987137,
+      "peak_RSS_bytes": 85770240,
+      "numerical_packages_loaded": [
+        "numpy",
+        "scipy"
+      ],
+      "inherited_upper_amplitudes_read": false,
+      "cold_process_wall_seconds": 4.172240999992937
+    },
+    {
+      "case": "h6",
+      "mode": "replay",
+      "inside_child_wall_seconds": 1.2234988330019405,
+      "peak_RSS_bytes": 29589504,
+      "numerical_packages_loaded": [],
+      "inherited_upper_amplitudes_read": false,
+      "cold_process_wall_seconds": 1.2644976250012405
+    },
+    {
+      "case": "h8",
+      "mode": "discover",
+      "inside_child_wall_seconds": 15.768757750003715,
+      "peak_RSS_bytes": 148045824,
+      "numerical_packages_loaded": [
+        "numpy",
+        "scipy"
+      ],
+      "inherited_upper_amplitudes_read": false,
+      "cold_process_wall_seconds": 16.099104416003684
+    },
+    {
+      "case": "h8",
+      "mode": "replay",
+      "inside_child_wall_seconds": 5.435818250000011,
+      "peak_RSS_bytes": 79937536,
+      "numerical_packages_loaded": [],
+      "inherited_upper_amplitudes_read": false,
+      "cold_process_wall_seconds": 5.596966500001145
+    }
+  ],
+  "budgets": {
+    "main_numerical_work_seconds": 180,
+    "profile_child_timeout_seconds": 60,
+    "local_operator_product_timeout_seconds": 60,
+    "canonical_word_cap": 100000,
+    "outer_response_order_cap": 256,
+    "new_H8_many_body_matrix_allowed": false
+  },
+  "main_operator_path": {
+    "many_body_determinants_enumerated": 0,
+    "many_body_matrix_entries": 0,
+    "new_joint_orbital_PSD_dimensions": {
+      "h6": 6,
+      "h8": 8
+    },
+    "new_single_sector_PSD_dimensions": {
+      "h6": 5,
+      "h8": 7
+    },
+    "shared_tail_coefficient_PSD_dimensions": {
+      "h6": 21,
+      "h8": 36
+    },
+    "local_occupation_labels": 7,
+    "largest_local_norm_majorant_terms": {
+      "h6": 184,
+      "h8": 919
+    },
+    "canonical_word_products_per_local_coupling_bound": {
+      "h6": 9201,
+      "h8": 100981
+    },
+    "formal_H6_base_H_actions_per_K1_application": 53,
+    "formal_H6_base_H_actions_per_K2_application": 12667,
+    "actual_molecular_K2_actions_evaluated": 0,
+    "inherited_upper_amplitudes_read_by_final_joint_component": false,
+    "historical_telemetry_note": "Before the final accounting correction, spatial and joint gap subreceipts used largest_matrix_dimension for the new orbital matrix only. The complete accepting path also replays the 21/36-dimensional tail coefficient matrices; current code and this ledger report both."
+  },
+  "explicit_H6_full_sector_block_constructions": {
+    "ablation_discovery": 1,
+    "fresh_transfer_upper_discovery": 1,
+    "fresh_transfer_closure_discovery": 1,
+    "standalone_finite_replay": 2,
+    "first_joint_tests": 1,
+    "final_joint_tests": 1,
+    "combined_replay_preserved_H6": 1,
+    "combined_replay_finite_controls_and_transfer": 2,
+    "total": 10,
+    "basis_labels_per_construction": 924,
+    "total_basis_labels_with_repeats": 9240,
+    "word_state_checks_per_construction": 848232,
+    "total_word_state_checks_with_repeats": 8482320,
+    "full_conserved_block_matrix_entries_per_construction": 132004,
+    "largest_full_conserved_block": 200
+  },
+  "independent_local_CAR_test_source_actions": {
+    "per_test_run": 3,
+    "test_runs": 3,
+    "total": 9,
+    "full_basis_constructed": false
+  },
+  "full_transfer": {
+    "case": "fresh_h6_1p6",
+    "upper_discovery": "Full diagonalization of the 200-state block containing HF; enumerated FCI reference work.",
+    "reference_block_dimension": 200,
+    "reference_basis_construction": {
+      "physical_sector_basis_labels_generated": 924,
+      "Hamiltonian_action_sources": 924,
+      "word_state_checks": 848232,
+      "retained_dimension": 714,
+      "eliminated_dimension": 210,
+      "largest_full_conserved_block": 200,
+      "largest_retained_block": 152,
+      "largest_eliminated_block": 52,
+      "full_block_matrix_entries": 132004,
+      "response_matrix_entries": 23910,
+      "retained_matrix_entries": 76646,
+      "block_partition_parity_mask": 819,
+      "preparation_seconds": 0.06477745799929835
+    },
+    "upper_replay": {
+      "method": "bounded_streaming_integer_reference_upper_v1",
+      "witness_states": 200,
+      "hamiltonian_terms": 918,
+      "word_state_checks": 183600,
+      "contributing_word_state_pairs": 23424,
+      "action_cache_states": 0,
+      "replay_seconds": 0.037990457989508286,
+      "upper": "-116601388962666910543888141771199/19999999999066784016000000000000",
+      "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+    },
+    "program_discovery": {
+      "construction_seconds": 0.3087270419928245,
+      "bounds_seconds": 0.3059112090122653,
+      "many_body_states_enumerated": 0,
+      "many_body_inverse_entries": 0
+    },
+    "closure_discovery": {
+      "physical_sector_basis_labels_generated": 924,
+      "Hamiltonian_action_sources": 924,
+      "word_state_checks": 848232,
+      "retained_dimension": 714,
+      "eliminated_dimension": 210,
+      "largest_full_conserved_block": 200,
+      "largest_retained_block": 152,
+      "largest_eliminated_block": 52,
+      "full_block_matrix_entries": 132004,
+      "response_matrix_entries": 23910,
+      "retained_matrix_entries": 76646,
+      "block_partition_parity_mask": 819,
+      "preparation_seconds": 0.06499916699249297,
+      "construction_seconds": 0.9238567080028588,
+      "all_degree_curve_D_actions_on_individual_columns": 40584,
+      "selected_response_D_actions_on_individual_columns": 22072,
+      "numerical_degree_curve": [
+        {
+          "order": 1,
+          "minimum_K_minus_Frobenius_residual_float_Ha": -8.918769738119256
+        },
+        {
+          "order": 2,
+          "minimum_K_minus_Frobenius_residual_float_Ha": -1.5619958146169592
+        },
+        {
+          "order": 4,
+          "minimum_K_minus_Frobenius_residual_float_Ha": -2.006026247290344
+        },
+        {
+          "order": 8,
+          "minimum_K_minus_Frobenius_residual_float_Ha": -0.12577788023971764
+        },
+        {
+          "order": 16,
+          "minimum_K_minus_Frobenius_residual_float_Ha": 0.0006800594447276847
+        },
+        {
+          "order": 32,
+          "minimum_K_minus_Frobenius_residual_float_Ha": 0.0014516218510157858
+        }
+      ],
+      "scope": "Explicit finite H6 retained-closure control. Response columns and retained factors are expanded and charged. No matrix inverse is used."
+    },
+    "new_full_width_mHa": 1.4,
+    "target_Ha": "-116629388962665604041510541771199/19999999999066784016000000000000",
+    "upper_Ha": "-116601388962666910543888141771199/19999999999066784016000000000000",
+    "certificate_bytes": 662080,
+    "wall_seconds": 1.3488965830038069,
+    "scope": "Full-interval transfer using the unchanged response rule and explicitly enumerated upper and retained proof."
+  },
+  "matched_controls": {
+    "controls": [
+      {
+        "control": "zero_response",
+        "accepted": false,
+        "failed_blocks": 6,
+        "worst_negative_expectation_Ha": -9.714421171778593,
+        "certificate_or_obstruction_bytes": 63109,
+        "seconds": 0.2787305419915356,
+        "D_actions_on_columns": 0
+      },
+      {
+        "control": "constant_response",
+        "accepted": false,
+        "failed_blocks": 6,
+        "worst_negative_expectation_Ha": -5.426108957685525,
+        "certificate_or_obstruction_bytes": 111305,
+        "seconds": 0.38701491699612234,
+        "D_actions_on_columns": 0
+      },
+      {
+        "control": "polynomial_response",
+        "accepted": true,
+        "failed_blocks": 0,
+        "worst_negative_expectation_Ha": null,
+        "certificate_or_obstruction_bytes": 654490,
+        "seconds": 0.6353871250030352,
+        "D_actions_on_columns": 17800
+      },
+      {
+        "control": "direct_full_factor",
+        "accepted": true,
+        "failed_blocks": 0,
+        "worst_negative_expectation_Ha": null,
+        "certificate_or_obstruction_bytes": 697123,
+        "seconds": 0.44271791700157337,
+        "D_actions_on_columns": 0
+      }
+    ],
+    "shared_block_construction": {
+      "physical_sector_basis_labels_generated": 924,
+      "Hamiltonian_action_sources": 924,
+      "word_state_checks": 848232,
+      "retained_dimension": 714,
+      "eliminated_dimension": 210,
+      "largest_full_conserved_block": 200,
+      "largest_retained_block": 152,
+      "largest_eliminated_block": 52,
+      "full_block_matrix_entries": 132004,
+      "response_matrix_entries": 23910,
+      "retained_matrix_entries": 76646,
+      "block_partition_parity_mask": 819,
+      "preparation_seconds": 0.07663058298930991
+    },
+    "wall_seconds": 1.8373710419982672
+  },
+  "shared_inputs": [
+    {
+      "case": "h6",
+      "files": [
+        {
+          "role": "fixture",
+          "path": "results/molecular_collective_20260913/campaign/h6/fixture.json",
+          "bytes": 70867,
+          "sha256": "d89de5e7fda0e7dcc4490fd8c61ce1d0561ed3239e08989be458453937ce5c36"
+        },
+        {
+          "role": "tail",
+          "path": "results/molecular_collective_20260913/campaign/h6/rank_10/tail.json",
+          "bytes": 3667,
+          "sha256": "bb925dff565199466c2b289fe9e07511264dc7f81942230017a429501c8dbedf"
+        },
+        {
+          "role": "upper",
+          "path": "results/certificate_scaling/active_space_ladder_references_aligned/h6/upper.json",
+          "bytes": 5885,
+          "sha256": "0cf0b58228f1861bf80738bbab945ee18d60c2e7b3cc27ce0c418c13ff6330cc"
+        }
+      ],
+      "total_shared_input_bytes": 80419
+    },
+    {
+      "case": "h8",
+      "files": [
+        {
+          "role": "fixture",
+          "path": "results/molecular_collective_20260913/campaign/h8/fixture.json",
+          "bytes": 225687,
+          "sha256": "c6f92ee95c502dbf68481e0d99560ea58362448287a852c61947beb9dac2438c"
+        },
+        {
+          "role": "tail",
+          "path": "results/molecular_collective_20260913/campaign/h8/rank_14/tail.json",
+          "bytes": 7903,
+          "sha256": "1c37f7f3449429fe91f3081544031de23e6eca2bd908dbc0a030431c00998040"
+        },
+        {
+          "role": "upper",
+          "path": "results/certificate_scaling/active_space_ladder_references_aligned/h8/upper.json",
+          "bytes": 29638,
+          "sha256": "3185847f8c6d2befd8988bbe847d6e7103586b0fa8a49a8942e3f6875c82a325"
+        }
+      ],
+      "total_shared_input_bytes": 263228
+    },
+    {
+      "case": "fresh_h6_1p6",
+      "files": [
+        {
+          "role": "fixture",
+          "path": "results/response_consistency_20260913/fresh_h6_1p6/fixture.json",
+          "bytes": 245537,
+          "sha256": "b65f2f1e132462bc1da3d5b06fc4b8edc670df65ed7fd20b7a0da7d531619fb6"
+        },
+        {
+          "role": "tail",
+          "path": "results/response_consistency_20260913/fresh_h6_1p6/tail.json",
+          "bytes": 5890,
+          "sha256": "e132c8c95dec537cbca5aa6f339ca449e71c4f2f9f996f71643dd90fb4db4677"
+        },
+        {
+          "role": "upper",
+          "path": "results/response_consistency_20260913/fresh_h6_1p6/upper.json",
+          "bytes": 141,
+          "sha256": "8af2b1323dbe9347d3301eb9c713d11000805de7e14b94ebc06075bb402a953d"
+        }
+      ],
+      "total_shared_input_bytes": 251568,
+      "new_enumerated_upper": {
+        "path": "results/composable_response_20260913/transfer_upper.json",
+        "bytes": 5933,
+        "sha256": "c620f1241ab1d94573876741b204346e1a761dba37515c692147d0bdfcc6d687"
+      }
+    }
+  ],
+  "inherited_work": {
+    "parent_manifest_sha256": "619ee08d61d7260373d1b364d87cfe533c7ba94bc36f0658bc3a98431682cde3",
+    "parent_files": 778,
+    "cost_ledger": "results/compact_response_20260913/cost_ledger.json",
+    "fixture_and_tail": "Existing molecular integrals, orbitals, density-factor discovery and exact tail certificates. These are inherited operator-sized data, not free fresh-problem construction.",
+    "frozen_H6_upper": "200 FCI-derived amplitudes. Replayed for the full interval, not needed to discover/check the new joint lower component beyond its scalar target.",
+    "H8_upper": "1000 inherited FCI-derived amplitudes used upstream to set b. No new complete H8 interval or H8 upper verification is claimed.",
+    "fresh_H6_upper": "The old one-determinant HF upper is insufficient for the tight transfer. This pass explicitly diagonalized a 200-state block after constructing all 924 labels and saved a new 200-amplitude upper.",
+    "historical_discovery_time_consolidated": false
+  },
+  "new_molecular_SDP_solves": 0,
+  "new_main_PySCF_calls": 0,
+  "unmeasured": [
+    "Whole-session editing, literature and tool orchestration time",
+    "Unconsolidated historical fixture/tail/FCI construction",
+    "Actual nested physical-vector support, rational bit growth and action cost",
+    "Asymptotic scaling and competitive speed advantage"
+  ]
+}

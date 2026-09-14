@@ -1,0 +1,30 @@
+{
+  "name": "h8_response32",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.collective_completion_20260914.search",
+    "h8",
+    "32",
+    "--spin",
+    "--seconds",
+    "120",
+    "--tag",
+    "_response",
+    "--prepared",
+    "results/collective_completion_20260914/prepared/h8_response",
+    "--solver",
+    "CLARABEL"
+  ],
+  "timeout_seconds": 240,
+  "status": "passed",
+  "started_UTC": "2026-09-14T18:56:17.509206+00:00",
+  "pid": 31810,
+  "exit_code": 0,
+  "wall_seconds": 152.9560891250003,
+  "child_user_seconds": 193.166721,
+  "child_system_seconds": 78.30544,
+  "peak_child_RSS_bytes": 2087944192,
+  "finished_UTC": "2026-09-14T18:58:50.463746+00:00"
+}

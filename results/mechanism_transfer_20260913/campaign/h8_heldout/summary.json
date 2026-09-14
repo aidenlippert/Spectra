@@ -1,0 +1,208 @@
+{
+  "case": "h8_heldout",
+  "upper_Ha": "-230906775382357633652069382479983/24957089374045229990000000000000",
+  "reference_replay": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 1000,
+    "hamiltonian_terms": 2912,
+    "word_state_checks": 2912000,
+    "contributing_word_state_pairs": 162700,
+    "action_cache_states": 0,
+    "replay_seconds": 0.28072312499716645,
+    "upper": "-230906775382357633652069382479983/24957089374045229990000000000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  },
+  "tail": {
+    "lower_operator_shift_Ha": "-2031/250000000000",
+    "upper_operator_shift_Ha": "46789531/250000000000",
+    "tail_interval_width_Ha": "23395781/125000000000",
+    "tail_interval_width_mHa": 0.187166248,
+    "factors": 14,
+    "factor_nonzeros": 252,
+    "coefficient_dimension": 36,
+    "modes": 16,
+    "particles": 8,
+    "number_centered": true,
+    "mismatch_paired_norm_Ha": "31/250000000000",
+    "mismatch_terms": 236,
+    "casimir_bound": "40",
+    "lower_psd": {
+      "dimension": 36,
+      "rank": 36
+    },
+    "upper_psd": {
+      "dimension": 36,
+      "rank": 36
+    },
+    "replay_seconds": 0.40361324999685166,
+    "many_body_states_enumerated": 0,
+    "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+  },
+  "tail_discovery": {
+    "scope": "Frozen existing tail; prior discovery remains in its ledger."
+  },
+  "tail_preparation_seconds": 0.42848258399317274,
+  "frozen_rule_sha256": "40ab7c4df44b1f874337f39ec198123a8dbb872392cf9cd511539b8e45df943e",
+  "budget_seconds": 240.0,
+  "source_fixture_sha256": "c6f92ee95c502dbf68481e0d99560ea58362448287a852c61947beb9dac2438c",
+  "trials": [
+    {
+      "arm": "quadratic",
+      "accepted": true,
+      "complete_at_seconds": 39.91138050000154,
+      "inside_budget": true,
+      "lower_Ha": "-3711618909127965898116304670725641/400000000000000000000000000000000",
+      "width_Ha": "26849468455985234742870972821240534953260803517359/998283574961809199600000000000000000000000000000000",
+      "width_mHa": 26.895632793530034,
+      "trial_seconds": 15.31983549999859,
+      "directions": 0
+    },
+    {
+      "arm": "coupled",
+      "accepted": true,
+      "complete_at_seconds": 92.04087516699656,
+      "inside_budget": true,
+      "lower_Ha": "-593845021619781312113496506296891273190783344781578326700792697/64000000000000000000000000000000000000000000000000000000000000",
+      "width_Ha": "4260965442581550340849315311843760922787341810201320702969123557639526467738303/159725371993889471936000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 26.67682278269829,
+      "trial_seconds": 52.12900337499741,
+      "directions": 144
+    },
+    {
+      "arm": "separate",
+      "accepted": true,
+      "complete_at_seconds": 130.79188987499947,
+      "inside_budget": true,
+      "lower_Ha": "-296929518452401968444099646971160700485674354327009280362528981/32000000000000000000000000000000000000000000000000000000000000",
+      "width_Ha": "2147971757336393371700932957035694512892919637027427832452598596285227618534019/79862685996944735968000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 26.895811611176804,
+      "trial_seconds": 38.75050054099847,
+      "directions": 144
+    }
+  ],
+  "model_construction": {
+    "construction_seconds": 23.349833374995796,
+    "coefficient_rows": 2913,
+    "base_preparation": {
+      "monomial_word_pairs": 18112,
+      "monomial_map_nonzeros": 19288
+    },
+    "spin_preparation": {
+      "monomial_word_pairs": 603712,
+      "CAR_word_products": 1207424,
+      "monomial_map_nonzeros": 213760,
+      "max_surviving_degree": 4
+    },
+    "base_map_nonzeros": 19168,
+    "pricing_map_nonzeros": 213760,
+    "spin_frame_dimensions": [
+      56,
+      56,
+      172,
+      172,
+      172,
+      172,
+      56,
+      56
+    ],
+    "base_Gram_dimensions": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      12,
+      16,
+      32,
+      32,
+      12,
+      16,
+      12,
+      16,
+      32,
+      32,
+      12,
+      16,
+      32,
+      32,
+      64,
+      64,
+      32,
+      32
+    ],
+    "fixture_sha256": "22905765c6591d88acb76653755c364a78d7ed8024df4893f0400f1ec91b0edf",
+    "tail_sha256": "228e03f538c7783f1566bb3f9b7bb1349f5bbfcb27eae35abfd2557d9a6690de",
+    "symmetry": {
+      "original_dimensions": [
+        16,
+        16,
+        120,
+        120,
+        256
+      ],
+      "symmetry_dimensions": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        12,
+        16,
+        32,
+        32,
+        12,
+        16,
+        12,
+        16,
+        32,
+        32,
+        12,
+        16,
+        32,
+        32,
+        64,
+        64,
+        32,
+        32
+      ],
+      "parity_masks": [
+        13107,
+        21845,
+        39321
+      ],
+      "alpha_charge_quotient": true
+    },
+    "many_body_states_enumerated": 0
+  },
+  "rule_construction": {
+    "seconds": 0.015611417002219241,
+    "powers": [
+      0.5,
+      1.0
+    ],
+    "raw_symmetry_components": 144,
+    "accepted_directions": 144,
+    "dimensions": [
+      8,
+      8,
+      28,
+      28,
+      28,
+      28,
+      8,
+      8
+    ],
+    "removed": [],
+    "scope": "A recorded numerical template subspace, not an exact completeness or energy claim."
+  },
+  "pending_arm": null,
+  "best_arm": "coupled",
+  "wall_seconds": 130.79263745799835,
+  "complete": true
+}

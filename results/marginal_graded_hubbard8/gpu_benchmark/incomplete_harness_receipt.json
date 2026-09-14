@@ -1,0 +1,62 @@
+{
+  "source_sha256": "1fbb57724f38ffeb8570703d9d13c5d2712af74118e95ccb1d838e20701165a8",
+  "evaluations": 6,
+  "batch": 8,
+  "sectors": 94,
+  "gram_blocks": 32,
+  "gram_columns": 1280,
+  "prep_seconds": 14.5296007500001,
+  "cpu": {
+    "profile_kernel_seconds": 22.362262082999223,
+    "gram_kernel_seconds": 0.6431768750007905,
+    "profile_values": [
+      -3.1188931601388976,
+      -3.1191220266557944,
+      -3.119396076564805,
+      -3.1190692245986855,
+      -3.120135108228145,
+      -3.119849630065013
+    ],
+    "gram_maxima": [
+      1.7123459771031366,
+      1.7226816882645448,
+      1.6503763950412027,
+      1.417906040146138,
+      1.7123459771031366,
+      2.393743560847638,
+      2.676643921148235,
+      2.54764864269474,
+      2.1079834940304027,
+      1.417906040146138,
+      1.7226816882645448,
+      2.676643921148235,
+      3.039517709403406,
+      2.966808444995251,
+      2.5476486426947393,
+      1.650376395041202,
+      1.6503763950412027,
+      2.5476486426947402,
+      2.9668084449952494,
+      3.0395177094034076,
+      2.676643921148235,
+      1.7226816882645448,
+      1.417906040146138,
+      2.1079834940304027,
+      2.5476486426947393,
+      2.676643921148235,
+      2.3937435608476383,
+      1.7123459771031366,
+      1.417906040146138,
+      1.650376395041202,
+      1.7226816882645448,
+      1.7123459771031366
+    ]
+  },
+  "gpu": {
+    "available": false,
+    "reason": "ModuleNotFoundError: No module named 'cupy'"
+  },
+  "objective_direction": "larger minimum eigenvalue and larger lower-bound density are better; this receipt is numerical only",
+  "normalization": "A=D^(-1/2) K D^(-1/2); joint Gram uses D^(1/2) G D^(1/2) equivalently via symmetric normalized weights",
+  "scope": "bounded float64 resident-matrix benchmark; no exact certificate or speedup claim"
+}

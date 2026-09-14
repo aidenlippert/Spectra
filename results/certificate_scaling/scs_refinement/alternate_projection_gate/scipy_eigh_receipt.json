@@ -1,0 +1,47 @@
+{
+  "host": "146.235.200.232",
+  "scipy": "1.14.1",
+  "source": "/home/ubuntu/spectra-precision-v2/results/h10_scs_quotient_conditioned/raw_round_0.npz",
+  "source_sha256": "acc7eeb0a0e1c7d07555b34dc8b11c8c1d0e006acd0fae77814e345f784e2708",
+  "executed_script": "/Users/aidenlippert/Documents/Spectra/research/certificate_scaling/alternate_projection_gate.py",
+  "source_keys": "gram_34..gram_49; eight 725x725 and eight 225x225 selected by shape",
+  "blocks": "eight actual 725x725 and eight actual 225x225 blocks",
+  "threads": 1,
+  "warmups": 2,
+  "trials": 3,
+  "results": [
+    {
+      "n": 725,
+      "driver": "ev",
+      "median_seconds": 0.5805555469996762,
+      "total_seconds": 4.375671590994898,
+      "max_residual": 2.6020852139652106e-17
+    },
+    {
+      "n": 725,
+      "driver": "evd",
+      "median_seconds": 0.21034902050087112,
+      "total_seconds": 2.4264029010046215,
+      "max_residual": 3.3989738107420564e-17
+    },
+    {
+      "n": 225,
+      "driver": "ev",
+      "median_seconds": 0.081005677999201,
+      "total_seconds": 0.6148829179983295,
+      "max_residual": 3.2526065174565133e-18
+    },
+    {
+      "n": 225,
+      "driver": "evd",
+      "median_seconds": 0.044398066000212566,
+      "total_seconds": 0.46783155699813506,
+      "max_residual": 2.0057740190981832e-18
+    }
+  ],
+  "interpretation": "For actual H10 blocks, divide-and-conquer evd is 2.76x faster than ev at n=725 and 1.82x faster at n=225, with tiny reconstruction residuals. This is an isolated CPU projection result, not an end-to-end SCS claim.",
+  "scope": "read-only benchmark; no installs or job changes",
+  "audit_note": "The executed script retained per-block medians and aggregate totals, not individual trial arrays; the receipt therefore does not claim individual trial reproducibility.",
+  "gate_status": "EXCLUDED_UNCONTROLLED",
+  "audit_correction": "Thread count was set after importing numerical libraries and never verified. Reported medians were per block, not eight-block batch times. No cross-driver PSD projection check or individual trials retained. Excluded from controlled performance claims."
+}

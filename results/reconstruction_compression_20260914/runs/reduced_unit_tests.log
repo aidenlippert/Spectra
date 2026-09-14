@@ -1,0 +1,14 @@
+E....
+======================================================================
+ERROR: test_congruence_all_degrees_against_exact_factors (research.reconstruction_compression_20260914.test_reduced.ReducedTests.test_congruence_all_degrees_against_exact_factors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aidenlippert/Documents/Spectra/research/reconstruction_compression_20260914/test_reduced.py", line 27, in test_congruence_all_degrees_against_exact_factors
+    self.assertTrue(any(len(w)==6 and c for w,c in exact.items()))
+                                                   ^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'items'
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.130s
+
+FAILED (errors=1)

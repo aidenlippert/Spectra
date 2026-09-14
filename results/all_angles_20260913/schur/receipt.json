@@ -1,0 +1,12 @@
+{
+  "experiment": "rational_schur_complement_trial_states",
+  "command": "PYTHONPATH=research/all_angles_20260913/schur /opt/homebrew/Caskroom/miniconda/base/bin/python research/all_angles_20260913/schur/schur_experiment.py",
+  "threads": 1,
+  "cases": 4,
+  "molecular_fixture": "results/certificate_scaling/active_space_ladder_boys/h4/fixture.json",
+  "molecular_dimension": 70,
+  "molecular_full_complement_entries": 4761,
+  "tests": 2,
+  "test_command": "PYTHONPATH=research/all_angles_20260913/schur /opt/homebrew/Caskroom/miniconda/base/bin/python -m unittest -v research/all_angles_20260913/schur/test_schur_experiment.py",
+  "status": "completed"
+}

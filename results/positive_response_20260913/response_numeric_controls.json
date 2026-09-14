@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "bath_spins": 5,
+      "excitations": 3,
+      "basis_states_enumerated": 20,
+      "full_many_body_matrix_entries": 400,
+      "numerical_ground_energy": -0.46846584384264855,
+      "difference_from_exact_upper": 5.551115123125783e-16,
+      "comparison_tolerance": 1e-10,
+      "wall_seconds": 0.003149082993331831
+    },
+    {
+      "bath_spins": 7,
+      "excitations": 3,
+      "basis_states_enumerated": 56,
+      "full_many_body_matrix_entries": 3136,
+      "numerical_ground_energy": -0.6622476758329829,
+      "difference_from_exact_upper": 6.661338147750939e-16,
+      "comparison_tolerance": 1e-10,
+      "wall_seconds": 0.0029444999963743612
+    },
+    {
+      "bath_spins": 9,
+      "excitations": 4,
+      "basis_states_enumerated": 210,
+      "full_many_body_matrix_entries": 44100,
+      "numerical_ground_energy": -0.29714472592790075,
+      "difference_from_exact_upper": -1.1657341758564144e-15,
+      "comparison_tolerance": 1e-10,
+      "wall_seconds": 0.006361082996590994
+    }
+  ],
+  "wall_seconds": 0.012827624996134546,
+  "basis_states_enumerated": 286,
+  "scope": "Numerical finite-sector control only; all matrices and enumeration are charged. No molecular FCI or SDP."
+}

@@ -1,0 +1,19 @@
+{
+  "name": "fresh_mps_with_output",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-B",
+    "-c",
+    "import json; from pathlib import Path; from research.correlated_pair_20260913.mps_spatial import run; d=json.loads(Path(\"results/collective_completion_20260914/transfer/fixture/fixture.json\").read_text()); run(d,(3,3),Path(\"results/collective_completion_20260914/transfer/mps\"),bond=48,sweeps=10)"
+  ],
+  "timeout_seconds": 90,
+  "status": "passed",
+  "started_UTC": "2026-09-14T19:00:27.373465+00:00",
+  "pid": 32496,
+  "exit_code": 0,
+  "wall_seconds": 13.552085374991293,
+  "child_user_seconds": 10.509186,
+  "child_system_seconds": 2.874703,
+  "peak_child_RSS_bytes": 291422208,
+  "finished_UTC": "2026-09-14T19:00:40.925966+00:00"
+}

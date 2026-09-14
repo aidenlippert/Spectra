@@ -1,0 +1,1159 @@
+{
+  "arm": "continue",
+  "budget_seconds": 360.0,
+  "source": "/Users/aidenlippert/Documents/Spectra/results/spin_completion_20260913/campaign/adaptive/round_4_batch_2",
+  "source_hashes": {
+    "certificate.json": "c5e751d73d03c70464eba47c706c4e350ea89f7ae6c6d42142183a8d4914a3ee",
+    "span.json": "0a516194de071cc76c7d5a5fb771b7607c113e40dacaafd5f89b548bd3d4ba78",
+    "dual_proposal.json": "b2bdb43c89b9814eaad3c2c7f5e2cf5ce981c3fdeba55c2506484f4de8f8b646"
+  },
+  "source_replay": {
+    "retained": {
+      "lower": "-114128511154893749332359608196431416918960668290827033056517529/18000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -6.340472841938541,
+      "residual_l1": "26284149749332359608196431416918960668290827033056517529/18000000000000000000000000000000000000000000000000000000000000",
+      "residual_l1_float": 1.4602305416295756e-06,
+      "multiplier_terms": 37,
+      "square_polynomial_terms": 919,
+      "residual_terms": 919,
+      "residual_max_degree": 4,
+      "mode_count": 12,
+      "particle_number": 6,
+      "factor_rows": 348,
+      "factor_nonzeros": 17088
+    },
+    "tail": {
+      "lower_operator_shift_Ha": "-227/62500000000",
+      "upper_operator_shift_Ha": "6770477/62500000000",
+      "tail_interval_width_Ha": "423169/3906250000",
+      "tail_interval_width_mHa": 0.108331264,
+      "factors": 10,
+      "factor_nonzeros": 105,
+      "coefficient_dimension": 21,
+      "modes": 12,
+      "particles": 6,
+      "number_centered": true,
+      "mismatch_paired_norm_Ha": "1/31250000000",
+      "mismatch_terms": 54,
+      "casimir_bound": "24",
+      "lower_psd": {
+        "dimension": 21,
+        "rank": 21
+      },
+      "upper_psd": {
+        "dimension": 21,
+        "rank": 21
+      },
+      "replay_seconds": 0.1275893330021063,
+      "many_body_states_enumerated": 0,
+      "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+    },
+    "original_lower_Ha": "-114128511220269749332359608196431416918960668290827033056517529/18000000000000000000000000000000000000000000000000000000000000",
+    "original_lower_float_Ha": -6.340472845570542,
+    "expand_seconds": 0.6209217499999795,
+    "SOS_replay_seconds": 4.419220750001841,
+    "replay_seconds": 5.040142666002794,
+    "expanded_certificate_bytes": 645205,
+    "many_body_states_enumerated": 0,
+    "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+  },
+  "source_directions": 64,
+  "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+  "reference_replay": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 200,
+    "hamiltonian_terms": 918,
+    "word_state_checks": 183600,
+    "contributing_word_state_pairs": 23424,
+    "action_cache_states": 0,
+    "replay_seconds": 0.13991020799585385,
+    "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  },
+  "model_construction": {
+    "construction_seconds": 4.351107458001934,
+    "coefficient_rows": 919,
+    "base_preparation": {
+      "monomial_word_pairs": 5724,
+      "monomial_map_nonzeros": 6246
+    },
+    "spin_preparation": {
+      "monomial_word_pairs": 105444,
+      "CAR_word_products": 210888,
+      "monomial_map_nonzeros": 48672,
+      "max_surviving_degree": 4
+    },
+    "base_map_nonzeros": 6180,
+    "pricing_map_nonzeros": 48672,
+    "spin_frame_dimensions": [
+      30,
+      30,
+      93,
+      93,
+      93,
+      93,
+      30,
+      30
+    ],
+    "base_Gram_dimensions": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      6,
+      9,
+      18,
+      18,
+      6,
+      9,
+      6,
+      9,
+      18,
+      18,
+      6,
+      9,
+      18,
+      18,
+      36,
+      36,
+      18,
+      18
+    ],
+    "fixture_sha256": "99b91888d68ba7ea1d43c0b6c68594190521406c5b454b98933cbeba7d8f89df",
+    "tail_sha256": "7176d95d7bbce5cdef61b50e9950d765154acf9e5fcda10b864c1e803a2e29c5",
+    "symmetry": {
+      "original_dimensions": [
+        12,
+        12,
+        66,
+        66,
+        144
+      ],
+      "symmetry_dimensions": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        6,
+        9,
+        18,
+        18,
+        6,
+        9,
+        6,
+        9,
+        18,
+        18,
+        6,
+        9,
+        18,
+        18,
+        36,
+        36,
+        18,
+        18
+      ],
+      "parity_masks": [
+        819,
+        1365,
+        2457
+      ],
+      "alpha_charge_quotient": true
+    },
+    "many_body_states_enumerated": 0
+  },
+  "trials": [
+    {
+      "case": "round_1_batch_1",
+      "accepted": true,
+      "directions": 72,
+      "lower_Ha": "-14265307531926446905337853013481387734785002345620896068085481/2250000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 7.0780546231981365,
+      "certificate_bytes": 100494,
+      "trial_wall_seconds": 7.310347457998432,
+      "complete_at_seconds": 17.888659791002283
+    },
+    {
+      "case": "round_1_batch_2",
+      "accepted": true,
+      "directions": 80,
+      "lower_Ha": "-228232196673082024027263373009751557979408456731944824529149137/36000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 6.724614685944624,
+      "certificate_bytes": 107783,
+      "trial_wall_seconds": 7.9058910829990054,
+      "complete_at_seconds": 25.796053041005507
+    },
+    {
+      "case": "round_2_batch_1",
+      "accepted": true,
+      "directions": 88,
+      "lower_Ha": "-114109958925456401945646924121310111443185166863850857043265237/18000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 6.383536292355176,
+      "certificate_bytes": 114141,
+      "trial_wall_seconds": 8.225395500005106,
+      "complete_at_seconds": 34.02930475000176
+    },
+    {
+      "case": "round_2_batch_2",
+      "accepted": true,
+      "directions": 96,
+      "lower_Ha": "-76071024137693215185148426812584650030096780468462012721585107/12000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 6.193385241434111,
+      "certificate_bytes": 121425,
+      "trial_wall_seconds": 8.725825415996951,
+      "complete_at_seconds": 42.75646658300684
+    },
+    {
+      "case": "round_3_batch_1",
+      "accepted": true,
+      "directions": 104,
+      "lower_Ha": "-114099544979590255211369625867201124799267382474157285175234867/18000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 5.804983744235913,
+      "certificate_bytes": 128182,
+      "trial_wall_seconds": 9.093768457998522,
+      "complete_at_seconds": 51.8588677910011
+    },
+    {
+      "case": "round_3_batch_2",
+      "accepted": true,
+      "directions": 112,
+      "lower_Ha": "-57048642966914705000908660369883485844540824361864729375954933/9000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 5.679481201966734,
+      "certificate_bytes": 135145,
+      "trial_wall_seconds": 9.322978125004738,
+      "complete_at_seconds": 61.18350729100348
+    },
+    {
+      "case": "round_4_batch_1",
+      "accepted": true,
+      "directions": 120,
+      "lower_Ha": "-7130716125625587270438272460437607147528218688547060565837857/1125000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 5.355707656410419,
+      "certificate_bytes": 143752,
+      "trial_wall_seconds": 9.631498791000922,
+      "complete_at_seconds": 70.82506437500706
+    },
+    {
+      "case": "round_4_batch_2",
+      "accepted": true,
+      "directions": 128,
+      "lower_Ha": "-228178763157543632480015235373202191266971940925473730008184943/36000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 5.2403503654337475,
+      "certificate_bytes": 148726,
+      "trial_wall_seconds": 9.971621082993806,
+      "complete_at_seconds": 80.79850483300106
+    },
+    {
+      "case": "round_5_batch_1",
+      "accepted": true,
+      "directions": 136,
+      "lower_Ha": "-228173948294118637871775131565936182378580913345687623343656793/36000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 5.106604159183897,
+      "certificate_bytes": 156880,
+      "trial_wall_seconds": 10.401906915998552,
+      "complete_at_seconds": 91.2102742910065
+    },
+    {
+      "case": "round_5_batch_2",
+      "accepted": true,
+      "directions": 144,
+      "lower_Ha": "-57042373759753987833385049070557105292010824784783774753291313/9000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.982902628553716,
+      "certificate_bytes": 165523,
+      "trial_wall_seconds": 10.760898083994107,
+      "complete_at_seconds": 101.97307400000136
+    },
+    {
+      "case": "round_6_batch_1",
+      "accepted": true,
+      "directions": 152,
+      "lower_Ha": "-28519790499679556372544980482449394911985934208039255662040307/4500000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.672595918012039,
+      "certificate_bytes": 172012,
+      "trial_wall_seconds": 11.424696708992997,
+      "complete_at_seconds": 113.40704800000094
+    },
+    {
+      "case": "round_6_batch_2",
+      "accepted": true,
+      "directions": 160,
+      "lower_Ha": "-228155207441933517787610538456436626862552352784731119200117091/36000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.58602493181945,
+      "certificate_bytes": 181055,
+      "trial_wall_seconds": 11.921944708003139,
+      "complete_at_seconds": 125.3310994160056
+    },
+    {
+      "case": "round_7_batch_1",
+      "accepted": true,
+      "directions": 168,
+      "lower_Ha": "-5703882386785168889201456253449482813299071263939815670361473/900000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.588470194964945,
+      "certificate_bytes": 191954,
+      "trial_wall_seconds": 15.389531959001033,
+      "complete_at_seconds": 140.73107137500483
+    },
+    {
+      "case": "round_7_batch_2",
+      "accepted": true,
+      "directions": 176,
+      "lower_Ha": "-228150445587940500878503870505501695833736534081335823768420199/36000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.453751209791203,
+      "certificate_bytes": 196272,
+      "trial_wall_seconds": 17.16968595799699,
+      "complete_at_seconds": 157.90381229100603
+    },
+    {
+      "case": "round_8_batch_1",
+      "accepted": true,
+      "directions": 184,
+      "lower_Ha": "-76048458166999334882705951627951015851576904102204270281435691/12000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.312887683610752,
+      "certificate_bytes": 204401,
+      "trial_wall_seconds": 18.91012083300302,
+      "complete_at_seconds": 176.82544616600353
+    },
+    {
+      "case": "round_8_batch_2",
+      "accepted": true,
+      "directions": 192,
+      "lower_Ha": "-506979572901774180025967926221147616509564284419487312069351/80000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.186035039176763,
+      "certificate_bytes": 211908,
+      "trial_wall_seconds": 22.015729041995655,
+      "complete_at_seconds": 198.84398004100512
+    },
+    {
+      "case": "round_9_batch_1",
+      "accepted": true,
+      "directions": 200,
+      "lower_Ha": "-228138133126976931627360213043364450690887319448176067773012857/36000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.111738405247612,
+      "certificate_bytes": 221001,
+      "trial_wall_seconds": 40.55642812500446,
+      "complete_at_seconds": 239.412253625007
+    },
+    {
+      "case": "round_9_batch_2",
+      "accepted": true,
+      "directions": 206,
+      "lower_Ha": "-114068625334825678365800892350997737917877439373438343008083659/18000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 4.087225701759421,
+      "certificate_bytes": 229089,
+      "trial_wall_seconds": 43.57458958400093,
+      "complete_at_seconds": 282.98977233300684
+    },
+    {
+      "case": "round_10_batch_1",
+      "accepted": true,
+      "directions": 214,
+      "lower_Ha": "-76044013257575609747894428866396408286192543456087039456401431/12000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 3.942478564966991,
+      "certificate_bytes": 237366,
+      "trial_wall_seconds": 48.43270608299645,
+      "complete_at_seconds": 331.43634900000325
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "from_case": "inherited",
+      "pricing": {
+        "seconds": 0.01921295800275402,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0026441445609037464,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.002162646486428398,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.007517565752778052,
+            "negative_eigenvalues": 11,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.00556111809948067,
+            "negative_eigenvalues": 12,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.007517567061324774,
+            "negative_eigenvalues": 11,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.005561116523332343,
+            "negative_eigenvalues": 12,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.002644137742593899,
+            "negative_eigenvalues": 5,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0021626366672414118,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "choices": [
+        {
+          "case": "round_1_batch_1",
+          "gain_mHa": 0.336164714343005,
+          "gain_Ha_per_second": 4.586423949915505e-05
+        },
+        {
+          "case": "round_1_batch_2",
+          "gain_mHa": 0.6896046515965177,
+          "gain_Ha_per_second": 8.701521746954245e-05
+        }
+      ],
+      "selected": "round_1_batch_2"
+    },
+    {
+      "round": 2,
+      "from_case": "round_1_batch_2",
+      "pricing": {
+        "seconds": 0.005157540996151511,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0017511893654904968,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0017257904237521272,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.005205378679285127,
+            "negative_eigenvalues": 11,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.003701738583223721,
+            "negative_eigenvalues": 11,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.005205362282210191,
+            "negative_eigenvalues": 11,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.003701727930669422,
+            "negative_eigenvalues": 11,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0017511755082024656,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0017257890725768316,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "choices": [
+        {
+          "case": "round_2_batch_1",
+          "gain_mHa": 0.34107839358944825,
+          "gain_Ha_per_second": 4.144051947546353e-05
+        },
+        {
+          "case": "round_2_batch_2",
+          "gain_mHa": 0.5312294445105131,
+          "gain_Ha_per_second": 6.0844173803480345e-05
+        }
+      ],
+      "selected": "round_2_batch_2"
+    },
+    {
+      "round": 3,
+      "from_case": "round_2_batch_2",
+      "pricing": {
+        "seconds": 0.005298750002111774,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.000832420026496585,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0005113830475369395,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.002950071341041338,
+            "negative_eigenvalues": 11,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0027037662248367367,
+            "negative_eigenvalues": 10,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0029500690921636496,
+            "negative_eigenvalues": 11,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0027037698355189795,
+            "negative_eigenvalues": 10,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0008324173696263879,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0005113829304947993,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "choices": [
+        {
+          "case": "round_3_batch_1",
+          "gain_mHa": 0.3884014971981981,
+          "gain_Ha_per_second": 4.268585870611926e-05
+        },
+        {
+          "case": "round_3_batch_2",
+          "gain_mHa": 0.5139040394673764,
+          "gain_Ha_per_second": 5.5090993369233485e-05
+        }
+      ],
+      "selected": "round_3_batch_2"
+    },
+    {
+      "round": 4,
+      "from_case": "round_3_batch_2",
+      "pricing": {
+        "seconds": 0.006855958999949507,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.00042850197819178904,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.00036501033515197467,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.002124754855203186,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.002051814760113494,
+            "negative_eigenvalues": 10,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0021247357571605417,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0020518310125071386,
+            "negative_eigenvalues": 10,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.00042850192688152755,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.00036500752878528036,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "choices": [
+        {
+          "case": "round_4_batch_1",
+          "gain_mHa": 0.32377354555631527,
+          "gain_Ha_per_second": 3.3592200531557105e-05
+        },
+        {
+          "case": "round_4_batch_2",
+          "gain_mHa": 0.4391308365329868,
+          "gain_Ha_per_second": 4.4007801459574834e-05
+        }
+      ],
+      "selected": "round_4_batch_2"
+    },
+    {
+      "round": 5,
+      "from_case": "round_4_batch_2",
+      "pricing": {
+        "seconds": 0.00630358300259104,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.00039490088556631126,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.00015743327405059494,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.001435124985760664,
+            "negative_eigenvalues": 9,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0015823504773327367,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0014351151668350666,
+            "negative_eigenvalues": 9,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.001582357705651191,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.00039488457090494986,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0001574372506367672,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "choices": [
+        {
+          "case": "round_5_batch_1",
+          "gain_mHa": 0.13374620624985023,
+          "gain_Ha_per_second": 1.2850067383118895e-05
+        },
+        {
+          "case": "round_5_batch_2",
+          "gain_mHa": 0.25744773688003186,
+          "gain_Ha_per_second": 2.3910366392518948e-05
+        }
+      ],
+      "selected": "round_5_batch_2"
+    },
+    {
+      "round": 6,
+      "from_case": "round_5_batch_2",
+      "pricing": {
+        "seconds": 0.005930332998104859,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.0001060059148315324,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_moment": -4.040631271354922e-05,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.000852632589112128,
+            "negative_eigenvalues": 7,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.000737185089172679,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0008525294624169443,
+            "negative_eigenvalues": 7,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0007371773966761185,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_moment": -0.00010603318854384001,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_moment": -4.0402016265246254e-05,
+            "negative_eigenvalues": 4,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "choices": [
+        {
+          "case": "round_6_batch_1",
+          "gain_mHa": 0.31030671054167647,
+          "gain_Ha_per_second": 2.7146954353575354e-05
+        },
+        {
+          "case": "round_6_batch_2",
+          "gain_mHa": 0.39687769673426515,
+          "gain_Ha_per_second": 3.3273126635718904e-05
+        }
+      ],
+      "selected": "round_6_batch_2"
+    },
+    {
+      "round": 7,
+      "from_case": "round_6_batch_2",
+      "pricing": {
+        "seconds": 0.006416083000658546,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_moment": -7.558662279121583e-05,
+            "negative_eigenvalues": 2,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_moment": -6.824235548929707e-05,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0010859909469352232,
+            "negative_eigenvalues": 7,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0010744739690652398,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0010854118846329787,
+            "negative_eigenvalues": 7,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0010744045266690156,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_moment": -7.561525927421852e-05,
+            "negative_eigenvalues": 2,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_moment": -6.836592093698151e-05,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "choices": [
+        {
+          "case": "round_7_batch_1",
+          "gain_mHa": -0.0024452631454939013,
+          "gain_Ha_per_second": -1.588251102707659e-07
+        },
+        {
+          "case": "round_7_batch_2",
+          "gain_mHa": 0.13227372202824747,
+          "gain_Ha_per_second": 7.701032615696114e-06
+        }
+      ],
+      "selected": "round_7_batch_2"
+    },
+    {
+      "round": 8,
+      "from_case": "round_7_batch_2",
+      "pricing": {
+        "seconds": 0.00683358300011605,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_moment": -6.047862845818245e-06,
+            "negative_eigenvalues": 2,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_moment": -2.122711079861305e-05,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0005571196403714187,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0005058789845093889,
+            "negative_eigenvalues": 7,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0005573966808212058,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0005067346291248467,
+            "negative_eigenvalues": 7,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_moment": -6.059223124704837e-06,
+            "negative_eigenvalues": 2,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_moment": -2.127151162645538e-05,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "choices": [
+        {
+          "case": "round_8_batch_1",
+          "gain_mHa": 0.14086352618045084,
+          "gain_Ha_per_second": 7.446416747787098e-06
+        },
+        {
+          "case": "round_8_batch_2",
+          "gain_mHa": 0.26771617061444075,
+          "gain_Ha_per_second": 1.2156449509222007e-05
+        }
+      ],
+      "selected": "round_8_batch_2"
+    },
+    {
+      "round": 9,
+      "from_case": "round_8_batch_2",
+      "pricing": {
+        "seconds": 0.007305624996661209,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_moment": -3.4954971306808e-06,
+            "negative_eigenvalues": 1,
+            "new_independent_candidates": 1
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_moment": -9.237335636146334e-06,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.000432259966850917,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0005173886479079117,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0004323264927546063,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0005178677674140725,
+            "negative_eigenvalues": 8,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_moment": -3.5106671255072874e-06,
+            "negative_eigenvalues": 1,
+            "new_independent_candidates": 1
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_moment": -9.222741094222167e-06,
+            "negative_eigenvalues": 3,
+            "new_independent_candidates": 2
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "choices": [
+        {
+          "case": "round_9_batch_1",
+          "gain_mHa": 0.07429663392914956,
+          "gain_Ha_per_second": 1.8316024453529877e-06
+        },
+        {
+          "case": "round_9_batch_2",
+          "gain_mHa": 0.09880933741734112,
+          "gain_Ha_per_second": 2.267210660378571e-06
+        }
+      ],
+      "selected": "round_9_batch_2"
+    },
+    {
+      "round": 10,
+      "from_case": "round_9_batch_2",
+      "pricing": {
+        "seconds": 0.008611083001596853,
+        "frames": [
+          {
+            "group": 0,
+            "dimension": 30,
+            "minimum_proposed_moment": -3.142885390230274e-06,
+            "negative_eigenvalues": 1,
+            "new_independent_candidates": 1
+          },
+          {
+            "group": 1,
+            "dimension": 30,
+            "minimum_proposed_moment": -2.294865280376145e-06,
+            "negative_eigenvalues": 1,
+            "new_independent_candidates": 1
+          },
+          {
+            "group": 2,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0002223398277941025,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 3,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.0002413494977063706,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 4,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.00022252487141777928,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 5,
+            "dimension": 93,
+            "minimum_proposed_moment": -0.00024121588464834823,
+            "negative_eigenvalues": 6,
+            "new_independent_candidates": 2
+          },
+          {
+            "group": 6,
+            "dimension": 30,
+            "minimum_proposed_moment": -3.1567964735105942e-06,
+            "negative_eigenvalues": 1,
+            "new_independent_candidates": 1
+          },
+          {
+            "group": 7,
+            "dimension": 30,
+            "minimum_proposed_moment": -2.293960978886648e-06,
+            "negative_eigenvalues": 1,
+            "new_independent_candidates": 1
+          }
+        ],
+        "scope": "Floating pricing proposal only; candidate lower bounds require exact replay."
+      },
+      "choices": [
+        {
+          "case": "round_10_batch_1",
+          "gain_mHa": 0.14474713679243023,
+          "gain_Ha_per_second": 2.9880925057510866e-06
+        }
+      ],
+      "unrun_bundle": 2,
+      "selected": "round_10_batch_1"
+    }
+  ],
+  "best_case": "round_10_batch_1",
+  "complete": true,
+  "pending_trial": null,
+  "elapsed_seconds": 331.44070833300066,
+  "continuation_case": "round_10_batch_1",
+  "stop": "time_reserve"
+}

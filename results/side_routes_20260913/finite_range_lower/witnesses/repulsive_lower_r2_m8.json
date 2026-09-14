@@ -1,0 +1,105 @@
+{
+  "case": "repulsive",
+  "objective": "lower",
+  "radius": 2,
+  "modes": 8,
+  "training_modes": 12,
+  "weights": [
+    "5825/16384",
+    "50525/65536",
+    "1",
+    "2961/4096",
+    "1"
+  ],
+  "origin": {
+    "search_radius": 2,
+    "seed": 17,
+    "candidate": "optimized"
+  },
+  "model": {
+    "modes": 8,
+    "particles": 4,
+    "hopping": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "interaction": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "fields": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "energy_unit": "t_reference=1; abstract lattice model"
+  },
+  "amplitude": {
+    "sites": [
+      "2961/4096",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "2961/4096"
+    ],
+    "pairs": [
+      [
+        "5825/16384",
+        "5825/16384",
+        "5825/16384",
+        "5825/16384",
+        "5825/16384",
+        "5825/16384",
+        "5825/16384"
+      ],
+      [
+        "50525/65536",
+        "50525/65536",
+        "50525/65536",
+        "50525/65536",
+        "50525/65536",
+        "50525/65536"
+      ]
+    ]
+  },
+  "claim": {
+    "method": "fixed_N_finite_pair_range_local_energy_DP_v1",
+    "lower": "-136778369/30539776",
+    "upper": "-30477268724823012806775909241670562738270757368829/7971131066597566039613466956631406613541300945921",
+    "width": "159509346426545011504051850326488678955256900126844540545/243436557240530748995002407438924872542469897637015453696",
+    "lower_float": -4.478695881724869,
+    "upper_float": -3.823455977600939,
+    "width_float": 0.6552399041239302,
+    "partition": "4981956916623478774758416847894629133463313091200625/2993155353253689176481146537402947624255349848014848",
+    "minimum_configuration": "01100110",
+    "modes": 8,
+    "particles": 4,
+    "pair_range": 2,
+    "tail_memory_bits": 5,
+    "dp_transitions": 230,
+    "peak_dp_states": 50,
+    "factor_table_entries": 304,
+    "peak_dp_rational_bits": 173,
+    "many_body_states_enumerated": 0,
+    "wall_seconds": 0.010184498998569325,
+    "scope": "Exact supplied-chain interval; no global discovery optimum or generic accuracy guarantee."
+  }
+}

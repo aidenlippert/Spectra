@@ -1,0 +1,96 @@
+{
+  "size": 32,
+  "seed": 7,
+  "spectrum": "(1+i)^-1.35",
+  "dictionary": "deterministic random normalized linear map",
+  "rows": [
+    {
+      "method": "spectral",
+      "budget": 1,
+      "gram_rank": 1,
+      "gram_rel_fro_error": 0.4628801330901056,
+      "operator_residual": 0.08506451444801415,
+      "min_eigenvalue": -1.3441904889281104e-16
+    },
+    {
+      "method": "spectral",
+      "budget": 2,
+      "gram_rank": 2,
+      "gram_rel_fro_error": 0.30551233381925524,
+      "operator_residual": 0.05901832142514773,
+      "min_eigenvalue": -7.053390424611884e-17
+    },
+    {
+      "method": "spectral",
+      "budget": 4,
+      "gram_rank": 4,
+      "gram_rel_fro_error": 0.1851121711441871,
+      "operator_residual": 0.038484317764344675,
+      "min_eigenvalue": -9.0015656663865e-17
+    },
+    {
+      "method": "spectral",
+      "budget": 8,
+      "gram_rank": 8,
+      "gram_rel_fro_error": 0.10431492626136803,
+      "operator_residual": 0.021570060750590578,
+      "min_eigenvalue": -8.10806177920604e-17
+    },
+    {
+      "method": "spectral",
+      "budget": 16,
+      "gram_rank": 16,
+      "gram_rel_fro_error": 0.05186997763404449,
+      "operator_residual": 0.01014744818549492,
+      "min_eigenvalue": -1.0473648838429455e-16
+    },
+    {
+      "method": "spectral",
+      "budget": 32,
+      "gram_rank": 32,
+      "gram_rel_fro_error": 2.02546626745656e-15,
+      "operator_residual": 3.4159653417950863e-16,
+      "min_eigenvalue": 0.009290680585958715
+    },
+    {
+      "method": "entrywise",
+      "budget": 32,
+      "gram_rank": 15,
+      "gram_rel_fro_error": 0.7390800394457308,
+      "operator_residual": 0.15683173646388243,
+      "min_eigenvalue": -0.08643336045416955
+    },
+    {
+      "method": "entrywise",
+      "budget": 64,
+      "gram_rank": 23,
+      "gram_rel_fro_error": 0.6080743952545588,
+      "operator_residual": 0.12001784094714978,
+      "min_eigenvalue": -0.13263635795909817
+    },
+    {
+      "method": "entrywise",
+      "budget": 128,
+      "gram_rank": 29,
+      "gram_rel_fro_error": 0.42180179260454476,
+      "operator_residual": 0.07589870579580464,
+      "min_eigenvalue": -0.10072164633235202
+    },
+    {
+      "method": "entrywise",
+      "budget": 256,
+      "gram_rank": 32,
+      "gram_rel_fro_error": 0.18939196084968085,
+      "operator_residual": 0.039126226432019615,
+      "min_eigenvalue": -0.03825038647552835
+    },
+    {
+      "method": "entrywise",
+      "budget": 528,
+      "gram_rank": 32,
+      "gram_rel_fro_error": 5.0714379728511044e-17,
+      "operator_residual": 1.0269843683878097e-17,
+      "min_eigenvalue": 0.009290680585958742
+    }
+  ]
+}

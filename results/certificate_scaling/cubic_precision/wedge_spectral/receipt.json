@@ -1,0 +1,67 @@
+{
+  "scope": "wedge coefficient-matrix spectral proposal with exact residual replay",
+  "tiny_cases": [
+    {
+      "ell": "1",
+      "residual_gershgorin": "0",
+      "lower": "1",
+      "dimension": 2,
+      "factor_entries": 2,
+      "denominator": 1
+    },
+    {
+      "ell": "-1",
+      "residual_gershgorin": "0",
+      "lower": "-1",
+      "dimension": 2,
+      "factor_entries": 0,
+      "denominator": 1
+    }
+  ],
+  "replay": "Fraction arithmetic; V=Gram+D and Gershgorin(D)",
+  "many_body_enumeration": false,
+  "wall_seconds": 0.00011395900219213217,
+  "h8": {
+    "path": "/Users/aidenlippert/Documents/Spectra/results/lambda_runs/cubic_precision/downloaded/h8_scs_quotient/certificate.json",
+    "modes": 16,
+    "particles": 8,
+    "residual_l1": "26231243864952777/1000000000000000000",
+    "rows": [
+      {
+        "body_rank": 1,
+        "terms": 64,
+        "components": 4,
+        "component_sizes": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "wedge_lower_sum": "-74779313611274967917/200000000000000000000000",
+        "lifted_lower": "-74779313611274967917/25000000000000000000000"
+      },
+      {
+        "body_rank": 2,
+        "terms": 2848,
+        "components": 1,
+        "component_sizes": [
+          16
+        ],
+        "wedge_lower_sum": "-4552231127994327109/31250000000000000000000",
+        "lifted_lower": "-31865617895960289763/7812500000000000000000"
+      },
+      {
+        "body_rank": 3,
+        "terms": 53312,
+        "components": 1,
+        "component_sizes": [
+          16
+        ],
+        "wedge_lower_sum": "-20962454518150608749/250000000000000000000000",
+        "lifted_lower": "-146737181627054261243/31250000000000000000000"
+      }
+    ],
+    "cost": "no many-body enumeration"
+  },
+  "INVALID": "Superseded: draft collapsed wedge indices to individual modes, omitted phase and combined blocks incorrectly. No bound may be used."
+}

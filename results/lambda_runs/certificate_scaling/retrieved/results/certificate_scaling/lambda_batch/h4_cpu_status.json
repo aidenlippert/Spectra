@@ -1,0 +1,17 @@
+{
+  "returncode": 0,
+  "status": "finished",
+  "name": "h4_cpu",
+  "command": [
+    "research/certificate_scaling/low_rank_compression.py",
+    "--campaign",
+    "--fixture",
+    "results/marginal_molecule_stress/h4_square_degree3_certificate.json",
+    "--outputdir",
+    "results/certificate_scaling/lambda_batch/h4_cpu",
+    "--backend",
+    "numpy"
+  ],
+  "timeout_seconds": 180,
+  "wall_seconds": 4.672637253000005
+}

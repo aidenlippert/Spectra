@@ -1,0 +1,1416 @@
+{
+  "scope": "CAR SOS campaign; each proposal has independent residual and exact replay attempt",
+  "cases": [
+    {
+      "scope": "CAR SOS restricted SDP; residual is independently reconstructed numerical diagnostic",
+      "modes": 4,
+      "particles": 2,
+      "dictionary_blocks": 7,
+      "budget": 1,
+      "asymmetric": false,
+      "strategies": {
+        "adaptive": {
+          "order": [
+            "mixed-"
+          ],
+          "trace": [
+            {
+              "b": -0.14031241868832128,
+              "residual_max": 1.1615247652585481e-10,
+              "residual_l2": 1.1619002593517589e-10,
+              "gram_rank": [
+                24
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 0.052586833997338545,
+              "solver_status": "optimal",
+              "coefficient_rows": 42
+            }
+          ],
+          "exact_replay": {
+            "lower": "-14031441478573/100000000000000",
+            "lower_float": -0.14031441478573,
+            "residual_l1": "199609773/100000000000000",
+            "residual_l1_float": 1.99609773e-06,
+            "multiplier_terms": 23,
+            "square_polynomial_terms": 60,
+            "residual_terms": 61,
+            "residual_max_degree": 6,
+            "mode_count": 4,
+            "particle_number": 2,
+            "factor_rows": 24,
+            "factor_nonzeros": 382,
+            "status": "optimal",
+            "coefficient_rows": 42,
+            "gram_dimensions": [
+              28
+            ],
+            "coefficient_map_nonzeros": 268,
+            "multiplier_basis_dimension": 32,
+            "build_seconds": 0.002425667000352405,
+            "solve_seconds": 0.04790862499794457,
+            "proposed_b": -0.14031241868832128
+          },
+          "exact_replay_accepted": true,
+          "certificate_bytes": 6831
+        },
+        "fixed": {
+          "order": [
+            "linear-"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.005320374999428168,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            }
+          ]
+        },
+        "random": {
+          "order": [
+            "pair-"
+          ],
+          "trace": [
+            {
+              "b": -0.14031242370430533,
+              "residual_max": 3.9226955017568343e-11,
+              "residual_l2": 3.9226955028044004e-11,
+              "gram_rank": [
+                5
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 0.006785833997128066,
+              "solver_status": "optimal",
+              "coefficient_rows": 42
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scope": "CAR SOS restricted SDP; residual is independently reconstructed numerical diagnostic",
+      "modes": 4,
+      "particles": 2,
+      "dictionary_blocks": 7,
+      "budget": 2,
+      "asymmetric": false,
+      "strategies": {
+        "adaptive": {
+          "order": [
+            "mixed-",
+            "particle-hole"
+          ],
+          "trace": [
+            {
+              "b": -0.14031241868832128,
+              "residual_max": 1.1615247652585481e-10,
+              "residual_l2": 1.1619002593517589e-10,
+              "gram_rank": [
+                24
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 0.05284162500174716,
+              "solver_status": "optimal",
+              "coefficient_rows": 42
+            },
+            {
+              "b": -0.14031241383350887,
+              "residual_max": 3.4188979425309185e-10,
+              "residual_l2": 5.282157819145471e-10,
+              "gram_rank": [
+                24,
+                10
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 0.06594324999605305,
+              "solver_status": "optimal",
+              "coefficient_rows": 42
+            }
+          ],
+          "exact_replay": {
+            "lower": "-701570502939/5000000000000",
+            "lower_float": -0.1403141005878,
+            "residual_l1": "8433769/5000000000000",
+            "residual_l1_float": 1.6867538e-06,
+            "multiplier_terms": 23,
+            "square_polynomial_terms": 68,
+            "residual_terms": 69,
+            "residual_max_degree": 6,
+            "mode_count": 4,
+            "particle_number": 2,
+            "factor_rows": 41,
+            "factor_nonzeros": 593,
+            "status": "optimal",
+            "coefficient_rows": 42,
+            "gram_dimensions": [
+              28,
+              16
+            ],
+            "coefficient_map_nonzeros": 392,
+            "multiplier_basis_dimension": 32,
+            "build_seconds": 0.002469250001013279,
+            "solve_seconds": 0.06078683400119189,
+            "proposed_b": -0.14031241383350887
+          },
+          "exact_replay_accepted": true,
+          "certificate_bytes": 8460
+        },
+        "fixed": {
+          "order": [
+            "linear-",
+            "linear+"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.005136250001669396,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            },
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 2,
+              "wall_seconds": 0.005156708000868093,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            }
+          ]
+        },
+        "random": {
+          "order": [
+            "pair+",
+            "pair-"
+          ],
+          "trace": [
+            {
+              "b": -0.1403124240635667,
+              "residual_max": 2.2659896181664863e-10,
+              "residual_l2": 3.3379041892700137e-10,
+              "gram_rank": [
+                5
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 0.007650874998944346,
+              "solver_status": "optimal",
+              "coefficient_rows": 42
+            },
+            {
+              "b": -0.14031242393120416,
+              "residual_max": 2.546070021480773e-10,
+              "residual_l2": 3.4519035855553474e-10,
+              "gram_rank": [
+                5,
+                5
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 0.009214375000738073,
+              "solver_status": "optimal",
+              "coefficient_rows": 42
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scope": "CAR SOS restricted SDP; residual is independently reconstructed numerical diagnostic",
+      "modes": 4,
+      "particles": 2,
+      "dictionary_blocks": 7,
+      "budget": 3,
+      "asymmetric": false,
+      "strategies": {
+        "adaptive": {
+          "order": [
+            "mixed-",
+            "particle-hole",
+            "pair+"
+          ],
+          "trace": [
+            {
+              "b": -0.14031241868832128,
+              "residual_max": 1.1615247652585481e-10,
+              "residual_l2": 1.1619002593517589e-10,
+              "gram_rank": [
+                24
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 0.051242415996966884,
+              "solver_status": "optimal",
+              "coefficient_rows": 42
+            },
+            {
+              "b": -0.14031241383350887,
+              "residual_max": 3.4188979425309185e-10,
+              "residual_l2": 5.282157819145471e-10,
+              "gram_rank": [
+                24,
+                10
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 0.06528295900352532,
+              "solver_status": "optimal",
+              "coefficient_rows": 42
+            },
+            {
+              "b": -0.14031241892286048,
+              "residual_max": 3.9234903867479964e-10,
+              "residual_l2": 7.437726082381194e-10,
+              "gram_rank": [
+                24,
+                10,
+                5
+              ],
+              "support_blocks": 3,
+              "wall_seconds": 0.06769929199799662,
+              "solver_status": "optimal",
+              "coefficient_rows": 42
+            }
+          ],
+          "exact_replay": {
+            "lower": "-876966783613/6250000000000",
+            "lower_float": -0.14031468537808,
+            "residual_l1": "56661377/25000000000000",
+            "residual_l1_float": 2.26645508e-06,
+            "multiplier_terms": 23,
+            "square_polynomial_terms": 61,
+            "residual_terms": 61,
+            "residual_max_degree": 6,
+            "mode_count": 4,
+            "particle_number": 2,
+            "factor_rows": 42,
+            "factor_nonzeros": 572,
+            "status": "optimal",
+            "coefficient_rows": 42,
+            "gram_dimensions": [
+              28,
+              16,
+              6
+            ],
+            "coefficient_map_nonzeros": 443,
+            "multiplier_basis_dimension": 32,
+            "build_seconds": 0.0028275000004214235,
+            "solve_seconds": 0.06294929100113222,
+            "proposed_b": -0.14031241892286048
+          },
+          "exact_replay_accepted": true,
+          "certificate_bytes": 8350
+        },
+        "fixed": {
+          "order": [
+            "linear-",
+            "linear+",
+            "pair-"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.004717625000921544,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            },
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 2,
+              "wall_seconds": 0.005320249998476356,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            },
+            {
+              "b": -0.14031242364138527,
+              "residual_max": 1.0182445096637402e-10,
+              "residual_l2": 1.0182445096831639e-10,
+              "gram_rank": [
+                0,
+                0,
+                5
+              ],
+              "support_blocks": 3,
+              "wall_seconds": 0.011747208001906984,
+              "solver_status": "optimal",
+              "coefficient_rows": 42
+            }
+          ]
+        },
+        "random": {
+          "order": [
+            "linear-",
+            "mixed+",
+            "pair+"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.004398999997647479,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            },
+            {
+              "b": -0.14031242221580703,
+              "residual_max": 5.003937264547176e-10,
+              "residual_l2": 1.1557923806601359e-09,
+              "gram_rank": [
+                0,
+                24
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 0.06161204099771567,
+              "solver_status": "optimal",
+              "coefficient_rows": 42
+            },
+            {
+              "b": -0.14031243320242467,
+              "residual_max": 6.063950175327903e-10,
+              "residual_l2": 1.1586508884253028e-09,
+              "gram_rank": [
+                0,
+                24,
+                5
+              ],
+              "support_blocks": 3,
+              "wall_seconds": 0.05021904100431129,
+              "solver_status": "optimal",
+              "coefficient_rows": 42
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scope": "CAR SOS restricted SDP; residual is independently reconstructed numerical diagnostic",
+      "modes": 6,
+      "particles": 3,
+      "dictionary_blocks": 9,
+      "budget": 1,
+      "asymmetric": false,
+      "strategies": {
+        "adaptive": {
+          "order": [
+            "mixed-"
+          ],
+          "trace": [
+            {
+              "b": 0.5510004008328409,
+              "residual_max": 1.9031554110426896e-10,
+              "residual_l2": 5.80479632743309e-10,
+              "gram_rank": [
+                81
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 1.1578210830048192,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ],
+          "exact_replay": {
+            "lower": "13774792091073/25000000000000",
+            "lower_float": 0.55099168364292,
+            "residual_l1": "27241219/3125000000000",
+            "residual_l1_float": 8.71719008e-06,
+            "multiplier_terms": 64,
+            "square_polynomial_terms": 649,
+            "residual_terms": 650,
+            "residual_max_degree": 6,
+            "mode_count": 6,
+            "particle_number": 3,
+            "factor_rows": 84,
+            "factor_nonzeros": 3012,
+            "status": "optimal",
+            "coefficient_rows": 352,
+            "gram_dimensions": [
+              96
+            ],
+            "coefficient_map_nonzeros": 3111,
+            "multiplier_basis_dimension": 142,
+            "build_seconds": 0.02102329199988162,
+            "solve_seconds": 1.1193355419964064,
+            "proposed_b": 0.5510004008328409
+          },
+          "exact_replay_accepted": true,
+          "certificate_bytes": 42864
+        },
+        "fixed": {
+          "order": [
+            "linear-"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.0176489160003257,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            }
+          ]
+        },
+        "random": {
+          "order": [
+            "mixed-"
+          ],
+          "trace": [
+            {
+              "b": 0.5510004008328409,
+              "residual_max": 1.9031554110426896e-10,
+              "residual_l2": 5.80479632743309e-10,
+              "gram_rank": [
+                81
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 1.1197930829948746,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scope": "CAR SOS restricted SDP; residual is independently reconstructed numerical diagnostic",
+      "modes": 6,
+      "particles": 3,
+      "dictionary_blocks": 9,
+      "budget": 1,
+      "asymmetric": true,
+      "strategies": {
+        "adaptive": {
+          "order": [
+            "mixed+"
+          ],
+          "trace": [
+            {
+              "b": 0.5408771845183994,
+              "residual_max": 1.872310362305285e-09,
+              "residual_l2": 2.618762170442544e-09,
+              "gram_rank": [
+                80
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 0.9869117499983986,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ],
+          "exact_replay": {
+            "lower": "27043494250951/50000000000000",
+            "lower_float": 0.54086988501902,
+            "residual_l1": "364974949/50000000000000",
+            "residual_l1_float": 7.29949898e-06,
+            "multiplier_terms": 122,
+            "square_polynomial_terms": 298,
+            "residual_terms": 298,
+            "residual_max_degree": 6,
+            "mode_count": 6,
+            "particle_number": 3,
+            "factor_rows": 89,
+            "factor_nonzeros": 3004,
+            "status": "optimal",
+            "coefficient_rows": 352,
+            "gram_dimensions": [
+              96
+            ],
+            "coefficient_map_nonzeros": 4932,
+            "multiplier_basis_dimension": 142,
+            "build_seconds": 0.02589533300488256,
+            "solve_seconds": 0.9498596670018742,
+            "proposed_b": 0.5408771845183994
+          },
+          "exact_replay_accepted": true,
+          "certificate_bytes": 51032
+        },
+        "fixed": {
+          "order": [
+            "linear-"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.01852520900138188,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            }
+          ]
+        },
+        "random": {
+          "order": [
+            "mixed-"
+          ],
+          "trace": [
+            {
+              "b": 0.5408771752377156,
+              "residual_max": 4.0255143662903947e-10,
+              "residual_l2": 5.000201227954497e-10,
+              "gram_rank": [
+                81
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 0.6461090829980094,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scope": "CAR SOS restricted SDP; residual is independently reconstructed numerical diagnostic",
+      "modes": 6,
+      "particles": 3,
+      "dictionary_blocks": 9,
+      "budget": 2,
+      "asymmetric": false,
+      "strategies": {
+        "adaptive": {
+          "order": [
+            "mixed-",
+            "local-triples-"
+          ],
+          "trace": [
+            {
+              "b": 0.5510004008328409,
+              "residual_max": 1.9031554110426896e-10,
+              "residual_l2": 5.80479632743309e-10,
+              "gram_rank": [
+                81
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 1.1946479580001323,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            },
+            {
+              "b": 0.5510004037740447,
+              "residual_max": 1.5383627705034542e-10,
+              "residual_l2": 3.336044780295688e-10,
+              "gram_rank": [
+                81,
+                1
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 1.326716999996279,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ],
+          "exact_replay": {
+            "lower": "55099313170133/100000000000000",
+            "lower_float": 0.55099313170133,
+            "residual_l1": "727207267/100000000000000",
+            "residual_l1_float": 7.27207267e-06,
+            "multiplier_terms": 64,
+            "square_polynomial_terms": 637,
+            "residual_terms": 638,
+            "residual_max_degree": 6,
+            "mode_count": 6,
+            "particle_number": 3,
+            "factor_rows": 94,
+            "factor_nonzeros": 3380,
+            "status": "optimal",
+            "coefficient_rows": 352,
+            "gram_dimensions": [
+              96,
+              2
+            ],
+            "coefficient_map_nonzeros": 3114,
+            "multiplier_basis_dimension": 142,
+            "build_seconds": 0.024402957998972852,
+            "solve_seconds": 1.3019943330000388,
+            "proposed_b": 0.5510004037740447
+          },
+          "exact_replay_accepted": true,
+          "certificate_bytes": 46186
+        },
+        "fixed": {
+          "order": [
+            "linear-",
+            "linear+"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.018880374998843763,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            },
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 2,
+              "wall_seconds": 0.020588499995938037,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            }
+          ]
+        },
+        "random": {
+          "order": [
+            "pair+",
+            "particle-hole"
+          ],
+          "trace": [
+            {
+              "b": -0.11554943640285248,
+              "residual_max": 5.694279714418826e-09,
+              "residual_l2": 5.694440325422558e-09,
+              "gram_rank": [
+                12
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 0.03719512499810662,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            },
+            {
+              "b": 0.4899850771344966,
+              "residual_max": 2.6075110404200075e-09,
+              "residual_l2": 2.6644331052613425e-09,
+              "gram_rank": [
+                9,
+                17
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 0.14688349999778438,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scope": "CAR SOS restricted SDP; residual is independently reconstructed numerical diagnostic",
+      "modes": 6,
+      "particles": 3,
+      "dictionary_blocks": 9,
+      "budget": 2,
+      "asymmetric": true,
+      "strategies": {
+        "adaptive": {
+          "order": [
+            "mixed+",
+            "particle-hole"
+          ],
+          "trace": [
+            {
+              "b": 0.5408771845183994,
+              "residual_max": 1.872310362305285e-09,
+              "residual_l2": 2.618762170442544e-09,
+              "gram_rank": [
+                80
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 1.095202208001865,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            },
+            {
+              "b": 0.5408771865351953,
+              "residual_max": 9.16980408272039e-10,
+              "residual_l2": 2.616868470959557e-09,
+              "gram_rank": [
+                81,
+                16
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 1.3908212919996004,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ],
+          "exact_replay": {
+            "lower": "54086973814157/100000000000000",
+            "lower_float": 0.54086973814157,
+            "residual_l1": "744839343/100000000000000",
+            "residual_l1_float": 7.44839343e-06,
+            "multiplier_terms": 122,
+            "square_polynomial_terms": 298,
+            "residual_terms": 298,
+            "residual_max_degree": 6,
+            "mode_count": 6,
+            "particle_number": 3,
+            "factor_rows": 120,
+            "factor_nonzeros": 3477,
+            "status": "optimal",
+            "coefficient_rows": 352,
+            "gram_dimensions": [
+              96,
+              36
+            ],
+            "coefficient_map_nonzeros": 5538,
+            "multiplier_basis_dimension": 142,
+            "build_seconds": 0.024996332998853177,
+            "solve_seconds": 1.2828558339970186,
+            "proposed_b": 0.5408771865351953
+          },
+          "exact_replay_accepted": true,
+          "certificate_bytes": 56660
+        },
+        "fixed": {
+          "order": [
+            "linear-",
+            "linear+"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.016910999998799525,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            },
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 2,
+              "wall_seconds": 0.01739804200042272,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            }
+          ]
+        },
+        "random": {
+          "order": [
+            "pair+",
+            "particle-hole"
+          ],
+          "trace": [
+            {
+              "b": -0.16687620058634847,
+              "residual_max": 7.980318628142413e-10,
+              "residual_l2": 8.772176380609245e-10,
+              "gram_rank": [
+                14
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 0.03423220799595583,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            },
+            {
+              "b": 0.4821755606252965,
+              "residual_max": 3.3842767477310076e-10,
+              "residual_l2": 3.626185096343945e-10,
+              "gram_rank": [
+                9,
+                17
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 0.10108616700017592,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scope": "CAR SOS restricted SDP; residual is independently reconstructed numerical diagnostic",
+      "modes": 6,
+      "particles": 3,
+      "dictionary_blocks": 9,
+      "budget": 3,
+      "asymmetric": false,
+      "strategies": {
+        "adaptive": {
+          "order": [
+            "mixed-",
+            "local-triples-",
+            "pair+"
+          ],
+          "trace": [
+            {
+              "b": 0.5510004008328409,
+              "residual_max": 1.9031554110426896e-10,
+              "residual_l2": 5.80479632743309e-10,
+              "gram_rank": [
+                81
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 1.1065671670003212,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            },
+            {
+              "b": 0.5510004037740447,
+              "residual_max": 1.5383627705034542e-10,
+              "residual_l2": 3.336044780295688e-10,
+              "gram_rank": [
+                81,
+                1
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 1.4237696659984067,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            },
+            {
+              "b": 0.551000406819071,
+              "residual_max": 1.6127027838153118e-09,
+              "residual_l2": 1.9710002818284756e-09,
+              "gram_rank": [
+                81,
+                1,
+                9
+              ],
+              "support_blocks": 3,
+              "wall_seconds": 1.3625706250022631,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ],
+          "exact_replay": {
+            "lower": "13774829944009/25000000000000",
+            "lower_float": 0.55099319776036,
+            "residual_l1": "90113233/12500000000000",
+            "residual_l1_float": 7.20905864e-06,
+            "multiplier_terms": 64,
+            "square_polynomial_terms": 622,
+            "residual_terms": 622,
+            "residual_max_degree": 6,
+            "mode_count": 6,
+            "particle_number": 3,
+            "factor_rows": 106,
+            "factor_nonzeros": 3231,
+            "status": "optimal",
+            "coefficient_rows": 352,
+            "gram_dimensions": [
+              96,
+              2,
+              15
+            ],
+            "coefficient_map_nonzeros": 3339,
+            "multiplier_basis_dimension": 142,
+            "build_seconds": 0.022560958001122344,
+            "solve_seconds": 1.3394966249979916,
+            "proposed_b": 0.551000406819071
+          },
+          "exact_replay_accepted": true,
+          "certificate_bytes": 44847
+        },
+        "fixed": {
+          "order": [
+            "linear-",
+            "linear+",
+            "pair-"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.01664587499544723,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            },
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 2,
+              "wall_seconds": 0.018030582999926992,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            },
+            {
+              "b": -0.11554944147238853,
+              "residual_max": 6.67032290185771e-10,
+              "residual_l2": 6.670322902908915e-10,
+              "gram_rank": [
+                0,
+                0,
+                12
+              ],
+              "support_blocks": 3,
+              "wall_seconds": 0.043087000005471054,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ]
+        },
+        "random": {
+          "order": [
+            "local-triples+",
+            "mixed-",
+            "local-triples-"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.017193874999065883,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            },
+            {
+              "b": 0.5510004034022771,
+              "residual_max": 1.704782981448716e-10,
+              "residual_l2": 5.544398341307137e-10,
+              "gram_rank": [
+                1,
+                81
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 1.2721998749984778,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            },
+            {
+              "b": 0.5510003998446403,
+              "residual_max": 3.941629245218792e-10,
+              "residual_l2": 5.474080745367898e-10,
+              "gram_rank": [
+                1,
+                81,
+                1
+              ],
+              "support_blocks": 3,
+              "wall_seconds": 0.9944315409957198,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scope": "CAR SOS restricted SDP; residual is independently reconstructed numerical diagnostic",
+      "modes": 6,
+      "particles": 3,
+      "dictionary_blocks": 9,
+      "budget": 3,
+      "asymmetric": true,
+      "strategies": {
+        "adaptive": {
+          "order": [
+            "mixed+",
+            "particle-hole",
+            "local-triples+"
+          ],
+          "trace": [
+            {
+              "b": 0.5408771845183994,
+              "residual_max": 1.872310362305285e-09,
+              "residual_l2": 2.618762170442544e-09,
+              "gram_rank": [
+                80
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 1.0679444169945782,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            },
+            {
+              "b": 0.5408771865351953,
+              "residual_max": 9.16980408272039e-10,
+              "residual_l2": 2.616868470959557e-09,
+              "gram_rank": [
+                81,
+                16
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 1.5458455830012099,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            },
+            {
+              "b": 0.5408771848288323,
+              "residual_max": 6.656097315026546e-10,
+              "residual_l2": 2.1528623478280854e-09,
+              "gram_rank": [
+                81,
+                16,
+                1
+              ],
+              "support_blocks": 3,
+              "wall_seconds": 1.8518534999966505,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ],
+          "exact_replay": {
+            "lower": "27043485464137/50000000000000",
+            "lower_float": 0.54086970928274,
+            "residual_l1": "373777313/50000000000000",
+            "residual_l1_float": 7.47554626e-06,
+            "multiplier_terms": 122,
+            "square_polynomial_terms": 298,
+            "residual_terms": 298,
+            "residual_max_degree": 6,
+            "mode_count": 6,
+            "particle_number": 3,
+            "factor_rows": 117,
+            "factor_nonzeros": 3450,
+            "status": "optimal",
+            "coefficient_rows": 352,
+            "gram_dimensions": [
+              96,
+              36,
+              2
+            ],
+            "coefficient_map_nonzeros": 5555,
+            "multiplier_basis_dimension": 142,
+            "build_seconds": 0.025620708001952153,
+            "solve_seconds": 1.8070772919963929,
+            "proposed_b": 0.5408771848288323
+          },
+          "exact_replay_accepted": true,
+          "certificate_bytes": 55464
+        },
+        "fixed": {
+          "order": [
+            "linear-",
+            "linear+",
+            "pair-"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.016946417003055103,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            },
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 2,
+              "wall_seconds": 0.019643583000288345,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            },
+            {
+              "b": -0.15950992405419276,
+              "residual_max": 5.225983257250988e-10,
+              "residual_l2": 5.231772888549792e-10,
+              "gram_rank": [
+                0,
+                2,
+                14
+              ],
+              "support_blocks": 3,
+              "wall_seconds": 0.04343312499986496,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ]
+        },
+        "random": {
+          "order": [
+            "local-triples+",
+            "mixed-",
+            "local-triples-"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.015593749994877726,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            },
+            {
+              "b": 0.5408771710617595,
+              "residual_max": 6.612868030941854e-10,
+              "residual_l2": 8.346598711445869e-10,
+              "gram_rank": [
+                1,
+                82
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 0.9940735419950215,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            },
+            {
+              "b": 0.5408771845654693,
+              "residual_max": 1.6153911541749721e-10,
+              "residual_l2": 4.2682455073995006e-10,
+              "gram_rank": [
+                1,
+                81,
+                1
+              ],
+              "support_blocks": 3,
+              "wall_seconds": 0.8263252910037409,
+              "solver_status": "optimal",
+              "coefficient_rows": 352
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scope": "CAR SOS restricted SDP; residual is independently reconstructed numerical diagnostic",
+      "modes": 8,
+      "particles": 4,
+      "dictionary_blocks": 9,
+      "budget": 1,
+      "asymmetric": false,
+      "strategies": {
+        "adaptive": {
+          "order": [
+            "mixed+"
+          ],
+          "trace": [
+            {
+              "b": 1.6378613961243165,
+              "residual_max": 1.1298748603394415e-09,
+              "residual_l2": 3.6306301133192005e-09,
+              "gram_rank": [
+                176
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 5.274535708995245,
+              "solver_status": "optimal",
+              "coefficient_rows": 2039
+            }
+          ],
+          "exact_replay": {
+            "lower": "40945569635463/25000000000000",
+            "lower_float": 1.63782278541852,
+            "residual_l1": "965267637/25000000000000",
+            "residual_l1_float": 3.861070548e-05,
+            "multiplier_terms": 117,
+            "square_polynomial_terms": 3985,
+            "residual_terms": 3985,
+            "residual_max_degree": 6,
+            "mode_count": 8,
+            "particle_number": 4,
+            "factor_rows": 200,
+            "factor_nonzeros": 13330,
+            "status": "optimal",
+            "coefficient_rows": 2039,
+            "gram_dimensions": [
+              232
+            ],
+            "coefficient_map_nonzeros": 27512,
+            "multiplier_basis_dimension": 443,
+            "build_seconds": 0.3795257079982548,
+            "solve_seconds": 5.691648125000938,
+            "proposed_b": 1.6378613961243165
+          },
+          "exact_replay_accepted": true,
+          "certificate_bytes": 181277
+        },
+        "fixed": {
+          "order": [
+            "linear-"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.23742674999812152,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            }
+          ]
+        },
+        "random": {
+          "order": [
+            "local-triples+"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.24903716699918732,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "scope": "CAR SOS restricted SDP; residual is independently reconstructed numerical diagnostic",
+      "modes": 8,
+      "particles": 4,
+      "dictionary_blocks": 9,
+      "budget": 2,
+      "asymmetric": false,
+      "strategies": {
+        "adaptive": {
+          "order": [
+            "mixed+",
+            "local-triples-"
+          ],
+          "trace": [
+            {
+              "b": 1.6378613961243165,
+              "residual_max": 1.1298748603394415e-09,
+              "residual_l2": 3.6306301133192005e-09,
+              "gram_rank": [
+                176
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 5.390948167005263,
+              "solver_status": "optimal",
+              "coefficient_rows": 2039
+            },
+            {
+              "b": 1.6378614111555028,
+              "residual_max": 2.547309141398557e-09,
+              "residual_l2": 6.8134488444235374e-09,
+              "gram_rank": [
+                176,
+                0
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 7.624055000000226,
+              "solver_status": "optimal",
+              "coefficient_rows": 2039
+            }
+          ],
+          "exact_replay": {
+            "lower": "81891099997159/50000000000000",
+            "lower_float": 1.63782199994318,
+            "residual_l1": "1970560641/50000000000000",
+            "residual_l1_float": 3.941121282e-05,
+            "multiplier_terms": 117,
+            "square_polynomial_terms": 3983,
+            "residual_terms": 3983,
+            "residual_max_degree": 6,
+            "mode_count": 8,
+            "particle_number": 4,
+            "factor_rows": 208,
+            "factor_nonzeros": 16756,
+            "status": "optimal",
+            "coefficient_rows": 2039,
+            "gram_dimensions": [
+              232,
+              8
+            ],
+            "coefficient_map_nonzeros": 27548,
+            "multiplier_basis_dimension": 443,
+            "build_seconds": 0.2834236670023529,
+            "solve_seconds": 6.2846491250020335,
+            "proposed_b": 1.6378614111555028
+          },
+          "exact_replay_accepted": true,
+          "certificate_bytes": 191845
+        },
+        "fixed": {
+          "order": [
+            "linear-",
+            "linear+"
+          ],
+          "trace": [
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 1,
+              "wall_seconds": 0.2106693340028869,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            },
+            {
+              "b": null,
+              "residual_max": null,
+              "residual_l2": null,
+              "gram_rank": [],
+              "support_blocks": 2,
+              "wall_seconds": 0.2088585419987794,
+              "solver_status": "No coefficient certificate proposal: infeasible",
+              "coefficient_rows": null
+            }
+          ]
+        },
+        "random": {
+          "order": [
+            "mixed+",
+            "local-triples+"
+          ],
+          "trace": [
+            {
+              "b": 1.6378613961243165,
+              "residual_max": 1.1298748603394415e-09,
+              "residual_l2": 3.6306301133192005e-09,
+              "gram_rank": [
+                176
+              ],
+              "support_blocks": 1,
+              "wall_seconds": 6.593059416998585,
+              "solver_status": "optimal",
+              "coefficient_rows": 2039
+            },
+            {
+              "b": 1.6378613963140043,
+              "residual_max": 1.2270764660007805e-09,
+              "residual_l2": 2.2914828652988635e-09,
+              "gram_rank": [
+                176,
+                0
+              ],
+              "support_blocks": 2,
+              "wall_seconds": 8.164197292004246,
+              "solver_status": "optimal",
+              "coefficient_rows": 2039
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

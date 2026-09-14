@@ -1,0 +1,26 @@
+{
+  "name": "replay_linear_closure",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.collective_completion_20260914.spin_screen",
+    "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "results/sector_quotient_20260914/candidates/linear_closure_repaired/certificate.json",
+    "results/collective_completion_20260914/candidates/h8_spin_r1_nonsinglet/round_0/certificate.json",
+    "results/sector_quotient_20260914/candidates/linear_closure_repaired/interval.json",
+    "--upper",
+    "results/correlated_pair_20260913/mps/h8_spatial_warm144/interval.json"
+  ],
+  "timeout_seconds": 240,
+  "status": "passed",
+  "started_UTC": "2026-09-14T22:32:24.104470+00:00",
+  "pid": 66437,
+  "exit_code": 0,
+  "wall_seconds": 75.94523162499536,
+  "child_user_seconds": 74.286694,
+  "child_system_seconds": 0.731406,
+  "peak_child_RSS_bytes": 303218688,
+  "finished_UTC": "2026-09-14T22:33:40.052421+00:00"
+}

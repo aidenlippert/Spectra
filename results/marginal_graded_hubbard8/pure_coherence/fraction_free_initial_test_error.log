@@ -1,0 +1,14 @@
+..F                                                                      [100%]
+=================================== FAILURES ===================================
+_______ test_inconsistent_dependent_and_over_budget_systems_are_refused ________
+
+    def test_inconsistent_dependent_and_over_budget_systems_are_refused():
+        with pytest.raises(ValueError,match='inconsistent'):solve([[1],[1]],[1,2])
+        with pytest.raises(ValueError,match='Dependent'):solve([[1,2],[2,4]],[1,2])
+>       with pytest.raises(ValueError,match='200-row'):solve([[1]]*199,[1]*199)
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_marginal_pure_coherence_fraction_free.py:26: Failed
+=========================== short test summary info ============================
+FAILED tests/test_marginal_pure_coherence_fraction_free.py::test_inconsistent_dependent_and_over_budget_systems_are_refused
+1 failed, 2 passed in 0.42s

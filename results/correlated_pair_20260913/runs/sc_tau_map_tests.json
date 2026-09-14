@@ -1,0 +1,19 @@
+{
+  "name": "sc_tau_map_tests",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-S",
+    "-c",
+    "from research.correlated_pair_20260913.self_consistent.test_builder import *; test_tau_cross_and_iteration(); test_paired_cubic_exact_acceptance(); print(\"PASS\")"
+  ],
+  "timeout_seconds": 180,
+  "status": "failed",
+  "started_UTC": "2026-09-14T06:38:33.211726+00:00",
+  "pid": 18844,
+  "exit_code": 1,
+  "wall_seconds": 0.08777199999894947,
+  "child_user_seconds": 0.033157,
+  "child_system_seconds": 0.010202,
+  "peak_child_RSS_bytes": 17219584,
+  "finished_UTC": "2026-09-14T06:38:33.300248+00:00"
+}

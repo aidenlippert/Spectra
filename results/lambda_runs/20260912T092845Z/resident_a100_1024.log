@@ -1,0 +1,32 @@
+{
+  "scope": "Numerical physical-matrix batch search, not an exact certificate",
+  "source_sha256": "6f2013544d36faa363ab5a4e2d99877d22d6d3c295a8411e0d07505a455acf3f",
+  "data_sha256": "a5ee0bb9c1b606d36b81c32b4879c015872d0eae1189c61ef95e78fdd8753aaa",
+  "evaluations": 1024,
+  "batch": 256,
+  "sectors": 94,
+  "shape_groups": 12,
+  "load_and_group_seconds": 0.16446749499993985,
+  "cpu_scalar_seconds": 14.078806043999975,
+  "cpu_grouped_seconds": 17.882814493999945,
+  "gpu_transfer_seconds": 0.02348175000008723,
+  "gpu_warmup_seconds": 1.1371977640000068,
+  "gpu_seconds_repeats_including_result_copy": [
+    3.511410031000082,
+    3.529152907000025,
+    3.522459720000029
+  ],
+  "gpu_median_seconds": 3.522459720000029,
+  "gpu_cold_seconds_excluding_matrix_generation": 4.836557040000116,
+  "resident_speedup_vs_faster_measured_cpu": 3.996867860280276,
+  "gpu_max_abs_error": 7.971401316808624e-13,
+  "cpu_grouped_max_abs_error": 5.950795411990839e-14,
+  "validated": true,
+  "gpu_name": "NVIDIA A100-SXM4-40GB",
+  "resident_bytes": 23966080,
+  "max_matrix_batch_bytes": 368640000,
+  "versions": {
+    "numpy": "2.2.6",
+    "cupy": "14.2.0"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "preserved_prior_files": 665,
+  "changed_prior_files": [],
+  "preserved_manifest_sha256": "05f530526c6794d452882597b988cce54eb6c0cb3656c0aec9d784c173795df8",
+  "measured_stages_seconds": {
+    "initial_T1_proposal": 2.8857340419999673,
+    "proposal_reproduction_with_failed_rounding_log": 3.0145661249989644,
+    "parent_full_family_and_physical_audit": 180.34746029200323,
+    "separator_and_physical_controls": 0.06581445900519611,
+    "exact_three_spatial_support_audit": 0.6157712080021156,
+    "H6_closure_and_D_falsification": 0.3970048749979469,
+    "homogeneous_response_proposals_and_replays": 0.0033532499946886674,
+    "enumerated_spin_controls": 0.010367750001023524,
+    "fresh_fixture_generation": 1.3174962080011028,
+    "fresh_fixed_family_discovery": 182.44861991600192,
+    "fresh_full_family_replay": 138.97989087500173,
+    "tests.log": 0.061,
+    "tests_final.log": 0.063
+  },
+  "sum_of_measured_stage_seconds": 510.2100790000079,
+  "timing_scope": "Measured computation only, excluding coding, literature reading and general tool latency. Small exact stages overlapped; the sum is charged stage time, not calendar elapsed. Fresh subprocess watchdogs include startup and I/O.",
+  "independent_molecular_transfer": {
+    "fresh_generation": {
+      "phase": "fresh_fixture_generation",
+      "budget_seconds": 120,
+      "wall_seconds": 1.3174962080011028,
+      "failure": null,
+      "FCI_requested": false
+    },
+    "discovery": {
+      "phase": "fresh_fixed_family_discovery",
+      "budget_seconds": 360,
+      "wall_seconds": 182.44861991600192,
+      "failure": null
+    },
+    "replay": {
+      "phase": "fresh_full_family_replay",
+      "budget_seconds": 300,
+      "wall_seconds": 138.97989087500173,
+      "failure": null
+    },
+    "solver_requested_time_limit_seconds": 45,
+    "measured_problem_solve_seconds": 153.69474129100126,
+    "solver_status": "user_limit",
+    "full_old_family_accepted": true,
+    "frozen_C_exact_moment": "2840319216396387597191/17187500000000000000000",
+    "T1_rejected_counterexample_established": false,
+    "interpretation": "Inconclusive transfer: the bounded solve returned user_limit and no three/four-spatial T1 separator was found. No retry or energy enrichment."
+  },
+  "enumeration_charged": {
+    "new_spin_diagnostic_basis_states": 209,
+    "new_fermionic_control_basis_labels": 1914,
+    "H6_D_test_determinants": 2,
+    "fresh_fixture_HF_control_determinants": 1,
+    "new_FCI_runs": 0,
+    "small_occupancy_test_states_per_test_run": 8,
+    "inherited_upper_amplitudes_replayed": 200,
+    "parent_T1_accepting_rule_many_body_states": 0,
+    "response_accepting_rule_many_body_states": 0
+  },
+  "tests": [
+    {
+      "log": "tests.log",
+      "count": 6,
+      "seconds": 0.061
+    },
+    {
+      "log": "tests_final.log",
+      "count": 6,
+      "seconds": 0.063
+    }
+  ],
+  "python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:54:21) [Clang 16.0.6 ]",
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "numerical_runtime": "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+  "chemistry_runtime": "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+  "pyscf_version": "2.14.0",
+  "BLAS_thread_limits_requested": 1,
+  "Clarabel_threads": "default; no claim of strictly single-threaded execution",
+  "inherited_costs_not_reclassified_as_free": {
+    "witness_creation_receipt": "results/trace_pricing_20260913/full_dual/receipt.json",
+    "witness_optimization_lineage": "results/trace_pricing_20260913/cost_ledger.json",
+    "frozen_baseline_costs": "results/mechanism_transfer_20260913/cost_ledger.json"
+  },
+  "scientific_claims": {
+    "original_full_family_separation": true,
+    "new_positivity_theorem_claimed": false,
+    "independent_molecular_T1_separation": false,
+    "improved_molecular_energy_bound_from_T1": false,
+    "homogeneous_collective_response_certified": true,
+    "generic_molecular_response_or_scaling_established": false
+  },
+  "representation_costs": {
+    "original_T1_proposal_matrix_dimension": 220,
+    "original_T1_proposal_dense_entries": 48400,
+    "separator_file_bytes": 1147,
+    "separator_operator_terms": 12,
+    "separator_denominator": 100,
+    "maximum_separator_coefficient_bits": 6,
+    "expanded_separator_terms": 149,
+    "spin_model_and_certificate_byte_range": [
+      246,
+      270
+    ],
+    "maximum_response_certificate_rational_bits": 63
+  },
+  "steering_request_sha256": "c98ce96c2f65438df55370efd265e3632e9983cc8cfaf016ef1dc19d27150965"
+}

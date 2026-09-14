@@ -1,0 +1,1622 @@
+{
+  "goal_status": "active",
+  "report": "research/certificate_scaling/SCS_REFINEMENT_RESULTS.md",
+  "focused_tests_passed": 41,
+  "h10_continuous": {
+    "method": "spectral",
+    "lower": "-99009540391069904144171/8000000000000000000000",
+    "upper": "-77301871607146255920348419895881/6250000000414345045312500000000",
+    "width": "252578961946218264312991510991081297759/32000000002121446632000000000000000000000",
+    "lower_float": -12.376192548883738,
+    "upper_float": -12.368299456323442,
+    "width_float": 0.007893092560296047,
+    "passes_0_0016_Ha": false,
+    "modes": 20,
+    "particles": 10,
+    "certificate": "results/lambda_runs/scs_refinement/downloaded/h10_one_1200/certificate.json",
+    "certificate_bytes": 19747141,
+    "certificate_sha256": "36b852c628bd79a8b873fbb9798a1b136414a97715fec0037d86023dfc409306",
+    "reference": "results/certificate_scaling/cubic_precision/reference_h10_full_checked/h10/upper.json",
+    "reference_sha256": "65712be9cd4dc002a90d8a205407cccc10c0d952a29caa399c7d79eeec3640b2",
+    "proof": "results/certificate_scaling/scs_refinement/h10_one_1200_spectral/witness.json",
+    "proof_sha256": "5a62944970daf10c67ccf8fd413f582b47596258d36248a78f703c1fc3d48f70",
+    "proof_bytes": 2246970,
+    "lower_replay": {
+      "method": "fixed_N_wedge_spectral_gram_v1",
+      "lower": "-99009540391069904144171/8000000000000000000000",
+      "lower_float": -12.376192548883738,
+      "bodies": [
+        {
+          "body": 1,
+          "wedge_dimension": 20,
+          "components": [
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-104101174409/1000000000000000",
+              "residual_gershgorin": "-12926541259/1000000000000000000000000",
+              "lower": "-104101174421926541259/1000000000000000000000000"
+            },
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-26026517719/250000000000000",
+              "residual_gershgorin": "-8628370959/500000000000000000000000",
+              "lower": "-52053035446628370959/500000000000000000000000"
+            },
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-76205599321/1000000000000000",
+              "residual_gershgorin": "-12725544941/1000000000000000000000000",
+              "lower": "-76205599333725544941/1000000000000000000000000"
+            },
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-19052948051/250000000000000",
+              "residual_gershgorin": "-15565612913/1000000000000000000000000",
+              "lower": "-76211792219565612913/1000000000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-52053035446628370959/50000000000000000000000",
+          "chosen_lower": "-52053035446628370959/50000000000000000000000"
+        },
+        {
+          "body": 2,
+          "wedge_dimension": 190,
+          "components": [
+            {
+              "dimension": 50,
+              "rank": 50,
+              "integer_product_work": 63750,
+              "ell": "-65727306461/1000000000000000",
+              "residual_gershgorin": "-163264178599/1000000000000000000000000",
+              "lower": "-65727306624264178599/1000000000000000000000000"
+            },
+            {
+              "dimension": 25,
+              "rank": 25,
+              "integer_product_work": 8125,
+              "ell": "-48461616717/1000000000000000",
+              "residual_gershgorin": "-2882400511/40000000000000000000000",
+              "lower": "-1938464671562400511/40000000000000000000000"
+            },
+            {
+              "dimension": 50,
+              "rank": 50,
+              "integer_product_work": 63750,
+              "ell": "-56170045013/1000000000000000",
+              "residual_gershgorin": "-152455833207/1000000000000000000000000",
+              "lower": "-56170045165455833207/1000000000000000000000000"
+            },
+            {
+              "dimension": 20,
+              "rank": 20,
+              "integer_product_work": 4200,
+              "ell": "-39680567781/1000000000000000",
+              "residual_gershgorin": "-60616563897/1000000000000000000000000",
+              "lower": "-39680567841616563897/1000000000000000000000000"
+            },
+            {
+              "dimension": 25,
+              "rank": 25,
+              "integer_product_work": 8125,
+              "ell": "-4846018983/100000000000000",
+              "residual_gershgorin": "-74721771783/1000000000000000000000000",
+              "lower": "-48460189904721771783/1000000000000000000000000"
+            },
+            {
+              "dimension": 20,
+              "rank": 20,
+              "integer_product_work": 4200,
+              "ell": "-39679863279/1000000000000000",
+              "residual_gershgorin": "-28992196481/500000000000000000000000",
+              "lower": "-19839931668492196481/500000000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-591545759618377607391/200000000000000000000000",
+          "chosen_lower": "-591545759618377607391/200000000000000000000000"
+        },
+        {
+          "body": 3,
+          "wedge_dimension": 1140,
+          "components": [
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-15558798807/1000000000000000",
+              "residual_gershgorin": "-333388621377/1000000000000000000000000",
+              "lower": "-15558799140388621377/1000000000000000000000000"
+            },
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-15558750051/1000000000000000",
+              "residual_gershgorin": "-367752723957/1000000000000000000000000",
+              "lower": "-15558750418752723957/1000000000000000000000000"
+            },
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-15446565669/1000000000000000",
+              "residual_gershgorin": "-2597325753/7812500000000000000000",
+              "lower": "-120676296886388253/7812500000000000000000"
+            },
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-15446757371/1000000000000000",
+              "residual_gershgorin": "-8176045123/25000000000000000000000",
+              "lower": "-386168942451045123/25000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-9833208731/1000000000000000",
+              "residual_gershgorin": "-37092305493/500000000000000000000000",
+              "lower": "-4916604402592305493/500000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-1945710177/200000000000000",
+              "residual_gershgorin": "-16431835673/200000000000000000000000",
+              "lower": "-1945710193431835673/200000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-1966641661/200000000000000",
+              "residual_gershgorin": "-82678227327/1000000000000000000000000",
+              "lower": "-9833208387678227327/1000000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-9728543221/1000000000000000",
+              "residual_gershgorin": "-1371943099/15625000000000000000000",
+              "lower": "-152008489200068099/15625000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-46676397421165864131/25000000000000000000000",
+          "chosen_lower": "-46676397421165864131/25000000000000000000000"
+        }
+      ],
+      "old_wedge_lower": "-1238774601779070353/100000000000000000",
+      "many_body_states_enumerated": 0,
+      "scope": "Exact residual bound only; full original SOS discovery cost remains."
+    },
+    "upper_replay": {
+      "method": "bounded_streaming_integer_reference_upper_v1",
+      "witness_states": 31752,
+      "hamiltonian_terms": 7150,
+      "word_state_checks": 227026800,
+      "contributing_word_state_pairs": 22173760,
+      "action_cache_states": 0,
+      "replay_seconds": 16.895428915988305,
+      "upper": "-77301871607146255920348419895881/6250000000414345045312500000000",
+      "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+    },
+    "wall_seconds": 208.04725887499808,
+    "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+  },
+  "h10_restarted": {
+    "method": "spectral",
+    "lower": "-628827262615845237941961/50000000000000000000000",
+    "upper": "-77301871607146255920348419895881/6250000000414345045312500000000",
+    "width": "41649159201453697114965112064959471865669/200000000013259041450000000000000000000000",
+    "lower_float": -12.576545252316905,
+    "upper_float": -12.368299456323442,
+    "width_float": 0.2082457959934628,
+    "passes_0_0016_Ha": false,
+    "modes": 20,
+    "particles": 10,
+    "certificate": "results/lambda_runs/scs_refinement/downloaded/h10_two_600/certificate.json",
+    "certificate_bytes": 21202106,
+    "certificate_sha256": "8da0a9ba66ac4efa09a88e467977678157f6a67a383fbb9f55c3f7d06386bb86",
+    "reference": "results/certificate_scaling/cubic_precision/reference_h10_full_checked/h10/upper.json",
+    "reference_sha256": "65712be9cd4dc002a90d8a205407cccc10c0d952a29caa399c7d79eeec3640b2",
+    "proof": "results/certificate_scaling/scs_refinement/h10_two_600_spectral/witness.json",
+    "proof_sha256": "b8be58f83d6c54c38979e905f826ae4957fe185ba9813fa4e0eac766823e6eb1",
+    "proof_bytes": 2442882,
+    "lower_replay": {
+      "method": "fixed_N_wedge_spectral_gram_v1",
+      "lower": "-628827262615845237941961/50000000000000000000000",
+      "lower_float": -12.576545252316905,
+      "bodies": [
+        {
+          "body": 1,
+          "wedge_dimension": 20,
+          "components": [
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-580537440279/250000000000000",
+              "residual_gershgorin": "-40168523831/500000000000000000000000",
+              "lower": "-1161074880598168523831/500000000000000000000000"
+            },
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-2322150491047/1000000000000000",
+              "residual_gershgorin": "-26545293377/1000000000000000000000000",
+              "lower": "-2322150491073545293377/1000000000000000000000000"
+            },
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-2023725269709/1000000000000000",
+              "residual_gershgorin": "-95750303119/1000000000000000000000000",
+              "lower": "-2023725269804750303119/1000000000000000000000000"
+            },
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-101186390599/50000000000000",
+              "residual_gershgorin": "-82138728967/1000000000000000000000000",
+              "lower": "-2023727812062138728967/1000000000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-2322150491073545293377/100000000000000000000000",
+          "chosen_lower": "-2322150491073545293377/100000000000000000000000"
+        },
+        {
+          "body": 2,
+          "wedge_dimension": 190,
+          "components": [
+            {
+              "dimension": 50,
+              "rank": 50,
+              "integer_product_work": 63750,
+              "ell": "-2952664451523/1000000000000000",
+              "residual_gershgorin": "-517747043689/500000000000000000000000",
+              "lower": "-1476332226279247043689/500000000000000000000000"
+            },
+            {
+              "dimension": 25,
+              "rank": 25,
+              "integer_product_work": 8125,
+              "ell": "-131515218153/200000000000000",
+              "residual_gershgorin": "-5500097093/20000000000000000000000",
+              "lower": "-13151521820800097093/20000000000000000000000"
+            },
+            {
+              "dimension": 50,
+              "rank": 50,
+              "integer_product_work": 63750,
+              "ell": "-1444333642711/500000000000000",
+              "residual_gershgorin": "-32440556731/31250000000000000000000",
+              "lower": "-90270852701878056731/31250000000000000000000"
+            },
+            {
+              "dimension": 20,
+              "rank": 20,
+              "integer_product_work": 4200,
+              "ell": "-715390876191/1000000000000000",
+              "residual_gershgorin": "-227137391603/1000000000000000000000000",
+              "lower": "-715390876418137391603/1000000000000000000000000"
+            },
+            {
+              "dimension": 25,
+              "rank": 25,
+              "integer_product_work": 8125,
+              "ell": "-657577266047/1000000000000000",
+              "residual_gershgorin": "-52440483291/200000000000000000000000",
+              "lower": "-131515453261840483291/200000000000000000000000"
+            },
+            {
+              "dimension": 20,
+              "rank": 20,
+              "integer_product_work": 4200,
+              "ell": "-71539015307/100000000000000",
+              "residual_gershgorin": "-67478134333/250000000000000000000000",
+              "lower": "-178847538334978134333/250000000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-13286990036513223393201/100000000000000000000000",
+          "chosen_lower": "-13286990036513223393201/100000000000000000000000"
+        },
+        {
+          "body": 3,
+          "wedge_dimension": 1140,
+          "components": [
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-360403458317/500000000000000",
+              "residual_gershgorin": "-447756382641/200000000000000000000000",
+              "lower": "-144161383774556382641/200000000000000000000000"
+            },
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-90100878757/125000000000000",
+              "residual_gershgorin": "-1144761652861/500000000000000000000000",
+              "lower": "-360403516172761652861/500000000000000000000000"
+            },
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-734106037329/1000000000000000",
+              "residual_gershgorin": "-2236093887667/1000000000000000000000000",
+              "lower": "-734106039565093887667/1000000000000000000000000"
+            },
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-91763276531/125000000000000",
+              "residual_gershgorin": "-37619885283/15625000000000000000000",
+              "lower": "-11470409603994885283/15625000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-15117840739/100000000000000",
+              "residual_gershgorin": "-63456310189/200000000000000000000000",
+              "lower": "-30235681541456310189/200000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-78107098403/500000000000000",
+              "residual_gershgorin": "-18867447521/62500000000000000000000",
+              "lower": "-9763387319242447521/62500000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-75589208721/500000000000000",
+              "residual_gershgorin": "-2546239799/8000000000000000000000",
+              "lower": "-1209427342082239799/8000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-156214329431/1000000000000000",
+              "residual_gershgorin": "-179175749999/500000000000000000000000",
+              "lower": "-78107164894675749999/500000000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-34411228811984655849/390625000000000000000",
+          "chosen_lower": "-34411228811984655849/390625000000000000000"
+        }
+      ],
+      "old_wedge_lower": "-12900606335631846923/1000000000000000000",
+      "many_body_states_enumerated": 0,
+      "scope": "Exact residual bound only; full original SOS discovery cost remains."
+    },
+    "upper_replay": {
+      "method": "bounded_streaming_integer_reference_upper_v1",
+      "witness_states": 31752,
+      "hamiltonian_terms": 7150,
+      "word_state_checks": 227026800,
+      "contributing_word_state_pairs": 22173760,
+      "action_cache_states": 0,
+      "replay_seconds": 15.274341041993466,
+      "upper": "-77301871607146255920348419895881/6250000000414345045312500000000",
+      "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+    },
+    "wall_seconds": 215.92583908299275,
+    "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+  },
+  "exact_H4_commutator_obstruction": {
+    "dual_objective": "-51387812558113145851462206230521/14000000000000000000000000000000",
+    "dual_objective_float": -3.6705580398652247,
+    "full_charge_Gram_checks": [
+      {
+        "dimension": 64,
+        "rank": 64
+      },
+      {
+        "dimension": 64,
+        "rank": 64
+      },
+      {
+        "dimension": 28,
+        "rank": 28
+      },
+      {
+        "dimension": 28,
+        "rank": 28
+      },
+      {
+        "dimension": 64,
+        "rank": 64
+      }
+    ],
+    "ideal_equalities": 443,
+    "moment_count": 777,
+    "max_moment_bits": 64,
+    "scope": "Upper bound on every b-||residual||_1 from this rebuilt commutator dictionary and body-two number ideal; not a ground-energy lower bound.",
+    "physical_lower": "-3667000108966591573/1000000000000000000",
+    "proved_accuracy_obstruction": "49811032580863829462206230521/14000000000000000000000000000000",
+    "proved_accuracy_obstruction_float": 0.0035579308986331305,
+    "excludes_0_0016": true,
+    "replay_seconds": 1.9019845000002533,
+    "attempts": [
+      {
+        "mix": "0",
+        "refusal": "Negative exact PSD pivot"
+      },
+      {
+        "mix": "1/100000000",
+        "refusal": "Negative exact PSD pivot"
+      },
+      {
+        "mix": "1/10000000",
+        "refusal": "Negative exact PSD pivot"
+      }
+    ],
+    "trace_mixture": "1/1000000",
+    "affine_rank": 112,
+    "construction_seconds": 7.283030249993317,
+    "witness_sha256": "e117ce7e028c6d5bfe4d3a1ab071c3ca337a452d5aa4ac6beb10a71463b17bcb",
+    "witness_bytes": 85170
+  },
+  "H4_one_body_krylov": {
+    "method": "coefficient",
+    "lower": "-229190558320631917093385239732889188792203457072124847142485520679/62500000000000000000000000000000000000000000000000000000000000000",
+    "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+    "width": "12754470290930058607890419689347305730456960644776623516819164955611649968394487/260416666697676347062500000000000000000000000000000000000000000000000000000000000000",
+    "lower_float": -3.667048933130111,
+    "upper_float": -3.6669999559641995,
+    "width_float": 4.8977165911339364e-05,
+    "passes_0_0016_Ha": true,
+    "modes": 8,
+    "particles": 4,
+    "certificate": "results/certificate_scaling/commutator_krylov/h4_true_one_step/certificate.json",
+    "certificate_bytes": 387865,
+    "certificate_sha256": "173a0596ed392ee0357ebddd6bd05581780fdba579be0893160404254ecfd59b",
+    "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h4/upper.json",
+    "reference_sha256": "05b817139ca8247572969b7667657a20ae57aa4cf254fbd01f2c4cf9fb575c9c",
+    "proof": null,
+    "proof_sha256": null,
+    "proof_bytes": 0,
+    "lower_replay": {
+      "lower": "-229190558320631917093385239732889188792203457072124847142485520679/62500000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -3.667048933130111,
+      "residual_l1": "3626409569417093385239732889188792203457072124847142485520679/62500000000000000000000000000000000000000000000000000000000000000",
+      "residual_l1_float": 5.8022553110673495e-05,
+      "multiplier_terms": 185,
+      "square_polynomial_terms": 777,
+      "residual_terms": 777,
+      "residual_max_degree": 6,
+      "mode_count": 8,
+      "particle_number": 4,
+      "factor_rows": 311,
+      "factor_nonzeros": 10922
+    },
+    "upper_replay": {
+      "method": "bounded_streaming_integer_reference_upper_v1",
+      "witness_states": 20,
+      "hamiltonian_terms": 184,
+      "word_state_checks": 3680,
+      "contributing_word_state_pairs": 688,
+      "action_cache_states": 0,
+      "replay_seconds": 0.003854624999803491,
+      "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+      "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+    },
+    "wall_seconds": 0.4218399999954272,
+    "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+  },
+  "H4_preload_integration": {
+    "method": "coefficient",
+    "lower": "-733400069031224611/200000000000000000",
+    "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+    "width": "324326603139343599854142340883/833333333432564310600000000000000000",
+    "lower_float": -3.667000345156123,
+    "upper_float": -3.6669999559641995,
+    "width_float": 3.8919192372086844e-07,
+    "passes_0_0016_Ha": true,
+    "modes": 8,
+    "particles": 4,
+    "certificate": "results/certificate_scaling/scs_refinement/preload_gate/h4_certificate/certificate.json",
+    "certificate_bytes": 162546,
+    "certificate_sha256": "4974a6aaf9227d8ab60f02febbd02e27e5160d60578645155c469eca6ca47296",
+    "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h4/upper.json",
+    "reference_sha256": "05b817139ca8247572969b7667657a20ae57aa4cf254fbd01f2c4cf9fb575c9c",
+    "proof": null,
+    "proof_sha256": null,
+    "proof_bytes": 0,
+    "lower_replay": {
+      "lower": "-733400069031224611/200000000000000000",
+      "lower_float": -3.667000345156123,
+      "residual_l1": "90734024611/200000000000000000",
+      "residual_l1_float": 4.53670123055e-07,
+      "multiplier_terms": 185,
+      "square_polynomial_terms": 777,
+      "residual_terms": 777,
+      "residual_max_degree": 6,
+      "mode_count": 8,
+      "particle_number": 4,
+      "factor_rows": 485,
+      "factor_nonzeros": 15337
+    },
+    "upper_replay": {
+      "method": "bounded_streaming_integer_reference_upper_v1",
+      "witness_states": 20,
+      "hamiltonian_terms": 184,
+      "word_state_checks": 3680,
+      "contributing_word_state_pairs": 688,
+      "action_cache_states": 0,
+      "replay_seconds": 0.003929708997020498,
+      "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+      "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+    },
+    "wall_seconds": 0.4342692500067642,
+    "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+  },
+  "live_jobs": [],
+  "scope": "Frozen rational H-chain models only. No general structural discovery theorem. All source discovery and validation costs remain counted.",
+  "H4_diagonal_krylov": {
+    "method": "coefficient",
+    "lower": "-916766270120305632329114162829215671493140817662877374736038245029/250000000000000000000000000000000000000000000000000000000000000000",
+    "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+    "width": "67838038573906279442116397951727270639733497487017400678003802597460466016310037/1041666666790705388250000000000000000000000000000000000000000000000000000000000000000",
+    "lower_float": -3.6670650804812226,
+    "upper_float": -3.6669999559641995,
+    "width_float": 6.512451702319518e-05,
+    "passes_0_0016_Ha": true,
+    "modes": 8,
+    "particles": 4,
+    "certificate": "results/certificate_scaling/commutator_krylov/h4_diagonal_one_step/certificate.json",
+    "certificate_bytes": 388289,
+    "certificate_sha256": "29a966b63ffc7b12830a0084317d53c474a22ccc86eb8dc2bd218e84ad8a9700",
+    "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h4/upper.json",
+    "reference_sha256": "05b817139ca8247572969b7667657a20ae57aa4cf254fbd01f2c4cf9fb575c9c",
+    "proof": null,
+    "proof_sha256": null,
+    "proof_bytes": 0,
+    "lower_replay": {
+      "lower": "-916766270120305632329114162829215671493140817662877374736038245029/250000000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -3.6670650804812226,
+      "residual_l1": "19277913305632329114162829215671493140817662877374736038245029/250000000000000000000000000000000000000000000000000000000000000000",
+      "residual_l1_float": 7.711165322252932e-05,
+      "multiplier_terms": 185,
+      "square_polynomial_terms": 777,
+      "residual_terms": 777,
+      "residual_max_degree": 6,
+      "mode_count": 8,
+      "particle_number": 4,
+      "factor_rows": 311,
+      "factor_nonzeros": 10930
+    },
+    "upper_replay": {
+      "method": "bounded_streaming_integer_reference_upper_v1",
+      "witness_states": 20,
+      "hamiltonian_terms": 184,
+      "word_state_checks": 3680,
+      "contributing_word_state_pairs": 688,
+      "action_cache_states": 0,
+      "replay_seconds": 0.0039785000117262825,
+      "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+      "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+    },
+    "wall_seconds": 0.572944749990711,
+    "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+  },
+  "h10_evd_600": {
+    "method": "spectral",
+    "lower": "-2474433530563988532275109/200000000000000000000000",
+    "upper": "-77301871607146255920348419895881/6250000000414345045312500000000",
+    "width": "3094557197405706236193569862438660685361/800000000053036165800000000000000000000000",
+    "lower_float": -12.372167652819943,
+    "upper_float": -12.368299456323442,
+    "width_float": 0.00386819649650069,
+    "passes_0_0016_Ha": false,
+    "modes": 20,
+    "particles": 10,
+    "certificate": "results/lambda_runs/scs_refinement/downloaded/h10_evd_600/certificate.json",
+    "certificate_bytes": 17710165,
+    "certificate_sha256": "e73a14d4cad8fe48f03a0737c697c9f5533fd44cbfd97dad7f8233c8a8a7b1aa",
+    "reference": "results/certificate_scaling/cubic_precision/reference_h10_full_checked/h10/upper.json",
+    "reference_sha256": "65712be9cd4dc002a90d8a205407cccc10c0d952a29caa399c7d79eeec3640b2",
+    "proof": "results/certificate_scaling/scs_refinement/h10_evd_600_spectral/witness.json",
+    "proof_sha256": "018eff796d42d80a2b577da55769f98f8ba99cec75eb78cf72d85060a7b7968f",
+    "proof_bytes": 2209562,
+    "lower_replay": {
+      "method": "fixed_N_wedge_spectral_gram_v1",
+      "lower": "-2474433530563988532275109/200000000000000000000000",
+      "lower_float": -12.372167652819943,
+      "bodies": [
+        {
+          "body": 1,
+          "wedge_dimension": 20,
+          "components": [
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-13298670359/250000000000000",
+              "residual_gershgorin": "-1464000183/100000000000000000000000",
+              "lower": "-5319468145064000183/100000000000000000000000"
+            },
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-53189040299/1000000000000000",
+              "residual_gershgorin": "-15721938503/1000000000000000000000000",
+              "lower": "-53189040314721938503/1000000000000000000000000"
+            },
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-3859594973/100000000000000",
+              "residual_gershgorin": "-12034490039/1000000000000000000000000",
+              "lower": "-38595949742034490039/1000000000000000000000000"
+            },
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-4825043851/125000000000000",
+              "residual_gershgorin": "-6828777919/1000000000000000000000000",
+              "lower": "-38600350814828777919/1000000000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-5319468145064000183/10000000000000000000000",
+          "chosen_lower": "-5319468145064000183/10000000000000000000000"
+        },
+        {
+          "body": 2,
+          "wedge_dimension": 190,
+          "components": [
+            {
+              "dimension": 50,
+              "rank": 50,
+              "integer_product_work": 63750,
+              "ell": "-36616565077/1000000000000000",
+              "residual_gershgorin": "-114290414593/1000000000000000000000000",
+              "lower": "-36616565191290414593/1000000000000000000000000"
+            },
+            {
+              "dimension": 25,
+              "rank": 25,
+              "integer_product_work": 8125,
+              "ell": "-24683972131/1000000000000000",
+              "residual_gershgorin": "-50540785113/1000000000000000000000000",
+              "lower": "-24683972181540785113/1000000000000000000000000"
+            },
+            {
+              "dimension": 50,
+              "rank": 50,
+              "integer_product_work": 63750,
+              "ell": "-30182356639/1000000000000000",
+              "residual_gershgorin": "-27823257779/250000000000000000000000",
+              "lower": "-7545589187573257779/250000000000000000000000"
+            },
+            {
+              "dimension": 20,
+              "rank": 20,
+              "integer_product_work": 4200,
+              "ell": "-20231365513/1000000000000000",
+              "residual_gershgorin": "-7156582957/200000000000000000000000",
+              "lower": "-4046273109756582957/200000000000000000000000"
+            },
+            {
+              "dimension": 25,
+              "rank": 25,
+              "integer_product_work": 8125,
+              "ell": "-24683899899/1000000000000000",
+              "residual_gershgorin": "-46130702299/1000000000000000000000000",
+              "lower": "-24683899945130702299/1000000000000000000000000"
+            },
+            {
+              "dimension": 20,
+              "rank": 20,
+              "integer_product_work": 4200,
+              "ell": "-20231968227/1000000000000000",
+              "residual_gershgorin": "-10986552283/250000000000000000000000",
+              "lower": "-5057992067736552283/250000000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-329549086721613731337/200000000000000000000000",
+          "chosen_lower": "-329549086721613731337/200000000000000000000000"
+        },
+        {
+          "body": 3,
+          "wedge_dimension": 1140,
+          "components": [
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-8635528647/1000000000000000",
+              "residual_gershgorin": "-126458152919/500000000000000000000000",
+              "lower": "-4317764449958152919/500000000000000000000000"
+            },
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-1727098801/200000000000000",
+              "residual_gershgorin": "-245391922973/1000000000000000000000000",
+              "lower": "-8635494250391922973/1000000000000000000000000"
+            },
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-4203618663/500000000000000",
+              "residual_gershgorin": "-248803882941/1000000000000000000000000",
+              "lower": "-8407237574803882941/1000000000000000000000000"
+            },
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-8407135039/1000000000000000",
+              "residual_gershgorin": "-124025670191/500000000000000000000000",
+              "lower": "-4203567643525670191/500000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-5139444921/1000000000000000",
+              "residual_gershgorin": "-13432833533/250000000000000000000000",
+              "lower": "-1284861243682833533/250000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-5019317211/1000000000000000",
+              "residual_gershgorin": "-54936330403/1000000000000000000000000",
+              "lower": "-5019317265936330403/1000000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-6424389/1250000000000",
+              "residual_gershgorin": "-10147965823/200000000000000000000000",
+              "lower": "-1027902250147965823/200000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-5019434157/1000000000000000",
+              "residual_gershgorin": "-25667501543/500000000000000000000000",
+              "lower": "-2509717104167501543/500000000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-12953293349874458757/12500000000000000000000",
+          "chosen_lower": "-12953293349874458757/12500000000000000000000"
+        }
+      ],
+      "old_wedge_lower": "-12378150161396986913/1000000000000000000",
+      "many_body_states_enumerated": 0,
+      "scope": "Exact residual bound only; full original SOS discovery cost remains."
+    },
+    "upper_replay": {
+      "method": "bounded_streaming_integer_reference_upper_v1",
+      "witness_states": 31752,
+      "hamiltonian_terms": 7150,
+      "word_state_checks": 227026800,
+      "contributing_word_state_pairs": 22173760,
+      "action_cache_states": 0,
+      "replay_seconds": 16.871569124996313,
+      "upper": "-77301871607146255920348419895881/6250000000414345045312500000000",
+      "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+    },
+    "wall_seconds": 197.53482295799768,
+    "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+  },
+  "h4_contraction": {
+    "interval": {
+      "method": "coefficient",
+      "lower": "-916766266960905311119436887672411213542085487262852443575375161051/250000000000000000000000000000000000000000000000000000000000000000",
+      "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+      "width": "67824874405899671568229326648901519135150486117333879913339643745843296948932203/1041666666790705388250000000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -3.6670650678436214,
+      "upper_float": -3.6669999559641995,
+      "width_float": 6.511187942191034e-05,
+      "passes_0_0016_Ha": true,
+      "modes": 8,
+      "particles": 4,
+      "certificate": "results/certificate_scaling/commutator_krylov/h4_contraction/certificate.json",
+      "certificate_bytes": 388217,
+      "certificate_sha256": "350dfe008fe555dd2979ac65bb87ce446158d116cc0588ee381ff3538340395b",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h4/upper.json",
+      "reference_sha256": "05b817139ca8247572969b7667657a20ae57aa4cf254fbd01f2c4cf9fb575c9c",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-916766266960905311119436887672411213542085487262852443575375161051/250000000000000000000000000000000000000000000000000000000000000000",
+        "lower_float": -3.6670650678436214,
+        "residual_l1": "19274201905311119436887672411213542085487262852443575375161051/250000000000000000000000000000000000000000000000000000000000000000",
+        "residual_l1_float": 7.709680762124448e-05,
+        "multiplier_terms": 185,
+        "square_polynomial_terms": 777,
+        "residual_terms": 777,
+        "residual_max_degree": 6,
+        "mode_count": 8,
+        "particle_number": 4,
+        "factor_rows": 311,
+        "factor_nonzeros": 10925
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 20,
+        "hamiltonian_terms": 184,
+        "word_state_checks": 3680,
+        "contributing_word_state_pairs": 688,
+        "action_cache_states": 0,
+        "replay_seconds": 0.003834792005363852,
+        "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 0.48348058300325647,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    },
+    "receipt": "results/certificate_scaling/commutator_krylov/h4_contraction/receipt.json"
+  },
+  "h4_scs_conditioned": {
+    "interval": {
+      "method": "coefficient",
+      "lower": "-916776542782455237700365998176525203559568531460897484905926418761/250000000000000000000000000000000000000000000000000000000000000000",
+      "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+      "width": "110640797535692157845941867043088048540950727472440564051927072319137993394355833/1041666666790705388250000000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -3.667106171129821,
+      "upper_float": -3.6669999559641995,
+      "width_float": 0.00010621516562161667,
+      "passes_0_0016_Ha": true,
+      "modes": 8,
+      "particles": 4,
+      "certificate": "results/certificate_scaling/commutator_krylov/h4_scs_conditioned/certificate.json",
+      "certificate_bytes": 315387,
+      "certificate_sha256": "636d6cb86ebc698fa63073e6d869e0c0a1b1d01c0de87e88bb39650a0dab316f",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h4/upper.json",
+      "reference_sha256": "05b817139ca8247572969b7667657a20ae57aa4cf254fbd01f2c4cf9fb575c9c",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-916776542782455237700365998176525203559568531460897484905926418761/250000000000000000000000000000000000000000000000000000000000000000",
+        "lower_float": -3.667106171129821,
+        "residual_l1": "23037797205237700365998176525203559568531460897484905926418761/250000000000000000000000000000000000000000000000000000000000000000",
+        "residual_l1_float": 9.21511888209508e-05,
+        "multiplier_terms": 185,
+        "square_polynomial_terms": 777,
+        "residual_terms": 777,
+        "residual_max_degree": 6,
+        "mode_count": 8,
+        "particle_number": 4,
+        "factor_rows": 245,
+        "factor_nonzeros": 8812
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 20,
+        "hamiltonian_terms": 184,
+        "word_state_checks": 3680,
+        "contributing_word_state_pairs": 688,
+        "action_cache_states": 0,
+        "replay_seconds": 0.0037470829993253574,
+        "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 0.5303667920088628,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    },
+    "receipt": "results/certificate_scaling/commutator_krylov/h4_scs_conditioned/receipt.json"
+  },
+  "h6_one_step": {
+    "interval": {
+      "method": "coefficient",
+      "lower": "-202567326501430870188432631420069004363579899607027801869203558357/15625000000000000000000000000000000000000000000000000000000000000",
+      "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width": "2072265709359791523479666608468166113825521883407694759596551270330326335114789476611/312500000004371237859375000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -12.964308896091575,
+      "upper_float": -6.333058626233001,
+      "width_float": 6.631250269858575,
+      "passes_0_0016_Ha": false,
+      "modes": 12,
+      "particles": 6,
+      "certificate": "results/certificate_scaling/commutator_krylov/h6_one_step/certificate.json",
+      "certificate_bytes": 2600996,
+      "certificate_sha256": "43c1bc6003cf07eb533ee346742ce241c2ac8dfedc1997102c7edb67bd0dd52f",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h6/upper.json",
+      "reference_sha256": "0cf0b58228f1861bf80738bbab945ee18d60c2e7b3cc27ce0c418c13ff6330cc",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-202567326501430870188432631420069004363579899607027801869203558357/15625000000000000000000000000000000000000000000000000000000000000",
+        "lower_float": -12.964308896091575,
+        "residual_l1": "95918420821180870188432631420069004363579899607027801869203558357/15625000000000000000000000000000000000000000000000000000000000000",
+        "residual_l1_float": 6.138778932555575,
+        "multiplier_terms": 919,
+        "square_polynomial_terms": 9419,
+        "residual_terms": 9419,
+        "residual_max_degree": 6,
+        "mode_count": 12,
+        "particle_number": 6,
+        "factor_rows": 695,
+        "factor_nonzeros": 75546
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 200,
+        "hamiltonian_terms": 918,
+        "word_state_checks": 183600,
+        "contributing_word_state_pairs": 23424,
+        "action_cache_states": 0,
+        "replay_seconds": 0.03525400000216905,
+        "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 5.1965651250066,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    },
+    "receipt": "results/certificate_scaling/commutator_krylov/h6_one_step/receipt.json"
+  },
+  "h6_diagonal_one_step": {
+    "interval": {
+      "method": "coefficient",
+      "lower": "-835850289024939807856111743155474440940734271470754602358106522309/125000000000000000000000000000000000000000000000000000000000000000",
+      "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width": "884359214928665319274468422854333935881036527209031255998259820959377848432398005907/2500000000034969902875000000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -6.686802312199519,
+      "upper_float": -6.333058626233001,
+      "width_float": 0.35374368596651795,
+      "passes_0_0016_Ha": false,
+      "modes": 12,
+      "particles": 6,
+      "certificate": "results/certificate_scaling/commutator_krylov/h6_diagonal_one_step/certificate.json",
+      "certificate_bytes": 2844295,
+      "certificate_sha256": "6d52d443275421c945ce98692153d6011ceb186b0c5b820c7c98f88ecc15a10b",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h6/upper.json",
+      "reference_sha256": "0cf0b58228f1861bf80738bbab945ee18d60c2e7b3cc27ce0c418c13ff6330cc",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-835850289024939807856111743155474440940734271470754602358106522309/125000000000000000000000000000000000000000000000000000000000000000",
+        "lower_float": -6.686802312199519,
+        "residual_l1": "47867522181189807856111743155474440940734271470754602358106522309/125000000000000000000000000000000000000000000000000000000000000000",
+        "residual_l1_float": 0.38294017744951847,
+        "multiplier_terms": 919,
+        "square_polynomial_terms": 9419,
+        "residual_terms": 9419,
+        "residual_max_degree": 6,
+        "mode_count": 12,
+        "particle_number": 6,
+        "factor_rows": 717,
+        "factor_nonzeros": 83412
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 200,
+        "hamiltonian_terms": 918,
+        "word_state_checks": 183600,
+        "contributing_word_state_pairs": 23424,
+        "action_cache_states": 0,
+        "replay_seconds": 0.03861474999575876,
+        "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 7.362682040999061,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    },
+    "receipt": "results/certificate_scaling/commutator_krylov/h6_diagonal_one_step/receipt.json"
+  },
+  "h6_diagonal_scs180": {
+    "interval": {
+      "method": "coefficient",
+      "lower": "-6114177026335512680878731977215899983656792790697430952677121954307/250000000000000000000000000000000000000000000000000000000000000000",
+      "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width": "90618247396812815701247295052181780688307029696622156103339953997557101407813167823461/5000000000069939805750000000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -24.456708105342052,
+      "upper_float": -6.333058626233001,
+      "width_float": 18.12364947910905,
+      "passes_0_0016_Ha": false,
+      "modes": 12,
+      "particles": 6,
+      "certificate": "results/certificate_scaling/commutator_krylov/h6_diagonal_scs180/certificate.json",
+      "certificate_bytes": 1918998,
+      "certificate_sha256": "504121da40e167a44f84b3c38f26f77a2287a4880d043f8121ae317d5d90ad72",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h6/upper.json",
+      "reference_sha256": "0cf0b58228f1861bf80738bbab945ee18d60c2e7b3cc27ce0c418c13ff6330cc",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-6114177026335512680878731977215899983656792790697430952677121954307/250000000000000000000000000000000000000000000000000000000000000000",
+        "lower_float": -24.456708105342052,
+        "residual_l1": "4765240724786512680878731977215899983656792790697430952677121954307/250000000000000000000000000000000000000000000000000000000000000000",
+        "residual_l1_float": 19.060962899146052,
+        "multiplier_terms": 919,
+        "square_polynomial_terms": 9419,
+        "residual_terms": 9419,
+        "residual_max_degree": 6,
+        "mode_count": 12,
+        "particle_number": 6,
+        "factor_rows": 479,
+        "factor_nonzeros": 55032
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 200,
+        "hamiltonian_terms": 918,
+        "word_state_checks": 183600,
+        "contributing_word_state_pairs": 23424,
+        "action_cache_states": 0,
+        "replay_seconds": 0.03703587500785943,
+        "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 5.5818599999911385,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    },
+    "receipt": "results/certificate_scaling/commutator_krylov/h6_diagonal_scs180/receipt.json"
+  },
+  "h6_diagonal_scs180_conditioned": {
+    "interval": {
+      "method": "coefficient",
+      "lower": "-1322785967556749678892463189938580118606041162345087350521112829711/125000000000000000000000000000000000000000000000000000000000000000",
+      "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width": "10623072785701087487078534268821307374694141838606220929105935089268915170335280674553/2500000000034969902875000000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -10.582287740453998,
+      "upper_float": -6.333058626233001,
+      "width_float": 4.249229114220997,
+      "passes_0_0016_Ha": false,
+      "modes": 12,
+      "particles": 6,
+      "certificate": "results/certificate_scaling/commutator_krylov/h6_diagonal_scs180_conditioned/certificate.json",
+      "certificate_bytes": 2000708,
+      "certificate_sha256": "3bd50540bf995bf604ed3994d05e61864899cd9ce61ed7b609a69156da3cfac8",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h6/upper.json",
+      "reference_sha256": "0cf0b58228f1861bf80738bbab945ee18d60c2e7b3cc27ce0c418c13ff6330cc",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-1322785967556749678892463189938580118606041162345087350521112829711/125000000000000000000000000000000000000000000000000000000000000000",
+        "lower_float": -10.582287740453998,
+        "residual_l1": "587258032214249678892463189938580118606041162345087350521112829711/125000000000000000000000000000000000000000000000000000000000000000",
+        "residual_l1_float": 4.698064257713997,
+        "multiplier_terms": 919,
+        "square_polynomial_terms": 9419,
+        "residual_terms": 9419,
+        "residual_max_degree": 6,
+        "mode_count": 12,
+        "particle_number": 6,
+        "factor_rows": 506,
+        "factor_nonzeros": 57743
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 200,
+        "hamiltonian_terms": 918,
+        "word_state_checks": 183600,
+        "contributing_word_state_pairs": 23424,
+        "action_cache_states": 0,
+        "replay_seconds": 0.03435200000240002,
+        "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 5.786224082999979,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    },
+    "receipt": "results/certificate_scaling/commutator_krylov/h6_diagonal_scs180_conditioned/receipt.json"
+  },
+  "dressed_quadratic": {
+    "report": "research/certificate_scaling/dressed_quadratic_structure.md",
+    "campaign": "results/certificate_scaling/dressed_quadratic/campaign.json",
+    "molecular_transfer": "results/certificate_scaling/dressed_quadratic/molecular_transfer.json",
+    "source_manifest": "results/lambda_runs/scs_refinement/structural_manifest.json",
+    "scope": "Restricted hidden-free control; no molecular transfer."
+  },
+  "warm_idle_hosts": [
+    "129.159.32.200",
+    "146.235.200.232"
+  ],
+  "new_download_hashes": "results/lambda_runs/scs_refinement/new_download_hashes.json",
+  "h10_evd_1800": {
+    "method": "spectral",
+    "lower": "-494778282983091551017191/40000000000000000000000",
+    "upper": "-77301871607146255920348419895881/6250000000414345045312500000000",
+    "width": "185218920627767760497261147080902631339/160000000010607233160000000000000000000000",
+    "lower_float": -12.369457074577289,
+    "upper_float": -12.368299456323442,
+    "width_float": 0.001157618253846804,
+    "passes_0_0016_Ha": true,
+    "modes": 20,
+    "particles": 10,
+    "certificate": "results/lambda_runs/scs_refinement/downloaded/h10_evd_1800/certificate.json",
+    "certificate_bytes": 17087157,
+    "certificate_sha256": "397eb5bbed0dc09b24169d08307f448aea1d47749828d7d32f1470a912cdf7c0",
+    "reference": "results/certificate_scaling/cubic_precision/reference_h10_full_checked/h10/upper.json",
+    "reference_sha256": "65712be9cd4dc002a90d8a205407cccc10c0d952a29caa399c7d79eeec3640b2",
+    "proof": "results/certificate_scaling/scs_refinement/h10_evd_1800_spectral/witness.json",
+    "proof_sha256": "24756bfae23b26704bda8c8cf83ab1e2dc38e57c508b2ff9948a2ee30354bc58",
+    "proof_bytes": 2165107,
+    "lower_replay": {
+      "method": "fixed_N_wedge_spectral_gram_v1",
+      "lower": "-494778282983091551017191/40000000000000000000000",
+      "lower_float": -12.369457074577289,
+      "bodies": [
+        {
+          "body": 1,
+          "wedge_dimension": 20,
+          "components": [
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-8965450061/1000000000000000",
+              "residual_gershgorin": "-2837442231/1000000000000000000000000",
+              "lower": "-8965450063837442231/1000000000000000000000000"
+            },
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-8969482099/1000000000000000",
+              "residual_gershgorin": "-4371271619/1000000000000000000000000",
+              "lower": "-8969482103371271619/1000000000000000000000000"
+            },
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-8089463333/1000000000000000",
+              "residual_gershgorin": "-2761899387/1000000000000000000000000",
+              "lower": "-8089463335761899387/1000000000000000000000000"
+            },
+            {
+              "dimension": 5,
+              "rank": 5,
+              "integer_product_work": 75,
+              "ell": "-2023315731/250000000000000",
+              "residual_gershgorin": "-651341099/250000000000000000000000",
+              "lower": "-2023315731651341099/250000000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-8969482103371271619/100000000000000000000000",
+          "chosen_lower": "-8969482103371271619/100000000000000000000000"
+        },
+        {
+          "body": 2,
+          "wedge_dimension": 190,
+          "components": [
+            {
+              "dimension": 50,
+              "rank": 50,
+              "integer_product_work": 63750,
+              "ell": "-1478670963/250000000000000",
+              "residual_gershgorin": "-51428280469/1000000000000000000000000",
+              "lower": "-5914683903428280469/1000000000000000000000000"
+            },
+            {
+              "dimension": 25,
+              "rank": 25,
+              "integer_product_work": 8125,
+              "ell": "-1230861447/1000000000000000",
+              "residual_gershgorin": "-15563417051/1000000000000000000000000",
+              "lower": "-1230861462563417051/1000000000000000000000000"
+            },
+            {
+              "dimension": 50,
+              "rank": 50,
+              "integer_product_work": 63750,
+              "ell": "-5555408589/1000000000000000",
+              "residual_gershgorin": "-50248146151/1000000000000000000000000",
+              "lower": "-5555408639248146151/1000000000000000000000000"
+            },
+            {
+              "dimension": 20,
+              "rank": 20,
+              "integer_product_work": 4200,
+              "ell": "-884646479/1000000000000000",
+              "residual_gershgorin": "-2855329001/250000000000000000000000",
+              "lower": "-221161622605329001/250000000000000000000000"
+            },
+            {
+              "dimension": 25,
+              "rank": 25,
+              "integer_product_work": 8125,
+              "ell": "-153743369/125000000000000",
+              "residual_gershgorin": "-15174657303/1000000000000000000000000",
+              "lower": "-1229946967174657303/1000000000000000000000000"
+            },
+            {
+              "dimension": 20,
+              "rank": 20,
+              "integer_product_work": 4200,
+              "ell": "-883907317/1000000000000000",
+              "residual_gershgorin": "-331277779/31250000000000000000000",
+              "lower": "-27622103987527779/31250000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-53232155130854524221/200000000000000000000000",
+          "chosen_lower": "-53232155130854524221/200000000000000000000000"
+        },
+        {
+          "body": 3,
+          "wedge_dimension": 1140,
+          "components": [
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-13366787/7812500000000",
+              "residual_gershgorin": "-13694673013/125000000000000000000000",
+              "lower": "-213868605694673013/125000000000000000000000"
+            },
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-855462239/500000000000000",
+              "residual_gershgorin": "-21785441857/200000000000000000000000",
+              "lower": "-342184917385441857/200000000000000000000000"
+            },
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-840292253/500000000000000",
+              "residual_gershgorin": "-26754700099/250000000000000000000000",
+              "lower": "-420146153254700099/250000000000000000000000"
+            },
+            {
+              "dimension": 225,
+              "rank": 225,
+              "integer_product_work": 5720625,
+              "ell": "-1680523133/1000000000000000",
+              "residual_gershgorin": "-108427340117/1000000000000000000000000",
+              "lower": "-1680523241427340117/1000000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-369529659/500000000000000",
+              "residual_gershgorin": "-19759379009/1000000000000000000000000",
+              "lower": "-739059337759379009/1000000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-69129037/100000000000000",
+              "residual_gershgorin": "-10857792687/500000000000000000000000",
+              "lower": "-345645195857792687/500000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-184789439/250000000000000",
+              "residual_gershgorin": "-3952700319/200000000000000000000000",
+              "lower": "-147831555152700319/200000000000000000000000"
+            },
+            {
+              "dimension": 60,
+              "rank": 60,
+              "integer_product_work": 109800,
+              "ell": "-691195707/1000000000000000",
+              "residual_gershgorin": "-2194891743/100000000000000000000000",
+              "lower": "-69119572894891743/100000000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-641605817084019039/3125000000000000000000",
+          "chosen_lower": "-641605817084019039/3125000000000000000000"
+        }
+      ],
+      "old_wedge_lower": "-12370972087668966469/1000000000000000000",
+      "many_body_states_enumerated": 0,
+      "scope": "Exact residual bound only; full original SOS discovery cost remains."
+    },
+    "upper_replay": {
+      "method": "bounded_streaming_integer_reference_upper_v1",
+      "witness_states": 31752,
+      "hamiltonian_terms": 7150,
+      "word_state_checks": 227026800,
+      "contributing_word_state_pairs": 22173760,
+      "action_cache_states": 0,
+      "replay_seconds": 14.362161208002362,
+      "upper": "-77301871607146255920348419895881/6250000000414345045312500000000",
+      "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+    },
+    "wall_seconds": 182.87956029199995,
+    "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+  },
+  "h4_whitened_clarabel": {
+    "interval": {
+      "method": "coefficient",
+      "lower": "-916750292116352051993383063741850187571550137139159396672147055271/250000000000000000000000000000000000000000000000000000000000000000",
+      "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+      "width": "1263022092727315827114665177845624421672570755290460026772600584367140601055863/1041666666790705388250000000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -3.6670011684654082,
+      "upper_float": -3.6669999559641995,
+      "width_float": 1.212501208873842e-06,
+      "passes_0_0016_Ha": true,
+      "modes": 8,
+      "particles": 4,
+      "certificate": "results/certificate_scaling/commutator_krylov/h4_whitened_clarabel/certificate.json",
+      "certificate_bytes": 356403,
+      "certificate_sha256": "ea2bac8550c43afc7ed34a846323f11e9a690d0fc3a53f259f058afc00a9f6c8",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h4/upper.json",
+      "reference_sha256": "05b817139ca8247572969b7667657a20ae57aa4cf254fbd01f2c4cf9fb575c9c",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-916750292116352051993383063741850187571550137139159396672147055271/250000000000000000000000000000000000000000000000000000000000000000",
+        "lower_float": -3.6670011684654082,
+        "residual_l1": "352183852051993383063741850187571550137139159396672147055271/250000000000000000000000000000000000000000000000000000000000000000",
+        "residual_l1_float": 1.4087354082079736e-06,
+        "multiplier_terms": 185,
+        "square_polynomial_terms": 777,
+        "residual_terms": 777,
+        "residual_max_degree": 6,
+        "mode_count": 8,
+        "particle_number": 4,
+        "factor_rows": 291,
+        "factor_nonzeros": 10010
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 20,
+        "hamiltonian_terms": 184,
+        "word_state_checks": 3680,
+        "contributing_word_state_pairs": 688,
+        "action_cache_states": 0,
+        "replay_seconds": 0.003932209001504816,
+        "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 0.4821046249999199,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    },
+    "receipt": "results/certificate_scaling/commutator_krylov/h4_whitened_clarabel/receipt.json"
+  },
+  "h4_component_whitened": {
+    "interval": {
+      "method": "coefficient",
+      "lower": "-916750297288586861622190078074888611560571354957785417764893445671/250000000000000000000000000000000000000000000000000000000000000000",
+      "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+      "width": "1284573071103335419248446861995300688130213935673921192034045364888260673347063/1041666666790705388250000000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -3.6670011891543473,
+      "upper_float": -3.6669999559641995,
+      "width_float": 1.2331901481123572e-06,
+      "passes_0_0016_Ha": true,
+      "modes": 8,
+      "particles": 4,
+      "certificate": "results/certificate_scaling/commutator_krylov/h4_component_whitened/certificate.json",
+      "certificate_bytes": 356274,
+      "certificate_sha256": "f39dbbc0c94089574211a2f6a1f25d70e5a37f34075faac6271096fe21d74cc4",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h4/upper.json",
+      "reference_sha256": "05b817139ca8247572969b7667657a20ae57aa4cf254fbd01f2c4cf9fb575c9c",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-916750297288586861622190078074888611560571354957785417764893445671/250000000000000000000000000000000000000000000000000000000000000000",
+        "lower_float": -3.6670011891543473,
+        "residual_l1": "356589336861622190078074888611560571354957785417764893445671/250000000000000000000000000000000000000000000000000000000000000000",
+        "residual_l1_float": 1.4263573474464888e-06,
+        "multiplier_terms": 185,
+        "square_polynomial_terms": 777,
+        "residual_terms": 777,
+        "residual_max_degree": 6,
+        "mode_count": 8,
+        "particle_number": 4,
+        "factor_rows": 291,
+        "factor_nonzeros": 10006
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 20,
+        "hamiltonian_terms": 184,
+        "word_state_checks": 3680,
+        "contributing_word_state_pairs": 688,
+        "action_cache_states": 0,
+        "replay_seconds": 0.0038840409979457036,
+        "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 0.4369731250044424,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    },
+    "receipt": "results/certificate_scaling/commutator_krylov/h4_component_whitened/receipt.json"
+  },
+  "h4_depth0_whitened_control": {
+    "interval": {
+      "method": "coefficient",
+      "lower": "-229410422366466462558196256501098140538697/62500000000000000000000000000000000000000",
+      "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+      "width": "928854661377289449323619315793288440565358960821902136441/260416666697676347062500000000000000000000000000000000000000",
+      "lower_float": -3.6705667578634635,
+      "upper_float": -3.6669999559641995,
+      "width_float": 0.003566801899264067,
+      "passes_0_0016_Ha": false,
+      "modes": 8,
+      "particles": 4,
+      "certificate": "results/certificate_scaling/commutator_krylov/h4_depth0_whitened_control/certificate.json",
+      "certificate_bytes": 155872,
+      "certificate_sha256": "94e956bfba889150f44211d6354baaf2488d79be5e9b44f99da6029dac20a03f",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h4/upper.json",
+      "reference_sha256": "05b817139ca8247572969b7667657a20ae57aa4cf254fbd01f2c4cf9fb575c9c",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-229410422366466462558196256501098140538697/62500000000000000000000000000000000000000",
+        "lower_float": -3.6705667578634635,
+        "residual_l1": "541297903962558196256501098140538697/62500000000000000000000000000000000000000",
+        "residual_l1_float": 8.660766463400931e-06,
+        "multiplier_terms": 185,
+        "square_polynomial_terms": 777,
+        "residual_terms": 777,
+        "residual_max_degree": 6,
+        "mode_count": 8,
+        "particle_number": 4,
+        "factor_rows": 209,
+        "factor_nonzeros": 6228
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 20,
+        "hamiltonian_terms": 184,
+        "word_state_checks": 3680,
+        "contributing_word_state_pairs": 688,
+        "action_cache_states": 0,
+        "replay_seconds": 0.0038863749941810966,
+        "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 0.44544795899128076,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    },
+    "receipt": "results/certificate_scaling/commutator_krylov/h4_depth0_whitened_control/receipt.json"
+  },
+  "h6_component_whitened": {
+    "interval": {
+      "method": "coefficient",
+      "lower": "-798642527670627262135879724227041880265744126131934145148230682213/125000000000000000000000000000000000000000000000000000000000000000",
+      "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width": "140203987832005190463776138795838637386094034650286513208097536193838235480668800499/2500000000034969902875000000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -6.389140221365018,
+      "upper_float": -6.333058626233001,
+      "width_float": 0.05608159513201761,
+      "passes_0_0016_Ha": false,
+      "modes": 12,
+      "particles": 6,
+      "certificate": "results/certificate_scaling/commutator_krylov/h6_component_whitened/certificate.json",
+      "certificate_bytes": 2842545,
+      "certificate_sha256": "a3e3592441e234a8a1f99e5d100fec5980d22d094d8c2fea0b2b32fae83e7075",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h6/upper.json",
+      "reference_sha256": "0cf0b58228f1861bf80738bbab945ee18d60c2e7b3cc27ce0c418c13ff6330cc",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-798642527670627262135879724227041880265744126131934145148230682213/125000000000000000000000000000000000000000000000000000000000000000",
+        "lower_float": -6.389140221365018,
+        "residual_l1": "6406286538502262135879724227041880265744126131934145148230682213/125000000000000000000000000000000000000000000000000000000000000000",
+        "residual_l1_float": 0.0512502923080181,
+        "multiplier_terms": 919,
+        "square_polynomial_terms": 9419,
+        "residual_terms": 9419,
+        "residual_max_degree": 6,
+        "mode_count": 12,
+        "particle_number": 6,
+        "factor_rows": 721,
+        "factor_nonzeros": 84036
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 200,
+        "hamiltonian_terms": 918,
+        "word_state_checks": 183600,
+        "contributing_word_state_pairs": 23424,
+        "action_cache_states": 0,
+        "replay_seconds": 0.03405479200591799,
+        "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 5.35695424998994,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    },
+    "receipt": "results/certificate_scaling/commutator_krylov/h6_component_whitened/receipt.json"
+  },
+  "h6_component_whitened_scs": {
+    "interval": {
+      "method": "coefficient",
+      "lower": "-1635911388561654092756397094282647449706858245663918503373860347343/250000000000000000000000000000000000000000000000000000000000000000",
+      "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width": "1052934640082807823589383265191748573513136106191292308055287906499194049283187794489/5000000000069939805750000000000000000000000000000000000000000000000000000000000000000",
+      "lower_float": -6.543645554246616,
+      "upper_float": -6.333058626233001,
+      "width_float": 0.2105869280136159,
+      "passes_0_0016_Ha": false,
+      "modes": 12,
+      "particles": 6,
+      "certificate": "results/certificate_scaling/commutator_krylov/h6_component_whitened_scs/certificate.json",
+      "certificate_bytes": 2204473,
+      "certificate_sha256": "7b92ffbee0a8af1e7719c7358d7c7586cc05e9456c0fa681fa4bfd0936d145fc",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h6/upper.json",
+      "reference_sha256": "0cf0b58228f1861bf80738bbab945ee18d60c2e7b3cc27ce0c418c13ff6330cc",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-1635911388561654092756397094282647449706858245663918503373860347343/250000000000000000000000000000000000000000000000000000000000000000",
+        "lower_float": -6.543645554246616,
+        "residual_l1": "57431927609654092756397094282647449706858245663918503373860347343/250000000000000000000000000000000000000000000000000000000000000000",
+        "residual_l1_float": 0.22972771043861637,
+        "multiplier_terms": 919,
+        "square_polynomial_terms": 9419,
+        "residual_terms": 9419,
+        "residual_max_degree": 6,
+        "mode_count": 12,
+        "particle_number": 6,
+        "factor_rows": 565,
+        "factor_nonzeros": 64652
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 200,
+        "hamiltonian_terms": 918,
+        "word_state_checks": 183600,
+        "contributing_word_state_pairs": 23424,
+        "action_cache_states": 0,
+        "replay_seconds": 0.041638250011601485,
+        "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 6.586393916993984,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    },
+    "receipt": "results/certificate_scaling/commutator_krylov/h6_component_whitened_scs/receipt.json"
+  },
+  "accuracy_ladder": "results/certificate_scaling/active_space_ladder_latest.json",
+  "whitening_report": "research/certificate_scaling/polynomial_basis_conditioning.md",
+  "whitening_download_hashes": "results/lambda_runs/scs_refinement/whitening_download_hashes.json",
+  "spin_irrep": {
+    "symmetry_projection": "results/certificate_scaling/spin_irrep/projection.json",
+    "multiplet_module": "research/certificate_scaling/spin_multiplets.py",
+    "exact_tests_passed": 4,
+    "discovery_backend_implemented": false
+  },
+  "current_source_manifest": "results/lambda_runs/scs_refinement/spin_frontier_manifest.json",
+  "spin_invariant_campaign": "results/certificate_scaling/spin_irrep/campaign.json",
+  "projected_product_parent_ladder": "results/certificate_scaling/projected_product_parent/inferred_path/ladder.json",
+  "current_focused_tests_log": "results/certificate_scaling/spin_irrep/focused_tests.log",
+  "current_focused_tests_passed": 52
+}

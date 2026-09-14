@@ -1,0 +1,99 @@
+{
+  "before": {
+    "method": "fixed_number_wedge_gershgorin_v1",
+    "modes": 12,
+    "particles": 6,
+    "coefficient_lower": "-6333310155920332987/1000000000000000000",
+    "lower": "-3166577599353075727/500000000000000000",
+    "lower_float": -6.333155198706152,
+    "improvement": "154957214181533/1000000000000000000",
+    "constant_residual": "-381160843259841/250000000000000000",
+    "bodies": [
+      {
+        "body": 1,
+        "wedge_dimension": 12,
+        "active_rows": 12,
+        "coefficient_l1": "12110109257071/1000000000000000000",
+        "gershgorin_lower": "-284880538539/200000000000000000",
+        "fixed_N_lower": "-854641615617/100000000000000000",
+        "chosen_lower": "-854641615617/100000000000000000"
+      },
+      {
+        "body": 2,
+        "wedge_dimension": 66,
+        "active_rows": 66,
+        "coefficient_l1": "72995567115791/1000000000000000000",
+        "gershgorin_lower": "-598901613027/250000000000000000",
+        "fixed_N_lower": "-1796704839081/50000000000000000",
+        "chosen_lower": "-1796704839081/50000000000000000"
+      },
+      {
+        "body": 3,
+        "wedge_dimension": 220,
+        "active_rows": 220,
+        "coefficient_l1": "148313044920761/1000000000000000000",
+        "gershgorin_lower": "-339809941743/200000000000000000",
+        "fixed_N_lower": "-339809941743/10000000000000000",
+        "chosen_lower": "-339809941743/10000000000000000"
+      }
+    ],
+    "replay_seconds": 11.70223025001178,
+    "many_body_states_enumerated": 0,
+    "scope": "fixed total N, no spin-sector assumption; original SOS plus exact residual inequalities"
+  },
+  "after": {
+    "method": "fixed_number_wedge_gershgorin_v1",
+    "modes": 12,
+    "particles": 6,
+    "coefficient_lower": "-40177528309904407703/1000000000000000000",
+    "lower": "-6333143034743601123/1000000000000000000",
+    "lower_float": -6.3331430347436015,
+    "improvement": "1692219263758040329/50000000000000000",
+    "constant_residual": "1566591670380240159/250000000000000000",
+    "bodies": [
+      {
+        "body": 1,
+        "wedge_dimension": 12,
+        "active_rows": 12,
+        "coefficient_l1": "28206503/1000000000000000000",
+        "gershgorin_lower": "-221039/62500000000000000",
+        "fixed_N_lower": "-663117/31250000000000000",
+        "chosen_lower": "-663117/31250000000000000"
+      },
+      {
+        "body": 2,
+        "wedge_dimension": 66,
+        "active_rows": 66,
+        "coefficient_l1": "27578933314023627017/1000000000000000000",
+        "gershgorin_lower": "-417862694552677741/1000000000000000000",
+        "fixed_N_lower": "-1253588083658033223/200000000000000000",
+        "chosen_lower": "-1253588083658033223/200000000000000000"
+      },
+      {
+        "body": 3,
+        "wedge_dimension": 220,
+        "active_rows": 220,
+        "coefficient_l1": "676220505613547/1000000000000000000",
+        "gershgorin_lower": "-172041271759/200000000000000000",
+        "fixed_N_lower": "-172041271759/10000000000000000",
+        "chosen_lower": "-172041271759/10000000000000000"
+      }
+    ],
+    "replay_seconds": 12.078533416002756,
+    "many_body_states_enumerated": 0,
+    "scope": "fixed total N, no spin-sector assumption; original SOS plus exact residual inequalities"
+  },
+  "retained_improvement": true,
+  "LP_status": 0,
+  "LP_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "LP_iterations": 702,
+  "ideal_variables": 499,
+  "offdiagonal_variables": 4560,
+  "wedge_rows": 298,
+  "LP_nonzeros": 27268,
+  "build_seconds": 17.586068709002575,
+  "solve_seconds": 0.026583458005916327,
+  "wall_seconds": 29.697953417009558,
+  "factors_changed": false,
+  "objective": "sum of exact fixed-N wedge Gershgorin lower bounds; constant residual treated exactly"
+}

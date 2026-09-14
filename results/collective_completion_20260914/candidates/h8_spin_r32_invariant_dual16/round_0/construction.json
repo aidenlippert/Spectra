@@ -1,0 +1,123 @@
+{
+  "case": "h8",
+  "round": 0,
+  "spin_lifting": true,
+  "rank_cap_initial": 32,
+  "gram_entries": 37440,
+  "gram_dimensions": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    12,
+    16,
+    32,
+    32,
+    12,
+    16,
+    12,
+    16,
+    32,
+    32,
+    12,
+    16,
+    32,
+    32,
+    64,
+    64,
+    32,
+    32,
+    4,
+    4,
+    24,
+    24,
+    24,
+    24,
+    4,
+    4,
+    44,
+    44,
+    48,
+    48,
+    48,
+    48,
+    44,
+    44
+  ],
+  "full_gram_entries": 1206592,
+  "coefficient_equations": 581,
+  "free_variables": 116,
+  "projected_map_nonzeros": 5074392,
+  "build_seconds": 4.83138366699859,
+  "prepared_dependency": "results/collective_completion_20260914/prepared/h8",
+  "fixture": "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+  "state": "results/correlated_pair_20260913/mps/h8_spatial_warm144/state.json",
+  "full_Gram_teacher_used": false,
+  "many_body_states_enumerated": 0,
+  "guide": [
+    {
+      "name": "mixed-(-2, 0, 0, 1)",
+      "lowest_full_dual_eigenvalue": -0.01347719360629038,
+      "old_rank": 32,
+      "new_rank": 44
+    },
+    {
+      "name": "mixed-(-2, 1, 0, 0)",
+      "lowest_full_dual_eigenvalue": -0.0139994256907738,
+      "old_rank": 32,
+      "new_rank": 44
+    },
+    {
+      "name": "mixed-(-1, 0, 1, 0)",
+      "lowest_full_dual_eigenvalue": -0.026724990014774637,
+      "old_rank": 32,
+      "new_rank": 48
+    },
+    {
+      "name": "mixed-(-1, 1, 1, 1)",
+      "lowest_full_dual_eigenvalue": -0.029401756879671802,
+      "old_rank": 32,
+      "new_rank": 48
+    },
+    {
+      "name": "mixed-(0, 0, 0, 1)",
+      "lowest_full_dual_eigenvalue": -0.026724990014774568,
+      "old_rank": 32,
+      "new_rank": 48
+    },
+    {
+      "name": "mixed-(0, 1, 0, 0)",
+      "lowest_full_dual_eigenvalue": -0.029401756879671843,
+      "old_rank": 32,
+      "new_rank": 48
+    },
+    {
+      "name": "mixed-(1, 0, 1, 0)",
+      "lowest_full_dual_eigenvalue": -0.0134771936062904,
+      "old_rank": 32,
+      "new_rank": 44
+    },
+    {
+      "name": "mixed-(1, 1, 1, 1)",
+      "lowest_full_dual_eigenvalue": -0.013999425690773615,
+      "old_rank": 32,
+      "new_rank": 44
+    }
+  ],
+  "magnetization": 0,
+  "singlet": true,
+  "ladder_ideal_dimension": 32,
+  "spin_row_projection": {
+    "original_rows": 1525,
+    "independent_invariant_rows": 581,
+    "integer_denominator": 6,
+    "projector_nonzeros": 7897,
+    "exact_integer_idempotence_checked": true,
+    "modular_prime": 65521,
+    "rank_equals_exact_trace": true
+  }
+}

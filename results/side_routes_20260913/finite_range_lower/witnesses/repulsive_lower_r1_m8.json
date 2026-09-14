@@ -1,0 +1,96 @@
+{
+  "case": "repulsive",
+  "objective": "lower",
+  "radius": 1,
+  "modes": 8,
+  "training_modes": 12,
+  "weights": [
+    "38821/65536",
+    "1",
+    "61071/65536",
+    "1"
+  ],
+  "origin": {
+    "search_radius": 1,
+    "seed": 43,
+    "candidate": "optimized"
+  },
+  "model": {
+    "modes": 8,
+    "particles": 4,
+    "hopping": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "interaction": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "fields": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "energy_unit": "t_reference=1; abstract lattice model"
+  },
+  "amplitude": {
+    "sites": [
+      "61071/65536",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "61071/65536"
+    ],
+    "pairs": [
+      [
+        "38821/65536",
+        "38821/65536",
+        "38821/65536",
+        "38821/65536",
+        "38821/65536",
+        "38821/65536",
+        "38821/65536"
+      ]
+    ]
+  },
+  "claim": {
+    "method": "fixed_N_finite_pair_range_local_energy_DP_v1",
+    "lower": "-2266003319/500293632",
+    "upper": "-3972168135584221069813891798475621631380/1118421407522133849989243666078119882209",
+    "width": "60788466446634274347750752190929617438290853279/62171012008422273800140208292801976844639199232",
+    "lower_float": -4.529346715730333,
+    "upper_float": -3.5515845001434405,
+    "width_float": 0.9777622155868927,
+    "partition": "5592107037610669249946218330390599411045/340282366920938463463374607431768211456",
+    "minimum_configuration": "01010101",
+    "modes": 8,
+    "particles": 4,
+    "pair_range": 1,
+    "tail_memory_bits": 3,
+    "dp_transitions": 142,
+    "peak_dp_states": 22,
+    "factor_table_entries": 112,
+    "peak_dp_rational_bits": 131,
+    "many_body_states_enumerated": 0,
+    "wall_seconds": 0.004259410001395736,
+    "scope": "Exact supplied-chain interval; no global discovery optimum or generic accuracy guarantee."
+  }
+}

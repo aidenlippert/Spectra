@@ -1,0 +1,168 @@
+[
+  {
+    "fixture": "results/certificate_scaling/active_space_ladder/h4/fixture.json",
+    "modes": 8,
+    "particles": 4,
+    "clusters": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ]
+    ],
+    "block_cost": [
+      {
+        "cluster": [
+          0,
+          1
+        ],
+        "terms": 3,
+        "states_tested": 70
+      },
+      {
+        "cluster": [
+          2,
+          3
+        ],
+        "terms": 3,
+        "states_tested": 70
+      },
+      {
+        "cluster": [
+          4,
+          5
+        ],
+        "terms": 3,
+        "states_tested": 70
+      },
+      {
+        "cluster": [
+          6,
+          7
+        ],
+        "terms": 3,
+        "states_tested": 70
+      }
+    ],
+    "retained_diagonal_terms": 12,
+    "total_terms": 184,
+    "local_minima_exact": [
+      "-3349614293781/1000000000000",
+      "-46277635537/15625000000",
+      "-1321104495949/500000000000",
+      "-2487776151667/1000000000000"
+    ],
+    "local_minimum_sum_exact": "-5720684055857/500000000000",
+    "residual_l1_exact": "2448051200003/125000000000",
+    "lower_bound_exact": "-15512888855869/500000000000",
+    "lower_bound": -31.025777711738,
+    "validity": "H = retained diagonal blocks + exact residual; each block minimum is sector-enumerated and ||CAR word||<=1"
+  },
+  {
+    "fixture": "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "modes": 12,
+    "particles": 6,
+    "clusters": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        10,
+        11
+      ]
+    ],
+    "block_cost": [
+      {
+        "cluster": [
+          0,
+          1
+        ],
+        "terms": 3,
+        "states_tested": 924
+      },
+      {
+        "cluster": [
+          2,
+          3
+        ],
+        "terms": 3,
+        "states_tested": 924
+      },
+      {
+        "cluster": [
+          4,
+          5
+        ],
+        "terms": 3,
+        "states_tested": 924
+      },
+      {
+        "cluster": [
+          6,
+          7
+        ],
+        "terms": 3,
+        "states_tested": 924
+      },
+      {
+        "cluster": [
+          8,
+          9
+        ],
+        "terms": 3,
+        "states_tested": 924
+      },
+      {
+        "cluster": [
+          10,
+          11
+        ],
+        "terms": 3,
+        "states_tested": 924
+      }
+    ],
+    "retained_diagonal_terms": 18,
+    "total_terms": 918,
+    "local_minima_exact": [
+      "-98212527871/25000000000",
+      "-355629205203/100000000000",
+      "-681648391373/200000000000",
+      "-3185842157989/1000000000000",
+      "-726236314737/250000000000",
+      "-739898560097/250000000000"
+    ],
+    "local_minimum_sum_exact": "-997170839053/50000000000",
+    "residual_l1_exact": "13599447305161/250000000000",
+    "lower_bound_exact": "-9292650750213/125000000000",
+    "lower_bound": -74.341206001704,
+    "validity": "H = retained diagonal blocks + exact residual; each block minimum is sector-enumerated and ||CAR word||<=1"
+  }
+]

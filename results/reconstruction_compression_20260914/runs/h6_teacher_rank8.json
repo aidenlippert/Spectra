@@ -1,0 +1,26 @@
+{
+  "name": "h6_teacher_rank8",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-m",
+    "research.reconstruction_compression_20260914.reduced",
+    "solve",
+    "h6_actual",
+    "teacher",
+    "8",
+    "--seconds",
+    "50",
+    "--teacher",
+    "results/lambda_runs/cubic_precision/downloaded/precision_scs/h6_row-column/certificate.json"
+  ],
+  "timeout_seconds": 180,
+  "status": "passed",
+  "started_UTC": "2026-09-14T07:59:17.795541+00:00",
+  "pid": 32293,
+  "exit_code": 0,
+  "wall_seconds": 21.202669375008554,
+  "child_user_seconds": 20.458439,
+  "child_system_seconds": 0.431008,
+  "peak_child_RSS_bytes": 708804608,
+  "finished_UTC": "2026-09-14T07:59:38.998098+00:00"
+}

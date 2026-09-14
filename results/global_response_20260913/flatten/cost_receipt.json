@@ -1,0 +1,10 @@
+{
+  "kind": "flattened_nested_response_cost_v1",
+  "exact_tests": {"tests": 2, "passed": 2, "command": "python -S -m unittest research.global_response_20260913.flatten.test_flatten -v"},
+  "production_formal_counts": {"first_order": 26, "second_order": 119, "first_action_H_rhs": 53, "outer_rhs": 6254, "full_K2": 12667},
+  "diagnostic": "benchmark.json; actual k1=26/k2=119, eta1 shift included, 12667 measured H RHS, max float64 error 0.0",
+  "factored_identity": "F_k(d)=c_k p_{2k}(d), c_k=T_{2k}(z0)/(T_{2k}(z0)+1); reduces scalar bookkeeping but not distinct H RHS count",
+  "precision": "exact Fraction tests; float64 benchmark",
+  "enumeration_status": "H6 diagnostic explicitly enumerates 924 labels / largest 200-state block; no enumeration-free claim",
+  "conclusion": "generic exact CSE found no repeated physical H right-hand sides; no material reduction"
+}

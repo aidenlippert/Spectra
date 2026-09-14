@@ -1,0 +1,221 @@
+{
+  "case": "h6",
+  "lower_Ha": "-3166556810312917952757997/500000000000000000000000",
+  "upper_Ha": "-53124677/8388608",
+  "width_mHa": 0.1586178411069016,
+  "target_1p6mHa_met": true,
+  "upper": {
+    "method": "outward_binary64_charge_MPS_v1",
+    "fixture_sha256": "99b91888d68ba7ea1d43c0b6c68594190521406c5b454b98933cbeba7d8f89df",
+    "state_sha256": "527ba40f9de970ae8042237f800ad3754a794e4e44b9adc7ec5ae05f74a5ce99",
+    "endpoint_Ha": "-53124677/8388608",
+    "norm_enclosure": [
+      "4503596850988673/4503599627370496",
+      "9007193701977867/9007199254740992"
+    ],
+    "endpoint_inequality_enclosure": [
+      "8718485413691391/151115727451828646838272",
+      "8718693863260161/151115727451828646838272"
+    ],
+    "transfer_steps": 5320,
+    "enclosure_seconds": 0.45984641699760687,
+    "arithmetic": "IEEE-754 binary64; adjacent outward bounds after every addition and multiplication; fastmath=False",
+    "status": "certified_upper",
+    "total_seconds": 0.45984816701093223
+  },
+  "lower": {
+    "certificate": "results/lambda_runs/cubic_precision/downloaded/precision_scs/h6_row-column/certificate.json",
+    "certificate_sha256": "07dd51f6cbec4c2abc90677475e47009887fbdee2d7f09a5dc986fcc4c791f1e",
+    "certificate_bytes": 970728,
+    "residual_proof": "results/certificate_scaling/cubic_precision/wedge_spectral/h6_conditioned/witness.json",
+    "residual_proof_bytes": 95108,
+    "receipt": {
+      "method": "fixed_N_wedge_spectral_gram_v1",
+      "lower": "-3166556810312917952757997/500000000000000000000000",
+      "lower_float": -6.333113620625836,
+      "bodies": [
+        {
+          "body": 1,
+          "wedge_dimension": 12,
+          "components": [
+            {
+              "dimension": 3,
+              "rank": 3,
+              "integer_product_work": 18,
+              "ell": "-72430347/62500000000000",
+              "residual_gershgorin": "-9002017/10000000000000000000000",
+              "lower": "-11588855529002017/10000000000000000000000"
+            },
+            {
+              "dimension": 3,
+              "rank": 3,
+              "integer_product_work": 18,
+              "ell": "-1157154751/1000000000000000",
+              "residual_gershgorin": "-68454327/62500000000000000000000",
+              "lower": "-72322172005954327/62500000000000000000000"
+            },
+            {
+              "dimension": 3,
+              "rank": 3,
+              "integer_product_work": 18,
+              "ell": "-594191967/500000000000000",
+              "residual_gershgorin": "-35657617/31250000000000000000000",
+              "lower": "-37136997973157617/31250000000000000000000"
+            },
+            {
+              "dimension": 3,
+              "rank": 3,
+              "integer_product_work": 18,
+              "ell": "-296774693/250000000000000",
+              "residual_gershgorin": "-1052979363/1000000000000000000000000",
+              "lower": "-1187098773052979363/1000000000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-111410993919472851/15625000000000000000000",
+          "chosen_lower": "-111410993919472851/15625000000000000000000"
+        },
+        {
+          "body": 2,
+          "wedge_dimension": 66,
+          "components": [
+            {
+              "dimension": 18,
+              "rank": 18,
+              "integer_product_work": 3078,
+              "ell": "-1228181111/1000000000000000",
+              "residual_gershgorin": "-4081241193/500000000000000000000000",
+              "lower": "-614090559581241193/500000000000000000000000"
+            },
+            {
+              "dimension": 9,
+              "rank": 9,
+              "integer_product_work": 405,
+              "ell": "-797413773/1000000000000000",
+              "residual_gershgorin": "-52906903/15625000000000000000000",
+              "lower": "-12459590256031903/15625000000000000000000"
+            },
+            {
+              "dimension": 18,
+              "rank": 18,
+              "integer_product_work": 3078,
+              "ell": "-161059073/200000000000000",
+              "residual_gershgorin": "-6864812307/1000000000000000000000000",
+              "lower": "-805295371864812307/1000000000000000000000000"
+            },
+            {
+              "dimension": 6,
+              "rank": 6,
+              "integer_product_work": 126,
+              "ell": "-2540001/7812500000000",
+              "residual_gershgorin": "-1772732153/1000000000000000000000000",
+              "lower": "-325120129772732153/1000000000000000000000000"
+            },
+            {
+              "dimension": 9,
+              "rank": 9,
+              "integer_product_work": 405,
+              "ell": "-24898653/31250000000000",
+              "residual_gershgorin": "-3830010777/1000000000000000000000000",
+              "lower": "-796756899830010777/1000000000000000000000000"
+            },
+            {
+              "dimension": 6,
+              "rank": 6,
+              "integer_product_work": 126,
+              "ell": "-324344007/1000000000000000",
+              "residual_gershgorin": "-1352889191/1000000000000000000000000",
+              "lower": "-324344008352889191/1000000000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-1842271678743723579/100000000000000000000000",
+          "chosen_lower": "-1842271678743723579/100000000000000000000000"
+        },
+        {
+          "body": 3,
+          "wedge_dimension": 220,
+          "components": [
+            {
+              "dimension": 45,
+              "rank": 45,
+              "integer_product_work": 46575,
+              "ell": "-566520307/1000000000000000",
+              "residual_gershgorin": "-12912900887/1000000000000000000000000",
+              "lower": "-566520319912900887/1000000000000000000000000"
+            },
+            {
+              "dimension": 45,
+              "rank": 45,
+              "integer_product_work": 46575,
+              "ell": "-56649773/100000000000000",
+              "residual_gershgorin": "-13455077957/1000000000000000000000000",
+              "lower": "-566497743455077957/1000000000000000000000000"
+            },
+            {
+              "dimension": 45,
+              "rank": 45,
+              "integer_product_work": 46575,
+              "ell": "-93110449/200000000000000",
+              "residual_gershgorin": "-1210104323/100000000000000000000000",
+              "lower": "-46555225710104323/100000000000000000000000"
+            },
+            {
+              "dimension": 45,
+              "rank": 45,
+              "integer_product_work": 46575,
+              "ell": "-116380159/250000000000000",
+              "residual_gershgorin": "-12772000257/1000000000000000000000000",
+              "lower": "-465520648772000257/1000000000000000000000000"
+            },
+            {
+              "dimension": 10,
+              "rank": 10,
+              "integer_product_work": 550,
+              "ell": "-147088511/500000000000000",
+              "residual_gershgorin": "-1129025163/500000000000000000000000",
+              "lower": "-147088512129025163/500000000000000000000000"
+            },
+            {
+              "dimension": 10,
+              "rank": 10,
+              "integer_product_work": 550,
+              "ell": "-97525929/500000000000000",
+              "residual_gershgorin": "-1663723151/1000000000000000000000000",
+              "lower": "-195051859663723151/1000000000000000000000000"
+            },
+            {
+              "dimension": 10,
+              "rank": 10,
+              "integer_product_work": 550,
+              "ell": "-147281897/500000000000000",
+              "residual_gershgorin": "-727791467/250000000000000000000000",
+              "lower": "-73640949227791467/250000000000000000000000"
+            },
+            {
+              "dimension": 10,
+              "rank": 10,
+              "integer_product_work": 550,
+              "ell": "-38977659/200000000000000",
+              "residual_gershgorin": "-58058761/31250000000000000000000",
+              "lower": "-6090259276808761/31250000000000000000000"
+            }
+          ],
+          "spectral_fixed_N_lower": "-566520319912900887/50000000000000000000000",
+          "chosen_lower": "-566520319912900887/50000000000000000000000"
+        }
+      ],
+      "old_wedge_lower": "-3166577599353075727/500000000000000000",
+      "many_body_states_enumerated": 0,
+      "scope": "Exact residual bound only; full original SOS discovery cost remains."
+    },
+    "lower_discovery_uses_Hamiltonian_and_sector_only": true,
+    "lower_discovery_enumerates_fixed_N_determinants": false,
+    "inherited_full_cubic_Gram_discovery": true,
+    "new_small_factor_discovery": false,
+    "replay_seconds": 5.592326417012373
+  },
+  "seconds": 6.05636562500149,
+  "compressed_lower_achieved": false,
+  "inherited_full_cubic_discovery": true,
+  "original_exact_upper_Ha": "-6332951156335762430738513632159156621419304728236732118241602111018907326811594497745798702342741418269384810978540898870210670209171933574961760525172391592126849688016426047811086232806733943/999999383519423276074251305321623806426591727772533977981782828869816843563395515958935372387327253599973269768958211998077216507324994374844782691678987383444664761016382623898324000000000000",
+  "charged_upper_allowance_Ha": "29539730386039191452075177775620589675838420403389350874844653276946132830076880007257718515773330103475543601910062465929645562449459644678033968082048038666101963932682221503897975513191/511999684361944717350016668324671388890414964619537396726672808381346223904458504170974910662311553843186314121706604543015534851750397119920528738139641540323668357640387903435941888000000000000"
+}

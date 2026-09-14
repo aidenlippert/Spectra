@@ -1,0 +1,18 @@
+{
+  "name": "progress_inventory",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-c",
+    "import json,pathlib; root=pathlib.Path(\"results/reconstruction_compression_20260914\"); runs=[json.loads(p.read_text()) for p in (root/\"runs\").glob(\"*.json\")]; print(\"completed_seconds\",sum(r.get(\"wall_seconds\",0) for r in runs)); print(\"intervals\",[(p.parent.name,json.loads(p.read_text()).get(\"width_mHa\")) for p in (root/\"candidates\").glob(\"*/interval.json\")]); print(\"pending\",[r[\"name\"] for r in runs if r[\"status\"]==\"starting\"])"
+  ],
+  "timeout_seconds": 60,
+  "status": "passed",
+  "started_UTC": "2026-09-14T08:13:34.043285+00:00",
+  "pid": 34568,
+  "exit_code": 0,
+  "wall_seconds": 0.04714087500178721,
+  "child_user_seconds": 0.023198999999999997,
+  "child_system_seconds": 0.010196,
+  "peak_child_RSS_bytes": 11223040,
+  "finished_UTC": "2026-09-14T08:13:34.091094+00:00"
+}

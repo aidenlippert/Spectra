@@ -1,0 +1,30 @@
+{
+  "status": "verified_lower",
+  "source": "results/lambda_runs/cubic_precision/downloaded/precision_scs/h6_none/certificate.json",
+  "compressed_certificate": "results/certificate_scaling/cubic_precision/factor_structure/compressed_certificate.json",
+  "threshold": 1000000.0,
+  "kept_rows": 238,
+  "nonzeros": 33400,
+  "bytes": 452445,
+  "discarded_unscaled_row_l2_squared": 65851377782687.0,
+  "exact_replay_seconds": 5.0042074999946635,
+  "exact_replay": {
+    "lower": "-6334378598445173/1000000000000000",
+    "lower_float": -6.334378598445173,
+    "residual_l1": "4056151208173/1000000000000000",
+    "residual_l1_float": 0.004056151208173,
+    "multiplier_terms": 919,
+    "square_polynomial_terms": 9419,
+    "residual_terms": 9419,
+    "residual_max_degree": 6,
+    "mode_count": 12,
+    "particle_number": 6,
+    "factor_rows": 238,
+    "factor_nonzeros": 33400
+  },
+  "upper_witness": -6.333058626233,
+  "interval_width": 0.0013199722121726154,
+  "passes_accuracy_target": true,
+  "post_discovery_source_wall_seconds": 259.6397602069992,
+  "compression_and_replay_wall_seconds": 5.0042074999946635
+}

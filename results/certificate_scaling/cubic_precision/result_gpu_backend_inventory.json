@@ -1,0 +1,9 @@
+{
+  "scope": "read-only backend inventory and 8x64x64 float64 eigvalsh smoke",
+  "hosts": [
+    {"host": "129.159.32.200", "gpu": "NVIDIA A10", "driver": "580.105.08", "vram": "23028 MiB", "venv": {"python": "/home/ubuntu/spectra-venv/bin/python", "torch": null, "cupy": null}, "system_python": {"python": "/usr/bin/python3", "torch": "2.7.0", "cuda": true, "smoke_shape": [8, 64], "kernel_seconds": 0.09867321099955007}},
+    {"host": "146.235.200.232", "gpu": "NVIDIA A10", "driver": "570.148.08", "vram": "23028 MiB", "venv": {"python": "/home/ubuntu/spectra-venv/bin/python", "torch": null, "cupy": null}, "system_python": {"python": "/usr/bin/python3", "torch": "2.7.0", "cuda": true, "smoke_shape": [8, 64], "kernel_seconds": 0.12607914100044582}}
+  ],
+  "interpretation": "CUDA-capable Torch is available only in /usr/bin/python3 on both hosts; the spectra venv has neither Torch nor CuPy. The smoke confirms batched float64 eigensolves, not end-to-end certificate acceleration.",
+  "actions_taken": "No installs, provisioning, launches, terminations, or research jobs."
+}

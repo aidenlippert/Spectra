@@ -1,0 +1,26 @@
+/home/ubuntu/spectra-venv/lib/python3.10/site-packages/cvxpy/problems/problem.py:1504: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  warnings.warn(
+{"method": "H_only_cubic_commutator_plus_quadratic", "modes": 12, "particles": 6, "polynomial_Gram_entries": 43740, "symbolic_word_pair_products": 3190092, "coefficient_rows": 9419, "coefficient_max_degree": 6, "gram_map_nonzeros": 4839648, "ideal_variables": 499, "construction_seconds": 153.61167820800256, "solve_seconds": 141.00713203699706, "export_seconds": 13.981013149001228, "wall_seconds": 308.5998237820022, "status": "user_limit", "numeric_lower": -6.335021082665855, "raw_b": -6.303862134750272, "negative_eigenvalue_mass": 0.00916064524977455, "exact": {"lower": "-835850289024939807856111743155474440940734271470754602358106522309/125000000000000000000000000000000000000000000000000000000000000000", "lower_float": -6.686802312199519, "residual_l1": "47867522181189807856111743155474440940734271470754602358106522309/125000000000000000000000000000000000000000000000000000000000000000", "residual_l1_float": 0.38294017744951847, "multiplier_terms": 919, "square_polynomial_terms": 9419, "residual_terms": 9419, "residual_max_degree": 6, "mode_count": 12, "particle_number": 6, "factor_rows": 717, "factor_nonzeros": 83412}, "certificate_bytes": 2844295, "factor_denominator_bits": 109, "creator_channels": true, "one_body_steps": 1, "diagonal_driver": true, "source_factors_used": false, "source_upper_used": false, "scope": "Fixed H-only polynomial span; no omitted-cone optimality or generic accuracy guarantee."}
+	Command being timed: "/home/ubuntu/spectra-venv/bin/python /home/ubuntu/spectra-krylov-diagonal/research/certificate_scaling/commutator_dictionary.py --fixture /home/ubuntu/spectra-krylov-diagonal/results/certificate_scaling/active_space_ladder/h6/fixture.json --out /home/ubuntu/spectra-krylov-diagonal/results/h6_diagonal_one_step --creator-channels --one-body-steps 1 --diagonal-driver --solver-seconds 120"
+	User time (seconds): 833.82
+	System time (seconds): 94.42
+	Percent of CPU this job got: 298%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:10.84
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7106832
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2932466
+	Voluntary context switches: 7812377
+	Involuntary context switches: 2844986
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 7056
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

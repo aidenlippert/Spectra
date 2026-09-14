@@ -1,0 +1,35 @@
+{
+  "accepted": true,
+  "contradictions": [
+    {
+      "round": 9,
+      "solver_status": "user_limit",
+      "reported_value": "-6610412374530111/10000000000000000",
+      "accepted_periodic_lower": "-826256094935167/1250000000000000",
+      "exact_lower_minus_reported_value": "14544601951/400000000000000",
+      "full_minimum_slack": -0.002770309778235447
+    },
+    {
+      "round": 10,
+      "solver_status": "user_limit",
+      "reported_value": "-3402117322571009/5000000000000000",
+      "accepted_periodic_lower": "-826256094935167/1250000000000000",
+      "exact_lower_minus_reported_value": "97092942830341/5000000000000000",
+      "full_minimum_slack": -0.714349298327503
+    },
+    {
+      "round": 11,
+      "solver_status": "user_limit",
+      "reported_value": "-1854961735727913/2500000000000000",
+      "accepted_periodic_lower": "-826256094935167/1250000000000000",
+      "exact_lower_minus_reported_value": "202449545857579/2500000000000000",
+      "full_minimum_slack": -0.10272391956641735
+    }
+  ],
+  "source_sha256": {
+    "results/marginal_graded_hubbard8/discovery/spectator_solver_limit_refutation.py": "310df5d4f100eec3686bfbe6e17811fda6b51d63bba4b453d2db6c4973cd3c77",
+    "results/marginal_graded_hubbard8/spectator_hopping/W_plus_1/global_diagonal/subspace_history.json": "70c115b40cf1534275031fe73efa9de1f1b9c9966d236a29ecaf05422406d81b",
+    "results/marginal_graded_hubbard8/spectator_hopping/W_plus_1/limit_refined/range_two_replay.json": "26e4e04e254c72c01b328e54a2c88e259a6b58be2e97edb80722eb875815645b"
+  },
+  "scope": "The displayed decimal solver values cannot be global ceilings for this family because an independently accepted exact periodic lower exceeds them. This refutes using these incomplete numerical solves as optimality evidence; it does not refute convex duality or determine the actual optimum."
+}

@@ -1,0 +1,1355 @@
+[
+  {
+    "dimension": 200,
+    "all_pairs": 19900,
+    "active_pairs": 6876,
+    "initial_pairs": 6174,
+    "pair_mode": "active",
+    "vector_mode": "rational",
+    "pair_pricing": "all_pairs",
+    "candidate_atoms": 8099,
+    "initial_atoms": 4259,
+    "initial_proof_atoms": 4259,
+    "initial_exact_threshold": "-379215390111231648997528301/57713311672402500000000000",
+    "active_atoms": 4455,
+    "stopping_reason": "Time limit reached",
+    "history": [
+      {
+        "round": 0,
+        "selected_atoms": 4259,
+        "active_atoms": 4259,
+        "active_pairs": 6174,
+        "numerical_primal_threshold": -6.570674583385494,
+        "best_numerical_threshold": -6.570674583080039,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -2.5506361071050563,
+        "priced_supports": 27678,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.8063602685478762,
+              "negative_eigenspaces": 2753
+            },
+            "3": {
+              "supports": 3338,
+              "minimum_eigenvalue": -1.9765740614612797,
+              "negative_eigenspaces": 3006
+            },
+            "4": {
+              "supports": 4440,
+              "minimum_eigenvalue": -2.5506361071050563,
+              "negative_eigenspaces": 4253
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 22,
+            "4": 234
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 1,
+        "selected_atoms": 4515,
+        "active_atoms": 4199,
+        "active_pairs": 6314,
+        "numerical_primal_threshold": -6.569827185065122,
+        "best_numerical_threshold": -6.569827185065122,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -3.2058533818492103,
+        "priced_supports": 27659,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.650762513765331,
+              "negative_eigenspaces": 2777
+            },
+            "3": {
+              "supports": 3331,
+              "minimum_eigenvalue": -2.0022323168358582,
+              "negative_eigenspaces": 3092
+            },
+            "4": {
+              "supports": 4428,
+              "minimum_eigenvalue": -3.2058533818492103,
+              "negative_eigenspaces": 4317
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 14,
+            "4": 242
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 2,
+        "selected_atoms": 4771,
+        "active_atoms": 4174,
+        "active_pairs": 6372,
+        "numerical_primal_threshold": -6.5694913529657315,
+        "best_numerical_threshold": -6.5694913529657315,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -3.2357162811182985,
+        "priced_supports": 27636,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.5629357281178244,
+              "negative_eigenspaces": 2829
+            },
+            "3": {
+              "supports": 3315,
+              "minimum_eigenvalue": -1.9725435414302657,
+              "negative_eigenspaces": 3099
+            },
+            "4": {
+              "supports": 4421,
+              "minimum_eigenvalue": -3.2357162811182985,
+              "negative_eigenspaces": 4320
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 22,
+            "4": 234
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 3,
+        "selected_atoms": 5027,
+        "active_atoms": 4194,
+        "active_pairs": 6437,
+        "numerical_primal_threshold": -6.569396747220399,
+        "best_numerical_threshold": -6.569396747220399,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -3.3813414367578503,
+        "priced_supports": 27681,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.5088644649403882,
+              "negative_eigenspaces": 2838
+            },
+            "3": {
+              "supports": 3344,
+              "minimum_eigenvalue": -2.1749210130708705,
+              "negative_eigenspaces": 3142
+            },
+            "4": {
+              "supports": 4437,
+              "minimum_eigenvalue": -3.3813414367578503,
+              "negative_eigenspaces": 4346
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 19,
+            "4": 237
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 4,
+        "selected_atoms": 5283,
+        "active_atoms": 4212,
+        "active_pairs": 6472,
+        "numerical_primal_threshold": -6.569316964267911,
+        "best_numerical_threshold": -6.569316964267911,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -2.84430238007066,
+        "priced_supports": 27672,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.4907398886264884,
+              "negative_eigenspaces": 2802
+            },
+            "3": {
+              "supports": 3337,
+              "minimum_eigenvalue": -2.124467277414115,
+              "negative_eigenspaces": 3120
+            },
+            "4": {
+              "supports": 4435,
+              "minimum_eigenvalue": -2.84430238007066,
+              "negative_eigenspaces": 4325
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 15,
+            "4": 241
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 5,
+        "selected_atoms": 5539,
+        "active_atoms": 4240,
+        "active_pairs": 6511,
+        "numerical_primal_threshold": -6.569124469583193,
+        "best_numerical_threshold": -6.569124469583193,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -3.173132306298283,
+        "priced_supports": 27662,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.5353190493060404,
+              "negative_eigenspaces": 2823
+            },
+            "3": {
+              "supports": 3331,
+              "minimum_eigenvalue": -2.1381981295737105,
+              "negative_eigenspaces": 3093
+            },
+            "4": {
+              "supports": 4431,
+              "minimum_eigenvalue": -3.173132306298283,
+              "negative_eigenspaces": 4321
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 25,
+            "4": 231
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 6,
+        "selected_atoms": 5795,
+        "active_atoms": 4258,
+        "active_pairs": 6548,
+        "numerical_primal_threshold": -6.568863840623242,
+        "best_numerical_threshold": -6.568863840623242,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -2.9182452460965527,
+        "priced_supports": 27672,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.5111897984257697,
+              "negative_eigenspaces": 2825
+            },
+            "3": {
+              "supports": 3336,
+              "minimum_eigenvalue": -2.0583515721266465,
+              "negative_eigenspaces": 3096
+            },
+            "4": {
+              "supports": 4436,
+              "minimum_eigenvalue": -2.9182452460965527,
+              "negative_eigenspaces": 4326
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 19,
+            "4": 237
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 7,
+        "selected_atoms": 6051,
+        "active_atoms": 4296,
+        "active_pairs": 6586,
+        "numerical_primal_threshold": -6.568697061618218,
+        "best_numerical_threshold": -6.568697061618218,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -2.5615988975088255,
+        "priced_supports": 27698,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.492440370396938,
+              "negative_eigenspaces": 2807
+            },
+            "3": {
+              "supports": 3351,
+              "minimum_eigenvalue": -1.802025021194021,
+              "negative_eigenspaces": 3073
+            },
+            "4": {
+              "supports": 4447,
+              "minimum_eigenvalue": -2.5615988975088255,
+              "negative_eigenspaces": 4318
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 20,
+            "4": 236
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 8,
+        "selected_atoms": 6307,
+        "active_atoms": 4294,
+        "active_pairs": 6634,
+        "numerical_primal_threshold": -6.568494325761668,
+        "best_numerical_threshold": -6.568494325761668,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -2.7562156691030553,
+        "priced_supports": 27641,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.4961216889018932,
+              "negative_eigenspaces": 2781
+            },
+            "3": {
+              "supports": 3321,
+              "minimum_eigenvalue": -1.9271417398474309,
+              "negative_eigenspaces": 3077
+            },
+            "4": {
+              "supports": 4420,
+              "minimum_eigenvalue": -2.7562156691030553,
+              "negative_eigenspaces": 4314
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 23,
+            "4": 233
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 9,
+        "selected_atoms": 6563,
+        "active_atoms": 4310,
+        "active_pairs": 6672,
+        "numerical_primal_threshold": -6.568406218769286,
+        "best_numerical_threshold": -6.568406218769286,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -2.4726277404336483,
+        "priced_supports": 27694,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.535477625541118,
+              "negative_eigenspaces": 2773
+            },
+            "3": {
+              "supports": 3349,
+              "minimum_eigenvalue": -1.6943043994865739,
+              "negative_eigenspaces": 3104
+            },
+            "4": {
+              "supports": 4445,
+              "minimum_eigenvalue": -2.4726277404336483,
+              "negative_eigenspaces": 4321
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 19,
+            "4": 237
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 10,
+        "selected_atoms": 6819,
+        "active_atoms": 4335,
+        "active_pairs": 6701,
+        "numerical_primal_threshold": -6.568323910196408,
+        "best_numerical_threshold": -6.568323910196408,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -2.577454357548402,
+        "priced_supports": 27659,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.48890346453493394,
+              "negative_eigenspaces": 2773
+            },
+            "3": {
+              "supports": 3332,
+              "minimum_eigenvalue": -1.708502308639179,
+              "negative_eigenspaces": 3083
+            },
+            "4": {
+              "supports": 4427,
+              "minimum_eigenvalue": -2.577454357548402,
+              "negative_eigenspaces": 4319
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 15,
+            "4": 241
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 11,
+        "selected_atoms": 7075,
+        "active_atoms": 4340,
+        "active_pairs": 6729,
+        "numerical_primal_threshold": -6.568165839107964,
+        "best_numerical_threshold": -6.568165839107964,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -2.156305240390267,
+        "priced_supports": 27658,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.5037595020902099,
+              "negative_eigenspaces": 2745
+            },
+            "3": {
+              "supports": 3329,
+              "minimum_eigenvalue": -1.5686322438472367,
+              "negative_eigenspaces": 3026
+            },
+            "4": {
+              "supports": 4429,
+              "minimum_eigenvalue": -2.156305240390267,
+              "negative_eigenspaces": 4289
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 19,
+            "4": 237
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 12,
+        "selected_atoms": 7331,
+        "active_atoms": 4405,
+        "active_pairs": 6768,
+        "numerical_primal_threshold": -6.567983295564184,
+        "best_numerical_threshold": -6.567983295564184,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -2.4846915617172236,
+        "priced_supports": 27682,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.49596569833802273,
+              "negative_eigenspaces": 2773
+            },
+            "3": {
+              "supports": 3343,
+              "minimum_eigenvalue": -1.5380602322956265,
+              "negative_eigenspaces": 3081
+            },
+            "4": {
+              "supports": 4439,
+              "minimum_eigenvalue": -2.4846915617172236,
+              "negative_eigenspaces": 4325
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 17,
+            "4": 239
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 13,
+        "selected_atoms": 7587,
+        "active_atoms": 4469,
+        "active_pairs": 6813,
+        "numerical_primal_threshold": -6.567802948853499,
+        "best_numerical_threshold": -6.567802948853499,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -2.4408981302298356,
+        "priced_supports": 27677,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.5316755587768351,
+              "negative_eigenspaces": 2738
+            },
+            "3": {
+              "supports": 3339,
+              "minimum_eigenvalue": -1.7945664532940904,
+              "negative_eigenspaces": 3034
+            },
+            "4": {
+              "supports": 4438,
+              "minimum_eigenvalue": -2.4408981302298356,
+              "negative_eigenspaces": 4300
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 15,
+            "4": 241
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 14,
+        "selected_atoms": 7843,
+        "active_atoms": 4455,
+        "active_pairs": 6850,
+        "numerical_primal_threshold": -6.5676648566793565,
+        "best_numerical_threshold": -6.5676648566793565,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -2.2430138620773485,
+        "priced_supports": 27688,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.4877833771698908,
+              "negative_eigenspaces": 2777
+            },
+            "3": {
+              "supports": 3347,
+              "minimum_eigenvalue": -1.550008489606304,
+              "negative_eigenspaces": 3084
+            },
+            "4": {
+              "supports": 4441,
+              "minimum_eigenvalue": -2.2430138620773485,
+              "negative_eigenspaces": 4329
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 23,
+            "4": 233
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 15,
+        "selected_atoms": 8099,
+        "active_atoms": 4455,
+        "active_pairs": 6876,
+        "numerical_primal_threshold": -11.87518952887502,
+        "best_numerical_threshold": -6.5676648566793565,
+        "solver_status": "Time limit reached"
+      }
+    ],
+    "elapsed_seconds": 240.89434241701383,
+    "seconds_cap": 240.0,
+    "round_cap": 24,
+    "exact_threshold": "-379041688839032762232222751/57713311672402500000000000",
+    "exact_threshold_float": -6.567664856776602,
+    "scope": "Adaptive dual LP; every nonzero Hamiltonian pair and every pair used by a selected atom is modeled. Inactive pairs have identically zero primal residual; the numerical pricing dual is extended there by zero. Row multipliers propose positive atoms. Bounded support pricing is heuristic, not a global optimality test. The complete exact DD residual determines the exported threshold.",
+    "discovered_atoms": 8099
+  },
+  {
+    "dimension": 168,
+    "all_pairs": 14028,
+    "active_pairs": 5330,
+    "initial_pairs": 4534,
+    "pair_mode": "active",
+    "vector_mode": "rational",
+    "pair_pricing": "all_pairs",
+    "candidate_atoms": 7771,
+    "initial_atoms": 3163,
+    "initial_proof_atoms": 3163,
+    "initial_exact_threshold": "-122560936870840741455541157/18885319344541500000000000",
+    "active_atoms": 3419,
+    "stopping_reason": "Time limit reached",
+    "history": [
+      {
+        "round": 0,
+        "selected_atoms": 3163,
+        "active_atoms": 3162,
+        "active_pairs": 4534,
+        "numerical_primal_threshold": -6.489746592438585,
+        "best_numerical_threshold": -6.489746592438585,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -4.352082488573636,
+        "priced_supports": 20663,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -1.7735433037536072,
+              "negative_eigenspaces": 1890
+            },
+            "3": {
+              "supports": 2844,
+              "minimum_eigenvalue": -3.21277665942911,
+              "negative_eigenspaces": 2478
+            },
+            "4": {
+              "supports": 3791,
+              "minimum_eigenvalue": -4.352082488573636,
+              "negative_eigenspaces": 3646
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 28,
+            "4": 228
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 1,
+        "selected_atoms": 3419,
+        "active_atoms": 3056,
+        "active_pairs": 4679,
+        "numerical_primal_threshold": -6.488778063419529,
+        "best_numerical_threshold": -6.488778063419529,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -7.25051974474164,
+        "priced_supports": 20618,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -1.2920766685895246,
+              "negative_eigenspaces": 2043
+            },
+            "3": {
+              "supports": 2816,
+              "minimum_eigenvalue": -4.470546983928815,
+              "negative_eigenspaces": 2564
+            },
+            "4": {
+              "supports": 3774,
+              "minimum_eigenvalue": -7.25051974474164,
+              "negative_eigenspaces": 3665
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 16,
+            "4": 240
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 2,
+        "selected_atoms": 3675,
+        "active_atoms": 3067,
+        "active_pairs": 4748,
+        "numerical_primal_threshold": -6.488623995013364,
+        "best_numerical_threshold": -6.488623995013364,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -6.516565083746967,
+        "priced_supports": 20677,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -1.1023890862251875,
+              "negative_eigenspaces": 2086
+            },
+            "3": {
+              "supports": 2853,
+              "minimum_eigenvalue": -4.682167382887214,
+              "negative_eigenspaces": 2636
+            },
+            "4": {
+              "supports": 3796,
+              "minimum_eigenvalue": -6.516565083746967,
+              "negative_eigenspaces": 3706
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 17,
+            "4": 239
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 3,
+        "selected_atoms": 3931,
+        "active_atoms": 3096,
+        "active_pairs": 4794,
+        "numerical_primal_threshold": -6.488557728127427,
+        "best_numerical_threshold": -6.488557728127427,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -6.699595368950448,
+        "priced_supports": 20673,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -1.0528862252727136,
+              "negative_eigenspaces": 2104
+            },
+            "3": {
+              "supports": 2853,
+              "minimum_eigenvalue": -4.308216294856604,
+              "negative_eigenspaces": 2619
+            },
+            "4": {
+              "supports": 3792,
+              "minimum_eigenvalue": -6.699595368950448,
+              "negative_eigenspaces": 3693
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 17,
+            "4": 239
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 4,
+        "selected_atoms": 4187,
+        "active_atoms": 3136,
+        "active_pairs": 4829,
+        "numerical_primal_threshold": -6.4884973975427105,
+        "best_numerical_threshold": -6.4884973975427105,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -6.590262994395723,
+        "priced_supports": 20676,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -1.008757024978597,
+              "negative_eigenspaces": 2096
+            },
+            "3": {
+              "supports": 2851,
+              "minimum_eigenvalue": -3.703316105076995,
+              "negative_eigenspaces": 2632
+            },
+            "4": {
+              "supports": 3797,
+              "minimum_eigenvalue": -6.590262994395723,
+              "negative_eigenspaces": 3700
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 21,
+            "4": 235
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 5,
+        "selected_atoms": 4443,
+        "active_atoms": 3190,
+        "active_pairs": 4858,
+        "numerical_primal_threshold": -6.488419198613206,
+        "best_numerical_threshold": -6.488419198613206,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -5.118330331852849,
+        "priced_supports": 20676,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -1.0642954872958943,
+              "negative_eigenspaces": 2063
+            },
+            "3": {
+              "supports": 2854,
+              "minimum_eigenvalue": -3.7453850101762374,
+              "negative_eigenspaces": 2626
+            },
+            "4": {
+              "supports": 3794,
+              "minimum_eigenvalue": -5.118330331852849,
+              "negative_eigenspaces": 3693
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 31,
+            "4": 225
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 6,
+        "selected_atoms": 4699,
+        "active_atoms": 3189,
+        "active_pairs": 4894,
+        "numerical_primal_threshold": -6.488262258133715,
+        "best_numerical_threshold": -6.488262258133715,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -5.252718804150962,
+        "priced_supports": 20693,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -1.0183006051816186,
+              "negative_eigenspaces": 2067
+            },
+            "3": {
+              "supports": 2860,
+              "minimum_eigenvalue": -3.7173652379329525,
+              "negative_eigenspaces": 2593
+            },
+            "4": {
+              "supports": 3805,
+              "minimum_eigenvalue": -5.252718804150962,
+              "negative_eigenspaces": 3712
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 25,
+            "4": 231
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 7,
+        "selected_atoms": 4955,
+        "active_atoms": 3192,
+        "active_pairs": 4932,
+        "numerical_primal_threshold": -6.488153973029494,
+        "best_numerical_threshold": -6.488153973029494,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -5.5023021347349355,
+        "priced_supports": 20658,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -0.9540863581866015,
+              "negative_eigenspaces": 2049
+            },
+            "3": {
+              "supports": 2843,
+              "minimum_eigenvalue": -3.0308432818958986,
+              "negative_eigenspaces": 2578
+            },
+            "4": {
+              "supports": 3787,
+              "minimum_eigenvalue": -5.5023021347349355,
+              "negative_eigenspaces": 3656
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 27,
+            "4": 229
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 8,
+        "selected_atoms": 5211,
+        "active_atoms": 3206,
+        "active_pairs": 4966,
+        "numerical_primal_threshold": -6.4880037181608525,
+        "best_numerical_threshold": -6.4880037181608525,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -5.202350147190282,
+        "priced_supports": 20642,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -0.9956455620769284,
+              "negative_eigenspaces": 2092
+            },
+            "3": {
+              "supports": 2836,
+              "minimum_eigenvalue": -3.4986426638156636,
+              "negative_eigenspaces": 2574
+            },
+            "4": {
+              "supports": 3778,
+              "minimum_eigenvalue": -5.202350147190282,
+              "negative_eigenspaces": 3681
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 26,
+            "4": 230
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 9,
+        "selected_atoms": 5467,
+        "active_atoms": 3236,
+        "active_pairs": 4996,
+        "numerical_primal_threshold": -6.487864263824062,
+        "best_numerical_threshold": -6.487864263824062,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -5.078321909393676,
+        "priced_supports": 20686,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -0.9924291370140101,
+              "negative_eigenspaces": 2066
+            },
+            "3": {
+              "supports": 2859,
+              "minimum_eigenvalue": -3.6009713567970305,
+              "negative_eigenspaces": 2604
+            },
+            "4": {
+              "supports": 3799,
+              "minimum_eigenvalue": -5.078321909393676,
+              "negative_eigenspaces": 3698
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 21,
+            "4": 235
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 10,
+        "selected_atoms": 5723,
+        "active_atoms": 3254,
+        "active_pairs": 5018,
+        "numerical_primal_threshold": -6.4877298388629425,
+        "best_numerical_threshold": -6.4877298388629425,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -4.661411310481541,
+        "priced_supports": 20689,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -0.9845785682604209,
+              "negative_eigenspaces": 2025
+            },
+            "3": {
+              "supports": 2862,
+              "minimum_eigenvalue": -3.3543999061880365,
+              "negative_eigenspaces": 2551
+            },
+            "4": {
+              "supports": 3799,
+              "minimum_eigenvalue": -4.661411310481541,
+              "negative_eigenspaces": 3696
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 27,
+            "4": 229
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 11,
+        "selected_atoms": 5979,
+        "active_atoms": 3259,
+        "active_pairs": 5058,
+        "numerical_primal_threshold": -6.487546343474171,
+        "best_numerical_threshold": -6.487546343474171,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -4.158377461754391,
+        "priced_supports": 20673,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -1.2065494616224293,
+              "negative_eigenspaces": 2040
+            },
+            "3": {
+              "supports": 2850,
+              "minimum_eigenvalue": -2.763608706048407,
+              "negative_eigenspaces": 2604
+            },
+            "4": {
+              "supports": 3795,
+              "minimum_eigenvalue": -4.158377461754391,
+              "negative_eigenspaces": 3691
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 15,
+            "4": 241
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 12,
+        "selected_atoms": 6235,
+        "active_atoms": 3292,
+        "active_pairs": 5086,
+        "numerical_primal_threshold": -6.487437609986335,
+        "best_numerical_threshold": -6.487437609986335,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -4.478353847327242,
+        "priced_supports": 20694,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -1.0089967261401656,
+              "negative_eigenspaces": 2033
+            },
+            "3": {
+              "supports": 2861,
+              "minimum_eigenvalue": -3.280072028251032,
+              "negative_eigenspaces": 2577
+            },
+            "4": {
+              "supports": 3805,
+              "minimum_eigenvalue": -4.478353847327242,
+              "negative_eigenspaces": 3683
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 25,
+            "4": 231
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 13,
+        "selected_atoms": 6491,
+        "active_atoms": 3331,
+        "active_pairs": 5129,
+        "numerical_primal_threshold": -6.487136903015796,
+        "best_numerical_threshold": -6.487136903015796,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -4.094954919813896,
+        "priced_supports": 20692,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -1.0009370640356314,
+              "negative_eigenspaces": 2060
+            },
+            "3": {
+              "supports": 2864,
+              "minimum_eigenvalue": -2.982541460106397,
+              "negative_eigenspaces": 2575
+            },
+            "4": {
+              "supports": 3800,
+              "minimum_eigenvalue": -4.094954919813896,
+              "negative_eigenspaces": 3674
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 30,
+            "4": 226
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 14,
+        "selected_atoms": 6747,
+        "active_atoms": 3339,
+        "active_pairs": 5171,
+        "numerical_primal_threshold": -6.486999686867843,
+        "best_numerical_threshold": -6.486999686867843,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -4.652542665776016,
+        "priced_supports": 20656,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -1.0493984530600362,
+              "negative_eigenspaces": 2023
+            },
+            "3": {
+              "supports": 2840,
+              "minimum_eigenvalue": -3.38089134347006,
+              "negative_eigenspaces": 2536
+            },
+            "4": {
+              "supports": 3788,
+              "minimum_eigenvalue": -4.652542665776016,
+              "negative_eigenspaces": 3665
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 22,
+            "4": 234
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 15,
+        "selected_atoms": 7003,
+        "active_atoms": 3338,
+        "active_pairs": 5205,
+        "numerical_primal_threshold": -6.486804277198439,
+        "best_numerical_threshold": -6.486804277198439,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -4.400238039351844,
+        "priced_supports": 20666,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -0.9936545781963585,
+              "negative_eigenspaces": 2051
+            },
+            "3": {
+              "supports": 2846,
+              "minimum_eigenvalue": -3.2414941070984975,
+              "negative_eigenspaces": 2579
+            },
+            "4": {
+              "supports": 3792,
+              "minimum_eigenvalue": -4.400238039351844,
+              "negative_eigenspaces": 3690
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 25,
+            "4": 231
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 16,
+        "selected_atoms": 7259,
+        "active_atoms": 3392,
+        "active_pairs": 5250,
+        "numerical_primal_threshold": -6.486718496506597,
+        "best_numerical_threshold": -6.486718496506597,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -4.875370386075144,
+        "priced_supports": 20698,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -0.9829632039719236,
+              "negative_eigenspaces": 2041
+            },
+            "3": {
+              "supports": 2868,
+              "minimum_eigenvalue": -3.027564634291313,
+              "negative_eigenspaces": 2541
+            },
+            "4": {
+              "supports": 3802,
+              "minimum_eigenvalue": -4.875370386075144,
+              "negative_eigenspaces": 3668
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 29,
+            "4": 227
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 17,
+        "selected_atoms": 7515,
+        "active_atoms": 3419,
+        "active_pairs": 5287,
+        "numerical_primal_threshold": -6.486610715242769,
+        "best_numerical_threshold": -6.486610715242769,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -3.493994791519339,
+        "priced_supports": 20686,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -1.0541335058125236,
+              "negative_eigenspaces": 2045
+            },
+            "3": {
+              "supports": 2857,
+              "minimum_eigenvalue": -2.69161263079884,
+              "negative_eigenspaces": 2572
+            },
+            "4": {
+              "supports": 3801,
+              "minimum_eigenvalue": -3.493994791519339,
+              "negative_eigenspaces": 3687
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 0,
+            "3": 25,
+            "4": 231
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      },
+      {
+        "round": 18,
+        "selected_atoms": 7771,
+        "active_atoms": 3419,
+        "active_pairs": 5330,
+        "numerical_primal_threshold": -7.365120407574153,
+        "best_numerical_threshold": -6.486610715242769,
+        "solver_status": "Time limit reached"
+      }
+    ],
+    "elapsed_seconds": 240.70512737496756,
+    "seconds_cap": 240.0,
+    "round_cap": 24,
+    "exact_threshold": "-183752572243753547776951957/28327979016812250000000000",
+    "exact_threshold_float": -6.4866107156708575,
+    "scope": "Adaptive dual LP; every nonzero Hamiltonian pair and every pair used by a selected atom is modeled. Inactive pairs have identically zero primal residual; the numerical pricing dual is extended there by zero. Row multipliers propose positive atoms. Bounded support pricing is heuristic, not a global optimality test. The complete exact DD residual determines the exported threshold.",
+    "discovered_atoms": 7771
+  }
+]

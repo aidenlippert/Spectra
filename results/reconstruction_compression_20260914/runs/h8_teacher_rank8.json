@@ -1,0 +1,26 @@
+{
+  "name": "h8_teacher_rank8",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-m",
+    "research.reconstruction_compression_20260914.reduced",
+    "solve",
+    "h8",
+    "teacher",
+    "8",
+    "--seconds",
+    "50",
+    "--teacher",
+    "results/lambda_runs/cubic_precision/downloaded/h8_scs_quotient_conditioned/certificate.json"
+  ],
+  "timeout_seconds": 180,
+  "status": "passed",
+  "started_UTC": "2026-09-14T07:56:30.828128+00:00",
+  "pid": 31850,
+  "exit_code": 0,
+  "wall_seconds": 65.39006308300304,
+  "child_user_seconds": 62.684351,
+  "child_system_seconds": 2.31515,
+  "peak_child_RSS_bytes": 1774616576,
+  "finished_UTC": "2026-09-14T07:57:36.217161+00:00"
+}

@@ -1,0 +1,116 @@
+{
+  "source": "results/marginal_h6/coherent_joint_simplex/certificate.json",
+  "sites": 6,
+  "transition_groups": 1140,
+  "local_metric_factors": 30,
+  "unit_metric_factors": 0,
+  "scope_histograms": {
+    "event_modes": {
+      "2": 60,
+      "4": 1080
+    },
+    "event_sites": {
+      "2": 120,
+      "3": 480,
+      "4": 540
+    },
+    "charge_changed_sites": {
+      "2": 330,
+      "3": 240,
+      "4": 540,
+      "0": 30
+    },
+    "spectator_modes": {
+      "10": 60,
+      "0": 1080
+    },
+    "metric_sites": {
+      "4": 44,
+      "5": 112,
+      "6": 954,
+      "0": 30
+    },
+    "combined_sites": {
+      "6": 994,
+      "4": 20,
+      "5": 96,
+      "2": 30
+    },
+    "amplitude_sign": {
+      "nonpositive": 546,
+      "nonnegative": 594
+    }
+  },
+  "full_scope_examples": [
+    {
+      "creates": 1,
+      "annihilates": 4,
+      "event_sites": [
+        0,
+        1
+      ],
+      "spectator_sites": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "metric_sites": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "creates": 1,
+      "annihilates": 16,
+      "event_sites": [
+        0,
+        2
+      ],
+      "spectator_sites": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "metric_sites": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "creates": 1,
+      "annihilates": 64,
+      "event_sites": [
+        0,
+        3
+      ],
+      "spectator_sites": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "metric_sites": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "scope": "Syntactic union of nonconstant metric factors touching charge changes, event supports, and nonzero affine spectators. Global source/target valence projectors and fixed spin counts excluded; dependencies/cancellations may shrink these scopes. Not an alternative-factorization treewidth lower bound. Metric labels have range2; distant and multi-site transitions unite their neighborhoods."
+}

@@ -1,0 +1,79 @@
+{
+  "sites": 8,
+  "U": "4",
+  "t": "1",
+  "metric": "D",
+  "sector": "Nalpha=Nbeta=4, D>=1",
+  "rows_by_D": [
+    {
+      "D": 1,
+      "maximum_weighted_hopping_sum": 22,
+      "row_lower": "-18",
+      "one_maximizer": [
+        3,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2,
+        0
+      ],
+      "DP_states_processed": 245
+    },
+    {
+      "D": 2,
+      "maximum_weighted_hopping_sum": 26,
+      "row_lower": "-5",
+      "one_maximizer": [
+        0,
+        3,
+        1,
+        2,
+        1,
+        2,
+        3,
+        0
+      ],
+      "DP_states_processed": 329
+    },
+    {
+      "D": 3,
+      "maximum_weighted_hopping_sum": 31,
+      "row_lower": "5/3",
+      "one_maximizer": [
+        1,
+        2,
+        3,
+        0,
+        3,
+        0,
+        3,
+        0
+      ],
+      "DP_states_processed": 341
+    },
+    {
+      "D": 4,
+      "maximum_weighted_hopping_sum": 42,
+      "row_lower": "11/2",
+      "one_maximizer": [
+        3,
+        0,
+        3,
+        0,
+        3,
+        0,
+        3,
+        0
+      ],
+      "DP_states_processed": 276
+    }
+  ],
+  "exact_fixed_metric_weighted_row_limit": "-18",
+  "critical_state": 9831,
+  "attempted_gamma": "-1799/100",
+  "exact_negative_numerator_at_critical_state": "-1/100",
+  "crosscheck": "Four-site fixed-spin polynomial rows exhaustively match DP; eight-site critical row matches exact compiled polynomial.",
+  "scope": "Exact minimum of D-weighted Gershgorin rows for this Hubbard chain, via an integer local-state DP. Not the actual complement eigenvalue. A negative physical numerator rules out all nonnegative numerator decompositions at the attempted gamma for this fixed metric (and its positive scalar multiples). Other metrics and operator certificates remain possible."
+}

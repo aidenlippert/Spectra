@@ -1,0 +1,55 @@
+{
+  "accepted": false,
+  "matrix_evaluations": 241,
+  "optimizer_success": false,
+  "optimizer_message": "Iteration limit reached",
+  "proposed_periodic_lower": "-16066333924763747/25000000000000000",
+  "proposed_periodic_lower_float": -0.6426533569905499,
+  "max_fresh_affine_difference": 3.552713678800501e-15,
+  "hopping_telescope": "23741/1000000",
+  "spin_telescope": {
+    "0,1": "17727/1000000",
+    "0,2": "-14917/500000",
+    "0,3": "-53/25000",
+    "1,2": "-143/20000"
+  },
+  "spectator_hopping": {
+    "0,1,2": "-38153/125000",
+    "0,1,3": "2743/125000",
+    "0,1,4": "34869/1000000",
+    "0,2,1": "15883/1000000",
+    "0,2,3": "11199/250000",
+    "0,2,4": "71439/1000000",
+    "0,3,1": "58991/1000000",
+    "0,3,2": "-78351/1000000",
+    "0,3,4": "-789/1000000",
+    "0,4,1": "2169/125000",
+    "1,2,0": "-25719/1000000",
+    "1,2,3": "-5587/62500",
+    "1,2,4": "799/62500",
+    "1,3,0": "42281/1000000"
+  },
+  "signed_charge_patterns": 44,
+  "shape_indices": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    31,
+    11,
+    20
+  ],
+  "seconds": 47.9062253330012,
+  "source_sha256": {
+    "results/marginal_graded_hubbard8/discovery/spectator_numeric.py": "070b0110ec9d03db041a8e10884cdaf2f141e32f522a6644248bad59bd8367a7",
+    "results/marginal_graded_hubbard8/discovery/signed_charge_numeric.py": "2ab214a90d762614165dc9a236894558443465bc2850aa09f738f23265954632",
+    "experiments/marginal_hopping_telescope.py": "f72a6ce39da10d5de54f9f5d4617ede56fd57d8ff048ef91850dfeb07c054491",
+    "experiments/marginal_spin_telescope.py": "b15dbd9398d838c38e155e0321f1169e795f0c706e839466aa0c8d029cb2cc92",
+    "experiments/marginal_spectator_hopping.py": "048a696372838f7b1b39eb3f9440f24ed015ba96c85c8143f0a9cb2c0ad256b2",
+    "results/marginal_graded_hubbard8/spectator_hopping/W_minus_1_10/profile_joint_r1_2_certificate.json": "6b5fba6dfed339e53270bcd929da8108ffd844e917a3eb8ebe6cadcb667e7823",
+    "results/marginal_graded_hubbard8/joint_projector/signed_density/symmetry_diagonal_candidates.json": "27139cdd0e466faceabbf6193775158e6412ea8b93439b075ad7d75d5bc9613c"
+  },
+  "scope": "Nonaccepting numerical search in all 52 disjoint signed-charge pattern directions and nine sparse shapes. Old diagonal profiles and compact corrections are fixed, since their variation is contained in the complete signed-charge span. Two hopping profiles, both penalties, one mean-zero range-three hopping telescope four spin-dot telescopes and fourteen spectator hopping telescopes are optimized. Hard250 matrix evaluations; fresh physical reconstruction; exact PSD acceptance remains separate."
+}

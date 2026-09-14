@@ -1,0 +1,31 @@
+{"round": 0, "status": "optimal", "active_blocks": 8, "largest_compressed_dimension": 4, "solver_seconds": 0.009277957, "model_periodic_upper": -0.6430526097976207, "full_minimum_slack": -0.04322591916852314, "best_periodic_lower": -0.6430616538355307}
+/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spectator_subspace48_numeric.py:91: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver='CLARABEL',time_limit=15.,max_iter=60,tol_gap_abs=1e-9,tol_feas=1e-9,verbose=False)
+{"round": 1, "status": "optimal_inaccurate", "active_blocks": 8, "largest_compressed_dimension": 8, "solver_seconds": 0.043344791, "model_periodic_upper": -0.6430565739436623, "full_minimum_slack": -0.002640615094813281, "best_periodic_lower": -0.6430616538355307}
+{"round": 2, "status": "optimal", "active_blocks": 8, "largest_compressed_dimension": 12, "solver_seconds": 0.075591082, "model_periodic_upper": -0.6430573580232519, "full_minimum_slack": -0.00048284982898927353, "best_periodic_lower": -0.6430616538355307}
+{"round": 3, "status": "optimal_inaccurate", "active_blocks": 8, "largest_compressed_dimension": 16, "solver_seconds": 0.138420667, "model_periodic_upper": -0.6430585019492537, "full_minimum_slack": -0.00012599854285477718, "best_periodic_lower": -0.6430616538355307}
+{"round": 4, "status": "optimal_inaccurate", "active_blocks": 8, "largest_compressed_dimension": 20, "solver_seconds": 0.31903871, "model_periodic_upper": -0.643059187585747, "full_minimum_slack": -5.881427274223583e-05, "best_periodic_lower": -0.6430616538355307}
+{"round": 5, "status": "optimal_inaccurate", "active_blocks": 8, "largest_compressed_dimension": 24, "solver_seconds": 0.584197291, "model_periodic_upper": -0.6430596577110096, "full_minimum_slack": -2.27258214020587e-05, "best_periodic_lower": -0.6430616538355307}
+{"round": 6, "status": "optimal_inaccurate", "active_blocks": 8, "largest_compressed_dimension": 28, "solver_seconds": 0.980949794, "model_periodic_upper": -0.6430599467296294, "full_minimum_slack": -1.2581253721943852e-05, "best_periodic_lower": -0.6430616538355307}
+{"round": 7, "status": "optimal_inaccurate", "active_blocks": 8, "largest_compressed_dimension": 32, "solver_seconds": 1.718805957, "model_periodic_upper": -0.6430600627836909, "full_minimum_slack": -3.990048088375886e-06, "best_periodic_lower": -0.6430608607933086}
+{"round": 8, "status": "optimal", "active_blocks": 8, "largest_compressed_dimension": 36, "solver_seconds": 2.669508043, "model_periodic_upper": -0.6430601154119592, "full_minimum_slack": -3.356492201955774e-06, "best_periodic_lower": -0.6430607867103996}
+{"round": 9, "status": "optimal_inaccurate", "active_blocks": 8, "largest_compressed_dimension": 40, "solver_seconds": 4.310365749, "model_periodic_upper": -0.6430601661418821, "full_minimum_slack": -7.577057283825184e-07, "best_periodic_lower": -0.6430603176830278}
+{"round": 10, "status": "optimal_inaccurate", "active_blocks": 8, "largest_compressed_dimension": 44, "solver_seconds": 5.761615793, "model_periodic_upper": -0.6430601628616175, "full_minimum_slack": -4.006792093669276e-07, "best_periodic_lower": -0.6430602429974593}
+{"round": 11, "status": "optimal", "active_blocks": 8, "largest_compressed_dimension": 48, "solver_seconds": 8.852419206, "model_periodic_upper": -0.6430601672022616, "full_minimum_slack": -8.998172029706097e-08, "best_periodic_lower": -0.6430601851986055}
+Traceback (most recent call last):
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spectator_subspace48_numeric.py", line 122, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spectator_subspace48_numeric.py", line 101, in main
+    (args.output/'subspace_basis.json').write_text(json.dumps({key:value.tolist() for key,value in basis.items()})+'\n')
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+TypeError: keys must be str, int, float, bool or None, not tuple

@@ -1,0 +1,217 @@
+{
+  "scope": "one existing residual; norm-only preflight, not complete scientific calculation or headroom",
+  "rows": [
+    {
+      "family": "full",
+      "iterations": 1,
+      "integrated_bound": "486254832971934427/491520000000000000000",
+      "meets_tolerance": true,
+      "groups": 69,
+      "complete_norm_seconds": 0.01667754095979035,
+      "cost": {
+        "group_pair_checks": 5704,
+        "group_count": 69,
+        "incidences": 319,
+        "iterations": 1,
+        "coordinate_updates": 319,
+        "scaled_objective_trace": [
+          5.051546196783625
+        ],
+        "construction_seconds": 0.013672290951944888,
+        "internal_check": {
+          "status": "certified",
+          "bound": "486254832971934427/10000000000000000",
+          "checking_cost": {
+            "pair_checks": 599,
+            "coefficient_adds": 319,
+            "squares": 388
+          },
+          "checking_seconds": 0.00315295800101012
+        }
+      },
+      "check": {
+        "status": "certified",
+        "bound": "486254832971934427/10000000000000000",
+        "checking_cost": {
+          "pair_checks": 599,
+          "coefficient_adds": 319,
+          "squares": 388
+        },
+        "checking_seconds": 0.00299070798791945
+      }
+    },
+    {
+      "family": "two_partitions",
+      "iterations": 0,
+      "integrated_bound": "249830754382125463/245760000000000000000",
+      "meets_tolerance": false,
+      "groups": 6,
+      "complete_norm_seconds": 0.0031305419979617,
+      "cost": {
+        "group_pair_checks": 510,
+        "group_count": 14,
+        "incidences": 60,
+        "iterations": 0,
+        "coordinate_updates": 0,
+        "scaled_objective_trace": [],
+        "construction_seconds": 0.002468374907039106,
+        "internal_check": {
+          "status": "certified",
+          "bound": "249830754382125463/5000000000000000",
+          "checking_cost": {
+            "pair_checks": 60,
+            "coefficient_adds": 30,
+            "squares": 36
+          },
+          "checking_seconds": 0.0002652909606695175
+        }
+      },
+      "check": {
+        "status": "certified",
+        "bound": "249830754382125463/5000000000000000",
+        "checking_cost": {
+          "pair_checks": 60,
+          "coefficient_adds": 30,
+          "squares": 36
+        },
+        "checking_seconds": 0.00025554094463586807
+      }
+    },
+    {
+      "family": "two_partitions",
+      "iterations": 1,
+      "integrated_bound": "163569309059432187/163840000000000000000",
+      "meets_tolerance": true,
+      "groups": 14,
+      "complete_norm_seconds": 0.003718000021763146,
+      "cost": {
+        "group_pair_checks": 510,
+        "group_count": 14,
+        "incidences": 60,
+        "iterations": 1,
+        "coordinate_updates": 60,
+        "scaled_objective_trace": [
+          5.097807970604115
+        ],
+        "construction_seconds": 0.002788292011246085,
+        "internal_check": {
+          "status": "certified",
+          "bound": "490707927178296561/10000000000000000",
+          "checking_cost": {
+            "pair_checks": 105,
+            "coefficient_adds": 60,
+            "squares": 74
+          },
+          "checking_seconds": 0.0005347919650375843
+        }
+      },
+      "check": {
+        "status": "certified",
+        "bound": "490707927178296561/10000000000000000",
+        "checking_cost": {
+          "pair_checks": 105,
+          "coefficient_adds": 60,
+          "squares": 74
+        },
+        "checking_seconds": 0.0005336250178515911
+      }
+    },
+    {
+      "family": "two_partitions",
+      "iterations": 4,
+      "integrated_bound": "161677657503247129/163840000000000000000",
+      "meets_tolerance": true,
+      "groups": 14,
+      "complete_norm_seconds": 0.0038244579918682575,
+      "cost": {
+        "group_pair_checks": 510,
+        "group_count": 14,
+        "incidences": 60,
+        "iterations": 4,
+        "coordinate_updates": 240,
+        "scaled_objective_trace": [
+          5.097807970604115,
+          5.046174668755173,
+          5.040406172101881,
+          5.038852678586454
+        ],
+        "construction_seconds": 0.0029070000164210796,
+        "internal_check": {
+          "status": "certified",
+          "bound": "485032972509741387/10000000000000000",
+          "checking_cost": {
+            "pair_checks": 105,
+            "coefficient_adds": 60,
+            "squares": 74
+          },
+          "checking_seconds": 0.0005331250140443444
+        }
+      },
+      "check": {
+        "status": "certified",
+        "bound": "485032972509741387/10000000000000000",
+        "checking_cost": {
+          "pair_checks": 105,
+          "coefficient_adds": 60,
+          "squares": 74
+        },
+        "checking_seconds": 0.0005205830093473196
+      }
+    },
+    {
+      "family": "two_partitions",
+      "iterations": 16,
+      "integrated_bound": "242322189578984873/245760000000000000000",
+      "meets_tolerance": true,
+      "groups": 12,
+      "complete_norm_seconds": 0.004175750073045492,
+      "cost": {
+        "group_pair_checks": 510,
+        "group_count": 14,
+        "incidences": 60,
+        "iterations": 16,
+        "coordinate_updates": 960,
+        "scaled_objective_trace": [
+          5.097807970604115,
+          5.046174668755173,
+          5.040406172101881,
+          5.038852678586454,
+          5.038002685119509,
+          5.03742495816417,
+          5.036979084298574,
+          5.036609289648296,
+          5.0362903843260245,
+          5.03600939234515,
+          5.03575864351707,
+          5.035532983524817,
+          5.035328593543975,
+          5.035142469311196,
+          5.034972174223038,
+          5.034815706334189
+        ],
+        "construction_seconds": 0.0033142499160021544,
+        "internal_check": {
+          "status": "certified",
+          "bound": "242322189578984873/5000000000000000",
+          "checking_cost": {
+            "pair_checks": 99,
+            "coefficient_adds": 54,
+            "squares": 66
+          },
+          "checking_seconds": 0.00047995802015066147
+        }
+      },
+      "check": {
+        "status": "certified",
+        "bound": "242322189578984873/5000000000000000",
+        "checking_cost": {
+          "pair_checks": 99,
+          "coefficient_adds": 54,
+          "squares": 66
+        },
+        "checking_seconds": 0.00046833395026624203
+      }
+    }
+  ],
+  "source_sha256": "a479d84caa234da701f868307eb1eae292b7c297afb3191e896a2b7f2dd3b03f"
+}

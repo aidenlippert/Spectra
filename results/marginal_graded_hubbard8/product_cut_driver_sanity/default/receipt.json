@@ -1,0 +1,33 @@
+{
+  "rows": [
+    {
+      "doublons": 1,
+      "maximum_joint_penalty": "175350569674078308440000000000/41977519977483025631906377863",
+      "row_lower": "-7440489764146205912374488548/41977519977483025631906377863",
+      "target_margin": "412334710010684050406689290082/41977519977483025631906377863"
+    },
+    {
+      "doublons": 2,
+      "maximum_joint_penalty": "36510060659876170843152937451171875000000000000000000000000000000/2719313314039888588142554988463836306167701536982634518300486513",
+      "row_lower": "3499476182381023283563971182124752949341612295861076146403892104/2719313314039888588142554988463836306167701536982634518300486513",
+      "target_margin": "30692609322779909164989521066763116011018627665687421329408757234/2719313314039888588142554988463836306167701536982634518300486513"
+    }
+  ],
+  "minimum_lower": "-7440489764146205912374488548/41977519977483025631906377863",
+  "range": 1,
+  "memory": 3,
+  "local_table_entries": 135,
+  "peak_states": 12,
+  "visited_states": 54,
+  "largest_local_window": 4,
+  "local_window_spans_system": true,
+  "count_profile": [
+    "0",
+    "1",
+    "2"
+  ],
+  "complete_neutral_charge_pattern_list_materialized": false,
+  "scope": "Exact worst weighted Q row for a positive doublon-count profile times positive finite-range charge factors on the neutral open Hubbard chain. The profile vanishes at D=0. Dynamic programming merges prefixes and jointly sums local hopping penalties. Complexity remains exponential in interaction range; no general marginal-cone claim.",
+  "complement_lower": "-10",
+  "exact_accepted": true
+}

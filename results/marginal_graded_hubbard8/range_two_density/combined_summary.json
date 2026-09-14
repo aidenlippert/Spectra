@@ -1,0 +1,53 @@
+{
+  "accepted": true,
+  "rows": [
+    {
+      "case": "W_plus_1_10",
+      "target": {
+        "U": "4",
+        "t": "1",
+        "V": "1/2",
+        "W": "1/10"
+      },
+      "lower": "-4026275450890071/6250000000000000",
+      "upper": "-422934805860165353405573858896919548706348230509/691690249564508935848801697894134114353152000000",
+      "lower_float": -0.6442040721424114,
+      "upper_float": -0.6114511605830021,
+      "width_float": 0.03275291155940926,
+      "fraction_norm_perturbation_width_closed": 0.8593382469877408,
+      "fixed_profile_family_gap": 9.446437040882777e-08,
+      "free_profile_derivative": -0.007055426323878254,
+      "exact_energy_seconds": 22.201156957999046,
+      "exact_family_seconds": 2.073635832999571,
+      "source_hashes_checked": 81
+    },
+    {
+      "case": "W_minus_1_10",
+      "target": {
+        "U": "4",
+        "t": "1",
+        "V": "1/2",
+        "W": "-1/10"
+      },
+      "lower": "-2009759215630113/3125000000000000",
+      "upper": "-1265588831789377732412862565917542495370948883003/2075070748693526807546405093682402343059456000000",
+      "lower_float": -0.6431229490016361,
+      "upper_float": -0.609901533519374,
+      "width_float": 0.03322141548226207,
+      "fraction_norm_perturbation_width_closed": 0.8573261943199325,
+      "fixed_profile_family_gap": 5.122156012051345e-08,
+      "free_profile_derivative": -0.004769296896628078,
+      "exact_energy_seconds": 22.201182749999134,
+      "exact_family_seconds": 2.2209904580013244,
+      "source_hashes_checked": 81
+    }
+  ],
+  "full_tests": 534,
+  "full_seconds": 368.15,
+  "supplemental_family_tests": 19,
+  "supplemental_seconds": 14.01,
+  "old_nearest_limits_do_not_apply": true,
+  "fixed_profile_limits_only": true,
+  "no_gpu_launched": true,
+  "scope": "Range-two density transfer within1D, including independently expanded physical circuit tests, all-Fock lower checks and fixed-profile dual caps. Molecular/higher-dimensional/general representability and requested-accuracy scalability remain open."
+}

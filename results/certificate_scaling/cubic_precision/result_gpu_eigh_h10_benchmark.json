@@ -1,0 +1,15 @@
+{
+  "host": "129-159-32-200",
+  "torch": "2.7.0",
+  "device": "NVIDIA A10",
+  "threads": 1,
+  "warmups": 2,
+  "timed_trials": 5,
+  "cases": [
+    {"batch": 8, "n": 725, "cpu_median_seconds": 0.3498078890006582, "gpu_median_seconds": 0.2293707730004826, "gpu_over_cpu": 0.656},
+    {"batch": 8, "n": 225, "cpu_median_seconds": 0.038349899999957415, "gpu_median_seconds": 0.061045487000228604, "gpu_over_cpu": 1.592}
+  ],
+  "max_reconstruction_residuals": {"cpu_8x725": 9.094947017729282e-13, "gpu_8x725": 9.663381206337363e-13, "cpu_8x225": 3.268496584496461e-13, "gpu_8x225": 2.8421709430404004e-13},
+  "interpretation": "For the larger H10-like 725 blocks the isolated A10 eigensolve is 1.52x faster; for 225 blocks it is 1.59x slower. This is a potential kernel benefit only, not an end-to-end certificate or solver speedup claim.",
+  "scope": "read-only isolated benchmark; no installs, provisioning, or research jobs"
+}

@@ -1,0 +1,11 @@
+{
+  "pid": 26581,
+  "signal": "SIGTERM",
+  "status": "interrupted_before_planned_wall_budget",
+  "wall_elapsed_seconds": 747.0,
+  "last_completed_iteration": 3,
+  "command": "python -m experiments.marginal_asymmetric_columns --iterations 4 --pool 600 --name epsilon001_breadth8 --backend native --matrix-threshold 1e-12 --resume results/marginal_asymmetric_columns/epsilon001_breadth4/cuts.json",
+  "planned_wall_budget_seconds": 900,
+  "returncode": 143,
+  "note": "The delegated run was interrupted after the recorded 747 seconds, before the requested 900-second deadline. No timeout, infeasibility, or convergence conclusion follows."
+}

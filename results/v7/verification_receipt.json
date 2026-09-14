@@ -1,0 +1,1312 @@
+{
+  "status": "verified",
+  "accepted_certificates_replayed": 125,
+  "strong_baseline_failure_replays": 10,
+  "measured_witness_replayed": true,
+  "archive_sha256": "9baa69ec9a06d698d7f30ecae3231996ede4554cd19c04008b37ef4d123fa685",
+  "archive_bytes": 7241096,
+  "source_hashes": {
+    "experiments/v7_certificate.py": "b4eb02311899b9bd2bd86639f681cd6a5fe1258d6466ad99bceb054766af9426",
+    "experiments/v7_quadratic_certificate.py": "dfe5cbd4523ff89d3391775e7362c79b7e6c1834b8242059192d35c43af1cd44",
+    "experiments/v7_identifiability.py": "15a73f03219ccbcbe656ad696b6c8c3d5fa4f165ac18fad9ed841f54d66c954d",
+    "experiments/v7_verify.py": "0bb5f3a1aeca5f7ee13138e37efc7ac1206d4d24295b0cb14e03715453aa90d2",
+    "experiments/v7_block_cost.py": "eaf0838519ecc813743c4fee5c502e0801b91e3ee084ec95a9ca91e1ec7c4554",
+    "experiments/v7_adaptive_taylor.py": "1c99486783bba6aa0207556ad618f0f4a683f4876f215c839fed1e9be4e4e0c8",
+    "experiments/v7_quadratic_cost.py": "726102cd77647ca28a31d51be36209c5c570a221734f709a32bd9dbcacfb45e9",
+    "experiments/v7_pruning_probe.py": "c253b06f799fbef850d67959f4fdb91c0be2840e202973cd5d7d0823bc62b601",
+    "experiments/v7_strong_baseline.py": "46cae9c4d3c28c4433489da9024b5dd23b5eca65f1187e080256da195dff8032",
+    "experiments/v7_grouping_probe.py": "ae0a7646a053e45a57c1d302bd89150cd9bf363a8c48c4fa43229c94d7fbb25e",
+    "experiments/v7_pruned_taylor.py": "5e7109b25648209f93a2a39490310b9c85ea534705606043e2c4d3d25bec1f01",
+    "experiments/v7_reducers.py": "369179b23553fa74b3b2b2b90a3396d828c3bf5bbd242b3c55bc26f9bc6d5603",
+    "experiments/v7_headroom.py": "bbf299b8fa8319adaca7a3b6b6311c736ac1f591f0fba8c2f1d1b5d4be5445b9",
+    "experiments/v7_measured_gate.py": "46d8d27339b3e475ff1e5956630aaaebdaa014369ac1b1f0acfc952041f99f18",
+    "experiments/v7_prediction_requests.py": "d8a457d4429ea0c05cafc84196af36f9e8dc4a18bc042301eb5fc58285379869",
+    "experiments/v7_quadratic_probe.py": "b604c506176c6300df19d51f0131163aa2f06123d65bde4d838c014d2f917477",
+    "experiments/pauli.py": "a89313603d3a6d4589f6188df454b679204e2d80584403837dc3bb49732055ba",
+    "experiments/certificates.py": "f83cba5368140dd8d3992ffa354680e9c0e196da8152eb0ac76e9f01dd8b993a"
+  },
+  "elapsed_seconds": 47.068919708020985,
+  "receipts": [
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "4221112/10986328125"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "21030698712080777/23040000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "31028951/58593750000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "659323112717/1451520000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "1900027312/1922607421875"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "9235404595038841/20270250000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "4187374087/7119140625000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "82878436517593343/119042784000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "6656561369/8542968750000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "683234981047080493/714256704000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "475196499880882053/546875000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "560946456746812481426489/763683267916800000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "7713992/10986328125"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "3673077266313931/4096000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "168803957/175781250000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "202856175740418667/207360000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "2254464824320278137/2343750000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "109845091727299119/163840000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "352273593396413381/468750000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "65103309441372335431/70711413696000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "225070305474722059/234375000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "169997776209319989/225280000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "4723168200101641/6727587890625000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "8489168953184892001323451769/8985235055247360000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 6,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "1145274821296713241/1406250000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "adaptive_taylor",
+        "family": "xxz"
+      },
+      "n": 6,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "46890709121147387/58593750000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "590561686/1544952392578125"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "13365380685581/1294501125812530517578125"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "605654595590246633/7220889092423021793365478515625000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "199732556280509248986063353/5498657226562500000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "21030698712080777/23040000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "13365380685581/8687250000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "605654595590246633/1240539300000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "1127626149032372045506999/18450432000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "55146639113/92285156250000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "4819421179697893/343666076660156250000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "8732224119352829806913/69012444019317626953125000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "539625773063247523074714283/10997314453125000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "4819421179697893/2306304000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "4819421179697893/2306304000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "8732224119352829806913/11856247603200000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "3328737443739844627550009/36900864000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "216048883522/10814666748046875"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "9235404595038841/3020502626895904541015625"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "2619204487184399127457/25273111823480576276779174804687500"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "164830528060759298144699/286388397216796875000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "9235404595038841/20270250000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "9235404595038841/20270250000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "2619204487184399127457/4341887550000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "xxz"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "12395691477277989457141/26357760000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "9832713342345917/13623365478515625000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "29770284052792896293688574951/672440805416107177734375000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "4597590027674971113247464241613/13368417404524580240249633789062500000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "10888783325004892083466143131/52787109375000000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "212243888838008918460341/49639412414592000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "4597590027674971113247464241613/2296676622068410982400000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "4597590027674971113247464241613/2296676622068410982400000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "23996387945548759033997653/69189120000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "31036836169110883/27246730957031250000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "53611633534620898130018968447/1137976747627258300781250000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "11950564705235836200340189906919/26736834809049160480499267578125000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "4912799671182803259006417097/18852539062500000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "593734184020466834651011/99278824829184000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "11950564705235836200340189906919/4593353244136821964800000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "11950564705235836200340189906919/4593353244136821964800000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "37862407422325320405485659/79073280000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "55100521000448081/1946195068359375000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "25355308112370746931842159281/295873954383087158203125000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "657545240304915908334519412454791/2673683480904916048049926757812500000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "4725164357412668201528153921/2639355468750000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "560946456746812481426489/763683267916800000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "657545240304915908334519412454791/459335324413682196480000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "657545240304915908334519412454791/459335324413682196480000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "mixed"
+      },
+      "n": 3,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "148855483716042132646421/175718400000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "15641812852/10814666748046875"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "6245656281289682447816/9061507880687713623046875"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "3594677631266942144/1263655591174028813838958740234375"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "57151183625247899034130259/60424804687500000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "45473878181/2699340820312500"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "3597654460079045635368623/3793999233024000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "56166837988545971/3392099648437500000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "1440634066745640221179/1677312000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "3033744780751/1384277343750000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "6873196404685928347766159/9278984069824218750000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "1224861422499389269739/331259731292724609375000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "1393757169927971104689010883/1221923828125000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "131576250418524589/5660928000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "24741120653095200330257901371/35568742809600000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "1224861422499389269739/56909988495360000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "1241934291377202805573/1647360000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "709072805884/10814666748046875"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "46253628179279271158056409/51416015625000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "19111881523457264404498/6318277955870144069194793701171875"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "177906149689215964517999171/27493286132812500000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "9555940761728632202249/542735943750000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "3070081730349202335559/26719308000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "9555940761728632202249/542735943750000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "xxz"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "1510917412963830124897649429/33456783360000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "40733091830467661/13623365478515625000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "7315685560707746789933008138877/7396848859577178955078125000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "64926854118658364098255107838269971196821674861/34331940136270544241086175316013395786285400390625000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "32007354011040727770041346893/13196777343750000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "537225690655707224157097/9927882482918400000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "639553364788826799311600501769525869/2296676622068410982400000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "64926854118658364098255107838269971196821674861/3865432820115354967699259719680000000000000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "0",
+      "time": "1/2",
+      "bound": "13953813947341306354227153559/10037035008000000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "123844800546802627/27246730957031250000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "1187513581339426915248570879823529/2103992564501953125000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "3527239499707901645038879633487851622097459207719/1167285964633198504196929960744455456733703613281250000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "283114824645556259421394226701/94262695312500000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "7574669547354069132235603/99278824829184000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "1522747861059499807002371164922927203/4593353244136821964800000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "3527239499707901645038879633487851622097459207719/131424715883922068901774830469120000000000000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "1/5",
+      "time": "1/2",
+      "bound": "128014594917316418888628848897/60222210048000000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "1749791491622334983/13623365478515625000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "9886972053821443089644261869/22759534952545166015625000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "137472370264646554319564944212578175610613303739703/8979122804870757724591768928803503513336181640625000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "2190507783755982833648454653/115356445312500000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "taylor",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "89892763439233533230503079167462943/2296676622068410982400000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "151146808854816988946179211557454303/2296676622068410982400000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "residual",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "137472370264646554319564944212578175610613303739703/1010959352953246683859806388224000000000000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "arnoldi",
+        "family": "mixed"
+      },
+      "n": 4,
+      "gamma": "2",
+      "time": "1/2",
+      "bound": "63106551946749008852020911/405536768000000000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 6,
+      "gamma": "0",
+      "time": "1/5",
+      "bound": "65553305724506353964069273/65983886718750000000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 6,
+      "gamma": "1/5",
+      "time": "1/5",
+      "bound": "21241097619940091475397831/24743957519531250000000000000"
+    },
+    {
+      "tag": {
+        "arm": "bfs",
+        "family": "xxz"
+      },
+      "n": 6,
+      "gamma": "2",
+      "time": "1/5",
+      "bound": "2653962381743489390206/3020502626895904541015625"
+    }
+  ],
+  "historical_hash_checks": {
+    "experiments/v6_audit.py": true,
+    "experiments/v6_headroom.py": true,
+    "tests/test_v6_audit.py": true,
+    "tests/test_v6_headroom.py": true,
+    "data/v6/pyomo-doe-LICENSE": true,
+    "data/v6/tclab_sine_test_5min_period.csv": true,
+    "data/v6/tclab_step_test.csv": true,
+    "results/v6/headroom_results.json": true,
+    "experiments/v5_account.py": true,
+    "experiments/v5_bayes.py": true,
+    "experiments/v5_complementarity.py": true,
+    "experiments/v5_core.py": true,
+    "experiments/v5_frame.py": true,
+    "experiments/v5_run.py": true,
+    "experiments/v5_verify.py": true,
+    "tests/test_v5_bayes.py": true,
+    "tests/test_v5_core.py": true,
+    "tests/test_v5_frame.py": true,
+    "tests/test_v5_research.py": true,
+    "results/v5/complementarity_results.json": true,
+    "results/v5/transfer_results.json": true,
+    "results/v5/computational_accounting.json": true
+  },
+  "compounding_capability": "not_established",
+  "autonomous_acquisition": "not_run",
+  "v4_calibration_dependency": "excluded from V5",
+  "physical_validation": "not_performed",
+  "test_suite_count": 148,
+  "test_suite_passed": true,
+  "test_log_sha256": "2a844aaf432ec8e640873f584faac26655ff9ab5e0f28168d39b4f6a8857ffe0"
+}

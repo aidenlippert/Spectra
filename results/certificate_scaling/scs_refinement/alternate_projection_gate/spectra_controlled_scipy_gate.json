@@ -1,0 +1,85 @@
+{
+  "host": "146-235-200-232",
+  "scipy": "1.14.1",
+  "library": "/home/ubuntu/spectra-venv/lib/python3.10/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+  "library_sha256": "95121ba2173f1838ca08d988af0cc03a4959d50d9f8adea42d10d8fe8f3be61d",
+  "openblas_config": "OpenBLAS 0.3.27.dev DYNAMIC_ARCH NO_AFFINITY SkylakeX MAX_THREADS=64",
+  "verified_threads": 1,
+  "source": "/home/ubuntu/spectra-precision-v2/results/h10_scs_quotient_conditioned/raw_round_0.npz",
+  "source_sha256": "acc7eeb0a0e1c7d07555b34dc8b11c8c1d0e006acd0fae77814e345f784e2708",
+  "warmups": 2,
+  "timed_trials": 3,
+  "cases": [
+    {
+      "batch": 8,
+      "size": 725,
+      "keys": [
+        "gram_36",
+        "gram_37",
+        "gram_38",
+        "gram_39",
+        "gram_44",
+        "gram_45",
+        "gram_46",
+        "gram_47"
+      ],
+      "drivers": {
+        "ev": {
+          "eight_block_seconds": [
+            1.7595131400012178,
+            1.7592839399985678,
+            1.7547787180010346
+          ],
+          "batch_median_seconds": 1.7592839399985678,
+          "max_reconstruction_residual": 4.5319650809894085e-17
+        },
+        "evd": {
+          "eight_block_seconds": [
+            0.4487952480012609,
+            0.44769981400168035,
+            0.4489361039995856
+          ],
+          "batch_median_seconds": 0.4487952480012609,
+          "max_reconstruction_residual": 1.441988889405721e-17
+        }
+      },
+      "PSD_projection_disagreement": 3.209238430557093e-17
+    },
+    {
+      "batch": 8,
+      "size": 225,
+      "keys": [
+        "gram_34",
+        "gram_35",
+        "gram_40",
+        "gram_41",
+        "gram_42",
+        "gram_43",
+        "gram_48",
+        "gram_49"
+      ],
+      "drivers": {
+        "ev": {
+          "eight_block_seconds": [
+            0.07092181099869777,
+            0.0719819070000085,
+            0.07335909500034177
+          ],
+          "batch_median_seconds": 0.0719819070000085,
+          "max_reconstruction_residual": 7.37257477290143e-18
+        },
+        "evd": {
+          "eight_block_seconds": [
+            0.025840841000899673,
+            0.025782636999792885,
+            0.025815558998147026
+          ],
+          "batch_median_seconds": 0.025815558998147026,
+          "max_reconstruction_residual": 2.6020852139652106e-18
+        }
+      },
+      "PSD_projection_disagreement": 9.324138683375338e-18
+    }
+  ],
+  "scope": "Eight-block eigenkernel batches; excludes input copying and reconstruction, includes SciPy call/workspace overhead. No full solver claim."
+}

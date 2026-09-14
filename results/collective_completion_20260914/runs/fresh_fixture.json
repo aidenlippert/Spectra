@@ -1,0 +1,19 @@
+{
+  "name": "fresh_fixture",
+  "command": [
+    ".venv-molecule/bin/python",
+    "-B",
+    "-c",
+    "from pathlib import Path; from research.mechanism_transfer_20260913.fixtures import build; build(6,2.23,Path(\"results/collective_completion_20260914/transfer/fixture\"),fci_control=False)"
+  ],
+  "timeout_seconds": 90,
+  "status": "passed",
+  "started_UTC": "2026-09-14T18:58:02.702347+00:00",
+  "pid": 32090,
+  "exit_code": 0,
+  "wall_seconds": 2.614955041994108,
+  "child_user_seconds": 0.97785,
+  "child_system_seconds": 0.332656,
+  "peak_child_RSS_bytes": 103792640,
+  "finished_UTC": "2026-09-14T18:58:05.319059+00:00"
+}

@@ -1,0 +1,147 @@
+{
+  "kind": "eliminated_full_number_quotient",
+  "gram_entries": 96904,
+  "coefficient_rows_before_numerical_elimination": 8533,
+  "setup_seconds": 12.374355790991103,
+  "all_compact_span_cross_terms_retained": true,
+  "independent_partner_Gram_blocks": true,
+  "many_body_states_enumerated": 0,
+  "full_Gram_teacher_used": false,
+  "additional_MPS_moments_used": false,
+  "quotient_conditioning": {
+    "ideal_coordinate_count": 1599,
+    "numerical_ideal_rank": 601,
+    "QR_rank_threshold": 1e-11,
+    "dependent_coordinates_removed": 998,
+    "ideal_projector_max_defect": 1.9984014443252818e-15,
+    "dual_normalization_error": 2.4868995751603507e-14,
+    "seconds": 10.927709625015268
+  },
+  "matrix_free_adjoint_check": {
+    "relative_adjoint_error": 8.899832671400547e-16,
+    "preconditioner_probes": 12
+  },
+  "fixed_mu": true,
+  "prepared": "results/sector_quotient_20260914/prepared_linear_closure",
+  "exact_number_dressed_linear_completion": [
+    {
+      "pair": 36,
+      "orbitals": [
+        2,
+        6,
+        10,
+        14
+      ],
+      "previous_rank": 78,
+      "new_rank": 82,
+      "relative_distances_from_old_span": [
+        0.9565085799252925,
+        0.9670353945997654,
+        0.9683357423183498,
+        0.9759315068007466
+      ],
+      "new_columns_are_exact_quarter_integer": true
+    },
+    {
+      "pair": 37,
+      "orbitals": [
+        0,
+        4,
+        8,
+        12
+      ],
+      "previous_rank": 79,
+      "new_rank": 83,
+      "relative_distances_from_old_span": [
+        0.9655638161598973,
+        0.9610921073387572,
+        0.9483108317043436,
+        0.9694685803439002
+      ],
+      "new_columns_are_exact_quarter_integer": true
+    },
+    {
+      "pair": 38,
+      "orbitals": [
+        3,
+        7,
+        11,
+        15
+      ],
+      "previous_rank": 78,
+      "new_rank": 82,
+      "relative_distances_from_old_span": [
+        0.9565086098940457,
+        0.9670347013598947,
+        0.968335637331599,
+        0.9759315431223436
+      ],
+      "new_columns_are_exact_quarter_integer": true
+    },
+    {
+      "pair": 39,
+      "orbitals": [
+        1,
+        5,
+        9,
+        13
+      ],
+      "previous_rank": 79,
+      "new_rank": 83,
+      "relative_distances_from_old_span": [
+        0.96556375557279,
+        0.9610920090072359,
+        0.948309946473046,
+        0.9694685407801468
+      ],
+      "new_columns_are_exact_quarter_integer": true
+    }
+  ],
+  "normal_preconditioner": {
+    "dimension": 8533,
+    "dense_bytes": 582496712,
+    "diagonal_regularizer": 1e-10,
+    "normal_probe_relative_errors": [
+      9.010746292205743e-16,
+      9.302169203093827e-16,
+      8.917553702414723e-16,
+      8.547351285719142e-16
+    ],
+    "seconds": 72.23910220799735,
+    "seed_sha256": "185a66112d5f69c6821f3a620ce4e7ef7dae955ee55e73f2cc1fc92621727e3d",
+    "prepared_frame_sha256": "2c4d97c5b48382280d45de6c6c95f5bc8d4f33c2cb79881705d9c7ef9a1c719b",
+    "factor_sha256": "258e01276c8b4b83749ccbad9e1ac2874c7f482a383728ba2c73bdcae7c08069",
+    "ideal_basis_sha256": "c92b89dc76a64d5592755f15e4c3c5d85fe29886665b3c86c48a33082d50724b",
+    "many_body_states_enumerated": 0,
+    "role": "Numerical conditioning only, all final residuals require exact replay"
+  },
+  "best": {
+    "proposed_b": -9.257721163348869,
+    "number_multiplier_quartic_terms": 1067,
+    "minimum_eigenvalue_before_export": -8.705526525890473e-16,
+    "factor_rows": 591,
+    "certificate_bytes": 1235888
+  },
+  "last": {
+    "proposed_b": -9.257721163348869,
+    "number_multiplier_quartic_terms": 1067,
+    "minimum_eigenvalue_before_export": -8.705526525890473e-16,
+    "factor_rows": 591,
+    "certificate_bytes": 1235888
+  },
+  "initial_control": {
+    "iteration": 0,
+    "seconds": 12.408554541005287,
+    "b": -9.257762834438973,
+    "selected_row_l1": 2.8962802923627493e-05,
+    "projected_primal_l2": 1.5897923153177282e-07,
+    "dual_residual_l2": 0.0014740850765106047,
+    "mu": 0.005,
+    "cg_status": 0,
+    "cg_iterations": 0,
+    "untrusted_dual_ceiling": -9.258701654842344,
+    "untrusted_objective_gap": -0.0009388204033715652
+  },
+  "total_seconds": 373.9750331660034,
+  "status": "requires_independent_exact_replay"
+}

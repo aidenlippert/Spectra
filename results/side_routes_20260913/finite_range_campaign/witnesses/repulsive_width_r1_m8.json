@@ -1,0 +1,96 @@
+{
+  "case": "repulsive",
+  "objective": "width",
+  "radius": 1,
+  "modes": 8,
+  "training_modes": 12,
+  "weights": [
+    "38821/65536",
+    "1",
+    "30535/32768",
+    "1"
+  ],
+  "origin": {
+    "search_radius": 1,
+    "seed": 17,
+    "candidate": "optimized"
+  },
+  "model": {
+    "modes": 8,
+    "particles": 4,
+    "hopping": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "interaction": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "fields": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "energy_unit": "t_reference=1; abstract lattice model"
+  },
+  "amplitude": {
+    "sites": [
+      "30535/32768",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "30535/32768"
+    ],
+    "pairs": [
+      [
+        "38821/65536",
+        "38821/65536",
+        "38821/65536",
+        "38821/65536",
+        "38821/65536",
+        "38821/65536",
+        "38821/65536"
+      ]
+    ]
+  },
+  "claim": {
+    "method": "fixed_N_finite_pair_range_local_energy_DP_v1",
+    "lower": "-9063855153/2001141760",
+    "upper": "-496501791230458684176717742542022936437/139797364453881754838783970121516179091",
+    "width": "273532593835062517587513677505931803044924896803/279754343946602373709972670228758300494638940160",
+    "lower_float": -4.529341865815643,
+    "upper_float": -3.551581914080014,
+    "width_float": 0.9777599517356291,
+    "partition": "698986822269408774193919850607580895455/42535295865117307932921825928971026432",
+    "minimum_configuration": "01010101",
+    "modes": 8,
+    "particles": 4,
+    "pair_range": 1,
+    "tail_memory_bits": 3,
+    "dp_transitions": 142,
+    "peak_dp_states": 22,
+    "factor_table_entries": 112,
+    "peak_dp_rational_bits": 127,
+    "many_body_states_enumerated": 0,
+    "wall_seconds": 0.004149324999161763,
+    "scope": "Exact supplied-chain interval; no global discovery optimum or generic accuracy guarantee."
+  }
+}

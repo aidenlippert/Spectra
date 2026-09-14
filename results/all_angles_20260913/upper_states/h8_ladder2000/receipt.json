@@ -1,0 +1,30 @@
+{
+  "kind": "hamiltonian_only_selected_ci_v2",
+  "fixture": "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+  "seed_cisd_basis": 849,
+  "added": 1151,
+  "rounds": 6,
+  "final_basis": 2000,
+  "witness_support": 1336,
+  "upper": "-1156225933201785472481629884204598161/125000000000022054985025375000000000",
+  "upper_float": -9.249807465612651,
+  "discovery_seconds": 31.720011375000468,
+  "matrix_entries": 4000000,
+  "candidate_count": 9799,
+  "legacy_reference_scan_states": 12870,
+  "replay": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 1336,
+    "hamiltonian_terms": 2912,
+    "word_state_checks": 3890432,
+    "contributing_word_state_pairs": 311988,
+    "action_cache_states": 0,
+    "replay_seconds": 0.47649508400354534,
+    "upper": "-1156225933201785472481629884204598161/125000000000022054985025375000000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  },
+  "scope": "bounded projected diagonalization; dense cost is not claimed scalable",
+  "discovery_inputs": [
+    "fixture Hamiltonian only"
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "accepted": false,
+  "cases": {
+    "W_zero": [
+      {
+        "scale": 1,
+        "success": true,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "numerical_upper": -0.6428546059359685,
+        "support_above_zero": 189,
+        "support_above_1e_minus14": 189,
+        "maximum_equality_residual": 1.2455314557513475e-15,
+        "smallest_positive_values": [
+          5.282176891891021e-12,
+          9.268058351391312e-12,
+          2.4599695094514958e-11,
+          3.07751905908061e-11,
+          4.681806913968837e-11,
+          5.712455870697533e-11,
+          1.248651858912748e-10,
+          3.0097571001568587e-10,
+          4.981013718969496e-10,
+          7.292921556598038e-09,
+          9.662985029554072e-09,
+          1.0144700281886002e-08
+        ]
+      },
+      {
+        "scale": 1000,
+        "success": true,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "numerical_upper": -0.642854605884098,
+        "support_above_zero": 192,
+        "support_above_1e_minus14": 192,
+        "maximum_equality_residual": 1.1813466871402056e-15,
+        "smallest_positive_values": [
+          1.8693081272821145e-12,
+          3.3166530673214308e-12,
+          3.813468978102271e-12,
+          5.29495463669628e-12,
+          8.73956373179066e-12,
+          1.0688849325012519e-11,
+          1.1027178903010124e-11,
+          1.6746256526141755e-11,
+          2.0347164897357818e-11,
+          4.4472685405310295e-11,
+          1.0745100092049146e-10,
+          1.777338556708589e-10
+        ]
+      },
+      {
+        "scale": 1000000,
+        "success": true,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "numerical_upper": -0.6428546058840967,
+        "support_above_zero": 192,
+        "support_above_1e_minus14": 192,
+        "maximum_equality_residual": 3.926112907004509e-15,
+        "smallest_positive_values": [
+          1.86930812403866e-12,
+          3.316653061566674e-12,
+          3.813468971485483e-12,
+          4.926094745141079e-12,
+          5.2949546275089535e-12,
+          1.0688849306466192e-11,
+          1.1027178883876758e-11,
+          2.0347164862053252e-11,
+          2.0559725468582712e-11,
+          4.4472684723487255e-11,
+          1.074510007340522e-10,
+          1.7773385536735065e-10
+        ]
+      }
+    ],
+    "W_plus_1": [
+      {
+        "scale": 1,
+        "success": true,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "numerical_upper": -0.6603172578293964,
+        "support_above_zero": 197,
+        "support_above_1e_minus14": 195,
+        "maximum_equality_residual": 7.314981953499e-14,
+        "smallest_positive_values": [
+          1.1102230246251565e-16,
+          1.1102230246251565e-16,
+          2.9223208879544376e-14,
+          9.401123964771228e-11,
+          9.64941371856463e-11,
+          9.545278843394677e-10,
+          1.4006165048205838e-09,
+          1.4412442864047643e-09,
+          7.714308369647055e-09,
+          1.0882873262130351e-08,
+          1.0936480561609104e-08,
+          1.1531455014089828e-08
+        ]
+      },
+      {
+        "scale": 1000,
+        "success": true,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "numerical_upper": -0.6603172578237212,
+        "support_above_zero": 197,
+        "support_above_1e_minus14": 196,
+        "maximum_equality_residual": 2.9073965457371287e-15,
+        "smallest_positive_values": [
+          5.551115123125783e-16,
+          2.921374708437264e-14,
+          4.646785150442041e-12,
+          9.181637515137487e-11,
+          9.398081449256942e-11,
+          9.542188304171366e-10,
+          1.4048591021353587e-09,
+          1.4410587921821328e-09,
+          7.714312506825197e-09,
+          1.0882932775509568e-08,
+          1.0936472983032083e-08,
+          1.1531460607549665e-08
+        ]
+      },
+      {
+        "scale": 1000000,
+        "success": true,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "numerical_upper": -0.6603172578237204,
+        "support_above_zero": 196,
+        "support_above_1e_minus14": 196,
+        "maximum_equality_residual": 6.201983371312281e-14,
+        "smallest_positive_values": [
+          2.921375452180059e-14,
+          2.32339316672561e-12,
+          9.181639852659177e-11,
+          9.398114335627884e-11,
+          9.54219073348445e-10,
+          1.4048588288917678e-09,
+          1.4410588399377346e-09,
+          7.714312512140857e-09,
+          1.0882932841302434e-08,
+          1.0936472980715165e-08,
+          1.1531460609510233e-08,
+          1.5314655443327407e-08
+        ]
+      }
+    ]
+  },
+  "source_sha256": {
+    "results/marginal_graded_hubbard8/discovery/spin_word_lp_scale_probe.py": "9a88af39bef089e43a5458db8449c23573cb7e5f93399ab770401ce8537cb297",
+    "results/marginal_graded_hubbard8/spin_word/W_zero/refined/candidate_ledger.json.gz": "bff76966b93416e438ee6af981d3a69b2a5e1e22b0f9b7111942401b064327f5",
+    "results/marginal_graded_hubbard8/spin_word/W_plus_1/refined/candidate_ledger.json.gz": "fd362ba13a217e9c9fb533665aaf30164ad2ce079410cbf8673048812da05042"
+  },
+  "scope": "Numerical conditioning evidence only. Small floating residuals and LP success never replace exact rational consistency or positive-weight physical replay."
+}

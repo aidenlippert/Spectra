@@ -1,0 +1,825 @@
+{
+  "rows": [
+    {
+      "case": "h6_1p2",
+      "directory": "results/mechanism_transfer_20260913/campaign/h6_1p2_inputs_fixed",
+      "arm": "quadratic",
+      "certificate_sha256": "8760916bcfae551b14f2ea3bb1ca7838700f6e8ef9988b9a9e2054c309ebd4b3",
+      "lower_Ha": "-699902052720770087493109752354441/100000000000000000000000000000000",
+      "upper_Ha": "-698826391976655084055965094517453/99999999992450208678000000000000",
+      "width_Ha": "53783034563692949916604643993069628440436135019499/4999999999622510433900000000000000000000000000000000",
+      "width_mHa": 10.75660691355069,
+      "directions": 0,
+      "inside_budget": true,
+      "replay": {
+        "retained": {
+          "lower": "-699902052357370087493109752354441/100000000000000000000000000000000",
+          "lower_float": -6.999020523573701,
+          "residual_l1": "4245370087493109752354441/100000000000000000000000000000000",
+          "residual_l1_float": 4.24537008749311e-08,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 221,
+          "factor_nonzeros": 4206
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-1817/500000000000",
+          "upper_operator_shift_Ha": "270046217/500000000000",
+          "tail_interval_width_Ha": "135024017/250000000000",
+          "tail_interval_width_mHa": 0.540096068,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "17/500000000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.1587439170034486,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-699902052720770087493109752354441/100000000000000000000000000000000",
+        "original_lower_float_Ha": -6.999020527207701,
+        "expand_seconds": 0.3422782920024474,
+        "SOS_replay_seconds": 0.09110991600027774,
+        "replay_seconds": 0.43338841699733166,
+        "expanded_certificate_bytes": 147153,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+      }
+    },
+    {
+      "case": "h6_1p2",
+      "directory": "results/mechanism_transfer_20260913/campaign/h6_1p2_inputs_fixed",
+      "arm": "coupled",
+      "certificate_sha256": "9d823783fd5f5c6bbbb73d1fa4522b2831b20a62e586a1dca58ec39eac56a513",
+      "lower_Ha": "-41992798571507289420145695280562327024099593589170931397942317/6000000000000000000000000000000000000000000000000000000000000",
+      "upper_Ha": "-698826391976655084055965094517453/99999999992450208678000000000000",
+      "width_Ha": "351194720764531746506623934864240011395197059467774625054564942064320358712607/33333333330816736226000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 10.535841623731386,
+      "directions": 108,
+      "inside_budget": true,
+      "replay": {
+        "retained": {
+          "lower": "-41992798549703289420145695280562327024099593589170931397942317/6000000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -6.998799758283882,
+          "residual_l1": "53351183289420145695280562327024099593589170931397942317/6000000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 8.891863881570024e-06,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 397,
+          "factor_nonzeros": 26388
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-1817/500000000000",
+          "upper_operator_shift_Ha": "270046217/500000000000",
+          "tail_interval_width_Ha": "135024017/250000000000",
+          "tail_interval_width_mHa": 0.540096068,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "17/500000000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.07478516700211912,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-41992798571507289420145695280562327024099593589170931397942317/6000000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.998799761917882,
+        "expand_seconds": 0.7543567079992499,
+        "SOS_replay_seconds": 4.328643792003277,
+        "replay_seconds": 5.083000708000327,
+        "expanded_certificate_bytes": 896765,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+      }
+    },
+    {
+      "case": "h6_1p2",
+      "directory": "results/mechanism_transfer_20260913/campaign/h6_1p2_inputs_fixed",
+      "arm": "separate",
+      "certificate_sha256": "20d827eb81e82229618b4bebf2bb67a71b6956b6aa619f91d3d5cb033d7eef30",
+      "lower_Ha": "-13998041265202584100981704546986400970490982811268176185765361/2000000000000000000000000000000000000000000000000000000000000",
+      "upper_Ha": "-698826391976655084055965094517453/99999999992450208678000000000000",
+      "width_Ha": "1075671230632975758607947823083626189746204913896209234386229808970808797001379/99999999992450208678000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 10.756712307141868,
+      "directions": 108,
+      "inside_budget": true,
+      "replay": {
+        "retained": {
+          "lower": "-13998041257934584100981704546986400970490982811268176185765361/2000000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -6.999020628967292,
+          "residual_l1": "367524584100981704546986400970490982811268176185765361/2000000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 1.8376229205049084e-07,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 405,
+          "factor_nonzeros": 18040
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-1817/500000000000",
+          "upper_operator_shift_Ha": "270046217/500000000000",
+          "tail_interval_width_Ha": "135024017/250000000000",
+          "tail_interval_width_mHa": 0.540096068,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "17/500000000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.10844625000027008,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-13998041265202584100981704546986400970490982811268176185765361/2000000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.999020632601292,
+        "expand_seconds": 0.6079349580031703,
+        "SOS_replay_seconds": 2.821275957998296,
+        "replay_seconds": 3.429211041002418,
+        "expanded_certificate_bytes": 654144,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+      }
+    },
+    {
+      "case": "h6_1p8",
+      "directory": "results/mechanism_transfer_20260913/campaign/h6_1p8_inputs_fixed",
+      "arm": "quadratic",
+      "certificate_sha256": "e4f65d91149c4fa833739857b928b4c98b967e1597252c2c352fcf0d1edf129d",
+      "lower_Ha": "-307027111148099694913119558688579/56250000000000000000000000000000",
+      "upper_Ha": "-544525922946759760381016612667013/100000000004607084597000000000000",
+      "width_Ha": "24375983489744281503862832197683707351196610239221/1875000000086382836193750000000000000000000000000000",
+      "width_mHa": 13.000524527264671,
+      "directions": 0,
+      "inside_budget": true,
+      "replay": {
+        "retained": {
+          "lower": "-307027110943799694913119558688579/56250000000000000000000000000000",
+          "lower_float": -5.458259750111995,
+          "residual_l1": "1554580944913119558688579/56250000000000000000000000000000",
+          "residual_l1_float": 2.7636994576233238e-08,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 218,
+          "factor_nonzeros": 4140
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "178651/31250000000",
+          "tail_interval_width_Ha": "357529/62500000000",
+          "tail_interval_width_mHa": 0.005720464,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 60,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.1849852919986006,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-307027111148099694913119558688579/56250000000000000000000000000000",
+        "original_lower_float_Ha": -5.458259753743994,
+        "expand_seconds": 0.3771807919983985,
+        "SOS_replay_seconds": 0.10074087500106543,
+        "replay_seconds": 0.47792179200041573,
+        "expanded_certificate_bytes": 145492,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+      }
+    },
+    {
+      "case": "h6_1p8",
+      "directory": "results/mechanism_transfer_20260913/campaign/h6_1p8_inputs_fixed",
+      "arm": "coupled",
+      "certificate_sha256": "45e68572a1a7f433827c6b5c70b27a455af3f4827f779596f566635345c83958",
+      "lower_Ha": "-5456944510851838194750639697952623636148188483709687661430743/1000000000000000000000000000000000000000000000000000000000000",
+      "upper_Ha": "-544525922946759760381016612667013/100000000004607084597000000000000",
+      "width_Ha": "1168528163564664096676560224421322023153113160805217715825987444658527057565571/100000000004607084597000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 11.68528163510829,
+      "directions": 108,
+      "inside_budget": true,
+      "replay": {
+        "retained": {
+          "lower": "-5456944507219838194750639697952623636148188483709687661430743/1000000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -5.456944507219839,
+          "residual_l1": "1491856838194750639697952623636148188483709687661430743/1000000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 1.4918568381947506e-06,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 384,
+          "factor_nonzeros": 24995
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "178651/31250000000",
+          "tail_interval_width_Ha": "357529/62500000000",
+          "tail_interval_width_mHa": 0.005720464,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 60,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.08285066599637503,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-5456944510851838194750639697952623636148188483709687661430743/1000000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -5.456944510851838,
+        "expand_seconds": 0.8517912919996888,
+        "SOS_replay_seconds": 4.429260500000964,
+        "replay_seconds": 5.281051917001605,
+        "expanded_certificate_bytes": 849727,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+      }
+    },
+    {
+      "case": "h6_1p8",
+      "directory": "results/mechanism_transfer_20260913/campaign/h6_1p8_inputs_fixed",
+      "arm": "separate",
+      "certificate_sha256": "8d80fcefda6cff30a761dad6558ffad7c6bd34d483af5b7af9e61150c2df1917",
+      "lower_Ha": "-2456216889144650278209503793145881147604781715708331184865943/450000000000000000000000000000000000000000000000000000000000",
+      "upper_Ha": "-544525922946759760381016612667013/100000000004607084597000000000000",
+      "width_Ha": "195007866579711548787492805374344808297878259985263924193795182123548501726657/15000000000691062689550000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 13.000524438048492,
+      "directions": 108,
+      "inside_budget": true,
+      "replay": {
+        "retained": {
+          "lower": "-2456216887510250278209503793145881147604781715708331184865943/450000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -5.458259750022778,
+          "residual_l1": "11604050278209503793145881147604781715708331184865943/450000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 2.578677839602112e-08,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 402,
+          "factor_nonzeros": 17960
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "178651/31250000000",
+          "tail_interval_width_Ha": "357529/62500000000",
+          "tail_interval_width_mHa": 0.005720464,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 60,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.10915749999549007,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-2456216889144650278209503793145881147604781715708331184865943/450000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -5.458259753654779,
+        "expand_seconds": 0.6495209589993465,
+        "SOS_replay_seconds": 2.8710223750022124,
+        "replay_seconds": 3.520543500002532,
+        "expanded_certificate_bytes": 642941,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+      }
+    },
+    {
+      "case": "h6_train",
+      "directory": "results/mechanism_transfer_20260913/campaign/h6_train",
+      "arm": "quadratic",
+      "certificate_sha256": "8c428832e99eb9ca4c675d420c3eec198c55c267fa8afacf9aa302ca08d5cc1d",
+      "lower_Ha": "-380764151731617449436918498428423/60000000000000000000000000000000",
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "5204227717655597551067012355084702211554113198443/400000000005595184460000000000000000000000000000000",
+      "width_mHa": 13.010569293957003,
+      "directions": 0,
+      "inside_budget": true,
+      "replay": {
+        "retained": {
+          "lower": "-380764151513697449436918498428423/60000000000000000000000000000000",
+          "lower_float": -6.346069191894958,
+          "residual_l1": "14427537449436918498428423/60000000000000000000000000000000",
+          "residual_l1_float": 2.404589574906153e-07,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 219,
+          "factor_nonzeros": 4134
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.1980777919961838,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-380764151731617449436918498428423/60000000000000000000000000000000",
+        "original_lower_float_Ha": -6.346069195526957,
+        "expand_seconds": 0.38478262499847915,
+        "SOS_replay_seconds": 0.095399334000831,
+        "replay_seconds": 0.4801822090012138,
+        "expanded_certificate_bytes": 147493,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+      }
+    },
+    {
+      "case": "h6_train",
+      "directory": "results/mechanism_transfer_20260913/campaign/h6_train",
+      "arm": "coupled",
+      "certificate_sha256": "8552acfb3af89315c135a64c14a87b255cb194dbb3fec16a9dae9d1cc4496898",
+      "lower_Ha": "-28556097077369193014413781731147834223268293810489687686187929/4500000000000000000000000000000000000000000000000000000000000",
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "382221728809951956521161972662370614321129736742700040238961425533534283006389/30000000000419638834500000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 12.74072429348685,
+      "directions": 108,
+      "inside_budget": true,
+      "replay": {
+        "retained": {
+          "lower": "-28556097061025193014413781731147834223268293810489687686187929/4500000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -6.345799346894488,
+          "residual_l1": "36380328693014413781731147834223268293810489687686187929/4500000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 8.084517487336537e-06,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 397,
+          "factor_nonzeros": 26388
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.07734720900043612,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-28556097077369193014413781731147834223268293810489687686187929/4500000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.345799350526487,
+        "expand_seconds": 0.890192416998616,
+        "SOS_replay_seconds": 4.642537874999107,
+        "replay_seconds": 5.532730416998675,
+        "expanded_certificate_bytes": 895899,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+      }
+    },
+    {
+      "case": "h6_train",
+      "directory": "results/mechanism_transfer_20260913/campaign/h6_train",
+      "arm": "separate",
+      "certificate_sha256": "7c563be92705e64fddc83fad2edb4e9406808ca73bc7fe0013feb28d93956e97",
+      "lower_Ha": "-1586517290466684163678580593531170740397321618667718018367833/250000000000000000000000000000000000000000000000000000000000",
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "65052678169590787529218682595039336535591525968249774676243088001684688273759/5000000000069939805750000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 13.010535633736167,
+      "directions": 108,
+      "inside_budget": true,
+      "replay": {
+        "retained": {
+          "lower": "-1586517289558684163678580593531170740397321618667718018367833/250000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -6.346069158234736,
+          "residual_l1": "45065434163678580593531170740397321618667718018367833/250000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 1.8026173665471433e-07,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 399,
+          "factor_nonzeros": 17531
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.21301770900026895,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-1586517290466684163678580593531170740397321618667718018367833/250000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.346069161866737,
+        "expand_seconds": 0.6741270419952343,
+        "SOS_replay_seconds": 2.9148513750042184,
+        "replay_seconds": 3.588978583997232,
+        "expanded_certificate_bytes": 640722,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+      }
+    },
+    {
+      "case": "h8_heldout",
+      "directory": "results/mechanism_transfer_20260913/campaign/h8_heldout",
+      "arm": "quadratic",
+      "certificate_sha256": "f86acedccbf6688fe871ff3f9c572ba2452977e240b92ba41d19644a06e56394",
+      "lower_Ha": "-3711618909127965898116304670725641/400000000000000000000000000000000",
+      "upper_Ha": "-230906775382357633652069382479983/24957089374045229990000000000000",
+      "width_Ha": "26849468455985234742870972821240534953260803517359/998283574961809199600000000000000000000000000000000",
+      "width_mHa": 26.895632793530034,
+      "directions": 0,
+      "inside_budget": true,
+      "replay": {
+        "retained": {
+          "lower": "-3711618905878365898116304670725641/400000000000000000000000000000000",
+          "lower_float": -9.279047264695915,
+          "residual_l1": "35821965898116304670725641/400000000000000000000000000000000",
+          "residual_l1_float": 8.955491474529077e-08,
+          "multiplier_terms": 65,
+          "square_polynomial_terms": 2913,
+          "residual_terms": 2913,
+          "residual_max_degree": 4,
+          "mode_count": 16,
+          "particle_number": 8,
+          "factor_rows": 390,
+          "factor_nonzeros": 13347
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-2031/250000000000",
+          "upper_operator_shift_Ha": "46789531/250000000000",
+          "tail_interval_width_Ha": "23395781/125000000000",
+          "tail_interval_width_mHa": 0.187166248,
+          "factors": 14,
+          "factor_nonzeros": 252,
+          "coefficient_dimension": 36,
+          "modes": 16,
+          "particles": 8,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "31/250000000000",
+          "mismatch_terms": 236,
+          "casimir_bound": "40",
+          "lower_psd": {
+            "dimension": 36,
+            "rank": 36
+          },
+          "upper_psd": {
+            "dimension": 36,
+            "rank": 36
+          },
+          "replay_seconds": 0.386721333998139,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-3711618909127965898116304670725641/400000000000000000000000000000000",
+        "original_lower_float_Ha": -9.279047272819914,
+        "expand_seconds": 1.299989540995739,
+        "SOS_replay_seconds": 0.41228837500239024,
+        "replay_seconds": 1.712278040999081,
+        "expanded_certificate_bytes": 451850,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+      }
+    },
+    {
+      "case": "h8_heldout",
+      "directory": "results/mechanism_transfer_20260913/campaign/h8_heldout",
+      "arm": "coupled",
+      "certificate_sha256": "a975ab37f704e11b2487e8fab56c4f1cb493e1cfff038af361580b339c0cb6c4",
+      "lower_Ha": "-593845021619781312113496506296891273190783344781578326700792697/64000000000000000000000000000000000000000000000000000000000000",
+      "upper_Ha": "-230906775382357633652069382479983/24957089374045229990000000000000",
+      "width_Ha": "4260965442581550340849315311843760922787341810201320702969123557639526467738303/159725371993889471936000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 26.67682278269829,
+      "directions": 144,
+      "inside_budget": true,
+      "replay": {
+        "retained": {
+          "lower": "-593845021099845312113496506296891273190783344781578326700792697/64000000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -9.278828454685083,
+          "residual_l1": "581976645312113496506296891273190783344781578326700792697/64000000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 9.093385083001774e-06,
+          "multiplier_terms": 65,
+          "square_polynomial_terms": 2913,
+          "residual_terms": 2913,
+          "residual_max_degree": 4,
+          "mode_count": 16,
+          "particle_number": 8,
+          "factor_rows": 621,
+          "factor_nonzeros": 82949
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-2031/250000000000",
+          "upper_operator_shift_Ha": "46789531/250000000000",
+          "tail_interval_width_Ha": "23395781/125000000000",
+          "tail_interval_width_mHa": 0.187166248,
+          "factors": 14,
+          "factor_nonzeros": 252,
+          "coefficient_dimension": 36,
+          "modes": 16,
+          "particles": 8,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "31/250000000000",
+          "mismatch_terms": 236,
+          "casimir_bound": "40",
+          "lower_psd": {
+            "dimension": 36,
+            "rank": 36
+          },
+          "upper_psd": {
+            "dimension": 36,
+            "rank": 36
+          },
+          "replay_seconds": 0.2882430420067976,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-593845021619781312113496506296891273190783344781578326700792697/64000000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -9.278828462809082,
+        "expand_seconds": 3.5456307909989846,
+        "SOS_replay_seconds": 26.651863166996918,
+        "replay_seconds": 30.197494082996855,
+        "expanded_certificate_bytes": 2771398,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+      }
+    },
+    {
+      "case": "h8_heldout",
+      "directory": "results/mechanism_transfer_20260913/campaign/h8_heldout",
+      "arm": "separate",
+      "certificate_sha256": "17adeb6db9f78de1247b062b4f471483f09cc997cea2a28907129e6adafd3dee",
+      "lower_Ha": "-296929518452401968444099646971160700485674354327009280362528981/32000000000000000000000000000000000000000000000000000000000000",
+      "upper_Ha": "-230906775382357633652069382479983/24957089374045229990000000000000",
+      "width_Ha": "2147971757336393371700932957035694512892919637027427832452598596285227618534019/79862685996944735968000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 26.895811611176804,
+      "directions": 144,
+      "inside_budget": true,
+      "replay": {
+        "retained": {
+          "lower": "-296929518192433968444099646971160700485674354327009280362528981/32000000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -9.279047443513562,
+          "residual_l1": "8805873968444099646971160700485674354327009280362528981/32000000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 2.751835615138781e-07,
+          "multiplier_terms": 65,
+          "square_polynomial_terms": 2913,
+          "residual_terms": 2913,
+          "residual_max_degree": 4,
+          "mode_count": 16,
+          "particle_number": 8,
+          "factor_rows": 645,
+          "factor_nonzeros": 60369
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-2031/250000000000",
+          "upper_operator_shift_Ha": "46789531/250000000000",
+          "tail_interval_width_Ha": "23395781/125000000000",
+          "tail_interval_width_mHa": 0.187166248,
+          "factors": 14,
+          "factor_nonzeros": 252,
+          "coefficient_dimension": 36,
+          "modes": 16,
+          "particles": 8,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "31/250000000000",
+          "mismatch_terms": 236,
+          "casimir_bound": "40",
+          "lower_psd": {
+            "dimension": 36,
+            "rank": 36
+          },
+          "upper_psd": {
+            "dimension": 36,
+            "rank": 36
+          },
+          "replay_seconds": 0.5059397500008345,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-296929518452401968444099646971160700485674354327009280362528981/32000000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -9.279047451637561,
+        "expand_seconds": 3.051353916001972,
+        "SOS_replay_seconds": 17.05046512500121,
+        "replay_seconds": 20.101819166004134,
+        "expanded_certificate_bytes": 2121318,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+      }
+    }
+  ],
+  "cases": [
+    {
+      "case": "h6_1p2",
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 200,
+        "hamiltonian_terms": 918,
+        "word_state_checks": 183600,
+        "contributing_word_state_pairs": 23424,
+        "action_cache_states": 0,
+        "replay_seconds": 0.0479147500009276,
+        "upper": "-698826391976655084055965094517453/99999999992450208678000000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "best_arm": "coupled",
+      "best_width_mHa": 10.535841623731386,
+      "coupled_gain_over_quadratic_mHa": 0.22076528981930466,
+      "coupling_gain_over_separate_mHa": 0.22087068341048166
+    },
+    {
+      "case": "h6_1p8",
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 200,
+        "hamiltonian_terms": 918,
+        "word_state_checks": 183600,
+        "contributing_word_state_pairs": 23424,
+        "action_cache_states": 0,
+        "replay_seconds": 0.03371016700111795,
+        "upper": "-544525922946759760381016612667013/100000000004607084597000000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "best_arm": "coupled",
+      "best_width_mHa": 11.68528163510829,
+      "coupled_gain_over_quadratic_mHa": 1.3152428921563821,
+      "coupling_gain_over_separate_mHa": 1.3152428029402028
+    },
+    {
+      "case": "h6_train",
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 200,
+        "hamiltonian_terms": 918,
+        "word_state_checks": 183600,
+        "contributing_word_state_pairs": 23424,
+        "action_cache_states": 0,
+        "replay_seconds": 0.03352512499986915,
+        "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "best_arm": "coupled",
+      "best_width_mHa": 12.74072429348685,
+      "coupled_gain_over_quadratic_mHa": 0.2698450004701538,
+      "coupling_gain_over_separate_mHa": 0.2698113402493174
+    },
+    {
+      "case": "h8_heldout",
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 1000,
+        "hamiltonian_terms": 2912,
+        "word_state_checks": 2912000,
+        "contributing_word_state_pairs": 162700,
+        "action_cache_states": 0,
+        "replay_seconds": 0.37144745900150156,
+        "upper": "-230906775382357633652069382479983/24957089374045229990000000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "best_arm": "coupled",
+      "best_width_mHa": 26.67682278269829,
+      "coupled_gain_over_quadratic_mHa": 0.21881001083174212,
+      "coupling_gain_over_separate_mHa": 0.21898882847851198
+    }
+  ],
+  "wall_seconds": 80.45665920799365,
+  "numerical_packages_loaded": [],
+  "scope": "Exact finite-basis interval proofs for each case. No held-out family ceiling or rigorous FCI ground lower is claimed."
+}

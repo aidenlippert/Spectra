@@ -1,0 +1,76 @@
+--- results/molecular_identity_20260913/original_commutator_dictionary.py
++++ research/certificate_scaling/commutator_dictionary.py
+@@ -108,13 +108,43 @@
+     return blocks,denominator,clipped_negative
+ 
+ 
+-def run(h,m,n,out,solver_seconds=60,enrich=True,creator_channels=False,one_body_steps=0,diagonal_driver=False,solver='CLARABEL',map_backend='exact',row_condition=False,basis_condition='none'):
++def append_groups(groups,additional,m,signature):
++    """Validate optional local polynomial blocks before any coefficient maps."""
++    result=list(groups)
++    for group in additional or []:
++        polys=group['polynomials']
++        if not polys:raise ValueError('Empty additional polynomial block')
++        keys=set()
++        for p in polys:
++            if not p or canonical(p)!=p:raise ValueError('Noncanonical or empty additional polynomial')
++            for w,c in p.items():
++                if len(w)>3 or not isinstance(c,(int,F)) or isinstance(c,bool):raise ValueError('Exact degree-three polynomials required')
++                if any(type(flag) is not int or flag not in (0,1) or type(i) is not int or not 0<=i<m for flag,i in w):raise ValueError('Invalid additional orbital')
++                keys.add((sum(2*flag-1 for flag,_ in w),signature(w)))
++        if len(keys)!=1:raise ValueError('Additional block mixes charge or symmetry')
++        if 'merge_into' in group:
++            matches=[i for i,g in enumerate(result) if g['name']==group['merge_into']]
++            if len(matches)!=1:raise ValueError('Unique merge target required')
++            index=matches[0];target=result[index]
++            target_keys={(sum(2*flag-1 for flag,_ in w),signature(w)) for p in target['polynomials'] for w in p}
++            if target_keys!=keys:raise ValueError('Merge target has different charge or symmetry')
++            result[index]={**target,'polynomials':target['polynomials']+list(polys)}
++        else:
++            result.append({'name':str(group['name']),'polynomials':polys})
++    return result
++
++
++def run(h,m,n,out,solver_seconds=60,enrich=True,creator_channels=False,one_body_steps=0,diagonal_driver=False,solver='CLARABEL',map_backend='exact',row_condition=False,basis_condition='none',additional_groups=None):
+     if solver not in ('CLARABEL','SCS'):raise ValueError('Unsupported solver')
+     if map_backend not in ('exact','contraction'):raise ValueError('Unsupported map backend')
+     if basis_condition not in ('none','whiten') or (basis_condition=='whiten' and map_backend!='contraction'):raise ValueError('Whitening requires the contraction backend')
+     start=time.monotonic();out=Path(out);out.mkdir(parents=True,exist_ok=False)
+     if not hermitian(h) or any(len(w)>4 for w in h):raise ValueError('Hermitian two-body H required')
+     groups,signature=polynomial_groups(h,m,enrich,creator_channels,one_body_steps,diagonal_driver);zero=signature(())
++    groups=append_groups(groups,additional_groups,m,signature)
++    additional_count=len(additional_groups or [])
++    if additional_count:
++        (out/'additional_groups.json').write_text(json.dumps([{**{k:v for k,v in g.items() if k!='polynomials'},'polynomials':[encode(p) for p in g['polynomials']]} for g in additional_groups],separators=(',',':'))+'\n')
+     transforms=[None]*len(groups);conditioning=[]
+     if basis_condition=='whiten':
+         from research.certificate_scaling.polynomial_gram_contraction import whitening_transform
+@@ -150,7 +180,7 @@
+     problem=cp.Problem(cp.Minimize(cp.norm1(rem)-x[0]),[cp.multiply(row_scale,expr+rem-rhs)==0,rem[lookup[()]]==0])
+     built=time.monotonic()
+     (out/'pre_solve.json').write_text(json.dumps({'stage':'solver_starting','construction_seconds':built-start,
+-        'modes':m,'particles':n,'one_body_steps':one_body_steps,'diagonal_driver':diagonal_driver,
++        'modes':m,'particles':n,'one_body_steps':one_body_steps,'diagonal_driver':diagonal_driver,'additional_groups':additional_count,
+         'polynomial_Gram_entries':sum(len(g['polynomials'])**2 for g in groups),
+         'symbolic_word_pair_products':work,'coefficient_rows':len(rows),'gram_map_nonzeros':nnz,
+         'basis_condition':basis_condition,'basis_conditioning':conditioning,'solver':solver,'map_backend':map_backend,'map_stats':map_stats,'row_condition':row_condition,'solver_seconds_budget':solver_seconds,'scope':'Construction receipt only; no completed solve or accepted certificate claimed.'},indent=2)+'\n')
+@@ -161,7 +191,7 @@
+     if x.value is None or any(q.value is None for q in variables):raise RuntimeError('No bounded Gram solution')
+     if problem.constraints[0].dual_value is not None:
+         (out/'dual_proposal.json').write_text(json.dumps({'modes':m,'particles':n,
+-            'hamiltonian':encode(h),'enrich':enrich,'creator_channels':creator_channels,'one_body_steps':one_body_steps,'diagonal_driver':diagonal_driver,
++            'hamiltonian':encode(h),'enrich':enrich,'creator_channels':creator_channels,'one_body_steps':one_body_steps,'diagonal_driver':diagonal_driver,'additional_groups':additional_count,
+             'rows':[[list(letter) for letter in w] for w in rows],
+             'dual':[float(v) for v in problem.constraints[0].dual_value*row_scale],
+             'scope':'Floating proposal only; not an accepted dual witness.'},separators=(',',':'))+'\n')
+@@ -177,8 +207,8 @@
+              'solve_seconds':solved-built,'export_seconds':time.monotonic()-solved,'wall_seconds':time.monotonic()-start,
+              'status':problem.status,'solver':solver,'solver_options':options,'row_condition':row_condition,'numeric_lower':-float(problem.value),'raw_b':float(x.value[0]),'negative_eigenvalue_mass':negative,
+              'exact':exact,'certificate_bytes':len(raw.encode()),'factor_denominator_bits':den.bit_length(),
+-             'basis_condition':basis_condition,'basis_conditioning':conditioning,'creator_channels':creator_channels,'one_body_steps':one_body_steps,'diagonal_driver':diagonal_driver,'source_factors_used':False,'source_upper_used':False,'scope':'Fixed H-only polynomial span; no omitted-cone optimality or generic accuracy guarantee.'}
+-    (out/'receipt.json').write_text(json.dumps(receipt,indent=2)+'\n');print(json.dumps({k:v for k,v in receipt.items() if k not in ('polynomial_term_counts','polynomial_Gram_dimensions')}),flush=True);return receipt
++             'basis_condition':basis_condition,'basis_conditioning':conditioning,'creator_channels':creator_channels,'one_body_steps':one_body_steps,'diagonal_driver':diagonal_driver,'additional_groups':additional_count,'source_factors_used':False,'source_upper_used':False,'scope':'Explicit polynomial span; caller must account for additional-group selection. No omitted-cone optimality or generic accuracy guarantee.'}
++    (out/'receipt.json').write_text(json.dumps(receipt,indent=2)+'\n');print(json.dumps({k:v for k,v in receipt.items() if k not in ('polynomial_term_counts','polynomial_Gram_dimensions','map_stats','basis_conditioning')}),flush=True);return receipt
+ 
+ if __name__=='__main__':
+     p=argparse.ArgumentParser();p.add_argument('--fixture',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--solver-seconds',type=float,default=60);p.add_argument('--baseline',action='store_true');p.add_argument('--creator-channels',action='store_true');p.add_argument('--one-body-steps',type=int,default=0);p.add_argument('--diagonal-driver',action='store_true');p.add_argument('--solver',choices=['CLARABEL','SCS'],default='CLARABEL');p.add_argument('--map-backend',choices=['exact','contraction'],default='exact');p.add_argument('--row-condition',action='store_true');p.add_argument('--basis-condition',choices=['none','whiten'],default='none');a=p.parse_args();f=json.loads(a.fixture.read_text());run(decode(f['hamiltonian'],f['modes'],4),f['modes'],f['particles'],a.out,a.solver_seconds,not a.baseline,a.creator_channels,a.one_body_steps,a.diagonal_driver,a.solver,a.map_backend,a.row_condition,a.basis_condition)

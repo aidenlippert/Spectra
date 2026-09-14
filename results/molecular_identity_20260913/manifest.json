@@ -1,0 +1,674 @@
+{
+  "created_utc": "2026-09-13T08:43:41.868925+00:00",
+  "source_snapshot": {
+    "research/certificate_scaling/commutator_dictionary.py": {
+      "bytes": 15933,
+      "sha256": "400afecc2fe5968678bc1e5a9db0b18124d4e52b8c619d3d37303215109d6111"
+    },
+    "research/certificate_scaling/polynomial_gram_contraction.py": {
+      "bytes": 5147,
+      "sha256": "c1181eaedce231d5dac1f8d12049f8a4bbdb967bb03ea0e35ea83c3b459441aa"
+    },
+    "research/certificate_scaling/commutator_dual_witness.py": {
+      "bytes": 10589,
+      "sha256": "5b7188235d62c36c324d8f2c80040ecf84363832ac9c054d31c5429e16a29419"
+    },
+    "research/certificate_scaling/adaptive_block_discovery.py": {
+      "bytes": 18167,
+      "sha256": "c9e4c227327eb230057cf14ace42705113f1e6edf9549a14b1db352132a89ed6"
+    },
+    "research/certificate_scaling/direct_sparse_discovery.py": {
+      "bytes": 8043,
+      "sha256": "03975906f20472bca6a0d20558556459be8176aacb1e187a9c6f8374d7e64c88"
+    },
+    "research/certificate_scaling/cubic_interval_replay.py": {
+      "bytes": 3001,
+      "sha256": "e2496ea72fbe29e1cc6cb5aa1f3a5f55f6f8abf4cbcdb6f3ac327e0c3975f7a3"
+    },
+    "research/certificate_scaling/streaming_reference_upper.py": {
+      "bytes": 2717,
+      "sha256": "46a66b3355e616e1e5878bf37ff1a17bfb50a9ad754599b140e0acbee5a2d14a"
+    },
+    "experiments/marginal_symbolic.py": {
+      "bytes": 13726,
+      "sha256": "3d7821dd5d05e7ddc3fc2ed43629a87875015393fe6c104d2c834a99574c31fe"
+    },
+    "experiments/marginal_hunt_car.py": {
+      "bytes": 3399,
+      "sha256": "e95375f0df0d36c18345f0b60913d4e8186c6ea33c4c50f2db381a14acdb4614"
+    },
+    "experiments/marginal_coefficient.py": {
+      "bytes": 10400,
+      "sha256": "91905084e18881ce32ef42f0fa8758cfe27205637bd9277f135760888a05c964"
+    },
+    "experiments/marginal_molecule_stress.py": {
+      "bytes": 7188,
+      "sha256": "622144b8ce4568146b1349c0558f298595e3bacfacca5d67aad11af604ecf20c"
+    },
+    "research/molecular_identity_20260913/adaptive.py": {
+      "bytes": 5861,
+      "sha256": "dc242a9496d0f70b731aea54bf2577c4e3d411a6cfd3363e15de2ce97002051a"
+    },
+    "research/molecular_identity_20260913/audit.py": {
+      "bytes": 6198,
+      "sha256": "ff90e38ec93f001ae3336cbf34824a732b276aa2dad7c7d41bcf98c053143f74"
+    },
+    "research/molecular_identity_20260913/coupled.py": {
+      "bytes": 8494,
+      "sha256": "e736ec7001f53a2009375257f271c49098cf95e149bcf242a90ab15f3d8d016d"
+    },
+    "research/molecular_identity_20260913/local_blocks.py": {
+      "bytes": 3265,
+      "sha256": "217a410a163b17a038fa30e247878720cabe3bda8aea029a5e432da39c93df06"
+    },
+    "research/molecular_identity_20260913/replay.py": {
+      "bytes": 3720,
+      "sha256": "bf0004737f75fadf578307d3e921bf85522fb3a3ecab84156ef13c31e46a5b38"
+    },
+    "research/molecular_identity_20260913/scan.py": {
+      "bytes": 3253,
+      "sha256": "89bc18bb504b9ab3032efb2f2b656371367c651eaf8802acea0c665fdfa66a94"
+    },
+    "research/molecular_identity_20260913/test_discovery.py": {
+      "bytes": 4041,
+      "sha256": "6d11f7143edf7a2219ddfcf272b5340fdf1b438f81adc819b71dca2b0919ee65"
+    },
+    "research/molecular_identity_20260913/test_local.py": {
+      "bytes": 3136,
+      "sha256": "fdd310fb44e29abb559e0f5a962e6554f1cffad17060ed02d42787557b3fc15c"
+    }
+  },
+  "inputs": {
+    "results/certificate_scaling/active_space_ladder/h4/fixture.json": {
+      "bytes": 49103,
+      "sha256": "8e64505deb4cc06a87f75e669b0f3073d15ebca72daa6d086e06eeea0b0f5120"
+    },
+    "results/certificate_scaling/active_space_ladder/h6/fixture.json": {
+      "bytes": 245591,
+      "sha256": "ea50a4ab19a353bc89691bb344fcf8d610f74e1c2c76bf07c6869be2b24dbec8"
+    },
+    "results/certificate_scaling/active_space_ladder_references_aligned/h4/upper.json": {
+      "bytes": 722,
+      "sha256": "05b817139ca8247572969b7667657a20ae57aa4cf254fbd01f2c4cf9fb575c9c"
+    },
+    "results/certificate_scaling/active_space_ladder_references_aligned/h4/receipt.json": {
+      "bytes": 574,
+      "sha256": "9d4d39bc6e7855207de2537bb4a478b9a39d1c1e9620097dd90e38c1d573d7e4"
+    },
+    "results/certificate_scaling/active_space_ladder_references_aligned/h6/upper.json": {
+      "bytes": 5885,
+      "sha256": "0cf0b58228f1861bf80738bbab945ee18d60c2e7b3cc27ce0c418c13ff6330cc"
+    },
+    "results/certificate_scaling/active_space_ladder_references_aligned/h6/receipt.json": {
+      "bytes": 578,
+      "sha256": "332bc621e5860f38365597163ba2e9bc48d558b7a6996183d43ff9b200bc84f9"
+    },
+    "results/certificate_scaling/commutator_dictionary/h4_creator_channels/certificate.json": {
+      "bytes": 150571,
+      "sha256": "bf8e33531588b5133476e2a20dbb58386781a3ec5e03145a316e04f896de8acb"
+    },
+    "results/certificate_scaling/commutator_dictionary/h4_creator_channels/receipt.json": {
+      "bytes": 4187,
+      "sha256": "2ba3804d0a304253e4a02f1955bb5d9388840b0cdf2e9b1b9e53547458578732"
+    },
+    "results/certificate_scaling/commutator_dictionary/h4_creator_channels/interval.json": {
+      "bytes": 2202,
+      "sha256": "3ba9dc0880214162391fb35620722dc4228495f54b2301637548590303ba6e51"
+    },
+    "results/certificate_scaling/commutator_dictionary/h6_creator_channels/certificate.json": {
+      "bytes": 947528,
+      "sha256": "ae6990b7661e7a7e5e2904ef11a53d5df261aeb027ff2ecb95ebd5638f35f27e"
+    },
+    "results/certificate_scaling/commutator_dictionary/h6_creator_channels/receipt.json": {
+      "bytes": 7194,
+      "sha256": "85b218251dcb61024eef46b39179b156aefe50828ac7a7f9564f209871b5f485"
+    },
+    "results/certificate_scaling/commutator_dictionary/h6_creator_channels/interval.json": {
+      "bytes": 2228,
+      "sha256": "2dd396aeb9470b02a16cc5a0a14bb1b4caa412175c80ba25d9b5602a8f6ddbe4"
+    },
+    "results/certificate_scaling/commutator_dictionary/h4_exact_dual/witness.json": {
+      "bytes": 85170,
+      "sha256": "e117ce7e028c6d5bfe4d3a1ab071c3ca337a452d5aa4ac6beb10a71463b17bcb"
+    },
+    "results/certificate_scaling/commutator_dictionary/h4_exact_dual/receipt.json": {
+      "bytes": 1436,
+      "sha256": "344126f7d4483019a710867f5c7f19995eae8a57cccb93468f914830c0d60fc7"
+    }
+  },
+  "artifacts": {
+    "research/molecular_identity_20260913/PROOF.md": {
+      "bytes": 4360,
+      "sha256": "1d5aacb400c1b43625fe30b18c0c34eda8f6b2cfd5da1dcdaf1506d3377f6590"
+    },
+    "research/molecular_identity_20260913/REPORT.md": {
+      "bytes": 10294,
+      "sha256": "ca1f59d7827a0907eae9f456449338b20bfccd272043efc771c121781bde4626"
+    },
+    "research/molecular_identity_20260913/REPRODUCE.md": {
+      "bytes": 4272,
+      "sha256": "8699cf787091746020dce2cb201b0f4e5b1b45ec41245818facaeab3c216a993"
+    },
+    "research/molecular_identity_20260913/SOURCES.md": {
+      "bytes": 5309,
+      "sha256": "d040b0f31fcfc0f1e9e5c340f2fed3d107c618693c676fbbffd9a18f9ee0cfde"
+    },
+    "research/molecular_identity_20260913/adaptive.py": {
+      "bytes": 5861,
+      "sha256": "dc242a9496d0f70b731aea54bf2577c4e3d411a6cfd3363e15de2ce97002051a"
+    },
+    "research/molecular_identity_20260913/audit.py": {
+      "bytes": 6198,
+      "sha256": "ff90e38ec93f001ae3336cbf34824a732b276aa2dad7c7d41bcf98c053143f74"
+    },
+    "research/molecular_identity_20260913/coupled.py": {
+      "bytes": 8494,
+      "sha256": "e736ec7001f53a2009375257f271c49098cf95e149bcf242a90ab15f3d8d016d"
+    },
+    "research/molecular_identity_20260913/local_blocks.py": {
+      "bytes": 3265,
+      "sha256": "217a410a163b17a038fa30e247878720cabe3bda8aea029a5e432da39c93df06"
+    },
+    "research/molecular_identity_20260913/replay.py": {
+      "bytes": 3720,
+      "sha256": "bf0004737f75fadf578307d3e921bf85522fb3a3ecab84156ef13c31e46a5b38"
+    },
+    "research/molecular_identity_20260913/scan.py": {
+      "bytes": 3253,
+      "sha256": "89bc18bb504b9ab3032efb2f2b656371367c651eaf8802acea0c665fdfa66a94"
+    },
+    "research/molecular_identity_20260913/test_discovery.py": {
+      "bytes": 4041,
+      "sha256": "6d11f7143edf7a2219ddfcf272b5340fdf1b438f81adc819b71dca2b0919ee65"
+    },
+    "research/molecular_identity_20260913/test_local.py": {
+      "bytes": 3136,
+      "sha256": "fdd310fb44e29abb559e0f5a962e6554f1cffad17060ed02d42787557b3fc15c"
+    },
+    "results/molecular_identity_20260913/audit.log": {
+      "bytes": 1931,
+      "sha256": "35a8b6851285a2b600520bc9bea790daee8ed27c1389a654e81cd061b48428e3"
+    },
+    "results/molecular_identity_20260913/commutator_dictionary.diff": {
+      "bytes": 8014,
+      "sha256": "efe9b66631e85964b67c9276d397a407fc4336ed2effe4af20e80394a05fe9dc"
+    },
+    "results/molecular_identity_20260913/discovery_tests.log": {
+      "bytes": 103,
+      "sha256": "01cef267da234ca582012827bdbe16dfc3bd635997d29e926293257aed0943a0"
+    },
+    "results/molecular_identity_20260913/environment.json": {
+      "bytes": 625,
+      "sha256": "8e967c3e2283e80fcd0e12b855b20ee52e564dfd7a07c17d121d7dd6a4c8f086"
+    },
+    "results/molecular_identity_20260913/exact_tests.log": {
+      "bytes": 102,
+      "sha256": "8a4d26f1da53e0212efd104b37b66b0fed101782ec9ec65abf9d554faab28594"
+    },
+    "results/molecular_identity_20260913/existing_tests.log": {
+      "bytes": 107,
+      "sha256": "c6d4a1ad85b23a9f763b37962e04a75d310b95682983715803e2c48bbb246884"
+    },
+    "results/molecular_identity_20260913/final_tests.log": {
+      "bytes": 117,
+      "sha256": "f7bd4c0f58ed93096d99af9013e8f5804c9680f5a41139902cb12e4e9638fcb6"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/experiment.json": {
+      "bytes": 7059,
+      "sha256": "0ebfa03fdb5bd3172fe81d318441821c36438d9b5cbc42de0009fb9b4b4f5e30"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/history.json": {
+      "bytes": 4650,
+      "sha256": "9cc4b213f5ff91d9cf6b1aeb137792331b64ca00614ecd8eddbd2ed5629901e9"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/policy.json": {
+      "bytes": 397,
+      "sha256": "b371e1cc331fef3e040de249c02282378c1f059bc627bb3a3a7eb020a9926626"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/round_1/additional_groups.json": {
+      "bytes": 127388,
+      "sha256": "98f86fb68c4f479ca5177064fdfdc6aeee9be3d1fa0e75cf549b7e1d3319a94a"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/round_1/certificate.json": {
+      "bytes": 354244,
+      "sha256": "6c15ffd1260eadbafdd441f22327c8a3eed88dc6d105775350499c2db44eb4fa"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/round_1/dual_proposal.json": {
+      "bytes": 58028,
+      "sha256": "99e05c1c24f52382395627adffebceb64dab27130d8453740eb7d36ea0c53ce2"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/round_1/interval.json": {
+      "bytes": 2206,
+      "sha256": "771b999a55bd1cb99d3bd2013760e5437b119fdcb28f0baae1f7d49bd19b108c"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/round_1/pre_solve.json": {
+      "bytes": 241745,
+      "sha256": "38d5f1430f37cd6d5da5d5f7e5818a0871d9afdbac99904368a6568355b7ff47"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/round_1/receipt.json": {
+      "bytes": 275297,
+      "sha256": "1239a00fd0d6cc54bda4ae0e22e8b0d80367b7b56a1d4177b232dcbbc83809c2"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/round_2/additional_groups.json": {
+      "bytes": 152546,
+      "sha256": "dfce5e7c7617db9180a48c2cc3b025ceda8a91cd11bfc3ee33a72767a01ef7f4"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/round_2/certificate.json": {
+      "bytes": 415305,
+      "sha256": "7ffb98d9b49784dcce4f6845296dcb2b0cddcfdf033d39d96915393523426eff"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/round_2/dual_proposal.json": {
+      "bytes": 58057,
+      "sha256": "42d1e2978eb086a862266b2979d6b7292d94c53123ff7c59b42a7273416dbd10"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/round_2/interval.json": {
+      "bytes": 2205,
+      "sha256": "2b745171a01ef5ab1c17f0a0cd9e2848565fecaf599abb3371a9fb40833347d2"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/round_2/pre_solve.json": {
+      "bytes": 267793,
+      "sha256": "1622dd03688c1776c05b363cd0cfd0001c9a5803611dd8fc8839961532aa1779"
+    },
+    "results/molecular_identity_20260913/h4_adaptive/round_2/receipt.json": {
+      "bytes": 306642,
+      "sha256": "6e30777e28780d2bf5e70ef88d8a24381c52549ce83c40018d4c19fd350b9d68"
+    },
+    "results/molecular_identity_20260913/h4_adaptive.log": {
+      "bytes": 4350,
+      "sha256": "43fee295b37dd9d531d775731467e8f012f2069e67988f8fdca5621ebe7c90a2"
+    },
+    "results/molecular_identity_20260913/h4_all_triples/additional_groups.json": {
+      "bytes": 100262,
+      "sha256": "a9858715594894f3cf302d7f32320cfcd12e390dd36866b56422730edd5d5503"
+    },
+    "results/molecular_identity_20260913/h4_all_triples/certificate.json": {
+      "bytes": 290706,
+      "sha256": "88fbe36e7e794e7ff5eeb3bf22c4010ad4497fe138f55caa9226aeacc3a8b83d"
+    },
+    "results/molecular_identity_20260913/h4_all_triples/dual_proposal.json": {
+      "bytes": 58055,
+      "sha256": "72a6e20644ea5d25b2f01498367c3e0670286cc608772e539ddf7be6d3219fb1"
+    },
+    "results/molecular_identity_20260913/h4_all_triples/experiment.json": {
+      "bytes": 255896,
+      "sha256": "41f0ce4005f36adf6396076036cae45001191f2411a8ce9d23f8e6b073ea9ece"
+    },
+    "results/molecular_identity_20260913/h4_all_triples/interval.json": {
+      "bytes": 2201,
+      "sha256": "3c8cf63f44605fcaab73775fce5f930457df50eaa26242c6106411d6d40036c9"
+    },
+    "results/molecular_identity_20260913/h4_all_triples/pre_solve.json": {
+      "bytes": 209990,
+      "sha256": "01d115d2ccf0b356f0546eef31c246d55469a2e68288940532bd46649ce68b83"
+    },
+    "results/molecular_identity_20260913/h4_all_triples/receipt.json": {
+      "bytes": 237754,
+      "sha256": "5b97bda5d77e02e6dab2e71ea302ee87493eb36a891c5120c037a45373908ea7"
+    },
+    "results/molecular_identity_20260913/h4_coupled/experiment.json": {
+      "bytes": 53162,
+      "sha256": "826881bb3cd0459a531b20952ca1e8124153c83fdc9ba9f1c071a630bf678ef1"
+    },
+    "results/molecular_identity_20260913/h4_coupled/history.json": {
+      "bytes": 47147,
+      "sha256": "bfab58c29c3b3d3446284320042a3c376d75b04838d5484ae31560730657c91f"
+    },
+    "results/molecular_identity_20260913/h4_coupled/policy.json": {
+      "bytes": 488,
+      "sha256": "9f79c562b4c9433cd3f680ba3f6f3cd1bfb65cf0a47ea3ec92ff2b2d8de7b67a"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_1/additional_groups.json": {
+      "bytes": 7778,
+      "sha256": "6a598b412d22b633c53740e7c0e08dc0d2c05745c5c2a6c2db354cb19a2b4d4e"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_1/certificate.json": {
+      "bytes": 163463,
+      "sha256": "44159914e433fedd1cb67013854a42139f747de04cac179d9ed312acbda34fe0"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_1/dual_proposal.json": {
+      "bytes": 58122,
+      "sha256": "1910ba66da1e3456f98cd6ac17841cec7c331dc924c19e83d0f02a0606876d27"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_1/interval.json": {
+      "bytes": 2191,
+      "sha256": "31730e609895f0d23faf3d55f6eb81b9f82f68638ee19cf6a0debeb8cb40e099"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_1/pre_solve.json": {
+      "bytes": 10179,
+      "sha256": "53258c4181d4d70b57900995ca911fb5f449c46c7163222d2586fd0f162a9c9d"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_1/receipt.json": {
+      "bytes": 14344,
+      "sha256": "5cb472aaee59a5400b8cb26237764dfb12e35277fd00801bfdb0ee29adf49f47"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_2/additional_groups.json": {
+      "bytes": 13706,
+      "sha256": "bdf4c1c41c2000979a788942c1b2a784cdce7ab8a893828248a84664057c5cdb"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_2/certificate.json": {
+      "bytes": 178522,
+      "sha256": "74f292ae8c1b35fade689317cc4b66daee0df3289997a8b32c9c4617643175a6"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_2/dual_proposal.json": {
+      "bytes": 58150,
+      "sha256": "5ce5ac872c4f997f075e62a906cd7b50e4a0f668a73ddf3e5087fb6d4a449090"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_2/interval.json": {
+      "bytes": 2203,
+      "sha256": "9e1f8b0dd189f34c5e117e17779a412d4d00a92060172428086c90f2f046b5a9"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_2/pre_solve.json": {
+      "bytes": 10178,
+      "sha256": "4cea13e4a7d5e50f550315162014cde02700f929385ed6f0cdbaa4a83a4f4d1d"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_2/receipt.json": {
+      "bytes": 14499,
+      "sha256": "cd54262ae1c136171525d188638fd761cfb56d5994bcce43a6c4f50e6dea2f74"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_3/additional_groups.json": {
+      "bytes": 16516,
+      "sha256": "2c4e70c3f4583da0fa339b25e1b2da1dc8df3883637ad22ce061a2177ca46984"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_3/certificate.json": {
+      "bytes": 179855,
+      "sha256": "31c8464834256bbbafc6f75430760a76f92ee55a44c476a9ae268becf9da511c"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_3/dual_proposal.json": {
+      "bytes": 58150,
+      "sha256": "3fc95c079790bf1f8afa7a27b161e15457ae573db95da0abe1c864043365be11"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_3/interval.json": {
+      "bytes": 2192,
+      "sha256": "b1aaaa445a9a614d136d12379d3ba4275d0711210eefaa4a042256acd305c2e7"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_3/pre_solve.json": {
+      "bytes": 10183,
+      "sha256": "7570d54325505879f9ac4583e0a36bb9e516ff94084a8f04b3176939c29e9579"
+    },
+    "results/molecular_identity_20260913/h4_coupled/round_3/receipt.json": {
+      "bytes": 14542,
+      "sha256": "2528c988a606266a45f78babd14b45cfccc0012596f19a79113de1568bcd3219"
+    },
+    "results/molecular_identity_20260913/h4_coupled/seed/certificate.json": {
+      "bytes": 150521,
+      "sha256": "a7bd772c4ac7e905b60c2f7d2544a295e1bea1d359ae3270f9ce3135471be6be"
+    },
+    "results/molecular_identity_20260913/h4_coupled/seed/dual_proposal.json": {
+      "bytes": 57888,
+      "sha256": "3dc280187797b017c05fd8b88d8ec1284d0378a2654a2a99d9f1c6a1e082b2c0"
+    },
+    "results/molecular_identity_20260913/h4_coupled/seed/interval.json": {
+      "bytes": 2186,
+      "sha256": "3a85318fb5c283787875ae3eb3af07e43e8079ecb4ffd219325e7ebc55734160"
+    },
+    "results/molecular_identity_20260913/h4_coupled/seed/pre_solve.json": {
+      "bytes": 10170,
+      "sha256": "36ed638cb995960d1ef0599083032913f3d13854f3ea1723d534e49a636cf43e"
+    },
+    "results/molecular_identity_20260913/h4_coupled/seed/receipt.json": {
+      "bytes": 14184,
+      "sha256": "722ef1d6a226baa1f42a8c0ac677ec72b434a04ff953fd5d4fc4e9ba080869fe"
+    },
+    "results/molecular_identity_20260913/h4_coupled.log": {
+      "bytes": 7651,
+      "sha256": "903da3293b09314eb0af064858e99da6c92143e5d3dff841e15ecd065948b75f"
+    },
+    "results/molecular_identity_20260913/h4_separated_ablation/additional_groups.json": {
+      "bytes": 16314,
+      "sha256": "a7199dc2d261f96354b7d6a0827cf84f78a1323b2a4444c539eed84b13562d4d"
+    },
+    "results/molecular_identity_20260913/h4_separated_ablation/certificate.json": {
+      "bytes": 171564,
+      "sha256": "d24a1cd19435ac1748e3e1cdec90652e3616842bb05fc8e6c9e75d733c232fb1"
+    },
+    "results/molecular_identity_20260913/h4_separated_ablation/dual_proposal.json": {
+      "bytes": 58088,
+      "sha256": "bf58fadd297df7094a04469660273dae43b899e7f288cb85b0d1d168ee44b921"
+    },
+    "results/molecular_identity_20260913/h4_separated_ablation/experiment.json": {
+      "bytes": 592,
+      "sha256": "7b6de23ee6a620c2015431cd6a689a722b46a8844185bf3431e5777b340bc9c8"
+    },
+    "results/molecular_identity_20260913/h4_separated_ablation/interval.json": {
+      "bytes": 2205,
+      "sha256": "51567a250a1f691c0f61a179b693a17c95bd33a31b906ca93b0270abca348262"
+    },
+    "results/molecular_identity_20260913/h4_separated_ablation/pre_solve.json": {
+      "bytes": 13090,
+      "sha256": "68ee1071ab52a888cd672ebc15ad900d995c25ca34176443919549d12784eedc"
+    },
+    "results/molecular_identity_20260913/h4_separated_ablation/receipt.json": {
+      "bytes": 17603,
+      "sha256": "f66e7776bf22a6edcb92815520642715c98ada01468df553b18c12baaea9c58f"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/experiment.json": {
+      "bytes": 7083,
+      "sha256": "dd4c4d851649bc5c560d1584e677ab8df80ad0af56fe5b60fff3c0f27253bb71"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/history.json": {
+      "bytes": 4658,
+      "sha256": "b9499e5590ded079e651aeda36000dc75080a477ac8d663a4166f80a719c0fc1"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/policy.json": {
+      "bytes": 397,
+      "sha256": "b371e1cc331fef3e040de249c02282378c1f059bc627bb3a3a7eb020a9926626"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/round_1/additional_groups.json": {
+      "bytes": 419320,
+      "sha256": "d8773cc65ff5d443a51e55c62f0f7678989a0f72d06342696356652aa2a50c17"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/round_1/certificate.json": {
+      "bytes": 1564912,
+      "sha256": "58a28caf87f549c6d0af4dac061ed3ba70d6d2ef76e0317f84acdc4c0a31e624"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/round_1/dual_proposal.json": {
+      "bytes": 627624,
+      "sha256": "3a88478712aba2595f44935c63ab203e80001e9f0a78c0855dc101ce2f4b9018"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/round_1/interval.json": {
+      "bytes": 2219,
+      "sha256": "9dce05ad97b4a9fc5a2feb669306878c03c710590be647df38101fef61130bee"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/round_1/pre_solve.json": {
+      "bytes": 798257,
+      "sha256": "12c476864f22c256258637f0b436dcfe1912fb7033a175e33fe7bc0bff051b3b"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/round_1/receipt.json": {
+      "bytes": 902596,
+      "sha256": "faedf2f37aa12f010902238cb78a16b8eca9efe2edee718fe6c33a7eaf99996b"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/round_2/additional_groups.json": {
+      "bytes": 447634,
+      "sha256": "66e4e67dff7b9faeae1c9a652b829b7ee04a2de7d8e19e0e3104cdb841b42ee6"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/round_2/certificate.json": {
+      "bytes": 1655632,
+      "sha256": "9d2ff3b77196e73cf8b039a2892059b1e8986adb3681f6a0f374e609055b1cb5"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/round_2/dual_proposal.json": {
+      "bytes": 627714,
+      "sha256": "411b0035d747d28b87e3bbbc1d8fa3e8eff6053c3f277c4d755d9b90317d4426"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/round_2/interval.json": {
+      "bytes": 2224,
+      "sha256": "884895e485f65f1ec588dde1335e414ea617e704c32ebc29fbcb393bc0a42440"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/round_2/pre_solve.json": {
+      "bytes": 832954,
+      "sha256": "2e86fb5551e2803234a750b40a881306d93be0d26b675ef07bc0e8fa790b9cc0"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/round_2/receipt.json": {
+      "bytes": 943301,
+      "sha256": "d3266c404a65a84635cf40f73f3d2cfae5f5cf16570b8fdd2e072eada0fb585c"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/seed/additional_groups.json": {
+      "bytes": 391800,
+      "sha256": "b78a2f915cce0bb6575c10280086565814629b2be65fdadf937e9591e49ef952"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/seed/certificate.json": {
+      "bytes": 1547163,
+      "sha256": "e60b31dcc9c74c5c7c77e8006415f89139146dd0625059ce7873f85fa4db7c81"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/seed/dual_proposal.json": {
+      "bytes": 627900,
+      "sha256": "0449de3fe0a52773660797a91bcd1bbc2d1eb8d384ab364d4bab63809f38f14c"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/seed/interval.json": {
+      "bytes": 2216,
+      "sha256": "b5eee73a71d09583c4953b0eee6606c5dd248ccbe0b7f72e6fe5bdcc706c4e9d"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/seed/pre_solve.json": {
+      "bytes": 763554,
+      "sha256": "c94d36b84b400635b2581fae13ec22f6d704285ae972b15e38412d9e2b89dd57"
+    },
+    "results/molecular_identity_20260913/h6_adaptive/seed/receipt.json": {
+      "bytes": 862037,
+      "sha256": "bc75b03a57c45bb5d8bfc74eec0b5f9982563c4cbae872759accc3fb96807960"
+    },
+    "results/molecular_identity_20260913/h6_adaptive.log": {
+      "bytes": 7810,
+      "sha256": "da843a793a6170242f941a1728697bc600f2bb1e07313e795872af90fb58e3eb"
+    },
+    "results/molecular_identity_20260913/h6_coupled/experiment.json": {
+      "bytes": 44857,
+      "sha256": "c20552a97897e6caca555cb68042abadbc9cd9084cfb03c7be39d0e45c09530d"
+    },
+    "results/molecular_identity_20260913/h6_coupled/failure.json": {
+      "bytes": 676,
+      "sha256": "6531fe5dff9af295dc4ca7283f1614793e869ee1d0b3785d39285236241bbc9c"
+    },
+    "results/molecular_identity_20260913/h6_coupled/history.json": {
+      "bytes": 39573,
+      "sha256": "649ce4ad2ce190b3f85eca493768b843f478897926e2f42f72fb6e9ef3d60e1b"
+    },
+    "results/molecular_identity_20260913/h6_coupled/policy.json": {
+      "bytes": 488,
+      "sha256": "9f79c562b4c9433cd3f680ba3f6f3cd1bfb65cf0a47ea3ec92ff2b2d8de7b67a"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_1/additional_groups.json": {
+      "bytes": 7842,
+      "sha256": "257a3c1472b8fb155e5a858ad000b2d32d29bd6627ba8edee656ba2826c3f903"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_1/certificate.json": {
+      "bytes": 1021360,
+      "sha256": "9b280b2ae819e301d7144fd5da5a56d320878ca5aef699a915744fd3bc3b751c"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_1/dual_proposal.json": {
+      "bytes": 627319,
+      "sha256": "47a354be358e6c20d4b93bc60520f97c3634150e3fd8ece20d41fda5b3a87bf2"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_1/interval.json": {
+      "bytes": 2281,
+      "sha256": "64871b4138f3a82501881492dba9b70d00ae7c1f954ff3949168e7a8108eb114"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_1/pre_solve.json": {
+      "bytes": 10347,
+      "sha256": "be039015bcb3197f5f89a52fa02e14ddbe8c7f8c898dbe28414335769f20f7c1"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_1/receipt.json": {
+      "bytes": 17507,
+      "sha256": "773ba5c680393af403be6491ff08c55eaa146dd65c686eea2a94aa0c1eb175ca"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_2/additional_groups.json": {
+      "bytes": 11784,
+      "sha256": "e1e9bb224de5410e0cce037c18f07324e6eee806be038ba87f1d5168cbdfbdde"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_2/certificate.json": {
+      "bytes": 1044595,
+      "sha256": "f0006f1705c0178061de781ee694b6527e7bae5e239c03fd4ab9776c2d9e39e3"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_2/dual_proposal.json": {
+      "bytes": 626860,
+      "sha256": "adde3ea09960ecd7305ea45ae0a0c412b0831d1d31b5f2ded88756e93bc71433"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_2/interval.json": {
+      "bytes": 2297,
+      "sha256": "0ddd15ae08c4e047ab089315f1ba2818af974662c5425d8eb6eae3fe6656ef99"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_2/pre_solve.json": {
+      "bytes": 11779,
+      "sha256": "88459e02d131b333e3d8054fba010e5a3484fd82abf20790dc0b72dc8c9d518a"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_2/receipt.json": {
+      "bytes": 19169,
+      "sha256": "3bd9f063ffff861c6b691c7a7ecd1994c5eb37c5df0a062fcbee25316c9ae26c"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_3/additional_groups.json": {
+      "bytes": 13936,
+      "sha256": "a5368f1e6b1d19fda8e2a881ffbff9d1a9f9b3ef8076867f26e4bc84f077f3e3"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_3/certificate.json": {
+      "bytes": 1047750,
+      "sha256": "3efa6ae0016d6db957a0f10ff3af2bdb5e057e347bfd778232ababda7e90e2f6"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_3/dual_proposal.json": {
+      "bytes": 626671,
+      "sha256": "467c5ff21ea2a8d5890d927783e2c26ca3585ec9759bafd5829f79b79f52a524"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_3/interval.json": {
+      "bytes": 2295,
+      "sha256": "f5cc1723366d88dfb540772d8eacafe4a4dee0c8c65db7bb694e09a917ab3ef9"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_3/pre_solve.json": {
+      "bytes": 13224,
+      "sha256": "51e84ba7ba85d9788d336e340ffc7e963829da4d5b0189b28a5ff5f04de346fd"
+    },
+    "results/molecular_identity_20260913/h6_coupled/round_3/receipt.json": {
+      "bytes": 20833,
+      "sha256": "b8c3b6e92fc993917d0a5bdd35f6eca57f6933977d77943c23813bee3165b19e"
+    },
+    "results/molecular_identity_20260913/h6_coupled/seed/certificate.json": {
+      "bytes": 951786,
+      "sha256": "3181120e210a22ab7c28d3a169e6b31e14b36ac48fab3cbda83c87e70fd2643b"
+    },
+    "results/molecular_identity_20260913/h6_coupled/seed/dual_proposal.json": {
+      "bytes": 627371,
+      "sha256": "a74dfe3ef6ae35f7b1769202909ba0543d0f0384a65af37fd16940740ed99de9"
+    },
+    "results/molecular_identity_20260913/h6_coupled/seed/interval.json": {
+      "bytes": 2291,
+      "sha256": "c9a43a5b3d9e3e075bf4ac69c328a57d90c4a817286f2b0809b65515fe7a269f"
+    },
+    "results/molecular_identity_20260913/h6_coupled/seed/pre_solve.json": {
+      "bytes": 10347,
+      "sha256": "71b8bfb444e8a29a75588bb378fcf5dcc3b2bcceb69674929f704a37de1379ae"
+    },
+    "results/molecular_identity_20260913/h6_coupled/seed/receipt.json": {
+      "bytes": 17365,
+      "sha256": "e72f2adb001f52cfa36cb9efc9f59d4c6f29387b2cca05c5b400d56a978256e1"
+    },
+    "results/molecular_identity_20260913/h6_coupled.log": {
+      "bytes": 5106,
+      "sha256": "88de2768c976f5260e484b68236b2eea413a294e8d03ca351dac71ccc7b46ced"
+    },
+    "results/molecular_identity_20260913/h6_coupled_resume.log": {
+      "bytes": 3840,
+      "sha256": "c13cbd52d224b64b876f67cbec6defb95b402c0ac7f0e4ef38600c6cba11a4ec"
+    },
+    "results/molecular_identity_20260913/initial_scan.json": {
+      "bytes": 46340,
+      "sha256": "03f9366f874c2e84bbeab7b4c83f0e41433ea8789202d69ec43103086d83f0be"
+    },
+    "results/molecular_identity_20260913/larger_cubic_comparison.json": {
+      "bytes": 2020,
+      "sha256": "fb62aba535fd4416314f4212ca53b9203806236e166058de1b9d4abd216bbe2f"
+    },
+    "results/molecular_identity_20260913/obstruction_replay.json": {
+      "bytes": 765,
+      "sha256": "b9db71eb9651910ea4cb2ef9ab746866548f2796460df8baeed3a46a3bf00b48"
+    },
+    "results/molecular_identity_20260913/original_commutator_dictionary.py": {
+      "bytes": 13759,
+      "sha256": "c0fac7a395a7d05c1259f6c3ab179dc06875a870eb1554ccd4efc5fcbf37212c"
+    },
+    "results/molecular_identity_20260913/summary.json": {
+      "bytes": 45617,
+      "sha256": "38b49672f886d608c0a85370e5f20cf7efea4410794ac4aa5166ecf93489e5ec"
+    },
+    "results/molecular_identity_20260913/tests.log": {
+      "bytes": 115,
+      "sha256": "e147885a27bcc19b6e24330fbfeb0c1fad934b59a34bb03158b34f365fe86e69"
+    }
+  },
+  "scope": "Final source snapshot and campaign artifact integrity. Earlier stage logs preserve the symmetry-channel exception; its correction did not change H4 execution or numerical policy. Exact rational replay is the energy-acceptance criterion."
+}

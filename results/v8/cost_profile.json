@@ -1,0 +1,19 @@
+{
+  "status": "profiled",
+  "python": "/Users/aidenlippert/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "cases": [
+    {"n":3,"gamma":"0","T":"1/5","order":5,"polynomial_entries":53,"generation_seconds":0.028386,"checking_seconds":0.022235,"peak_bytes":111342,"column_requests":53,"cache_hits":23,"coefficient_multiply_adds":210,"peak_terms":18,"pair_checks":0,"squares":36},
+    {"n":3,"gamma":"2","T":"1/2","order":12,"polynomial_entries":303,"generation_seconds":0.112764,"checking_seconds":0.065585,"peak_bytes":172274,"column_requests":303,"cache_hits":273,"coefficient_multiply_adds":1449,"peak_terms":30,"pair_checks":0,"squares":60},
+    {"n":4,"gamma":"0","T":"1/5","order":5,"polynomial_entries":117,"generation_seconds":0.088808,"checking_seconds":0.074102,"peak_bytes":230725,"column_requests":117,"cache_hits":30,"coefficient_multiply_adds":631,"peak_terms":65,"pair_checks":0,"squares":130},
+    {"n":4,"gamma":"2","T":"1/2","order":13,"polynomial_entries":1175,"generation_seconds":0.649933,"checking_seconds":0.321423,"peak_bytes":635556,"column_requests":1175,"cache_hits":1049,"coefficient_multiply_adds":7219,"peak_terms":126,"pair_checks":222,"squares":158}
+  ],
+  "n6_cap_diagnostics": [
+    {"gamma":"0","T":"1/2","cap":512,"status":"cached column budget","cache":512,"peak_terms":456},
+    {"gamma":"0","T":"1/2","cap":1024,"status":"cached column budget","cache":1024,"peak_terms":707},
+    {"gamma":"0","T":"1/2","cap":2048,"status":"success","order":11,"cache":2009,"peak_terms":1053},
+    {"gamma":"2","T":"1/5","cap":512,"status":"output term budget","cache":340,"peak_terms":425},
+    {"gamma":"2","T":"1/5","cap":1024,"status":"output term budget","cache":678,"peak_terms":741},
+    {"gamma":"2","T":"1/5","cap":2048,"status":"success","order":7,"cache":741,"peak_terms":1163},
+    {"gamma":"2","T":"1/2","cap":2048,"status":"success","order":16,"cache":2046,"peak_terms":2046}
+  ]
+}

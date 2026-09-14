@@ -1,0 +1,70 @@
+{
+  "sites": 8,
+  "charge_patterns": 1106,
+  "spin_sector_multiplicity_sum": 4830,
+  "results": [
+    {
+      "gamma": -12,
+      "success": true,
+      "maximum_numerator_floor": 0.9622902500654563,
+      "minimum_metric": 0.1334509586720949,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+    },
+    {
+      "gamma": -10,
+      "success": true,
+      "maximum_numerator_floor": -0.671522238900939,
+      "minimum_metric": 0.15098297047846554,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "metric_coefficients": [
+        0.697499409312725,
+        -6.41079272317936e-16,
+        -0.010411564594138107,
+        2.697786215354681e-16,
+        -0.00426597719262757,
+        0.0,
+        0.0,
+        0.005832892890196655,
+        0.1638563255752545,
+        0.0072897805605699195,
+        -0.0,
+        0.08023238766203425,
+        0.2429954669842051,
+        0.3065299183259736,
+        0.0,
+        0.07429817721206883,
+        0.08058598483370981,
+        0.14989556419882552,
+        0.28009394829182316,
+        -0.0018716578583166065,
+        -0.0028632730745692023,
+        0.0,
+        -0.00205906206253545,
+        -0.0032646556693343575,
+        0.0
+      ]
+    },
+    {
+      "gamma": -8,
+      "success": true,
+      "maximum_numerator_floor": -1.8625997456645007,
+      "minimum_metric": 0.08870498242600955,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+    },
+    {
+      "gamma": -6,
+      "success": true,
+      "maximum_numerator_floor": -2.77017489953877,
+      "minimum_metric": 0.0018423822553685354,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+    },
+    {
+      "gamma": -4,
+      "success": true,
+      "maximum_numerator_floor": -3.5616894268535,
+      "minimum_metric": -1.7763568394002505e-15,
+      "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+    }
+  ],
+  "scope": "Finite numerical diagnostic over all 1106 neutral charge patterns. Nonnegative normalized quadratic charge metric family; negative floors are not exact infeasibility certificates."
+}

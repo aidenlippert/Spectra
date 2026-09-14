@@ -1,0 +1,22 @@
+{
+  "created_unix_seconds": 1789369213.996306,
+  "source_sha256": {
+    "mps_spatial.py": "35688813e92d387158a17b130770e7996bd99c285c984e9f422652ebe9f3d21e",
+    "mps_direct.py": "2547e8891fb56c0abcf2a7579408eaaf4853b8bf8742abd163dea11b7a2c639d",
+    "mps_round.py": "1dd9059010bd5fd3c021dbb72d0258d10c68d7624322dba574b69d37f9dd5b29",
+    "mps_exact.py": "834aa2e2f66c62579f4ea622f6fec3560fd0f8c0e529741ec3d35bc1328b34b0",
+    "self_consistent/fixed_guide.py": "2378de320ff0dac6ea33c310369df576a17aed5f35def676d8b6d88309b6cf97"
+  },
+  "known_H6_spacings_A": [
+    1.2,
+    1.4,
+    1.6,
+    1.73,
+    1.8
+  ],
+  "new_H6_spacing_A": "191/100",
+  "upper": "Random spatial MPS seed20260913, initial bond4, sweep bonds8/16/48, ten RL sweeps, local tolerance1e-5, number penalty4, rational denominator1e9, exact charge projection and contraction.",
+  "lower": "Fixed PH guide at chemical midpoint, five self-consistent iterations, damping1/2, coefficient denominator1e7, exact paired positive factors and L1 remainder.",
+  "selection_inputs": "Hamiltonian and physical counts only. No FCI or cubic teacher; no reference accuracy used for stopping.",
+  "required_output": "Full exact interval, even if wider than1.6mHa; no strong inherited lower exists on the new case."
+}

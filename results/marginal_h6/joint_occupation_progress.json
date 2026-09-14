@@ -1,0 +1,66 @@
+{
+  "status": "Finite joint-chart gap and energy certificates verified; global compression remains open",
+  "report": "research/marginal_joint_occupation.md",
+  "stdlib_replay_comparisons": [
+    {
+      "saved": "results/marginal_h6/coherent_joint_line/receipt.json",
+      "independent": "results/marginal_h6/coherent_joint_line/independent_replay.json",
+      "matching_fields": 22
+    },
+    {
+      "saved": "results/marginal_h6/coherent_joint_line/energy_receipt.json",
+      "independent": "results/marginal_h6/coherent_joint_line/independent_energy_replay.json",
+      "matching_fields": 25
+    },
+    {
+      "saved": "results/marginal_h6/coherent_joint_line/transfer_energy_receipt.json",
+      "independent": "results/marginal_h6/coherent_joint_line/independent_transfer_replay.json",
+      "matching_fields": 26
+    },
+    {
+      "saved": "results/marginal_h6/coherent_joint_line_structural/receipt.json",
+      "independent": "results/marginal_h6/coherent_joint_line_structural/independent_replay.json",
+      "matching_fields": 22
+    },
+    {
+      "saved": "results/marginal_h6/coherent_joint_simplex/receipt.json",
+      "independent": "results/marginal_h6/coherent_joint_simplex/independent_replay.json",
+      "matching_fields": 23
+    },
+    {
+      "saved": "results/marginal_h6/coherent_joint_simplex/energy_receipt.json",
+      "independent": "results/marginal_h6/coherent_joint_simplex/independent_energy_replay.json",
+      "matching_fields": 25
+    },
+    {
+      "saved": "results/marginal_h6/coherent_joint_simplex/transfer_energy_receipt.json",
+      "independent": "results/marginal_h6/coherent_joint_simplex/independent_transfer_replay.json",
+      "matching_fields": 26
+    }
+  ],
+  "energy_certificates": [
+    "results/marginal_h6/coherent_joint_line/energy_certificate.json",
+    "results/marginal_h6/coherent_joint_line/transfer_energy_certificate.json",
+    "results/marginal_h6/coherent_joint_simplex/energy_certificate.json",
+    "results/marginal_h6/coherent_joint_simplex/transfer_energy_certificate.json"
+  ],
+  "gap_target": "-783/125",
+  "exact_frontier_repaired": "results/marginal_h6/coherent_joint_line/frontier_joint_receipt.json",
+  "endpoint_assignment_capacity": 400,
+  "ionic_assignments": 380,
+  "simplex_chart_count": 168,
+  "simplex_tree_nodes": 335,
+  "simplex_singleton_leaves": 0,
+  "simplex_counting_scope": "400 physical endpoint assignments remain; no asymptotic collapse",
+  "factor_scope_diagnostic": "results/marginal_h6/coherent_joint_simplex/factor_scope_diagnostic.json",
+  "fixed_amplitude_signs": "results/marginal_h6/coherent_joint_simplex/amplitude_sign_receipt.json",
+  "unresolved": [
+    "Shared global elimination of weighted-row factors",
+    "Scalable valence-reference and upper/response construction",
+    "Size and molecular-family transfer",
+    "General marginal representability",
+    "Thermal/dynamic/material/synthesis modeling"
+  ],
+  "tests_passed": 327,
+  "elapsed_seconds": 275.466
+}

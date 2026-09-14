@@ -1,0 +1,1179 @@
+{
+  "h4_scs": {
+    "source_seconds": 6.298232041997835,
+    "construction_seconds": 0.9765843749919441,
+    "solve_seconds": 4.749447833004524,
+    "Gram_entries": 5088,
+    "map_nonzeros": 27456,
+    "certificate_bytes": 176459,
+    "factor_rows": 703,
+    "interval": {
+      "method": "coefficient",
+      "lower": "-3667000745834103563/1000000000000000000",
+      "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+      "width": "3291124601345516337145927993339/4166666667162821553000000000000000000",
+      "lower_float": -3.6670007458341036,
+      "upper_float": -3.6669999559641995,
+      "width_float": 7.898699042288684e-07,
+      "passes_0_0016_Ha": true,
+      "modes": 8,
+      "particles": 4,
+      "certificate": "results/certificate_scaling/spin_irrep/h4_scs/certificate.json",
+      "certificate_bytes": 176459,
+      "certificate_sha256": "78175fcc19f5113f821c0faedeb336442a6b11b0c99b845b4a4aad8eb71da664",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h4/upper.json",
+      "reference_sha256": "05b817139ca8247572969b7667657a20ae57aa4cf254fbd01f2c4cf9fb575c9c",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-3667000745834103563/1000000000000000000",
+        "lower_float": -3.6670007458341036,
+        "residual_l1": "784309103563/1000000000000000000",
+        "residual_l1_float": 7.84309103563e-07,
+        "multiplier_terms": 185,
+        "square_polynomial_terms": 777,
+        "residual_terms": 777,
+        "residual_max_degree": 6,
+        "mode_count": 8,
+        "particle_number": 4,
+        "factor_rows": 703,
+        "factor_nonzeros": 17008
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 20,
+        "hamiltonian_terms": 184,
+        "word_state_checks": 3680,
+        "contributing_word_state_pairs": 688,
+        "action_cache_states": 0,
+        "replay_seconds": 0.003920500006643124,
+        "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 0.611405375006143,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    }
+  },
+  "h4_discovery": {
+    "source_seconds": 3.2062279999954626,
+    "construction_seconds": 1.034695374997682,
+    "solve_seconds": 1.6089481670060195,
+    "Gram_entries": 5088,
+    "map_nonzeros": 27456,
+    "certificate_bytes": 183033,
+    "factor_rows": 649,
+    "interval": {
+      "method": "spectral",
+      "lower": "-73347517391248140582709/20000000000000000000000",
+      "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+      "width": "31326133187704811029789767692004327077/83333333343256431060000000000000000000000",
+      "lower_float": -3.6673758695624072,
+      "upper_float": -3.6669999559641995,
+      "width_float": 0.000375913598207695,
+      "passes_0_0016_Ha": true,
+      "modes": 8,
+      "particles": 4,
+      "certificate": "results/certificate_scaling/spin_irrep/h4_discovery/certificate.json",
+      "certificate_bytes": 183033,
+      "certificate_sha256": "f0d2f758f55aab2bcc7428f81678ac174bf76761527ee07984790a7bd81508d6",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h4/upper.json",
+      "reference_sha256": "05b817139ca8247572969b7667657a20ae57aa4cf254fbd01f2c4cf9fb575c9c",
+      "proof": "results/certificate_scaling/spin_irrep/h4_discovery_spectral/witness.json",
+      "proof_sha256": "bfdd8534695fccf2cb42d77903746e305cd175668332c5fc1b7eddc08802c2da",
+      "proof_bytes": 10356,
+      "lower_replay": {
+        "method": "fixed_N_wedge_spectral_gram_v1",
+        "lower": "-73347517391248140582709/20000000000000000000000",
+        "lower_float": -3.6673758695624072,
+        "bodies": [
+          {
+            "body": 1,
+            "wedge_dimension": 8,
+            "components": [
+              {
+                "dimension": 2,
+                "rank": 2,
+                "integer_product_work": 6,
+                "ell": "-44699598569/500000000000000",
+                "residual_gershgorin": "-236093133/62500000000000000000000",
+                "lower": "-5587449821361093133/62500000000000000000000"
+              },
+              {
+                "dimension": 2,
+                "rank": 2,
+                "integer_product_work": 6,
+                "ell": "-44699598569/500000000000000",
+                "residual_gershgorin": "-236093133/62500000000000000000000",
+                "lower": "-5587449821361093133/62500000000000000000000"
+              },
+              {
+                "dimension": 2,
+                "rank": 2,
+                "integer_product_work": 6,
+                "ell": "-63702724269/1000000000000000",
+                "residual_gershgorin": "-596875867/1000000000000000000000000",
+                "lower": "-63702724269596875867/1000000000000000000000000"
+              },
+              {
+                "dimension": 2,
+                "rank": 2,
+                "integer_product_work": 6,
+                "ell": "-63702724269/1000000000000000",
+                "residual_gershgorin": "-596875867/1000000000000000000000000",
+                "lower": "-63702724269596875867/1000000000000000000000000"
+              }
+            ],
+            "spectral_fixed_N_lower": "-5587449821361093133/15625000000000000000000",
+            "chosen_lower": "-161970838417571/500000000000000000"
+          },
+          {
+            "body": 2,
+            "wedge_dimension": 28,
+            "components": [
+              {
+                "dimension": 8,
+                "rank": 8,
+                "integer_product_work": 288,
+                "ell": "-7690157631/125000000000000",
+                "residual_gershgorin": "-1352261283/62500000000000000000000",
+                "lower": "-3845078816852261283/62500000000000000000000"
+              },
+              {
+                "dimension": 4,
+                "rank": 4,
+                "integer_product_work": 40,
+                "ell": "-19995064221/500000000000000",
+                "residual_gershgorin": "-1782815341/250000000000000000000000",
+                "lower": "-9997532112282815341/250000000000000000000000"
+              },
+              {
+                "dimension": 8,
+                "rank": 8,
+                "integer_product_work": 288,
+                "ell": "-35385614933/500000000000000",
+                "residual_gershgorin": "-37151370719/1000000000000000000000000",
+                "lower": "-70771229903151370719/1000000000000000000000000"
+              },
+              {
+                "dimension": 2,
+                "rank": 2,
+                "integer_product_work": 6,
+                "ell": "49757627/31250000000000",
+                "residual_gershgorin": "-1051638789/250000000000000000000000",
+                "lower": "398061014948361211/250000000000000000000000"
+              },
+              {
+                "dimension": 4,
+                "rank": 4,
+                "integer_product_work": 40,
+                "ell": "-799802569/20000000000000",
+                "residual_gershgorin": "-1940959621/250000000000000000000000",
+                "lower": "-9997532114440959621/250000000000000000000000"
+              },
+              {
+                "dimension": 2,
+                "rank": 2,
+                "integer_product_work": 6,
+                "ell": "1592243501/1000000000000000",
+                "residual_gershgorin": "-740554693/1000000000000000000000000",
+                "lower": "1592243500259445307/1000000000000000000000000"
+              }
+            ],
+            "spectral_fixed_N_lower": "-212313689709454112157/500000000000000000000000",
+            "chosen_lower": "-212313689709454112157/500000000000000000000000"
+          },
+          {
+            "body": 3,
+            "wedge_dimension": 56,
+            "components": [
+              {
+                "dimension": 12,
+                "rank": 12,
+                "integer_product_work": 936,
+                "ell": "-17805173227/1000000000000000",
+                "residual_gershgorin": "-20665362793/1000000000000000000000000",
+                "lower": "-17805173247665362793/1000000000000000000000000"
+              },
+              {
+                "dimension": 12,
+                "rank": 12,
+                "integer_product_work": 936,
+                "ell": "-890258659/50000000000000",
+                "residual_gershgorin": "-11603422243/500000000000000000000000",
+                "lower": "-8902586601603422243/500000000000000000000000"
+              },
+              {
+                "dimension": 12,
+                "rank": 12,
+                "integer_product_work": 936,
+                "ell": "-317370937/12500000000000",
+                "residual_gershgorin": "-3121153473/125000000000000000000000",
+                "lower": "-3173709373121153473/125000000000000000000000"
+              },
+              {
+                "dimension": 12,
+                "rank": 12,
+                "integer_product_work": 936,
+                "ell": "-25389674847/1000000000000000",
+                "residual_gershgorin": "-16518336783/500000000000000000000000",
+                "lower": "-12694837440018336783/500000000000000000000000"
+              },
+              {
+                "dimension": 2,
+                "rank": 2,
+                "integer_product_work": 6,
+                "ell": "-3083357629/1000000000000000",
+                "residual_gershgorin": "-255085809/250000000000000000000000",
+                "lower": "-770839407505085809/250000000000000000000000"
+              },
+              {
+                "dimension": 2,
+                "rank": 2,
+                "integer_product_work": 6,
+                "ell": "-1611154847/200000000000000",
+                "residual_gershgorin": "-1028472097/250000000000000000000000",
+                "lower": "-2013943559778472097/250000000000000000000000"
+              },
+              {
+                "dimension": 2,
+                "rank": 2,
+                "integer_product_work": 6,
+                "ell": "-770839159/250000000000000",
+                "residual_gershgorin": "-1495154909/1000000000000000000000000",
+                "lower": "-3083356637495154909/1000000000000000000000000"
+              },
+              {
+                "dimension": 2,
+                "rank": 2,
+                "integer_product_work": 6,
+                "ell": "-8055774227/1000000000000000",
+                "residual_gershgorin": "-713028123/1000000000000000000000000",
+                "lower": "-8055774227713028123/1000000000000000000000000"
+              }
+            ],
+            "spectral_fixed_N_lower": "-3173709373121153473/31250000000000000000000",
+            "chosen_lower": "-3173709373121153473/31250000000000000000000"
+          }
+        ],
+        "old_wedge_lower": "-916883201665571029/250000000000000000",
+        "many_body_states_enumerated": 0,
+        "scope": "Exact residual bound only; full original SOS discovery cost remains."
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 20,
+        "hamiltonian_terms": 184,
+        "word_state_checks": 3680,
+        "contributing_word_state_pairs": 688,
+        "action_cache_states": 0,
+        "replay_seconds": 0.003897415997926146,
+        "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 0.5059614579949994,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    }
+  },
+  "h6_scs": {
+    "source_seconds": 209.35152678599843,
+    "construction_seconds": 17.321355608000886,
+    "solve_seconds": 180.5819293309978,
+    "Gram_entries": 56996,
+    "map_nonzeros": 391588,
+    "certificate_bytes": 1034974,
+    "factor_rows": 1581,
+    "interval": {
+      "method": "coefficient",
+      "lower": "-791640842137087907/125000000000000000",
+      "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width": "170277159259301641628343822266261/2500000000034969902875000000000000000",
+      "lower_float": -6.333126737096703,
+      "upper_float": -6.333058626233001,
+      "width_float": 6.811086370276793e-05,
+      "passes_0_0016_Ha": true,
+      "modes": 12,
+      "particles": 6,
+      "certificate": "results/certificate_scaling/spin_irrep/h6_scs/certificate.json",
+      "certificate_bytes": 1034974,
+      "certificate_sha256": "4e8cdc793c059b34e162c60b67e63414f02db950bacce87e79180f5192a42d2b",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h6/upper.json",
+      "reference_sha256": "0cf0b58228f1861bf80738bbab945ee18d60c2e7b3cc27ce0c418c13ff6330cc",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-791640842137087907/125000000000000000",
+        "lower_float": -6.333126737096703,
+        "residual_l1": "6387327212907/125000000000000000",
+        "residual_l1_float": 5.1098617703256e-05,
+        "multiplier_terms": 919,
+        "square_polynomial_terms": 9419,
+        "residual_terms": 9419,
+        "residual_max_degree": 6,
+        "mode_count": 12,
+        "particle_number": 6,
+        "factor_rows": 1581,
+        "factor_nonzeros": 135804
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 200,
+        "hamiltonian_terms": 918,
+        "word_state_checks": 183600,
+        "contributing_word_state_pairs": 23424,
+        "action_cache_states": 0,
+        "replay_seconds": 0.04757199999585282,
+        "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 6.9057035419973545,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    }
+  },
+  "h6_clarabel": {
+    "source_seconds": 185.01983357800054,
+    "construction_seconds": 17.21185464500013,
+    "solve_seconds": 156.91550988100062,
+    "Gram_entries": 56996,
+    "map_nonzeros": 391588,
+    "certificate_bytes": 923963,
+    "factor_rows": 770,
+    "interval": {
+      "method": "coefficient",
+      "lower": "-1690364073704714527/125000000000000000",
+      "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width": "17974634908763217814597036638987582521/2500000000034969902875000000000000000",
+      "lower_float": -13.522912589637716,
+      "upper_float": -6.333058626233001,
+      "width_float": 7.189853963404715,
+      "passes_0_0016_Ha": false,
+      "modes": 12,
+      "particles": 6,
+      "certificate": "results/certificate_scaling/spin_irrep/h6_clarabel/certificate.json",
+      "certificate_bytes": 923963,
+      "certificate_sha256": "a6a66c53b40bc24a024e068dba4a65e407c68be213a30c0e954cfc9e60dd0e89",
+      "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h6/upper.json",
+      "reference_sha256": "0cf0b58228f1861bf80738bbab945ee18d60c2e7b3cc27ce0c418c13ff6330cc",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-1690364073704714527/125000000000000000",
+        "lower_float": -13.522912589637716,
+        "residual_l1": "1008390409889089527/125000000000000000",
+        "residual_l1_float": 8.067123279112716,
+        "multiplier_terms": 919,
+        "square_polynomial_terms": 9419,
+        "residual_terms": 9419,
+        "residual_max_degree": 6,
+        "mode_count": 12,
+        "particle_number": 6,
+        "factor_rows": 770,
+        "factor_nonzeros": 87414
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 200,
+        "hamiltonian_terms": 918,
+        "word_state_checks": 183600,
+        "contributing_word_state_pairs": 23424,
+        "action_cache_states": 0,
+        "replay_seconds": 0.036279125008150004,
+        "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 6.017714209010592,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    }
+  },
+  "live_jobs": [
+    {
+      "host": "local",
+      "task": "independent H10 coefficient interval",
+      "session_id": 33934
+    },
+    {
+      "host": "129.159.32.200",
+      "task": "H8 twirl spectral proof",
+      "session_id": 1012
+    }
+  ],
+  "remote_root": "/home/ubuntu/spectra-spin-discovery-v2/results/spin_runs/",
+  "source_sha256": "7b45026d6fe407fa00e9cef636fa317e1bc9a8658d249654d26d4ec5057fcf10",
+  "scope": "Exact finite benchmark results; no general scalable accuracy theorem.",
+  "h8_scs": {
+    "source_receipt": {
+      "modes": 16,
+      "particles": 8,
+      "spin_parity_masks": [
+        13107,
+        52428
+      ],
+      "decompositions": [
+        {
+          "family": "pair-",
+          "original_dimension": 120,
+          "highest_weight_dimension": 64,
+          "descendant_dimension": 120,
+          "local_pattern_count": 36,
+          "max_local_dimension": 4,
+          "ladder_word_letter_visits": 1184,
+          "invariant_Gram_entries": 1056,
+          "seconds": 0.019117236999591114,
+          "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+        },
+        {
+          "family": "pair+",
+          "original_dimension": 120,
+          "highest_weight_dimension": 64,
+          "descendant_dimension": 120,
+          "local_pattern_count": 36,
+          "max_local_dimension": 4,
+          "ladder_word_letter_visits": 1184,
+          "invariant_Gram_entries": 1056,
+          "seconds": 0.01729213900034665,
+          "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+        },
+        {
+          "family": "particle-hole",
+          "original_dimension": 256,
+          "highest_weight_dimension": 128,
+          "descendant_dimension": 256,
+          "local_pattern_count": 64,
+          "max_local_dimension": 4,
+          "ladder_word_letter_visits": 2560,
+          "invariant_Gram_entries": 4096,
+          "seconds": 0.04936240400274983,
+          "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+        },
+        {
+          "family": "local-triples-",
+          "original_dimension": 112,
+          "highest_weight_dimension": 48,
+          "descendant_dimension": 112,
+          "local_pattern_count": 32,
+          "max_local_dimension": 8,
+          "ladder_word_letter_visits": 1704,
+          "invariant_Gram_entries": 832,
+          "seconds": 0.02256285899784416,
+          "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+        },
+        {
+          "family": "local-triples+",
+          "original_dimension": 112,
+          "highest_weight_dimension": 48,
+          "descendant_dimension": 112,
+          "local_pattern_count": 32,
+          "max_local_dimension": 8,
+          "ladder_word_letter_visits": 1704,
+          "invariant_Gram_entries": 832,
+          "seconds": 0.024142882000887766,
+          "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+        },
+        {
+          "family": "mixed-",
+          "original_dimension": 1920,
+          "highest_weight_dimension": 736,
+          "descendant_dimension": 1920,
+          "local_pattern_count": 288,
+          "max_local_dimension": 8,
+          "ladder_word_letter_visits": 33120,
+          "invariant_Gram_entries": 156160,
+          "seconds": 0.5016217050033447,
+          "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+        },
+        {
+          "family": "mixed+",
+          "original_dimension": 1920,
+          "highest_weight_dimension": 736,
+          "descendant_dimension": 1920,
+          "local_pattern_count": 288,
+          "max_local_dimension": 8,
+          "ladder_word_letter_visits": 33120,
+          "invariant_Gram_entries": 156160,
+          "seconds": 0.4928262809989974,
+          "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+        }
+      ],
+      "Gram_dimensions": [
+        20,
+        16,
+        12,
+        16,
+        20,
+        16,
+        12,
+        16,
+        32,
+        32,
+        32,
+        32,
+        20,
+        20,
+        4,
+        4,
+        20,
+        20,
+        4,
+        4,
+        256,
+        256,
+        112,
+        112,
+        256,
+        256,
+        112,
+        112
+      ],
+      "Gram_entries": 320192,
+      "coefficient_rows": 56225,
+      "gram_map_nonzeros": 2461760,
+      "polynomial_word_pair_products": 1450960,
+      "ideal_variables": 1525,
+      "basis_seconds": 1.2440320170026098,
+      "construction_seconds": 147.97287200100254,
+      "solver": "SCS",
+      "solver_seconds_budget": 300.0,
+      "source_factors_used": false,
+      "source_upper_used": false,
+      "scope": "Invariant SOS in full chosen mixed-cubic word span. Original H retained; full exact residual is charged. No fixed-accuracy scaling theorem.",
+      "status": "optimal_inaccurate",
+      "solver_options": {
+        "eps": 1e-08,
+        "max_iters": 150000,
+        "time_limit_secs": 300.0
+      },
+      "solver_iterations": 2500,
+      "solver_reported_seconds": 301.747268836,
+      "numeric_lower": -9.256392809187226,
+      "raw_b": -9.254987298658548,
+      "negative_eigenvalue_mass": 0.08760908558886746,
+      "solve_seconds": 304.66246868300004,
+      "export_seconds": 102.64403487199888,
+      "wall_seconds": 555.2793758370026,
+      "exact": {
+        "lower": "-15532009073161412171/1000000000000000000",
+        "lower_float": -15.532009073161412,
+        "residual_l1": "6277021774502412171/1000000000000000000",
+        "residual_l1_float": 6.277021774502412,
+        "multiplier_terms": 2913,
+        "square_polynomial_terms": 56225,
+        "residual_terms": 56225,
+        "residual_max_degree": 6,
+        "mode_count": 16,
+        "particle_number": 8,
+        "factor_rows": 3532,
+        "factor_nonzeros": 753824
+      },
+      "certificate_bytes": 6069401
+    },
+    "coefficient_interval": {
+      "method": "coefficient",
+      "lower": "-15532009073161412171/1000000000000000000",
+      "upper": "-462765221479404761245032793227251/50000000002683070502000000000000",
+      "width": "156917616110169661342981475826711439921/25000000001341535251000000000000000000",
+      "lower_float": -15.532009073161412,
+      "upper_float": -9.255304429091442,
+      "width_float": 6.276704644069969,
+      "passes_0_0016_Ha": false,
+      "modes": 16,
+      "particles": 8,
+      "certificate": "results/certificate_scaling/spin_irrep/h8_scs/certificate.json",
+      "certificate_bytes": 6069401,
+      "certificate_sha256": "34ead5365879bcb7f2ec02219efb8124235c7b52ecabfaa01e199ef49f663aad",
+      "reference": "results/certificate_scaling/cubic_precision/reference_h8_full_checked/h8/upper.json",
+      "reference_sha256": "884b960381502a8ccd4d1c17f1ccf8950d3f068f781e82b23913f7119f7ad4f6",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "lower_replay": {
+        "lower": "-15532009073161412171/1000000000000000000",
+        "lower_float": -15.532009073161412,
+        "residual_l1": "6277021774502412171/1000000000000000000",
+        "residual_l1_float": 6.277021774502412,
+        "multiplier_terms": 2913,
+        "square_polynomial_terms": 56225,
+        "residual_terms": 56225,
+        "residual_max_degree": 6,
+        "mode_count": 16,
+        "particle_number": 8,
+        "factor_rows": 3532,
+        "factor_nonzeros": 753824
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 2468,
+        "hamiltonian_terms": 2912,
+        "word_state_checks": 7186816,
+        "contributing_word_state_pairs": 783920,
+        "action_cache_states": 0,
+        "replay_seconds": 0.7802397499908693,
+        "upper": "-462765221479404761245032793227251/50000000002683070502000000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 77.05682174999674,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    },
+    "spectral_interval": {
+      "method": "spectral",
+      "lower": "-1244348108943301303912067/125000000000000000000000",
+      "upper": "-462765221479404761245032793227251/50000000002683070502000000000000",
+      "width": "2185876382789071872649752482809114584773817/3125000000167691906375000000000000000000000",
+      "lower_float": -9.95478487154641,
+      "upper_float": -9.255304429091442,
+      "width_float": 0.6994804424549679,
+      "passes_0_0016_Ha": false,
+      "modes": 16,
+      "particles": 8,
+      "certificate": "results/certificate_scaling/spin_irrep/h8_scs/certificate.json",
+      "certificate_bytes": 6069401,
+      "certificate_sha256": "34ead5365879bcb7f2ec02219efb8124235c7b52ecabfaa01e199ef49f663aad",
+      "reference": "results/certificate_scaling/cubic_precision/reference_h8_full_checked/h8/upper.json",
+      "reference_sha256": "884b960381502a8ccd4d1c17f1ccf8950d3f068f781e82b23913f7119f7ad4f6",
+      "proof": "results/certificate_scaling/spin_irrep/h8_scs_spectral/witness.json",
+      "proof_sha256": "e87f83f213be28f3254948d54b86b56b4f43ae46d8c3431c650727f541327793",
+      "proof_bytes": 644070,
+      "lower_replay": {
+        "method": "fixed_N_wedge_spectral_gram_v1",
+        "lower": "-1244348108943301303912067/125000000000000000000000",
+        "lower_float": -9.95478487154641,
+        "bodies": [
+          {
+            "body": 1,
+            "wedge_dimension": 16,
+            "components": [
+              {
+                "dimension": 4,
+                "rank": 4,
+                "integer_product_work": 40,
+                "ell": "-14487167117653/1000000000000000",
+                "residual_gershgorin": "-17153478687/125000000000000000000000",
+                "lower": "-1810895889723778478687/125000000000000000000000"
+              },
+              {
+                "dimension": 4,
+                "rank": 4,
+                "integer_product_work": 40,
+                "ell": "-14188393629287/1000000000000000",
+                "residual_gershgorin": "-31124321357/250000000000000000000000",
+                "lower": "-3547098407352874321357/250000000000000000000000"
+              },
+              {
+                "dimension": 4,
+                "rank": 4,
+                "integer_product_work": 40,
+                "ell": "-17429515706843/1000000000000000",
+                "residual_gershgorin": "-9150539421/62500000000000000000000",
+                "lower": "-1089344731686838039421/62500000000000000000000"
+              },
+              {
+                "dimension": 4,
+                "rank": 4,
+                "integer_product_work": 40,
+                "ell": "-3156721581341/200000000000000",
+                "residual_gershgorin": "-75536691651/500000000000000000000000",
+                "lower": "-7891803953428036691651/500000000000000000000000"
+              }
+            ],
+            "spectral_fixed_N_lower": "-1089344731686838039421/7812500000000000000000",
+            "chosen_lower": "-1089344731686838039421/7812500000000000000000"
+          },
+          {
+            "body": 2,
+            "wedge_dimension": 120,
+            "components": [
+              {
+                "dimension": 32,
+                "rank": 32,
+                "integer_product_work": 16896,
+                "ell": "-7088478702503/500000000000000",
+                "residual_gershgorin": "-785230598239/500000000000000000000000",
+                "lower": "-7088478703288230598239/500000000000000000000000"
+              },
+              {
+                "dimension": 16,
+                "rank": 16,
+                "integer_product_work": 2176,
+                "ell": "-887544282567/1000000000000000",
+                "residual_gershgorin": "-37161630363/100000000000000000000000",
+                "lower": "-88754428293861630363/100000000000000000000000"
+              },
+              {
+                "dimension": 32,
+                "rank": 32,
+                "integer_product_work": 16896,
+                "ell": "-2629479992053/200000000000000",
+                "residual_gershgorin": "-290126696009/200000000000000000000000",
+                "lower": "-2629479992343126696009/200000000000000000000000"
+              },
+              {
+                "dimension": 12,
+                "rank": 12,
+                "integer_product_work": 936,
+                "ell": "-83937948601/250000000000000",
+                "residual_gershgorin": "-227760395941/1000000000000000000000000",
+                "lower": "-335751794631760395941/1000000000000000000000000"
+              },
+              {
+                "dimension": 16,
+                "rank": 16,
+                "integer_product_work": 2176,
+                "ell": "-552433894039/500000000000000",
+                "residual_gershgorin": "-393178824961/1000000000000000000000000",
+                "lower": "-1104867788471178824961/1000000000000000000000000"
+              },
+              {
+                "dimension": 12,
+                "rank": 12,
+                "integer_product_work": 936,
+                "ell": "-101643320587/250000000000000",
+                "residual_gershgorin": "-232655607109/1000000000000000000000000",
+                "lower": "-406573282580655607109/1000000000000000000000000"
+              }
+            ],
+            "spectral_fixed_N_lower": "-49619350923017614187673/125000000000000000000000",
+            "chosen_lower": "-49619350923017614187673/125000000000000000000000"
+          },
+          {
+            "body": 3,
+            "wedge_dimension": 560,
+            "components": [
+              {
+                "dimension": 112,
+                "rank": 112,
+                "integer_product_work": 708736,
+                "ell": "-2793972125567/1000000000000000",
+                "residual_gershgorin": "-2315459069289/1000000000000000000000000",
+                "lower": "-2793972127882459069289/1000000000000000000000000"
+              },
+              {
+                "dimension": 112,
+                "rank": 112,
+                "integer_product_work": 708736,
+                "ell": "-1397595840403/500000000000000",
+                "residual_gershgorin": "-1221333149547/500000000000000000000000",
+                "lower": "-1397595841624333149547/500000000000000000000000"
+              },
+              {
+                "dimension": 112,
+                "rank": 112,
+                "integer_product_work": 708736,
+                "ell": "-311575207819/125000000000000",
+                "residual_gershgorin": "-1097382427507/500000000000000000000000",
+                "lower": "-1246300832373382427507/500000000000000000000000"
+              },
+              {
+                "dimension": 112,
+                "rank": 112,
+                "integer_product_work": 708736,
+                "ell": "-2495154352473/1000000000000000",
+                "residual_gershgorin": "-143681714163/62500000000000000000000",
+                "lower": "-155947147173244214163/62500000000000000000000"
+              },
+              {
+                "dimension": 28,
+                "rank": 28,
+                "integer_product_work": 11368,
+                "ell": "-185674792343/125000000000000",
+                "residual_gershgorin": "-201842893619/500000000000000000000000",
+                "lower": "-742699169573842893619/500000000000000000000000"
+              },
+              {
+                "dimension": 28,
+                "rank": 28,
+                "integer_product_work": 11368,
+                "ell": "-1442222056553/1000000000000000",
+                "residual_gershgorin": "-412740112827/1000000000000000000000000",
+                "lower": "-1442222056965740112827/1000000000000000000000000"
+              },
+              {
+                "dimension": 28,
+                "rank": 28,
+                "integer_product_work": 11368,
+                "ell": "-93806593699/62500000000000",
+                "residual_gershgorin": "-212256478299/500000000000000000000000",
+                "lower": "-750452749804256478299/500000000000000000000000"
+              },
+              {
+                "dimension": 28,
+                "rank": 28,
+                "integer_product_work": 11368,
+                "ell": "-58281209841/40000000000000",
+                "residual_gershgorin": "-368826936919/1000000000000000000000000",
+                "lower": "-1457030246393826936919/1000000000000000000000000"
+              }
+            ],
+            "spectral_fixed_N_lower": "-9783170891370332046829/62500000000000000000000",
+            "chosen_lower": "-9783170891370332046829/62500000000000000000000"
+          }
+        ],
+        "old_wedge_lower": "-1368450536421335491/125000000000000000",
+        "many_body_states_enumerated": 0,
+        "scope": "Exact residual bound only; full original SOS discovery cost remains."
+      },
+      "upper_replay": {
+        "method": "bounded_streaming_integer_reference_upper_v1",
+        "witness_states": 2468,
+        "hamiltonian_terms": 2912,
+        "word_state_checks": 7186816,
+        "contributing_word_state_pairs": 783920,
+        "action_cache_states": 0,
+        "replay_seconds": 1.0033235000009881,
+        "upper": "-462765221479404761245032793227251/50000000002683070502000000000000",
+        "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+      },
+      "wall_seconds": 93.8016369590041,
+      "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+    }
+  },
+  "focused_tests_passed": 58,
+  "next_source_sha256": "8058408841be83b73ad9383bbc9fe4f155de8be33723152e40aa0bff58f063ac",
+  "column_builder_benchmark": {
+    "system": "H6",
+    "groups": 28,
+    "exact_all_columns_indices_counts_equal": true,
+    "cold_caches_each_run": true,
+    "runs": [
+      {
+        "builder": "reference",
+        "seconds": 16.02388195799722,
+        "word_product_cache": {
+          "hits": 447335,
+          "misses": 118297,
+          "maxsize": 100000,
+          "currsize": 100000
+        },
+        "adjoint_cache": {
+          "hits": 0,
+          "misses": 0,
+          "maxsize": 100000,
+          "currsize": 0
+        },
+        "columns": 28894,
+        "word_pairs": 246590
+      },
+      {
+        "builder": "cached_canonical_adjoint",
+        "seconds": 9.452409541001543,
+        "word_product_cache": {
+          "hits": 139560,
+          "misses": 107030,
+          "maxsize": 100000,
+          "currsize": 100000
+        },
+        "adjoint_cache": {
+          "hits": 579167,
+          "misses": 11323,
+          "maxsize": 100000,
+          "currsize": 11323
+        },
+        "columns": 28894,
+        "word_pairs": 246590
+      }
+    ],
+    "scope": "Exact symbolic column construction only; no solver speed or accuracy claim."
+  },
+  "h10_scs_source": {
+    "modes": 20,
+    "particles": 10,
+    "spin_parity_masks": [
+      209715,
+      838860
+    ],
+    "decompositions": [
+      {
+        "family": "pair-",
+        "original_dimension": 190,
+        "highest_weight_dimension": 100,
+        "descendant_dimension": 190,
+        "local_pattern_count": 55,
+        "max_local_dimension": 4,
+        "ladder_word_letter_visits": 1880,
+        "invariant_Gram_entries": 2550,
+        "seconds": 0.030869339003402274,
+        "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+      },
+      {
+        "family": "pair+",
+        "original_dimension": 190,
+        "highest_weight_dimension": 100,
+        "descendant_dimension": 190,
+        "local_pattern_count": 55,
+        "max_local_dimension": 4,
+        "ladder_word_letter_visits": 1880,
+        "invariant_Gram_entries": 2550,
+        "seconds": 0.027434838000772288,
+        "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+      },
+      {
+        "family": "particle-hole",
+        "original_dimension": 400,
+        "highest_weight_dimension": 200,
+        "descendant_dimension": 400,
+        "local_pattern_count": 100,
+        "max_local_dimension": 4,
+        "ladder_word_letter_visits": 4000,
+        "invariant_Gram_entries": 10000,
+        "seconds": 0.058194261000608094,
+        "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+      },
+      {
+        "family": "local-triples-",
+        "original_dimension": 240,
+        "highest_weight_dimension": 100,
+        "descendant_dimension": 240,
+        "local_pattern_count": 60,
+        "max_local_dimension": 8,
+        "ladder_word_letter_visits": 3780,
+        "invariant_Gram_entries": 3400,
+        "seconds": 0.050935919000039576,
+        "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+      },
+      {
+        "family": "local-triples+",
+        "original_dimension": 240,
+        "highest_weight_dimension": 100,
+        "descendant_dimension": 240,
+        "local_pattern_count": 60,
+        "max_local_dimension": 8,
+        "ladder_word_letter_visits": 3780,
+        "invariant_Gram_entries": 3400,
+        "seconds": 0.055092170001444174,
+        "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+      },
+      {
+        "family": "mixed-",
+        "original_dimension": 3800,
+        "highest_weight_dimension": 1450,
+        "descendant_dimension": 3800,
+        "local_pattern_count": 550,
+        "max_local_dimension": 8,
+        "ladder_word_letter_visits": 65850,
+        "invariant_Gram_entries": 601250,
+        "seconds": 1.029487052001059,
+        "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+      },
+      {
+        "family": "mixed+",
+        "original_dimension": 3800,
+        "highest_weight_dimension": 1450,
+        "descendant_dimension": 3800,
+        "local_pattern_count": 550,
+        "max_local_dimension": 8,
+        "ladder_word_letter_visits": 65850,
+        "invariant_Gram_entries": 601250,
+        "seconds": 0.9415104610015987,
+        "scope": "Exact word-span decomposition and invariant Gram dimensions; no accuracy or solver-speed guarantee."
+      }
+    ],
+    "Gram_dimensions": [
+      30,
+      25,
+      20,
+      25,
+      30,
+      25,
+      20,
+      25,
+      50,
+      50,
+      50,
+      50,
+      40,
+      40,
+      10,
+      10,
+      40,
+      40,
+      10,
+      10,
+      500,
+      500,
+      225,
+      225,
+      500,
+      500,
+      225,
+      225
+    ],
+    "Gram_entries": 1224400,
+    "coefficient_rows": 224051,
+    "gram_map_nonzeros": 10040532,
+    "polynomial_word_pair_products": 5707710,
+    "ideal_variables": 3681,
+    "basis_seconds": 2.5043873649992747,
+    "construction_seconds": 681.689878358,
+    "solver": "SCS",
+    "solver_seconds_budget": 600.0,
+    "source_factors_used": false,
+    "source_upper_used": false,
+    "scope": "Invariant SOS in full chosen mixed-cubic word span. Original H retained; full exact residual is charged. No fixed-accuracy scaling theorem.",
+    "status": "optimal_inaccurate",
+    "solver_options": {
+      "eps": 1e-08,
+      "max_iters": 150000,
+      "time_limit_secs": 600.0
+    },
+    "solver_iterations": 850,
+    "solver_reported_seconds": 611.9787585419999,
+    "numeric_lower": -12.405524391580576,
+    "raw_b": -12.372490402588593,
+    "negative_eigenvalue_mass": 0.2996960198952101,
+    "solve_seconds": 627.0968188839979,
+    "export_seconds": 435.5219948800004,
+    "wall_seconds": 1744.308692614999,
+    "exact": {
+      "lower": "-18620829220913482937/500000000000000000",
+      "lower_float": -37.241658441826964,
+      "residual_l1": "12434584019618982937/500000000000000000",
+      "residual_l1_float": 24.869168039237966,
+      "multiplier_terms": 7151,
+      "square_polynomial_terms": 224051,
+      "residual_terms": 224051,
+      "residual_max_degree": 6,
+      "mode_count": 20,
+      "particle_number": 10,
+      "factor_rows": 6783,
+      "factor_nonzeros": 2872066
+    },
+    "certificate_bytes": 22613077
+  },
+  "h10_export_guard": {
+    "outcome": "completed",
+    "whole_process_cap_seconds": 2100,
+    "outer_timeout_exit_code": 124,
+    "note": "Suspended original timeout returned124 when resumed after child completion; complete source receipt and independent replay determine artifact validity."
+  },
+  "twirl_h4": {
+    "method": "coefficient",
+    "lower": "-3667000207960652627/1000000000000000000",
+    "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+    "width": "1049985222178647796235059169731/4166666667162821553000000000000000000",
+    "lower_float": -3.6670002079606525,
+    "upper_float": -3.6669999559641995,
+    "width_float": 2.5199645329286845e-07,
+    "passes_0_0016_Ha": true,
+    "modes": 8,
+    "particles": 4,
+    "certificate": "results/certificate_scaling/spin_irrep/h4_twirl_control/certificate.json",
+    "certificate_bytes": 190641,
+    "certificate_sha256": "cef53ba4c7c236e57409eab9fbbb34e2e7d1bc0a729862f365156164ab4c8a3d",
+    "reference": "results/certificate_scaling/active_space_ladder_references_aligned/h4/upper.json",
+    "reference_sha256": "05b817139ca8247572969b7667657a20ae57aa4cf254fbd01f2c4cf9fb575c9c",
+    "proof": null,
+    "proof_sha256": null,
+    "proof_bytes": 0,
+    "lower_replay": {
+      "lower": "-3667000207960652627/1000000000000000000",
+      "lower_float": -3.6670002079606525,
+      "residual_l1": "250253652627/1000000000000000000",
+      "residual_l1_float": 2.50253652627e-07,
+      "multiplier_terms": 185,
+      "square_polynomial_terms": 777,
+      "residual_terms": 777,
+      "residual_max_degree": 6,
+      "mode_count": 8,
+      "particle_number": 4,
+      "factor_rows": 798,
+      "factor_nonzeros": 17440
+    },
+    "upper_replay": {
+      "method": "bounded_streaming_integer_reference_upper_v1",
+      "witness_states": 20,
+      "hamiltonian_terms": 184,
+      "word_state_checks": 3680,
+      "contributing_word_state_pairs": 688,
+      "action_cache_states": 0,
+      "replay_seconds": 0.0033623749914113432,
+      "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+      "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+    },
+    "wall_seconds": 0.4737713749927934,
+    "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+  },
+  "twirl_h8_source": {
+    "source_certificate": "results/lambda_runs/cubic_precision/downloaded/h8_scs_quotient_conditioned/certificate.json",
+    "source_sha256": "3d443ce704814bf75504ee142e91b5beafdab8ef7a351f242b63cf046cbd4001",
+    "source_certificate_used": true,
+    "scope": "Feasibility control transformed from an existing SOS. This does not discover a certificate from H alone; original source discovery and independent upper costs remain.",
+    "modes": 16,
+    "particles": 8,
+    "source_blocks": 50,
+    "block_families": [
+      "pair-",
+      "pair-",
+      "pair-",
+      "pair-",
+      "pair-",
+      "pair-",
+      "pair+",
+      "pair+",
+      "pair+",
+      "pair+",
+      "pair+",
+      "pair+",
+      "particle-hole",
+      "particle-hole",
+      "particle-hole",
+      "particle-hole",
+      "particle-hole",
+      "particle-hole",
+      "local-triples-",
+      "local-triples-",
+      "local-triples-",
+      "local-triples-",
+      "local-triples-",
+      "local-triples-",
+      "local-triples-",
+      "local-triples-",
+      "local-triples+",
+      "local-triples+",
+      "local-triples+",
+      "local-triples+",
+      "local-triples+",
+      "local-triples+",
+      "local-triples+",
+      "local-triples+",
+      "mixed-",
+      "mixed-",
+      "mixed-",
+      "mixed-",
+      "mixed-",
+      "mixed-",
+      "mixed-",
+      "mixed-",
+      "mixed+",
+      "mixed+",
+      "mixed+",
+      "mixed+",
+      "mixed+",
+      "mixed+",
+      "mixed+",
+      "mixed+"
+    ],
+    "Gram_entries": 320192,
+    "coordinate_nonzero_updates": 10368,
+    "max_local_coordinate_dimension": 8,
+    "transform_seconds": 2.571653786999377,
+    "export_seconds": 11.631358591999742,
+    "exact_replay_seconds": 92.07130466200033,
+    "wall_seconds": 106.2743175229989,
+    "negative_eigenvalue_mass": 1.3308275424991633e-17,
+    "certificate_bytes": 7403714,
+    "exact": {
+      "lower": "-27774834658923548989/3000000000000000000",
+      "lower_float": -9.258278219641182,
+      "residual_l1": "7998436506548989/3000000000000000000",
+      "residual_l1_float": 0.0026661455021829965,
+      "multiplier_terms": 2913,
+      "square_polynomial_terms": 56225,
+      "residual_terms": 56225,
+      "residual_max_degree": 6,
+      "mode_count": 16,
+      "particle_number": 8,
+      "factor_rows": 6255,
+      "factor_nonzeros": 1252050
+    }
+  }
+}

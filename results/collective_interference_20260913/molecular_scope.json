@@ -1,0 +1,718 @@
+{
+  "molecular": [
+    {
+      "fixture": "results/certificate_scaling/active_space_ladder/h4/fixture.json",
+      "fixture_sha256": "8e64505deb4cc06a87f75e669b0f3073d15ebca72daa6d086e06eeea0b0f5120",
+      "modes": 8,
+      "particles": 4,
+      "active_subsets_examined": 70,
+      "best_active_modes": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "collective_bath_density_coefficient": "65939816409/250000000000",
+      "collective_active_bath_density_coefficient": "19516232099/50000000000",
+      "residual_paired_norm_bound_Ha": "34475569023/6250000000",
+      "residual_raw_l1_Ha": "2637693897099/250000000000",
+      "conservative_interval_widening_2eta_Ha": "34475569023/3125000000",
+      "widening_over_1_6mHa_budget": "34475569023/5000000",
+      "residual_quartic_terms": 145,
+      "offdiagonal_residual_terms": 126,
+      "offdiagonal_paired_norm_bound_Ha": "1258671136179/250000000000",
+      "selected_residual_exact_witness": {
+        "bra": 225,
+        "ket": 105,
+        "matrix_element": "-228033637909/1000000000000",
+        "operator_norm_lower_bound_Ha": "228033637909/1000000000000",
+        "discovery_full_sector_dimension": 70,
+        "discovery_word_state_actions": 8820,
+        "scope": "One exact matrix element of the selected residual, invariant under adding a scalar. This is not an energy error or a no-go for other patterns/collective certificates."
+      },
+      "one_leg_rank": {
+        "rank": 8,
+        "rows": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "columns": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            6
+          ],
+          [
+            0,
+            0,
+            7
+          ]
+        ],
+        "minor_determinant": "-46170600215423231703004789043801334148738106417199451041617337806893071701619303455919858921/250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "minor": [
+          [
+            "-419767704579/1000000000000",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "419767704579/1000000000000",
+            "0",
+            "0",
+            "0",
+            "-17407861749/250000000000",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "13322100293/62500000000",
+            "0",
+            "0",
+            "0",
+            "-34708825077/1000000000000",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "371568577159/1000000000000",
+            "0",
+            "0",
+            "0",
+            "-72110879981/1000000000000"
+          ],
+          [
+            "17407861749/250000000000",
+            "0",
+            "0",
+            "0",
+            "65939816409/250000000000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-17407861749/250000000000",
+            "0",
+            "0",
+            "0",
+            "376830703457/1000000000000",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-34708825077/1000000000000",
+            "0",
+            "0",
+            "0",
+            "16507715551/50000000000",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "-72110879981/1000000000000",
+            "0",
+            "0",
+            "0",
+            "54658867367/125000000000"
+          ]
+        ],
+        "scope": "Full-Fock quartic tensor support under orbital rotations only; no fixed-N quotient, collective elimination, approximation, or no-go for general compression."
+      },
+      "wall_seconds": 0.2565701249995982,
+      "scope": "Best sufficient coefficient-norm budget over four existing orbitals and two uniform density coefficients. Not a computed energy interval, not an optimal spectral-norm error, no orbital optimization; arbitrary quadratic terms were retained without claiming they fit the two-band grammar."
+    },
+    {
+      "fixture": "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+      "fixture_sha256": "ea50a4ab19a353bc89691bb344fcf8d610f74e1c2c76bf07c6869be2b24dbec8",
+      "modes": 12,
+      "particles": 6,
+      "active_subsets_examined": 495,
+      "best_active_modes": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "collective_bath_density_coefficient": "239782467591/1000000000000",
+      "collective_active_bath_density_coefficient": "3065958169/10000000000",
+      "residual_paired_norm_bound_Ha": "20445444093197/1000000000000",
+      "residual_raw_l1_Ha": "38339508583117/1000000000000",
+      "conservative_interval_widening_2eta_Ha": "20445444093197/500000000000",
+      "widening_over_1_6mHa_budget": "20445444093197/800000000",
+      "residual_quartic_terms": 860,
+      "offdiagonal_residual_terms": 802,
+      "offdiagonal_paired_norm_bound_Ha": "55918951531/3125000000",
+      "selected_residual_exact_witness": {
+        "bra": 3651,
+        "ket": 1731,
+        "matrix_element": "287458722509/1000000000000",
+        "operator_norm_lower_bound_Ha": "287458722509/1000000000000",
+        "discovery_full_sector_dimension": 924,
+        "discovery_word_state_actions": 741048,
+        "scope": "One exact matrix element of the selected residual, invariant under adding a scalar. This is not an energy error or a no-go for other patterns/collective certificates."
+      },
+      "one_leg_rank": {
+        "rank": 12,
+        "rows": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "columns": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            3
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            0,
+            6
+          ],
+          [
+            0,
+            0,
+            7
+          ],
+          [
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            9
+          ],
+          [
+            0,
+            0,
+            10
+          ],
+          [
+            0,
+            0,
+            11
+          ]
+        ],
+        "minor_determinant": "-270109803081013723394196400617481769872758910737419752484388970230791631167802282518671282221153623897613492821597965997314684835411193/2000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "minor": [
+          [
+            "-88576106669/250000000000",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "88576106669/250000000000",
+            "0",
+            "0",
+            "0",
+            "-69959066763/1000000000000",
+            "0",
+            "0",
+            "0",
+            "7734613091/1000000000000",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "15740383737/100000000000",
+            "0",
+            "0",
+            "0",
+            "2449360777/125000000000",
+            "0",
+            "0",
+            "0",
+            "-9659128017/1000000000000",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "70343638283/250000000000",
+            "0",
+            "0",
+            "0",
+            "65164108133/1000000000000",
+            "0",
+            "0",
+            "0",
+            "-4408979763/500000000000"
+          ],
+          [
+            "69959066763/1000000000000",
+            "0",
+            "0",
+            "0",
+            "803889849/4000000000",
+            "0",
+            "0",
+            "0",
+            "7695506547/200000000000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-69959066763/1000000000000",
+            "0",
+            "0",
+            "0",
+            "3065958169/10000000000",
+            "0",
+            "0",
+            "0",
+            "33657600427/500000000000",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "2449360777/125000000000",
+            "0",
+            "0",
+            "0",
+            "225826008279/1000000000000",
+            "0",
+            "0",
+            "0",
+            "21027968583/500000000000",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "65164108133/1000000000000",
+            "0",
+            "0",
+            "0",
+            "309870947899/1000000000000",
+            "0",
+            "0",
+            "0",
+            "72740488133/1000000000000"
+          ],
+          [
+            "-7734613091/1000000000000",
+            "0",
+            "0",
+            "0",
+            "7695506547/200000000000",
+            "0",
+            "0",
+            "0",
+            "234118372697/1000000000000",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "7734613091/1000000000000",
+            "0",
+            "0",
+            "0",
+            "33657600427/500000000000",
+            "0",
+            "0",
+            "0",
+            "290707646959/1000000000000",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-9659128017/1000000000000",
+            "0",
+            "0",
+            "0",
+            "21027968583/500000000000",
+            "0",
+            "0",
+            "0",
+            "58968784697/200000000000",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "-4408979763/500000000000",
+            "0",
+            "0",
+            "0",
+            "72740488133/1000000000000",
+            "0",
+            "0",
+            "0",
+            "371771722241/1000000000000"
+          ]
+        ],
+        "scope": "Full-Fock quartic tensor support under orbital rotations only; no fixed-N quotient, collective elimination, approximation, or no-go for general compression."
+      },
+      "wall_seconds": 10.024663791999956,
+      "scope": "Best sufficient coefficient-norm budget over four existing orbitals and two uniform density coefficients. Not a computed energy interval, not an optimal spectral-norm error, no orbital optimization; arbitrary quadratic terms were retained without claiming they fit the two-band grammar."
+    }
+  ],
+  "collectively_eliminated_control_rank": {
+    "rank": 12,
+    "rows": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "columns": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        7
+      ],
+      [
+        0,
+        0,
+        8
+      ],
+      [
+        0,
+        0,
+        9
+      ],
+      [
+        0,
+        0,
+        10
+      ],
+      [
+        0,
+        0,
+        11
+      ]
+    ],
+    "minor_determinant": "-49/262440000",
+    "minor": [
+      [
+        "-7/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "7/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "2/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "2/5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/6",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/6",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/6",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/6",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/6",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/6"
+      ]
+    ],
+    "scope": "Full-Fock quartic tensor support under orbital rotations only; no fixed-N quotient, collective elimination, approximation, or no-go for general compression."
+  },
+  "dispersed_rank_one_krylov_control": {
+    "bath_modes": 8,
+    "coupling_rank": 1,
+    "krylov_rank": 8,
+    "exact_determinant": "273375/269157836241036411451568128"
+  },
+  "wall_seconds": 10.304595499999778
+}

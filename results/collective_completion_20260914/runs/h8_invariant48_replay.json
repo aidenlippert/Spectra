@@ -1,0 +1,24 @@
+{
+  "name": "h8_invariant48_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-m",
+    "research.collective_completion_20260914.spin_screen",
+    "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "results/collective_completion_20260914/candidates/h8_spin_r32_invariant_dual16/round_0/certificate.json",
+    "results/collective_completion_20260914/candidates/h8_spin_r1_nonsinglet/round_0/certificate.json",
+    "results/collective_completion_20260914/candidates/h8_spin_r32_invariant_dual16/round_0/interval.json",
+    "--upper",
+    "results/correlated_pair_20260913/mps/h8_spatial_warm144/interval.json"
+  ],
+  "timeout_seconds": 120,
+  "status": "runner_error",
+  "started_UTC": "2026-09-14T19:28:31.081773+00:00",
+  "error": "FileNotFoundError(2, 'No such file or directory')",
+  "wall_seconds": 0.0009795410005608574,
+  "child_user_seconds": 3.7e-05,
+  "child_system_seconds": 0.000232,
+  "peak_child_RSS_bytes": 1294336,
+  "finished_UTC": "2026-09-14T19:28:31.083445+00:00"
+}

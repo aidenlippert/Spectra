@@ -1,0 +1,20 @@
+# Preserve large research artifacts with Git LFS.
+*.npy filter=lfs diff=lfs merge=lfs -text
+*.npz filter=lfs diff=lfs merge=lfs -text
+*.gz filter=lfs diff=lfs merge=lfs -text
+*.mps filter=lfs diff=lfs merge=lfs -text
+"results/certificate_scaling/spin_irrep/h10_scs/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/lambda_runs/cubic_precision/downloaded/h10_scs_quotient_conditioned/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/lambda_runs/scs_refinement/downloaded/h10_evd_1800/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/lambda_runs/scs_refinement/downloaded/h10_evd_600/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/lambda_runs/scs_refinement/downloaded/h10_one_1200/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/lambda_runs/scs_refinement/downloaded/h10_two_600/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/marginal_h6/comparison_family_duals/localized_k2.json" filter=lfs diff=lfs merge=lfs -text
+"results/marginal_h6/comparison_family_duals/localized_k3.json" filter=lfs diff=lfs merge=lfs -text
+"results/marginal_h6/native_complete_support_scan/search_state.json" filter=lfs diff=lfs merge=lfs -text
+"results/marginal_h6/polynomial_metric/vanishing_joint_metric_cone/proposal_-6.24.json" filter=lfs diff=lfs merge=lfs -text
+"results/marginal_h6/polynomial_metric/vanishing_joint_metric_cone/proposal_-6.264.json" filter=lfs diff=lfs merge=lfs -text
+"results/sector_quotient_20260914/strong_h8_extraction.json" filter=lfs diff=lfs merge=lfs -text
+"results/v10/certificate_archive.json" filter=lfs diff=lfs merge=lfs -text
+"results/v5/transfer_results.json" filter=lfs diff=lfs merge=lfs -text
+"results/wave2_20260913/control/h10_spin_scs600/certificate.json" filter=lfs diff=lfs merge=lfs -text

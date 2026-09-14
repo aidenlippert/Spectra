@@ -1,0 +1,149 @@
+{
+  "targets": [
+    {
+      "target": {
+        "U": "4",
+        "t": "1",
+        "V": "1/2"
+      },
+      "a": "0.931672",
+      "b": "0.284635",
+      "lower_certificate": {
+        "kind": "local_hubbard_block_v1",
+        "sites": 6,
+        "U": "10/3",
+        "t": "1",
+        "V": "1/2",
+        "onsite_profile": [
+          "3/20",
+          "83/25",
+          "653/100",
+          "653/100",
+          "83/25",
+          "3/20"
+        ],
+        "hopping_profile": [
+          "5/12",
+          "5/4",
+          "5/3",
+          "5/4",
+          "5/12"
+        ],
+        "density_profile": [
+          "5/24",
+          "5/8",
+          "5/6",
+          "5/8",
+          "5/24"
+        ],
+        "lower": "-165801/50000"
+      },
+      "numerical_local_minimum": -3.3160082046694366,
+      "numerical_active_sector": [
+        3,
+        3,
+        1
+      ],
+      "numerical_upper_density": -17.52672755439787,
+      "optimizer_success": true
+    },
+    {
+      "target": {
+        "U": "4",
+        "t": "1",
+        "V": "-1/2"
+      },
+      "a": "0.926886",
+      "b": "0.283879",
+      "lower_certificate": {
+        "kind": "local_hubbard_block_v1",
+        "sites": 6,
+        "U": "10/3",
+        "t": "1",
+        "V": "-1/2",
+        "onsite_profile": [
+          "3/20",
+          "83/25",
+          "653/100",
+          "653/100",
+          "83/25",
+          "3/20"
+        ],
+        "hopping_profile": [
+          "5/12",
+          "5/4",
+          "5/3",
+          "5/4",
+          "5/12"
+        ],
+        "density_profile": [
+          "-5/24",
+          "-5/8",
+          "-5/6",
+          "-5/8",
+          "-5/24"
+        ],
+        "lower": "-283653/100000"
+      },
+      "numerical_local_minimum": -2.836511361755319,
+      "numerical_active_sector": [
+        3,
+        3,
+        1
+      ],
+      "numerical_upper_density": -17.426364114391472,
+      "optimizer_success": true
+    },
+    {
+      "target": {
+        "U": "3",
+        "t": "2/3",
+        "V": "1/2"
+      },
+      "a": "0.939308",
+      "b": "0.286067",
+      "lower_certificate": {
+        "kind": "local_hubbard_block_v1",
+        "sites": 6,
+        "U": "5/2",
+        "t": "2/3",
+        "V": "1/2",
+        "onsite_profile": [
+          "9/80",
+          "249/100",
+          "1959/400",
+          "1959/400",
+          "249/100",
+          "9/80"
+        ],
+        "hopping_profile": [
+          "5/18",
+          "5/6",
+          "10/9",
+          "5/6",
+          "5/18"
+        ],
+        "density_profile": [
+          "5/24",
+          "5/8",
+          "5/6",
+          "5/8",
+          "5/24"
+        ],
+        "lower": "-21021/10000"
+      },
+      "numerical_local_minimum": -2.1020885547531893,
+      "numerical_active_sector": [
+        3,
+        3,
+        1
+      ],
+      "numerical_upper_density": -17.453340282059123,
+      "optimizer_success": true
+    }
+  ],
+  "seconds": 11.003621124998972,
+  "scope": "Numerical proposal only. Lower profiles reused and scaled, not optimized for each target; all-Fock PSD replay required.",
+  "accepted": false,
+  "rejection": "Generated before fixing target hopping shadowed by a tensor row index. Energy proposals are invalid; not accepted certificates."
+}

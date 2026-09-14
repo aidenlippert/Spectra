@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "seed": "creator_channels",
+  "candidate_width": 4,
+  "negative_directions_per_round": 8,
+  "enrichment_rounds": 3,
+  "charge_searched": -1,
+  "adjoin_positive_charge": true,
+  "coefficient_rounding_denominator": 1000000,
+  "minimum_violation": 1e-07,
+  "couple_to_existing_same_charge_symmetry_block": true,
+  "solver": "CLARABEL",
+  "map_backend": "contraction",
+  "row_condition": false,
+  "solver_seconds_per_solve": 60,
+  "local_particle_number_assumed": false
+}

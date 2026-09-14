@@ -1,0 +1,39 @@
+{
+  "exact_Ha": {
+    "interval_width": "136616842622567996054529356456588394948381831447548826554950687940513701536901/40000000000559518446000000000000000000000000000000000000000000000000000000000000",
+    "upper_error_maximum": "549943928361866999604199235327947756331/10000000000139879611500000000000000000000000",
+    "actual_lower_error_minimum": "20162560036086046101947569716360339043929309775185012654761/6000000000000000000000000000000000000000000000000000000000000",
+    "actual_lower_error_maximum": "136616842622567996054529356456588394948381831447548826554950687940513701536901/40000000000559518446000000000000000000000000000000000000000000000000000000000000",
+    "family_true_error_floor": "641726917103767974343626138598442089293758888232067549/440000000000000000000000000000000000000000000000000000000",
+    "fixed_upper_family_width_floor": "13318488999213331470231353637932092594983248232552669585321147061191754427/8800000000123094058120000000000000000000000000000000000000000000000000000000",
+    "unresolved_distance_from_found_lower_to_ceiling": "125529122831381310969879346090197416089158574292225006852371/66000000000000000000000000000000000000000000000000000000000000",
+    "tail_lower_shift_cost": "227/62500000000",
+    "tail_combined_representation_envelope": "423169/3906250000",
+    "exact_residual_penalty": "54842037101479197911569716360339043929309775185012654761/6000000000000000000000000000000000000000000000000000000000000",
+    "retained_ground_minus_certificate_scalar_minimum": "1621477534582047242003/500000000000000000000000",
+    "export_loss_relative_to_floating_retained_objective": "39414751595479197911569716360339043929309775185012654761/6000000000000000000000000000000000000000000000000000000000000"
+  },
+  "mHa": {
+    "interval_width": 3.415421065516425,
+    "upper_error_maximum": 0.05499439283541744,
+    "actual_lower_error_minimum": 3.3604266726810077,
+    "actual_lower_error_maximum": 3.415421065516425,
+    "family_true_error_floor": 1.4584702661449271,
+    "fixed_upper_family_width_floor": 1.5134646589803447,
+    "unresolved_distance_from_found_lower_to_ceiling": 1.9019564065360806,
+    "tail_lower_shift_cost": 3.632e-06,
+    "tail_combined_representation_envelope": 0.108331264,
+    "exact_residual_penalty": 0.009140339516913199,
+    "retained_ground_minus_certificate_scalar_minimum": 3.2429550691640947,
+    "export_loss_relative_to_floating_retained_objective": 0.0065691252659132
+  },
+  "audit_sha256": "31b92252b4590a4b9bbfd8af9989f9bfeea8803945eda3954557790ff4478abb",
+  "identity": "W=(U-E0(H))+(E0(H)-E0(Hret)-ell)+(E0(Hret)-b)+rho",
+  "caveats": [
+    "The first two unknown terms lie respectively in [0,U-P] and [0,u-ell].",
+    "b is the exact exported scalar before residual penalty, not an independently accepted lower.",
+    "The export loss relative to the floating objective is a diagnostic comparison, not a second additive penalty.",
+    "C need not be the optimal family ceiling. C-L cannot be assigned entirely to direction selection or entirely to family inadequacy.",
+    "Representation, upper uncertainty and residual are bounded contributions; their simultaneous worst cases need not occur."
+  ]
+}

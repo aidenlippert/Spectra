@@ -1,0 +1,56 @@
+{
+  "schema": "density-window-profile-proposal-v1",
+  "sites": 6,
+  "target": {
+    "U": "4",
+    "t": "1",
+    "V": "1/2"
+  },
+  "parameterization": {
+    "onsite": "[a,b,10-a-b,10-a-b,b,a]",
+    "hopping": "[p,q,5-2p-2q,q,p]",
+    "density": "[d,e,5/2-2d-2e,e,d]"
+  },
+  "numerical_best": {
+    "parameters": [
+      0.14999013612106504,
+      3.29927910456451,
+      0.4222832167451275,
+      1.250435465696702,
+      0.17119346574899857,
+      0.6247726705086767
+    ],
+    "lambda_min_over_5": -1.3263877276945448,
+    "sector": "(3, 3, 1)",
+    "evaluations": 540
+  },
+  "rational_proposal": {
+    "a": "3/20",
+    "b": "2745/832",
+    "p": "307/727",
+    "q": "719/575",
+    "d": "145/847",
+    "e": "343/549"
+  },
+  "baseline": {
+    "parameters": [
+      3.3333333333333335,
+      3.3333333333333335,
+      1.0,
+      1.0,
+      0.5,
+      0.5
+    ],
+    "lambda_min_over_5": -1.5203657967515503,
+    "sector": "(3, 3, 1)"
+  },
+  "scope": "Numerical all-Fock sector diagnostic only; no PSD acceptance.",
+  "accepted": false,
+  "correction": {
+    "reason": "Original eigenvalues omitted the reflection-orbit Gram normalization, and compared with a uniform rather than the accepted inherited baseline. Its energy and improvement claims are invalid.",
+    "independently_recomputed_rational_proposal_density": -0.6631938638557365,
+    "accepted_inherited_numerical_minimum_density": -0.6632016409338873,
+    "new_lower_certificate_accepted": false,
+    "assigned_script_was_not_created": true
+  }
+}

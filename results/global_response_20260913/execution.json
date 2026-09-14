@@ -1,0 +1,447 @@
+{
+  "target_Ha": "-63340586263216010540610336114091/10000000000139879611500000000000",
+  "first_order": 26,
+  "second_order": 119,
+  "global_order": 118,
+  "nested_total_uniform_allowance_Ha": 1.494050966047586e-06,
+  "global_uniform_allowance_Ha": 9.603388130990366e-07,
+  "preparation": {
+    "physical_sector_basis_labels_generated": 924,
+    "Hamiltonian_action_sources": 924,
+    "word_state_checks": 848232,
+    "retained_dimension": 714,
+    "eliminated_dimension": 210,
+    "largest_full_conserved_block": 200,
+    "largest_retained_block": 152,
+    "largest_eliminated_block": 52,
+    "full_block_matrix_entries": 132004,
+    "response_matrix_entries": 23910,
+    "retained_matrix_entries": 76646,
+    "block_partition_parity_mask": 819,
+    "preparation_seconds": 0.13069154199911281
+  },
+  "all_terminal_block_diagnostics": [
+    {
+      "block_key": [
+        0,
+        1
+      ],
+      "terminal_dimension": 1,
+      "old_terminal_min_float_Ha": 0.5580680705640346,
+      "global_terminal_min_float_Ha": 0.5580686042761875,
+      "old_terminal_eigenvalues_below_0_02_Ha": 0,
+      "lowest_old_terminal_eigenvalues_Ha": [
+        0.5580680705640346
+      ],
+      "D1_spectrum": {
+        "dimension": 0
+      },
+      "D2_spectrum": {
+        "dimension": 0
+      },
+      "combined_D_spectrum": {
+        "dimension": 0
+      },
+      "terminal_matrix_entries_constructed": 2
+    },
+    {
+      "block_key": [
+        1,
+        0
+      ],
+      "terminal_dimension": 12,
+      "old_terminal_min_float_Ha": 0.2772269619501859,
+      "global_terminal_min_float_Ha": 0.2772274993579078,
+      "old_terminal_eigenvalues_below_0_02_Ha": 0,
+      "lowest_old_terminal_eigenvalues_Ha": [
+        0.2772269619501859,
+        0.40683195389569354,
+        0.615178089845483,
+        0.7645521776064678,
+        0.8319406171060778
+      ],
+      "D1_spectrum": {
+        "dimension": 3,
+        "numeric_min_eigenvalue_Ha": 1.2330360447524351,
+        "numeric_max_eigenvalue_Ha": 1.6602187015633711
+      },
+      "D2_spectrum": {
+        "dimension": 3,
+        "numeric_min_eigenvalue_Ha": 0.9230628639225628,
+        "numeric_max_eigenvalue_Ha": 1.426474487925592
+      },
+      "combined_D_spectrum": {
+        "dimension": 6,
+        "numeric_min_eigenvalue_Ha": 0.8698791965419557,
+        "numeric_max_eigenvalue_Ha": 1.7433205526437898
+      },
+      "terminal_matrix_entries_constructed": 288
+    },
+    {
+      "block_key": [
+        1,
+        1
+      ],
+      "terminal_dimension": 14,
+      "old_terminal_min_float_Ha": 0.3317003898920418,
+      "global_terminal_min_float_Ha": 0.33170092989241196,
+      "old_terminal_eigenvalues_below_0_02_Ha": 0,
+      "lowest_old_terminal_eigenvalues_Ha": [
+        0.3317003898920418,
+        0.48011884551088707,
+        0.558068070562368,
+        0.7039471571846623,
+        0.8631393030883949
+      ],
+      "D1_spectrum": {
+        "dimension": 2,
+        "numeric_min_eigenvalue_Ha": 1.384501454906428,
+        "numeric_max_eigenvalue_Ha": 1.6490488160485726
+      },
+      "D2_spectrum": {
+        "dimension": 2,
+        "numeric_min_eigenvalue_Ha": 1.3574016696426698,
+        "numeric_max_eigenvalue_Ha": 1.5286859033880191
+      },
+      "combined_D_spectrum": {
+        "dimension": 4,
+        "numeric_min_eigenvalue_Ha": 1.2978542671414006,
+        "numeric_max_eigenvalue_Ha": 1.7402949530873673
+      },
+      "terminal_matrix_entries_constructed": 392
+    },
+    {
+      "block_key": [
+        2,
+        0
+      ],
+      "terminal_dimension": 62,
+      "old_terminal_min_float_Ha": 0.15356652531391146,
+      "global_terminal_min_float_Ha": 0.15356707576588796,
+      "old_terminal_eigenvalues_below_0_02_Ha": 0,
+      "lowest_old_terminal_eigenvalues_Ha": [
+        0.15356652531391146,
+        0.277226961949219,
+        0.29566559461420844,
+        0.4068319538945504,
+        0.4853986488506799
+      ],
+      "D1_spectrum": {
+        "dimension": 24,
+        "numeric_min_eigenvalue_Ha": 1.1804282795536176,
+        "numeric_max_eigenvalue_Ha": 2.449524035672154
+      },
+      "D2_spectrum": {
+        "dimension": 22,
+        "numeric_min_eigenvalue_Ha": 0.8980191408349316,
+        "numeric_max_eigenvalue_Ha": 2.1535045538081823
+      },
+      "combined_D_spectrum": {
+        "dimension": 46,
+        "numeric_min_eigenvalue_Ha": 0.8421701452401198,
+        "numeric_max_eigenvalue_Ha": 2.632012798040894
+      },
+      "terminal_matrix_entries_constructed": 7688
+    },
+    {
+      "block_key": [
+        2,
+        1
+      ],
+      "terminal_dimension": 69,
+      "old_terminal_min_float_Ha": 0.07228953367511434,
+      "global_terminal_min_float_Ha": 0.07229008133700576,
+      "old_terminal_eigenvalues_below_0_02_Ha": 0,
+      "lowest_old_terminal_eigenvalues_Ha": [
+        0.07228953367511434,
+        0.2114843535461086,
+        0.24243215982610794,
+        0.331700389891467,
+        0.3739471868244202
+      ],
+      "D1_spectrum": {
+        "dimension": 26,
+        "numeric_min_eigenvalue_Ha": 1.1723845078205117,
+        "numeric_max_eigenvalue_Ha": 2.4503250332868305
+      },
+      "D2_spectrum": {
+        "dimension": 22,
+        "numeric_min_eigenvalue_Ha": 0.8238541440730761,
+        "numeric_max_eigenvalue_Ha": 2.185451648530171
+      },
+      "combined_D_spectrum": {
+        "dimension": 48,
+        "numeric_min_eigenvalue_Ha": 0.782768613112861,
+        "numeric_max_eigenvalue_Ha": 2.632568756298951
+      },
+      "terminal_matrix_entries_constructed": 9522
+    },
+    {
+      "block_key": [
+        3,
+        0
+      ],
+      "terminal_dimension": 104,
+      "old_terminal_min_float_Ha": 0.0010536267581396416,
+      "global_terminal_min_float_Ha": 0.001054180380263862,
+      "old_terminal_eigenvalues_below_0_02_Ha": 1,
+      "lowest_old_terminal_eigenvalues_Ha": [
+        0.0010536267581396416,
+        0.15356652531459059,
+        0.18632065435113065,
+        0.27722696194889673,
+        0.2956655946137645
+      ],
+      "D1_spectrum": {
+        "dimension": 52,
+        "numeric_min_eigenvalue_Ha": 1.1389960168341962,
+        "numeric_max_eigenvalue_Ha": 2.9869613498101937
+      },
+      "D2_spectrum": {
+        "dimension": 44,
+        "numeric_min_eigenvalue_Ha": 0.8150538230174229,
+        "numeric_max_eigenvalue_Ha": 2.4829605593979323
+      },
+      "combined_D_spectrum": {
+        "dimension": 96,
+        "numeric_min_eigenvalue_Ha": 0.7762082373473749,
+        "numeric_max_eigenvalue_Ha": 3.065771251830854
+      },
+      "terminal_matrix_entries_constructed": 21632
+    },
+    {
+      "block_key": [
+        3,
+        1
+      ],
+      "terminal_dimension": 112,
+      "old_terminal_min_float_Ha": 0.07228953367518737,
+      "global_terminal_min_float_Ha": 0.07229008133707857,
+      "old_terminal_eigenvalues_below_0_02_Ha": 0,
+      "lowest_old_terminal_eigenvalues_Ha": [
+        0.07228953367518737,
+        0.21148435354555045,
+        0.24243215982476748,
+        0.24392895882659166,
+        0.3317003898912754
+      ],
+      "D1_spectrum": {
+        "dimension": 48,
+        "numeric_min_eigenvalue_Ha": 1.1723845078194288,
+        "numeric_max_eigenvalue_Ha": 2.9857858719577606
+      },
+      "D2_spectrum": {
+        "dimension": 40,
+        "numeric_min_eigenvalue_Ha": 0.823854144072308,
+        "numeric_max_eigenvalue_Ha": 2.462321944298243
+      },
+      "combined_D_spectrum": {
+        "dimension": 88,
+        "numeric_min_eigenvalue_Ha": 0.7827686131120976,
+        "numeric_max_eigenvalue_Ha": 3.062098062589593
+      },
+      "terminal_matrix_entries_constructed": 25088
+    },
+    {
+      "block_key": [
+        4,
+        0
+      ],
+      "terminal_dimension": 62,
+      "old_terminal_min_float_Ha": 0.15356652531391163,
+      "global_terminal_min_float_Ha": 0.15356707576588768,
+      "old_terminal_eigenvalues_below_0_02_Ha": 0,
+      "lowest_old_terminal_eigenvalues_Ha": [
+        0.15356652531391163,
+        0.27722696194922014,
+        0.29566559461420644,
+        0.406831953894551,
+        0.48539864885068024
+      ],
+      "D1_spectrum": {
+        "dimension": 24,
+        "numeric_min_eigenvalue_Ha": 1.1804282795536172,
+        "numeric_max_eigenvalue_Ha": 2.4495240356721535
+      },
+      "D2_spectrum": {
+        "dimension": 22,
+        "numeric_min_eigenvalue_Ha": 0.8980191408349315,
+        "numeric_max_eigenvalue_Ha": 2.1535045538081827
+      },
+      "combined_D_spectrum": {
+        "dimension": 46,
+        "numeric_min_eigenvalue_Ha": 0.8421701452401184,
+        "numeric_max_eigenvalue_Ha": 2.6320127980408943
+      },
+      "terminal_matrix_entries_constructed": 7688
+    },
+    {
+      "block_key": [
+        4,
+        1
+      ],
+      "terminal_dimension": 69,
+      "old_terminal_min_float_Ha": 0.07228953367511422,
+      "global_terminal_min_float_Ha": 0.07229008133700575,
+      "old_terminal_eigenvalues_below_0_02_Ha": 0,
+      "lowest_old_terminal_eigenvalues_Ha": [
+        0.07228953367511422,
+        0.21148435354610784,
+        0.24243215982610736,
+        0.3317003898914656,
+        0.3739471868244198
+      ],
+      "D1_spectrum": {
+        "dimension": 26,
+        "numeric_min_eigenvalue_Ha": 1.1723845078205122,
+        "numeric_max_eigenvalue_Ha": 2.4503250332868296
+      },
+      "D2_spectrum": {
+        "dimension": 22,
+        "numeric_min_eigenvalue_Ha": 0.8238541440730764,
+        "numeric_max_eigenvalue_Ha": 2.1854516485301723
+      },
+      "combined_D_spectrum": {
+        "dimension": 48,
+        "numeric_min_eigenvalue_Ha": 0.7827686131128611,
+        "numeric_max_eigenvalue_Ha": 2.632568756298951
+      },
+      "terminal_matrix_entries_constructed": 9522
+    },
+    {
+      "block_key": [
+        5,
+        0
+      ],
+      "terminal_dimension": 12,
+      "old_terminal_min_float_Ha": 0.2772269619501859,
+      "global_terminal_min_float_Ha": 0.2772274993579078,
+      "old_terminal_eigenvalues_below_0_02_Ha": 0,
+      "lowest_old_terminal_eigenvalues_Ha": [
+        0.2772269619501859,
+        0.40683195389569354,
+        0.615178089845483,
+        0.7645521776064678,
+        0.8319406171060778
+      ],
+      "D1_spectrum": {
+        "dimension": 3,
+        "numeric_min_eigenvalue_Ha": 1.2330360447524351,
+        "numeric_max_eigenvalue_Ha": 1.6602187015633711
+      },
+      "D2_spectrum": {
+        "dimension": 3,
+        "numeric_min_eigenvalue_Ha": 0.9230628639225628,
+        "numeric_max_eigenvalue_Ha": 1.426474487925592
+      },
+      "combined_D_spectrum": {
+        "dimension": 6,
+        "numeric_min_eigenvalue_Ha": 0.8698791965419557,
+        "numeric_max_eigenvalue_Ha": 1.7433205526437898
+      },
+      "terminal_matrix_entries_constructed": 288
+    },
+    {
+      "block_key": [
+        5,
+        1
+      ],
+      "terminal_dimension": 14,
+      "old_terminal_min_float_Ha": 0.3317003898920405,
+      "global_terminal_min_float_Ha": 0.33170092989241196,
+      "old_terminal_eigenvalues_below_0_02_Ha": 0,
+      "lowest_old_terminal_eigenvalues_Ha": [
+        0.3317003898920405,
+        0.48011884551088685,
+        0.5580680705623676,
+        0.7039471571846618,
+        0.8631393030883949
+      ],
+      "D1_spectrum": {
+        "dimension": 2,
+        "numeric_min_eigenvalue_Ha": 1.384501454906428,
+        "numeric_max_eigenvalue_Ha": 1.6490488160485726
+      },
+      "D2_spectrum": {
+        "dimension": 2,
+        "numeric_min_eigenvalue_Ha": 1.3574016696426698,
+        "numeric_max_eigenvalue_Ha": 1.5286859033880191
+      },
+      "combined_D_spectrum": {
+        "dimension": 4,
+        "numeric_min_eigenvalue_Ha": 1.2978542671414006,
+        "numeric_max_eigenvalue_Ha": 1.7402949530873673
+      },
+      "terminal_matrix_entries_constructed": 392
+    },
+    {
+      "block_key": [
+        6,
+        1
+      ],
+      "terminal_dimension": 1,
+      "old_terminal_min_float_Ha": 0.5580680705640346,
+      "global_terminal_min_float_Ha": 0.5580686042761875,
+      "old_terminal_eigenvalues_below_0_02_Ha": 0,
+      "lowest_old_terminal_eigenvalues_Ha": [
+        0.5580680705640346
+      ],
+      "D1_spectrum": {
+        "dimension": 0
+      },
+      "D2_spectrum": {
+        "dimension": 0
+      },
+      "combined_D_spectrum": {
+        "dimension": 0
+      },
+      "terminal_matrix_entries_constructed": 2
+    }
+  ],
+  "applications": [
+    {
+      "method": "original_nested",
+      "seconds": 0.12791704099799972,
+      "base_H_RHS_applications": 12667,
+      "projector_calls": 26052,
+      "recurrence_vector_entries": 2437200,
+      "dense_H_scalar_multiply_add_pairs": 506680000,
+      "max_abs_error_vs_spectral_float_oracle": 4.163336342344337e-17,
+      "vector_dimension": 200,
+      "coefficient_precision": "float64; accepting certificates use exact rationals",
+      "dense_many_body_H_entries": 40000,
+      "many_body_vector_support_representation": "full conserved-block vector, diagnostic only"
+    },
+    {
+      "method": "equivalent_factored",
+      "seconds": 0.18766520799545106,
+      "base_H_RHS_applications": 12667,
+      "projector_calls": 26052,
+      "recurrence_vector_entries": 2485200,
+      "dense_H_scalar_multiply_add_pairs": 506680000,
+      "max_abs_error_vs_spectral_float_oracle": 1.3877787807814457e-17,
+      "vector_dimension": 200,
+      "coefficient_precision": "float64; accepting certificates use exact rationals",
+      "dense_many_body_H_entries": 40000,
+      "many_body_vector_support_representation": "full conserved-block vector, diagnostic only"
+    },
+    {
+      "method": "simultaneous_global",
+      "seconds": 0.006442041005357169,
+      "base_H_RHS_applications": 237,
+      "projector_calls": 475,
+      "recurrence_vector_entries": 47000,
+      "dense_H_scalar_multiply_add_pairs": 9480000,
+      "max_abs_error_vs_spectral_float_oracle": 4.163336342344337e-17,
+      "vector_dimension": 200,
+      "coefficient_precision": "float64; accepting certificates use exact rationals",
+      "dense_many_body_H_entries": 40000,
+      "many_body_vector_support_representation": "full conserved-block vector, diagnostic only"
+    }
+  ],
+  "action_count_reduction": 53.447257383966246,
+  "wall_time_ratio_nested_over_global": 19.856601485713078,
+  "peak_RSS_bytes": 50397184,
+  "wall_seconds": 0.7950877920084167,
+  "scope": "Charged enumerated physical diagnostic and matched float64 execution, not determinant-free physical-vector execution. Spectral floating values are diagnostics; terminal positivity is independently reference-certified."
+}

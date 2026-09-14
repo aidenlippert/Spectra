@@ -1,0 +1,1449 @@
+{
+  "accepted": true,
+  "target": {
+    "U": "4",
+    "t": "1",
+    "V": "1/2"
+  },
+  "chain_sites": 1000000,
+  "local_sites": 6,
+  "penalty": "30527/200000",
+  "penalized_lower": "-31634217/10000000",
+  "overlap": {
+    "accepted": true,
+    "windows": 4,
+    "block_sites": 6,
+    "support_sites": 9,
+    "ceiling": "1084870113/500000000",
+    "average_fidelity_ceiling": "1084870113/2000000000",
+    "vector_norm": "11001990723239794642",
+    "gram_dimension": 256,
+    "maximum_psd_dimension": 36,
+    "spin_sector_split": true,
+    "sectors": [
+      {
+        "sector": [
+          3,
+          3
+        ],
+        "psd": {
+          "dimension": 4,
+          "rank": 4,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          3,
+          4
+        ],
+        "psd": {
+          "dimension": 12,
+          "rank": 12,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          3,
+          5
+        ],
+        "psd": {
+          "dimension": 12,
+          "rank": 12,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          3,
+          6
+        ],
+        "psd": {
+          "dimension": 4,
+          "rank": 4,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          4,
+          3
+        ],
+        "psd": {
+          "dimension": 12,
+          "rank": 12,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          4,
+          4
+        ],
+        "psd": {
+          "dimension": 36,
+          "rank": 36,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          4,
+          5
+        ],
+        "psd": {
+          "dimension": 36,
+          "rank": 36,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          4,
+          6
+        ],
+        "psd": {
+          "dimension": 12,
+          "rank": 12,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          5,
+          3
+        ],
+        "psd": {
+          "dimension": 12,
+          "rank": 12,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          5,
+          4
+        ],
+        "psd": {
+          "dimension": 36,
+          "rank": 36,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          5,
+          5
+        ],
+        "psd": {
+          "dimension": 36,
+          "rank": 36,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          5,
+          6
+        ],
+        "psd": {
+          "dimension": 12,
+          "rank": 12,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          3
+        ],
+        "psd": {
+          "dimension": 4,
+          "rank": 4,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          4
+        ],
+        "psd": {
+          "dimension": 12,
+          "rank": 12,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          5
+        ],
+        "psd": {
+          "dimension": 12,
+          "rank": 12,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      },
+      {
+        "sector": [
+          6,
+          6
+        ],
+        "psd": {
+          "dimension": 4,
+          "rank": 4,
+          "nullity": 0,
+          "positive_semidefinite": true
+        }
+      }
+    ],
+    "scope": "All-state inequality for consecutive contiguous even fixed-length projectors. Cyclic copies are defined by conjugation with the fermionic mode-translation unitary."
+  },
+  "local_sectors": [
+    {
+      "sector": [
+        0,
+        0,
+        1
+      ],
+      "psd": {
+        "dimension": 1,
+        "rank": 1,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        0,
+        1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        0,
+        -1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        0,
+        1,
+        1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        0,
+        1,
+        -1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        1,
+        1
+      ],
+      "psd": {
+        "dimension": 18,
+        "rank": 18,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        1,
+        -1
+      ],
+      "psd": {
+        "dimension": 18,
+        "rank": 18,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        0,
+        1
+      ],
+      "psd": {
+        "dimension": 6,
+        "rank": 6,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        0,
+        -1
+      ],
+      "psd": {
+        "dimension": 9,
+        "rank": 9,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        1,
+        1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        1,
+        -1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        0,
+        2,
+        1
+      ],
+      "psd": {
+        "dimension": 6,
+        "rank": 6,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        0,
+        2,
+        -1
+      ],
+      "psd": {
+        "dimension": 9,
+        "rank": 9,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        2,
+        1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        2,
+        -1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        2,
+        1
+      ],
+      "psd": {
+        "dimension": 117,
+        "rank": 117,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        2,
+        -1
+      ],
+      "psd": {
+        "dimension": 108,
+        "rank": 108,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        0,
+        1
+      ],
+      "psd": {
+        "dimension": 10,
+        "rank": 10,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        0,
+        -1
+      ],
+      "psd": {
+        "dimension": 10,
+        "rank": 10,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        1,
+        1
+      ],
+      "psd": {
+        "dimension": 60,
+        "rank": 60,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        1,
+        -1
+      ],
+      "psd": {
+        "dimension": 60,
+        "rank": 60,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        2,
+        1
+      ],
+      "psd": {
+        "dimension": 150,
+        "rank": 150,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        2,
+        -1
+      ],
+      "psd": {
+        "dimension": 150,
+        "rank": 150,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        0,
+        3,
+        1
+      ],
+      "psd": {
+        "dimension": 10,
+        "rank": 10,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        0,
+        3,
+        -1
+      ],
+      "psd": {
+        "dimension": 10,
+        "rank": 10,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        3,
+        1
+      ],
+      "psd": {
+        "dimension": 60,
+        "rank": 60,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        3,
+        -1
+      ],
+      "psd": {
+        "dimension": 60,
+        "rank": 60,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        3,
+        1
+      ],
+      "psd": {
+        "dimension": 150,
+        "rank": 150,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        3,
+        -1
+      ],
+      "psd": {
+        "dimension": 150,
+        "rank": 150,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        3,
+        1
+      ],
+      "psd": {
+        "dimension": 200,
+        "rank": 200,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        3,
+        -1
+      ],
+      "psd": {
+        "dimension": 200,
+        "rank": 200,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        0,
+        1
+      ],
+      "psd": {
+        "dimension": 9,
+        "rank": 9,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        0,
+        -1
+      ],
+      "psd": {
+        "dimension": 6,
+        "rank": 6,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        1,
+        1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        1,
+        -1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        2,
+        1
+      ],
+      "psd": {
+        "dimension": 108,
+        "rank": 108,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        2,
+        -1
+      ],
+      "psd": {
+        "dimension": 117,
+        "rank": 117,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        3,
+        1
+      ],
+      "psd": {
+        "dimension": 150,
+        "rank": 150,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        3,
+        -1
+      ],
+      "psd": {
+        "dimension": 150,
+        "rank": 150,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        0,
+        4,
+        1
+      ],
+      "psd": {
+        "dimension": 9,
+        "rank": 9,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        0,
+        4,
+        -1
+      ],
+      "psd": {
+        "dimension": 6,
+        "rank": 6,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        4,
+        1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        4,
+        -1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        4,
+        1
+      ],
+      "psd": {
+        "dimension": 108,
+        "rank": 108,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        4,
+        -1
+      ],
+      "psd": {
+        "dimension": 117,
+        "rank": 117,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        4,
+        1
+      ],
+      "psd": {
+        "dimension": 150,
+        "rank": 150,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        4,
+        -1
+      ],
+      "psd": {
+        "dimension": 150,
+        "rank": 150,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        4,
+        1
+      ],
+      "psd": {
+        "dimension": 117,
+        "rank": 117,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        4,
+        -1
+      ],
+      "psd": {
+        "dimension": 108,
+        "rank": 108,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        0,
+        1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        0,
+        -1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        1,
+        1
+      ],
+      "psd": {
+        "dimension": 18,
+        "rank": 18,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        1,
+        -1
+      ],
+      "psd": {
+        "dimension": 18,
+        "rank": 18,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        2,
+        1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        2,
+        -1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        3,
+        1
+      ],
+      "psd": {
+        "dimension": 60,
+        "rank": 60,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        3,
+        -1
+      ],
+      "psd": {
+        "dimension": 60,
+        "rank": 60,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        4,
+        1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        4,
+        -1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        0,
+        5,
+        1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        0,
+        5,
+        -1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        5,
+        1
+      ],
+      "psd": {
+        "dimension": 18,
+        "rank": 18,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        5,
+        -1
+      ],
+      "psd": {
+        "dimension": 18,
+        "rank": 18,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        5,
+        1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        5,
+        -1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        5,
+        1
+      ],
+      "psd": {
+        "dimension": 60,
+        "rank": 60,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        5,
+        -1
+      ],
+      "psd": {
+        "dimension": 60,
+        "rank": 60,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        5,
+        1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        5,
+        -1
+      ],
+      "psd": {
+        "dimension": 45,
+        "rank": 45,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        5,
+        1
+      ],
+      "psd": {
+        "dimension": 18,
+        "rank": 18,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        5,
+        -1
+      ],
+      "psd": {
+        "dimension": 18,
+        "rank": 18,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        6,
+        0,
+        -1
+      ],
+      "psd": {
+        "dimension": 1,
+        "rank": 1,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        6,
+        1,
+        1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        6,
+        1,
+        -1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        6,
+        2,
+        1
+      ],
+      "psd": {
+        "dimension": 9,
+        "rank": 9,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        6,
+        2,
+        -1
+      ],
+      "psd": {
+        "dimension": 6,
+        "rank": 6,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        6,
+        3,
+        1
+      ],
+      "psd": {
+        "dimension": 10,
+        "rank": 10,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        6,
+        3,
+        -1
+      ],
+      "psd": {
+        "dimension": 10,
+        "rank": 10,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        6,
+        4,
+        1
+      ],
+      "psd": {
+        "dimension": 6,
+        "rank": 6,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        6,
+        4,
+        -1
+      ],
+      "psd": {
+        "dimension": 9,
+        "rank": 9,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        6,
+        5,
+        1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        6,
+        5,
+        -1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        0,
+        6,
+        -1
+      ],
+      "psd": {
+        "dimension": 1,
+        "rank": 1,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        6,
+        1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        1,
+        6,
+        -1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        6,
+        1
+      ],
+      "psd": {
+        "dimension": 9,
+        "rank": 9,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        2,
+        6,
+        -1
+      ],
+      "psd": {
+        "dimension": 6,
+        "rank": 6,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        6,
+        1
+      ],
+      "psd": {
+        "dimension": 10,
+        "rank": 10,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        3,
+        6,
+        -1
+      ],
+      "psd": {
+        "dimension": 10,
+        "rank": 10,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        6,
+        1
+      ],
+      "psd": {
+        "dimension": 6,
+        "rank": 6,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        4,
+        6,
+        -1
+      ],
+      "psd": {
+        "dimension": 9,
+        "rank": 9,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        6,
+        1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        5,
+        6,
+        -1
+      ],
+      "psd": {
+        "dimension": 3,
+        "rank": 3,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    },
+    {
+      "sector": [
+        6,
+        6,
+        1
+      ],
+      "psd": {
+        "dimension": 1,
+        "rank": 1,
+        "nullity": 0,
+        "positive_semidefinite": true
+      }
+    }
+  ],
+  "local_sum_dimensions": 4096,
+  "local_maximum_psd_dimension": 200,
+  "periodic_lower_density": "-1298486509939551/2000000000000000",
+  "open_lower_density": "-1298491509939551/2000000000000000",
+  "open_lower_energy": "-1298491509939551/2000000000",
+  "scope": "Exact half-filled open U,t,V lower bound from full-Fock local positivity with a rank-one projector penalty and a separately certified all-state overlapping-projector ceiling. This adds quantitative extendibility information beyond local profile or telescoping-boundary corrections."
+}

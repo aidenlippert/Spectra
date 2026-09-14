@@ -1,0 +1,70 @@
+{
+  "directions": 0,
+  "separate": false,
+  "anti_dimensions": [],
+  "Gram_entries": 5724,
+  "constructed_map_nonzeros": 6180,
+  "used_map_nonzeros": 6180,
+  "construction_seconds": 0.003809583002293948,
+  "solver_seconds_limit": 40.0,
+  "conditioning": [],
+  "contraction_work": [],
+  "status": "optimal",
+  "floating_lower_Ha": -6.346069041702817,
+  "clipped_negative_Gram_mass": 5.232586414180152e-08,
+  "solve_seconds": 1.5393624999996973,
+  "export_seconds": 0.025087417001486756,
+  "accept_seconds": 0.4328516249952372,
+  "wall_seconds": 2.001111290999688,
+  "certificate_bytes": 40629,
+  "accepted": {
+    "retained": {
+      "lower": "-380764151513697449436918498428423/60000000000000000000000000000000",
+      "lower_float": -6.346069191894958,
+      "residual_l1": "14427537449436918498428423/60000000000000000000000000000000",
+      "residual_l1_float": 2.404589574906153e-07,
+      "multiplier_terms": 37,
+      "square_polynomial_terms": 919,
+      "residual_terms": 919,
+      "residual_max_degree": 4,
+      "mode_count": 12,
+      "particle_number": 6,
+      "factor_rows": 219,
+      "factor_nonzeros": 4134
+    },
+    "tail": {
+      "lower_operator_shift_Ha": "-227/62500000000",
+      "upper_operator_shift_Ha": "6770477/62500000000",
+      "tail_interval_width_Ha": "423169/3906250000",
+      "tail_interval_width_mHa": 0.108331264,
+      "factors": 10,
+      "factor_nonzeros": 105,
+      "coefficient_dimension": 21,
+      "modes": 12,
+      "particles": 6,
+      "number_centered": true,
+      "mismatch_paired_norm_Ha": "1/31250000000",
+      "mismatch_terms": 54,
+      "casimir_bound": "24",
+      "lower_psd": {
+        "dimension": 21,
+        "rank": 21
+      },
+      "upper_psd": {
+        "dimension": 21,
+        "rank": 21
+      },
+      "replay_seconds": 0.13995145799708553,
+      "many_body_states_enumerated": 0,
+      "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+    },
+    "original_lower_Ha": "-380764151731617449436918498428423/60000000000000000000000000000000",
+    "original_lower_float_Ha": -6.346069195526957,
+    "expand_seconds": 0.3390132499989704,
+    "SOS_replay_seconds": 0.09094804200140061,
+    "replay_seconds": 0.429961583999102,
+    "expanded_certificate_bytes": 147493,
+    "many_body_states_enumerated": 0,
+    "scope": "Exact molecular lower with the same collective tail; no optimum claim."
+  }
+}

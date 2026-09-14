@@ -1,0 +1,171 @@
+{
+  "status": "constructed_and_checked",
+  "initial_records": 9,
+  "experiment": {
+    "controls": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "planned_streaming_resets": 1,
+    "planned_streaming_steps": 8,
+    "scalar_observations": 16,
+    "exact_prefix_evaluator_calls": 8,
+    "prefix_step_evaluations": 36,
+    "evidence": "supplied equation evaluations, not laboratory measurements"
+  },
+  "model": {
+    "schema": "observable_realization_1",
+    "maximum_dimension": 4,
+    "output_ports": 2,
+    "rank": 2,
+    "selected_tests": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "selected_columns": [
+      0,
+      1
+    ],
+    "transition": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "-3/16",
+        "1"
+      ]
+    ],
+    "input": [
+      "1/2",
+      "1/4"
+    ],
+    "output": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "-2",
+        "4"
+      ]
+    ],
+    "reset": [
+      "0",
+      "0"
+    ],
+    "observed_moments": [
+      [
+        "1/2",
+        "0"
+      ],
+      [
+        "1/4",
+        "1/8"
+      ],
+      [
+        "5/32",
+        "1/8"
+      ],
+      [
+        "7/64",
+        "13/128"
+      ],
+      [
+        "41/512",
+        "5/64"
+      ],
+      [
+        "61/1024",
+        "121/2048"
+      ],
+      [
+        "365/8192",
+        "91/2048"
+      ],
+      [
+        "547/16384",
+        "1093/32768"
+      ]
+    ],
+    "assumptions": "exact zero-reset LTI, order bound and observed ports",
+    "acquisition": {
+      "records": 17,
+      "scalar_outputs": 34,
+      "data_rank": 8,
+      "hankel_rows": 8,
+      "hankel_columns": 4,
+      "rank_tests": 8
+    }
+  },
+  "fixed_words_checked": 1093,
+  "policy": {
+    "preparation": [
+      "1",
+      "1/4"
+    ],
+    "operating": [
+      "0",
+      "0"
+    ],
+    "total_control": "5/4",
+    "attempts": [
+      {
+        "controls": [
+          "0",
+          "0"
+        ],
+        "predicted_ports": [
+          "19/128",
+          "17/128"
+        ],
+        "feasible": true
+      }
+    ],
+    "final_ports": [
+      "19/128",
+      "17/128"
+    ],
+    "cold_margin": "21/640",
+    "hot_margin": "97/640",
+    "old_evidence_compatible_alternative_final": [
+      "9/64",
+      "11/128"
+    ],
+    "initial_hot_only_alias": {
+      "other_preparation": [
+        "0",
+        "3/4"
+      ],
+      "current_port": "3/8",
+      "other_final_ports": [
+        "15/128",
+        "3/32"
+      ],
+      "one_step_output_difference": "1/32"
+    },
+    "before": "no guarantee: compatible models disagree",
+    "after": "feasible within the exact admitted model class",
+    "global_preparation_optimality": "not_claimed"
+  },
+  "uncertainty": {
+    "representation": "zero under checked equations",
+    "numerical": "exact rational",
+    "state_estimation": "zero only with verified reset and full input history",
+    "physical_model": "not bounded by this experiment",
+    "measurements": "exact mathematical data only",
+    "reaction_thermal_coupling": "not identified or authorized by isolated records"
+  }
+}

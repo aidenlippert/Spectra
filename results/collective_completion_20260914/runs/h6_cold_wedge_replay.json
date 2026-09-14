@@ -1,0 +1,24 @@
+{
+  "name": "h6_cold_wedge_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-m",
+    "research.collective_completion_20260914.spin_replay",
+    "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "results/collective_completion_20260914/candidates/h6_actual_spin_r32_cold_wedge/round_1/certificate.json",
+    "results/collective_completion_20260914/candidates/h6_actual_spin_r32_cold_wedge/round_1/interval.json",
+    "--upper",
+    "results/correlated_pair_20260913/mps/h6_b48_real/interval.json"
+  ],
+  "timeout_seconds": 90,
+  "status": "passed",
+  "started_UTC": "2026-09-14T20:11:27.124761+00:00",
+  "pid": 44364,
+  "exit_code": 0,
+  "wall_seconds": 6.410916292006732,
+  "child_user_seconds": 5.730105,
+  "child_system_seconds": 0.186528,
+  "peak_child_RSS_bytes": 71647232,
+  "finished_UTC": "2026-09-14T20:11:33.538363+00:00"
+}

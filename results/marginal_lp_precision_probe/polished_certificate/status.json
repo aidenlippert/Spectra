@@ -1,0 +1,42 @@
+{
+  "source": "results/marginal_asymmetric_adapt/1_1000_penalty/polished/certificate.json",
+  "success": true,
+  "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "build_seconds": 4.829137791064568,
+  "lp_seconds": 0.21316191693767905,
+  "rows": 866,
+  "candidate_squares": 253,
+  "multiplier_rank": 316,
+  "options_used": {
+    "method": "highs",
+    "primal_feasibility_tolerance": 1e-09,
+    "dual_feasibility_tolerance": 1e-09
+  },
+  "numerical_objective": 3.2809863869603477,
+  "max_equation_residual": 1.0700818636483889e-07,
+  "equation_l2": 4.889960972321833e-07,
+  "weighted_equation_l1": 1.1417133749172944e-05,
+  "weighted_equation_linf": 3.870791892420358e-07,
+  "matrix_nonzero_entries": 26203,
+  "matrix_min_abs_nonzero": 3.3601666666666685e-26,
+  "matrix_quantiles_abs_nonzero": [
+    3.3601666666666685e-26,
+    9.59568406666667e-22,
+    0.1706899152793114,
+    1.947830846885259,
+    5.47637823208256
+  ],
+  "exported_b": "820246596660993446378346512427259297151/250000000000000000000000000000000000000",
+  "lower_float": 3.2809749582861105,
+  "width_float": 2.981959729297117e-05,
+  "export_gap": 1.142867423720162e-05,
+  "polynomial_terms_kept": 4015,
+  "polynomial_terms_dropped": 0,
+  "coefficient_l1_kept": 1481.2439187697903,
+  "coefficient_l1_dropped": 0.0,
+  "residual_l1_float": 1.1428357863300589e-05,
+  "residual_nonconstant_l1": "1714253679495088415251912461444387407/150000000000000000000000000000000000000000",
+  "orbit_squares": 15,
+  "direct_squares": 236,
+  "total_seconds": 18.88586641603615
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "h8-singlet-independent-replay-v1",
+  "checks": "passed",
+  "hamiltonian_sha256": "78365286838362d1b591e7afcef0f1e2a085fafc445e961f3b7e19603dbf1c6c",
+  "splus_annihilation": true,
+  "gram_rank": 14,
+  "splus_rank": 56,
+  "actual_h_pp_zero": true,
+  "negative_pivots": 13,
+  "tamper_tests": {
+    "duplicate_basis": "rejected",
+    "altered_coeff": "rejected",
+    "wrongGram": "rejected"
+  },
+  "status": "superseded_invalid_verification",
+  "reason": "Original verifier omitted direct S+ annihilation, actual H_PP and LDL reconstruction, and did not submit mutations to verification. Use root_independent_replay.json."
+}

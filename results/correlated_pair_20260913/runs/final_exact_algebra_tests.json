@@ -1,0 +1,23 @@
+{
+  "name": "final_exact_algebra_tests",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "unittest",
+    "research.correlated_pair_20260913.test_mps",
+    "research.correlated_pair_20260913.test_algebra",
+    "research.correlated_pair_20260913.self_consistent.test_fixed_guide"
+  ],
+  "timeout_seconds": 60,
+  "status": "failed",
+  "started_UTC": "2026-09-14T07:06:12.216083+00:00",
+  "pid": 23496,
+  "exit_code": 1,
+  "wall_seconds": 0.2475087080092635,
+  "child_user_seconds": 0.149132,
+  "child_system_seconds": 0.013456,
+  "peak_child_RSS_bytes": 21757952,
+  "finished_UTC": "2026-09-14T07:06:12.464151+00:00"
+}

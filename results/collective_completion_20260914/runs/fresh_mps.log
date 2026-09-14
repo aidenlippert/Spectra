@@ -1,0 +1,18 @@
+1, R, max_bond=(4/8), cutoff:1e-12
+  0%|                                                     | 0/5 [00:00<?, ?it/s] 80%|####################################         | 4/5 [00:00<00:00, 37.56it/s]100%|#############################################| 5/5 [00:00<00:00, 45.41it/s]
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/mps_spatial.py", line 58, in run
+    converged=dm.solve(tol=1e-9,max_sweeps=sweeps,sweep_sequence='RL',verbosity=1)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/.venv-correlated/lib/python3.12/site-packages/quimb/tensor/tn1d/dmrg.py", line 1134, in solve
+    self._compute_post_sweep()
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/mps_spatial.py", line 56, in checkpoint
+    (out/'checkpoint.json').write_text(json.dumps(cert,separators=(',',':'))+'\n')
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/collective_completion_20260914/transfer/mps/checkpoint.json'

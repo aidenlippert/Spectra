@@ -1,0 +1,83 @@
+[
+  {
+    "lower": "66330138593/125000000000",
+    "upper": "344374464807/624998574605",
+    "width": "318113205379579953847/15624964365125000000000",
+    "residual_row_norm": "4299367/500000000000",
+    "lower_float": 0.530641108744,
+    "upper_float": 0.551000400320345,
+    "width_float": 0.020359291576344984,
+    "factor_rows": 118,
+    "case": "matched",
+    "t": "1/5",
+    "history": [
+      {
+        "iteration": 0,
+        "directions_per_charge": 0,
+        "width": 0.04090341539334498,
+        "numeric_lower": 0.510102049726465,
+        "seconds": 0.2329887499799952
+      },
+      {
+        "iteration": 1,
+        "directions_per_charge": 18,
+        "width": 0.022382532581344983,
+        "numeric_lower": 0.5286279967122115,
+        "seconds": 0.5922368330648169
+      },
+      {
+        "iteration": 2,
+        "directions_per_charge": 36,
+        "width": 0.020359291576344984,
+        "numeric_lower": 0.5306497074778748,
+        "seconds": 6.075475166901015
+      }
+    ],
+    "certificate_file": "matched_recycled_subspace.json",
+    "reference_numeric": 0.5510004003203196
+  },
+  {
+    "lower": "523386556777/1000000000000",
+    "upper": "225365268361/416666252935",
+    "width": "1457550582435155921901/83333250587000000000000",
+    "residual_row_norm": "4890015293/1000000000000",
+    "lower_float": 0.523386556777,
+    "upper_float": 0.5408771811336422,
+    "width_float": 0.01749062435664227,
+    "factor_rows": 97,
+    "case": "asymmetric",
+    "t": "1/5",
+    "history": [
+      {
+        "iteration": 0,
+        "directions_per_charge": 0,
+        "width": 0.03976888802464227,
+        "numeric_lower": 0.501113378479578,
+        "seconds": 0.21585954201873392
+      },
+      {
+        "iteration": 1,
+        "directions_per_charge": 18,
+        "width": 0.02168269866664227,
+        "numeric_lower": 0.5192018355849914,
+        "seconds": 1.0014592920197174
+      },
+      {
+        "iteration": 2,
+        "directions_per_charge": 32,
+        "width": 0.01686667636664227,
+        "numeric_lower": 0.5240237488831615,
+        "seconds": 9.583220124943182
+      },
+      {
+        "iteration": 3,
+        "directions_per_charge": 36,
+        "width": 0.01749062435664227,
+        "numeric_lower": 0.5282765720702212,
+        "seconds": 52.61513304209802
+      }
+    ],
+    "certificate_file": "asymmetric_recycled_subspace.json",
+    "reference_numeric": 0.5408771811334442
+  }
+]

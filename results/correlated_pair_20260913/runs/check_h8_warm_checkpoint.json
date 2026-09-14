@@ -1,0 +1,24 @@
+{
+  "name": "check_h8_warm_checkpoint",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.correlated_pair_20260913.mps_exact",
+    "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "results/correlated_pair_20260913/mps/h8_spatial_warm128/checkpoint.json",
+    "--output",
+    "results/correlated_pair_20260913/mps/h8_spatial_warm128/checkpoint_acceptance.json"
+  ],
+  "timeout_seconds": 90,
+  "status": "passed",
+  "started_UTC": "2026-09-14T07:01:56.866503+00:00",
+  "pid": 22795,
+  "exit_code": 0,
+  "wall_seconds": 45.327841083999374,
+  "child_user_seconds": 44.221421,
+  "child_system_seconds": 0.25190999999999997,
+  "peak_child_RSS_bytes": 39206912,
+  "finished_UTC": "2026-09-14T07:02:42.194440+00:00"
+}

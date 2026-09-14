@@ -1,0 +1,23 @@
+{
+  "name": "fresh_upper_retry",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-m",
+    "research.correlated_pair_20260913.mps_exact",
+    "results/collective_completion_20260914/transfer/fixture/fixture.json",
+    "results/collective_completion_20260914/transfer/mps/state.json",
+    "--output",
+    "results/collective_completion_20260914/transfer/mps/exact_upper.json"
+  ],
+  "timeout_seconds": 45,
+  "status": "passed",
+  "started_UTC": "2026-09-14T19:01:52.629463+00:00",
+  "pid": 32738,
+  "exit_code": 0,
+  "wall_seconds": 0.5884344999940367,
+  "child_user_seconds": 0.542752,
+  "child_system_seconds": 0.012102,
+  "peak_child_RSS_bytes": 22724608,
+  "finished_UTC": "2026-09-14T19:01:53.218765+00:00"
+}

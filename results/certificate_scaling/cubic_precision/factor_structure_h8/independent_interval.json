@@ -1,0 +1,211 @@
+{
+  "method": "spectral",
+  "lower": "-578507803989734181786419/62500000000000000000000",
+  "upper": "-462765221479404761245032793227251/50000000002683070502000000000000",
+  "width": "1281929288044367784027058634529491556169/1562500000083845953187500000000000000000000",
+  "lower_float": -9.256124863835748,
+  "upper_float": -9.255304429091442,
+  "width_float": 0.0008204347443043698,
+  "passes_0_0016_Ha": true,
+  "modes": 16,
+  "particles": 8,
+  "certificate": "results/certificate_scaling/cubic_precision/factor_structure_h8/compressed_certificate.json",
+  "certificate_bytes": 2125203,
+  "certificate_sha256": "4c1e74f2d5b7243a3f97394901d1d7e3d7315639740fd51a23bb9d4ff3e2e3c9",
+  "reference": "results/certificate_scaling/cubic_precision/reference_h8_full_checked/h8/upper.json",
+  "reference_sha256": "884b960381502a8ccd4d1c17f1ccf8950d3f068f781e82b23913f7119f7ad4f6",
+  "proof": "results/certificate_scaling/cubic_precision/factor_structure_h8/threshold_1000000_wedge/witness.json",
+  "proof_sha256": "a784de66bd294eb7b3144d5a113413a1a320b0365cd4526ec70e72b2254b73da",
+  "proof_bytes": 559994,
+  "lower_replay": {
+    "method": "fixed_N_wedge_spectral_gram_v1",
+    "lower": "-578507803989734181786419/62500000000000000000000",
+    "lower_float": -9.256124863835748,
+    "bodies": [
+      {
+        "body": 1,
+        "wedge_dimension": 16,
+        "components": [
+          {
+            "dimension": 4,
+            "rank": 4,
+            "integer_product_work": 40,
+            "ell": "-4820083537/1000000000000000",
+            "residual_gershgorin": "-1342766573/500000000000000000000000",
+            "lower": "-2410041769842766573/500000000000000000000000"
+          },
+          {
+            "dimension": 4,
+            "rank": 4,
+            "integer_product_work": 40,
+            "ell": "-300885813/62500000000000",
+            "residual_gershgorin": "-217756017/50000000000000000000000",
+            "lower": "-240708650617756017/50000000000000000000000"
+          },
+          {
+            "dimension": 4,
+            "rank": 4,
+            "integer_product_work": 40,
+            "ell": "-2123771943/250000000000000",
+            "residual_gershgorin": "-3872144523/1000000000000000000000000",
+            "lower": "-8495087775872144523/1000000000000000000000000"
+          },
+          {
+            "dimension": 4,
+            "rank": 4,
+            "integer_product_work": 40,
+            "ell": "-8494825059/1000000000000000",
+            "residual_gershgorin": "-895759073/500000000000000000000000",
+            "lower": "-4247412530395759073/500000000000000000000000"
+          }
+        ],
+        "spectral_fixed_N_lower": "-8495087775872144523/125000000000000000000000",
+        "chosen_lower": "-8495087775872144523/125000000000000000000000"
+      },
+      {
+        "body": 2,
+        "wedge_dimension": 120,
+        "components": [
+          {
+            "dimension": 32,
+            "rank": 32,
+            "integer_product_work": 16896,
+            "ell": "-9787208819/1000000000000000",
+            "residual_gershgorin": "-40808438017/1000000000000000000000000",
+            "lower": "-9787208859808438017/1000000000000000000000000"
+          },
+          {
+            "dimension": 16,
+            "rank": 16,
+            "integer_product_work": 2176,
+            "ell": "-841769783/100000000000000",
+            "residual_gershgorin": "-4576082333/250000000000000000000000",
+            "lower": "-2104424462076082333/250000000000000000000000"
+          },
+          {
+            "dimension": 32,
+            "rank": 32,
+            "integer_product_work": 16896,
+            "ell": "-9883182373/1000000000000000",
+            "residual_gershgorin": "-17864183181/500000000000000000000000",
+            "lower": "-4941591204364183181/500000000000000000000000"
+          },
+          {
+            "dimension": 12,
+            "rank": 12,
+            "integer_product_work": 936,
+            "ell": "-1465235589/250000000000000",
+            "residual_gershgorin": "-1290649679/100000000000000000000000",
+            "lower": "-586094236890649679/100000000000000000000000"
+          },
+          {
+            "dimension": 16,
+            "rank": 16,
+            "integer_product_work": 2176,
+            "ell": "-8418285289/1000000000000000",
+            "residual_gershgorin": "-8557552253/500000000000000000000000",
+            "lower": "-4209142653057552253/500000000000000000000000"
+          },
+          {
+            "dimension": 12,
+            "rank": 12,
+            "integer_product_work": 936,
+            "ell": "-5860944521/1000000000000000",
+            "residual_gershgorin": "-1654185237/125000000000000000000000",
+            "lower": "-732618066779185237/125000000000000000000000"
+          }
+        ],
+        "spectral_fixed_N_lower": "-34591138430549282267/125000000000000000000000",
+        "chosen_lower": "-34591138430549282267/125000000000000000000000"
+      },
+      {
+        "body": 3,
+        "wedge_dimension": 560,
+        "components": [
+          {
+            "dimension": 112,
+            "rank": 112,
+            "integer_product_work": 708736,
+            "ell": "-575282321/200000000000000",
+            "residual_gershgorin": "-1487256917/20000000000000000000000",
+            "lower": "-57528233587256917/20000000000000000000000"
+          },
+          {
+            "dimension": 112,
+            "rank": 112,
+            "integer_product_work": 708736,
+            "ell": "-2876722361/1000000000000000",
+            "residual_gershgorin": "-1474287939/20000000000000000000000",
+            "lower": "-57534448694287939/20000000000000000000000"
+          },
+          {
+            "dimension": 112,
+            "rank": 112,
+            "integer_product_work": 708736,
+            "ell": "-1469488497/500000000000000",
+            "residual_gershgorin": "-74899346429/1000000000000000000000000",
+            "lower": "-2938977068899346429/1000000000000000000000000"
+          },
+          {
+            "dimension": 112,
+            "rank": 112,
+            "integer_product_work": 708736,
+            "ell": "-1469588161/500000000000000",
+            "residual_gershgorin": "-9123486983/125000000000000000000000",
+            "lower": "-367397049373486983/125000000000000000000000"
+          },
+          {
+            "dimension": 28,
+            "rank": 28,
+            "integer_product_work": 11368,
+            "ell": "-965175937/500000000000000",
+            "residual_gershgorin": "-8223684197/500000000000000000000000",
+            "lower": "-965175945223684197/500000000000000000000000"
+          },
+          {
+            "dimension": 28,
+            "rank": 28,
+            "integer_product_work": 11368,
+            "ell": "-2436713/1250000000000",
+            "residual_gershgorin": "-3444320087/200000000000000000000000",
+            "lower": "-389874083444320087/200000000000000000000000"
+          },
+          {
+            "dimension": 28,
+            "rank": 28,
+            "integer_product_work": 11368,
+            "ell": "-193046303/100000000000000",
+            "residual_gershgorin": "-4065357507/250000000000000000000000",
+            "lower": "-482615761565357507/250000000000000000000000"
+          },
+          {
+            "dimension": 28,
+            "rank": 28,
+            "integer_product_work": 11368,
+            "ell": "-1949640761/1000000000000000",
+            "residual_gershgorin": "-9281350717/500000000000000000000000",
+            "lower": "-974820389781350717/500000000000000000000000"
+          }
+        ],
+        "spectral_fixed_N_lower": "-2571779345614408881/15625000000000000000000",
+        "chosen_lower": "-2571779345614408881/15625000000000000000000"
+      }
+    ],
+    "old_wedge_lower": "-1851464109302483723/200000000000000000",
+    "many_body_states_enumerated": 0,
+    "scope": "Exact residual bound only; full original SOS discovery cost remains."
+  },
+  "upper_replay": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 2468,
+    "hamiltonian_terms": 2912,
+    "word_state_checks": 7186816,
+    "contributing_word_state_pairs": 783920,
+    "action_cache_states": 0,
+    "replay_seconds": 0.6791175420075888,
+    "upper": "-462765221479404761245032793227251/50000000002683070502000000000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  },
+  "wall_seconds": 38.15243416700105,
+  "scope": "Frozen rational Hamiltonian in fixed total-N sector. Reference FCI discovery remains an exponential validation cost; no basis/model/experimental error guarantee."
+}

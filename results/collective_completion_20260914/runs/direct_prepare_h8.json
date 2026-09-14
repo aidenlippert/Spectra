@@ -1,0 +1,23 @@
+{
+  "name": "direct_prepare_h8",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.collective_completion_20260914.prepare",
+    "h8",
+    "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "results/correlated_pair_20260913/mps/h8_spatial_warm144/state.json",
+    "results/collective_completion_20260914/prepared/h8"
+  ],
+  "timeout_seconds": 90,
+  "status": "passed",
+  "started_UTC": "2026-09-14T18:47:40.769651+00:00",
+  "pid": 30400,
+  "exit_code": 0,
+  "wall_seconds": 25.79975837501115,
+  "child_user_seconds": 24.3092,
+  "child_system_seconds": 0.483408,
+  "peak_child_RSS_bytes": 290881536,
+  "finished_UTC": "2026-09-14T18:48:06.569633+00:00"
+}

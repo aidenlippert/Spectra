@@ -1,0 +1,122 @@
+{
+  "campaign_seconds": 111.03020991700032,
+  "cases": [
+    {
+      "case": "h4_joint_0",
+      "budget_seconds": 90.0,
+      "within_budget_accepted": true,
+      "end_to_end_seconds": 1.3225372500019148,
+      "construction_seconds": 0.07334604200150352,
+      "solve_seconds": 0.15197991699824343,
+      "export_seconds": 0.008948750000854488,
+      "accept_seconds": 0.046374707999348175,
+      "compact_certificate_bytes": 11466,
+      "Gram_entries": 1136,
+      "coefficient_rows": 185,
+      "gram_map_nonzeros": 1280
+    },
+    {
+      "case": "h4_joint_6",
+      "budget_seconds": 90.0,
+      "within_budget_accepted": true,
+      "end_to_end_seconds": 1.7250804159994004,
+      "construction_seconds": 0.45919812499778345,
+      "solve_seconds": 0.19564770800207043,
+      "export_seconds": 0.00867729199671885,
+      "accept_seconds": 0.38978833299916005,
+      "compact_certificate_bytes": 15460,
+      "Gram_entries": 1920,
+      "coefficient_rows": 185,
+      "gram_map_nonzeros": 59824
+    },
+    {
+      "case": "h6_joint_0",
+      "budget_seconds": 90.0,
+      "within_budget_accepted": true,
+      "end_to_end_seconds": 2.7439989170015906,
+      "construction_seconds": 0.35913287499715807,
+      "solve_seconds": 1.3714461249983287,
+      "export_seconds": 0.031147333000262734,
+      "accept_seconds": 0.2937607920030132,
+      "compact_certificate_bytes": 40633,
+      "Gram_entries": 5724,
+      "coefficient_rows": 919,
+      "gram_map_nonzeros": 6180
+    },
+    {
+      "case": "h6_separate_10",
+      "budget_seconds": 90.0,
+      "within_budget_accepted": true,
+      "end_to_end_seconds": 27.77658641600283,
+      "construction_seconds": 11.747959250002168,
+      "solve_seconds": 2.078373666998232,
+      "export_seconds": 0.03287008299957961,
+      "accept_seconds": 12.746295999997528,
+      "compact_certificate_bytes": 52041,
+      "Gram_entries": 7164,
+      "coefficient_rows": 919,
+      "gram_map_nonzeros": 158834
+    },
+    {
+      "case": "h6_joint_2",
+      "budget_seconds": 90.0,
+      "within_budget_accepted": true,
+      "end_to_end_seconds": 11.60585179199552,
+      "construction_seconds": 4.058773666998604,
+      "solve_seconds": 1.9518815830015228,
+      "export_seconds": 0.032962958997813985,
+      "accept_seconds": 4.428709375002654,
+      "compact_certificate_bytes": 42346,
+      "Gram_entries": 6048,
+      "coefficient_rows": 919,
+      "gram_map_nonzeros": 85824
+    },
+    {
+      "case": "h6_joint_4",
+      "budget_seconds": 90.0,
+      "within_budget_accepted": true,
+      "end_to_end_seconds": 11.832492415996967,
+      "construction_seconds": 4.240667958998529,
+      "solve_seconds": 1.7474278750014491,
+      "export_seconds": 0.028720165995764546,
+      "accept_seconds": 4.628688584001793,
+      "compact_certificate_bytes": 48612,
+      "Gram_entries": 6624,
+      "coefficient_rows": 919,
+      "gram_map_nonzeros": 297648
+    },
+    {
+      "case": "h6_joint_10",
+      "budget_seconds": 90.0,
+      "within_budget_accepted": true,
+      "end_to_end_seconds": 54.012650790995394,
+      "construction_seconds": 4.624991707998561,
+      "solve_seconds": 42.75994233300298,
+      "export_seconds": 0.04540404200088233,
+      "accept_seconds": 5.442881333001424,
+      "compact_certificate_bytes": 65072,
+      "Gram_entries": 10080,
+      "coefficient_rows": 919,
+      "gram_map_nonzeros": 1726272
+    }
+  ],
+  "separate_work": {
+    "fresh_lower_and_upper_replay_seconds": 27.646684917002858,
+    "dual_diagnostic": {
+      "budget_seconds": 120,
+      "wall_seconds": 14.268654416002391,
+      "failure": null,
+      "within_budget_accepted": true
+    },
+    "spin_diagnostic": {
+      "budget_seconds": 60,
+      "wall_seconds": 12.997437124999124,
+      "failure": null,
+      "within_budget_accepted": true
+    },
+    "additional_fresh_dual_replay_seconds": 6.36409054199612,
+    "initial_weaker_comparison_audit_seconds": 12.663260541994532,
+    "final_precision_comparison_audit_seconds": 13.452256208998733
+  },
+  "scope": "Separate timings are measured additional calls, not campaign costs or one elapsed end-to-end timer. Development, tests, manifest creation, and original input/proof/upper discovery are not included."
+}

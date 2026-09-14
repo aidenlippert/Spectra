@@ -1,0 +1,24 @@
+{
+  "metric_family": "D times (1 + reflection-tied q0^2 q1^2), strictly positive on Q",
+  "Hamiltonian": "Nearest-neighbor Hubbard chain U=4,t=1",
+  "gamma": "0",
+  "results": [
+    {
+      "sites": 6,
+      "weight_degree": 6,
+      "numerator_degree": 6,
+      "numerator_terms_above_proof_degree_six": 0,
+      "unavoidable_degree_six_coefficient_residual_l1": "0",
+      "determinant_actions": 0
+    },
+    {
+      "sites": 8,
+      "weight_degree": 6,
+      "numerator_degree": 8,
+      "numerator_terms_above_proof_degree_six": 501,
+      "unavoidable_degree_six_coefficient_residual_l1": "5440",
+      "determinant_actions": 0
+    }
+  ],
+  "scope": "Coefficient-degree diagnostic only, not an accepted gap or infeasibility proof. Current positive/localizer/number-identity proof terms have Boolean degree<=6; higher-degree compiled numerator coefficients therefore remain in the verifier L1 residual. H6 degree truncation benefits from only six particles. Higher-degree proof support or another metric is needed to remove these particular residual coefficients exactly."
+}

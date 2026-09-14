@@ -1,0 +1,12 @@
+{
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest -q tests/test_marginal_fraction_free_completion.py",
+  "tests_passed": 9,
+  "elapsed_seconds": 0.03,
+  "exit_code": 0,
+  "source_sha256": {
+    "results/marginal_graded_hubbard8/discovery/fraction_free_completion.py": "ff4b708d541ac2d077e2a31cbaa3fe924810d73f26289e24fa9222d8f7cb1b07",
+    "tests/test_marginal_fraction_free_completion.py": "1408694eb7a3096f0df57a0f92445d61a1fccc9670f07c500b5e6456ff72b751",
+    "results/marginal_graded_hubbard8/spectator_hopping/basis_completion_focused_validation.log": "7b3b0d5a921d7788afd5d0591f4f23616773499e68d52f759b0a65c29bc0ff2c"
+  },
+  "scope": "New integer elimination helper: original-equation reconstruction, row swaps, negative determinant, inconsistent rectangular systems, explicit residual completion and refusal cases. No full-suite rerun."
+}

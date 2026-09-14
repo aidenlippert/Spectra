@@ -1,0 +1,50 @@
+{
+  "T1_charge_-3": {
+    "kind": "T1_charge_-3",
+    "anticommutator_degrees": [
+      0,
+      2,
+      4
+    ],
+    "degree6_terms": 0,
+    "remainder_max_degree": 4,
+    "single_square_has_degree6": true,
+    "coefficients": {
+      "()": "5",
+      "((True, 0), (0, 0))": "-5",
+      "((True, 1), (0, 1))": "-4",
+      "((True, 0), (True, 1), (0, 0), (0, 1))": "-4",
+      "((True, 2), (0, 2))": "-5",
+      "((True, 0), (True, 2), (0, 0), (0, 2))": "-5",
+      "((True, 1), (True, 2), (0, 1), (0, 2))": "-4",
+      "((True, 3), (0, 1))": "-2",
+      "((True, 0), (True, 3), (0, 0), (0, 1))": "-2",
+      "((True, 2), (True, 3), (0, 1), (0, 2))": "2",
+      "((True, 1), (0, 3))": "-2",
+      "((True, 0), (True, 1), (0, 0), (0, 3))": "-2",
+      "((True, 1), (True, 2), (0, 2), (0, 3))": "2",
+      "((True, 3), (0, 3))": "-1",
+      "((True, 0), (True, 3), (0, 0), (0, 3))": "-1",
+      "((True, 2), (True, 3), (0, 2), (0, 3))": "-1"
+    }
+  },
+  "T2_charge_-1": {
+    "kind": "T2_charge_-1",
+    "anticommutator_degrees": [
+      2,
+      4
+    ],
+    "degree6_terms": 0,
+    "remainder_max_degree": 4,
+    "single_square_has_degree6": true,
+    "coefficients": {
+      "((1, 0), (False, 0))": "4",
+      "((1, 0), (True, 1), (False, 0), (0, 1))": "4",
+      "((1, 0), (True, 2), (False, 0), (0, 2))": "4",
+      "((1, 1), (False, 1))": "1",
+      "((1, 1), (True, 2), (False, 1), (0, 2))": "-3",
+      "((1, 1), (True, 3), (False, 1), (0, 3))": "1",
+      "((True, 2), (True, 3), (0, 2), (0, 3))": "-1"
+    }
+  }
+}

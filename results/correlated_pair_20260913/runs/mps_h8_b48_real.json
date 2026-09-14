@@ -1,0 +1,29 @@
+{
+  "name": "mps_h8_b48_real",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-u",
+    "-m",
+    "research.correlated_pair_20260913.mps_direct",
+    "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "results/correlated_pair_20260913/mps/h8_b48_real",
+    "--alpha",
+    "4",
+    "--beta",
+    "4",
+    "--bond",
+    "48",
+    "--sweeps",
+    "16"
+  ],
+  "timeout_seconds": 180,
+  "status": "timeout",
+  "started_UTC": "2026-09-14T06:46:43.145517+00:00",
+  "pid": 20306,
+  "exit_code": -15,
+  "wall_seconds": 180.01822979201097,
+  "child_user_seconds": 149.820701,
+  "child_system_seconds": 28.757871,
+  "peak_child_RSS_bytes": 611926016,
+  "finished_UTC": "2026-09-14T06:49:43.161754+00:00"
+}

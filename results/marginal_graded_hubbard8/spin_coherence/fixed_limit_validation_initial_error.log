@@ -1,0 +1,66 @@
+FF.......                                                                [100%]
+=================================== FAILURES ===================================
+_______ test_vacuum_expectation_matches_direct_occupation_energy[W_zero] _______
+
+case = 'W_zero'
+
+    @pytest.mark.parametrize('case', ['W_zero', 'W_plus_1'])
+    def test_vacuum_expectation_matches_direct_occupation_energy(case):
+        c = seed(case)
+>       result = replay(c, proposal())
+                 ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_marginal_spin_coherence_fixed_limit.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+results/marginal_graded_hubbard8/discovery/spin_coherence_fixed_limit_replay.py:90: in replay
+    expectation = fixed_expectation(c)
+                  ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+c = {'chain_sites': 1000000, 'charge_square_pair_telescope': {'0,1': '110381/250000', '0,2': '94543/1000000', '0,3': '5399...e': {'0,1,2': '-43121/100000', '0,1,2,3': '36869/100000', '0,1,2,4': '3181/40000', '0,1,3': '-92699/500000', ...}, ...}
+
+    def fixed_expectation(c):
+        if c.get('kind') != 'hubbard_projector_extension_v18' or any(F(c['target'][k]) != v for k, v in [('U', 4), ('t', 1), ('V', F(1, 2))]):
+            raise ValueError('Matched accepted ENERGYv18 recipe required')
+        local = c['local_window']
+        u, t, d = [list(map(F, local[key])) for key in ('onsite_profile', 'hopping_profile', 'density_profile')]
+        physical = _actions(6, F(10, 3), 1, u, t, F(1, 2), d)
+>       combined = [dict(image) for image in physical]
+                    ^^^^^^^^^^^
+E       TypeError: 'int' object is not iterable
+
+results/marginal_graded_hubbard8/discovery/spin_coherence_fixed_limit_replay.py:32: TypeError
+______ test_vacuum_expectation_matches_direct_occupation_energy[W_plus_1] ______
+
+case = 'W_plus_1'
+
+    @pytest.mark.parametrize('case', ['W_zero', 'W_plus_1'])
+    def test_vacuum_expectation_matches_direct_occupation_energy(case):
+        c = seed(case)
+>       result = replay(c, proposal())
+                 ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_marginal_spin_coherence_fixed_limit.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+results/marginal_graded_hubbard8/discovery/spin_coherence_fixed_limit_replay.py:90: in replay
+    expectation = fixed_expectation(c)
+                  ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+c = {'chain_sites': 1000000, 'charge_square_pair_telescope': {'0,1': '458259/1000000', '0,2': '-19617/1000000', '0,3': '-1...': {'0,1,2': '-8629/25000', '0,1,2,3': '59749/500000', '0,1,2,4': '272859/1000000', '0,1,3': '-5669/125000', ...}, ...}
+
+    def fixed_expectation(c):
+        if c.get('kind') != 'hubbard_projector_extension_v18' or any(F(c['target'][k]) != v for k, v in [('U', 4), ('t', 1), ('V', F(1, 2))]):
+            raise ValueError('Matched accepted ENERGYv18 recipe required')
+        local = c['local_window']
+        u, t, d = [list(map(F, local[key])) for key in ('onsite_profile', 'hopping_profile', 'density_profile')]
+        physical = _actions(6, F(10, 3), 1, u, t, F(1, 2), d)
+>       combined = [dict(image) for image in physical]
+                    ^^^^^^^^^^^
+E       TypeError: 'int' object is not iterable
+
+results/marginal_graded_hubbard8/discovery/spin_coherence_fixed_limit_replay.py:32: TypeError
+=========================== short test summary info ============================
+FAILED tests/test_marginal_spin_coherence_fixed_limit.py::test_vacuum_expectation_matches_direct_occupation_energy[W_zero]
+FAILED tests/test_marginal_spin_coherence_fixed_limit.py::test_vacuum_expectation_matches_direct_occupation_energy[W_plus_1]
+2 failed, 7 passed in 1.17s

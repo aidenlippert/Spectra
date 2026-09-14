@@ -1,0 +1,98 @@
+{
+  "status": "bounded_research_pass_complete",
+  "accurate_correlated_upper_component_achieved": true,
+  "inexpensive_joint_state_and_lower_proof_achieved": false,
+  "cases": {
+    "h6": {
+      "lower_Ha": "-3166556810312917952757997/500000000000000000000000",
+      "upper_Ha": "-6332951156335762430738513632159156621419304728236732118241602111018907326811594497745798702342741418269384810978540898870210670209171933574961760525172391592126849688016426047811086232806733943/999999383519423276074251305321623806426591727772533977981782828869816843563395515958935372387327253599973269768958211998077216507324994374844782691678987383444664761016382623898324000000000000",
+      "width_mHa": 0.15856014628542364,
+      "upper_deterioration_mHa": 0.1035657534500062,
+      "target_1p6mHa_met": true,
+      "upper_0p5mHa_target_met": true,
+      "tensor_nonzero_entries": 1012
+    },
+    "h8": {
+      "lower_Ha": "-2314013753548521439038541/250000000000000000000000",
+      "upper_Ha": "-96404980911024525006405292665415310181984785342197138743660616188707848777834027376804741614844212591234754769059203115061173136863499536151492878657828048232619820481156991641543265044980626316403255536154728946984394146630657922055077269284099303387662389638721/10416666681366128139025077588426157777196472916600533534511978270474724715766654315271523831102045082704716582998560034624027721405606900471966456548039163183196819459817932009693131265884064116310586385813423340702869292372988380208030951789665275378000000000000",
+      "width_mHa": 1.1768597957369422,
+      "upper_deterioration_mHa": 0.426274693093725,
+      "target_1p6mHa_met": true,
+      "upper_0p5mHa_target_met": true,
+      "tensor_nonzero_entries": 10093
+    }
+  },
+  "report": "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/REPORT.md",
+  "CH2_model_gap": {
+    "gap_convention": "E_S-E_T",
+    "gap_lower_mHa": 40.60430478941063,
+    "gap_upper_mHa": 40.624759441307816,
+    "gap_width_mHa": 0.020454651897186635
+  },
+  "independent_fresh_H6": {
+    "width_mHa": 1370.2389068779612,
+    "target_1p6mHa_met": false,
+    "frozen_sources_unchanged": true,
+    "FCI_or_full_cubic_teacher_built": false
+  },
+  "tests": {
+    "passed": 11,
+    "skipped_rejected_prototype_modules": 3,
+    "mutation_subtests_passed": 10
+  },
+  "audit": {
+    "preserved_file_count": 9643,
+    "changes_since_campaign_start": [],
+    "preexisting_parent_mismatches": [
+      {
+        "path": "research/global_response_20260913/joint_factor/local_family_residual_analysis.json",
+        "prior": {
+          "bytes": 1336,
+          "sha256": "c8aef646aec433892b061b322796f73f5552568e14fd11bd8332b6f7bfc0d3f5"
+        },
+        "current": {
+          "bytes": 1413,
+          "sha256": "2c12b8ab6d4fca02a0ac06556a675c80acbd98337bae2e18947c86321c43c540"
+        }
+      }
+    ],
+    "logged_completed_process_wall_seconds": 2032.6873035430326,
+    "peak_logged_child_RSS_bytes": 974766080,
+    "counts_by_status": {
+      "failed": 4,
+      "passed": 45,
+      "runner_error": 1,
+      "timeout": 3
+    },
+    "pending_experiments": [],
+    "missing_attempt_accounting": [
+      {
+        "path": "results/correlated_pair_20260913/runs/mps_h6.json",
+        "reason": "Early optimizer summary without a durable runner receipt; partial internal timing only.",
+        "partial_internal_seconds": 0.5086084159993334
+      },
+      {
+        "path": "results/correlated_pair_20260913/runs/mps_h6_random16.json",
+        "bytes": 0,
+        "reason": "Empty early optimizer output; timing receipt unavailable."
+      },
+      {
+        "path": "results/correlated_pair_20260913/runs/mps_h8.json",
+        "reason": "Early optimizer summary without a durable runner receipt; partial internal timing only.",
+        "partial_internal_seconds": 2.1296576659951825
+      },
+      {
+        "path": "results/correlated_pair_20260913/runs/mps_h8_random16.json",
+        "bytes": 0,
+        "reason": "Empty early optimizer output; timing receipt unavailable."
+      }
+    ],
+    "cost_scope": "Sum of logged process wall times, including failed and timed-out runs; not a complete end-to-end total because two early failed attempt timings are unavailable.",
+    "historical_cubic_discovery_seconds": {
+      "h6": 259.309,
+      "h8": 721.563
+    },
+    "historical_cubic_cost_scope": "Retained historical measurements, excluded from the new campaign total; unsuccessful historical attempts are not fully accounted.",
+    "preservation_scan_seconds": 5.636324750012136
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "case": "bond_disorder",
+  "modes": 8,
+  "bond_weight": "9/10",
+  "alternating_site_weight": "1",
+  "model": {
+    "modes": 8,
+    "particles": 4,
+    "hopping": [
+      "2/3",
+      "1",
+      "4/3",
+      "2/3",
+      "1",
+      "4/3",
+      "2/3"
+    ],
+    "interaction": [
+      "-13/12",
+      "-7/4",
+      "-29/12",
+      "-13/12",
+      "-7/4",
+      "-29/12",
+      "-13/12"
+    ],
+    "fields": [
+      "2/3",
+      "5/3",
+      "7/3",
+      "2",
+      "5/3",
+      "7/3",
+      "2",
+      "2/3"
+    ],
+    "energy_unit": "t_reference=1; abstract lattice model"
+  },
+  "amplitude": {
+    "sites": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "bonds": [
+      "9/10",
+      "9/10",
+      "9/10",
+      "9/10",
+      "9/10",
+      "9/10",
+      "9/10"
+    ]
+  },
+  "claim": {
+    "method": "fixed_N_positive_Jastrow_local_energy_DP_v1",
+    "lower": "-1/108",
+    "upper": "74272871/206560820",
+    "width": "1028503861/2788571070",
+    "lower_float": -0.009259259259259259,
+    "upper_float": 0.3595690170091308,
+    "width_float": 0.36882827626839004,
+    "partition": "10328041/200000",
+    "minimum_configuration": "10011001",
+    "modes": 8,
+    "particles": 4,
+    "dp_transitions": 142,
+    "peak_dp_states": 22,
+    "factor_table_entries": 112,
+    "factor_lookups": 294,
+    "peak_rational_bits": 25,
+    "wall_seconds": 0.0015954589907778427,
+    "many_body_states_enumerated": 0,
+    "scope": "Exact rational bounds for specified open nearest-neighbor chain; no generic accuracy guarantee."
+  }
+}

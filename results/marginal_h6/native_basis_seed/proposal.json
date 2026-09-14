@@ -1,0 +1,136 @@
+[
+  {
+    "dimension": 200,
+    "all_pairs": 19900,
+    "active_pairs": 6919,
+    "initial_pairs": 6919,
+    "pair_mode": "active",
+    "vector_mode": "rational",
+    "pair_pricing": "all_pairs",
+    "batch_selection": "by_support",
+    "candidate_atoms": 8611,
+    "initial_atoms": 8611,
+    "initial_proof_atoms": 4462,
+    "initial_exact_threshold": "-989658175137897683691587979/150788600719201000000000000",
+    "active_atoms": 4379,
+    "stopping_reason": "round_budget",
+    "history": [
+      {
+        "round": 0,
+        "selected_atoms": 8611,
+        "active_atoms": 4379,
+        "active_pairs": 6919,
+        "lp_seconds": 58.53831304202322,
+        "numerical_primal_threshold": -6.561049594982841,
+        "best_numerical_threshold": -6.561049594982841,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -1.188756285395887,
+        "priced_supports": 27690,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "batch_selection": "by_support",
+          "by_support": {
+            "2": {
+              "supports": 19900,
+              "minimum_eigenvalue": -0.26018612810490893,
+              "negative_eigenspaces": 2802
+            },
+            "3": {
+              "supports": 3341,
+              "minimum_eigenvalue": -0.7625845988479584,
+              "negative_eigenspaces": 3095
+            },
+            "4": {
+              "supports": 4449,
+              "minimum_eigenvalue": -1.188756285395887,
+              "negative_eigenspaces": 4327
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 85,
+            "3": 85,
+            "4": 86
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      }
+    ],
+    "elapsed_seconds": 60.52334537508432,
+    "seconds_cap": 180.0,
+    "round_cap": 1,
+    "exact_threshold": "-378659900179849762706283301/57713311672402500000000000",
+    "exact_threshold_float": -6.561049595095724,
+    "initial_basis_applied": false,
+    "scope": "Adaptive dual LP; every nonzero Hamiltonian pair and every pair used by a selected atom is modeled. Inactive pairs have identically zero primal residual; the numerical pricing dual is extended there by zero. Row multipliers propose positive atoms. Bounded support pricing is heuristic, not a global optimality test. The complete exact DD residual determines the exported threshold.",
+    "discovered_atoms": 8867
+  },
+  {
+    "dimension": 168,
+    "all_pairs": 14028,
+    "active_pairs": 5541,
+    "initial_pairs": 5541,
+    "pair_mode": "active",
+    "vector_mode": "rational",
+    "pair_pricing": "all_pairs",
+    "batch_selection": "by_support",
+    "candidate_atoms": 9307,
+    "initial_atoms": 9307,
+    "initial_proof_atoms": 3281,
+    "initial_exact_threshold": "-121749006781752759389739521/18885319344541500000000000",
+    "active_atoms": 3323,
+    "stopping_reason": "round_budget",
+    "history": [
+      {
+        "round": 0,
+        "selected_atoms": 9307,
+        "active_atoms": 3338,
+        "active_pairs": 5541,
+        "lp_seconds": 130.8702639999101,
+        "numerical_primal_threshold": -6.437773831679963,
+        "best_numerical_threshold": -6.437773831679963,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -2.2748325813697416,
+        "priced_supports": 20716,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_pairs",
+          "batch_selection": "by_support",
+          "by_support": {
+            "2": {
+              "supports": 14028,
+              "minimum_eigenvalue": -0.48158482990121465,
+              "negative_eigenspaces": 2601
+            },
+            "3": {
+              "supports": 2876,
+              "minimum_eigenvalue": -1.4918850096843235,
+              "negative_eigenspaces": 2632
+            },
+            "4": {
+              "supports": 3812,
+              "minimum_eigenvalue": -2.2748325813697416,
+              "negative_eigenspaces": 3698
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 85,
+            "3": 85,
+            "4": 86
+          },
+          "scope": "Numerical local eigenvalue diagnostics. Complete pair support coverage does not certify exact positivity or complete support-three/four pricing."
+        }
+      }
+    ],
+    "elapsed_seconds": 132.73360633396078,
+    "seconds_cap": 180.0,
+    "round_cap": 1,
+    "exact_threshold": "-182369122022605215546175907/28327979016812250000000000",
+    "exact_threshold_float": -6.437773831813832,
+    "initial_basis_applied": false,
+    "scope": "Adaptive dual LP; every nonzero Hamiltonian pair and every pair used by a selected atom is modeled. Inactive pairs have identically zero primal residual; the numerical pricing dual is extended there by zero. Row multipliers propose positive atoms. Bounded support pricing is heuristic, not a global optimality test. The complete exact DD residual determines the exported threshold.",
+    "discovered_atoms": 9563
+  }
+]

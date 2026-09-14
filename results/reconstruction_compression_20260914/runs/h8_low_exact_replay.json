@@ -1,0 +1,23 @@
+{
+  "name": "h8_low_exact_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-m",
+    "research.reconstruction_compression_20260914.replay",
+    "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "results/reconstruction_compression_20260914/candidates/h8_low_8/certificate.json",
+    "results/reconstruction_compression_20260914/candidates/h8_low_8/interval.json",
+    "--upper-receipt",
+    "results/correlated_pair_20260913/mps/h8_spatial_warm144/interval.json"
+  ],
+  "timeout_seconds": 90,
+  "status": "passed",
+  "started_UTC": "2026-09-14T08:05:41.041324+00:00",
+  "pid": 33312,
+  "exit_code": 0,
+  "wall_seconds": 27.781756917000166,
+  "child_user_seconds": 27.389804,
+  "child_system_seconds": 0.169974,
+  "peak_child_RSS_bytes": 115392512,
+  "finished_UTC": "2026-09-14T08:06:08.822909+00:00"
+}

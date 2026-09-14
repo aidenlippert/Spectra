@@ -1,0 +1,345 @@
+{
+  "status": "finite-sample calibration bridge; not a compounding result",
+  "physical_experiments_performed": false,
+  "cases": [
+    {
+      "seed": 14001,
+      "right_world": false,
+      "learned": {
+        "first_action": 0,
+        "child_actions": [
+          1,
+          1
+        ],
+        "leaf_decisions": [
+          [
+            1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "moments": {
+          "bias": "-13/3200",
+          "first": [
+            "-199/38400",
+            "-107/38400",
+            "-11/9600",
+            "-7/1200"
+          ],
+          "gram": [
+            [
+              "7/3840",
+              "2081/12800",
+              "49/38400",
+              "-1/9600"
+            ],
+            [
+              "2081/12800",
+              "1/4800",
+              "89/38400",
+              "73/19200"
+            ],
+            [
+              "49/38400",
+              "89/38400",
+              "161/38400",
+              "53/12800"
+            ],
+            [
+              "-1/9600",
+              "73/19200",
+              "53/12800",
+              "17/3840"
+            ]
+          ]
+        },
+        "surrogate_risk": "1081/6400",
+        "accepted": true,
+        "conditional_risk_interval": [
+          "361/6400",
+          "1801/6400"
+        ],
+        "conditional_regret_bound": "9/40",
+        "refusal_reason": null,
+        "epsilon": "1/40",
+        "delta": "1/100",
+        "moment_count": 15,
+        "episodes_per_moment": 38400,
+        "union_failure_upper_bound": "15/2048",
+        "work": {
+          "labelled_episodes": 576000,
+          "target_label_readouts": 576000,
+          "visible_readouts": 921600,
+          "conditioned_visible_copy_preparations": 921600,
+          "signed_statistic_products": 921600,
+          "moment_sums": 15
+        },
+        "scope": "conditional on labelled source, independent episodes and same hidden model per episode"
+      },
+      "actual_risk": "9/50",
+      "optimal_risk": "9/50",
+      "actual_max_moment_error": "7/1200",
+      "coverage_observed": true,
+      "moment_event_observed": true,
+      "regret_bound_observed": true
+    },
+    {
+      "seed": 14002,
+      "right_world": true,
+      "learned": {
+        "first_action": 2,
+        "child_actions": [
+          3,
+          3
+        ],
+        "leaf_decisions": [
+          [
+            1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "moments": {
+          "bias": "-1/192",
+          "first": [
+            "3/3200",
+            "-91/19200",
+            "107/38400",
+            "-109/38400"
+          ],
+          "gram": [
+            [
+              "57/12800",
+              "77/19200",
+              "-9/6400",
+              "-83/38400"
+            ],
+            [
+              "77/19200",
+              "1/12800",
+              "1/1200",
+              "-29/19200"
+            ],
+            [
+              "-9/6400",
+              "1/1200",
+              "17/3840",
+              "6257/38400"
+            ],
+            [
+              "-83/38400",
+              "-29/19200",
+              "6257/38400",
+              "-1/768"
+            ]
+          ]
+        },
+        "surrogate_risk": "53/300",
+        "accepted": true,
+        "conditional_risk_interval": [
+          "77/1200",
+          "347/1200"
+        ],
+        "conditional_regret_bound": "9/40",
+        "refusal_reason": null,
+        "epsilon": "1/40",
+        "delta": "1/100",
+        "moment_count": 15,
+        "episodes_per_moment": 38400,
+        "union_failure_upper_bound": "15/2048",
+        "work": {
+          "labelled_episodes": 576000,
+          "target_label_readouts": 576000,
+          "visible_readouts": 921600,
+          "conditioned_visible_copy_preparations": 921600,
+          "signed_statistic_products": 921600,
+          "moment_sums": 15
+        },
+        "scope": "conditional on labelled source, independent episodes and same hidden model per episode"
+      },
+      "actual_risk": "9/50",
+      "optimal_risk": "9/50",
+      "actual_max_moment_error": "1/192",
+      "coverage_observed": true,
+      "moment_event_observed": true,
+      "regret_bound_observed": true
+    },
+    {
+      "seed": 14003,
+      "right_world": false,
+      "learned": {
+        "first_action": 0,
+        "child_actions": [
+          1,
+          1
+        ],
+        "leaf_decisions": [
+          [
+            1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "moments": {
+          "bias": "103/19200",
+          "first": [
+            "-19/9600",
+            "19/12800",
+            "71/12800",
+            "11/7680"
+          ],
+          "gram": [
+            [
+              "9/1600",
+              "5987/38400",
+              "-7/3840",
+              "1/320"
+            ],
+            [
+              "5987/38400",
+              "-31/6400",
+              "-11/9600",
+              "101/19200"
+            ],
+            [
+              "-7/3840",
+              "-11/9600",
+              "-17/9600",
+              "-91/19200"
+            ],
+            [
+              "1/320",
+              "101/19200",
+              "-91/19200",
+              "47/19200"
+            ]
+          ]
+        },
+        "surrogate_risk": "37/200",
+        "accepted": true,
+        "conditional_risk_interval": [
+          "29/400",
+          "119/400"
+        ],
+        "conditional_regret_bound": "9/40",
+        "refusal_reason": null,
+        "epsilon": "1/40",
+        "delta": "1/100",
+        "moment_count": 15,
+        "episodes_per_moment": 38400,
+        "union_failure_upper_bound": "15/2048",
+        "work": {
+          "labelled_episodes": 576000,
+          "target_label_readouts": 576000,
+          "visible_readouts": 921600,
+          "conditioned_visible_copy_preparations": 921600,
+          "signed_statistic_products": 921600,
+          "moment_sums": 15
+        },
+        "scope": "conditional on labelled source, independent episodes and same hidden model per episode"
+      },
+      "actual_risk": "9/50",
+      "optimal_risk": "9/50",
+      "actual_max_moment_error": "9/1600",
+      "coverage_observed": true,
+      "moment_event_observed": true,
+      "regret_bound_observed": true
+    },
+    {
+      "seed": 14004,
+      "right_world": true,
+      "learned": {
+        "first_action": 2,
+        "child_actions": [
+          3,
+          3
+        ],
+        "leaf_decisions": [
+          [
+            1,
+            -1
+          ],
+          [
+            -1,
+            1
+          ]
+        ],
+        "moments": {
+          "bias": "37/19200",
+          "first": [
+            "1/12800",
+            "-1/6400",
+            "-9/12800",
+            "-7/960"
+          ],
+          "gram": [
+            [
+              "-119/38400",
+              "19/9600",
+              "17/38400",
+              "37/38400"
+            ],
+            [
+              "19/9600",
+              "-5/1536",
+              "-7/3840",
+              "49/19200"
+            ],
+            [
+              "17/38400",
+              "-7/3840",
+              "-1/2400",
+              "403/2560"
+            ],
+            [
+              "37/38400",
+              "49/19200",
+              "403/2560",
+              "9/12800"
+            ]
+          ]
+        },
+        "surrogate_risk": "3383/19200",
+        "accepted": true,
+        "conditional_risk_interval": [
+          "1223/19200",
+          "5543/19200"
+        ],
+        "conditional_regret_bound": "9/40",
+        "refusal_reason": null,
+        "epsilon": "1/40",
+        "delta": "1/100",
+        "moment_count": 15,
+        "episodes_per_moment": 38400,
+        "union_failure_upper_bound": "15/2048",
+        "work": {
+          "labelled_episodes": 576000,
+          "target_label_readouts": 576000,
+          "visible_readouts": 921600,
+          "conditioned_visible_copy_preparations": 921600,
+          "signed_statistic_products": 921600,
+          "moment_sums": 15
+        },
+        "scope": "conditional on labelled source, independent episodes and same hidden model per episode"
+      },
+      "actual_risk": "9/50",
+      "optimal_risk": "9/50",
+      "actual_max_moment_error": "7/960",
+      "coverage_observed": true,
+      "moment_event_observed": true,
+      "regret_bound_observed": true
+    }
+  ],
+  "learner_likelihood_table_access": false,
+  "independent_worlds": false,
+  "interpretation": "two fixed source worlds, two calibration seeds each; standard empirical-moment estimator is an exact conventional tie"
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "validation_only_fci_upper_v1",
+  "natoms": 10,
+  "localized": false,
+  "full_fci_support": 63504,
+  "witness_support": 31752,
+  "truncated": false,
+  "selected_support": 63504,
+  "rounded_zero_count": 31752,
+  "top_k": 64000,
+  "numeric_fci_electronic": -12.36829945632809,
+  "rational_witness_upper": "-77301871607146255920348419895881/6250000000414345045312500000000",
+  "hf_upper": "-12029919525541/1000000000000",
+  "hf_gap": 0.338379930782442,
+  "elapsed_seconds": 16.32914379100839,
+  "scope": "Validation upper only; prohibited as certificate-discovery input; top-k truncation and amplitude rounding are recorded separately.",
+  "upper_replay": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 31752,
+    "hamiltonian_terms": 7150,
+    "word_state_checks": 227026800,
+    "contributing_word_state_pairs": 22173760,
+    "action_cache_states": 0,
+    "replay_seconds": 15.531161457998678,
+    "upper": "-77301871607146255920348419895881/6250000000414345045312500000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  }
+}

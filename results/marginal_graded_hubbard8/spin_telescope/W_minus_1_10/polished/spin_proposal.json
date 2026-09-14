@@ -1,0 +1,38 @@
+{
+  "accepted": false,
+  "matrix_evaluations": 4,
+  "optimizer_success": true,
+  "optimizer_message": "Optimization terminated successfully",
+  "proposed_periodic_lower": "-4017356490675113/6250000000000000",
+  "proposed_periodic_lower_float": -0.642777038508018,
+  "max_fresh_affine_difference": 3.552713678800501e-15,
+  "hopping_telescope": "-89/250000",
+  "spin_telescope": {
+    "0,1": "-5043/1000000",
+    "0,2": "-12093/1000000",
+    "0,3": "183/50000",
+    "1,2": "-6083/1000000"
+  },
+  "signed_charge_patterns": 44,
+  "shape_indices": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    31,
+    11,
+    20
+  ],
+  "seconds": 27.660573791999923,
+  "source_sha256": {
+    "results/marginal_graded_hubbard8/discovery/spin_numeric.py": "ad09e9de70d417892915de614b7c21edc5ca274feb244a1322ed2e4dce78425e",
+    "results/marginal_graded_hubbard8/discovery/signed_charge_numeric.py": "2ab214a90d762614165dc9a236894558443465bc2850aa09f738f23265954632",
+    "experiments/marginal_hopping_telescope.py": "f72a6ce39da10d5de54f9f5d4617ede56fd57d8ff048ef91850dfeb07c054491",
+    "experiments/marginal_spin_telescope.py": "b15dbd9398d838c38e155e0321f1169e795f0c706e839466aa0c8d029cb2cc92",
+    "results/marginal_graded_hubbard8/spin_telescope/W_minus_1_10/profile_joint_r1_2_certificate.json": "2adc6b4b6e03cf40e453eef5684dcbdb62ed1ede72dd290f4d13c963348bb421",
+    "results/marginal_graded_hubbard8/joint_projector/signed_density/symmetry_diagonal_candidates.json": "27139cdd0e466faceabbf6193775158e6412ea8b93439b075ad7d75d5bc9613c"
+  },
+  "scope": "Nonaccepting numerical search in all 52 disjoint signed-charge pattern directions and nine sparse shapes. Old diagonal profiles and compact corrections are fixed, since their variation is contained in the complete signed-charge span. Two hopping profiles, both penalties, one mean-zero range-three hopping telescope and four spin-dot telescopes are optimized. Hard250 matrix evaluations; fresh physical reconstruction; exact PSD acceptance remains separate."
+}

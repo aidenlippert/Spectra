@@ -1,0 +1,6525 @@
+{
+  "accepted": true,
+  "seconds": 156.8667115419994,
+  "targets": [
+    {
+      "accepted": true,
+      "target": {
+        "U": "4",
+        "t": "1",
+        "V": "1/2"
+      },
+      "sites": 1000000,
+      "physical_source_replay": {
+        "accepted": true,
+        "sites": 8,
+        "particles": 8,
+        "U": "4",
+        "t": "1",
+        "upper": "-120558410244999997006043477431315508062486123707/28461740687412294825487447957163629238443780483",
+        "norm": "28461740687412294825487447957163629238443780483/16452712980283392",
+        "moment_work": {
+          "maximum_moment_order": 23,
+          "maximum_power": 12,
+          "boundary_count": 14,
+          "maximum_orbit_support": 1250,
+          "unique_determinant_source_actions": 1239,
+          "referenced_determinants": 2169,
+          "orbit_cache_states": 4864,
+          "balanced_sector_dimension": 4900,
+          "materialized_full_sector": false,
+          "symmetry_checks": {
+            "spin_exchange_exact": true,
+            "particle_hole_number_multiplier": "-4",
+            "particle_hole_fixed_number_exact": true
+          },
+          "scope": "Exact signed finite-group orbit contraction from prescribed invariant boundary vectors. Orbits and their images are generated on demand; no full sector matrix. Orbit count can still grow exponentially."
+        },
+        "scope": "Fresh physical H8 polynomial Rayleigh quotient only. No supplied moment table, complement-gap proof, or ground-spin theorem is used."
+      },
+      "upper_replay": {
+        "accepted": true,
+        "sites": 1000000,
+        "blocks": 125000,
+        "a": "23419/62500",
+        "b": "88791/500000",
+        "energy_lower": "-633598312342468448157396035652075285403639310875/1037535374346763403773202546841201171365888",
+        "energy_upper": "-1267196624684936896314792071304150570744996787265/2075070748693526807546405093682402343059456",
+        "upper_per_site": "-253439324936987379262958414260830114148999357453/415014149738705361509281018736480468611891200000",
+        "width_per_site": "830801701189507124027933833200732972578927268001/6570310382207510203655580379795248134487091098631351132642350551046755793213849600000",
+        "precision_bits": 160,
+        "matrix_squarings": 16,
+        "row_power_products": 8,
+        "transfer_dimension": 48,
+        "norm_scaled_interval": [
+          "2075070748693526807546405093682402342731776",
+          "2075070748693526807546405093682402343059456"
+        ],
+        "numerator_scaled_interval": [
+          "-1267196624684936896314792071304150570807278621750",
+          "-1267196624684936896314792071304150570744996787265"
+        ],
+        "shared_binary_exponent": 84445,
+        "target": {
+          "U": "4",
+          "t": "1",
+          "V": "1/2"
+        },
+        "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+      },
+      "lower_replay": {
+        "accepted": true,
+        "sites": 6,
+        "U": "10/3",
+        "t": "1",
+        "V": "1/2",
+        "sectors": [
+          {
+            "sector": [
+              0,
+              0,
+              1
+            ],
+            "dimension": 1,
+            "psd": {
+              "dimension": 1,
+              "rank": 1,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              0,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              0,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              1,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              1,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              1,
+              1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              1,
+              -1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              0,
+              1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              0,
+              -1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              1,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              1,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              2,
+              1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              2,
+              -1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              2,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              2,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              2,
+              1
+            ],
+            "dimension": 117,
+            "psd": {
+              "dimension": 117,
+              "rank": 117,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              2,
+              -1
+            ],
+            "dimension": 108,
+            "psd": {
+              "dimension": 108,
+              "rank": 108,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              0,
+              1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              0,
+              -1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              1,
+              1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              1,
+              -1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              2,
+              1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              2,
+              -1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              3,
+              1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              3,
+              -1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              3,
+              1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              3,
+              -1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              3,
+              1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              3,
+              -1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              3,
+              1
+            ],
+            "dimension": 200,
+            "psd": {
+              "dimension": 200,
+              "rank": 200,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              3,
+              -1
+            ],
+            "dimension": 200,
+            "psd": {
+              "dimension": 200,
+              "rank": 200,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              0,
+              1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              0,
+              -1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              1,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              1,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              2,
+              1
+            ],
+            "dimension": 108,
+            "psd": {
+              "dimension": 108,
+              "rank": 108,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              2,
+              -1
+            ],
+            "dimension": 117,
+            "psd": {
+              "dimension": 117,
+              "rank": 117,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              3,
+              1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              3,
+              -1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              4,
+              1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              4,
+              -1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              4,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              4,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              4,
+              1
+            ],
+            "dimension": 108,
+            "psd": {
+              "dimension": 108,
+              "rank": 108,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              4,
+              -1
+            ],
+            "dimension": 117,
+            "psd": {
+              "dimension": 117,
+              "rank": 117,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              4,
+              1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              4,
+              -1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              4,
+              1
+            ],
+            "dimension": 117,
+            "psd": {
+              "dimension": 117,
+              "rank": 117,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              4,
+              -1
+            ],
+            "dimension": 108,
+            "psd": {
+              "dimension": 108,
+              "rank": 108,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              0,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              0,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              1,
+              1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              1,
+              -1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              2,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              2,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              3,
+              1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              3,
+              -1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              4,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              4,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              5,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              5,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              5,
+              1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              5,
+              -1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              5,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              5,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              5,
+              1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              5,
+              -1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              5,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              5,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              5,
+              1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              5,
+              -1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              0,
+              -1
+            ],
+            "dimension": 1,
+            "psd": {
+              "dimension": 1,
+              "rank": 1,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              1,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              1,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              2,
+              1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              2,
+              -1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              3,
+              1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              3,
+              -1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              4,
+              1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              4,
+              -1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              5,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              5,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              6,
+              -1
+            ],
+            "dimension": 1,
+            "psd": {
+              "dimension": 1,
+              "rank": 1,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              6,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              6,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              6,
+              1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              6,
+              -1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              6,
+              1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              6,
+              -1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              6,
+              1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              6,
+              -1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              6,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              6,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              6,
+              1
+            ],
+            "dimension": 1,
+            "psd": {
+              "dimension": 1,
+              "rank": 1,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          }
+        ],
+        "onsite_profile": [
+          "3/20",
+          "83/25",
+          "653/100",
+          "653/100",
+          "83/25",
+          "3/20"
+        ],
+        "hopping_profile": [
+          "5/12",
+          "5/4",
+          "5/3",
+          "5/4",
+          "5/12"
+        ],
+        "density_profile": [
+          "5/24",
+          "5/8",
+          "5/6",
+          "5/8",
+          "5/24"
+        ],
+        "sector_count": 94,
+        "sum_dimensions": 4096,
+        "maximum_psd_dimension": 200,
+        "lower": "-165801/50000",
+        "upper_norm": null,
+        "upper_quotient": null,
+        "reflection_commutes_with_original_car": true,
+        "scope": "Exact centered local Hubbard operator with optional nearest-neighbor density interaction, positive in every Fock sector after subtracting the lower endpoint. Dense reflected matrices remain bounded to clusters of2,4,6sites; no global sector assumption."
+      },
+      "lower_per_site": "-1326413/2000000",
+      "upper_per_site": "-253439324936987379262958414260830114148999357453/415014149738705361509281018736480468611891200000",
+      "width_per_site": "109003783808476590374232838459127598787264318399/2075070748693526807546405093682402343059456000000",
+      "closing_bond_norm_bound": "5/2",
+      "scope": "Half-filled open nearest-neighbor U,t,V ground-energy interval. Fresh physical trial-state upper and all-Fock local lower; translated profile sums reproduce the target. Closing-bond norm uses2t+abs(V). No ground-spin assumption, target gate optimum, or generic molecular transfer is claimed.",
+      "exact_24_site": {
+        "accepted": true,
+        "sites": 24,
+        "blocks": 3,
+        "a": "23419/62500",
+        "b": "88791/500000",
+        "norm": "14727610949253214327061424208899876250580870597590092460030163238241773835517086849928921019813063477724433182044098281844908744485156169733497302584292718462264579/7629394531250000000",
+        "energy_numerator": "-844569091396687156662409365859531777037101060883119852998127746901802573773343349129660556776295578343362647033655713116734800717800142166414909394829166132320505519/30517578125000000000",
+        "energy": "-844569091396687156662409365859531777037101060883119852998127746901802573773343349129660556776295578343362647033655713116734800717800142166414909394829166132320505519/58910443797012857308245696835599505002323482390360369840120652952967095342068347399715684079252253910897732728176393127379634977940624678933989210337170873849058316",
+        "upper_per_site": "-281523030465562385554136455286510592345700353627706617666042582300600857924447783043220185592098526114454215677885237705578266905933380722138303131609722044106835173/471283550376102858465965574684796040018587859122882958720965223623736762736546779197725472634018031287181861825411145019037079823524997431471913682697366990792466528",
+        "target": {
+          "U": "4",
+          "t": "1",
+          "V": "1/2"
+        },
+        "scope": "Exact physical norm and specified nearest-neighbor U,t,V energy from fixed-width boundary tensors. Exact recurrence capped at64 blocks; no large-chain precision or complexity guarantee."
+      },
+      "enclosed_24_site": {
+        "accepted": true,
+        "sites": 24,
+        "blocks": 3,
+        "a": "23419/62500",
+        "b": "88791/500000",
+        "energy_lower": "-836508085797135374249067425770408760467400911545/58348171956665866452683438139107262151386883606",
+        "energy_upper": "-29875288778469120508895265206086027159550032555/2083863284166638087595837076396687933978102986",
+        "upper_per_site": "-29875288778469120508895265206086027159550032555/50012718819999314102300089833520510415474471664",
+        "width_per_site": "8771236747221428931971214474269436748623822505/364768839716212397839098573265783669932551735898292413228078169917843805444596063882789142548",
+        "precision_bits": 160,
+        "matrix_squarings": 0,
+        "row_power_products": 1,
+        "transfer_dimension": 48,
+        "norm_scaled_interval": [
+          "58348171956665866452683438139107262151386883606",
+          "58348171956665866452683438139107262151386883608"
+        ],
+        "numerator_scaled_interval": [
+          "-836508085797135374249067425770408760467400911545",
+          "-836508085797135374249067425770408760467400911540"
+        ],
+        "shared_binary_exponent": -154,
+        "target": {
+          "U": "4",
+          "t": "1",
+          "V": "1/2"
+        },
+        "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+      },
+      "previous_linear_upper": {
+        "accepted": true,
+        "sites": 1000000,
+        "blocks": 125000,
+        "operation": "linear_filter",
+        "parameter": "57277/250000",
+        "target": {
+          "U": "4",
+          "t": "1",
+          "V": "1/2"
+        },
+        "target_block_energy": "-519787377244560109966542230350035485784483778289/113846962749649179301949791828654516953775121932",
+        "unfiltered_cut_energy": "0",
+        "gate_energy_shift": "-102774178725302757992248833618802585597901847014818141398902872593545467863557153511954620664763598572077/426295839213700513870708497579457660072927283586836688783795140281083638570066068536576197707382159949448",
+        "upper": "-256137301617009442968474435919675460943332067902929691621725005048348779422691668392892848788491065578641802923/426295839213700513870708497579457660072927283586836688783795140281083638570066068536576197707382159949448",
+        "upper_per_site": "-256137301617009442968474435919675460943332067902929691621725005048348779422691668392892848788491065578641802923/426295839213700513870708497579457660072927283586836688783795140281083638570066068536576197707382159949448000000",
+        "edge_reductions": {
+          "energy8": "-120558410244999997006043477431315508062486123707/28461740687412294825487447957163629238443780483",
+          "norm": "910775701997193434415598334629236135630200975456",
+          "orbit_support": 1239,
+          "total_doublons": "83937396455495231337692962115535353086186339277/113846962749649179301949791828654516953775121932",
+          "internal_density_correlation": "-37553736264560121942368320624773453534539283461/56923481374824589650974895914327258476887560966",
+          "left": [
+            [
+              "6269223864239516346377840395928679258909045/113846962749649179301949791828654516953775121932",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "8098135514721030948257445444459326044372961389/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "8098135514721030948257445444459326044372961389/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "14437276414344082943074628763070364077559063245/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "14424737966615603910381873082278506719041245155/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "1874535425697917685688803954275830213389534063/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4376132875987013729972459565315635687976727293/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "21262086017792663740565924605185375892989754463/56923481374824589650974895914327258476887560966",
+              "0",
+              "0",
+              "-80672211195183641232291238855425867883982290559/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1874535425697917685688803954275830213389534063/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1874535425697917685688803954275830213389534063/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "-80672211195183641232291238855425867883982290559/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "21262086017792663740565924605185375892989754463/56923481374824589650974895914327258476887560966",
+              "0",
+              "0",
+              "69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4376132875987013729972459565315635687976727293/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1874535425697917685688803954275830213389534063/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "-241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "14424737966615603910381873082278506719041245155/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "14437276414344082943074628763070364077559063245/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "8098135514721030948257445444459326044372961389/455387850998596717207799167314618067815100487728",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "8098135514721030948257445444459326044372961389/455387850998596717207799167314618067815100487728",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "6269223864239516346377840395928679258909045/113846962749649179301949791828654516953775121932"
+            ]
+          ],
+          "right": [
+            [
+              "12538447724637910541734487961856349632681269/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1874535425520528058872491938410842056661136393/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1874535425520528058872491938410842056661136393/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1804659551783454235435336622454794033868216851/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "-69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "14424737966542995972940958491676495921313053539/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "4049067757251435856646178980332747691407330763/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4376132876031428061627093918528899104422418663/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "85048344071602079674133420543449071789298489273/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-40336105597785325806253163312460086342438035305/113846962749649179301949791828654516953775121932",
+              "0",
+              "0",
+              "-69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4049067757251435856646178980332747691407330763/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4049067757251435856646178980332747691407330763/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "-40336105597785325806253163312460086342438035305/113846962749649179301949791828654516953775121932",
+              "0",
+              "0",
+              "85048344071602079674133420543449071789298489273/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4376132876031428061627093918528899104422418663/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4049067757251435856646178980332747691407330763/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "14424737966542995972940958491676495921313053539/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "1804659551783454235435336622454794033868216851/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1874535425520528058872491938410842056661136393/455387850998596717207799167314618067815100487728",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "1874535425520528058872491938410842056661136393/455387850998596717207799167314618067815100487728",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "12538447724637910541734487961856349632681269/227693925499298358603899583657309033907550243864"
+            ]
+          ],
+          "upper_replay": {
+            "accepted": true,
+            "sites": 8,
+            "particles": 8,
+            "U": "4",
+            "t": "1",
+            "upper": "-120558410244999997006043477431315508062486123707/28461740687412294825487447957163629238443780483",
+            "norm": "28461740687412294825487447957163629238443780483/16452712980283392",
+            "moment_work": {
+              "maximum_moment_order": 23,
+              "maximum_power": 12,
+              "boundary_count": 14,
+              "maximum_orbit_support": 1250,
+              "unique_determinant_source_actions": 1239,
+              "referenced_determinants": 2169,
+              "orbit_cache_states": 4864,
+              "balanced_sector_dimension": 4900,
+              "materialized_full_sector": false,
+              "symmetry_checks": {
+                "spin_exchange_exact": true,
+                "particle_hole_number_multiplier": "-4",
+                "particle_hole_fixed_number_exact": true
+              },
+              "scope": "Exact signed finite-group orbit contraction from prescribed invariant boundary vectors. Orbits and their images are generated on demand; no full sector matrix. Orbit count can still grow exponentially."
+            },
+            "scope": "Fresh physical H8 polynomial Rayleigh quotient only. No supplied moment table, complement-gap proof, or ground-spin theorem is used."
+          },
+          "scope": "Exact physical two-site partial traces, streamed from a bounded caller-constructed H8 orbit state. No supplied RDM is accepted as physical."
+        },
+        "scope": "Exact physical upper for H=-t*sum hopping+U*sum doublons+V*sum(n_i-1)(n_{i+1}-1). The source trial state is generated from the validated original H8 U4 t1 operator, and its target energy is freshly recomputed. Contact operations preserve remote endpoint RDMs, so shifts add. No target ground-energy lower or target-state optimality claim."
+      },
+      "previous_linear_enclosure": {
+        "accepted": true,
+        "sites": 1000000,
+        "blocks": 125000,
+        "a": "57277/250000",
+        "b": "0",
+        "energy_lower": "-740984736998436722810198281659603051831820091011/1233239783151971105749028458295874051506176",
+        "energy_upper": "-740984736998436722810198281659603051783436896463/1233239783151971105749028458295874051702784",
+        "upper_per_site": "-740984736998436722810198281659603051783436896463/1233239783151971105749028458295874051702784000000",
+        "width_per_site": "3133416862859555021017416212772354363926372837601/23206792644481212096794113673734114393927976356797693335866906967110145478098944000000",
+        "precision_bits": 160,
+        "matrix_squarings": 16,
+        "row_power_products": 8,
+        "transfer_dimension": 48,
+        "norm_scaled_interval": [
+          "1233239783151971105749028458295874051506176",
+          "1233239783151971105749028458295874051702784"
+        ],
+        "numerator_scaled_interval": [
+          "-740984736998436722810198281659603051831820091011",
+          "-740984736998436722810198281659603051783436896463"
+        ],
+        "shared_binary_exponent": 9086,
+        "target": {
+          "U": "4",
+          "t": "1",
+          "V": "1/2"
+        },
+        "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+      },
+      "unretuned_quadratic_upper": {
+        "accepted": true,
+        "sites": 1000000,
+        "blocks": 125000,
+        "a": "356039/1000000",
+        "b": "88887/500000",
+        "energy_lower": "-332807637278453709104800985042247776704132206431/545087041232962755231985449909059652419584",
+        "energy_upper": "-249605727958840281828600738781685832514772685853/408815280924722066423989087431794739363840",
+        "upper_per_site": "-249605727958840281828600738781685832514772685853/408815280924722066423989087431794739363840000000",
+        "width_per_site": "1441787507848328684630870236530098380303182539057/13601068840947218576636905527522768594852777626021927554769673677164627423395840000000",
+        "precision_bits": 160,
+        "matrix_squarings": 16,
+        "row_power_products": 8,
+        "transfer_dimension": 48,
+        "norm_scaled_interval": [
+          "1635261123698888265695956349727178957258752",
+          "1635261123698888265695956349727178957455360"
+        ],
+        "numerator_scaled_interval": [
+          "-998422911835361127314402955126743330112396619293",
+          "-998422911835361127314402955126743330059090743412"
+        ],
+        "shared_binary_exponent": 82969,
+        "target": {
+          "U": "4",
+          "t": "1",
+          "V": "1/2"
+        },
+        "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+      },
+      "improvement_over_linear_per_site": "1087203291760796914914728895042170961196805714748224805749550414177605433992187907466885621929831051443762352299094549470294251787889926853992398323729/110574253280263606200733597920394178368438259132746633761279268441270193931963258885081067528584756433870103515559564428839312311932273807327297536000000",
+      "improvement_from_gate_retuning_per_site": "676807411625094334753167338026978151782667272460953423094359632032734526233937747/5753042474133419506309963479023391120664448714640761732510600003095320187043840000000"
+    },
+    {
+      "accepted": true,
+      "target": {
+        "U": "4",
+        "t": "1",
+        "V": "-1/2"
+      },
+      "sites": 1000000,
+      "physical_source_replay": {
+        "accepted": true,
+        "sites": 8,
+        "particles": 8,
+        "U": "4",
+        "t": "1",
+        "upper": "-120558410244999997006043477431315508062486123707/28461740687412294825487447957163629238443780483",
+        "norm": "28461740687412294825487447957163629238443780483/16452712980283392",
+        "moment_work": {
+          "maximum_moment_order": 23,
+          "maximum_power": 12,
+          "boundary_count": 14,
+          "maximum_orbit_support": 1250,
+          "unique_determinant_source_actions": 1239,
+          "referenced_determinants": 2169,
+          "orbit_cache_states": 4864,
+          "balanced_sector_dimension": 4900,
+          "materialized_full_sector": false,
+          "symmetry_checks": {
+            "spin_exchange_exact": true,
+            "particle_hole_number_multiplier": "-4",
+            "particle_hole_fixed_number_exact": true
+          },
+          "scope": "Exact signed finite-group orbit contraction from prescribed invariant boundary vectors. Orbits and their images are generated on demand; no full sector matrix. Orbit count can still grow exponentially."
+        },
+        "scope": "Fresh physical H8 polynomial Rayleigh quotient only. No supplied moment table, complement-gap proof, or ground-spin theorem is used."
+      },
+      "upper_replay": {
+        "accepted": true,
+        "sites": 1000000,
+        "blocks": 125000,
+        "a": "339851/1000000",
+        "b": "35829/200000",
+        "energy_lower": "-1160175182050883821766125142402446116512189664065/2213759551539275399418129508105442635022336",
+        "energy_upper": "-580087591025441910883062571201223058231343412477/1106879775769637699709064754052721317642240",
+        "upper_per_site": "-580087591025441910883062571201223058231343412477/1106879775769637699709064754052721317642240000000",
+        "width_per_site": "1578217871985760311386013173623093154723823700699/18694806488156790670216621546418358662095014679855523945421364335764399385477120000000",
+        "precision_bits": 160,
+        "matrix_squarings": 16,
+        "row_power_products": 8,
+        "transfer_dimension": 48,
+        "norm_scaled_interval": [
+          "2213759551539275399418129508105442635022336",
+          "2213759551539275399418129508105442635284480"
+        ],
+        "numerator_scaled_interval": [
+          "-1160175182050883821766125142402446116512189664065",
+          "-1160175182050883821766125142402446116462686824954"
+        ],
+        "shared_binary_exponent": 82179,
+        "target": {
+          "U": "4",
+          "t": "1",
+          "V": "-1/2"
+        },
+        "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+      },
+      "lower_replay": {
+        "accepted": true,
+        "sites": 6,
+        "U": "10/3",
+        "t": "1",
+        "V": "-1/2",
+        "sectors": [
+          {
+            "sector": [
+              0,
+              0,
+              1
+            ],
+            "dimension": 1,
+            "psd": {
+              "dimension": 1,
+              "rank": 1,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              0,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              0,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              1,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              1,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              1,
+              1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              1,
+              -1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              0,
+              1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              0,
+              -1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              1,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              1,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              2,
+              1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              2,
+              -1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              2,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              2,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              2,
+              1
+            ],
+            "dimension": 117,
+            "psd": {
+              "dimension": 117,
+              "rank": 117,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              2,
+              -1
+            ],
+            "dimension": 108,
+            "psd": {
+              "dimension": 108,
+              "rank": 108,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              0,
+              1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              0,
+              -1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              1,
+              1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              1,
+              -1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              2,
+              1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              2,
+              -1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              3,
+              1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              3,
+              -1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              3,
+              1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              3,
+              -1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              3,
+              1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              3,
+              -1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              3,
+              1
+            ],
+            "dimension": 200,
+            "psd": {
+              "dimension": 200,
+              "rank": 200,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              3,
+              -1
+            ],
+            "dimension": 200,
+            "psd": {
+              "dimension": 200,
+              "rank": 200,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              0,
+              1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              0,
+              -1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              1,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              1,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              2,
+              1
+            ],
+            "dimension": 108,
+            "psd": {
+              "dimension": 108,
+              "rank": 108,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              2,
+              -1
+            ],
+            "dimension": 117,
+            "psd": {
+              "dimension": 117,
+              "rank": 117,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              3,
+              1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              3,
+              -1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              4,
+              1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              4,
+              -1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              4,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              4,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              4,
+              1
+            ],
+            "dimension": 108,
+            "psd": {
+              "dimension": 108,
+              "rank": 108,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              4,
+              -1
+            ],
+            "dimension": 117,
+            "psd": {
+              "dimension": 117,
+              "rank": 117,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              4,
+              1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              4,
+              -1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              4,
+              1
+            ],
+            "dimension": 117,
+            "psd": {
+              "dimension": 117,
+              "rank": 117,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              4,
+              -1
+            ],
+            "dimension": 108,
+            "psd": {
+              "dimension": 108,
+              "rank": 108,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              0,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              0,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              1,
+              1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              1,
+              -1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              2,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              2,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              3,
+              1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              3,
+              -1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              4,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              4,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              5,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              5,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              5,
+              1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              5,
+              -1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              5,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              5,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              5,
+              1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              5,
+              -1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              5,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              5,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              5,
+              1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              5,
+              -1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              0,
+              -1
+            ],
+            "dimension": 1,
+            "psd": {
+              "dimension": 1,
+              "rank": 1,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              1,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              1,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              2,
+              1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              2,
+              -1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              3,
+              1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              3,
+              -1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              4,
+              1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              4,
+              -1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              5,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              5,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              6,
+              -1
+            ],
+            "dimension": 1,
+            "psd": {
+              "dimension": 1,
+              "rank": 1,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              6,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              6,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              6,
+              1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              6,
+              -1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              6,
+              1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              6,
+              -1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              6,
+              1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              6,
+              -1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              6,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              6,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              6,
+              1
+            ],
+            "dimension": 1,
+            "psd": {
+              "dimension": 1,
+              "rank": 1,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          }
+        ],
+        "onsite_profile": [
+          "3/20",
+          "83/25",
+          "653/100",
+          "653/100",
+          "83/25",
+          "3/20"
+        ],
+        "hopping_profile": [
+          "5/12",
+          "5/4",
+          "5/3",
+          "5/4",
+          "5/12"
+        ],
+        "density_profile": [
+          "-5/24",
+          "-5/8",
+          "-5/6",
+          "-5/8",
+          "-5/24"
+        ],
+        "sector_count": 94,
+        "sum_dimensions": 4096,
+        "maximum_psd_dimension": 200,
+        "lower": "-283653/100000",
+        "upper_norm": null,
+        "upper_quotient": null,
+        "reflection_commutes_with_original_car": true,
+        "scope": "Exact centered local Hubbard operator with optional nearest-neighbor density interaction, positive in every Fock sector after subtracting the lower endpoint. Dense reflected matrices remain bounded to clusters of2,4,6sites; no global sector assumption."
+      },
+      "lower_per_site": "-1134617/2000000",
+      "upper_per_site": "-580087591025441910883062571201223058231343412477/1106879775769637699709064754052721317642240000000",
+      "width_per_site": "47854714246767598082337390823295193398299298563/1106879775769637699709064754052721317642240000000",
+      "closing_bond_norm_bound": "5/2",
+      "scope": "Half-filled open nearest-neighbor U,t,V ground-energy interval. Fresh physical trial-state upper and all-Fock local lower; translated profile sums reproduce the target. Closing-bond norm uses2t+abs(V). No ground-spin assumption, target gate optimum, or generic molecular transfer is claimed.",
+      "exact_24_site": {
+        "accepted": true,
+        "sites": 24,
+        "blocks": 3,
+        "a": "339851/1000000",
+        "b": "35829/200000",
+        "norm": "229793902657854984544872808025726622023986790999603309988354983984376081920031535145822733974572050750880225937570698896694214541417157307200435533387038682351079723/122070312500000000000",
+        "energy_numerator": "-11297717110564987921693417989428572692371986078382294084432223301611379314914284747149272109803286844128785734575524085202628703939099160025812437021896663276399480167/488281250000000000000",
+        "energy": "-11297717110564987921693417989428572692371986078382294084432223301611379314914284747149272109803286844128785734575524085202628703939099160025812437021896663276399480167/919175610631419938179491232102906488095947163998413239953419935937504327680126140583290935898288203003520903750282795586776858165668629228801742133548154729404318892",
+        "upper_per_site": "-11297717110564987921693417989428572692371986078382294084432223301611379314914284747149272109803286844128785734575524085202628703939099160025812437021896663276399480167/22060214655154078516307789570469755714302731935961917758882078462500103864323027373998982461558916872084501690006787094082644595976047101491241811205155713505703653408",
+        "target": {
+          "U": "4",
+          "t": "1",
+          "V": "-1/2"
+        },
+        "scope": "Exact physical norm and specified nearest-neighbor U,t,V energy from fixed-width boundary tensors. Exact recurrence capped at64 blocks; no large-chain precision or complexity guarantee."
+      },
+      "enclosed_24_site": {
+        "accepted": true,
+        "sites": 24,
+        "blocks": 3,
+        "a": "339851/1000000",
+        "b": "35829/200000",
+        "energy_lower": "-1398735729602579263039958732835725404081039671454/113800315212985508716899545777898442099305934283",
+        "energy_upper": "-1398735729602579263039958732835725404081039671445/113800315212985508716899545777898442099305934286",
+        "upper_per_site": "-1398735729602579263039958732835725404081039671445/2731207565111652209205589098669562610383342422864",
+        "width_per_site": "1740136675241535789190657370169420730378957474303/103604093940598888081597241513280143173723373346451399652209779849945025899164304656939460215504",
+        "precision_bits": 160,
+        "matrix_squarings": 0,
+        "row_power_products": 1,
+        "transfer_dimension": 48,
+        "norm_scaled_interval": [
+          "113800315212985508716899545777898442099305934283",
+          "113800315212985508716899545777898442099305934286"
+        ],
+        "numerator_scaled_interval": [
+          "-1398735729602579263039958732835725404081039671454",
+          "-1398735729602579263039958732835725404081039671445"
+        ],
+        "shared_binary_exponent": -155,
+        "target": {
+          "U": "4",
+          "t": "1",
+          "V": "-1/2"
+        },
+        "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+      },
+      "previous_linear_upper": {
+        "accepted": true,
+        "sites": 1000000,
+        "blocks": 125000,
+        "operation": "linear_filter",
+        "parameter": "57277/250000",
+        "target": {
+          "U": "4",
+          "t": "1",
+          "V": "-1/2"
+        },
+        "target_block_energy": "-444679904715439866081805589100488578715405211367/113846962749649179301949791828654516953775121932",
+        "unfiltered_cut_energy": "0",
+        "gate_energy_shift": "-92561115520694301679983381894437727184426757645929755691797151170101085500489080988267878794152634842527/426295839213700513870708497579457660072927283586836688783795140281083638570066068536576197707382159949448",
+        "upper": "-219706026732681687354722028947832241566746231918273307229417603437868029828199471976805160671814400711248282473/426295839213700513870708497579457660072927283586836688783795140281083638570066068536576197707382159949448",
+        "upper_per_site": "-219706026732681687354722028947832241566746231918273307229417603437868029828199471976805160671814400711248282473/426295839213700513870708497579457660072927283586836688783795140281083638570066068536576197707382159949448000000",
+        "edge_reductions": {
+          "energy8": "-120558410244999997006043477431315508062486123707/28461740687412294825487447957163629238443780483",
+          "norm": "910775701997193434415598334629236135630200975456",
+          "orbit_support": 1239,
+          "total_doublons": "83937396455495231337692962115535353086186339277/113846962749649179301949791828654516953775121932",
+          "internal_density_correlation": "-37553736264560121942368320624773453534539283461/56923481374824589650974895914327258476887560966",
+          "left": [
+            [
+              "6269223864239516346377840395928679258909045/113846962749649179301949791828654516953775121932",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "8098135514721030948257445444459326044372961389/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "8098135514721030948257445444459326044372961389/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "14437276414344082943074628763070364077559063245/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "14424737966615603910381873082278506719041245155/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "1874535425697917685688803954275830213389534063/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4376132875987013729972459565315635687976727293/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "21262086017792663740565924605185375892989754463/56923481374824589650974895914327258476887560966",
+              "0",
+              "0",
+              "-80672211195183641232291238855425867883982290559/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1874535425697917685688803954275830213389534063/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1874535425697917685688803954275830213389534063/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "-80672211195183641232291238855425867883982290559/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "21262086017792663740565924605185375892989754463/56923481374824589650974895914327258476887560966",
+              "0",
+              "0",
+              "69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4376132875987013729972459565315635687976727293/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1874535425697917685688803954275830213389534063/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "-241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "14424737966615603910381873082278506719041245155/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "14437276414344082943074628763070364077559063245/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "8098135514721030948257445444459326044372961389/455387850998596717207799167314618067815100487728",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "8098135514721030948257445444459326044372961389/455387850998596717207799167314618067815100487728",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "6269223864239516346377840395928679258909045/113846962749649179301949791828654516953775121932"
+            ]
+          ],
+          "right": [
+            [
+              "12538447724637910541734487961856349632681269/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1874535425520528058872491938410842056661136393/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1874535425520528058872491938410842056661136393/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1804659551783454235435336622454794033868216851/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "-69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "14424737966542995972940958491676495921313053539/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "4049067757251435856646178980332747691407330763/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4376132876031428061627093918528899104422418663/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "85048344071602079674133420543449071789298489273/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-40336105597785325806253163312460086342438035305/113846962749649179301949791828654516953775121932",
+              "0",
+              "0",
+              "-69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4049067757251435856646178980332747691407330763/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4049067757251435856646178980332747691407330763/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "-40336105597785325806253163312460086342438035305/113846962749649179301949791828654516953775121932",
+              "0",
+              "0",
+              "85048344071602079674133420543449071789298489273/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4376132876031428061627093918528899104422418663/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4049067757251435856646178980332747691407330763/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "14424737966542995972940958491676495921313053539/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "1804659551783454235435336622454794033868216851/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1874535425520528058872491938410842056661136393/455387850998596717207799167314618067815100487728",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "1874535425520528058872491938410842056661136393/455387850998596717207799167314618067815100487728",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "12538447724637910541734487961856349632681269/227693925499298358603899583657309033907550243864"
+            ]
+          ],
+          "upper_replay": {
+            "accepted": true,
+            "sites": 8,
+            "particles": 8,
+            "U": "4",
+            "t": "1",
+            "upper": "-120558410244999997006043477431315508062486123707/28461740687412294825487447957163629238443780483",
+            "norm": "28461740687412294825487447957163629238443780483/16452712980283392",
+            "moment_work": {
+              "maximum_moment_order": 23,
+              "maximum_power": 12,
+              "boundary_count": 14,
+              "maximum_orbit_support": 1250,
+              "unique_determinant_source_actions": 1239,
+              "referenced_determinants": 2169,
+              "orbit_cache_states": 4864,
+              "balanced_sector_dimension": 4900,
+              "materialized_full_sector": false,
+              "symmetry_checks": {
+                "spin_exchange_exact": true,
+                "particle_hole_number_multiplier": "-4",
+                "particle_hole_fixed_number_exact": true
+              },
+              "scope": "Exact signed finite-group orbit contraction from prescribed invariant boundary vectors. Orbits and their images are generated on demand; no full sector matrix. Orbit count can still grow exponentially."
+            },
+            "scope": "Fresh physical H8 polynomial Rayleigh quotient only. No supplied moment table, complement-gap proof, or ground-spin theorem is used."
+          },
+          "scope": "Exact physical two-site partial traces, streamed from a bounded caller-constructed H8 orbit state. No supplied RDM is accepted as physical."
+        },
+        "scope": "Exact physical upper for H=-t*sum hopping+U*sum doublons+V*sum(n_i-1)(n_{i+1}-1). The source trial state is generated from the validated original H8 U4 t1 operator, and its target energy is freshly recomputed. Contact operations preserve remote endpoint RDMs, so shifts add. No target ground-energy lower or target-state optimality claim."
+      },
+      "previous_linear_enclosure": {
+        "accepted": true,
+        "sites": 1000000,
+        "blocks": 125000,
+        "a": "57277/250000",
+        "b": "0",
+        "energy_lower": "-1271183942422516585172486388258149333068795547575/2466479566303942211498056916591748103077888",
+        "energy_upper": "-158897992802814573146560798532268666624924947689/308309945787992776437257114573968512925696",
+        "upper_per_site": "-158897992802814573146560798532268666624924947689/308309945787992776437257114573968512925696000000",
+        "width_per_site": "4483835499048779042675420119313611957145848591027/46413585288962424193588227347468228789089192496747357777482842392516165007900672000000",
+        "precision_bits": 160,
+        "matrix_squarings": 16,
+        "row_power_products": 8,
+        "transfer_dimension": 48,
+        "norm_scaled_interval": [
+          "2466479566303942211498056916591748103077888",
+          "2466479566303942211498056916591748103405568"
+        ],
+        "numerator_scaled_interval": [
+          "-1271183942422516585172486388258149333068795547575",
+          "-1271183942422516585172486388258149332999399581512"
+        ],
+        "shared_binary_exponent": 9085,
+        "target": {
+          "U": "4",
+          "t": "1",
+          "V": "-1/2"
+        },
+        "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+      },
+      "unretuned_quadratic_upper": {
+        "accepted": true,
+        "sites": 1000000,
+        "blocks": 125000,
+        "a": "356039/1000000",
+        "b": "88887/500000",
+        "energy_lower": "-428410773390494691487943176032713278275897229477/817630561849444132847978174863589478629376",
+        "energy_upper": "-856821546780989382975886352065426556506049719859/1635261123698888265695956349727178957455360",
+        "upper_per_site": "-856821546780989382975886352065426556506049719859/1635261123698888265695956349727178957455360000000",
+        "width_per_site": "618648692131853550374200504866683350272397287067/6800534420473609288318452763761384297426388813010963777384836838582313711697920000000",
+        "precision_bits": 160,
+        "matrix_squarings": 16,
+        "row_power_products": 8,
+        "transfer_dimension": 48,
+        "norm_scaled_interval": [
+          "1635261123698888265695956349727178957258752",
+          "1635261123698888265695956349727178957455360"
+        ],
+        "numerator_scaled_interval": [
+          "-856821546780989382975886352065426556551794458954",
+          "-856821546780989382975886352065426556506049719859"
+        ],
+        "shared_binary_exponent": 82969,
+        "target": {
+          "U": "4",
+          "t": "1",
+          "V": "-1/2"
+        },
+        "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+      },
+      "improvement_over_linear_per_site": "512596103566989220655278822478441996935517751594418031879851963537106233017211561722957488374060852892799349714495803358157866433897653535458032000397/58982280365048793849821498505958599703313422795968274089209449528920127410219383691215775543700170292857659010810400242451532983277583798618685440000000",
+      "improvement_from_gate_retuning_per_site": "199630094919438043210582882844377903269431086946431348197648730506698230160803639/1841265325851065288239494977774766574850579907961947652477418798585975099228160000000"
+    },
+    {
+      "accepted": true,
+      "target": {
+        "U": "3",
+        "t": "2/3",
+        "V": "1/2"
+      },
+      "sites": 1000000,
+      "physical_source_replay": {
+        "accepted": true,
+        "sites": 8,
+        "particles": 8,
+        "U": "4",
+        "t": "1",
+        "upper": "-120558410244999997006043477431315508062486123707/28461740687412294825487447957163629238443780483",
+        "norm": "28461740687412294825487447957163629238443780483/16452712980283392",
+        "moment_work": {
+          "maximum_moment_order": 23,
+          "maximum_power": 12,
+          "boundary_count": 14,
+          "maximum_orbit_support": 1250,
+          "unique_determinant_source_actions": 1239,
+          "referenced_determinants": 2169,
+          "orbit_cache_states": 4864,
+          "balanced_sector_dimension": 4900,
+          "materialized_full_sector": false,
+          "symmetry_checks": {
+            "spin_exchange_exact": true,
+            "particle_hole_number_multiplier": "-4",
+            "particle_hole_fixed_number_exact": true
+          },
+          "scope": "Exact signed finite-group orbit contraction from prescribed invariant boundary vectors. Orbits and their images are generated on demand; no full sector matrix. Orbit count can still grow exponentially."
+        },
+        "scope": "Fresh physical H8 polynomial Rayleigh quotient only. No supplied moment table, complement-gap proof, or ground-spin theorem is used."
+      },
+      "upper_replay": {
+        "accepted": true,
+        "sites": 1000000,
+        "blocks": 125000,
+        "a": "35353/100000",
+        "b": "87041/500000",
+        "energy_lower": "-208253805679555448699754714303484896593418019063/535660906565712978050679801982801944150016",
+        "energy_upper": "-89251631005523763728466306130064955679715800707/229568959956734133450291343706915118940160",
+        "upper_per_site": "-89251631005523763728466306130064955679715800707/229568959956734133450291343706915118940160000000",
+        "width_per_site": "42736806172027839465324090563227500602038263469/938195169141937764970621447406176427824310795195635724437453392510048264724480000000",
+        "precision_bits": 160,
+        "matrix_squarings": 16,
+        "row_power_products": 8,
+        "transfer_dimension": 48,
+        "norm_scaled_interval": [
+          "3213965439394277868304078811896811664900096",
+          "3213965439394277868304078811896811665162240"
+        ],
+        "numerator_scaled_interval": [
+          "-1249522834077332692198528285820909379560508114378",
+          "-1249522834077332692198528285820909379516021209898"
+        ],
+        "shared_binary_exponent": 81437,
+        "target": {
+          "U": "3",
+          "t": "2/3",
+          "V": "1/2"
+        },
+        "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+      },
+      "lower_replay": {
+        "accepted": true,
+        "sites": 6,
+        "U": "5/2",
+        "t": "2/3",
+        "V": "1/2",
+        "sectors": [
+          {
+            "sector": [
+              0,
+              0,
+              1
+            ],
+            "dimension": 1,
+            "psd": {
+              "dimension": 1,
+              "rank": 1,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              0,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              0,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              1,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              1,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              1,
+              1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              1,
+              -1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              0,
+              1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              0,
+              -1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              1,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              1,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              2,
+              1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              2,
+              -1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              2,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              2,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              2,
+              1
+            ],
+            "dimension": 117,
+            "psd": {
+              "dimension": 117,
+              "rank": 117,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              2,
+              -1
+            ],
+            "dimension": 108,
+            "psd": {
+              "dimension": 108,
+              "rank": 108,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              0,
+              1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              0,
+              -1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              1,
+              1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              1,
+              -1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              2,
+              1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              2,
+              -1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              3,
+              1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              3,
+              -1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              3,
+              1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              3,
+              -1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              3,
+              1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              3,
+              -1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              3,
+              1
+            ],
+            "dimension": 200,
+            "psd": {
+              "dimension": 200,
+              "rank": 200,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              3,
+              -1
+            ],
+            "dimension": 200,
+            "psd": {
+              "dimension": 200,
+              "rank": 200,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              0,
+              1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              0,
+              -1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              1,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              1,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              2,
+              1
+            ],
+            "dimension": 108,
+            "psd": {
+              "dimension": 108,
+              "rank": 108,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              2,
+              -1
+            ],
+            "dimension": 117,
+            "psd": {
+              "dimension": 117,
+              "rank": 117,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              3,
+              1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              3,
+              -1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              4,
+              1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              4,
+              -1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              4,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              4,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              4,
+              1
+            ],
+            "dimension": 108,
+            "psd": {
+              "dimension": 108,
+              "rank": 108,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              4,
+              -1
+            ],
+            "dimension": 117,
+            "psd": {
+              "dimension": 117,
+              "rank": 117,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              4,
+              1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              4,
+              -1
+            ],
+            "dimension": 150,
+            "psd": {
+              "dimension": 150,
+              "rank": 150,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              4,
+              1
+            ],
+            "dimension": 117,
+            "psd": {
+              "dimension": 117,
+              "rank": 117,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              4,
+              -1
+            ],
+            "dimension": 108,
+            "psd": {
+              "dimension": 108,
+              "rank": 108,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              0,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              0,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              1,
+              1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              1,
+              -1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              2,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              2,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              3,
+              1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              3,
+              -1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              4,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              4,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              5,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              5,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              5,
+              1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              5,
+              -1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              5,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              5,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              5,
+              1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              5,
+              -1
+            ],
+            "dimension": 60,
+            "psd": {
+              "dimension": 60,
+              "rank": 60,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              5,
+              1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              5,
+              -1
+            ],
+            "dimension": 45,
+            "psd": {
+              "dimension": 45,
+              "rank": 45,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              5,
+              1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              5,
+              -1
+            ],
+            "dimension": 18,
+            "psd": {
+              "dimension": 18,
+              "rank": 18,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              0,
+              -1
+            ],
+            "dimension": 1,
+            "psd": {
+              "dimension": 1,
+              "rank": 1,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              1,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              1,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              2,
+              1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              2,
+              -1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              3,
+              1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              3,
+              -1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              4,
+              1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              4,
+              -1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              5,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              5,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              0,
+              6,
+              -1
+            ],
+            "dimension": 1,
+            "psd": {
+              "dimension": 1,
+              "rank": 1,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              6,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              1,
+              6,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              6,
+              1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              2,
+              6,
+              -1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              6,
+              1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              3,
+              6,
+              -1
+            ],
+            "dimension": 10,
+            "psd": {
+              "dimension": 10,
+              "rank": 10,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              6,
+              1
+            ],
+            "dimension": 6,
+            "psd": {
+              "dimension": 6,
+              "rank": 6,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              4,
+              6,
+              -1
+            ],
+            "dimension": 9,
+            "psd": {
+              "dimension": 9,
+              "rank": 9,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              6,
+              1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              5,
+              6,
+              -1
+            ],
+            "dimension": 3,
+            "psd": {
+              "dimension": 3,
+              "rank": 3,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          },
+          {
+            "sector": [
+              6,
+              6,
+              1
+            ],
+            "dimension": 1,
+            "psd": {
+              "dimension": 1,
+              "rank": 1,
+              "nullity": 0,
+              "positive_semidefinite": true
+            }
+          }
+        ],
+        "onsite_profile": [
+          "9/80",
+          "249/100",
+          "1959/400",
+          "1959/400",
+          "249/100",
+          "9/80"
+        ],
+        "hopping_profile": [
+          "5/18",
+          "5/6",
+          "10/9",
+          "5/6",
+          "5/18"
+        ],
+        "density_profile": [
+          "5/24",
+          "5/8",
+          "5/6",
+          "5/8",
+          "5/24"
+        ],
+        "sector_count": 94,
+        "sum_dimensions": 4096,
+        "maximum_psd_dimension": 200,
+        "lower": "-21021/10000",
+        "upper_norm": null,
+        "upper_quotient": null,
+        "reflection_commutes_with_original_car": true,
+        "scope": "Exact centered local Hubbard operator with optional nearest-neighbor density interaction, positive in every Fock sector after subtracting the lower endpoint. Dense reflected matrices remain bounded to clusters of2,4,6sites; no global sector assumption."
+      },
+      "lower_per_site": "-2522531/6000000",
+      "upper_per_site": "-89251631005523763728466306130064955679715800707/229568959956734133450291343706915118940160000000",
+      "width_per_site": "21792516047738964007849518375979283908472970359/688706879870202400350874031120745356820480000000",
+      "closing_bond_norm_bound": "11/6",
+      "scope": "Half-filled open nearest-neighbor U,t,V ground-energy interval. Fresh physical trial-state upper and all-Fock local lower; translated profile sums reproduce the target. Closing-bond norm uses2t+abs(V). No ground-spin assumption, target gate optimum, or generic molecular transfer is claimed.",
+      "exact_24_site": {
+        "accepted": true,
+        "sites": 24,
+        "blocks": 3,
+        "a": "35353/100000",
+        "b": "87041/500000",
+        "norm": "14244501600975604237208675636129313566029142668911082785592626081759682489848453205374444694620974731525865792656408086720014197955175880211241702982556471396779723/7629394531250000000",
+        "energy_numerator": "-195045114870012099420996933611650639756279926415027413325458879992664156604746334359571152224289310189330312891207703346979975909718758073363308998162005011311435983/11444091796875000000",
+        "energy": "-390090229740024198841993867223301279512559852830054826650917759985328313209492668719142304448578620378660625782415406693959951819437516146726617996324010022622871966/42733504802926812711626026908387940698087428006733248356777878245279047469545359616123334083862924194577597377969224260160042593865527640633725108947669414190339169",
+        "upper_per_site": "-195045114870012099420996933611650639756279926415027413325458879992664156604746334359571152224289310189330312891207703346979975909718758073363308998162005011311435983/512802057635121752539512322900655288377049136080798980281334538943348569634544315393480009006355090334931168535630691121920511126386331687604701307372032970284070028",
+        "target": {
+          "U": "3",
+          "t": "2/3",
+          "V": "1/2"
+        },
+        "scope": "Exact physical norm and specified nearest-neighbor U,t,V energy from fixed-width boundary tensors. Exact recurrence capped at64 blocks; no large-chain precision or complexity guarantee."
+      },
+      "enclosed_24_site": {
+        "accepted": true,
+        "sites": 24,
+        "blocks": 3,
+        "a": "35353/100000",
+        "b": "87041/500000",
+        "energy_lower": "-1030312016520704308167891699684377736467209053322/112868357497299455116104280351284667955237630161",
+        "energy_upper": "-1030312016520704308167891699684377736467209053313/112868357497299455116104280351284667955237630163",
+        "upper_per_site": "-1030312016520704308167891699684377736467209053313/2708840579935186922786502728430832030925703123912",
+        "width_per_site": "3076439250517103712380721922530317484531556778093/305742386979316658860958802878591575679971043659155610499354782035651414411205972452333411509832",
+        "precision_bits": 160,
+        "matrix_squarings": 0,
+        "row_power_products": 1,
+        "transfer_dimension": 48,
+        "norm_scaled_interval": [
+          "112868357497299455116104280351284667955237630161",
+          "112868357497299455116104280351284667955237630163"
+        ],
+        "numerator_scaled_interval": [
+          "-1030312016520704308167891699684377736467209053322",
+          "-1030312016520704308167891699684377736467209053313"
+        ],
+        "shared_binary_exponent": -155,
+        "target": {
+          "U": "3",
+          "t": "2/3",
+          "V": "1/2"
+        },
+        "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+      },
+      "previous_linear_upper": {
+        "accepted": true,
+        "sites": 1000000,
+        "blocks": 125000,
+        "operation": "linear_filter",
+        "parameter": "57277/250000",
+        "target": {
+          "U": "3",
+          "t": "2/3",
+          "V": "1/2"
+        },
+        "target_block_energy": "-496595547149092555268879909604654536008660250381/170770444124473768952924687742981775430662682898",
+        "unfiltered_cut_energy": "0",
+        "gate_energy_shift": "-65163804990094548084659654003744648437684766057130621259690224591908806098011832130159382748765430242411/426295839213700513870708497579457660072927283586836688783795140281083638570066068536576197707382159949448",
+        "upper": "-489307252988133675505858714936749859698658986703783936793548712781771311535744806590750819010660161626996897767/1278887517641101541612125492738372980218781850760510066351385420843250915710198205609728593122146479848344",
+        "upper_per_site": "-489307252988133675505858714936749859698658986703783936793548712781771311535744806590750819010660161626996897767/1278887517641101541612125492738372980218781850760510066351385420843250915710198205609728593122146479848344000000",
+        "edge_reductions": {
+          "energy8": "-120558410244999997006043477431315508062486123707/28461740687412294825487447957163629238443780483",
+          "norm": "910775701997193434415598334629236135630200975456",
+          "orbit_support": 1239,
+          "total_doublons": "83937396455495231337692962115535353086186339277/113846962749649179301949791828654516953775121932",
+          "internal_density_correlation": "-37553736264560121942368320624773453534539283461/56923481374824589650974895914327258476887560966",
+          "left": [
+            [
+              "6269223864239516346377840395928679258909045/113846962749649179301949791828654516953775121932",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "8098135514721030948257445444459326044372961389/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "8098135514721030948257445444459326044372961389/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "14437276414344082943074628763070364077559063245/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "14424737966615603910381873082278506719041245155/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "1874535425697917685688803954275830213389534063/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4376132875987013729972459565315635687976727293/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "21262086017792663740565924605185375892989754463/56923481374824589650974895914327258476887560966",
+              "0",
+              "0",
+              "-80672211195183641232291238855425867883982290559/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1874535425697917685688803954275830213389534063/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1874535425697917685688803954275830213389534063/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "-80672211195183641232291238855425867883982290559/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "21262086017792663740565924605185375892989754463/56923481374824589650974895914327258476887560966",
+              "0",
+              "0",
+              "69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4376132875987013729972459565315635687976727293/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1874535425697917685688803954275830213389534063/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "-241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "14424737966615603910381873082278506719041245155/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "69158600223182911118134467764961582330439544665/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "14437276414344082943074628763070364077559063245/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "8098135514721030948257445444459326044372961389/455387850998596717207799167314618067815100487728",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-241287723510592815428058493859183703536339877/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "8098135514721030948257445444459326044372961389/455387850998596717207799167314618067815100487728",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "6269223864239516346377840395928679258909045/113846962749649179301949791828654516953775121932"
+            ]
+          ],
+          "right": [
+            [
+              "12538447724637910541734487961856349632681269/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1874535425520528058872491938410842056661136393/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1874535425520528058872491938410842056661136393/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1804659551783454235435336622454794033868216851/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "-69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "14424737966542995972940958491676495921313053539/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "4049067757251435856646178980332747691407330763/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4376132876031428061627093918528899104422418663/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "-69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "85048344071602079674133420543449071789298489273/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-40336105597785325806253163312460086342438035305/113846962749649179301949791828654516953775121932",
+              "0",
+              "0",
+              "-69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4049067757251435856646178980332747691407330763/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4049067757251435856646178980332747691407330763/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "-40336105597785325806253163312460086342438035305/113846962749649179301949791828654516953775121932",
+              "0",
+              "0",
+              "85048344071602079674133420543449071789298489273/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4376132876031428061627093918528899104422418663/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "4049067757251435856646178980332747691407330763/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "14424737966542995972940958491676495921313053539/227693925499298358603899583657309033907550243864",
+              "0",
+              "0",
+              "-69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "69158600223174712191182418942998391386623583473/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "1804659551783454235435336622454794033868216851/28461740687412294825487447957163629238443780483",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1874535425520528058872491938410842056661136393/455387850998596717207799167314618067815100487728",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-3860603575939978817620849713501321633226644381/455387850998596717207799167314618067815100487728",
+              "0",
+              "0",
+              "1874535425520528058872491938410842056661136393/455387850998596717207799167314618067815100487728",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "12538447724637910541734487961856349632681269/227693925499298358603899583657309033907550243864"
+            ]
+          ],
+          "upper_replay": {
+            "accepted": true,
+            "sites": 8,
+            "particles": 8,
+            "U": "4",
+            "t": "1",
+            "upper": "-120558410244999997006043477431315508062486123707/28461740687412294825487447957163629238443780483",
+            "norm": "28461740687412294825487447957163629238443780483/16452712980283392",
+            "moment_work": {
+              "maximum_moment_order": 23,
+              "maximum_power": 12,
+              "boundary_count": 14,
+              "maximum_orbit_support": 1250,
+              "unique_determinant_source_actions": 1239,
+              "referenced_determinants": 2169,
+              "orbit_cache_states": 4864,
+              "balanced_sector_dimension": 4900,
+              "materialized_full_sector": false,
+              "symmetry_checks": {
+                "spin_exchange_exact": true,
+                "particle_hole_number_multiplier": "-4",
+                "particle_hole_fixed_number_exact": true
+              },
+              "scope": "Exact signed finite-group orbit contraction from prescribed invariant boundary vectors. Orbits and their images are generated on demand; no full sector matrix. Orbit count can still grow exponentially."
+            },
+            "scope": "Fresh physical H8 polynomial Rayleigh quotient only. No supplied moment table, complement-gap proof, or ground-spin theorem is used."
+          },
+          "scope": "Exact physical two-site partial traces, streamed from a bounded caller-constructed H8 orbit state. No supplied RDM is accepted as physical."
+        },
+        "scope": "Exact physical upper for H=-t*sum hopping+U*sum doublons+V*sum(n_i-1)(n_{i+1}-1). The source trial state is generated from the validated original H8 U4 t1 operator, and its target energy is freshly recomputed. Contact operations preserve remote endpoint RDMs, so shifts add. No target ground-energy lower or target-state optimality claim."
+      },
+      "previous_linear_enclosure": {
+        "accepted": true,
+        "sites": 1000000,
+        "blocks": 125000,
+        "a": "57277/250000",
+        "b": "0",
+        "energy_lower": "-943684510554611727572974748367998725558987621469/2466479566303942211498056916591748103208960",
+        "energy_upper": "-471842255277305863786487374183999362770386953697/1233239783151971105749028458295874051702784",
+        "upper_per_site": "-471842255277305863786487374183999362770386953697/1233239783151971105749028458295874051702784000000",
+        "width_per_site": "879133902906841699677338430114798419536487677383/23206792644481212096794113673734114395777836031525649994490449654553956555653120000000",
+        "precision_bits": 160,
+        "matrix_squarings": 16,
+        "row_power_products": 8,
+        "transfer_dimension": 48,
+        "norm_scaled_interval": [
+          "2466479566303942211498056916591748103208960",
+          "2466479566303942211498056916591748103405568"
+        ],
+        "numerator_scaled_interval": [
+          "-943684510554611727572974748367998725558987621469",
+          "-943684510554611727572974748367998725540773907394"
+        ],
+        "shared_binary_exponent": 9085,
+        "target": {
+          "U": "3",
+          "t": "2/3",
+          "V": "1/2"
+        },
+        "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+      },
+      "unretuned_quadratic_upper": {
+        "accepted": true,
+        "sites": 1000000,
+        "blocks": 125000,
+        "a": "356039/1000000",
+        "b": "88887/500000",
+        "energy_lower": "-254300977091617617893090709973316471644341504481/654104449479555306278382539890871582916608",
+        "energy_upper": "-26489685113710168530530282288887132462127950335/68135880154120344403998181238632456558592",
+        "upper_per_site": "-5297937022742033706106056457777426492425590067/13627176030824068880799636247726491311718400000",
+        "width_per_site": "856636314862474192023851955532605385052240593939/21761710145515549722619048844036429751546409385141898985538683703499780016504832000000",
+        "precision_bits": 160,
+        "matrix_squarings": 16,
+        "row_power_products": 8,
+        "transfer_dimension": 48,
+        "norm_scaled_interval": [
+          "3270522247397776531391912699454357914583040",
+          "3270522247397776531391912699454357914812416"
+        ],
+        "numerator_scaled_interval": [
+          "-1271504885458088089465453549866582358221707522405",
+          "-1271504885458088089465453549866582358182141616080"
+        ],
+        "shared_binary_exponent": 82968,
+        "target": {
+          "U": "3",
+          "t": "2/3",
+          "V": "1/2"
+        },
+        "scope": "Outward-rounded enclosure of a specified physical filtered-state energy, not a ground-energy lower bound. The upper endpoint is variational. Fixed48-dimensional transfer powers retain a symbolic common scale; positive norm is certified explicitly."
+      },
+      "improvement_over_linear_per_site": "226629956787677473870308020545665633506557257072986699187046416538649733771936552348282104462120480164688376292241295192441818284213022793554622169561/36699109665814644686493037311645422102629756315162550466804895416810430865774187582131519804836874471674225843645595640042982176373244419851386880000000",
+      "improvement_from_gate_retuning_per_site": "14146785308916912129274286186052691659346348549071888041259141651216798279601353/7637638253280317032066684089413557609975548590197602600024281801325990210928640000000"
+    }
+  ],
+  "source_sha256": {
+    "experiments/marginal_boundary_transfer.py": "b7e76483c8293b5e3abdb6fc8803077e33ede266d716144aa14585c68cc6cb96",
+    "experiments/marginal_boundary_unitary.py": "af236ade4bd1c490dda0beb88b15ea3ab317fa6e2bc84414eb80b51c4040be1e",
+    "experiments/marginal_local_hubbard_block.py": "8bd8ffa948513e6b1073f9f1b970a4c87e6f04ca0150f9f407bf928147ce9257",
+    "experiments/marginal_tiled_upper.py": "ce286a9e5b0396ab432d480efbae0e8c7e51aa3e5a5ce921c3a2072d1041f758",
+    "experiments/marginal_symmetry_moments.py": "ca2d72ea53b2886a739c0365625040fd52936344e7413935c5009a73ecca72d9",
+    "experiments/marginal_determinant_tree.py": "9cd66df9a51235375cfd59d0dd70aa2a4aefb1c3a4d9542d6824e82db5e9e71b",
+    "experiments/marginal_transfer_verify.py": "5f7bd4bd45adcb397942e09e37065486f9e72f022fe818d2d94ff98c32844bae",
+    "experiments/marginal_symbolic.py": "a1fc87c3f4fcd10426b6d68e1131941d96db7b4fe29920678034770734f9713f",
+    "experiments/marginal_polynomial_sos.py": "db8b0f4f48da6d8eb4021be1f4ab70471cc50b73c795d16ed8c3bb58d8ccad1b",
+    "results/marginal_graded_hubbard8/discovery/singlet_moment_energy.py": "2a43b2c433ed16bb2e7ceed51575cf6c2dd3620df6b275dc160802add1a8ee86",
+    "results/marginal_graded_hubbard8/discovery/density_transfer.py": "a3d242d31ed775023992017cc8cf01f27cc10f3f0ad2cb68255764c1144da113",
+    "results/marginal_graded_hubbard8/density_transfer/certificate.json": "299ea10cdc580c15e3cc8f703e49fa1e17cd6f24fd07efc7ee1f46476bbf272c"
+  },
+  "scope": "Three specified nearest-neighbor target models each have a fresh physical upper and matching all-Fock translated-window lower. Contact gates were retuned; source H8 state and lower profile shapes were not optimized for targets. No generic molecular or arbitrary Hamiltonian transfer claim."
+}

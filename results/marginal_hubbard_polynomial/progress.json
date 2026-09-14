@@ -1,0 +1,24 @@
+{
+  "status": "Exact directly generated Hubbard Q-gap certificates accepted through32 sites; general goal remains open.",
+  "report": "research/marginal_hubbard_polynomial.md",
+  "tests_passed": 353,
+  "elapsed_seconds": 264.041,
+  "stdlib_replays": [
+    "results/marginal_hubbard_polynomial/4/independent_replay.json",
+    "results/marginal_hubbard_polynomial/6/independent_replay.json",
+    "results/marginal_hubbard_polynomial/8/independent_replay.json",
+    "results/marginal_hubbard_polynomial/10/independent_replay.json",
+    "results/marginal_hubbard_polynomial/16/independent_replay.json",
+    "results/marginal_hubbard_polynomial/24/independent_replay.json",
+    "results/marginal_hubbard_polynomial/32/independent_replay.json"
+  ],
+  "construction": "Explicit degree<=4 positive indicators and degree<=2 number multipliers; no optimizer, configuration enumeration or full-population ideal lift.",
+  "scaling": "O(m^2) positive atoms and O(m) number-multiplier terms for this chain formula; all measured exact residuals zero.",
+  "accuracy_scope": "Loose bound U-4t(m-1)-epsilon, not an accurate ground-energy interval or an improvement over elementary uniform row estimates.",
+  "remaining": [
+    "Combine controlled construction size with accurate bounds for molecular Hamiltonians.",
+    "Remove explicit finite-sector metric/proof discovery from the optimized H6 path.",
+    "Compress retained response and upper-witness work with checked error.",
+    "General marginal representability, finite-temperature, dynamics and synthesis remain open."
+  ]
+}

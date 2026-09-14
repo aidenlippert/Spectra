@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spin_coherence_fixed_limit_replay.py", line 136, in <module>
+    main()
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spin_coherence_fixed_limit_replay.py", line 124, in main
+    result = replay(json.loads(cp.read_text()), proposal)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spin_coherence_fixed_limit_replay.py", line 90, in replay
+    expectation = fixed_expectation(c)
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spin_coherence_fixed_limit_replay.py", line 32, in fixed_expectation
+    combined = [dict(image) for image in physical]
+                ^^^^^^^^^^^
+TypeError: 'int' object is not iterable

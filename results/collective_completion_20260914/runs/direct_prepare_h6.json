@@ -1,0 +1,23 @@
+{
+  "name": "direct_prepare_h6",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.collective_completion_20260914.prepare",
+    "h6_actual",
+    "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "results/correlated_pair_20260913/mps/h6_b48_real/state.json",
+    "results/collective_completion_20260914/prepared/h6_actual"
+  ],
+  "timeout_seconds": 90,
+  "status": "passed",
+  "started_UTC": "2026-09-14T18:46:50.268050+00:00",
+  "pid": 30279,
+  "exit_code": 0,
+  "wall_seconds": 6.456794334008009,
+  "child_user_seconds": 5.548888,
+  "child_system_seconds": 0.261327,
+  "peak_child_RSS_bytes": 275513344,
+  "finished_UTC": "2026-09-14T18:46:56.725355+00:00"
+}

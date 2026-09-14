@@ -1,0 +1,36 @@
+..........F.............................                                 [100%]
+=================================== FAILURES ===================================
+___ test_two_bit_long_hop_excludes_actual_nearest_neighbor_physical_actions ____
+
+    def test_two_bit_long_hop_excludes_actual_nearest_neighbor_physical_actions():
+        from experiments.marginal_local_hubbard_block import _actions
+>       action = _actions(6, F(10,3), 1, [F(i+1,7) for i in range(6)],
+                          [F(2*i+1,11) for i in range(5)], F(1,2), [F(i+1,13) for i in range(5)])
+
+tests/test_marginal_residual_coherence.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+experiments/marginal_local_hubbard_block.py:98: in _actions
+    onsite,hopping = _profiles(L,U,t,onsite,hopping)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+L = 6, U = Fraction(10, 3), t = Fraction(1, 1)
+onsite = [Fraction(1, 7), Fraction(2, 7), Fraction(3, 7), Fraction(4, 7), Fraction(5, 7), Fraction(6, 7)]
+hopping = [Fraction(1, 11), Fraction(3, 11), Fraction(5, 11), Fraction(7, 11), Fraction(9, 11)]
+
+    def _profiles(L,U,t,onsite=None,hopping=None):
+        result = []
+        for values,size,average in ((onsite,L,U),(hopping,L-1,t)):
+            if values is None:
+                values = [average]*size
+            if type(values) is not list or len(values) != size:
+                raise ValueError('Local profile has the wrong length')
+            values = [_exact(x) for x in values]
+            if any(x < 0 for x in values) or sum(values) != size*average:
+>               raise ValueError('Local profile must be nonnegative with its declared exact mean')
+E               ValueError: Local profile must be nonnegative with its declared exact mean
+
+experiments/marginal_local_hubbard_block.py:39: ValueError
+=========================== short test summary info ============================
+FAILED tests/test_marginal_residual_coherence.py::test_two_bit_long_hop_excludes_actual_nearest_neighbor_physical_actions
+1 failed, 39 passed in 51.08s

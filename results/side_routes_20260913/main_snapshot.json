@@ -1,0 +1,22 @@
+{
+  "thread": {
+    "id": "01a094d6-f0dd-77a1-9ed6-25c00dba0189",
+    "kind": "codex",
+    "hostId": "local",
+    "title": "Continue Spectra quantum-marginal research",
+    "preview": "Resolve the quantum-marginal certificate blockers: certify or refute the current relaxation’s numerical limit, identify and test violated physical positivity constraints, seek compact stronger certificates, and evaluate transfer beyond the matched model. Track remaining unproved scalability and general representability claims explicitly; do not equate finite-model successes with solving general quantum chemistry.",
+    "status": {
+      "type": "active",
+      "activeFlags": []
+    },
+    "cwd": "/Users/aidenlippert/Documents/Spectra",
+    "createdAt": 1789203509,
+    "updatedAt": 1789276042
+  },
+  "updates": [
+    "The previous turn made verified progress on accuracy. I’ll now test whether exact spin symmetry can reduce discovery costs, starting with a complete operator-basis construction and checking that it preserves every required direction.\n",
+    "The exact basis construction is in place. It decomposes small groups of operators that share the same spatial-orbital pattern, then checks that their spin multiplets span the entire original word space. I’m measuring the resulting Gram dimensions before building the solver maps.\n",
+    "The decomposition reduces H₁₀’s Gram entries from **4.67 million to 1.22 million**; its largest PSD block falls from **725 to 500**. Those are dimension counts, not yet a speedup result. The new invariant solver maps are now being tested on H₄ against the unchanged Hamiltonian.\n"
+  ],
+  "scope": "Read-only snapshot of main thread for selecting complementary side work."
+}

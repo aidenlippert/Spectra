@@ -1,0 +1,14 @@
+{
+  "hosts": ["129.159.32.200", "146.235.200.232"],
+  "scs": "3.2.8",
+  "extension": "_scs_indirect.cpython-310-x86_64-linux-gnu.so",
+  "blas": "bundled libopenblas-r0-11edc3fa.3.15.so",
+  "openblas_build": "0.3.15 DYNAMIC_ARCH NO_CH NO_AFFINITY",
+  "linked_libraries": ["libopenblas", "libgfortran"],
+  "scs_lapack_symbol": "dsyev_",
+  "openblas_exports": ["dsyev_", "dsyevd_", "dsyevr_"],
+  "h10_stage0": {"iterations": 175, "solve_ms": 666722.7, "cone_ms": 635576.4, "linear_system_ms": 23130.2, "acceleration_ms": 1480.7},
+  "conclusion": "Linkage proves SCS calls dsyev through bundled OpenBLAS; it does not prove that eigensolver choice or BLAS dispatch is the cone bottleneck.",
+  "next_isolated_experiment": "Benchmark dsyev, dsyevd, and dsyevr on exact 8x725 and 8x225 float64 PSD blocks, with controlled OpenBLAS threads and residual checks, outside live jobs.",
+  "actions_taken": "Read-only metadata inspection; no installs, library changes, or research jobs."
+}

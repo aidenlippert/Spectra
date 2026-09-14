@@ -1,0 +1,158 @@
+{
+  "case": "h8",
+  "round": 0,
+  "spin_lifting": true,
+  "rank_cap_initial": 1,
+  "gram_entries": 18128,
+  "gram_dimensions": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    12,
+    16,
+    32,
+    32,
+    12,
+    16,
+    12,
+    16,
+    32,
+    32,
+    12,
+    16,
+    32,
+    32,
+    64,
+    64,
+    32,
+    32,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "full_gram_entries": 1206592,
+  "coefficient_equations": 1525,
+  "free_variables": 83,
+  "projected_map_nonzeros": 21884,
+  "build_seconds": 0.23374145799607504,
+  "prepared_dependency": "results/collective_completion_20260914/prepared/h8",
+  "fixture": "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+  "state": "results/correlated_pair_20260913/mps/h8_spatial_warm144/state.json",
+  "full_Gram_teacher_used": false,
+  "many_body_states_enumerated": 0,
+  "guide": [
+    {
+      "name": "local-triples-(-3, 0, 1, 0)",
+      "lowest": 0.6641389096941704,
+      "highest_retained": 0.6641389096941704
+    },
+    {
+      "name": "local-triples-(-3, 1, 1, 1)",
+      "lowest": 0.6668774416476552,
+      "highest_retained": 0.6668774416476552
+    },
+    {
+      "name": "local-triples-(-2, 0, 0, 1)",
+      "lowest": 0.6641392899570251,
+      "highest_retained": 0.6641392899570251
+    },
+    {
+      "name": "local-triples-(-2, 1, 0, 0)",
+      "lowest": 0.6668778356839645,
+      "highest_retained": 0.6668778356839645
+    },
+    {
+      "name": "local-triples-(-1, 0, 1, 0)",
+      "lowest": 0.6641392348579834,
+      "highest_retained": 0.6641392348579834
+    },
+    {
+      "name": "local-triples-(-1, 1, 1, 1)",
+      "lowest": 0.6668777634726542,
+      "highest_retained": 0.6668777634726542
+    },
+    {
+      "name": "local-triples-(0, 0, 0, 1)",
+      "lowest": 0.6641387444019853,
+      "highest_retained": 0.6641387444019853
+    },
+    {
+      "name": "local-triples-(0, 1, 0, 0)",
+      "lowest": 0.6668772250166305,
+      "highest_retained": 0.6668772250166305
+    },
+    {
+      "name": "mixed-(-2, 0, 0, 1)",
+      "lowest": 1.2335196130055807e-11,
+      "highest_retained": 1.2335196130055807e-11
+    },
+    {
+      "name": "mixed-(-2, 1, 0, 0)",
+      "lowest": 1.140376596172904e-11,
+      "highest_retained": 1.140376596172904e-11
+    },
+    {
+      "name": "mixed-(-1, 0, 1, 0)",
+      "lowest": 3.1138141735599165e-12,
+      "highest_retained": 3.1138141735599165e-12
+    },
+    {
+      "name": "mixed-(-1, 1, 1, 1)",
+      "lowest": 3.0325331964687575e-12,
+      "highest_retained": 3.0325331964687575e-12
+    },
+    {
+      "name": "mixed-(0, 0, 0, 1)",
+      "lowest": 3.078407173495954e-12,
+      "highest_retained": 3.078407173495954e-12
+    },
+    {
+      "name": "mixed-(0, 1, 0, 0)",
+      "lowest": 2.8825105444421754e-12,
+      "highest_retained": 2.8825105444421754e-12
+    },
+    {
+      "name": "mixed-(1, 0, 1, 0)",
+      "lowest": 1.2414139345102125e-11,
+      "highest_retained": 1.2414139345102125e-11
+    },
+    {
+      "name": "mixed-(1, 1, 1, 1)",
+      "lowest": 1.1824191956751292e-11,
+      "highest_retained": 1.1824191956751292e-11
+    }
+  ],
+  "magnetization": 1,
+  "singlet": false,
+  "solve_seconds": 7.16004275000887,
+  "solver": "SCS",
+  "solver_status": "optimal",
+  "solver_iterations": 3600,
+  "status": "requires_independent_exact_replay",
+  "proposed_b": -9.218557587805149,
+  "numeric_coefficient_l1": 1.8163230452543853e-07,
+  "minimum_PSD_eigenvalue": -1.12588324034751e-10,
+  "total_state_action_Ha": 0.09219855390861827,
+  "factor_rows": 316,
+  "certificate_bytes": 540417,
+  "round_seconds": 7.477141291004955,
+  "total_seconds": 8.324031625001226
+}

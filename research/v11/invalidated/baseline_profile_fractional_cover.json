@@ -1,0 +1,2973 @@
+{
+  "schema": "v11-baseline-profile-1",
+  "workload": {
+    "model": "v7_headroom",
+    "n": 3,
+    "family": "xxz",
+    "gamma": "2",
+    "T": "1/2",
+    "epsilon": "1/1000",
+    "order": 8
+  },
+  "protocol": {
+    "repeats": 7,
+    "warmup": 1,
+    "paired": "same process, same workload each repeat; construction then V7 witness then fresh V7 check then exact endpoint evaluate",
+    "counters": "construction_work/generator counters and checking_cost are cumulative operation counters; *_seconds are wall-clock self-time for each phase; total_seconds sums phase self-times; cProfile trace is cumulative-call time"
+  },
+  "rows": [
+    {
+      "construction_seconds": 0.08695029199589044,
+      "v7_witness_seconds": 0.0038935000775381923,
+      "check_seconds": 0.0037093330174684525,
+      "endpoint_seconds": 0.00031041703186929226,
+      "total_seconds": 0.09486354212276638,
+      "status": "over_tolerance",
+      "bound": "1902120580047273743/46080000000000000000",
+      "endpoint_coefficient": "1001445889/3937500000",
+      "construction_work": {
+        "trials": 0,
+        "sorts": 0,
+        "solve": 0,
+        "orthogonalization": 0,
+        "memory": 183,
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 739,
+        "column_requests": 153,
+        "cache_hits": 123,
+        "peak_terms": 30,
+        "max_rational_bits": 31,
+        "basis_multiply_adds": 0
+      },
+      "v8_cover_count": 9,
+      "v8_cost": [
+        {
+          "group_pair_checks": 0,
+          "group_count": 1,
+          "incidences": 1,
+          "iterations": 16,
+          "coordinate_updates": 0,
+          "scaled_objective_trace": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "construction_seconds": 0.0001192090567201376,
+          "internal_check": {
+            "status": "certified",
+            "bound": "1",
+            "checking_cost": {
+              "pair_checks": 0,
+              "coefficient_adds": 1,
+              "squares": 2
+            },
+            "checking_seconds": 1.808302477002144e-05
+          }
+        },
+        {
+          "group_pair_checks": 31,
+          "group_count": 3,
+          "incidences": 5,
+          "iterations": 16,
+          "coordinate_updates": 64,
+          "scaled_objective_trace": [
+            1.740243871091959,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255
+          ],
+          "construction_seconds": 0.00030891597270965576,
+          "internal_check": {
+            "status": "certified",
+            "bound": "8602325267042627/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 2,
+              "coefficient_adds": 4,
+              "squares": 6
+            },
+            "checking_seconds": 4.299997817724943e-05
+          }
+        },
+        {
+          "group_pair_checks": 390,
+          "group_count": 15,
+          "incidences": 34,
+          "iterations": 16,
+          "coordinate_updates": 544,
+          "scaled_objective_trace": [
+            1.9869089383340026,
+            1.9542467372880912,
+            1.9511607867153284,
+            1.9507131947528424,
+            1.9505238113783196,
+            1.9504052527419737,
+            1.9503145725802087,
+            1.9502387662026623,
+            1.950173196154578,
+            1.9501157197865482,
+            1.9500650239962756,
+            1.9500201384661588,
+            1.949980280893906,
+            1.9499447980271336,
+            1.9499131363127238,
+            1.9498848231949193
+          ],
+          "construction_seconds": 0.0015565839130431414,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23398617878095919/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 25,
+              "coefficient_adds": 26,
+              "squares": 35
+            },
+            "checking_seconds": 0.00022570800501853228
+          }
+        },
+        {
+          "group_pair_checks": 2383,
+          "group_count": 43,
+          "incidences": 153,
+          "iterations": 16,
+          "coordinate_updates": 2448,
+          "scaled_objective_trace": [
+            2.6485730822702593,
+            2.568936703658773,
+            2.532956607052034,
+            2.5138154606244774,
+            2.5030707140401436,
+            2.496659450642767,
+            2.492570842298636,
+            2.4898114585276083,
+            2.48786890970365,
+            2.486458184953141,
+            2.485408720147471,
+            2.4846126206963883,
+            2.483998857264227,
+            2.4835192264494523,
+            2.483140175119917,
+            2.482837813529954
+          ],
+          "construction_seconds": 0.006698459037579596,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23835243012959857/1250000000000000",
+            "checking_cost": {
+              "pair_checks": 206,
+              "coefficient_adds": 136,
+              "squares": 172
+            },
+            "checking_seconds": 0.0011290409602224827
+          }
+        },
+        {
+          "group_pair_checks": 5712,
+          "group_count": 65,
+          "incidences": 299,
+          "iterations": 16,
+          "coordinate_updates": 4784,
+          "scaled_objective_trace": [
+            2.342957423932836,
+            2.2989187487926643,
+            2.2853776992826376,
+            2.279758789022204,
+            2.2769863960595096,
+            2.275295762154901,
+            2.2740772065722803,
+            2.273133015962723,
+            2.2723864055235428,
+            2.2717936977705504,
+            2.2713237817414598,
+            2.270952521947633,
+            2.270660485817024,
+            2.2704317363693507,
+            2.270253118591503,
+            2.2701138084741928
+          ],
+          "construction_seconds": 0.014263832941651344,
+          "internal_check": {
+            "status": "certified",
+            "bound": "156837622799865019/5000000000000000",
+            "checking_cost": {
+              "pair_checks": 535,
+              "coefficient_adds": 275,
+              "squares": 332
+            },
+            "checking_seconds": 0.0024437919491901994
+          }
+        },
+        {
+          "group_pair_checks": 5716,
+          "group_count": 69,
+          "incidences": 297,
+          "iterations": 16,
+          "coordinate_updates": 4752,
+          "scaled_objective_trace": [
+            3.1335431332215564,
+            3.067239759700355,
+            3.0399225981741576,
+            3.0255803253846847,
+            3.0172961465320043,
+            3.0122788931983093,
+            3.009130200391593,
+            3.007085520449207,
+            3.0057101386780722,
+            3.0047507276113006,
+            3.0040566677718834,
+            3.0035367117948724,
+            3.0031344915805707,
+            3.0028144351530575,
+            3.0025535611822685,
+            3.0023366394467668
+          ],
+          "construction_seconds": 0.014070334029383957,
+          "internal_check": {
+            "status": "certified",
+            "bound": "83761829623528527/2000000000000000",
+            "checking_cost": {
+              "pair_checks": 498,
+              "coefficient_adds": 271,
+              "squares": 331
+            },
+            "checking_seconds": 0.0023408340057358146
+          }
+        },
+        {
+          "group_pair_checks": 5710,
+          "group_count": 71,
+          "incidences": 316,
+          "iterations": 16,
+          "coordinate_updates": 5056,
+          "scaled_objective_trace": [
+            4.700597179194839,
+            4.606148707375005,
+            4.576323945180122,
+            4.560872799396223,
+            4.551174056440684,
+            4.544585477441804,
+            4.539863646160062,
+            4.536322902006085,
+            4.53356195112543,
+            4.531337637340598,
+            4.529497714140706,
+            4.527943644317893,
+            4.5266095238750355,
+            4.525449836876401,
+            4.524432147692875,
+            4.523532624466834
+          ],
+          "construction_seconds": 0.017350959009490907,
+          "internal_check": {
+            "status": "certified",
+            "bound": "18662720454632083/400000000000000",
+            "checking_cost": {
+              "pair_checks": 547,
+              "coefficient_adds": 291,
+              "squares": 354
+            },
+            "checking_seconds": 0.0026509170420467854
+          }
+        },
+        {
+          "group_pair_checks": 5722,
+          "group_count": 70,
+          "incidences": 310,
+          "iterations": 16,
+          "coordinate_updates": 4960,
+          "scaled_objective_trace": [
+            4.983448645574582,
+            4.865403256271177,
+            4.81711425308105,
+            4.791593310172162,
+            4.7775914181246195,
+            4.76998530093741,
+            4.765821033429417,
+            4.763481447988106,
+            4.7620785244673085,
+            4.761158944467929,
+            4.76050899341136,
+            4.760023052977152,
+            4.759642599977653,
+            4.759332440420668,
+            4.759070545829134,
+            4.758842834244491
+          ],
+          "construction_seconds": 0.014706625021062791,
+          "internal_check": {
+            "status": "certified",
+            "bound": "390951400656286917/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 537,
+              "coefficient_adds": 282,
+              "squares": 342
+            },
+            "checking_seconds": 0.0024353329790756106
+          }
+        },
+        {
+          "group_pair_checks": 5704,
+          "group_count": 70,
+          "incidences": 319,
+          "iterations": 16,
+          "coordinate_updates": 5104,
+          "scaled_objective_trace": [
+            3.968851335119927,
+            3.9147422883163445,
+            3.8962148046987464,
+            3.886441167905029,
+            3.8807796460140693,
+            3.8772781362381545,
+            3.8749654488605327,
+            3.8733631976050975,
+            3.872212558016162,
+            3.8713613063028216,
+            3.8707152625003363,
+            3.8702138522956853,
+            3.8698167181198806,
+            3.8694961337816864,
+            3.869232578968299,
+            3.8690120565135824
+          ],
+          "construction_seconds": 0.01530795800499618,
+          "internal_check": {
+            "status": "certified",
+            "bound": "309689660858286633/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 564,
+              "coefficient_adds": 292,
+              "squares": 353
+            },
+            "checking_seconds": 0.0025183340767398477
+          }
+        }
+      ],
+      "checking_cost": {
+        "pair_checks": 60,
+        "squares": 36,
+        "scalar_bound_ops": 20
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 881,
+        "column_requests": 183,
+        "cache_hits": 153,
+        "peak_terms": 30,
+        "max_rational_bits": 34,
+        "basis_multiply_adds": 0
+      }
+    },
+    {
+      "construction_seconds": 0.08342537505086511,
+      "v7_witness_seconds": 0.004009499913081527,
+      "check_seconds": 0.0038019169587641954,
+      "endpoint_seconds": 0.0003074998967349529,
+      "total_seconds": 0.09154429181944579,
+      "status": "over_tolerance",
+      "bound": "1902120580047273743/46080000000000000000",
+      "endpoint_coefficient": "1001445889/3937500000",
+      "construction_work": {
+        "trials": 0,
+        "sorts": 0,
+        "solve": 0,
+        "orthogonalization": 0,
+        "memory": 183,
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 739,
+        "column_requests": 153,
+        "cache_hits": 123,
+        "peak_terms": 30,
+        "max_rational_bits": 31,
+        "basis_multiply_adds": 0
+      },
+      "v8_cover_count": 9,
+      "v8_cost": [
+        {
+          "group_pair_checks": 0,
+          "group_count": 1,
+          "incidences": 1,
+          "iterations": 16,
+          "coordinate_updates": 0,
+          "scaled_objective_trace": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "construction_seconds": 0.0001343749463558197,
+          "internal_check": {
+            "status": "certified",
+            "bound": "1",
+            "checking_cost": {
+              "pair_checks": 0,
+              "coefficient_adds": 1,
+              "squares": 2
+            },
+            "checking_seconds": 2.0584091544151306e-05
+          }
+        },
+        {
+          "group_pair_checks": 31,
+          "group_count": 3,
+          "incidences": 5,
+          "iterations": 16,
+          "coordinate_updates": 64,
+          "scaled_objective_trace": [
+            1.740243871091959,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255
+          ],
+          "construction_seconds": 0.00032583309803158045,
+          "internal_check": {
+            "status": "certified",
+            "bound": "8602325267042627/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 2,
+              "coefficient_adds": 4,
+              "squares": 6
+            },
+            "checking_seconds": 4.5291963033378124e-05
+          }
+        },
+        {
+          "group_pair_checks": 390,
+          "group_count": 15,
+          "incidences": 34,
+          "iterations": 16,
+          "coordinate_updates": 544,
+          "scaled_objective_trace": [
+            1.9869089383340026,
+            1.9542467372880912,
+            1.9511607867153284,
+            1.9507131947528424,
+            1.9505238113783196,
+            1.9504052527419737,
+            1.9503145725802087,
+            1.9502387662026623,
+            1.950173196154578,
+            1.9501157197865482,
+            1.9500650239962756,
+            1.9500201384661588,
+            1.949980280893906,
+            1.9499447980271336,
+            1.9499131363127238,
+            1.9498848231949193
+          ],
+          "construction_seconds": 0.001716083032079041,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23398617878095919/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 25,
+              "coefficient_adds": 26,
+              "squares": 35
+            },
+            "checking_seconds": 0.00023408292327076197
+          }
+        },
+        {
+          "group_pair_checks": 2383,
+          "group_count": 43,
+          "incidences": 153,
+          "iterations": 16,
+          "coordinate_updates": 2448,
+          "scaled_objective_trace": [
+            2.6485730822702593,
+            2.568936703658773,
+            2.532956607052034,
+            2.5138154606244774,
+            2.5030707140401436,
+            2.496659450642767,
+            2.492570842298636,
+            2.4898114585276083,
+            2.48786890970365,
+            2.486458184953141,
+            2.485408720147471,
+            2.4846126206963883,
+            2.483998857264227,
+            2.4835192264494523,
+            2.483140175119917,
+            2.482837813529954
+          ],
+          "construction_seconds": 0.006673916010186076,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23835243012959857/1250000000000000",
+            "checking_cost": {
+              "pair_checks": 206,
+              "coefficient_adds": 136,
+              "squares": 172
+            },
+            "checking_seconds": 0.001135790953412652
+          }
+        },
+        {
+          "group_pair_checks": 5712,
+          "group_count": 65,
+          "incidences": 299,
+          "iterations": 16,
+          "coordinate_updates": 4784,
+          "scaled_objective_trace": [
+            2.342957423932836,
+            2.2989187487926643,
+            2.2853776992826376,
+            2.279758789022204,
+            2.2769863960595096,
+            2.275295762154901,
+            2.2740772065722803,
+            2.273133015962723,
+            2.2723864055235428,
+            2.2717936977705504,
+            2.2713237817414598,
+            2.270952521947633,
+            2.270660485817024,
+            2.2704317363693507,
+            2.270253118591503,
+            2.2701138084741928
+          ],
+          "construction_seconds": 0.013919374905526638,
+          "internal_check": {
+            "status": "certified",
+            "bound": "156837622799865019/5000000000000000",
+            "checking_cost": {
+              "pair_checks": 535,
+              "coefficient_adds": 275,
+              "squares": 332
+            },
+            "checking_seconds": 0.0023656660923734307
+          }
+        },
+        {
+          "group_pair_checks": 5716,
+          "group_count": 69,
+          "incidences": 297,
+          "iterations": 16,
+          "coordinate_updates": 4752,
+          "scaled_objective_trace": [
+            3.1335431332215564,
+            3.067239759700355,
+            3.0399225981741576,
+            3.0255803253846847,
+            3.0172961465320043,
+            3.0122788931983093,
+            3.009130200391593,
+            3.007085520449207,
+            3.0057101386780722,
+            3.0047507276113006,
+            3.0040566677718834,
+            3.0035367117948724,
+            3.0031344915805707,
+            3.0028144351530575,
+            3.0025535611822685,
+            3.0023366394467668
+          ],
+          "construction_seconds": 0.013982499949634075,
+          "internal_check": {
+            "status": "certified",
+            "bound": "83761829623528527/2000000000000000",
+            "checking_cost": {
+              "pair_checks": 498,
+              "coefficient_adds": 271,
+              "squares": 331
+            },
+            "checking_seconds": 0.0026155830128118396
+          }
+        },
+        {
+          "group_pair_checks": 5710,
+          "group_count": 71,
+          "incidences": 316,
+          "iterations": 16,
+          "coordinate_updates": 5056,
+          "scaled_objective_trace": [
+            4.700597179194839,
+            4.606148707375005,
+            4.576323945180122,
+            4.560872799396223,
+            4.551174056440684,
+            4.544585477441804,
+            4.539863646160062,
+            4.536322902006085,
+            4.53356195112543,
+            4.531337637340598,
+            4.529497714140706,
+            4.527943644317893,
+            4.5266095238750355,
+            4.525449836876401,
+            4.524432147692875,
+            4.523532624466834
+          ],
+          "construction_seconds": 0.014261582982726395,
+          "internal_check": {
+            "status": "certified",
+            "bound": "18662720454632083/400000000000000",
+            "checking_cost": {
+              "pair_checks": 547,
+              "coefficient_adds": 291,
+              "squares": 354
+            },
+            "checking_seconds": 0.002420000033453107
+          }
+        },
+        {
+          "group_pair_checks": 5722,
+          "group_count": 70,
+          "incidences": 310,
+          "iterations": 16,
+          "coordinate_updates": 4960,
+          "scaled_objective_trace": [
+            4.983448645574582,
+            4.865403256271177,
+            4.81711425308105,
+            4.791593310172162,
+            4.7775914181246195,
+            4.76998530093741,
+            4.765821033429417,
+            4.763481447988106,
+            4.7620785244673085,
+            4.761158944467929,
+            4.76050899341136,
+            4.760023052977152,
+            4.759642599977653,
+            4.759332440420668,
+            4.759070545829134,
+            4.758842834244491
+          ],
+          "construction_seconds": 0.014680250082165003,
+          "internal_check": {
+            "status": "certified",
+            "bound": "390951400656286917/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 537,
+              "coefficient_adds": 282,
+              "squares": 342
+            },
+            "checking_seconds": 0.0024347080616280437
+          }
+        },
+        {
+          "group_pair_checks": 5704,
+          "group_count": 70,
+          "incidences": 319,
+          "iterations": 16,
+          "coordinate_updates": 5104,
+          "scaled_objective_trace": [
+            3.968851335119927,
+            3.9147422883163445,
+            3.8962148046987464,
+            3.886441167905029,
+            3.8807796460140693,
+            3.8772781362381545,
+            3.8749654488605327,
+            3.8733631976050975,
+            3.872212558016162,
+            3.8713613063028216,
+            3.8707152625003363,
+            3.8702138522956853,
+            3.8698167181198806,
+            3.8694961337816864,
+            3.869232578968299,
+            3.8690120565135824
+          ],
+          "construction_seconds": 0.015175333945080638,
+          "internal_check": {
+            "status": "certified",
+            "bound": "309689660858286633/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 564,
+              "coefficient_adds": 292,
+              "squares": 353
+            },
+            "checking_seconds": 0.0024947499623522162
+          }
+        }
+      ],
+      "checking_cost": {
+        "pair_checks": 60,
+        "squares": 36,
+        "scalar_bound_ops": 20
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 881,
+        "column_requests": 183,
+        "cache_hits": 153,
+        "peak_terms": 30,
+        "max_rational_bits": 34,
+        "basis_multiply_adds": 0
+      }
+    },
+    {
+      "construction_seconds": 0.08365066605620086,
+      "v7_witness_seconds": 0.0039025420555844903,
+      "check_seconds": 0.003903041942976415,
+      "endpoint_seconds": 0.0003273329930379987,
+      "total_seconds": 0.09178358304779977,
+      "status": "over_tolerance",
+      "bound": "1902120580047273743/46080000000000000000",
+      "endpoint_coefficient": "1001445889/3937500000",
+      "construction_work": {
+        "trials": 0,
+        "sorts": 0,
+        "solve": 0,
+        "orthogonalization": 0,
+        "memory": 183,
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 739,
+        "column_requests": 153,
+        "cache_hits": 123,
+        "peak_terms": 30,
+        "max_rational_bits": 31,
+        "basis_multiply_adds": 0
+      },
+      "v8_cover_count": 9,
+      "v8_cost": [
+        {
+          "group_pair_checks": 0,
+          "group_count": 1,
+          "incidences": 1,
+          "iterations": 16,
+          "coordinate_updates": 0,
+          "scaled_objective_trace": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "construction_seconds": 0.00012158299796283245,
+          "internal_check": {
+            "status": "certified",
+            "bound": "1",
+            "checking_cost": {
+              "pair_checks": 0,
+              "coefficient_adds": 1,
+              "squares": 2
+            },
+            "checking_seconds": 1.8332968465983868e-05
+          }
+        },
+        {
+          "group_pair_checks": 31,
+          "group_count": 3,
+          "incidences": 5,
+          "iterations": 16,
+          "coordinate_updates": 64,
+          "scaled_objective_trace": [
+            1.740243871091959,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255
+          ],
+          "construction_seconds": 0.00030733400490134954,
+          "internal_check": {
+            "status": "certified",
+            "bound": "8602325267042627/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 2,
+              "coefficient_adds": 4,
+              "squares": 6
+            },
+            "checking_seconds": 4.2750034481287e-05
+          }
+        },
+        {
+          "group_pair_checks": 390,
+          "group_count": 15,
+          "incidences": 34,
+          "iterations": 16,
+          "coordinate_updates": 544,
+          "scaled_objective_trace": [
+            1.9869089383340026,
+            1.9542467372880912,
+            1.9511607867153284,
+            1.9507131947528424,
+            1.9505238113783196,
+            1.9504052527419737,
+            1.9503145725802087,
+            1.9502387662026623,
+            1.950173196154578,
+            1.9501157197865482,
+            1.9500650239962756,
+            1.9500201384661588,
+            1.949980280893906,
+            1.9499447980271336,
+            1.9499131363127238,
+            1.9498848231949193
+          ],
+          "construction_seconds": 0.0015609590336680412,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23398617878095919/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 25,
+              "coefficient_adds": 26,
+              "squares": 35
+            },
+            "checking_seconds": 0.00022629194427281618
+          }
+        },
+        {
+          "group_pair_checks": 2383,
+          "group_count": 43,
+          "incidences": 153,
+          "iterations": 16,
+          "coordinate_updates": 2448,
+          "scaled_objective_trace": [
+            2.6485730822702593,
+            2.568936703658773,
+            2.532956607052034,
+            2.5138154606244774,
+            2.5030707140401436,
+            2.496659450642767,
+            2.492570842298636,
+            2.4898114585276083,
+            2.48786890970365,
+            2.486458184953141,
+            2.485408720147471,
+            2.4846126206963883,
+            2.483998857264227,
+            2.4835192264494523,
+            2.483140175119917,
+            2.482837813529954
+          ],
+          "construction_seconds": 0.006714625051245093,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23835243012959857/1250000000000000",
+            "checking_cost": {
+              "pair_checks": 206,
+              "coefficient_adds": 136,
+              "squares": 172
+            },
+            "checking_seconds": 0.001185040920972824
+          }
+        },
+        {
+          "group_pair_checks": 5712,
+          "group_count": 65,
+          "incidences": 299,
+          "iterations": 16,
+          "coordinate_updates": 4784,
+          "scaled_objective_trace": [
+            2.342957423932836,
+            2.2989187487926643,
+            2.2853776992826376,
+            2.279758789022204,
+            2.2769863960595096,
+            2.275295762154901,
+            2.2740772065722803,
+            2.273133015962723,
+            2.2723864055235428,
+            2.2717936977705504,
+            2.2713237817414598,
+            2.270952521947633,
+            2.270660485817024,
+            2.2704317363693507,
+            2.270253118591503,
+            2.2701138084741928
+          ],
+          "construction_seconds": 0.013518999912776053,
+          "internal_check": {
+            "status": "certified",
+            "bound": "156837622799865019/5000000000000000",
+            "checking_cost": {
+              "pair_checks": 535,
+              "coefficient_adds": 275,
+              "squares": 332
+            },
+            "checking_seconds": 0.002295791986398399
+          }
+        },
+        {
+          "group_pair_checks": 5716,
+          "group_count": 69,
+          "incidences": 297,
+          "iterations": 16,
+          "coordinate_updates": 4752,
+          "scaled_objective_trace": [
+            3.1335431332215564,
+            3.067239759700355,
+            3.0399225981741576,
+            3.0255803253846847,
+            3.0172961465320043,
+            3.0122788931983093,
+            3.009130200391593,
+            3.007085520449207,
+            3.0057101386780722,
+            3.0047507276113006,
+            3.0040566677718834,
+            3.0035367117948724,
+            3.0031344915805707,
+            3.0028144351530575,
+            3.0025535611822685,
+            3.0023366394467668
+          ],
+          "construction_seconds": 0.013792874990031123,
+          "internal_check": {
+            "status": "certified",
+            "bound": "83761829623528527/2000000000000000",
+            "checking_cost": {
+              "pair_checks": 498,
+              "coefficient_adds": 271,
+              "squares": 331
+            },
+            "checking_seconds": 0.0023255000123754144
+          }
+        },
+        {
+          "group_pair_checks": 5710,
+          "group_count": 71,
+          "incidences": 316,
+          "iterations": 16,
+          "coordinate_updates": 5056,
+          "scaled_objective_trace": [
+            4.700597179194839,
+            4.606148707375005,
+            4.576323945180122,
+            4.560872799396223,
+            4.551174056440684,
+            4.544585477441804,
+            4.539863646160062,
+            4.536322902006085,
+            4.53356195112543,
+            4.531337637340598,
+            4.529497714140706,
+            4.527943644317893,
+            4.5266095238750355,
+            4.525449836876401,
+            4.524432147692875,
+            4.523532624466834
+          ],
+          "construction_seconds": 0.01490887498948723,
+          "internal_check": {
+            "status": "certified",
+            "bound": "18662720454632083/400000000000000",
+            "checking_cost": {
+              "pair_checks": 547,
+              "coefficient_adds": 291,
+              "squares": 354
+            },
+            "checking_seconds": 0.002494625048711896
+          }
+        },
+        {
+          "group_pair_checks": 5722,
+          "group_count": 70,
+          "incidences": 310,
+          "iterations": 16,
+          "coordinate_updates": 4960,
+          "scaled_objective_trace": [
+            4.983448645574582,
+            4.865403256271177,
+            4.81711425308105,
+            4.791593310172162,
+            4.7775914181246195,
+            4.76998530093741,
+            4.765821033429417,
+            4.763481447988106,
+            4.7620785244673085,
+            4.761158944467929,
+            4.76050899341136,
+            4.760023052977152,
+            4.759642599977653,
+            4.759332440420668,
+            4.759070545829134,
+            4.758842834244491
+          ],
+          "construction_seconds": 0.014912666054442525,
+          "internal_check": {
+            "status": "certified",
+            "bound": "390951400656286917/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 537,
+              "coefficient_adds": 282,
+              "squares": 342
+            },
+            "checking_seconds": 0.0024303749669343233
+          }
+        },
+        {
+          "group_pair_checks": 5704,
+          "group_count": 70,
+          "incidences": 319,
+          "iterations": 16,
+          "coordinate_updates": 5104,
+          "scaled_objective_trace": [
+            3.968851335119927,
+            3.9147422883163445,
+            3.8962148046987464,
+            3.886441167905029,
+            3.8807796460140693,
+            3.8772781362381545,
+            3.8749654488605327,
+            3.8733631976050975,
+            3.872212558016162,
+            3.8713613063028216,
+            3.8707152625003363,
+            3.8702138522956853,
+            3.8698167181198806,
+            3.8694961337816864,
+            3.869232578968299,
+            3.8690120565135824
+          ],
+          "construction_seconds": 0.01531412499025464,
+          "internal_check": {
+            "status": "certified",
+            "bound": "309689660858286633/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 564,
+              "coefficient_adds": 292,
+              "squares": 353
+            },
+            "checking_seconds": 0.0025566669646650553
+          }
+        }
+      ],
+      "checking_cost": {
+        "pair_checks": 60,
+        "squares": 36,
+        "scalar_bound_ops": 20
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 881,
+        "column_requests": 183,
+        "cache_hits": 153,
+        "peak_terms": 30,
+        "max_rational_bits": 34,
+        "basis_multiply_adds": 0
+      }
+    },
+    {
+      "construction_seconds": 0.0875674590934068,
+      "v7_witness_seconds": 0.003837083000689745,
+      "check_seconds": 0.0038497080095112324,
+      "endpoint_seconds": 0.0003268750151619315,
+      "total_seconds": 0.0955811251187697,
+      "status": "over_tolerance",
+      "bound": "1902120580047273743/46080000000000000000",
+      "endpoint_coefficient": "1001445889/3937500000",
+      "construction_work": {
+        "trials": 0,
+        "sorts": 0,
+        "solve": 0,
+        "orthogonalization": 0,
+        "memory": 183,
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 739,
+        "column_requests": 153,
+        "cache_hits": 123,
+        "peak_terms": 30,
+        "max_rational_bits": 31,
+        "basis_multiply_adds": 0
+      },
+      "v8_cover_count": 9,
+      "v8_cost": [
+        {
+          "group_pair_checks": 0,
+          "group_count": 1,
+          "incidences": 1,
+          "iterations": 16,
+          "coordinate_updates": 0,
+          "scaled_objective_trace": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "construction_seconds": 0.00015854102093726397,
+          "internal_check": {
+            "status": "certified",
+            "bound": "1",
+            "checking_cost": {
+              "pair_checks": 0,
+              "coefficient_adds": 1,
+              "squares": 2
+            },
+            "checking_seconds": 2.491706982254982e-05
+          }
+        },
+        {
+          "group_pair_checks": 31,
+          "group_count": 3,
+          "incidences": 5,
+          "iterations": 16,
+          "coordinate_updates": 64,
+          "scaled_objective_trace": [
+            1.740243871091959,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255
+          ],
+          "construction_seconds": 0.00038541597314178944,
+          "internal_check": {
+            "status": "certified",
+            "bound": "8602325267042627/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 2,
+              "coefficient_adds": 4,
+              "squares": 6
+            },
+            "checking_seconds": 5.0999922677874565e-05
+          }
+        },
+        {
+          "group_pair_checks": 390,
+          "group_count": 15,
+          "incidences": 34,
+          "iterations": 16,
+          "coordinate_updates": 544,
+          "scaled_objective_trace": [
+            1.9869089383340026,
+            1.9542467372880912,
+            1.9511607867153284,
+            1.9507131947528424,
+            1.9505238113783196,
+            1.9504052527419737,
+            1.9503145725802087,
+            1.9502387662026623,
+            1.950173196154578,
+            1.9501157197865482,
+            1.9500650239962756,
+            1.9500201384661588,
+            1.949980280893906,
+            1.9499447980271336,
+            1.9499131363127238,
+            1.9498848231949193
+          ],
+          "construction_seconds": 0.0018076659180223942,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23398617878095919/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 25,
+              "coefficient_adds": 26,
+              "squares": 35
+            },
+            "checking_seconds": 0.00024862494319677353
+          }
+        },
+        {
+          "group_pair_checks": 2383,
+          "group_count": 43,
+          "incidences": 153,
+          "iterations": 16,
+          "coordinate_updates": 2448,
+          "scaled_objective_trace": [
+            2.6485730822702593,
+            2.568936703658773,
+            2.532956607052034,
+            2.5138154606244774,
+            2.5030707140401436,
+            2.496659450642767,
+            2.492570842298636,
+            2.4898114585276083,
+            2.48786890970365,
+            2.486458184953141,
+            2.485408720147471,
+            2.4846126206963883,
+            2.483998857264227,
+            2.4835192264494523,
+            2.483140175119917,
+            2.482837813529954
+          ],
+          "construction_seconds": 0.007095000008121133,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23835243012959857/1250000000000000",
+            "checking_cost": {
+              "pair_checks": 206,
+              "coefficient_adds": 136,
+              "squares": 172
+            },
+            "checking_seconds": 0.0012008750345557928
+          }
+        },
+        {
+          "group_pair_checks": 5712,
+          "group_count": 65,
+          "incidences": 299,
+          "iterations": 16,
+          "coordinate_updates": 4784,
+          "scaled_objective_trace": [
+            2.342957423932836,
+            2.2989187487926643,
+            2.2853776992826376,
+            2.279758789022204,
+            2.2769863960595096,
+            2.275295762154901,
+            2.2740772065722803,
+            2.273133015962723,
+            2.2723864055235428,
+            2.2717936977705504,
+            2.2713237817414598,
+            2.270952521947633,
+            2.270660485817024,
+            2.2704317363693507,
+            2.270253118591503,
+            2.2701138084741928
+          ],
+          "construction_seconds": 0.015129041974432766,
+          "internal_check": {
+            "status": "certified",
+            "bound": "156837622799865019/5000000000000000",
+            "checking_cost": {
+              "pair_checks": 535,
+              "coefficient_adds": 275,
+              "squares": 332
+            },
+            "checking_seconds": 0.002552832942456007
+          }
+        },
+        {
+          "group_pair_checks": 5716,
+          "group_count": 69,
+          "incidences": 297,
+          "iterations": 16,
+          "coordinate_updates": 4752,
+          "scaled_objective_trace": [
+            3.1335431332215564,
+            3.067239759700355,
+            3.0399225981741576,
+            3.0255803253846847,
+            3.0172961465320043,
+            3.0122788931983093,
+            3.009130200391593,
+            3.007085520449207,
+            3.0057101386780722,
+            3.0047507276113006,
+            3.0040566677718834,
+            3.0035367117948724,
+            3.0031344915805707,
+            3.0028144351530575,
+            3.0025535611822685,
+            3.0023366394467668
+          ],
+          "construction_seconds": 0.014562292024493217,
+          "internal_check": {
+            "status": "certified",
+            "bound": "83761829623528527/2000000000000000",
+            "checking_cost": {
+              "pair_checks": 498,
+              "coefficient_adds": 271,
+              "squares": 331
+            },
+            "checking_seconds": 0.002314874902367592
+          }
+        },
+        {
+          "group_pair_checks": 5710,
+          "group_count": 71,
+          "incidences": 316,
+          "iterations": 16,
+          "coordinate_updates": 5056,
+          "scaled_objective_trace": [
+            4.700597179194839,
+            4.606148707375005,
+            4.576323945180122,
+            4.560872799396223,
+            4.551174056440684,
+            4.544585477441804,
+            4.539863646160062,
+            4.536322902006085,
+            4.53356195112543,
+            4.531337637340598,
+            4.529497714140706,
+            4.527943644317893,
+            4.5266095238750355,
+            4.525449836876401,
+            4.524432147692875,
+            4.523532624466834
+          ],
+          "construction_seconds": 0.014645957970060408,
+          "internal_check": {
+            "status": "certified",
+            "bound": "18662720454632083/400000000000000",
+            "checking_cost": {
+              "pair_checks": 547,
+              "coefficient_adds": 291,
+              "squares": 354
+            },
+            "checking_seconds": 0.0025204999838024378
+          }
+        },
+        {
+          "group_pair_checks": 5722,
+          "group_count": 70,
+          "incidences": 310,
+          "iterations": 16,
+          "coordinate_updates": 4960,
+          "scaled_objective_trace": [
+            4.983448645574582,
+            4.865403256271177,
+            4.81711425308105,
+            4.791593310172162,
+            4.7775914181246195,
+            4.76998530093741,
+            4.765821033429417,
+            4.763481447988106,
+            4.7620785244673085,
+            4.761158944467929,
+            4.76050899341136,
+            4.760023052977152,
+            4.759642599977653,
+            4.759332440420668,
+            4.759070545829134,
+            4.758842834244491
+          ],
+          "construction_seconds": 0.015150749939493835,
+          "internal_check": {
+            "status": "certified",
+            "bound": "390951400656286917/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 537,
+              "coefficient_adds": 282,
+              "squares": 342
+            },
+            "checking_seconds": 0.0026459170039743185
+          }
+        },
+        {
+          "group_pair_checks": 5704,
+          "group_count": 70,
+          "incidences": 319,
+          "iterations": 16,
+          "coordinate_updates": 5104,
+          "scaled_objective_trace": [
+            3.968851335119927,
+            3.9147422883163445,
+            3.8962148046987464,
+            3.886441167905029,
+            3.8807796460140693,
+            3.8772781362381545,
+            3.8749654488605327,
+            3.8733631976050975,
+            3.872212558016162,
+            3.8713613063028216,
+            3.8707152625003363,
+            3.8702138522956853,
+            3.8698167181198806,
+            3.8694961337816864,
+            3.869232578968299,
+            3.8690120565135824
+          ],
+          "construction_seconds": 0.015707000042311847,
+          "internal_check": {
+            "status": "certified",
+            "bound": "309689660858286633/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 564,
+              "coefficient_adds": 292,
+              "squares": 353
+            },
+            "checking_seconds": 0.002680957899428904
+          }
+        }
+      ],
+      "checking_cost": {
+        "pair_checks": 60,
+        "squares": 36,
+        "scalar_bound_ops": 20
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 881,
+        "column_requests": 183,
+        "cache_hits": 153,
+        "peak_terms": 30,
+        "max_rational_bits": 34,
+        "basis_multiply_adds": 0
+      }
+    },
+    {
+      "construction_seconds": 0.12261050008237362,
+      "v7_witness_seconds": 0.008109458023682237,
+      "check_seconds": 0.014112957986071706,
+      "endpoint_seconds": 0.0008871250320225954,
+      "total_seconds": 0.14572004112415016,
+      "status": "over_tolerance",
+      "bound": "1902120580047273743/46080000000000000000",
+      "endpoint_coefficient": "1001445889/3937500000",
+      "construction_work": {
+        "trials": 0,
+        "sorts": 0,
+        "solve": 0,
+        "orthogonalization": 0,
+        "memory": 183,
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 739,
+        "column_requests": 153,
+        "cache_hits": 123,
+        "peak_terms": 30,
+        "max_rational_bits": 31,
+        "basis_multiply_adds": 0
+      },
+      "v8_cover_count": 9,
+      "v8_cost": [
+        {
+          "group_pair_checks": 0,
+          "group_count": 1,
+          "incidences": 1,
+          "iterations": 16,
+          "coordinate_updates": 0,
+          "scaled_objective_trace": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "construction_seconds": 0.00013649999164044857,
+          "internal_check": {
+            "status": "certified",
+            "bound": "1",
+            "checking_cost": {
+              "pair_checks": 0,
+              "coefficient_adds": 1,
+              "squares": 2
+            },
+            "checking_seconds": 2.0749983377754688e-05
+          }
+        },
+        {
+          "group_pair_checks": 31,
+          "group_count": 3,
+          "incidences": 5,
+          "iterations": 16,
+          "coordinate_updates": 64,
+          "scaled_objective_trace": [
+            1.740243871091959,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255
+          ],
+          "construction_seconds": 0.0003136249724775553,
+          "internal_check": {
+            "status": "certified",
+            "bound": "8602325267042627/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 2,
+              "coefficient_adds": 4,
+              "squares": 6
+            },
+            "checking_seconds": 4.4291955418884754e-05
+          }
+        },
+        {
+          "group_pair_checks": 390,
+          "group_count": 15,
+          "incidences": 34,
+          "iterations": 16,
+          "coordinate_updates": 544,
+          "scaled_objective_trace": [
+            1.9869089383340026,
+            1.9542467372880912,
+            1.9511607867153284,
+            1.9507131947528424,
+            1.9505238113783196,
+            1.9504052527419737,
+            1.9503145725802087,
+            1.9502387662026623,
+            1.950173196154578,
+            1.9501157197865482,
+            1.9500650239962756,
+            1.9500201384661588,
+            1.949980280893906,
+            1.9499447980271336,
+            1.9499131363127238,
+            1.9498848231949193
+          ],
+          "construction_seconds": 0.001567999948747456,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23398617878095919/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 25,
+              "coefficient_adds": 26,
+              "squares": 35
+            },
+            "checking_seconds": 0.00022425001952797174
+          }
+        },
+        {
+          "group_pair_checks": 2383,
+          "group_count": 43,
+          "incidences": 153,
+          "iterations": 16,
+          "coordinate_updates": 2448,
+          "scaled_objective_trace": [
+            2.6485730822702593,
+            2.568936703658773,
+            2.532956607052034,
+            2.5138154606244774,
+            2.5030707140401436,
+            2.496659450642767,
+            2.492570842298636,
+            2.4898114585276083,
+            2.48786890970365,
+            2.486458184953141,
+            2.485408720147471,
+            2.4846126206963883,
+            2.483998857264227,
+            2.4835192264494523,
+            2.483140175119917,
+            2.482837813529954
+          ],
+          "construction_seconds": 0.006911167060025036,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23835243012959857/1250000000000000",
+            "checking_cost": {
+              "pair_checks": 206,
+              "coefficient_adds": 136,
+              "squares": 172
+            },
+            "checking_seconds": 0.0011687090154737234
+          }
+        },
+        {
+          "group_pair_checks": 5712,
+          "group_count": 65,
+          "incidences": 299,
+          "iterations": 16,
+          "coordinate_updates": 4784,
+          "scaled_objective_trace": [
+            2.342957423932836,
+            2.2989187487926643,
+            2.2853776992826376,
+            2.279758789022204,
+            2.2769863960595096,
+            2.275295762154901,
+            2.2740772065722803,
+            2.273133015962723,
+            2.2723864055235428,
+            2.2717936977705504,
+            2.2713237817414598,
+            2.270952521947633,
+            2.270660485817024,
+            2.2704317363693507,
+            2.270253118591503,
+            2.2701138084741928
+          ],
+          "construction_seconds": 0.013799624983221292,
+          "internal_check": {
+            "status": "certified",
+            "bound": "156837622799865019/5000000000000000",
+            "checking_cost": {
+              "pair_checks": 535,
+              "coefficient_adds": 275,
+              "squares": 332
+            },
+            "checking_seconds": 0.0024799159727990627
+          }
+        },
+        {
+          "group_pair_checks": 5716,
+          "group_count": 69,
+          "incidences": 297,
+          "iterations": 16,
+          "coordinate_updates": 4752,
+          "scaled_objective_trace": [
+            3.1335431332215564,
+            3.067239759700355,
+            3.0399225981741576,
+            3.0255803253846847,
+            3.0172961465320043,
+            3.0122788931983093,
+            3.009130200391593,
+            3.007085520449207,
+            3.0057101386780722,
+            3.0047507276113006,
+            3.0040566677718834,
+            3.0035367117948724,
+            3.0031344915805707,
+            3.0028144351530575,
+            3.0025535611822685,
+            3.0023366394467668
+          ],
+          "construction_seconds": 0.013918375014327466,
+          "internal_check": {
+            "status": "certified",
+            "bound": "83761829623528527/2000000000000000",
+            "checking_cost": {
+              "pair_checks": 498,
+              "coefficient_adds": 271,
+              "squares": 331
+            },
+            "checking_seconds": 0.0023622079752385616
+          }
+        },
+        {
+          "group_pair_checks": 5710,
+          "group_count": 71,
+          "incidences": 316,
+          "iterations": 16,
+          "coordinate_updates": 5056,
+          "scaled_objective_trace": [
+            4.700597179194839,
+            4.606148707375005,
+            4.576323945180122,
+            4.560872799396223,
+            4.551174056440684,
+            4.544585477441804,
+            4.539863646160062,
+            4.536322902006085,
+            4.53356195112543,
+            4.531337637340598,
+            4.529497714140706,
+            4.527943644317893,
+            4.5266095238750355,
+            4.525449836876401,
+            4.524432147692875,
+            4.523532624466834
+          ],
+          "construction_seconds": 0.015164709067903459,
+          "internal_check": {
+            "status": "certified",
+            "bound": "18662720454632083/400000000000000",
+            "checking_cost": {
+              "pair_checks": 547,
+              "coefficient_adds": 291,
+              "squares": 354
+            },
+            "checking_seconds": 0.0025433339178562164
+          }
+        },
+        {
+          "group_pair_checks": 5722,
+          "group_count": 70,
+          "incidences": 310,
+          "iterations": 16,
+          "coordinate_updates": 4960,
+          "scaled_objective_trace": [
+            4.983448645574582,
+            4.865403256271177,
+            4.81711425308105,
+            4.791593310172162,
+            4.7775914181246195,
+            4.76998530093741,
+            4.765821033429417,
+            4.763481447988106,
+            4.7620785244673085,
+            4.761158944467929,
+            4.76050899341136,
+            4.760023052977152,
+            4.759642599977653,
+            4.759332440420668,
+            4.759070545829134,
+            4.758842834244491
+          ],
+          "construction_seconds": 0.016742459032684565,
+          "internal_check": {
+            "status": "certified",
+            "bound": "390951400656286917/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 537,
+              "coefficient_adds": 282,
+              "squares": 342
+            },
+            "checking_seconds": 0.0025827919598668814
+          }
+        },
+        {
+          "group_pair_checks": 5704,
+          "group_count": 70,
+          "incidences": 319,
+          "iterations": 16,
+          "coordinate_updates": 5104,
+          "scaled_objective_trace": [
+            3.968851335119927,
+            3.9147422883163445,
+            3.8962148046987464,
+            3.886441167905029,
+            3.8807796460140693,
+            3.8772781362381545,
+            3.8749654488605327,
+            3.8733631976050975,
+            3.872212558016162,
+            3.8713613063028216,
+            3.8707152625003363,
+            3.8702138522956853,
+            3.8698167181198806,
+            3.8694961337816864,
+            3.869232578968299,
+            3.8690120565135824
+          ],
+          "construction_seconds": 0.05140887503512204,
+          "internal_check": {
+            "status": "certified",
+            "bound": "309689660858286633/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 564,
+              "coefficient_adds": 292,
+              "squares": 353
+            },
+            "checking_seconds": 0.002674624905921519
+          }
+        }
+      ],
+      "checking_cost": {
+        "pair_checks": 60,
+        "squares": 36,
+        "scalar_bound_ops": 20
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 881,
+        "column_requests": 183,
+        "cache_hits": 153,
+        "peak_terms": 30,
+        "max_rational_bits": 34,
+        "basis_multiply_adds": 0
+      }
+    },
+    {
+      "construction_seconds": 0.08284191600978374,
+      "v7_witness_seconds": 0.00377408298663795,
+      "check_seconds": 0.003718749969266355,
+      "endpoint_seconds": 0.000322542036883533,
+      "total_seconds": 0.09065729100257158,
+      "status": "over_tolerance",
+      "bound": "1902120580047273743/46080000000000000000",
+      "endpoint_coefficient": "1001445889/3937500000",
+      "construction_work": {
+        "trials": 0,
+        "sorts": 0,
+        "solve": 0,
+        "orthogonalization": 0,
+        "memory": 183,
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 739,
+        "column_requests": 153,
+        "cache_hits": 123,
+        "peak_terms": 30,
+        "max_rational_bits": 31,
+        "basis_multiply_adds": 0
+      },
+      "v8_cover_count": 9,
+      "v8_cost": [
+        {
+          "group_pair_checks": 0,
+          "group_count": 1,
+          "incidences": 1,
+          "iterations": 16,
+          "coordinate_updates": 0,
+          "scaled_objective_trace": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "construction_seconds": 0.00013095897156745195,
+          "internal_check": {
+            "status": "certified",
+            "bound": "1",
+            "checking_cost": {
+              "pair_checks": 0,
+              "coefficient_adds": 1,
+              "squares": 2
+            },
+            "checking_seconds": 2.0875013433396816e-05
+          }
+        },
+        {
+          "group_pair_checks": 31,
+          "group_count": 3,
+          "incidences": 5,
+          "iterations": 16,
+          "coordinate_updates": 64,
+          "scaled_objective_trace": [
+            1.740243871091959,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255
+          ],
+          "construction_seconds": 0.0003129590768367052,
+          "internal_check": {
+            "status": "certified",
+            "bound": "8602325267042627/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 2,
+              "coefficient_adds": 4,
+              "squares": 6
+            },
+            "checking_seconds": 4.39999857917428e-05
+          }
+        },
+        {
+          "group_pair_checks": 390,
+          "group_count": 15,
+          "incidences": 34,
+          "iterations": 16,
+          "coordinate_updates": 544,
+          "scaled_objective_trace": [
+            1.9869089383340026,
+            1.9542467372880912,
+            1.9511607867153284,
+            1.9507131947528424,
+            1.9505238113783196,
+            1.9504052527419737,
+            1.9503145725802087,
+            1.9502387662026623,
+            1.950173196154578,
+            1.9501157197865482,
+            1.9500650239962756,
+            1.9500201384661588,
+            1.949980280893906,
+            1.9499447980271336,
+            1.9499131363127238,
+            1.9498848231949193
+          ],
+          "construction_seconds": 0.0015668339328840375,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23398617878095919/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 25,
+              "coefficient_adds": 26,
+              "squares": 35
+            },
+            "checking_seconds": 0.00022720801644027233
+          }
+        },
+        {
+          "group_pair_checks": 2383,
+          "group_count": 43,
+          "incidences": 153,
+          "iterations": 16,
+          "coordinate_updates": 2448,
+          "scaled_objective_trace": [
+            2.6485730822702593,
+            2.568936703658773,
+            2.532956607052034,
+            2.5138154606244774,
+            2.5030707140401436,
+            2.496659450642767,
+            2.492570842298636,
+            2.4898114585276083,
+            2.48786890970365,
+            2.486458184953141,
+            2.485408720147471,
+            2.4846126206963883,
+            2.483998857264227,
+            2.4835192264494523,
+            2.483140175119917,
+            2.482837813529954
+          ],
+          "construction_seconds": 0.0065825419733300805,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23835243012959857/1250000000000000",
+            "checking_cost": {
+              "pair_checks": 206,
+              "coefficient_adds": 136,
+              "squares": 172
+            },
+            "checking_seconds": 0.001130458083935082
+          }
+        },
+        {
+          "group_pair_checks": 5712,
+          "group_count": 65,
+          "incidences": 299,
+          "iterations": 16,
+          "coordinate_updates": 4784,
+          "scaled_objective_trace": [
+            2.342957423932836,
+            2.2989187487926643,
+            2.2853776992826376,
+            2.279758789022204,
+            2.2769863960595096,
+            2.275295762154901,
+            2.2740772065722803,
+            2.273133015962723,
+            2.2723864055235428,
+            2.2717936977705504,
+            2.2713237817414598,
+            2.270952521947633,
+            2.270660485817024,
+            2.2704317363693507,
+            2.270253118591503,
+            2.2701138084741928
+          ],
+          "construction_seconds": 0.013338790973648429,
+          "internal_check": {
+            "status": "certified",
+            "bound": "156837622799865019/5000000000000000",
+            "checking_cost": {
+              "pair_checks": 535,
+              "coefficient_adds": 275,
+              "squares": 332
+            },
+            "checking_seconds": 0.002269707969389856
+          }
+        },
+        {
+          "group_pair_checks": 5716,
+          "group_count": 69,
+          "incidences": 297,
+          "iterations": 16,
+          "coordinate_updates": 4752,
+          "scaled_objective_trace": [
+            3.1335431332215564,
+            3.067239759700355,
+            3.0399225981741576,
+            3.0255803253846847,
+            3.0172961465320043,
+            3.0122788931983093,
+            3.009130200391593,
+            3.007085520449207,
+            3.0057101386780722,
+            3.0047507276113006,
+            3.0040566677718834,
+            3.0035367117948724,
+            3.0031344915805707,
+            3.0028144351530575,
+            3.0025535611822685,
+            3.0023366394467668
+          ],
+          "construction_seconds": 0.013699957984499633,
+          "internal_check": {
+            "status": "certified",
+            "bound": "83761829623528527/2000000000000000",
+            "checking_cost": {
+              "pair_checks": 498,
+              "coefficient_adds": 271,
+              "squares": 331
+            },
+            "checking_seconds": 0.0022928749676793814
+          }
+        },
+        {
+          "group_pair_checks": 5710,
+          "group_count": 71,
+          "incidences": 316,
+          "iterations": 16,
+          "coordinate_updates": 5056,
+          "scaled_objective_trace": [
+            4.700597179194839,
+            4.606148707375005,
+            4.576323945180122,
+            4.560872799396223,
+            4.551174056440684,
+            4.544585477441804,
+            4.539863646160062,
+            4.536322902006085,
+            4.53356195112543,
+            4.531337637340598,
+            4.529497714140706,
+            4.527943644317893,
+            4.5266095238750355,
+            4.525449836876401,
+            4.524432147692875,
+            4.523532624466834
+          ],
+          "construction_seconds": 0.01468249992467463,
+          "internal_check": {
+            "status": "certified",
+            "bound": "18662720454632083/400000000000000",
+            "checking_cost": {
+              "pair_checks": 547,
+              "coefficient_adds": 291,
+              "squares": 354
+            },
+            "checking_seconds": 0.0024508750066161156
+          }
+        },
+        {
+          "group_pair_checks": 5722,
+          "group_count": 70,
+          "incidences": 310,
+          "iterations": 16,
+          "coordinate_updates": 4960,
+          "scaled_objective_trace": [
+            4.983448645574582,
+            4.865403256271177,
+            4.81711425308105,
+            4.791593310172162,
+            4.7775914181246195,
+            4.76998530093741,
+            4.765821033429417,
+            4.763481447988106,
+            4.7620785244673085,
+            4.761158944467929,
+            4.76050899341136,
+            4.760023052977152,
+            4.759642599977653,
+            4.759332440420668,
+            4.759070545829134,
+            4.758842834244491
+          ],
+          "construction_seconds": 0.014748041052371264,
+          "internal_check": {
+            "status": "certified",
+            "bound": "390951400656286917/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 537,
+              "coefficient_adds": 282,
+              "squares": 342
+            },
+            "checking_seconds": 0.0024969589430838823
+          }
+        },
+        {
+          "group_pair_checks": 5704,
+          "group_count": 70,
+          "incidences": 319,
+          "iterations": 16,
+          "coordinate_updates": 5104,
+          "scaled_objective_trace": [
+            3.968851335119927,
+            3.9147422883163445,
+            3.8962148046987464,
+            3.886441167905029,
+            3.8807796460140693,
+            3.8772781362381545,
+            3.8749654488605327,
+            3.8733631976050975,
+            3.872212558016162,
+            3.8713613063028216,
+            3.8707152625003363,
+            3.8702138522956853,
+            3.8698167181198806,
+            3.8694961337816864,
+            3.869232578968299,
+            3.8690120565135824
+          ],
+          "construction_seconds": 0.01523245801217854,
+          "internal_check": {
+            "status": "certified",
+            "bound": "309689660858286633/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 564,
+              "coefficient_adds": 292,
+              "squares": 353
+            },
+            "checking_seconds": 0.0025690000038594007
+          }
+        }
+      ],
+      "checking_cost": {
+        "pair_checks": 60,
+        "squares": 36,
+        "scalar_bound_ops": 20
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 881,
+        "column_requests": 183,
+        "cache_hits": 153,
+        "peak_terms": 30,
+        "max_rational_bits": 34,
+        "basis_multiply_adds": 0
+      }
+    },
+    {
+      "construction_seconds": 0.08365833293646574,
+      "v7_witness_seconds": 0.004009583033621311,
+      "check_seconds": 0.004159167059697211,
+      "endpoint_seconds": 0.000334082986228168,
+      "total_seconds": 0.09216116601601243,
+      "status": "over_tolerance",
+      "bound": "1902120580047273743/46080000000000000000",
+      "endpoint_coefficient": "1001445889/3937500000",
+      "construction_work": {
+        "trials": 0,
+        "sorts": 0,
+        "solve": 0,
+        "orthogonalization": 0,
+        "memory": 183,
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 739,
+        "column_requests": 153,
+        "cache_hits": 123,
+        "peak_terms": 30,
+        "max_rational_bits": 31,
+        "basis_multiply_adds": 0
+      },
+      "v8_cover_count": 9,
+      "v8_cost": [
+        {
+          "group_pair_checks": 0,
+          "group_count": 1,
+          "incidences": 1,
+          "iterations": 16,
+          "coordinate_updates": 0,
+          "scaled_objective_trace": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "construction_seconds": 0.00011258292943239212,
+          "internal_check": {
+            "status": "certified",
+            "bound": "1",
+            "checking_cost": {
+              "pair_checks": 0,
+              "coefficient_adds": 1,
+              "squares": 2
+            },
+            "checking_seconds": 1.7083948478102684e-05
+          }
+        },
+        {
+          "group_pair_checks": 31,
+          "group_count": 3,
+          "incidences": 5,
+          "iterations": 16,
+          "coordinate_updates": 64,
+          "scaled_objective_trace": [
+            1.740243871091959,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255,
+            1.7204650534085255
+          ],
+          "construction_seconds": 0.00030937499832361937,
+          "internal_check": {
+            "status": "certified",
+            "bound": "8602325267042627/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 2,
+              "coefficient_adds": 4,
+              "squares": 6
+            },
+            "checking_seconds": 4.3209060095250607e-05
+          }
+        },
+        {
+          "group_pair_checks": 390,
+          "group_count": 15,
+          "incidences": 34,
+          "iterations": 16,
+          "coordinate_updates": 544,
+          "scaled_objective_trace": [
+            1.9869089383340026,
+            1.9542467372880912,
+            1.9511607867153284,
+            1.9507131947528424,
+            1.9505238113783196,
+            1.9504052527419737,
+            1.9503145725802087,
+            1.9502387662026623,
+            1.950173196154578,
+            1.9501157197865482,
+            1.9500650239962756,
+            1.9500201384661588,
+            1.949980280893906,
+            1.9499447980271336,
+            1.9499131363127238,
+            1.9498848231949193
+          ],
+          "construction_seconds": 0.0016245830338448286,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23398617878095919/2500000000000000",
+            "checking_cost": {
+              "pair_checks": 25,
+              "coefficient_adds": 26,
+              "squares": 35
+            },
+            "checking_seconds": 0.00023545802105218172
+          }
+        },
+        {
+          "group_pair_checks": 2383,
+          "group_count": 43,
+          "incidences": 153,
+          "iterations": 16,
+          "coordinate_updates": 2448,
+          "scaled_objective_trace": [
+            2.6485730822702593,
+            2.568936703658773,
+            2.532956607052034,
+            2.5138154606244774,
+            2.5030707140401436,
+            2.496659450642767,
+            2.492570842298636,
+            2.4898114585276083,
+            2.48786890970365,
+            2.486458184953141,
+            2.485408720147471,
+            2.4846126206963883,
+            2.483998857264227,
+            2.4835192264494523,
+            2.483140175119917,
+            2.482837813529954
+          ],
+          "construction_seconds": 0.0068472500424832106,
+          "internal_check": {
+            "status": "certified",
+            "bound": "23835243012959857/1250000000000000",
+            "checking_cost": {
+              "pair_checks": 206,
+              "coefficient_adds": 136,
+              "squares": 172
+            },
+            "checking_seconds": 0.0011351670837029815
+          }
+        },
+        {
+          "group_pair_checks": 5712,
+          "group_count": 65,
+          "incidences": 299,
+          "iterations": 16,
+          "coordinate_updates": 4784,
+          "scaled_objective_trace": [
+            2.342957423932836,
+            2.2989187487926643,
+            2.2853776992826376,
+            2.279758789022204,
+            2.2769863960595096,
+            2.275295762154901,
+            2.2740772065722803,
+            2.273133015962723,
+            2.2723864055235428,
+            2.2717936977705504,
+            2.2713237817414598,
+            2.270952521947633,
+            2.270660485817024,
+            2.2704317363693507,
+            2.270253118591503,
+            2.2701138084741928
+          ],
+          "construction_seconds": 0.013605750049464405,
+          "internal_check": {
+            "status": "certified",
+            "bound": "156837622799865019/5000000000000000",
+            "checking_cost": {
+              "pair_checks": 535,
+              "coefficient_adds": 275,
+              "squares": 332
+            },
+            "checking_seconds": 0.00232674996368587
+          }
+        },
+        {
+          "group_pair_checks": 5716,
+          "group_count": 69,
+          "incidences": 297,
+          "iterations": 16,
+          "coordinate_updates": 4752,
+          "scaled_objective_trace": [
+            3.1335431332215564,
+            3.067239759700355,
+            3.0399225981741576,
+            3.0255803253846847,
+            3.0172961465320043,
+            3.0122788931983093,
+            3.009130200391593,
+            3.007085520449207,
+            3.0057101386780722,
+            3.0047507276113006,
+            3.0040566677718834,
+            3.0035367117948724,
+            3.0031344915805707,
+            3.0028144351530575,
+            3.0025535611822685,
+            3.0023366394467668
+          ],
+          "construction_seconds": 0.01358008396346122,
+          "internal_check": {
+            "status": "certified",
+            "bound": "83761829623528527/2000000000000000",
+            "checking_cost": {
+              "pair_checks": 498,
+              "coefficient_adds": 271,
+              "squares": 331
+            },
+            "checking_seconds": 0.0024212090065702796
+          }
+        },
+        {
+          "group_pair_checks": 5710,
+          "group_count": 71,
+          "incidences": 316,
+          "iterations": 16,
+          "coordinate_updates": 5056,
+          "scaled_objective_trace": [
+            4.700597179194839,
+            4.606148707375005,
+            4.576323945180122,
+            4.560872799396223,
+            4.551174056440684,
+            4.544585477441804,
+            4.539863646160062,
+            4.536322902006085,
+            4.53356195112543,
+            4.531337637340598,
+            4.529497714140706,
+            4.527943644317893,
+            4.5266095238750355,
+            4.525449836876401,
+            4.524432147692875,
+            4.523532624466834
+          ],
+          "construction_seconds": 0.014285875018686056,
+          "internal_check": {
+            "status": "certified",
+            "bound": "18662720454632083/400000000000000",
+            "checking_cost": {
+              "pair_checks": 547,
+              "coefficient_adds": 291,
+              "squares": 354
+            },
+            "checking_seconds": 0.0024147500516846776
+          }
+        },
+        {
+          "group_pair_checks": 5722,
+          "group_count": 70,
+          "incidences": 310,
+          "iterations": 16,
+          "coordinate_updates": 4960,
+          "scaled_objective_trace": [
+            4.983448645574582,
+            4.865403256271177,
+            4.81711425308105,
+            4.791593310172162,
+            4.7775914181246195,
+            4.76998530093741,
+            4.765821033429417,
+            4.763481447988106,
+            4.7620785244673085,
+            4.761158944467929,
+            4.76050899341136,
+            4.760023052977152,
+            4.759642599977653,
+            4.759332440420668,
+            4.759070545829134,
+            4.758842834244491
+          ],
+          "construction_seconds": 0.014984249952249229,
+          "internal_check": {
+            "status": "certified",
+            "bound": "390951400656286917/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 537,
+              "coefficient_adds": 282,
+              "squares": 342
+            },
+            "checking_seconds": 0.002726291073486209
+          }
+        },
+        {
+          "group_pair_checks": 5704,
+          "group_count": 70,
+          "incidences": 319,
+          "iterations": 16,
+          "coordinate_updates": 5104,
+          "scaled_objective_trace": [
+            3.968851335119927,
+            3.9147422883163445,
+            3.8962148046987464,
+            3.886441167905029,
+            3.8807796460140693,
+            3.8772781362381545,
+            3.8749654488605327,
+            3.8733631976050975,
+            3.872212558016162,
+            3.8713613063028216,
+            3.8707152625003363,
+            3.8702138522956853,
+            3.8698167181198806,
+            3.8694961337816864,
+            3.869232578968299,
+            3.8690120565135824
+          ],
+          "construction_seconds": 0.015788791002705693,
+          "internal_check": {
+            "status": "certified",
+            "bound": "309689660858286633/10000000000000000",
+            "checking_cost": {
+              "pair_checks": 564,
+              "coefficient_adds": 292,
+              "squares": 353
+            },
+            "checking_seconds": 0.0025990409776568413
+          }
+        }
+      ],
+      "checking_cost": {
+        "pair_checks": 60,
+        "squares": 36,
+        "scalar_bound_ops": 20
+      },
+      "checking_generator_cost": {
+        "hamiltonian_pairs": 210,
+        "coefficient_multiply_adds": 881,
+        "column_requests": 183,
+        "cache_hits": 153,
+        "peak_terms": 30,
+        "max_rational_bits": 34,
+        "basis_multiply_adds": 0
+      }
+    }
+  ],
+  "summary": {
+    "construction_seconds": {
+      "mean": 0.09010064874642662,
+      "median": 0.08365833293646574,
+      "min": 0.08284191600978374,
+      "max": 0.12261050008237362
+    },
+    "v7_witness_seconds": {
+      "mean": 0.0045051070129764935,
+      "median": 0.0039025420555844903,
+      "min": 0.00377408298663795,
+      "max": 0.008109458023682237
+    },
+    "check_seconds": {
+      "mean": 0.005322124991965081,
+      "median": 0.0038497080095112324,
+      "min": 0.0037093330174684525,
+      "max": 0.014112957986071706
+    },
+    "endpoint_seconds": {
+      "mean": 0.00040226785599121025,
+      "median": 0.0003268750151619315,
+      "min": 0.0003074998967349529,
+      "max": 0.0008871250320225954
+    },
+    "total_seconds": {
+      "mean": 0.1003301486073594,
+      "median": 0.09216116601601243,
+      "min": 0.09065729100257158,
+      "max": 0.14572004112415016
+    }
+  },
+  "profiled_run": {
+    "construction_seconds": 0.22777412505820394,
+    "v7_witness_seconds": 0.014775290968827903,
+    "check_seconds": 0.0143119590356946,
+    "endpoint_seconds": 0.0010524590034037828,
+    "total_seconds": 0.2579138340661302,
+    "status": "over_tolerance",
+    "bound": "1902120580047273743/46080000000000000000",
+    "endpoint_coefficient": "1001445889/3937500000",
+    "construction_work": {
+      "trials": 0,
+      "sorts": 0,
+      "solve": 0,
+      "orthogonalization": 0,
+      "memory": 183,
+      "hamiltonian_pairs": 210,
+      "coefficient_multiply_adds": 739,
+      "column_requests": 153,
+      "cache_hits": 123,
+      "peak_terms": 30,
+      "max_rational_bits": 31,
+      "basis_multiply_adds": 0
+    },
+    "v8_cover_count": 9,
+    "v8_cost": [
+      {
+        "group_pair_checks": 0,
+        "group_count": 1,
+        "incidences": 1,
+        "iterations": 16,
+        "coordinate_updates": 0,
+        "scaled_objective_trace": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "construction_seconds": 0.0004242080030962825,
+        "internal_check": {
+          "status": "certified",
+          "bound": "1",
+          "checking_cost": {
+            "pair_checks": 0,
+            "coefficient_adds": 1,
+            "squares": 2
+          },
+          "checking_seconds": 7.400009781122208e-05
+        }
+      },
+      {
+        "group_pair_checks": 31,
+        "group_count": 3,
+        "incidences": 5,
+        "iterations": 16,
+        "coordinate_updates": 64,
+        "scaled_objective_trace": [
+          1.740243871091959,
+          1.7204650534085255,
+          1.7204650534085255,
+          1.7204650534085255,
+          1.7204650534085255,
+          1.7204650534085255,
+          1.7204650534085255,
+          1.7204650534085255,
+          1.7204650534085255,
+          1.7204650534085255,
+          1.7204650534085255,
+          1.7204650534085255,
+          1.7204650534085255,
+          1.7204650534085255,
+          1.7204650534085255,
+          1.7204650534085255
+        ],
+        "construction_seconds": 0.0010708750924095511,
+        "internal_check": {
+          "status": "certified",
+          "bound": "8602325267042627/2500000000000000",
+          "checking_cost": {
+            "pair_checks": 2,
+            "coefficient_adds": 4,
+            "squares": 6
+          },
+          "checking_seconds": 0.00017108407337218523
+        }
+      },
+      {
+        "group_pair_checks": 390,
+        "group_count": 15,
+        "incidences": 34,
+        "iterations": 16,
+        "coordinate_updates": 544,
+        "scaled_objective_trace": [
+          1.9869089383340026,
+          1.9542467372880912,
+          1.9511607867153284,
+          1.9507131947528424,
+          1.9505238113783196,
+          1.9504052527419737,
+          1.9503145725802087,
+          1.9502387662026623,
+          1.950173196154578,
+          1.9501157197865482,
+          1.9500650239962756,
+          1.9500201384661588,
+          1.949980280893906,
+          1.9499447980271336,
+          1.9499131363127238,
+          1.9498848231949193
+        ],
+        "construction_seconds": 0.00525574991479516,
+        "internal_check": {
+          "status": "certified",
+          "bound": "23398617878095919/2500000000000000",
+          "checking_cost": {
+            "pair_checks": 25,
+            "coefficient_adds": 26,
+            "squares": 35
+          },
+          "checking_seconds": 0.000784000032581389
+        }
+      },
+      {
+        "group_pair_checks": 2383,
+        "group_count": 43,
+        "incidences": 153,
+        "iterations": 16,
+        "coordinate_updates": 2448,
+        "scaled_objective_trace": [
+          2.6485730822702593,
+          2.568936703658773,
+          2.532956607052034,
+          2.5138154606244774,
+          2.5030707140401436,
+          2.496659450642767,
+          2.492570842298636,
+          2.4898114585276083,
+          2.48786890970365,
+          2.486458184953141,
+          2.485408720147471,
+          2.4846126206963883,
+          2.483998857264227,
+          2.4835192264494523,
+          2.483140175119917,
+          2.482837813529954
+        ],
+        "construction_seconds": 0.018931041937321424,
+        "internal_check": {
+          "status": "certified",
+          "bound": "23835243012959857/1250000000000000",
+          "checking_cost": {
+            "pair_checks": 206,
+            "coefficient_adds": 136,
+            "squares": 172
+          },
+          "checking_seconds": 0.0034575830213725567
+        }
+      },
+      {
+        "group_pair_checks": 5712,
+        "group_count": 65,
+        "incidences": 299,
+        "iterations": 16,
+        "coordinate_updates": 4784,
+        "scaled_objective_trace": [
+          2.342957423932836,
+          2.2989187487926643,
+          2.2853776992826376,
+          2.279758789022204,
+          2.2769863960595096,
+          2.275295762154901,
+          2.2740772065722803,
+          2.273133015962723,
+          2.2723864055235428,
+          2.2717936977705504,
+          2.2713237817414598,
+          2.270952521947633,
+          2.270660485817024,
+          2.2704317363693507,
+          2.270253118591503,
+          2.2701138084741928
+        ],
+        "construction_seconds": 0.037157458951696754,
+        "internal_check": {
+          "status": "certified",
+          "bound": "156837622799865019/5000000000000000",
+          "checking_cost": {
+            "pair_checks": 535,
+            "coefficient_adds": 275,
+            "squares": 332
+          },
+          "checking_seconds": 0.0068333749659359455
+        }
+      },
+      {
+        "group_pair_checks": 5716,
+        "group_count": 69,
+        "incidences": 297,
+        "iterations": 16,
+        "coordinate_updates": 4752,
+        "scaled_objective_trace": [
+          3.1335431332215564,
+          3.067239759700355,
+          3.0399225981741576,
+          3.0255803253846847,
+          3.0172961465320043,
+          3.0122788931983093,
+          3.009130200391593,
+          3.007085520449207,
+          3.0057101386780722,
+          3.0047507276113006,
+          3.0040566677718834,
+          3.0035367117948724,
+          3.0031344915805707,
+          3.0028144351530575,
+          3.0025535611822685,
+          3.0023366394467668
+        ],
+        "construction_seconds": 0.03688445803709328,
+        "internal_check": {
+          "status": "certified",
+          "bound": "83761829623528527/2000000000000000",
+          "checking_cost": {
+            "pair_checks": 498,
+            "coefficient_adds": 271,
+            "squares": 331
+          },
+          "checking_seconds": 0.006782166892662644
+        }
+      },
+      {
+        "group_pair_checks": 5710,
+        "group_count": 71,
+        "incidences": 316,
+        "iterations": 16,
+        "coordinate_updates": 5056,
+        "scaled_objective_trace": [
+          4.700597179194839,
+          4.606148707375005,
+          4.576323945180122,
+          4.560872799396223,
+          4.551174056440684,
+          4.544585477441804,
+          4.539863646160062,
+          4.536322902006085,
+          4.53356195112543,
+          4.531337637340598,
+          4.529497714140706,
+          4.527943644317893,
+          4.5266095238750355,
+          4.525449836876401,
+          4.524432147692875,
+          4.523532624466834
+        ],
+        "construction_seconds": 0.03903604100923985,
+        "internal_check": {
+          "status": "certified",
+          "bound": "18662720454632083/400000000000000",
+          "checking_cost": {
+            "pair_checks": 547,
+            "coefficient_adds": 291,
+            "squares": 354
+          },
+          "checking_seconds": 0.007489459007047117
+        }
+      },
+      {
+        "group_pair_checks": 5722,
+        "group_count": 70,
+        "incidences": 310,
+        "iterations": 16,
+        "coordinate_updates": 4960,
+        "scaled_objective_trace": [
+          4.983448645574582,
+          4.865403256271177,
+          4.81711425308105,
+          4.791593310172162,
+          4.7775914181246195,
+          4.76998530093741,
+          4.765821033429417,
+          4.763481447988106,
+          4.7620785244673085,
+          4.761158944467929,
+          4.76050899341136,
+          4.760023052977152,
+          4.759642599977653,
+          4.759332440420668,
+          4.759070545829134,
+          4.758842834244491
+        ],
+        "construction_seconds": 0.038749874918721616,
+        "internal_check": {
+          "status": "certified",
+          "bound": "390951400656286917/10000000000000000",
+          "checking_cost": {
+            "pair_checks": 537,
+            "coefficient_adds": 282,
+            "squares": 342
+          },
+          "checking_seconds": 0.0071507919346913695
+        }
+      },
+      {
+        "group_pair_checks": 5704,
+        "group_count": 70,
+        "incidences": 319,
+        "iterations": 16,
+        "coordinate_updates": 5104,
+        "scaled_objective_trace": [
+          3.968851335119927,
+          3.9147422883163445,
+          3.8962148046987464,
+          3.886441167905029,
+          3.8807796460140693,
+          3.8772781362381545,
+          3.8749654488605327,
+          3.8733631976050975,
+          3.872212558016162,
+          3.8713613063028216,
+          3.8707152625003363,
+          3.8702138522956853,
+          3.8698167181198806,
+          3.8694961337816864,
+          3.869232578968299,
+          3.8690120565135824
+        ],
+        "construction_seconds": 0.040603957953862846,
+        "internal_check": {
+          "status": "certified",
+          "bound": "309689660858286633/10000000000000000",
+          "checking_cost": {
+            "pair_checks": 564,
+            "coefficient_adds": 292,
+            "squares": 353
+          },
+          "checking_seconds": 0.007480749976821244
+        }
+      }
+    ],
+    "checking_cost": {
+      "pair_checks": 60,
+      "squares": 36,
+      "scalar_bound_ops": 20
+    },
+    "checking_generator_cost": {
+      "hamiltonian_pairs": 210,
+      "coefficient_multiply_adds": 881,
+      "column_requests": 183,
+      "cache_hits": 153,
+      "peak_terms": 30,
+      "max_rational_bits": 34,
+      "basis_multiply_adds": 0
+    }
+  },
+  "cprofile_top": "         1156999 function calls (1146050 primitive calls) in 0.255 seconds\n\n   Ordered by: cumulative time\n   List reduced from 117 to 25 due to restriction <25>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.258    0.258 <stdin>:12(run_once)\n        9    0.016    0.002    0.218    0.024 /Users/aidenlippert/Documents/Spectra/experiments/v8_fractional_cover.py:160(propose_fractional_cover)\n73778/67266    0.029    0.000    0.078    0.000 {built-in method builtins.sum}\n       18    0.003    0.000    0.065    0.004 /Users/aidenlippert/Documents/Spectra/experiments/v8_fractional_cover.py:181(rationalized)\n    32193    0.010    0.000    0.053    0.000 /Users/aidenlippert/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/fractions.py:613(forward)\n        9    0.005    0.001    0.046    0.005 /Users/aidenlippert/Documents/Spectra/experiments/v8_fractional_cover.py:99(_group_family)\n    34534    0.015    0.000    0.041    0.000 /Users/aidenlippert/Documents/Spectra/experiments/certificates.py:20(_anti)\n        9    0.003    0.000    0.040    0.004 /Users/aidenlippert/Documents/Spectra/experiments/v8_fractional_cover.py:30(check_fractional_cover)\n       45    0.004    0.000    0.029    0.001 /Users/aidenlippert/Documents/Spectra/experiments/v8_fractional_cover.py:85(_witness)\n       26    0.003    0.000    0.029    0.001 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:88(apply)\n        2    0.000    0.000    0.028    0.014 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:114(residual_records)\n    17156    0.013    0.000    0.024    0.000 /Users/aidenlippert/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/fractions.py:710(_add)\n    17402    0.011    0.000    0.020    0.000 /Users/aidenlippert/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/fractions.py:186(__new__)\n     2309    0.002    0.000    0.019    0.000 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:30(proof_fraction)\n       55    0.002    0.000    0.016    0.000 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:159(norm_witness)\n    14652    0.008    0.000    0.016    0.000 /Users/aidenlippert/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/fractions.py:742(_mul)\n    45560    0.011    0.000    0.015    0.000 /Users/aidenlippert/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/fractions.py:317(_from_coprime_ints)\n        1    0.000    0.000    0.015    0.015 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:184(derive_certificate)\n        1    0.000    0.000    0.014    0.014 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:197(check_certificate)\n    82058    0.008    0.000    0.014    0.000 {built-in method builtins.isinstance}\n     4257    0.005    0.000    0.013    0.000 /Users/aidenlippert/Documents/Spectra/experiments/v7_certificate.py:21(rational)\n       90    0.001    0.000    0.011    0.000 /Users/aidenlippert/Documents/Spectra/experiments/pauli.py:28(commutator_i)\n   138136    0.011    0.000    0.011    0.000 /Users/aidenlippert/Documents/Spectra/experiments/certificates.py:23(<genexpr>)\n    65515    0.011    0.000    0.011    0.000 {built-in method math.gcd}\n     5264    0.002    0.000    0.010    0.000 {built-in method builtins.max}\n\n\n"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "mps_h6_b32_real",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-u",
+    "-m",
+    "research.correlated_pair_20260913.mps_direct",
+    "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "results/correlated_pair_20260913/mps/h6_b32_real",
+    "--alpha",
+    "3",
+    "--beta",
+    "3",
+    "--bond",
+    "32",
+    "--sweeps",
+    "14"
+  ],
+  "timeout_seconds": 120,
+  "status": "passed",
+  "started_UTC": "2026-09-14T06:46:41.990530+00:00",
+  "pid": 20304,
+  "exit_code": 0,
+  "wall_seconds": 19.85379812499741,
+  "child_user_seconds": 16.374694,
+  "child_system_seconds": 3.063891,
+  "peak_child_RSS_bytes": 327008256,
+  "finished_UTC": "2026-09-14T06:47:01.845138+00:00"
+}

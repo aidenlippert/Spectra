@@ -1,0 +1,69 @@
+{
+  "kind": "eliminated_full_number_quotient",
+  "gram_entries": 91752,
+  "coefficient_rows_before_numerical_elimination": 8533,
+  "setup_seconds": 11.636579084006371,
+  "all_compact_span_cross_terms_retained": true,
+  "independent_partner_Gram_blocks": true,
+  "many_body_states_enumerated": 0,
+  "full_Gram_teacher_used": false,
+  "additional_MPS_moments_used": false,
+  "quotient_conditioning": {
+    "ideal_coordinate_count": 1599,
+    "numerical_ideal_rank": 601,
+    "QR_rank_threshold": 1e-11,
+    "dependent_coordinates_removed": 998,
+    "ideal_projector_max_defect": 1.9984014443252818e-15,
+    "dual_normalization_error": 2.4868995751603507e-14,
+    "seconds": 10.224572916980833
+  },
+  "matrix_free_adjoint_check": {
+    "relative_adjoint_error": 4.647304307912776e-15,
+    "preconditioner_probes": 12
+  },
+  "normal_preconditioner": {
+    "dimension": 8533,
+    "dense_bytes": 582496712,
+    "diagonal_regularizer": 1e-10,
+    "normal_probe_relative_errors": [
+      9.29459249770535e-16,
+      9.32629036657467e-16,
+      8.966759752831146e-16,
+      8.855209074204247e-16
+    ],
+    "seconds": 65.31488291698042,
+    "seed_sha256": "83043051540a444d57b4de0b11898b6b7cbbf19ab30292fd2c105d6eeffe18bf",
+    "prepared_frame_sha256": "59e2fb9bd820b3ce29155255b3927816a24af497109fa443255b4bc8bf18798b",
+    "factor_sha256": "f0c2c7051832f8931ceb9e9d8c3356384c2b9f6146be9d612735e87c420f3170",
+    "ideal_basis_sha256": "c92b89dc76a64d5592755f15e4c3c5d85fe29886665b3c86c48a33082d50724b",
+    "many_body_states_enumerated": 0,
+    "role": "Numerical conditioning only, all final residuals require exact replay"
+  },
+  "best": {
+    "proposed_b": -9.257844666263487,
+    "number_multiplier_quartic_terms": 1067,
+    "minimum_eigenvalue_before_export": -5.852841687295723e-16,
+    "factor_rows": 709,
+    "certificate_bytes": 1672430
+  },
+  "last": {
+    "proposed_b": -9.257844666263487,
+    "number_multiplier_quartic_terms": 1067,
+    "minimum_eigenvalue_before_export": -5.852841687295723e-16,
+    "factor_rows": 709,
+    "certificate_bytes": 1672430
+  },
+  "initial_control": {
+    "iteration": 0,
+    "seconds": 11.67333333400893,
+    "b": -9.257802595015619,
+    "selected_row_l1": 0.0006796686646514173,
+    "projected_primal_l2": 4.024596487455277e-06,
+    "dual_residual_l2": 0.014751872172035616,
+    "mu": 0.002,
+    "cg_status": 0,
+    "cg_iterations": 0
+  },
+  "total_seconds": 313.75239216699265,
+  "status": "requires_independent_exact_replay"
+}

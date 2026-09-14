@@ -1,0 +1,239 @@
+{
+  "source": "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/fixed_reynolds/certificate.json",
+  "source_sha256": "2955601890d20b2b7177356385d0582c95c9ce8367566789d9131b70b187ad56",
+  "perturbation": "Onsite epsilon*(n_0+n_1) and equal Hermitian left-edge hopping epsilon between (0,2),(1,3); exact rational epsilon",
+  "records": [
+    {
+      "case": "original",
+      "kind": "baseline",
+      "epsilon": "0",
+      "status": "accepted",
+      "error": null,
+      "receipt": {
+        "complement_lower": "-14",
+        "weight_positivity": {
+          "lower": "99999995599/1000000000000",
+          "residual_l1": "4401/1000000000000",
+          "positive_indicators": 1186,
+          "charge_indicators": 94,
+          "number_multiplier_terms": 1235
+        },
+        "numerator_positivity": {
+          "lower": "499999976999/500000000000",
+          "residual_l1": "23001/500000000000",
+          "positive_indicators": 3588,
+          "charge_indicators": 1192,
+          "number_multiplier_terms": 9872
+        },
+        "compilation": {
+          "polynomial_products": 16411,
+          "coefficient_products": 226806,
+          "peak_terms": 5569,
+          "occupation_endpoint_evaluations": 0,
+          "metric_scale": 2000000000,
+          "numerator_scale": 2000000000,
+          "weight_terms": 1334,
+          "numerator_terms": 10137,
+          "numerator_degree": 6,
+          "transition_groups": 28,
+          "determinant_actions": 0,
+          "target_valence_exclusion": true,
+          "projector_free_zero_metric": true
+        },
+        "verification_coefficient_products": 426481,
+        "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+      }
+    },
+    {
+      "case": "onsite_plus_1e-4",
+      "kind": "onsite",
+      "epsilon": "1/10000",
+      "status": "accepted",
+      "error": null,
+      "receipt": {
+        "complement_lower": "-14",
+        "weight_positivity": {
+          "lower": "99999995599/1000000000000",
+          "residual_l1": "4401/1000000000000",
+          "positive_indicators": 1186,
+          "charge_indicators": 94,
+          "number_multiplier_terms": 1235
+        },
+        "numerator_positivity": {
+          "lower": "275161888011/312500000000",
+          "residual_l1": "37338111989/312500000000",
+          "positive_indicators": 3588,
+          "charge_indicators": 1192,
+          "number_multiplier_terms": 9872
+        },
+        "compilation": {
+          "polynomial_products": 16411,
+          "coefficient_products": 229474,
+          "peak_terms": 6129,
+          "occupation_endpoint_evaluations": 0,
+          "metric_scale": 2000000000,
+          "numerator_scale": 20000000000000,
+          "weight_terms": 1334,
+          "numerator_terms": 10137,
+          "numerator_degree": 6,
+          "transition_groups": 28,
+          "determinant_actions": 0,
+          "target_valence_exclusion": true,
+          "projector_free_zero_metric": true
+        },
+        "verification_coefficient_products": 429149,
+        "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+      },
+      "certificate": "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/reynolds_transfer/onsite_plus_1e-4.json",
+      "independent_replay": "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/reynolds_transfer/onsite_plus_1e-4_independent_replay.json"
+    },
+    {
+      "case": "onsite_minus_1e-4",
+      "kind": "onsite",
+      "epsilon": "-1/10000",
+      "status": "accepted",
+      "error": null,
+      "receipt": {
+        "complement_lower": "-14",
+        "weight_positivity": {
+          "lower": "99999995599/1000000000000",
+          "residual_l1": "4401/1000000000000",
+          "positive_indicators": 1186,
+          "charge_indicators": 94,
+          "number_multiplier_terms": 1235
+        },
+        "numerator_positivity": {
+          "lower": "2201295106483/2500000000000",
+          "residual_l1": "298704893517/2500000000000",
+          "positive_indicators": 3588,
+          "charge_indicators": 1192,
+          "number_multiplier_terms": 9872
+        },
+        "compilation": {
+          "polynomial_products": 16411,
+          "coefficient_products": 229474,
+          "peak_terms": 6129,
+          "occupation_endpoint_evaluations": 0,
+          "metric_scale": 2000000000,
+          "numerator_scale": 20000000000000,
+          "weight_terms": 1334,
+          "numerator_terms": 10137,
+          "numerator_degree": 6,
+          "transition_groups": 28,
+          "determinant_actions": 0,
+          "target_valence_exclusion": true,
+          "projector_free_zero_metric": true
+        },
+        "verification_coefficient_products": 429149,
+        "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+      },
+      "certificate": "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/reynolds_transfer/onsite_minus_1e-4.json",
+      "independent_replay": "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/reynolds_transfer/onsite_minus_1e-4_independent_replay.json"
+    },
+    {
+      "case": "onsite_plus_1e-3",
+      "kind": "onsite",
+      "epsilon": "1/1000",
+      "status": "rejected",
+      "error": "Strict metric positivity and nonnegative joint numerator required",
+      "receipt": null,
+      "certificate": "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/reynolds_transfer/onsite_plus_1e-3.json"
+    },
+    {
+      "case": "onsite_plus_1e-2",
+      "kind": "onsite",
+      "epsilon": "1/100",
+      "status": "rejected",
+      "error": "Strict metric positivity and nonnegative joint numerator required",
+      "receipt": null,
+      "certificate": "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/reynolds_transfer/onsite_plus_1e-2.json"
+    },
+    {
+      "case": "hopping_plus_1e-4",
+      "kind": "hopping",
+      "epsilon": "1/10000",
+      "status": "accepted",
+      "error": null,
+      "receipt": {
+        "complement_lower": "-14",
+        "weight_positivity": {
+          "lower": "99999995599/1000000000000",
+          "residual_l1": "4401/1000000000000",
+          "positive_indicators": 1186,
+          "charge_indicators": 94,
+          "number_multiplier_terms": 1235
+        },
+        "numerator_positivity": {
+          "lower": "1645636944813/2500000000000",
+          "residual_l1": "854363055187/2500000000000",
+          "positive_indicators": 3588,
+          "charge_indicators": 1192,
+          "number_multiplier_terms": 9872
+        },
+        "compilation": {
+          "polynomial_products": 16411,
+          "coefficient_products": 226806,
+          "peak_terms": 5569,
+          "occupation_endpoint_evaluations": 0,
+          "metric_scale": 2000000000,
+          "numerator_scale": 20000000000000,
+          "weight_terms": 1334,
+          "numerator_terms": 10137,
+          "numerator_degree": 6,
+          "transition_groups": 28,
+          "determinant_actions": 0,
+          "target_valence_exclusion": true,
+          "projector_free_zero_metric": true
+        },
+        "verification_coefficient_products": 426481,
+        "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+      },
+      "certificate": "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/reynolds_transfer/hopping_plus_1e-4.json",
+      "independent_replay": "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/reynolds_transfer/hopping_plus_1e-4_independent_replay.json"
+    },
+    {
+      "case": "hopping_minus_1e-4",
+      "kind": "hopping",
+      "epsilon": "-1/10000",
+      "status": "accepted",
+      "error": null,
+      "receipt": {
+        "complement_lower": "-14",
+        "weight_positivity": {
+          "lower": "99999995599/1000000000000",
+          "residual_l1": "4401/1000000000000",
+          "positive_indicators": 1186,
+          "charge_indicators": 94,
+          "number_multiplier_terms": 1235
+        },
+        "numerator_positivity": {
+          "lower": "1645636938953/2500000000000",
+          "residual_l1": "854363061047/2500000000000",
+          "positive_indicators": 3588,
+          "charge_indicators": 1192,
+          "number_multiplier_terms": 9872
+        },
+        "compilation": {
+          "polynomial_products": 16411,
+          "coefficient_products": 226806,
+          "peak_terms": 5569,
+          "occupation_endpoint_evaluations": 0,
+          "metric_scale": 2000000000,
+          "numerator_scale": 20000000000000,
+          "weight_terms": 1334,
+          "numerator_terms": 10137,
+          "numerator_degree": 6,
+          "transition_groups": 28,
+          "determinant_actions": 0,
+          "target_valence_exclusion": true,
+          "projector_free_zero_metric": true
+        },
+        "verification_coefficient_products": 426481,
+        "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+      },
+      "certificate": "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/reynolds_transfer/hopping_minus_1e-4.json",
+      "independent_replay": "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/reynolds_transfer/hopping_minus_1e-4_independent_replay.json"
+    }
+  ],
+  "scope": "Transfer of the unchanged fixed proof under symmetry-breaking onsite and nonmonotone left-edge hopping perturbations; larger rejected amplitudes measure fixed-proof margin only, not physical impossibility; no new energy interval or rediscovery claim."
+}

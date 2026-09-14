@@ -1,0 +1,130 @@
+{
+  "status": "aligned_numerical_proposal",
+  "source_sha256": "c279c7fec2457a6f9b62678cb2fe12b6ef320ef584c06578b7a10e2d579fabc1",
+  "geometry": [
+    [
+      "H",
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      "H",
+      [
+        0.0,
+        0.0,
+        1.4
+      ]
+    ],
+    [
+      "H",
+      [
+        0.0,
+        0.0,
+        2.8
+      ]
+    ],
+    [
+      "H",
+      [
+        0.0,
+        0.0,
+        4.2
+      ]
+    ],
+    [
+      "H",
+      [
+        0.0,
+        0.0,
+        5.6
+      ]
+    ],
+    [
+      "H",
+      [
+        0.0,
+        0.0,
+        7.0
+      ]
+    ]
+  ],
+  "unit": "Angstrom",
+  "basis": "STO-3G",
+  "modes": 12,
+  "particles": 6,
+  "pyscf_version": "2.14.0",
+  "orbital_basis": "Lowdin symmetric orthogonalized atomic orbitals",
+  "source_orbital_basis": "RHF canonical MO",
+  "rotation_convention": "U=diag(alignment_signs) C_MO.T S^(1/2); H_new=U.T H_old U; C_new=S^(-1/2)",
+  "orthogonality_max_abs": 1.9984014443252818e-15,
+  "canonical_phase_alignment": {
+    "success": true,
+    "phase_pattern": [
+      1,
+      -1,
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "coefficient_l1_mismatch": 1.8855206146052513e-10,
+    "coefficient_max_abs_mismatch": 4.924441930620471e-13,
+    "generated_terms": 1818,
+    "saved_terms": 918,
+    "tolerance": 1e-07
+  },
+  "target_rotation": [
+    [
+      0.2513326256988334,
+      0.4082389700939063,
+      0.5197815450321408,
+      0.5197815450321397,
+      0.40823897009390414,
+      0.25133262569883175
+    ],
+    [
+      0.4504588488623048,
+      0.512221842702633,
+      0.186321253054944,
+      -0.18632125305494673,
+      -0.512221842702635,
+      -0.450458848862306
+    ],
+    [
+      0.4843473647578486,
+      0.26461255502019543,
+      -0.44202695164187733,
+      -0.4420269516418775,
+      0.2646125550201962,
+      0.48434736475784973
+    ],
+    [
+      -0.48350385420172054,
+      0.26393284496232694,
+      0.44335479733749744,
+      -0.44335479733749783,
+      -0.26393284496232633,
+      0.48350385420172076
+    ],
+    [
+      -0.44971050856240535,
+      0.5131482622228697,
+      -0.1855783378150357,
+      -0.18557833781503258,
+      0.5131482622228701,
+      -0.44971050856240613
+    ],
+    [
+      0.2516164709507848,
+      -0.40983928216852206,
+      0.518382980370557,
+      -0.5183829803705579,
+      0.40983928216852555,
+      -0.25161647095078726
+    ]
+  ],
+  "scope": "Numerical aligned orbital target only; untrusted proposal, with exact rational replacement and Hamiltonian rotation verified separately."
+}

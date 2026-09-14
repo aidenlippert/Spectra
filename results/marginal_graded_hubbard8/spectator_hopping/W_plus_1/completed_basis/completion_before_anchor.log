@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spectator_basis_completion.py", line 226, in <module>
+    main()
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spectator_basis_completion.py", line 145, in main
+    additions = [physical(item['vector']) for item in old['mixture']]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spectator_basis_completion.py", line 114, in physical
+    raise ValueError('Physical vector outside reconstructed invariant columns')
+ValueError: Physical vector outside reconstructed invariant columns

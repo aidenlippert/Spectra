@@ -1,0 +1,378 @@
+[
+  {
+    "dimension": 200,
+    "all_pairs": 19900,
+    "active_pairs": 7412,
+    "initial_pairs": 7392,
+    "pair_mode": "active",
+    "vector_mode": "rational",
+    "pair_pricing": "all_supports",
+    "batch_selection": "by_support",
+    "candidate_atoms": 12451,
+    "initial_atoms": 12195,
+    "initial_proof_atoms": 4992,
+    "initial_exact_threshold": "-376241599832124271764816713/57713311672402500000000000",
+    "active_atoms": 5043,
+    "stopping_reason": "round_budget",
+    "history": [
+      {
+        "round": 0,
+        "selected_atoms": 12195,
+        "active_atoms": 5145,
+        "active_pairs": 7392,
+        "lp_seconds": 23.225439833011478,
+        "numerical_primal_threshold": -6.516816223994452,
+        "best_numerical_threshold": -6.516816223994452,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -0.8432743000700084,
+        "priced_supports": 66018250,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_supports",
+          "batch_selection": "by_support",
+          "by_support": {
+            "2": {
+              "supports": 1919,
+              "minimum_eigenvalue": -0.18589177753037917,
+              "negative_eigenspaces": 1383
+            },
+            "3": {
+              "supports": 4170,
+              "minimum_eigenvalue": -0.565309341660336,
+              "negative_eigenspaces": 3872
+            },
+            "4": {
+              "supports": 5434,
+              "minimum_eigenvalue": -0.8432743000700084,
+              "negative_eigenspaces": 5290
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 85,
+            "3": 85,
+            "4": 86
+          },
+          "scope": "Every support of size two through four is scanned numerically, with near-boundary cases recorded; a bounded set of negative supports plus heuristic candidates proposes rational cuts. This is not exact dual positivity or global cone membership.",
+          "complete_support_scan": {
+            "dimension": 200,
+            "max_support": 4,
+            "checked_supports": {
+              "2": 19900,
+              "3": 1313400,
+              "4": 64684950
+            },
+            "possible_supports": {
+              "2": 19900,
+              "3": 1313400,
+              "4": 64684950
+            },
+            "checked_total": 66018250,
+            "negative_support_count": 37120439,
+            "per_order_stats": {
+              "2": {
+                "checked": 19900,
+                "negative": 2309,
+                "near_boundary": 40,
+                "minimum_eigenvalue": -0.18589177753037917
+              },
+              "3": {
+                "checked": 1313400,
+                "negative": 428576,
+                "near_boundary": 3786,
+                "minimum_eigenvalue": -0.565309341660336
+              },
+              "4": {
+                "checked": 64684950,
+                "negative": 36689554,
+                "near_boundary": 157702,
+                "minimum_eigenvalue": -0.8432743000700084
+              }
+            },
+            "minimum_eigenvalue": -0.8432743000700084,
+            "near_boundary_count": 161528,
+            "tolerance": 1e-08,
+            "scope": "Complete finite support coverage, numerical only; no exact PSD or representability claim."
+          }
+        }
+      },
+      {
+        "round": 1,
+        "selected_atoms": 12451,
+        "active_atoms": 5074,
+        "active_pairs": 7412,
+        "lp_seconds": 21.73476304206997,
+        "numerical_primal_threshold": -6.516166792031731,
+        "best_numerical_threshold": -6.516166792031731,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -0.7627131096173234,
+        "priced_supports": 66018250,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_supports",
+          "batch_selection": "by_support",
+          "by_support": {
+            "2": {
+              "supports": 1928,
+              "minimum_eigenvalue": -0.08205800211310389,
+              "negative_eigenspaces": 1412
+            },
+            "3": {
+              "supports": 4138,
+              "minimum_eigenvalue": -0.44080786461552757,
+              "negative_eigenspaces": 3805
+            },
+            "4": {
+              "supports": 5404,
+              "minimum_eigenvalue": -0.7627131096173234,
+              "negative_eigenspaces": 5250
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 85,
+            "3": 85,
+            "4": 86
+          },
+          "scope": "Every support of size two through four is scanned numerically, with near-boundary cases recorded; a bounded set of negative supports plus heuristic candidates proposes rational cuts. This is not exact dual positivity or global cone membership.",
+          "complete_support_scan": {
+            "dimension": 200,
+            "max_support": 4,
+            "checked_supports": {
+              "2": 19900,
+              "3": 1313400,
+              "4": 64684950
+            },
+            "possible_supports": {
+              "2": 19900,
+              "3": 1313400,
+              "4": 64684950
+            },
+            "checked_total": 66018250,
+            "negative_support_count": 36550016,
+            "per_order_stats": {
+              "2": {
+                "checked": 19900,
+                "negative": 2260,
+                "near_boundary": 39,
+                "minimum_eigenvalue": -0.08205800211310389
+              },
+              "3": {
+                "checked": 1313400,
+                "negative": 420244,
+                "near_boundary": 3681,
+                "minimum_eigenvalue": -0.44080786461552757
+              },
+              "4": {
+                "checked": 64684950,
+                "negative": 36127512,
+                "near_boundary": 153710,
+                "minimum_eigenvalue": -0.7627131096173234
+              }
+            },
+            "minimum_eigenvalue": -0.7627131096173234,
+            "near_boundary_count": 157430,
+            "tolerance": 1e-08,
+            "scope": "Complete finite support coverage, numerical only; no exact PSD or representability claim."
+          }
+        }
+      }
+    ],
+    "elapsed_seconds": 437.63499508297537,
+    "seconds_cap": 360.0,
+    "round_cap": 2,
+    "exact_threshold": "-188034782491174289662552681/28856655836201250000000000",
+    "exact_threshold_float": -6.516166792109046,
+    "initial_basis_applied": true,
+    "scope": "Adaptive dual LP; every nonzero Hamiltonian pair and every pair used by a selected atom is modeled. Inactive pairs have identically zero primal residual; the numerical pricing dual is extended there by zero. Row multipliers propose positive atoms. Bounded support pricing is heuristic, not a global optimality test. The complete exact DD residual determines the exported threshold.",
+    "discovered_atoms": 12707
+  },
+  {
+    "dimension": 168,
+    "all_pairs": 14028,
+    "active_pairs": 6167,
+    "initial_pairs": 6144,
+    "pair_mode": "active",
+    "vector_mode": "rational",
+    "pair_pricing": "all_supports",
+    "batch_selection": "by_support",
+    "candidate_atoms": 13403,
+    "initial_atoms": 13147,
+    "initial_proof_atoms": 3759,
+    "initial_exact_threshold": "-40028333387890517213382207/6295106448180500000000000",
+    "active_atoms": 3780,
+    "stopping_reason": "round_budget",
+    "history": [
+      {
+        "round": 0,
+        "selected_atoms": 13147,
+        "active_atoms": 3848,
+        "active_pairs": 6144,
+        "lp_seconds": 17.405344084021635,
+        "numerical_primal_threshold": -6.355024282389352,
+        "best_numerical_threshold": -6.355024282389352,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -3.04263284132261,
+        "priced_supports": 32809154,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_supports",
+          "batch_selection": "by_support",
+          "by_support": {
+            "2": {
+              "supports": 1853,
+              "minimum_eigenvalue": -0.47320190088988373,
+              "negative_eigenspaces": 1264
+            },
+            "3": {
+              "supports": 3642,
+              "minimum_eigenvalue": -1.9517109985988146,
+              "negative_eigenspaces": 3260
+            },
+            "4": {
+              "supports": 4737,
+              "minimum_eigenvalue": -3.04263284132261,
+              "negative_eigenspaces": 4597
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 85,
+            "3": 85,
+            "4": 86
+          },
+          "scope": "Every support of size two through four is scanned numerically, with near-boundary cases recorded; a bounded set of negative supports plus heuristic candidates proposes rational cuts. This is not exact dual positivity or global cone membership.",
+          "complete_support_scan": {
+            "dimension": 168,
+            "max_support": 4,
+            "checked_supports": {
+              "2": 14028,
+              "3": 776216,
+              "4": 32018910
+            },
+            "possible_supports": {
+              "2": 14028,
+              "3": 776216,
+              "4": 32018910
+            },
+            "checked_total": 32809154,
+            "negative_support_count": 21540499,
+            "per_order_stats": {
+              "2": {
+                "checked": 14028,
+                "negative": 2045,
+                "near_boundary": 355,
+                "minimum_eigenvalue": -0.47320190088988373
+              },
+              "3": {
+                "checked": 776216,
+                "negative": 310319,
+                "near_boundary": 17239,
+                "minimum_eigenvalue": -1.9517109985988146
+              },
+              "4": {
+                "checked": 32018910,
+                "negative": 21228135,
+                "near_boundary": 445251,
+                "minimum_eigenvalue": -3.04263284132261
+              }
+            },
+            "minimum_eigenvalue": -3.04263284132261,
+            "near_boundary_count": 462845,
+            "tolerance": 1e-08,
+            "scope": "Complete finite support coverage, numerical only; no exact PSD or representability claim."
+          }
+        }
+      },
+      {
+        "round": 1,
+        "selected_atoms": 13403,
+        "active_atoms": 3780,
+        "active_pairs": 6167,
+        "lp_seconds": 14.95516716700513,
+        "numerical_primal_threshold": -6.353908050777624,
+        "best_numerical_threshold": -6.353908050777624,
+        "solver_status": "Optimal",
+        "minimum_heuristic_pairing": -2.8763114157979306,
+        "priced_supports": 32809154,
+        "added_atoms": 256,
+        "pricing": {
+          "pair_pricing": "all_supports",
+          "batch_selection": "by_support",
+          "by_support": {
+            "2": {
+              "supports": 1866,
+              "minimum_eigenvalue": -0.5076217567918618,
+              "negative_eigenspaces": 1269
+            },
+            "3": {
+              "supports": 3645,
+              "minimum_eigenvalue": -1.9890335285001128,
+              "negative_eigenspaces": 3232
+            },
+            "4": {
+              "supports": 4747,
+              "minimum_eigenvalue": -2.8763114157979306,
+              "negative_eigenspaces": 4605
+            }
+          },
+          "all_pair_supports_checked": true,
+          "selected_by_support": {
+            "2": 85,
+            "3": 85,
+            "4": 86
+          },
+          "scope": "Every support of size two through four is scanned numerically, with near-boundary cases recorded; a bounded set of negative supports plus heuristic candidates proposes rational cuts. This is not exact dual positivity or global cone membership.",
+          "complete_support_scan": {
+            "dimension": 168,
+            "max_support": 4,
+            "checked_supports": {
+              "2": 14028,
+              "3": 776216,
+              "4": 32018910
+            },
+            "possible_supports": {
+              "2": 14028,
+              "3": 776216,
+              "4": 32018910
+            },
+            "checked_total": 32809154,
+            "negative_support_count": 21046187,
+            "per_order_stats": {
+              "2": {
+                "checked": 14028,
+                "negative": 1959,
+                "near_boundary": 371,
+                "minimum_eigenvalue": -0.5076217567918618
+              },
+              "3": {
+                "checked": 776216,
+                "negative": 299987,
+                "near_boundary": 18439,
+                "minimum_eigenvalue": -1.9890335285001128
+              },
+              "4": {
+                "checked": 32018910,
+                "negative": 20744241,
+                "near_boundary": 487831,
+                "minimum_eigenvalue": -2.8763114157979306
+              }
+            },
+            "minimum_eigenvalue": -2.8763114157979306,
+            "near_boundary_count": 506641,
+            "tolerance": 1e-08,
+            "scope": "Complete finite support coverage, numerical only; no exact PSD or representability claim."
+          }
+        }
+      }
+    ],
+    "elapsed_seconds": 228.45560416695662,
+    "seconds_cap": 360.0,
+    "round_cap": 2,
+    "exact_threshold": "-2105185660234763581980353/331321392009500000000000",
+    "exact_threshold_float": -6.353908051232628,
+    "initial_basis_applied": true,
+    "scope": "Adaptive dual LP; every nonzero Hamiltonian pair and every pair used by a selected atom is modeled. Inactive pairs have identically zero primal residual; the numerical pricing dual is extended there by zero. Row multipliers propose positive atoms. Bounded support pricing is heuristic, not a global optimality test. The complete exact DD residual determines the exported threshold.",
+    "discovered_atoms": 13659
+  }
+]

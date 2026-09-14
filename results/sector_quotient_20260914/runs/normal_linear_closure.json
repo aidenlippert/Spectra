@@ -1,0 +1,26 @@
+{
+  "name": "normal_linear_closure",
+  "command": [
+    "/usr/bin/env",
+    "OPENBLAS_NUM_THREADS=4",
+    "OMP_NUM_THREADS=4",
+    "VECLIB_MAXIMUM_THREADS=4",
+    ".venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.sector_quotient_20260914.normal",
+    "normal_linear_closure",
+    "--prepared",
+    "results/sector_quotient_20260914/prepared_linear_closure"
+  ],
+  "timeout_seconds": 300,
+  "status": "passed",
+  "started_UTC": "2026-09-14T22:14:29.913484+00:00",
+  "pid": 63610,
+  "exit_code": 0,
+  "wall_seconds": 73.26153700001305,
+  "child_user_seconds": 53.576581,
+  "child_system_seconds": 15.442518,
+  "peak_child_RSS_bytes": 1482571776,
+  "finished_UTC": "2026-09-14T22:15:43.177081+00:00"
+}

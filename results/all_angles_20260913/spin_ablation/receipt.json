@@ -1,0 +1,31 @@
+{
+  "provenance_note": "Local preflight inputs were spin_irrep symmetric_hamiltonian.json (nearby symmetrized Hamiltonians), not original active-space H endpoints. Root's clean same-host original-H6 matched results supersede these preflights: results/all_angles_20260913/spin_matched/h6_restricted and h6_full.",
+  "clean_original_h6": {"restricted_lower": -6.333242734124332, "full_number_lower": -6.3332400402471665, "improvement_ha": 2.693877e-6},
+  "experiment": "matched_spin_multiplier_ablation",
+  "rows": [
+    {
+      "fixture": "h4_discovery",
+      "modes": 8,
+      "particles": 4,
+      "full_number_conserving_basis": 235,
+      "spin_invariant_basis": 111,
+      "full_extra_terms": 124,
+      "source_certificate_multiplier_terms": 185,
+      "original_H_replay": true,
+      "sector_restriction": false,
+      "interpretation": "full ideal is a strict representational superset; objective may change because coefficient L1 is not SU(2)-invariant"
+    },
+    {
+      "fixture": "h6_scs",
+      "modes": 12,
+      "particles": 6,
+      "full_number_conserving_basis": 1174,
+      "spin_invariant_basis": 499,
+      "full_extra_terms": 675,
+      "source_certificate_multiplier_terms": 919,
+      "original_H_replay": true,
+      "sector_restriction": false,
+      "interpretation": "full ideal is a strict representational superset; objective may change because coefficient L1 is not SU(2)-invariant"
+    }
+  ]
+}

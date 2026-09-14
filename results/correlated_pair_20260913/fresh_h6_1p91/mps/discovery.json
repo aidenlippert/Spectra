@@ -1,0 +1,71 @@
+{
+  "fixture_sha256": "3ac93d4323762992245ab5858be2ed1303f4f285ee0ca91362c56591e17afa3a",
+  "physical_energy_float_Ha": -5.272650973967753,
+  "penalized_energy_float_Ha": -5.27265085992639,
+  "initial_MPS_path": null,
+  "requested_spatial_bond": 48,
+  "spatial_bonds": [
+    4,
+    16,
+    48,
+    16,
+    4
+  ],
+  "export_spin_bonds": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    48,
+    32,
+    16,
+    8,
+    4,
+    2,
+    1
+  ],
+  "export_nonzero_entries": 976,
+  "MPO_bond": 92,
+  "MPO_bond_before_compression": 138,
+  "MPO_compression_cutoff_proposal_only": 1e-12,
+  "sweeps_cap": 10,
+  "sweep_energies": [
+    -4.967042320642966,
+    -5.18123940958813,
+    -5.272659443102704,
+    -5.272651097568765,
+    -5.272659310861304,
+    -5.272650667778607,
+    -5.272659266664607,
+    -5.272650682184095,
+    -5.272659267120608,
+    -5.27265085992639
+  ],
+  "converged": false,
+  "rounding": {
+    "charge_eigenvalue_max_distance_to_integer": 4.672556622509205e-05,
+    "discarded_local_tensor_squared_entries": 4.006537276666048e-06,
+    "input_norm_before_normalization": 1.0000000000000004,
+    "postround_bond_dimensions": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      48,
+      32,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "warning": "Discarded local tensor entries are a proposal diagnostic, not a state norm or energy error guarantee."
+  },
+  "seconds": 16.41927395798848,
+  "initializer": "Random MPS bond4, seed20260913, paired spin sites; no FCI or Gram teacher",
+  "full_state_or_H_expansion": false
+}

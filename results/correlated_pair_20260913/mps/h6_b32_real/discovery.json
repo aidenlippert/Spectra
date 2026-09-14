@@ -1,0 +1,140 @@
+{
+  "fixture_sha256": "99b91888d68ba7ea1d43c0b6c68594190521406c5b454b98933cbeba7d8f89df",
+  "physical_energy_float_Ha": -6.331111629213786,
+  "penalized_energy_float_Ha": -6.3311116291625655,
+  "numerical_penalty_expectation_Ha": 5.122036128568652e-11,
+  "penalty": 4.0,
+  "optimizer_converged": false,
+  "sweep_energies": [
+    -5.629086343578261,
+    -6.258852788134247,
+    -6.32170307793325,
+    -6.330953327394321,
+    -6.33111411775835,
+    -6.331111637495034,
+    -6.331111639088289,
+    -6.331111632870201,
+    -6.331111635563915,
+    -6.331111633421153,
+    -6.33111164110907,
+    -6.331111640626442,
+    -6.331111639498219,
+    -6.3311116291625655
+  ],
+  "requested_bond": 32,
+  "sweeps_cap": 14,
+  "seed": 20260913,
+  "physical_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "mpo_max_bond": 138,
+  "mpo_terms": 961,
+  "tensor_shapes": [
+    [
+      1,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      4
+    ],
+    [
+      4,
+      2,
+      8
+    ],
+    [
+      8,
+      2,
+      16
+    ],
+    [
+      16,
+      2,
+      31
+    ],
+    [
+      31,
+      2,
+      32
+    ],
+    [
+      32,
+      2,
+      31
+    ],
+    [
+      31,
+      2,
+      16
+    ],
+    [
+      16,
+      2,
+      8
+    ],
+    [
+      8,
+      2,
+      4
+    ],
+    [
+      4,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      1
+    ]
+  ],
+  "dense_tensor_entries": 6632,
+  "maximum_tensor_imaginary_part": 0.0,
+  "rounding": {
+    "charge_eigenvalue_max_distance_to_integer": 2.851087543831454e-07,
+    "discarded_local_tensor_squared_entries": 2.2522953833301518e-08,
+    "input_norm_before_normalization": 0.999999999999999,
+    "postround_bond_dimensions": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      31,
+      32,
+      31,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "warning": "Discarded local tensor entries are a proposal diagnostic, not a state norm or energy error guarantee."
+  },
+  "number_treatment": "Numerical quadratic penalties; exact charge-flow tensor export.",
+  "full_state_exported": false,
+  "full_many_body_matrix_built": false,
+  "FCI_or_Gram_teacher_loaded": false,
+  "seconds": 18.3231271669938,
+  "versions": {
+    "quimb": "1.15.0",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "cotengra": "0.8.2",
+    "autoray": "0.11.0"
+  }
+}

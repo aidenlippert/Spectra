@@ -1,0 +1,20 @@
+{
+  "status": "two_terminal_proposal_failures_before_incremental_export",
+  "attempts": [
+    {
+      "formulation": "all clique columns, free gamma",
+      "time_limit_seconds": 120,
+      "solver_message": "Time limit reached; primal_status At lower/fixed bound",
+      "returned_primal_proposal": false
+    },
+    {
+      "formulation": "all clique columns, nonnegative gain from Gershgorin baseline; candidate edges at least1e-8",
+      "candidates_first_block": 64820,
+      "time_limit_seconds": 120,
+      "solver_message": "Time limit reached; primal_status At lower/fixed bound",
+      "returned_primal_proposal": false
+    }
+  ],
+  "subsequent_export": "certificate.json",
+  "scope": "LP failures are not cone infeasibility proofs. The subsequent native column-generation export is separately checked and remains too weak for transfer."
+}

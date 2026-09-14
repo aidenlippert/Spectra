@@ -1,0 +1,399 @@
+{
+  "policy": {
+    "version": 1,
+    "seed": "creator_channels_plus_all_three_orbital_blocks",
+    "candidate_width": 4,
+    "new_supports_per_round": 8,
+    "enrichment_rounds": 2,
+    "score": "minimum_eigenvalue_across_local_charge_and_exact_symmetry_blocks",
+    "solver": "CLARABEL",
+    "map_backend": "contraction",
+    "row_condition": false,
+    "solver_seconds_per_solve": 60,
+    "local_particle_number_assumed": false
+  },
+  "fixture_sha256": "ea50a4ab19a353bc89691bb344fcf8d610f74e1c2c76bf07c6869be2b24dbec8",
+  "seed": "results/molecular_identity_20260913/h6_adaptive/seed",
+  "seed_receipt_sha256": "bc75b03a57c45bb5d8bfc74eec0b5f9982563c4cbae872759accc3fb96807960",
+  "seed_discovery_seconds": 75.93638366699997,
+  "additional_wall_seconds": 257.19628995799985,
+  "seed_reused": false,
+  "selected_four_orbital_supports": [
+    [
+      2,
+      6,
+      9,
+      11
+    ],
+    [
+      3,
+      7,
+      8,
+      10
+    ],
+    [
+      0,
+      8,
+      9,
+      11
+    ],
+    [
+      1,
+      8,
+      9,
+      10
+    ],
+    [
+      0,
+      2,
+      3,
+      11
+    ],
+    [
+      1,
+      2,
+      3,
+      10
+    ],
+    [
+      1,
+      3,
+      4,
+      8
+    ],
+    [
+      0,
+      2,
+      5,
+      9
+    ],
+    [
+      5,
+      8,
+      9,
+      10
+    ],
+    [
+      4,
+      8,
+      9,
+      11
+    ],
+    [
+      1,
+      2,
+      3,
+      6
+    ],
+    [
+      0,
+      2,
+      3,
+      7
+    ],
+    [
+      0,
+      4,
+      5,
+      9
+    ],
+    [
+      1,
+      4,
+      5,
+      8
+    ],
+    [
+      6,
+      9,
+      10,
+      11
+    ],
+    [
+      7,
+      8,
+      10,
+      11
+    ]
+  ],
+  "history": [
+    {
+      "round": 1,
+      "selected_supports": [
+        [
+          2,
+          6,
+          9,
+          11
+        ],
+        [
+          3,
+          7,
+          8,
+          10
+        ],
+        [
+          0,
+          8,
+          9,
+          11
+        ],
+        [
+          1,
+          8,
+          9,
+          10
+        ],
+        [
+          0,
+          2,
+          3,
+          11
+        ],
+        [
+          1,
+          2,
+          3,
+          10
+        ],
+        [
+          1,
+          3,
+          4,
+          8
+        ],
+        [
+          0,
+          2,
+          5,
+          9
+        ]
+      ],
+      "pricing": {
+        "supports_priced": 495,
+        "blocks_priced": 8904,
+        "monomial_word_pair_products": 230256,
+        "seconds": 1.5526300830001674,
+        "scope": "Heuristic pricing only. Missing numerical moments are zero; no omitted-cone bound is asserted."
+      },
+      "top_candidates": [
+        {
+          "support": [
+            2,
+            6,
+            9,
+            11
+          ],
+          "numeric_score": -0.029343025019093232
+        },
+        {
+          "support": [
+            3,
+            7,
+            8,
+            10
+          ],
+          "numeric_score": -0.029342885291877962
+        },
+        {
+          "support": [
+            0,
+            8,
+            9,
+            11
+          ],
+          "numeric_score": -0.02594703908945325
+        },
+        {
+          "support": [
+            1,
+            8,
+            9,
+            10
+          ],
+          "numeric_score": -0.025945968860029252
+        },
+        {
+          "support": [
+            0,
+            2,
+            3,
+            11
+          ],
+          "numeric_score": -0.02246965417870193
+        },
+        {
+          "support": [
+            1,
+            2,
+            3,
+            10
+          ],
+          "numeric_score": -0.022469614878023462
+        },
+        {
+          "support": [
+            1,
+            3,
+            4,
+            8
+          ],
+          "numeric_score": -0.021623472157084746
+        },
+        {
+          "support": [
+            0,
+            2,
+            5,
+            9
+          ],
+          "numeric_score": -0.021623140006964057
+        }
+      ],
+      "source_proposal_sha256": "0449de3fe0a52773660797a91bcd1bbc2d1eb8d384ab364d4bab63809f38f14c",
+      "receipt_path": "results/molecular_identity_20260913/h6_adaptive/round_1/receipt.json",
+      "exact_lower": "-79315931719956586255209946937316263561373/12500000000000000000000000000000000000000"
+    },
+    {
+      "round": 2,
+      "selected_supports": [
+        [
+          5,
+          8,
+          9,
+          10
+        ],
+        [
+          4,
+          8,
+          9,
+          11
+        ],
+        [
+          1,
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          7
+        ],
+        [
+          0,
+          4,
+          5,
+          9
+        ],
+        [
+          1,
+          4,
+          5,
+          8
+        ],
+        [
+          6,
+          9,
+          10,
+          11
+        ],
+        [
+          7,
+          8,
+          10,
+          11
+        ]
+      ],
+      "pricing": {
+        "supports_priced": 487,
+        "blocks_priced": 8744,
+        "monomial_word_pair_products": 227120,
+        "seconds": 1.9122695830001248,
+        "scope": "Heuristic pricing only. Missing numerical moments are zero; no omitted-cone bound is asserted."
+      },
+      "top_candidates": [
+        {
+          "support": [
+            5,
+            8,
+            9,
+            10
+          ],
+          "numeric_score": -0.026366901527949634
+        },
+        {
+          "support": [
+            4,
+            8,
+            9,
+            11
+          ],
+          "numeric_score": -0.026365851282220954
+        },
+        {
+          "support": [
+            1,
+            2,
+            3,
+            6
+          ],
+          "numeric_score": -0.025347771082350708
+        },
+        {
+          "support": [
+            0,
+            2,
+            3,
+            7
+          ],
+          "numeric_score": -0.02534574159895779
+        },
+        {
+          "support": [
+            0,
+            4,
+            5,
+            9
+          ],
+          "numeric_score": -0.024014103962095575
+        },
+        {
+          "support": [
+            1,
+            4,
+            5,
+            8
+          ],
+          "numeric_score": -0.024011336040683433
+        },
+        {
+          "support": [
+            6,
+            9,
+            10,
+            11
+          ],
+          "numeric_score": -0.02354670018366748
+        },
+        {
+          "support": [
+            7,
+            8,
+            10,
+            11
+          ],
+          "numeric_score": -0.023545765352637398
+        }
+      ],
+      "source_proposal_sha256": "3a88478712aba2595f44935c63ab203e80001e9f0a78c0855dc101ce2f4b9018",
+      "receipt_path": "results/molecular_identity_20260913/h6_adaptive/round_2/receipt.json",
+      "exact_lower": "-396584819965852747547960020388280889163461/62500000000000000000000000000000000000000"
+    }
+  ],
+  "many_body_space_enumerated": false,
+  "source_factors_used": false,
+  "source_upper_used": false,
+  "scope": "Hamiltonian-only adaptive rule. Accuracy and runtime are empirical; exact exported lower bounds are checked separately."
+}

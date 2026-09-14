@@ -1,0 +1,133 @@
+{
+  "fixture_sha256": "99b91888d68ba7ea1d43c0b6c68594190521406c5b454b98933cbeba7d8f89df",
+  "physical_energy_float_Ha": -6.331111631437667,
+  "penalized_energy_float_Ha": -6.331111631437696,
+  "numerical_penalty_expectation_Ha": -2.842170943040401e-14,
+  "penalty": 4.0,
+  "optimizer_converged": true,
+  "sweep_energies": [
+    -5.629109413360516,
+    -6.258785530029536,
+    -6.32169467500934,
+    -6.3309392824335635,
+    -6.33111408211627,
+    -6.331111631440432,
+    -6.331111631437696
+  ],
+  "requested_bond": 32,
+  "sweeps_cap": 14,
+  "seed": 20260913,
+  "physical_order": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "mpo_max_bond": 128,
+  "mpo_terms": 961,
+  "tensor_shapes": [
+    [
+      1,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      4
+    ],
+    [
+      4,
+      2,
+      8
+    ],
+    [
+      8,
+      2,
+      16
+    ],
+    [
+      16,
+      2,
+      31
+    ],
+    [
+      31,
+      2,
+      32
+    ],
+    [
+      32,
+      2,
+      31
+    ],
+    [
+      31,
+      2,
+      16
+    ],
+    [
+      16,
+      2,
+      8
+    ],
+    [
+      8,
+      2,
+      4
+    ],
+    [
+      4,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      1
+    ]
+  ],
+  "dense_tensor_entries": 6632,
+  "maximum_tensor_imaginary_part": 3.791827590659838e-15,
+  "rounding": {
+    "charge_eigenvalue_max_distance_to_integer": 8.526512829121202e-14,
+    "discarded_local_tensor_squared_entries": 3.259435156080917e-15,
+    "input_norm_before_normalization": 1.0000000000000004,
+    "postround_bond_dimensions": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      31,
+      32,
+      31,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "warning": "Discarded local tensor entries are a proposal diagnostic, not a state norm or energy error guarantee."
+  },
+  "number_treatment": "Numerical quadratic penalties; exact charge-flow tensor export.",
+  "full_state_exported": false,
+  "full_many_body_matrix_built": false,
+  "FCI_or_Gram_teacher_loaded": false,
+  "seconds": 157.9302194579941,
+  "versions": {
+    "quimb": "1.15.0",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "cotengra": "0.8.2",
+    "autoray": "0.11.0"
+  }
+}

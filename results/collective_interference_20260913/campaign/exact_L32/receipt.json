@@ -1,0 +1,87 @@
+{
+  "name": "exact_L32",
+  "bins_per_band": 1,
+  "model_bytes": 1032,
+  "certificate_bytes": 797,
+  "discovery": {
+    "proposal_seconds": 0.031507499999861466,
+    "exact_lower_corrections": 0,
+    "lower_cost": {
+      "retained_states_constructed": 64,
+      "largest_matrix": 20,
+      "retained_word_state_actions": 1856,
+      "spectator_bins_processed": 14,
+      "physical_fock_space_enumerated": false
+    },
+    "numerical_eigensolver_max_dimension": 20,
+    "large_sector_enumerated": false
+  },
+  "accepted": {
+    "lower": "-40971334420877/10000000000",
+    "upper": "-4287775066370266592418284003310391/1046530489420777428571409519740",
+    "lower_shifted": "-11334420877/10000000000",
+    "upper_shifted": "-1186181702762244989790610455351/1046530489420777428571409519740",
+    "width": "4271871303202789617379980599/523265244710388714285704759870000000000",
+    "width_float": 8.163873573462995e-12,
+    "filled_bath_energy": "-4096",
+    "physical_modes": 2052,
+    "particles": 1026,
+    "retained_modes": 6,
+    "coupling_patterns": 2,
+    "dark_modes_eliminated": 2046,
+    "lower_checks": [
+      {
+        "dimension": 1,
+        "rank": 1
+      },
+      {
+        "dimension": 6,
+        "rank": 6
+      },
+      {
+        "dimension": 15,
+        "rank": 15
+      },
+      {
+        "dimension": 20,
+        "rank": 20
+      },
+      {
+        "dimension": 15,
+        "rank": 15
+      },
+      {
+        "dimension": 6,
+        "rank": 6
+      },
+      {
+        "dimension": 1,
+        "rank": 1
+      }
+    ],
+    "lower_cost": {
+      "retained_states_constructed": 64,
+      "largest_matrix": 20,
+      "retained_word_state_actions": 1856,
+      "spectator_bins_processed": 14,
+      "physical_fock_space_enumerated": false
+    },
+    "upper_cost": {
+      "retained_states_constructed": 64,
+      "largest_matrix": 20,
+      "retained_word_state_actions": 1856,
+      "spectator_bins_processed": 14,
+      "physical_fock_space_enumerated": false
+    },
+    "maximum_metric_bits": 21,
+    "uniform_width_ceiling": "4271871303202789617379980599/523265244710388714285704759870000000000",
+    "lower_envelope_trial_gap": "4271871303202789617379980599/523265244710388714285704759870000000000",
+    "active_floor": "-534/35",
+    "hybridization_norm_bound": "21/5",
+    "maximum_bin_width": "0",
+    "minimum_excitation_gap": "4",
+    "replay_seconds": 0.02040679200035811,
+    "scope": "Exact operator-envelope interval for declared collective charging/bath family; energy units are abstract, not Hartree."
+  },
+  "case_wall_seconds": 0.05279374999918218
+}

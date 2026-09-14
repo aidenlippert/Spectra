@@ -1,0 +1,18 @@
+test_both_model_intervals_and_pure_spin (research.ch2_validation_20260913.test_certified_spin.CertifiedSpinTests.test_both_model_intervals_and_pure_spin) ... ok
+test_core_potential_and_constant_match_RHF (research.ch2_validation_20260913.test_certified_spin.CertifiedSpinTests.test_core_potential_and_constant_match_RHF) ... ok
+test_factor_and_spin_tampering_refused (research.ch2_validation_20260913.test_certified_spin.CertifiedSpinTests.test_factor_and_spin_tampering_refused) ... ok
+test_two_electron_spin_decomposition_exact (research.ch2_validation_20260913.test_certified_spin.CertifiedSpinTests.test_two_electron_spin_decomposition_exact) ... FAIL
+test_wrong_binding_and_accounting_refused (research.ch2_validation_20260913.test_certified_spin.CertifiedSpinTests.test_wrong_binding_and_accounting_refused) ... ok
+
+======================================================================
+FAIL: test_two_electron_spin_decomposition_exact (research.ch2_validation_20260913.test_certified_spin.CertifiedSpinTests.test_two_electron_spin_decomposition_exact)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aidenlippert/Documents/Spectra/research/ch2_validation_20260913/test_certified_spin.py", line 19, in test_two_electron_spin_decomposition_exact
+    self.assertEqual(den,2)
+AssertionError: 4 != 2
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.820s
+
+FAILED (failures=1)

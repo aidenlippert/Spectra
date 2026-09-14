@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/aidenlippert/Documents/Spectra/research/collective_completion_20260914/search.py", line 259, in <module>
+    solve(a.case,a.rank,a.seconds,a.spin,a.tag,a.rounds,a.add_rank,a.prepared,a.solver,a.seed,a.enrich_seed,a.mag,a.singlet,a.ladder,a.seed_eigen_cutoff,a.threads,a.spin_twirl,a.share_spin,a.moment_dual,a.verbose,a.factor_response,a.atoms)
+  File "/Users/aidenlippert/Documents/Spectra/research/collective_completion_20260914/search.py", line 158, in solve
+    maps,map_ids,atom_receipt=atom_tools.initial(meta,groups,maps,seed)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/research/collective_completion_20260914/atoms.py", line 34, in initial
+    if len(matches)!=1:raise ValueError(('Missing certified seed block',old['name']))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: ('Missing certified seed block', 'local-triples-(-3, 0, 1, 0)')

@@ -1,0 +1,50 @@
+{"phase": "feature_basis", "generated_orbits": 89, "independent_features": 48}
+{"phase": "feature_compilation", "completed": 8, "total": 48}
+{"phase": "feature_compilation", "completed": 16, "total": 48}
+{"phase": "feature_compilation", "completed": 24, "total": 48}
+{"phase": "feature_compilation", "completed": 32, "total": 48}
+{"phase": "feature_compilation", "completed": 40, "total": 48}
+{"phase": "feature_compilation", "completed": 48, "total": 48}
+{"phase": "atom_dictionary", "degree": 0, "columns": 2, "nonzeros": 37}
+{"phase": "atom_dictionary", "degree": 1, "columns": 50, "nonzeros": 1421}
+{"phase": "atom_dictionary", "degree": 2, "columns": 578, "nonzeros": 25203}
+{"phase": "atom_dictionary", "degree": 3, "columns": 4098, "nonzeros": 242547}
+{"phase": "atom_dictionary", "degree": 4, "columns": 19818, "nonzeros": 1460404}
+{"phase": "atom_dictionary", "degree": 5, "columns": 44298, "nonzeros": 2476240}
+{"phase": "atom_dictionary", "degree": 6, "columns": 96418, "nonzeros": 5647233}
+{"phase": "joint_solve", "rows": 801, "columns": 192885, "nonzeros": 11327245, "method": "highs-ipm", "presolve": false}
+Running HiGHS 1.2.0 [date: 2021-07-09, git hash: n/a]
+Copyright (c) 2022 ERGO-Code under MIT licence terms
+Solving LP without presolve or with basis
+IPX model has 801 rows, 192885 columns and 11327245 nonzeros
+Input
+    Number of variables:                                192885
+    Number of free variables:                           49
+    Number of constraints:                              801
+    Number of equality constraints:                     801
+    Number of matrix entries:                           11327245
+    Matrix range:                                       [6e-04, 2e+02]
+    RHS range:                                          [1e-03, 1e+00]
+    Objective range:                                    [1e+00, 1e+00]
+    Bounds range:                                       [0e+00, 0e+00]
+Preprocessing
+    Dualized model:                                     no
+    Number of dense columns:                            0
+    Range of scaling factors:                           [1.25e-01, 4.00e+00]
+IPX version 1.0
+Interior Point Solve
+ Iter     P.res    D.res            P.obj           D.obj        mu     Time
+   0   2.62e+00 3.97e+00  -6.97837953e-04  1.14157070e-04  4.11e+00       2s
+ Constructing starting basis...
+   1   2.38e+00 2.58e+00   1.06664527e+03 -3.26311656e+01  3.75e+00      26s
+   2   1.56e+00 1.62e+00   5.70768598e+03 -4.60888129e+01  2.64e+00      51s
+Summary
+    Runtime:                                            70.82s
+    Status interior point solve:                        failed
+    Status crossover:                                   not run
+WARNING: Ipx: Stopped
+ERROR:   Ipx: IPM       failed
+WARNING: Ipx: Crossover not run
+Model   status      : Solve error
+HiGHS run time      :         71.37
+{"success": false, "status": "(HiGHS Status 4: Error)", "target_lower": "-783/125", "source_sha256": "9b7255212be2f6d31ff451bed7ad65c08e3d8af6db86214bb36edd40a9b87e9e", "preparation_seconds": 124.25838408304844, "solve_seconds": 71.80779954197351, "iterations": 0, "method": "highs-ipm", "presolve": false, "rows": 801, "columns": 192885, "nonzeros": 11327245, "metric_features": 48, "atom_columns": 96418, "quotients": [{"variables": 6, "population": 3, "maximum_degree": 3, "monomials": 42, "relations": 22, "quotient_dimension": 20, "configuration_evaluations": 0}, {"variables": 6, "population": 3, "maximum_degree": 3, "monomials": 42, "relations": 22, "quotient_dimension": 20, "configuration_evaluations": 0}], "configuration_evaluations": 0, "scope": "Bare-Hamiltonian numerical joint discovery; generated reflection-tied D-times-degree4 charge basis and complete nonsingleton degree6/charge-localizer degree4 dictionary. No inherited coefficients, selected atoms, physical assignments or actions. Fixed degree and resource budgets restrict the search; exact export required."}

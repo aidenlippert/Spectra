@@ -1,0 +1,16 @@
+{
+  "returncode": 0,
+  "status": "finished",
+  "name": "structured_replay",
+  "command": [
+    "-S",
+    "research/certificate_scaling/full_residual_replay.py",
+    "results/certificate_scaling/lambda_batch/ideal_rank_8.json",
+    "results/certificate_scaling/lambda_batch/ideal_rank_32.json",
+    "results/certificate_scaling/lambda_batch/ideal_rank_64.json",
+    "--output",
+    "results/certificate_scaling/lambda_batch/structured_replay.json"
+  ],
+  "timeout_seconds": 180,
+  "wall_seconds": 3.41972754599999
+}

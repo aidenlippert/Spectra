@@ -1,0 +1,90 @@
+{
+  "status": "verified",
+  "mathematical_policy_replays": [
+    {
+      "name": "two_state_reaction",
+      "status": "conditional_certificate",
+      "observations": 32,
+      "gap": "3/16"
+    },
+    {
+      "name": "two_node_thermal",
+      "status": "conditional_certificate",
+      "observations": 9,
+      "gap": "3/16"
+    }
+  ],
+  "v12_replays": [
+    {
+      "arm": "baseline",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12
+    },
+    {
+      "arm": "small_cover",
+      "bound": "4089232435656577/4096000000000000000",
+      "degree": 11
+    },
+    {
+      "arm": "disabled",
+      "bound": "9235404595038841/20270250000000000000",
+      "degree": 12
+    }
+  ],
+  "v12_headroom_gate": "failed",
+  "historical_hash_checks": {
+    "experiments/v7_certificate.py": true,
+    "experiments/v7_quadratic_certificate.py": true,
+    "experiments/v7_identifiability.py": true,
+    "experiments/v7_verify.py": true,
+    "experiments/v7_block_cost.py": true,
+    "experiments/v7_adaptive_taylor.py": true,
+    "experiments/v7_quadratic_cost.py": true,
+    "experiments/v7_pruning_probe.py": true,
+    "experiments/v7_strong_baseline.py": true,
+    "experiments/v7_grouping_probe.py": true,
+    "experiments/v7_pruned_taylor.py": true,
+    "experiments/v7_reducers.py": true,
+    "experiments/v7_headroom.py": true,
+    "experiments/v7_measured_gate.py": true,
+    "experiments/v7_prediction_requests.py": true,
+    "experiments/v7_quadratic_probe.py": true,
+    "experiments/pauli.py": true,
+    "experiments/certificates.py": true,
+    "experiments/v6_audit.py": true,
+    "experiments/v6_headroom.py": true,
+    "tests/test_v6_audit.py": true,
+    "tests/test_v6_headroom.py": true,
+    "data/v6/pyomo-doe-LICENSE": true,
+    "data/v6/tclab_sine_test_5min_period.csv": true,
+    "data/v6/tclab_step_test.csv": true,
+    "results/v6/headroom_results.json": true,
+    "experiments/v5_account.py": true,
+    "experiments/v5_bayes.py": true,
+    "experiments/v5_complementarity.py": true,
+    "experiments/v5_core.py": true,
+    "experiments/v5_frame.py": true,
+    "experiments/v5_run.py": true,
+    "experiments/v5_verify.py": true,
+    "tests/test_v5_bayes.py": true,
+    "tests/test_v5_core.py": true,
+    "tests/test_v5_frame.py": true,
+    "tests/test_v5_research.py": true,
+    "results/v5/complementarity_results.json": true,
+    "results/v5/transfer_results.json": true,
+    "results/v5/computational_accounting.json": true
+  },
+  "v7_through_v11_archives_unchanged": true,
+  "v8_through_v11_sources_unchanged": true,
+  "tests_passed": 201,
+  "test_log_sha256": "6adfb4856ae3f9e986fad05640db42b2537fb8f121d2ebbcb193db9de933a5b8",
+  "source_sha256": {
+    "experiments/mission_verify.py": "7a82bc834d2a793154feabb45e6565a322f029316345071c37be9af6b9049ebd",
+    "experiments/mission_policy_cover.py": "89e48c9e164f017b601bb0343cd828f56ef5919d288fffe444a87350d5c61113",
+    "experiments/mission_examples.py": "4a2863ecf95648ca315553cda706d6c1af26d57f770f2efccea038d4cda757f4",
+    "tests/test_mission_policy_cover.py": "913fb9a446ea65aa6ecc2816668733b9e3db35106800b0f328699833d99b94be"
+  },
+  "physical_validation": "not_performed",
+  "autonomous_acquisition": "not_performed",
+  "general_matter_mastery": "not_established"
+}

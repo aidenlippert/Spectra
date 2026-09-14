@@ -1,0 +1,108 @@
+{
+  "trials": [
+    {
+      "name": "add_8",
+      "shape_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        31,
+        8
+      ],
+      "numerical_periodic_lower": -0.6436425609947795,
+      "matrix_evaluations": 64,
+      "fresh_CAR_difference": 5.329070518200751e-15,
+      "exact_energy_accepted": false,
+      "exact_family_limit_accepted": false
+    },
+    {
+      "name": "swap_0_for_11",
+      "shape_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        31,
+        11
+      ],
+      "numerical_periodic_lower": -0.6435842099489238,
+      "matrix_evaluations": 70,
+      "fresh_CAR_difference": 2.1316282072803006e-14,
+      "exact_energy_accepted": true,
+      "exact_family_limit_accepted": true
+    },
+    {
+      "name": "swap_0_for_20",
+      "shape_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        31,
+        20
+      ],
+      "numerical_periodic_lower": -0.6435995820653674,
+      "matrix_evaluations": 73,
+      "fresh_CAR_difference": 7.105427357601002e-15,
+      "exact_energy_accepted": false,
+      "exact_family_limit_accepted": false
+    },
+    {
+      "name": "swap_3_for_20",
+      "shape_indices": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        31,
+        11,
+        20
+      ],
+      "numerical_periodic_lower": -0.6435229842381526,
+      "matrix_evaluations": 73,
+      "fresh_CAR_difference": 8.881784197001252e-15,
+      "exact_energy_accepted": true,
+      "exact_family_limit_accepted": true
+    },
+    {
+      "name": "swap_3_for_0_8",
+      "shape_indices": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        31,
+        11,
+        0,
+        8
+      ],
+      "numerical_periodic_lower": -0.6435524859188576,
+      "matrix_evaluations": 79,
+      "fresh_CAR_difference": 8.881784197001252e-15,
+      "exact_energy_accepted": false,
+      "exact_family_limit_accepted": false
+    }
+  ],
+  "best_accepted": "swap_3_for_20",
+  "entry_count_correction": {
+    "previous_claimed": 64,
+    "previous_actual": 60,
+    "new_actual": 64
+  },
+  "scope": "Five bounded CPU trials within the existing64-entry energy format. Only the two selected best stages received full exact energy and family-limit acceptance. No global optimality over all supports is claimed."
+}

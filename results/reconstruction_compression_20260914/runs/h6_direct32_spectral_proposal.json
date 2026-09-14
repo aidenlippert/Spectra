@@ -1,0 +1,22 @@
+{
+  "name": "h6_direct32_spectral_proposal",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-m",
+    "research.certificate_scaling.wedge_spectral_bound",
+    "--certificate",
+    "results/reconstruction_compression_20260914/candidates/h6_actual_low_32_eliminated_direct/certificate.json",
+    "--out",
+    "results/reconstruction_compression_20260914/candidates/h6_actual_low_32_eliminated_direct/spectral"
+  ],
+  "timeout_seconds": 90,
+  "status": "passed",
+  "started_UTC": "2026-09-14T08:24:03.589906+00:00",
+  "pid": 36266,
+  "exit_code": 0,
+  "wall_seconds": 4.7861222499923315,
+  "child_user_seconds": 4.633987,
+  "child_system_seconds": 0.046993,
+  "peak_child_RSS_bytes": 98795520,
+  "finished_UTC": "2026-09-14T08:24:08.376470+00:00"
+}

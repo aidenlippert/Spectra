@@ -1,0 +1,231 @@
+{
+  "cases": [
+    {
+      "case": "h6",
+      "trial_certificate_bytes": 6204,
+      "response_program_bytes": 501,
+      "source_upper_provenance": "inherited 200-amplitude FCI witness",
+      "program_discovery": null,
+      "trial_discovery": {
+        "construction_seconds": 0.48837633299990557,
+        "action_cost": {
+          "Hamiltonian_action_calls": 28,
+          "Hamiltonian_action_sources": 1648,
+          "word_state_checks": 1512864,
+          "distinct_source_states": 200,
+          "distinct_generated_destination_states_including_projected_out": 200,
+          "maximum_stored_vector_support": 200,
+          "Hamiltonian_action_cache_states": 0,
+          "full_sector_basis_enumerated": false,
+          "many_body_matrix_entries": 0
+        },
+        "D_actions": 25,
+        "initial_retained_states": 148,
+        "response_direction_states": 52,
+        "final_trial_states": 200,
+        "source_upper_replay": {
+          "method": "bounded_streaming_integer_reference_upper_v1",
+          "witness_states": 200,
+          "hamiltonian_terms": 918,
+          "word_state_checks": 183600,
+          "contributing_word_state_pairs": 23424,
+          "action_cache_states": 0,
+          "replay_seconds": 0.03141516700270586,
+          "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+          "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+        },
+        "candidate_upper_replay": {
+          "method": "bounded_streaming_integer_reference_upper_v1",
+          "witness_states": 200,
+          "hamiltonian_terms": 918,
+          "word_state_checks": 183600,
+          "contributing_word_state_pairs": 23424,
+          "action_cache_states": 0,
+          "replay_seconds": 0.03552112499892246,
+          "upper": "-158326465634953912952730424854923/24999999998195005586250000000000",
+          "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+        },
+        "numerical_2_by_2_minimum_Ha": -6.333058625855402,
+        "candidate_upper_Ha": "-158326465634953912952730424854923/24999999998195005586250000000000",
+        "source_upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+        "candidate_gain_mHa": -3.77598552301437e-07,
+        "incumbent_retained_if_candidate_worse": true
+      },
+      "replay": {
+        "candidate_upper_Ha": "-158326465634953912952730424854923/24999999998195005586250000000000",
+        "source_upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+        "accepted_upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+        "candidate_gain_mHa": -3.77598552301437e-07,
+        "accepted_gain_mHa": 0.0,
+        "response_program_replay": {
+          "response_program_sha256": "e781ea6fccf5b00c272a10e0844437615a37387d53777b70f24c6be2ed5254af",
+          "target_Ha": "-63340586263216010540610336114091/10000000000139879611500000000000",
+          "order": 26,
+          "polynomial_degree": 25,
+          "D_actions_per_right_hand_side": 25,
+          "exact_program_residual_factor": "79744036523572350147247837067910351376016084617799571420531866881257333413563299388804057249345638158644078430370427668094635009765625/1215102863490131061173997764360679854373811662647484997607266796108960037735985485472051695638812156584166572973012801614394129916469923977",
+          "residual_factor_float": 6.562739577003723e-05,
+          "exact_program_residual_penalty_Ha": "642796914158570077659655479590809564936886221759485532688141450474762208662290267181988465403473880084806010622182726515939783254557704820110205747533347251410111649345015126821552212587037119576562133692477674769144818323034562611122122444129445284488610923290252685546875/1234333073968561843378033712940428233881772902291414226718979762261942114483624231788863395511704657629628973608814491850550381033677581669400794202369488477154064307974496659032228110729433509222678392201109403301237108243789785289508333508936095939290075538172706661221339098244",
+          "residual_penalty_float_Ha": 5.207645551389818e-07,
+          "delta_Ha": "5643/10000",
+          "delta_float_Ha": 0.5643,
+          "M_Ha": "73459/5000",
+          "M_float_Ha": 14.6918,
+          "coupling_norm_Ha": "41301/5000",
+          "old_delta_float_Ha": 0.1906741854330005,
+          "unrounded_delta_float_Ha": 0.5643912194865633,
+          "coupling_operator_terms": 193,
+          "coupling_max_degree": 6,
+          "scalar_recurrence_rational_bits": 459,
+          "many_body_states_enumerated": 0,
+          "many_body_inverse_entries": 0,
+          "retained_remainder_certified_by_this_rule": false,
+          "replay_seconds": 0.19942424999317154,
+          "scope": "Exact operator-program error certificate on every retained vector. K positivity and any response-action cost are separate."
+        },
+        "source_upper_replay": {
+          "method": "bounded_streaming_integer_reference_upper_v1",
+          "witness_states": 200,
+          "hamiltonian_terms": 918,
+          "word_state_checks": 183600,
+          "contributing_word_state_pairs": 23424,
+          "action_cache_states": 0,
+          "replay_seconds": 0.03123966700513847,
+          "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+          "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+        },
+        "candidate_upper_replay": {
+          "method": "bounded_streaming_integer_reference_upper_v1",
+          "witness_states": 200,
+          "hamiltonian_terms": 918,
+          "word_state_checks": 183600,
+          "contributing_word_state_pairs": 23424,
+          "action_cache_states": 0,
+          "replay_seconds": 0.03512537499773316,
+          "upper": "-158326465634953912952730424854923/24999999998195005586250000000000",
+          "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+        },
+        "replay_seconds": 0.2673870410071686,
+        "scope": "Exact variational upper from explicit amplitudes. The response provenance is a numerical construction; full retained-remainder positivity is not proved here."
+      }
+    },
+    {
+      "case": "fresh_h6_1p6",
+      "trial_certificate_bytes": 1976,
+      "response_program_bytes": 464,
+      "source_upper_provenance": "single Hartree-Fock determinant; no FCI",
+      "program_discovery": {
+        "construction_seconds": 0.21769229200435802,
+        "bounds_seconds": 0.2039099170069676,
+        "many_body_states_enumerated": 0,
+        "many_body_inverse_entries": 0
+      },
+      "trial_discovery": {
+        "construction_seconds": 0.4687000829871977,
+        "action_cost": {
+          "Hamiltonian_action_calls": 75,
+          "Hamiltonian_action_sources": 3744,
+          "word_state_checks": 3436992,
+          "distinct_source_states": 53,
+          "distinct_generated_destination_states_including_projected_out": 200,
+          "maximum_stored_vector_support": 200,
+          "Hamiltonian_action_cache_states": 0,
+          "full_sector_basis_enumerated": false,
+          "many_body_matrix_entries": 0
+        },
+        "D_actions": 72,
+        "initial_retained_states": 1,
+        "response_direction_states": 52,
+        "final_trial_states": 53,
+        "source_upper_replay": {
+          "method": "bounded_streaming_integer_reference_upper_v1",
+          "witness_states": 1,
+          "hamiltonian_terms": 918,
+          "word_state_checks": 918,
+          "contributing_word_state_pairs": 21,
+          "action_cache_states": 0,
+          "replay_seconds": 0.01871200000459794,
+          "upper": "-2771192079727/500000000000",
+          "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+        },
+        "candidate_upper_replay": {
+          "method": "bounded_streaming_integer_reference_upper_v1",
+          "witness_states": 53,
+          "hamiltonian_terms": 918,
+          "word_state_checks": 48654,
+          "contributing_word_state_pairs": 3907,
+          "action_cache_states": 0,
+          "replay_seconds": 0.021868458003154956,
+          "upper": "-556331734761689169065957839880719/100000000004115053854000000000000",
+          "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+        },
+        "numerical_2_by_2_minimum_Ha": -5.56331734738789,
+        "candidate_upper_Ha": "-556331734761689169065957839880719/100000000004115053854000000000000",
+        "source_upper_Ha": "-2771192079727/500000000000",
+        "candidate_gain_mHa": 20.933187933958187,
+        "incumbent_retained_if_candidate_worse": false
+      },
+      "replay": {
+        "candidate_upper_Ha": "-556331734761689169065957839880719/100000000004115053854000000000000",
+        "source_upper_Ha": "-2771192079727/500000000000",
+        "accepted_upper_Ha": "-556331734761689169065957839880719/100000000004115053854000000000000",
+        "candidate_gain_mHa": 20.933187933958187,
+        "accepted_gain_mHa": 20.933187933958187,
+        "response_program_replay": {
+          "response_program_sha256": "9b0142d20ed95d279fc441f725173c6d1b8bcf0fff1b28770868ad81e0c62304",
+          "target_Ha": "-2771692079727/500000000000",
+          "order": 73,
+          "polynomial_degree": 72,
+          "D_actions_per_right_hand_side": 72,
+          "exact_program_residual_factor": "8636286606421572260615843126969367371550598177795161713095250950584642338973706972198285134479144120405195764799491436827978117154339138311937347491126428355802222056923719891581130887776183532979528375875159402351736080884661853558565136438321623040351250099269612879336165567024266512135441712273825954268839413137887962125565952/276605586899570719041730437336648186097502717529866561438079513522584354931679348894955061900847358057972046731727424390523119424793870237162207977916660061970349858838441128131677371705561616374551843081829801581200340997373523028571422323176549727080217011141597184123045640551424453856621032603235656104840200452244592623838182223491",
+          "residual_factor_float": 3.1222386732041004e-05,
+          "exact_program_residual_penalty_Ha": "31191057494929475695857720232826006062738460710362963633499863805637611946530053784885249549934782390897775335598733340728004258224478549471381772334435417436774428054898027029270623912394594271007593882131074161617026354242125924667892708626167861558226805556337200449255409165876876779017931670462027615681180425357759224499000760376121860708288590569241889624483775954652755345327799787543571236102400695848680694774736888825380507930036890846990036051494691135747925132788729222537290820131592688595597262719753420152512062039403251456613299446660366127477574349324894603008815462214556538058595407592361174201445243315868204554983871619290591387178541201071479455744/37251123061537249705886130536673405777523396114903620124830548808183573301172875389255042562412463648826624156587684563296525636138917677023625729632785470845735929388173053673763199021622165763674804060604963677585798144135735363493503905141004966456041912858980542186719674214925179240084125499350480017571018886911518307288794058752545060012880751471120438925616178089764507943058316387796307127686794610434174963411488234881335471627218052918291193871599986694605576072859434461954008500971083646022767550711310675686441518535800997120065655356446745551069416626296166721235099688428902598319704523040438014065150487536506366137329691827191401505214222828152929790560061875",
+          "residual_penalty_float_Ha": 8.373185807956231e-07,
+          "delta_Ha": "779/10000",
+          "delta_float_Ha": 0.0779,
+          "M_Ha": "136083/10000",
+          "M_float_Ha": 13.6083,
+          "coupling_norm_Ha": "81799/10000",
+          "old_delta_float_Ha": -0.278367787254,
+          "unrounded_delta_float_Ha": 0.07798663484093173,
+          "coupling_operator_terms": 193,
+          "coupling_max_degree": 6,
+          "scalar_recurrence_rational_bits": 1115,
+          "many_body_states_enumerated": 0,
+          "many_body_inverse_entries": 0,
+          "retained_remainder_certified_by_this_rule": false,
+          "replay_seconds": 0.2013898339937441,
+          "scope": "Exact operator-program error certificate on every retained vector. K positivity and any response-action cost are separate."
+        },
+        "source_upper_replay": {
+          "method": "bounded_streaming_integer_reference_upper_v1",
+          "witness_states": 1,
+          "hamiltonian_terms": 918,
+          "word_state_checks": 918,
+          "contributing_word_state_pairs": 21,
+          "action_cache_states": 0,
+          "replay_seconds": 0.018090915997163393,
+          "upper": "-2771192079727/500000000000",
+          "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+        },
+        "candidate_upper_replay": {
+          "method": "bounded_streaming_integer_reference_upper_v1",
+          "witness_states": 53,
+          "hamiltonian_terms": 918,
+          "word_state_checks": 48654,
+          "contributing_word_state_pairs": 3907,
+          "action_cache_states": 0,
+          "replay_seconds": 0.02128941600676626,
+          "upper": "-556331734761689169065957839880719/100000000004115053854000000000000",
+          "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+        },
+        "replay_seconds": 0.2423267499980284,
+        "scope": "Exact variational upper from explicit amplitudes. The response provenance is a numerical construction; full retained-remainder positivity is not proved here."
+      }
+    }
+  ],
+  "wall_seconds": 1.7667235839908244,
+  "numerical_packages_loaded": [
+    "numpy"
+  ]
+}

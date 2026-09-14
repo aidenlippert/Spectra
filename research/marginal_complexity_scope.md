@@ -1,0 +1,9 @@
+# Complexity scope for the marginal compiler
+
+The relevant worst-case theorem is Liu, Christandl, and Verstraete, *N-representability is QMA-complete* (PRL 98, 110503, 2007; [arXiv:quant-ph/0609125](https://arxiv.org/abs/quant-ph/0609125)). Their reduction maps local spin Hamiltonians to fermionic systems and uses convex optimization to connect ground-state energy estimation with N-representability. The statement concerns a promise decision/approximation problem with polynomially encoded instances and inverse-polynomial precision. It rules out treating unrestricted N-representability as a routine efficient primitive unless the corresponding complexity classes collapse.
+
+This theorem does **not** show that chemically structured Hamiltonians require exponential certificates. It does not cover a fixed model family, bounded active spaces, locality/decay promises, favorable symmetries, or a distributional “most molecules” claim. Nor does it rule out short, instance-specific SOS witnesses. The correct claim for Spectra is therefore a coverage and certificate-complexity claim on a stated chemical family, with adversarial instances reported separately.
+
+For hierarchy language, Pironio, Navascues, and Acin, *Convergent relaxations of polynomial optimization problems with non-commuting variables* ([arXiv:0903.4368](https://arxiv.org/abs/0903.4368)), establishes a hierarchy of semidefinite lower bounds with convergence under its assumptions, and discusses detecting attainment and extracting an optimizer. This supports the hierarchy approach; it does not supply a universal fixed-degree or polynomial-size guarantee for fermionic chemistry.
+
+For the M10 experiment, the exact feasible witness in `marginal_dual_exact_results.md` now proves a strict gap between the declared cubic relaxation and the physical problem. Exact optimality of that fake moment is unnecessary and has not been claimed.

@@ -1,0 +1,60 @@
+{
+  "lower_Ha": "-9501005960888331467/1500000000000000000",
+  "upper_Ha": "-53124677/8388608",
+  "width_Ha": "100701229519229513/96000000000000000000",
+  "width_mHa": 1.0489711408253075,
+  "target_1p6mHa_met": true,
+  "upper": {
+    "method": "outward_binary64_charge_MPS_v1",
+    "fixture_sha256": "99b91888d68ba7ea1d43c0b6c68594190521406c5b454b98933cbeba7d8f89df",
+    "state_sha256": "527ba40f9de970ae8042237f800ad3754a794e4e44b9adc7ec5ae05f74a5ce99",
+    "endpoint_Ha": "-53124677/8388608",
+    "norm_enclosure": [
+      "4503596850988673/4503599627370496",
+      "9007193701977867/9007199254740992"
+    ],
+    "endpoint_inequality_enclosure": [
+      "8718485413691391/151115727451828646838272",
+      "8718693863260161/151115727451828646838272"
+    ],
+    "transfer_steps": 5320,
+    "enclosure_seconds": 0.800476083997637,
+    "arithmetic": "IEEE-754 binary64; adjacent outward bounds after every addition and multiplication; fastmath=False",
+    "status": "certified_upper",
+    "total_seconds": 0.8004801250062883
+  },
+  "lower": {
+    "lower": "-9501005960888331467/1500000000000000000",
+    "lower_float": -6.3340039739255545,
+    "residual_l1": "21382376331467/1500000000000000000",
+    "residual_l1_float": 1.4254917554311333e-05,
+    "multiplier_terms": 37,
+    "square_polynomial_terms": 919,
+    "residual_terms": 919,
+    "residual_max_degree": 4,
+    "mode_count": 12,
+    "particle_number": 6,
+    "factor_rows": 1004,
+    "factor_nonzeros": 69656,
+    "kind": "balanced_spin_sos_v1",
+    "original_H_spin_defect_Ha": "27/500000000000",
+    "balanced_spin_counts": [
+      3,
+      3
+    ],
+    "valid_on": "Entire fixed-N sector",
+    "lifting": "Exact SU(2) projection, every even-N multiplet meets M_S=0, original-H coefficient-norm perturbation",
+    "many_body_states_enumerated": 0,
+    "replay_seconds": 5.908332333012368
+  },
+  "source_endpoint_allowance_Ha": "29539730386039191452075177775620589675838420403389350874844653276946132830076880007257718515773330103475543601910062465929645562449459644678033968082048038666101963932682221503897975513191/511999684361944717350016668324671388890414964619537396726672808381346223904458504170974910662311553843186314121706604543015534851750397119920528738139641540323668357640387903435941888000000000000",
+  "total_replay_seconds": 6.72716483399563,
+  "all_input_sha256": {
+    "results/certificate_scaling/active_space_ladder/h6/fixture.json": "ea50a4ab19a353bc89691bb344fcf8d610f74e1c2c76bf07c6869be2b24dbec8",
+    "results/correlated_pair_20260913/mps/h6_b48_real/state.json": "f75d6e27e3fe183445d4db906b86720fecc0d2955253b8f25cccb1fd51742b01",
+    "results/collective_completion_20260914/candidates/h6_actual_spin_r32_cold/round_1/certificate.json": "dbccf2220c4579c9ca5be6cda0b36dff0b876f4fe81047ecc7c952e6f6f56ff3",
+    "results/correlated_pair_20260913/mps/h6_b48_real/interval.json": "e3aa7d9f312a6def53abcc1988fd4452f598ca96b86951ffc098c27a28eace4b"
+  },
+  "lower_full_determinant_enumeration": false,
+  "inherited_full_cubic_proof_used": false
+}

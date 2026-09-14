@@ -1,0 +1,41 @@
+import json, time, hashlib
+from pathlib import Path
+import numpy as np
+import scipy.sparse as sp
+
+KERNEL = r'''extern "C" __global__ void emit(const unsigned long long* states,const unsigned long long* req,const unsigned long long* occ,const unsigned long long* flip,const unsigned long long* parity,const long long* coef,int n,int nt,const unsigned long long* basis,int* rows,long long* vals){int k=blockDim.x*blockIdx.x+threadIdx.x; long long total=(long long)n*nt; if(k>=total)return; int j=k/nt,t=k%nt; unsigned long long s=states[j]; rows[k]=-1; if((s&req[t])!=occ[t])return; unsigned long long x=s^flip[t]; int lo=0,hi=n; while(lo<hi){int m=(lo+hi)/2; if(basis[m]<x)lo=m+1;else hi=m;} if(lo<n&&basis[lo]==x){int p=__popcll(s&parity[t]); rows[k]=lo; vals[k]=(p&1)?-coef[t]:coef[t];}}'''
+
+def run(fixture_path, basis_path, cpu_path, out_path):
+    import cupy as cp, cupyx.scipy.sparse as csp
+    from research.all_angles_20260913.selected_refinement.refine import CompiledHamiltonian
+    fixture_raw=Path(fixture_path).read_bytes(); fixture=json.loads(fixture_raw)
+    basis=sorted(json.loads(Path(basis_path).read_text())['independent_upper']['states']); n=len(basis)
+    comp=CompiledHamiltonian(fixture); D=comp.denominator; terms=comp.terms; nt=len(terms)
+    if sum(abs(t[4]) for t in terms)>=2**53: raise RuntimeError('integer coefficient bound refused')
+    a=np.asarray(basis,dtype=np.uint64); req=np.array([t[0] for t in terms],dtype=np.uint64); occ=np.array([t[1] for t in terms],dtype=np.uint64); flip=np.array([t[2] for t in terms],dtype=np.uint64); parity=np.array([t[3] for t in terms],dtype=np.uint64); coef=np.array([t[4] for t in terms],dtype=np.int64)
+    mod=cp.RawModule(code=KERNEL,options=('-std=c++11',)); ker=mod.get_function('emit')
+    def assemble():
+        total=n*nt; drows=cp.full(total,-1,dtype=cp.int32); dvals=cp.zeros(total,dtype=cp.int64); ds=cp.asarray(a); db=ds
+        ker(((total+255)//256,),(256,),(ds,cp.asarray(req),cp.asarray(occ),cp.asarray(flip),cp.asarray(parity),cp.asarray(coef),n,nt,db,drows,dvals))
+        mask=drows>=0; rows=cp.asnumpy(drows[mask]); vals=cp.asnumpy(dvals[mask]); cols=np.repeat(np.arange(n,dtype=np.int32),nt)[cp.asnumpy(mask)];
+        # CuPy sparse accepts floating payloads; the validated <2**53 bound makes
+        # these integer numerators exactly representable in float64.
+        M = csp.coo_matrix((cp.asarray(vals,dtype=cp.float64),(cp.asarray(rows),cp.asarray(cols))),shape=(n,n)).tocsr()
+        M.sum_duplicates()
+        if int(cp.count_nonzero(M.data == 0).get()):
+            raise RuntimeError('unexpected zero payload after integer coalescing')
+        M.data /= D
+        return M
+    t=time.perf_counter(); A=assemble(); cp.cuda.Stream.null.synchronize(); cold=time.perf_counter()-t
+    warm=[]
+    for _ in range(3): t=time.perf_counter(); B=assemble(); cp.cuda.Stream.null.synchronize(); warm.append(time.perf_counter()-t)
+    ref=np.load(cpu_path); cpu=sp.csr_matrix((ref['data'],ref['indices'],ref['indptr']),shape=tuple(ref['shape']))
+    A.sum_duplicates(); A.sort_indices(); cpu.sum_duplicates(); cpu.eliminate_zeros(); cpu.sort_indices()
+    maxdiff=float(np.max(np.abs(A.data.get()-cpu.data))) if A.nnz else 0.0
+    eq=(A.shape==cpu.shape and np.array_equal(A.indptr.get(),cpu.indptr) and np.array_equal(A.indices.get(),cpu.indices) and maxdiff <= np.finfo(np.float64).eps)
+    rec={'n':n,'terms':nt,'denominator':D,'sum_abs_integer_coeff':int(sum(abs(t[4]) for t in terms)),'matrix_nnz':int(A.nnz),'shape':A.shape,'cold_jit_assemble_seconds':cold,'warm_assemble_seconds':warm,'gpu_memory_bytes_final_snapshot':int(cp.cuda.Device().mem_info[1]-cp.cuda.Device().mem_info[0]),'host_transfer_bytes':int(A.data.nbytes+A.indices.nbytes+A.indptr.nbytes),'cpu_csr_match':bool(eq),'max_abs_data_error':maxdiff,'gpu_csr_sha256':hashlib.sha256(A.data.get().tobytes()+A.indices.get().tobytes()+A.indptr.get().tobytes()).hexdigest(),'cpu_csr_sha256':hashlib.sha256(cpu.data.tobytes()+cpu.indices.tobytes()+cpu.indptr.tobytes()).hexdigest()}
+    Path(out_path).write_text(json.dumps(rec,indent=2)+'\n'); return rec
+
+if __name__=='__main__':
+ import argparse
+ p=argparse.ArgumentParser(); p.add_argument('--fixture',required=True);p.add_argument('--basis',required=True);p.add_argument('--cpu',required=True);p.add_argument('--out',required=True);a=p.parse_args(); print(run(a.fixture,a.basis,a.cpu,a.out))

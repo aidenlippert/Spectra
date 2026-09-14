@@ -1,0 +1,1324 @@
+{
+  "preserved_prior_files": 528,
+  "preserved_manifest_sha256": "f6c1257bc31aa59a2f0c43423812b586cdac59d3182d09ca6045d5abc46c3b21",
+  "watchdogs": [
+    {
+      "case": "h6_1p2",
+      "phase": "fixture_generation",
+      "budget_seconds": 120.0,
+      "wall_seconds": 2.8621185829979368,
+      "failure": "exit_1"
+    },
+    {
+      "case": "h6_1p8",
+      "phase": "fixture_generation",
+      "budget_seconds": 120.0,
+      "wall_seconds": 0.14328991699585458,
+      "failure": "exit_1"
+    },
+    {
+      "case": "h6_train",
+      "phase": "discovery",
+      "budget_seconds": 240.0,
+      "wall_seconds": 21.540136458002962,
+      "failure": null
+    },
+    {
+      "case": "h6_1p2",
+      "phase": "discovery",
+      "budget_seconds": 240.0,
+      "wall_seconds": 0.887240334006492,
+      "failure": "exit_1"
+    },
+    {
+      "case": "h6_1p8",
+      "phase": "discovery",
+      "budget_seconds": 240.0,
+      "wall_seconds": 0.6105967909970786,
+      "failure": "exit_1"
+    },
+    {
+      "case": "h8_heldout",
+      "phase": "discovery",
+      "budget_seconds": 240.0,
+      "wall_seconds": 131.47714062500017,
+      "failure": null
+    },
+    {
+      "case": "h6_1p2",
+      "phase": "fixture_generation",
+      "remaining_budget_seconds": 117.13788141700206,
+      "previous_failed_seconds": 2.8621185829979368,
+      "wall_seconds": 2.532450541999424,
+      "failure": null,
+      "reason": "The original fixture attempt used the numerical-SDP Python without PySCF; use the existing molecule runtime. No scientific result or rule was changed."
+    },
+    {
+      "case": "h6_1p2",
+      "phase": "discovery",
+      "remaining_budget_seconds": 239.1127596659935,
+      "previous_failed_seconds": 0.887240334006492,
+      "wall_seconds": 21.141185082997254,
+      "failure": null,
+      "reason": "The original fixture attempt used the numerical-SDP Python without PySCF; use the existing molecule runtime. No scientific result or rule was changed."
+    },
+    {
+      "case": "h6_1p8",
+      "phase": "fixture_generation",
+      "remaining_budget_seconds": 119.85671008300415,
+      "previous_failed_seconds": 0.14328991699585458,
+      "wall_seconds": 1.0014425830013352,
+      "failure": null,
+      "reason": "The original fixture attempt used the numerical-SDP Python without PySCF; use the existing molecule runtime. No scientific result or rule was changed."
+    },
+    {
+      "case": "h6_1p8",
+      "phase": "discovery",
+      "remaining_budget_seconds": 239.38940320900292,
+      "previous_failed_seconds": 0.6105967909970786,
+      "wall_seconds": 21.365904916005093,
+      "failure": null,
+      "reason": "The original fixture attempt used the numerical-SDP Python without PySCF; use the existing molecule runtime. No scientific result or rule was changed."
+    }
+  ],
+  "new_case_costs_seconds": {
+    "fixture_generation": 6.53930162499455,
+    "discovery": 197.02220420700905
+  },
+  "training_analysis_seconds": 4.435507209003845,
+  "inherited_training_certificate_discovery_seconds": 541.7379803339936,
+  "new_discovery_plus_training_analysis_seconds": 201.4577114160129,
+  "cumulative_causal_discovery_seconds": 743.1956917500065,
+  "cases": [
+    {
+      "case": "h6_1p2",
+      "discovery_seconds_including_failed_attempts": 22.028425417003746,
+      "model_construction": {
+        "construction_seconds": 4.2499497500029975,
+        "coefficient_rows": 919,
+        "base_preparation": {
+          "monomial_word_pairs": 5724,
+          "monomial_map_nonzeros": 6246
+        },
+        "spin_preparation": {
+          "monomial_word_pairs": 105444,
+          "CAR_word_products": 210888,
+          "monomial_map_nonzeros": 48672,
+          "max_surviving_degree": 4
+        },
+        "base_map_nonzeros": 6180,
+        "pricing_map_nonzeros": 48672,
+        "spin_frame_dimensions": [
+          30,
+          30,
+          93,
+          93,
+          93,
+          93,
+          30,
+          30
+        ],
+        "base_Gram_dimensions": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          6,
+          9,
+          18,
+          18,
+          6,
+          9,
+          6,
+          9,
+          18,
+          18,
+          6,
+          9,
+          18,
+          18,
+          36,
+          36,
+          18,
+          18
+        ],
+        "fixture_sha256": "4f0ad6e6fa76f8619b690937775aa8b117781b606462e058147ed13676c33005",
+        "tail_sha256": "c98eb0631a28153cc3db0c7e3346a5eac4c7caf478d8f01ca40cac1dd0cecec9",
+        "symmetry": {
+          "original_dimensions": [
+            12,
+            12,
+            66,
+            66,
+            144
+          ],
+          "symmetry_dimensions": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            6,
+            9,
+            18,
+            18,
+            6,
+            9,
+            6,
+            9,
+            18,
+            18,
+            6,
+            9,
+            18,
+            18,
+            36,
+            36,
+            18,
+            18
+          ],
+          "parity_masks": [
+            819,
+            1365,
+            2457
+          ],
+          "alpha_charge_quotient": true
+        },
+        "many_body_states_enumerated": 0
+      },
+      "rule_construction": {
+        "seconds": 0.006534624997584615,
+        "powers": [
+          0.5,
+          1.0
+        ],
+        "raw_symmetry_components": 108,
+        "accepted_directions": 108,
+        "dimensions": [
+          6,
+          6,
+          21,
+          21,
+          21,
+          21,
+          6,
+          6
+        ],
+        "removed": [],
+        "scope": "A recorded numerical template subspace, not an exact completeness or energy claim."
+      },
+      "tail": {
+        "lower_operator_shift_Ha": "-1817/500000000000",
+        "upper_operator_shift_Ha": "270046217/500000000000",
+        "tail_interval_width_Ha": "135024017/250000000000",
+        "tail_interval_width_mHa": 0.540096068,
+        "factors": 10,
+        "factor_nonzeros": 105,
+        "coefficient_dimension": 21,
+        "modes": 12,
+        "particles": 6,
+        "number_centered": true,
+        "mismatch_paired_norm_Ha": "17/500000000000",
+        "mismatch_terms": 54,
+        "casimir_bound": "24",
+        "lower_psd": {
+          "dimension": 21,
+          "rank": 21
+        },
+        "upper_psd": {
+          "dimension": 21,
+          "rank": 21
+        },
+        "replay_seconds": 0.07467395900312113,
+        "many_body_states_enumerated": 0,
+        "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+      },
+      "canonical_operator_rank_checks": [
+        {
+          "dimension": 6,
+          "modular_rank": 6,
+          "canonical_monomials": 45
+        },
+        {
+          "dimension": 6,
+          "modular_rank": 6,
+          "canonical_monomials": 45
+        },
+        {
+          "dimension": 21,
+          "modular_rank": 21,
+          "canonical_monomials": 156
+        },
+        {
+          "dimension": 21,
+          "modular_rank": 21,
+          "canonical_monomials": 156
+        },
+        {
+          "dimension": 21,
+          "modular_rank": 21,
+          "canonical_monomials": 156
+        },
+        {
+          "dimension": 21,
+          "modular_rank": 21,
+          "canonical_monomials": 156
+        },
+        {
+          "dimension": 6,
+          "modular_rank": 6,
+          "canonical_monomials": 45
+        },
+        {
+          "dimension": 6,
+          "modular_rank": 6,
+          "canonical_monomials": 45
+        }
+      ],
+      "trials": [
+        {
+          "arm": "quadratic",
+          "accepted": true,
+          "complete_at_seconds": 7.386686416997691,
+          "inside_budget": true,
+          "lower_Ha": "-699902052720770087493109752354441/100000000000000000000000000000000",
+          "width_Ha": "53783034563692949916604643993069628440436135019499/4999999999622510433900000000000000000000000000000000",
+          "width_mHa": 10.75660691355069,
+          "trial_seconds": 1.93396987500455,
+          "directions": 0,
+          "Gram_entries": 5724,
+          "anti_dimensions": [],
+          "certificate_bytes": 39994,
+          "constructed_map_nonzeros": 6180,
+          "construction_seconds": 0.0028472499980125576,
+          "solve_seconds": 1.4288811669975985,
+          "export_seconds": 0.024203833003412,
+          "accept_seconds": 0.4754479999974137,
+          "status": "optimal",
+          "expanded_certificate_bytes": 147153,
+          "factor_rows": 221,
+          "factor_nonzeros": 4206,
+          "direction_nonzeros": 0,
+          "maximum_factor_integer_bits": 32,
+          "maximum_direction_integer_bits": 0,
+          "factor_denominator": 10000000000,
+          "direction_denominator": 10000000000,
+          "exact_residual_penalty_mHa": 4.24537008749311e-05,
+          "factor_rank_sum": 221,
+          "factor_rank_is_exact": true
+        },
+        {
+          "arm": "coupled",
+          "accepted": true,
+          "complete_at_seconds": 15.164004124999337,
+          "inside_budget": true,
+          "lower_Ha": "-41992798571507289420145695280562327024099593589170931397942317/6000000000000000000000000000000000000000000000000000000000000",
+          "width_Ha": "351194720764531746506623934864240011395197059467774625054564942064320358712607/33333333330816736226000000000000000000000000000000000000000000000000000000000000",
+          "width_mHa": 10.535841623731386,
+          "trial_seconds": 7.776978624999174,
+          "directions": 108,
+          "Gram_entries": 7632,
+          "anti_dimensions": [
+            6,
+            6,
+            21,
+            21,
+            21,
+            21,
+            6,
+            6
+          ],
+          "certificate_bytes": 104120,
+          "constructed_map_nonzeros": 518032,
+          "construction_seconds": 0.29155029100365937,
+          "solve_seconds": 2.1628138340020087,
+          "export_seconds": 0.024548457993660122,
+          "accept_seconds": 5.29157945800398,
+          "status": "optimal_inaccurate",
+          "expanded_certificate_bytes": 896765,
+          "factor_rows": 309,
+          "factor_nonzeros": 5748,
+          "direction_nonzeros": 2892,
+          "maximum_factor_integer_bits": 33,
+          "maximum_direction_integer_bits": 34,
+          "factor_denominator": 10000000000,
+          "direction_denominator": 10000000000,
+          "exact_residual_penalty_mHa": 0.008891863881570023,
+          "factor_rank_sum": 309,
+          "factor_rank_is_exact": true
+        },
+        {
+          "arm": "separate",
+          "accepted": true,
+          "complete_at_seconds": 20.78650533399923,
+          "inside_budget": true,
+          "lower_Ha": "-13998041265202584100981704546986400970490982811268176185765361/2000000000000000000000000000000000000000000000000000000000000",
+          "width_Ha": "1075671230632975758607947823083626189746204913896209234386229808970808797001379/99999999992450208678000000000000000000000000000000000000000000000000000000000000",
+          "width_mHa": 10.756712307141868,
+          "trial_seconds": 5.6219259170029545,
+          "directions": 108,
+          "Gram_entries": 5832,
+          "anti_dimensions": [
+            6,
+            6,
+            21,
+            21,
+            21,
+            21,
+            6,
+            6
+          ],
+          "certificate_bytes": 92534,
+          "constructed_map_nonzeros": 508452,
+          "construction_seconds": 0.28917925000132527,
+          "solve_seconds": 1.7508211669992306,
+          "export_seconds": 0.025641291998908855,
+          "accept_seconds": 3.5526573749957606,
+          "status": "optimal",
+          "expanded_certificate_bytes": 654144,
+          "factor_rows": 313,
+          "factor_nonzeros": 4308,
+          "direction_nonzeros": 2892,
+          "maximum_factor_integer_bits": 32,
+          "maximum_direction_integer_bits": 34,
+          "factor_denominator": 10000000000,
+          "direction_denominator": 10000000000,
+          "exact_residual_penalty_mHa": 0.00018376229205049085,
+          "factor_rank_sum": 313,
+          "factor_rank_is_exact": true
+        }
+      ]
+    },
+    {
+      "case": "h6_1p8",
+      "discovery_seconds_including_failed_attempts": 21.97650170700217,
+      "model_construction": {
+        "construction_seconds": 4.290812999999616,
+        "coefficient_rows": 919,
+        "base_preparation": {
+          "monomial_word_pairs": 5724,
+          "monomial_map_nonzeros": 6246
+        },
+        "spin_preparation": {
+          "monomial_word_pairs": 105444,
+          "CAR_word_products": 210888,
+          "monomial_map_nonzeros": 48672,
+          "max_surviving_degree": 4
+        },
+        "base_map_nonzeros": 6180,
+        "pricing_map_nonzeros": 48672,
+        "spin_frame_dimensions": [
+          30,
+          30,
+          93,
+          93,
+          93,
+          93,
+          30,
+          30
+        ],
+        "base_Gram_dimensions": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          6,
+          9,
+          18,
+          18,
+          6,
+          9,
+          6,
+          9,
+          18,
+          18,
+          6,
+          9,
+          18,
+          18,
+          36,
+          36,
+          18,
+          18
+        ],
+        "fixture_sha256": "7f3981b02949ea3a6df91612b57784823942e9d1fc2f201e31ecb6a1849e578a",
+        "tail_sha256": "70a64d2d1d5c05cca5ed77ec3b7b7cd409eac4e894a136d4baee63f16d427c9c",
+        "symmetry": {
+          "original_dimensions": [
+            12,
+            12,
+            66,
+            66,
+            144
+          ],
+          "symmetry_dimensions": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            6,
+            9,
+            18,
+            18,
+            6,
+            9,
+            6,
+            9,
+            18,
+            18,
+            6,
+            9,
+            18,
+            18,
+            36,
+            36,
+            18,
+            18
+          ],
+          "parity_masks": [
+            819,
+            1365,
+            2457
+          ],
+          "alpha_charge_quotient": true
+        },
+        "many_body_states_enumerated": 0
+      },
+      "rule_construction": {
+        "seconds": 0.0065810419982881285,
+        "powers": [
+          0.5,
+          1.0
+        ],
+        "raw_symmetry_components": 108,
+        "accepted_directions": 108,
+        "dimensions": [
+          6,
+          6,
+          21,
+          21,
+          21,
+          21,
+          6,
+          6
+        ],
+        "removed": [],
+        "scope": "A recorded numerical template subspace, not an exact completeness or energy claim."
+      },
+      "tail": {
+        "lower_operator_shift_Ha": "-227/62500000000",
+        "upper_operator_shift_Ha": "178651/31250000000",
+        "tail_interval_width_Ha": "357529/62500000000",
+        "tail_interval_width_mHa": 0.005720464,
+        "factors": 10,
+        "factor_nonzeros": 105,
+        "coefficient_dimension": 21,
+        "modes": 12,
+        "particles": 6,
+        "number_centered": true,
+        "mismatch_paired_norm_Ha": "1/31250000000",
+        "mismatch_terms": 60,
+        "casimir_bound": "24",
+        "lower_psd": {
+          "dimension": 21,
+          "rank": 21
+        },
+        "upper_psd": {
+          "dimension": 21,
+          "rank": 21
+        },
+        "replay_seconds": 0.07747295900480822,
+        "many_body_states_enumerated": 0,
+        "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+      },
+      "canonical_operator_rank_checks": [
+        {
+          "dimension": 6,
+          "modular_rank": 6,
+          "canonical_monomials": 45
+        },
+        {
+          "dimension": 6,
+          "modular_rank": 6,
+          "canonical_monomials": 45
+        },
+        {
+          "dimension": 21,
+          "modular_rank": 21,
+          "canonical_monomials": 156
+        },
+        {
+          "dimension": 21,
+          "modular_rank": 21,
+          "canonical_monomials": 156
+        },
+        {
+          "dimension": 21,
+          "modular_rank": 21,
+          "canonical_monomials": 156
+        },
+        {
+          "dimension": 21,
+          "modular_rank": 21,
+          "canonical_monomials": 156
+        },
+        {
+          "dimension": 6,
+          "modular_rank": 6,
+          "canonical_monomials": 45
+        },
+        {
+          "dimension": 6,
+          "modular_rank": 6,
+          "canonical_monomials": 45
+        }
+      ],
+      "trials": [
+        {
+          "arm": "quadratic",
+          "accepted": true,
+          "complete_at_seconds": 7.337999916002445,
+          "inside_budget": true,
+          "lower_Ha": "-307027111148099694913119558688579/56250000000000000000000000000000",
+          "width_Ha": "24375983489744281503862832197683707351196610239221/1875000000086382836193750000000000000000000000000000",
+          "width_mHa": 13.000524527264671,
+          "trial_seconds": 2.0158926250005607,
+          "directions": 0,
+          "Gram_entries": 5724,
+          "anti_dimensions": [],
+          "certificate_bytes": 38210,
+          "constructed_map_nonzeros": 6180,
+          "construction_seconds": 0.002862250003090594,
+          "solve_seconds": 1.5119051250003395,
+          "export_seconds": 0.02346108399797231,
+          "accept_seconds": 0.4746055409996188,
+          "status": "optimal",
+          "expanded_certificate_bytes": 145492,
+          "factor_rows": 218,
+          "factor_nonzeros": 4140,
+          "direction_nonzeros": 0,
+          "maximum_factor_integer_bits": 32,
+          "maximum_direction_integer_bits": 0,
+          "factor_denominator": 10000000000,
+          "direction_denominator": 10000000000,
+          "exact_residual_penalty_mHa": 2.7636994576233238e-05,
+          "factor_rank_sum": 218,
+          "factor_rank_is_exact": true
+        },
+        {
+          "arm": "coupled",
+          "accepted": true,
+          "complete_at_seconds": 15.135737875003542,
+          "inside_budget": true,
+          "lower_Ha": "-5456944510851838194750639697952623636148188483709687661430743/1000000000000000000000000000000000000000000000000000000000000",
+          "width_Ha": "1168528163564664096676560224421322023153113160805217715825987444658527057565571/100000000004607084597000000000000000000000000000000000000000000000000000000000000",
+          "width_mHa": 11.68528163510829,
+          "trial_seconds": 7.797329875000287,
+          "directions": 108,
+          "Gram_entries": 7632,
+          "anti_dimensions": [
+            6,
+            6,
+            21,
+            21,
+            21,
+            21,
+            6,
+            6
+          ],
+          "certificate_bytes": 99115,
+          "constructed_map_nonzeros": 518034,
+          "construction_seconds": 0.29696216699812794,
+          "solve_seconds": 2.2378943750009057,
+          "export_seconds": 0.024442082998575643,
+          "accept_seconds": 5.231624375002866,
+          "status": "optimal_inaccurate",
+          "expanded_certificate_bytes": 849727,
+          "factor_rows": 300,
+          "factor_nonzeros": 5519,
+          "direction_nonzeros": 2892,
+          "maximum_factor_integer_bits": 33,
+          "maximum_direction_integer_bits": 34,
+          "factor_denominator": 10000000000,
+          "direction_denominator": 10000000000,
+          "exact_residual_penalty_mHa": 0.0014918568381947505,
+          "factor_rank_sum": 300,
+          "factor_rank_is_exact": true
+        },
+        {
+          "arm": "separate",
+          "accepted": true,
+          "complete_at_seconds": 20.971353875000204,
+          "inside_budget": true,
+          "lower_Ha": "-2456216889144650278209503793145881147604781715708331184865943/450000000000000000000000000000000000000000000000000000000000",
+          "width_Ha": "195007866579711548787492805374344808297878259985263924193795182123548501726657/15000000000691062689550000000000000000000000000000000000000000000000000000000000",
+          "width_mHa": 13.000524438048492,
+          "trial_seconds": 5.835045334002643,
+          "directions": 108,
+          "Gram_entries": 5832,
+          "anti_dimensions": [
+            6,
+            6,
+            21,
+            21,
+            21,
+            21,
+            6,
+            6
+          ],
+          "certificate_bytes": 88884,
+          "constructed_map_nonzeros": 508176,
+          "construction_seconds": 0.2883368340044399,
+          "solve_seconds": 1.9666847909975331,
+          "export_seconds": 0.024774792000243906,
+          "accept_seconds": 3.5505214169970714,
+          "status": "optimal",
+          "expanded_certificate_bytes": 642941,
+          "factor_rows": 310,
+          "factor_nonzeros": 4228,
+          "direction_nonzeros": 2892,
+          "maximum_factor_integer_bits": 32,
+          "maximum_direction_integer_bits": 34,
+          "factor_denominator": 10000000000,
+          "direction_denominator": 10000000000,
+          "exact_residual_penalty_mHa": 2.578677839602112e-05,
+          "factor_rank_sum": 310,
+          "factor_rank_is_exact": true
+        }
+      ]
+    },
+    {
+      "case": "h6_train",
+      "discovery_seconds_including_failed_attempts": 21.540136458002962,
+      "model_construction": {
+        "construction_seconds": 4.220401625003433,
+        "coefficient_rows": 919,
+        "base_preparation": {
+          "monomial_word_pairs": 5724,
+          "monomial_map_nonzeros": 6246
+        },
+        "spin_preparation": {
+          "monomial_word_pairs": 105444,
+          "CAR_word_products": 210888,
+          "monomial_map_nonzeros": 48672,
+          "max_surviving_degree": 4
+        },
+        "base_map_nonzeros": 6180,
+        "pricing_map_nonzeros": 48672,
+        "spin_frame_dimensions": [
+          30,
+          30,
+          93,
+          93,
+          93,
+          93,
+          30,
+          30
+        ],
+        "base_Gram_dimensions": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          6,
+          9,
+          18,
+          18,
+          6,
+          9,
+          6,
+          9,
+          18,
+          18,
+          6,
+          9,
+          18,
+          18,
+          36,
+          36,
+          18,
+          18
+        ],
+        "fixture_sha256": "99b91888d68ba7ea1d43c0b6c68594190521406c5b454b98933cbeba7d8f89df",
+        "tail_sha256": "7176d95d7bbce5cdef61b50e9950d765154acf9e5fcda10b864c1e803a2e29c5",
+        "symmetry": {
+          "original_dimensions": [
+            12,
+            12,
+            66,
+            66,
+            144
+          ],
+          "symmetry_dimensions": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            6,
+            9,
+            18,
+            18,
+            6,
+            9,
+            6,
+            9,
+            18,
+            18,
+            6,
+            9,
+            18,
+            18,
+            36,
+            36,
+            18,
+            18
+          ],
+          "parity_masks": [
+            819,
+            1365,
+            2457
+          ],
+          "alpha_charge_quotient": true
+        },
+        "many_body_states_enumerated": 0
+      },
+      "rule_construction": {
+        "seconds": 0.006873124999401625,
+        "powers": [
+          0.5,
+          1.0
+        ],
+        "raw_symmetry_components": 108,
+        "accepted_directions": 108,
+        "dimensions": [
+          6,
+          6,
+          21,
+          21,
+          21,
+          21,
+          6,
+          6
+        ],
+        "removed": [],
+        "scope": "A recorded numerical template subspace, not an exact completeness or energy claim."
+      },
+      "tail": {
+        "lower_operator_shift_Ha": "-227/62500000000",
+        "upper_operator_shift_Ha": "6770477/62500000000",
+        "tail_interval_width_Ha": "423169/3906250000",
+        "tail_interval_width_mHa": 0.108331264,
+        "factors": 10,
+        "factor_nonzeros": 105,
+        "coefficient_dimension": 21,
+        "modes": 12,
+        "particles": 6,
+        "number_centered": true,
+        "mismatch_paired_norm_Ha": "1/31250000000",
+        "mismatch_terms": 54,
+        "casimir_bound": "24",
+        "lower_psd": {
+          "dimension": 21,
+          "rank": 21
+        },
+        "upper_psd": {
+          "dimension": 21,
+          "rank": 21
+        },
+        "replay_seconds": 0.1274269589994219,
+        "many_body_states_enumerated": 0,
+        "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+      },
+      "canonical_operator_rank_checks": [
+        {
+          "dimension": 6,
+          "modular_rank": 6,
+          "canonical_monomials": 45
+        },
+        {
+          "dimension": 6,
+          "modular_rank": 6,
+          "canonical_monomials": 45
+        },
+        {
+          "dimension": 21,
+          "modular_rank": 21,
+          "canonical_monomials": 156
+        },
+        {
+          "dimension": 21,
+          "modular_rank": 21,
+          "canonical_monomials": 156
+        },
+        {
+          "dimension": 21,
+          "modular_rank": 21,
+          "canonical_monomials": 156
+        },
+        {
+          "dimension": 21,
+          "modular_rank": 21,
+          "canonical_monomials": 156
+        },
+        {
+          "dimension": 6,
+          "modular_rank": 6,
+          "canonical_monomials": 45
+        },
+        {
+          "dimension": 6,
+          "modular_rank": 6,
+          "canonical_monomials": 45
+        }
+      ],
+      "trials": [
+        {
+          "arm": "quadratic",
+          "accepted": true,
+          "complete_at_seconds": 7.397607083003095,
+          "inside_budget": true,
+          "lower_Ha": "-380764151731617449436918498428423/60000000000000000000000000000000",
+          "width_Ha": "5204227717655597551067012355084702211554113198443/400000000005595184460000000000000000000000000000000",
+          "width_mHa": 13.010569293957003,
+          "trial_seconds": 1.9621040829952108,
+          "directions": 0,
+          "Gram_entries": 5724,
+          "anti_dimensions": [],
+          "certificate_bytes": 40628,
+          "constructed_map_nonzeros": 6180,
+          "construction_seconds": 0.0031020419992273673,
+          "solve_seconds": 1.464675208000699,
+          "export_seconds": 0.023688459004915785,
+          "accept_seconds": 0.4679242499987595,
+          "status": "optimal",
+          "expanded_certificate_bytes": 147493,
+          "factor_rows": 219,
+          "factor_nonzeros": 4134,
+          "direction_nonzeros": 0,
+          "maximum_factor_integer_bits": 32,
+          "maximum_direction_integer_bits": 0,
+          "factor_denominator": 10000000000,
+          "direction_denominator": 10000000000,
+          "exact_residual_penalty_mHa": 0.0002404589574906153,
+          "factor_rank_sum": 219,
+          "factor_rank_is_exact": true
+        },
+        {
+          "arm": "coupled",
+          "accepted": true,
+          "complete_at_seconds": 15.429257750001852,
+          "inside_budget": true,
+          "lower_Ha": "-28556097077369193014413781731147834223268293810489687686187929/4500000000000000000000000000000000000000000000000000000000000",
+          "width_Ha": "382221728809951956521161972662370614321129736742700040238961425533534283006389/30000000000419638834500000000000000000000000000000000000000000000000000000000000",
+          "width_mHa": 12.74072429348685,
+          "trial_seconds": 8.03134029199282,
+          "directions": 108,
+          "Gram_entries": 7632,
+          "anti_dimensions": [
+            6,
+            6,
+            21,
+            21,
+            21,
+            21,
+            6,
+            6
+          ],
+          "certificate_bytes": 103457,
+          "constructed_map_nonzeros": 518034,
+          "construction_seconds": 0.29954879200522555,
+          "solve_seconds": 2.3926256659979117,
+          "export_seconds": 0.026957916998071596,
+          "accept_seconds": 5.306108707998646,
+          "status": "optimal_inaccurate",
+          "expanded_certificate_bytes": 895899,
+          "factor_rows": 309,
+          "factor_nonzeros": 5748,
+          "direction_nonzeros": 2892,
+          "maximum_factor_integer_bits": 32,
+          "maximum_direction_integer_bits": 34,
+          "factor_denominator": 10000000000,
+          "direction_denominator": 10000000000,
+          "exact_residual_penalty_mHa": 0.008084517487336537,
+          "factor_rank_sum": 309,
+          "factor_rank_is_exact": true
+        },
+        {
+          "arm": "separate",
+          "accepted": true,
+          "complete_at_seconds": 21.156097708000743,
+          "inside_budget": true,
+          "lower_Ha": "-1586517290466684163678580593531170740397321618667718018367833/250000000000000000000000000000000000000000000000000000000000",
+          "width_Ha": "65052678169590787529218682595039336535591525968249774676243088001684688273759/5000000000069939805750000000000000000000000000000000000000000000000000000000000",
+          "width_mHa": 13.010535633736167,
+          "trial_seconds": 5.726276291999966,
+          "directions": 108,
+          "Gram_entries": 5832,
+          "anti_dimensions": [
+            6,
+            6,
+            21,
+            21,
+            21,
+            21,
+            6,
+            6
+          ],
+          "certificate_bytes": 91499,
+          "constructed_map_nonzeros": 508218,
+          "construction_seconds": 0.2845541670030798,
+          "solve_seconds": 1.7938096660000156,
+          "export_seconds": 0.025546624994603917,
+          "accept_seconds": 3.6180973750015255,
+          "status": "optimal",
+          "expanded_certificate_bytes": 640722,
+          "factor_rows": 309,
+          "factor_nonzeros": 4229,
+          "direction_nonzeros": 2892,
+          "maximum_factor_integer_bits": 32,
+          "maximum_direction_integer_bits": 34,
+          "factor_denominator": 10000000000,
+          "direction_denominator": 10000000000,
+          "exact_residual_penalty_mHa": 0.00018026173665471433,
+          "factor_rank_sum": 309,
+          "factor_rank_is_exact": true
+        }
+      ]
+    },
+    {
+      "case": "h8_heldout",
+      "discovery_seconds_including_failed_attempts": 131.47714062500017,
+      "model_construction": {
+        "construction_seconds": 23.349833374995796,
+        "coefficient_rows": 2913,
+        "base_preparation": {
+          "monomial_word_pairs": 18112,
+          "monomial_map_nonzeros": 19288
+        },
+        "spin_preparation": {
+          "monomial_word_pairs": 603712,
+          "CAR_word_products": 1207424,
+          "monomial_map_nonzeros": 213760,
+          "max_surviving_degree": 4
+        },
+        "base_map_nonzeros": 19168,
+        "pricing_map_nonzeros": 213760,
+        "spin_frame_dimensions": [
+          56,
+          56,
+          172,
+          172,
+          172,
+          172,
+          56,
+          56
+        ],
+        "base_Gram_dimensions": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          12,
+          16,
+          32,
+          32,
+          12,
+          16,
+          12,
+          16,
+          32,
+          32,
+          12,
+          16,
+          32,
+          32,
+          64,
+          64,
+          32,
+          32
+        ],
+        "fixture_sha256": "22905765c6591d88acb76653755c364a78d7ed8024df4893f0400f1ec91b0edf",
+        "tail_sha256": "228e03f538c7783f1566bb3f9b7bb1349f5bbfcb27eae35abfd2557d9a6690de",
+        "symmetry": {
+          "original_dimensions": [
+            16,
+            16,
+            120,
+            120,
+            256
+          ],
+          "symmetry_dimensions": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            12,
+            16,
+            32,
+            32,
+            12,
+            16,
+            12,
+            16,
+            32,
+            32,
+            12,
+            16,
+            32,
+            32,
+            64,
+            64,
+            32,
+            32
+          ],
+          "parity_masks": [
+            13107,
+            21845,
+            39321
+          ],
+          "alpha_charge_quotient": true
+        },
+        "many_body_states_enumerated": 0
+      },
+      "rule_construction": {
+        "seconds": 0.015611417002219241,
+        "powers": [
+          0.5,
+          1.0
+        ],
+        "raw_symmetry_components": 144,
+        "accepted_directions": 144,
+        "dimensions": [
+          8,
+          8,
+          28,
+          28,
+          28,
+          28,
+          8,
+          8
+        ],
+        "removed": [],
+        "scope": "A recorded numerical template subspace, not an exact completeness or energy claim."
+      },
+      "tail": {
+        "lower_operator_shift_Ha": "-2031/250000000000",
+        "upper_operator_shift_Ha": "46789531/250000000000",
+        "tail_interval_width_Ha": "23395781/125000000000",
+        "tail_interval_width_mHa": 0.187166248,
+        "factors": 14,
+        "factor_nonzeros": 252,
+        "coefficient_dimension": 36,
+        "modes": 16,
+        "particles": 8,
+        "number_centered": true,
+        "mismatch_paired_norm_Ha": "31/250000000000",
+        "mismatch_terms": 236,
+        "casimir_bound": "40",
+        "lower_psd": {
+          "dimension": 36,
+          "rank": 36
+        },
+        "upper_psd": {
+          "dimension": 36,
+          "rank": 36
+        },
+        "replay_seconds": 0.40361324999685166,
+        "many_body_states_enumerated": 0,
+        "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+      },
+      "canonical_operator_rank_checks": [
+        {
+          "dimension": 8,
+          "modular_rank": 8,
+          "canonical_monomials": 112
+        },
+        {
+          "dimension": 8,
+          "modular_rank": 8,
+          "canonical_monomials": 112
+        },
+        {
+          "dimension": 28,
+          "modular_rank": 28,
+          "canonical_monomials": 372
+        },
+        {
+          "dimension": 28,
+          "modular_rank": 28,
+          "canonical_monomials": 372
+        },
+        {
+          "dimension": 28,
+          "modular_rank": 28,
+          "canonical_monomials": 372
+        },
+        {
+          "dimension": 28,
+          "modular_rank": 28,
+          "canonical_monomials": 372
+        },
+        {
+          "dimension": 8,
+          "modular_rank": 8,
+          "canonical_monomials": 112
+        },
+        {
+          "dimension": 8,
+          "modular_rank": 8,
+          "canonical_monomials": 112
+        }
+      ],
+      "trials": [
+        {
+          "arm": "quadratic",
+          "accepted": true,
+          "complete_at_seconds": 39.91138050000154,
+          "inside_budget": true,
+          "lower_Ha": "-3711618909127965898116304670725641/400000000000000000000000000000000",
+          "width_Ha": "26849468455985234742870972821240534953260803517359/998283574961809199600000000000000000000000000000000",
+          "width_mHa": 26.895632793530034,
+          "trial_seconds": 15.31983549999859,
+          "directions": 0,
+          "Gram_entries": 18112,
+          "anti_dimensions": [],
+          "certificate_bytes": 109937,
+          "constructed_map_nonzeros": 19168,
+          "construction_seconds": 0.003236166994611267,
+          "solve_seconds": 13.50669120800012,
+          "export_seconds": 0.07713375000457745,
+          "accept_seconds": 1.7188484590005828,
+          "status": "optimal",
+          "expanded_certificate_bytes": 451850,
+          "factor_rows": 390,
+          "factor_nonzeros": 13347,
+          "direction_nonzeros": 0,
+          "maximum_factor_integer_bits": 32,
+          "maximum_direction_integer_bits": 0,
+          "factor_denominator": 10000000000,
+          "direction_denominator": 10000000000,
+          "exact_residual_penalty_mHa": 8.955491474529076e-05,
+          "factor_rank_sum": 390,
+          "factor_rank_is_exact": true
+        },
+        {
+          "arm": "coupled",
+          "accepted": true,
+          "complete_at_seconds": 92.04087516699656,
+          "inside_budget": true,
+          "lower_Ha": "-593845021619781312113496506296891273190783344781578326700792697/64000000000000000000000000000000000000000000000000000000000000",
+          "width_Ha": "4260965442581550340849315311843760922787341810201320702969123557639526467738303/159725371993889471936000000000000000000000000000000000000000000000000000000000000",
+          "width_mHa": 26.67682278269829,
+          "trial_seconds": 52.12900337499741,
+          "directions": 144,
+          "Gram_entries": 21504,
+          "anti_dimensions": [
+            8,
+            8,
+            28,
+            28,
+            28,
+            28,
+            8,
+            8
+          ],
+          "certificate_bytes": 252404,
+          "constructed_map_nonzeros": 2848360,
+          "construction_seconds": 2.2494928329979302,
+          "solve_seconds": 18.808536084005027,
+          "export_seconds": 0.08094491600058973,
+          "accept_seconds": 30.92210916699696,
+          "status": "optimal_inaccurate",
+          "expanded_certificate_bytes": 2771398,
+          "factor_rows": 505,
+          "factor_nonzeros": 15895,
+          "direction_nonzeros": 7184,
+          "maximum_factor_integer_bits": 32,
+          "maximum_direction_integer_bits": 34,
+          "factor_denominator": 10000000000,
+          "direction_denominator": 10000000000,
+          "exact_residual_penalty_mHa": 0.009093385083001773,
+          "factor_rank_sum": 505,
+          "factor_rank_is_exact": true
+        },
+        {
+          "arm": "separate",
+          "accepted": true,
+          "complete_at_seconds": 130.79188987499947,
+          "inside_budget": true,
+          "lower_Ha": "-296929518452401968444099646971160700485674354327009280362528981/32000000000000000000000000000000000000000000000000000000000000",
+          "width_Ha": "2147971757336393371700932957035694512892919637027427832452598596285227618534019/79862685996944735968000000000000000000000000000000000000000000000000000000000000",
+          "width_mHa": 26.895811611176804,
+          "trial_seconds": 38.75050054099847,
+          "directions": 144,
+          "Gram_entries": 18256,
+          "anti_dimensions": [
+            8,
+            8,
+            28,
+            28,
+            28,
+            28,
+            8,
+            8
+          ],
+          "certificate_bytes": 231060,
+          "constructed_map_nonzeros": 2818184,
+          "construction_seconds": 2.0278130840015365,
+          "solve_seconds": 15.833227082999656,
+          "export_seconds": 0.07472145800420549,
+          "accept_seconds": 20.785231208996265,
+          "status": "optimal",
+          "expanded_certificate_bytes": 2121318,
+          "factor_rows": 517,
+          "factor_nonzeros": 13393,
+          "direction_nonzeros": 7184,
+          "maximum_factor_integer_bits": 32,
+          "maximum_direction_integer_bits": 34,
+          "factor_denominator": 10000000000,
+          "direction_denominator": 10000000000,
+          "exact_residual_penalty_mHa": 0.0002751835615138781,
+          "factor_rank_sum": 517,
+          "factor_rank_is_exact": true
+        }
+      ]
+    }
+  ],
+  "modular_rank_method": "Rational coefficients reduced modulo 2^61-1 using invertible denominators and pivots. Full row rank modulo this integer proves full row rank over Q; no primality assumption is needed for this conclusion.",
+  "rank_and_ledger_seconds": 2.4936672920011915,
+  "scope": "Discovery includes all three controls, failed setup attempts and corrected cases. Prior full-family diagnostics remain in the frozen ledger. Timed cases ran sequentially; verification follows discovery.",
+  "fresh_interval_replay_seconds": 80.45665920799365,
+  "identity_check_seconds": 0.6572943749997648,
+  "verification_overlap": "The 0.657-second exact identity check overlapped fresh interval replay after all discovery. Do not add those wall times as calendar elapsed."
+}

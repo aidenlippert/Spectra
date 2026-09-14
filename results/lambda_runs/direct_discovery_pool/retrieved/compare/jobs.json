@@ -1,0 +1,140 @@
+[
+  {
+    "label": "square_pair256",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/direct_pair_sdp.py",
+      "--fixture",
+      "results/marginal_molecule_stress/h4_square_degree3_certificate.json",
+      "--budget",
+      "256",
+      "--outputdir",
+      "/home/ubuntu/spectra-direct-results/compare/square_pair256"
+    ],
+    "wall_seconds": 1.0159059119999938,
+    "exit_code": 0,
+    "timed_out": false
+  },
+  {
+    "label": "square_quadratic",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/direct_quadratic_baseline.py",
+      "--fixture",
+      "results/marginal_molecule_stress/h4_square_degree3_certificate.json",
+      "--outputdir",
+      "/home/ubuntu/spectra-direct-results/compare/square_quadratic"
+    ],
+    "wall_seconds": 1.5670221949999927,
+    "exit_code": 0,
+    "timed_out": false
+  },
+  {
+    "label": "rectangle_pair256",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/direct_pair_sdp.py",
+      "--fixture",
+      "results/marginal_molecule/h4_compact_certificate.json",
+      "--budget",
+      "256",
+      "--outputdir",
+      "/home/ubuntu/spectra-direct-results/compare/rectangle_pair256"
+    ],
+    "wall_seconds": 0.9656415139999979,
+    "exit_code": 0,
+    "timed_out": false
+  },
+  {
+    "label": "rectangle_quadratic",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/direct_quadratic_baseline.py",
+      "--fixture",
+      "results/marginal_molecule/h4_compact_certificate.json",
+      "--outputdir",
+      "/home/ubuntu/spectra-direct-results/compare/rectangle_quadratic"
+    ],
+    "wall_seconds": 1.7712004970000237,
+    "exit_code": 0,
+    "timed_out": false
+  },
+  {
+    "label": "square_pair1024",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/direct_pair_sdp.py",
+      "--fixture",
+      "results/marginal_molecule_stress/h4_square_degree3_certificate.json",
+      "--budget",
+      "1024",
+      "--outputdir",
+      "/home/ubuntu/spectra-direct-results/compare/square_pair1024"
+    ],
+    "wall_seconds": 3.3257301209999923,
+    "exit_code": 0,
+    "timed_out": false
+  },
+  {
+    "label": "rectangle_pair1024",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/direct_pair_sdp.py",
+      "--fixture",
+      "results/marginal_molecule/h4_compact_certificate.json",
+      "--budget",
+      "1024",
+      "--outputdir",
+      "/home/ubuntu/spectra-direct-results/compare/rectangle_pair1024"
+    ],
+    "wall_seconds": 1.466844352999999,
+    "exit_code": 0,
+    "timed_out": false
+  },
+  {
+    "label": "h6_pair256",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/direct_pair_sdp.py",
+      "--fixture",
+      "results/marginal_h6/fixture.json",
+      "--budget",
+      "256",
+      "--outputdir",
+      "/home/ubuntu/spectra-direct-results/compare/h6_pair256"
+    ],
+    "wall_seconds": 2.1170069789999957,
+    "exit_code": 0,
+    "timed_out": false
+  },
+  {
+    "label": "h6_pair1024",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/direct_pair_sdp.py",
+      "--fixture",
+      "results/marginal_h6/fixture.json",
+      "--budget",
+      "1024",
+      "--outputdir",
+      "/home/ubuntu/spectra-direct-results/compare/h6_pair1024"
+    ],
+    "wall_seconds": 5.173735992000019,
+    "exit_code": 0,
+    "timed_out": false
+  },
+  {
+    "label": "h6_quadratic",
+    "command": [
+      "/home/ubuntu/spectra-venv/bin/python",
+      "research/certificate_scaling/direct_quadratic_baseline.py",
+      "--fixture",
+      "results/marginal_h6/fixture.json",
+      "--outputdir",
+      "/home/ubuntu/spectra-direct-results/compare/h6_quadratic"
+    ],
+    "wall_seconds": 23.761277356999983,
+    "exit_code": 0,
+    "timed_out": false
+  }
+]

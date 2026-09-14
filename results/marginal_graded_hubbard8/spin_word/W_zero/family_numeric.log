@@ -1,0 +1,13 @@
+{"resumed_candidates": 11838, "additional_pricing_rounds": 40}
+{"round": 0, "sampled_upper": -0.6420845145201501, "minimum_reduced_eigenvalue": -0.0017019784383527359, "added": 8, "trust_dual_objective": -0.6428678890165423, "candidate_dual_violation": 8.881784197001252e-16, "center_step_max": 0.050000000000000044}
+{"round": 1, "sampled_upper": -0.6420941501510851, "minimum_reduced_eigenvalue": -0.002394223436245735, "added": 8, "trust_dual_objective": -0.6428604180062479, "candidate_dual_violation": 8.881784197001252e-16, "center_step_max": 0.10000000000000009}
+{"round": 2, "sampled_upper": -0.6421473140874875, "minimum_reduced_eigenvalue": -0.0030206658743887616, "added": 8, "trust_dual_objective": -0.6428553299684046, "candidate_dual_violation": 1.7763568394002505e-15, "center_step_max": 0.15000000000000013}
+{"round": 3, "sampled_upper": -0.6422229741902299, "minimum_reduced_eigenvalue": -0.0027095178025708933, "added": 8, "trust_dual_objective": -0.6428512612472452, "candidate_dual_violation": 3.552713678800501e-15, "center_step_max": 0.20000000000000018}
+Traceback (most recent call last):
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spin_word_family_resume.py", line 137, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/results/marginal_graded_hubbard8/discovery/spin_word_family_resume.py", line 92, in main
+    if not stabilized.success:raise ValueError('Candidate-feasible trust LP failed: '+stabilized.message)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Candidate-feasible trust LP failed: The HiGHS status code was not recognized. (HiGHS Status 15: model_status is Unknown; primal_status is Basic)

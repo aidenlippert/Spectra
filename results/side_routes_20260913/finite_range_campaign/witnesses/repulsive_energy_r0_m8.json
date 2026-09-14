@@ -1,0 +1,85 @@
+{
+  "case": "repulsive",
+  "objective": "energy",
+  "radius": 0,
+  "modes": 8,
+  "training_modes": 12,
+  "weights": [
+    "1",
+    "3089/2048",
+    "1"
+  ],
+  "origin": {
+    "search_radius": 0,
+    "seed": 43,
+    "candidate": "optimized"
+  },
+  "model": {
+    "modes": 8,
+    "particles": 4,
+    "hopping": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "interaction": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "fields": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "energy_unit": "t_reference=1; abstract lattice model"
+  },
+  "amplitude": {
+    "sites": [
+      "3089/2048",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "3089/2048"
+    ],
+    "pairs": []
+  },
+  "claim": {
+    "method": "fixed_N_finite_pair_range_local_energy_DP_v1",
+    "lower": "-45367585/6326272",
+    "upper": "-1665879027781445/646095066587843",
+    "width": "18772969002663649646115/4087373129092806711296",
+    "lower_float": -7.171298515144464,
+    "upper_float": -2.5783806655254073,
+    "width_float": 4.592917849619057,
+    "partition": "3230475332939215/17592186044416",
+    "minimum_configuration": "01010101",
+    "modes": 8,
+    "particles": 4,
+    "pair_range": 0,
+    "tail_memory_bits": 1,
+    "dp_transitions": 64,
+    "peak_dp_states": 8,
+    "factor_table_entries": 44,
+    "peak_dp_rational_bits": 53,
+    "many_body_states_enumerated": 0,
+    "wall_seconds": 0.001436656999430852,
+    "scope": "Exact supplied-chain interval; no global discovery optimum or generic accuracy guarantee."
+  }
+}

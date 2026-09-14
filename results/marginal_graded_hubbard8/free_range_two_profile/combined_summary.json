@@ -1,0 +1,137 @@
+{
+  "accepted": true,
+  "rows": [
+    {
+      "case": "W_zero",
+      "target": {
+        "U": "4",
+        "t": "1",
+        "V": "1/2",
+        "W": "0"
+      },
+      "lower": "-16085749950242207/25000000000000000",
+      "upper": "-253439324936987379262958414260830114148999357453/415014149738705361509281018736480468611891200000",
+      "lower_float": -0.6434299980096883,
+      "upper_float": -0.6106763470511881,
+      "width_float": 0.032753650958500184,
+      "gain_from_previous_lower": "298394463951/3125000000000000",
+      "gain_float": 9.548622846432e-05,
+      "fraction_previous_width_closed": 0.0029068108523170504,
+      "same_physical_upper_recomputed": true,
+      "range_two_density_profile": [
+        "-39877/250000",
+        "39877/250000",
+        "39877/250000",
+        "-39877/250000"
+      ],
+      "free_profile_family_gap": 9.794610292439077e-08,
+      "mixture_sources": 19,
+      "profile_gradient": "0",
+      "remaining_quadratic_separator": {
+        "pair": [
+          0,
+          3
+        ],
+        "reflected_pair": [
+          1,
+          4
+        ],
+        "moment_float": -0.004784401291454263,
+        "support": 416
+      },
+      "exact_energy_seconds": 29.446922792001715,
+      "exact_family_seconds": 2.6470967089990154,
+      "source_hashes_checked": 81
+    },
+    {
+      "case": "W_plus_1_10",
+      "target": {
+        "U": "4",
+        "t": "1",
+        "V": "1/2",
+        "W": "1/10"
+      },
+      "lower": "-805083899511121/1250000000000000",
+      "upper": "-422934805860165353405573858896919548706348230509/691690249564508935848801697894134114353152000000",
+      "lower_float": -0.6440671196088968,
+      "upper_float": -0.6114511605830021,
+      "width_float": 0.032615959025894696,
+      "gain_from_previous_lower": "427976667233/3125000000000000",
+      "gain_float": 0.00013695253351456,
+      "fraction_previous_width_closed": 0.004181385012631534,
+      "same_physical_upper_recomputed": true,
+      "range_two_density_profile": [
+        "-67653/1000000",
+        "317653/1000000",
+        "317653/1000000",
+        "-67653/1000000"
+      ],
+      "free_profile_family_gap": 7.815154859454668e-08,
+      "mixture_sources": 19,
+      "profile_gradient": "0",
+      "remaining_quadratic_separator": {
+        "pair": [
+          0,
+          3
+        ],
+        "reflected_pair": [
+          1,
+          4
+        ],
+        "moment_float": -0.0041811892879441166,
+        "support": 416
+      },
+      "exact_energy_seconds": 30.449308541999926,
+      "exact_family_seconds": 2.751853374997154,
+      "source_hashes_checked": 81
+    },
+    {
+      "case": "W_minus_1_10",
+      "target": {
+        "U": "4",
+        "t": "1",
+        "V": "1/2",
+        "W": "-1/10"
+      },
+      "lower": "-160765741653047/250000000000000",
+      "upper": "-1265588831789377732412862565917542495370948883003/2075070748693526807546405093682402343059456000000",
+      "lower_float": -0.643062966612188,
+      "upper_float": -0.609901533519374,
+      "width_float": 0.033161433092813906,
+      "gain_from_previous_lower": "374889934051/6250000000000000",
+      "gain_float": 5.998238944816e-05,
+      "fraction_previous_width_closed": 0.001805533827424856,
+      "same_physical_upper_recomputed": true,
+      "range_two_density_profile": [
+        "-62583/250000",
+        "83/250000",
+        "83/250000",
+        "-62583/250000"
+      ],
+      "free_profile_family_gap": 1.1177187240864765e-07,
+      "mixture_sources": 19,
+      "profile_gradient": "0",
+      "remaining_quadratic_separator": {
+        "pair": [
+          0,
+          3
+        ],
+        "reflected_pair": [
+          1,
+          4
+        ],
+        "moment_float": -0.00533049067134383,
+        "support": 416
+      },
+      "exact_energy_seconds": 29.998923499999364,
+      "exact_family_seconds": 2.5739788329992734,
+      "source_hashes_checked": 81
+    }
+  ],
+  "scope": "Exact stronger compact certificates and free-profile family limits on three1D targets. The sparse-Y cap64 and maximum local PSD size200 are unchanged; the new exact dual has19 scalar rows and at most19 sources. No global representability/scaling claim.",
+  "full_tests_passed": 542,
+  "full_subtests_passed": 96,
+  "full_seconds": 392.73,
+  "focused_tests_passed": 19,
+  "focused_seconds": 13.85
+}

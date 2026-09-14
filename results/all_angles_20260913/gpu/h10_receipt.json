@@ -1,0 +1,39 @@
+{
+  "tag": "h10",
+  "n": 2126,
+  "assemble_seconds": 15.645769951002876,
+  "matrix_sha256": "7f85a67689545c136979a292eeb8f8432ff17a2911749dd196250f45d76faa2b",
+  "basis_sha256": "baee0a8d0c4f2cb4cb7eb71d76ab4c002cdc031e8d62937daf544441ba022cdb",
+  "cpu": {
+    "times": [
+      0.1480901359973359,
+      0.14765366500068922,
+      0.14660598900081823
+    ],
+    "median_seconds": 0.14765366500068922,
+    "energy": -12.287394769973911
+  },
+  "gpu": {
+    "times": [
+      0.21177720699779456,
+      0.2116481550001481,
+      0.21212374300012016
+    ],
+    "median_seconds": 0.21177720699779456,
+    "energy": -12.287394769973911
+  },
+  "upper_rational": "-12287394769979719925740411407189282017/1000000000000472615876545000000000000",
+  "upper_stats": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 442,
+    "hamiltonian_terms": 7150,
+    "word_state_checks": 3160300,
+    "contributing_word_state_pairs": 96360,
+    "action_cache_states": 0,
+    "replay_seconds": 0.5961429859999043,
+    "upper": "-12287394769979719925740411407189282017/1000000000000472615876545000000000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  },
+  "witness_support": 442,
+  "gpu_cpu_energy_absdiff": 0.0
+}

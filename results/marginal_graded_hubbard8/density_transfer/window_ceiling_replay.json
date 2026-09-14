@@ -1,0 +1,28 @@
+{
+  "accepted": true,
+  "target": {
+    "U": "4",
+    "t": "1",
+    "V": "1/2"
+  },
+  "physical_support": 400,
+  "norm": "11001990723239794642",
+  "uniform_centered_onsite": "1369574677206578977/11001990723239794642",
+  "uniform_positive_hopping": "6078591765676648728/5500995361619897321",
+  "uniform_density_correlation": "-615697219535066553/5500995361619897321",
+  "ring_trial_energy": "-21883746126186144303/5500995361619897321",
+  "profile_lower_ceiling": "-36472910210310240505/11001990723239794642",
+  "profile_density_ceiling": "-7294582042062048101/11001990723239794642",
+  "outward_profile_density_ceiling": "-66302383/100000000",
+  "pure_cyclic_state_exact": true,
+  "five_site_marginals_equal_entrywise": true,
+  "five_site_purity": "18944371668043716767569492377225268865/60521899937127249791237856901165954082",
+  "repeated_seven_site_extension_excluded": true,
+  "source_sha256": {
+    "results/marginal_graded_hubbard8/discovery/density_window_ceiling.py": "84fe94c3e6a5c59535be1a9e5d8d824a76f0dbd21199a7b2030cbc95be329276",
+    "results/marginal_graded_hubbard8/density_transfer/window_ceiling_certificate.json": "a45dedf9cda3d2899daedc307e334fc375baf675d9548e53f49fd83b0ac7621f",
+    "experiments/marginal_transfer_verify.py": "5f7bd4bd45adcb397942e09e37065486f9e72f022fe818d2d94ff98c32844bae",
+    "experiments/marginal_local_hubbard_block.py": "8bd8ffa948513e6b1073f9f1b970a4c87e6f04ca0150f9f407bf928147ce9257"
+  },
+  "scope": "Ceiling on ALL six-site onsite/hopping/density profile lower bounds with sums20,5,5/2, also allowing arbitrary Hermitian even five-site telescoping boundary corrections. The physical cyclic state makes the profile expectations identical and the boundary-correction expectation zero. Its two five-site marginals agree but are mixed; purity of the full six-site state excludes a seven-site state with that same pure marginal on both consecutive six-site windows. No profile sign or reflection restriction is needed for the ceiling. This finite-ring trial energy is NOT a bulk ground-energy bound."
+}

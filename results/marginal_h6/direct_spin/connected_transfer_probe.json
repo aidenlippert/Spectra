@@ -1,0 +1,73 @@
+{
+  "status": "exact_reference_gap_transfer_and_component_budget_probe",
+  "perturbation": [
+    {
+      "word": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "coefficient": "1/1000"
+    },
+    {
+      "word": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "coefficient": "1/1000"
+    },
+    {
+      "word": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "coefficient": "1/1000"
+    },
+    {
+      "word": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "coefficient": "1/1000"
+    }
+  ],
+  "component_dimensions": [
+    368
+  ],
+  "native_factor_gate_failure": "Invalid bounded complement block",
+  "reference_gamma": "-78311238763/12500000000",
+  "coefficient_norm_bound": "1/250",
+  "shifted_complement_lower": "-78361238763/12500000000",
+  "perturbed_symmetric_upper": "-1899917587867311761731178355012337/300000000000595530990000000000000",
+  "positive_gap_to_upper": "19247857551578438043325893782737/300000000000595530990000000000000",
+  "positive_gap_to_upper_float": 0.06415952517180076,
+  "reference_gap_replayed": true,
+  "reference_block_dimensions": [
+    200,
+    168
+  ],
+  "scope": "Q(Hs+deltaH)Q >= (gamma-eta)Q follows from the independently verified Hs complement certificate and exact coefficient norm. The direct connected-block proposer exceeds its256 dimension budget. No perturbed global lower/upper interval or response certificate has been exported."
+}

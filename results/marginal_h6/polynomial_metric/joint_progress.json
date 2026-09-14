@@ -1,0 +1,403 @@
+{
+  "status": "Four finite joint/vanishing gap and energy proofs accepted; general goal remains active.",
+  "report": "research/marginal_joint_metric.md",
+  "projector_degree_report": "research/marginal_projector_degree.md",
+  "tests_passed": 350,
+  "elapsed_seconds": 268.051,
+  "gap_and_obstruction_replays": [
+    "results/marginal_h6/polynomial_metric/joint_metric_proof/independent_replay.json",
+    "results/marginal_h6/polynomial_metric/joint_metric_transfer/proof/independent_replay.json",
+    "results/marginal_h6/polynomial_metric/vanishing_metric_proof/independent_replay.json",
+    "results/marginal_h6/polynomial_metric/vanishing_metric_transfer/proof/independent_replay.json",
+    "results/marginal_h6/polynomial_metric/quadratic_sos_obstruction/independent_replay.json",
+    "results/marginal_h6/polynomial_metric/localized_quadratic_sos_projected_obstruction/independent_replay.json"
+  ],
+  "energy_replays": [
+    {
+      "certificate": "results/marginal_h6/polynomial_metric/joint_metric_proof/energy_certificate.json",
+      "independent": "results/marginal_h6/polynomial_metric/joint_metric_proof/energy_independent_replay.json",
+      "width": "2295601526046809368899863277754891278619030352024684271985625639081299021722266140619542721428432624229670752569708911348438501594120482947631258185274695561509257974731861007719075509200876617311205888914697988127868245709362749612511779840455231748045362766130270627372000038693933458183187792261404940455920843328179864151330347356491928381678833211882105576244798761717516969344778224632121228831027423479751625617453118851405609438001608223103/309506217638389711781521511746888373372704528346449641442506190128728408534599334595182887126121097000958446233538392455119001278020037463085078160337666270722890688531520338850048431112178158059327853960352759655797195731204425344911510677038225960739504642688993819750684260544414958791113444099309774953462084710589800964087767659688428936212740699024999088140590711145068007179114905492848396934110965407310310694206569859855332327437255859375000000000000",
+      "width_float": 7.416980322924775e-12,
+      "retained_dimension": 20,
+      "response_dimension": 17,
+      "witness_support": 400,
+      "scope": "Existing witness and response reused and exactly rechecked; no new witness discovery."
+    },
+    {
+      "certificate": "results/marginal_h6/polynomial_metric/joint_metric_transfer/proof/energy_certificate.json",
+      "independent": "results/marginal_h6/polynomial_metric/joint_metric_transfer/proof/energy_independent_replay.json",
+      "width": "694954577539323988002693375595486871398803600567477389461801169590419151327284832268851935392772679219378830921302003406851903602570380333978797978661790983041138105825913657965225677422277273315410384015784965201796609731775669925452932041145910418343736870951653733812627956232047622171594636454083990848490193957100026855239947888294972546216230582981295608777173310871734775780611569272278361603820670599421091142802016730011353240805683901851/176860695724059107895009964016161483592647384795942037063835584949788612435727950142437934458593835247617026872468933007525757194585590139922617047149856881636821205194323938888785832353088910930645295204701826798812236634426290348180911791258595058424307543827915412464445443582176860423538152977555016448306893004323794621087688271346231469278541542620755993606671946852796874040687410917082881488098737666091932047642753442984767778217773437500000000000000",
+      "width_float": 3.9293895949815965e-12,
+      "retained_dimension": 20,
+      "response_dimension": 17,
+      "witness_support": 400,
+      "scope": "Existing witness and response reused and exactly rechecked; no new witness discovery."
+    },
+    {
+      "certificate": "results/marginal_h6/polynomial_metric/vanishing_metric_proof/energy_certificate.json",
+      "independent": "results/marginal_h6/polynomial_metric/vanishing_metric_proof/energy_independent_replay.json",
+      "width": "2295601526046809368899863277754891278619030352024684271985625639081299021722266140619542721428432624229670752569708911348438501594120482947631258185274695561509257974731861007719075509200876617311205888914697988127868245709362749612511779840455231748045362766130270627372000038693933458183187792261404940455920843328179864151330347356491928381678833211882105576244798761717516969344778224632121228831027423479751625617453118851405609438001608223103/309506217638389711781521511746888373372704528346449641442506190128728408534599334595182887126121097000958446233538392455119001278020037463085078160337666270722890688531520338850048431112178158059327853960352759655797195731204425344911510677038225960739504642688993819750684260544414958791113444099309774953462084710589800964087767659688428936212740699024999088140590711145068007179114905492848396934110965407310310694206569859855332327437255859375000000000000",
+      "width_float": 7.416980322924775e-12,
+      "retained_dimension": 20,
+      "response_dimension": 17,
+      "witness_support": 400,
+      "scope": "Existing witness and response reused and exactly rechecked; no new witness discovery."
+    },
+    {
+      "certificate": "results/marginal_h6/polynomial_metric/vanishing_metric_transfer/proof/energy_certificate.json",
+      "independent": "results/marginal_h6/polynomial_metric/vanishing_metric_transfer/proof/energy_independent_replay.json",
+      "width": "694954577539323988002693375595486871398803600567477389461801169590419151327284832268851935392772679219378830921302003406851903602570380333978797978661790983041138105825913657965225677422277273315410384015784965201796609731775669925452932041145910418343736870951653733812627956232047622171594636454083990848490193957100026855239947888294972546216230582981295608777173310871734775780611569272278361603820670599421091142802016730011353240805683901851/176860695724059107895009964016161483592647384795942037063835584949788612435727950142437934458593835247617026872468933007525757194585590139922617047149856881636821205194323938888785832353088910930645295204701826798812236634426290348180911791258595058424307543827915412464445443582176860423538152977555016448306893004323794621087688271346231469278541542620755993606671946852796874040687410917082881488098737666091932047642753442984767778217773437500000000000000",
+      "width_float": 3.9293895949815965e-12,
+      "retained_dimension": 20,
+      "response_dimension": 17,
+      "witness_support": 400,
+      "scope": "Existing witness and response reused and exactly rechecked; no new witness discovery."
+    }
+  ],
+  "new_stdlib_replay_count": 10,
+  "proofs": {
+    "joint_metric_proof": {
+      "target_lower": "-6.24",
+      "receipt": {
+        "complement_lower": "-156/25",
+        "weight_positivity": {
+          "lower": "999555127/1000000000000",
+          "residual_l1": "444873/1000000000000",
+          "positive_indicators": 276,
+          "charge_indicators": 8,
+          "number_multiplier_terms": 1364
+        },
+        "numerator_positivity": {
+          "lower": "61402933804626060341/3125000000000000000000",
+          "residual_l1": "1437914123939659/3125000000000000000000",
+          "positive_indicators": 280,
+          "charge_indicators": 31,
+          "number_multiplier_terms": 1364
+        },
+        "compilation": {
+          "polynomial_products": 290817,
+          "coefficient_products": 7992302,
+          "peak_terms": 1764,
+          "occupation_endpoint_evaluations": 0,
+          "metric_scale": 1000000000,
+          "numerator_scale": 300000000000000000000000,
+          "weight_terms": 567,
+          "numerator_terms": 1764,
+          "numerator_degree": 6,
+          "transition_groups": 1140,
+          "determinant_actions": 0,
+          "target_valence_exclusion": true
+        },
+        "verification_coefficient_products": 8022287,
+        "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+      },
+      "certificate_bytes": 785097,
+      "positive_atom_completions": {
+        "weight_proof": {
+          "400": 1,
+          "100": 1,
+          "80": 1,
+          "40": 7,
+          "60": 5,
+          "16": 74,
+          "36": 13,
+          "24": 62,
+          "10": 80,
+          "30": 32
+        },
+        "numerator_proof": {
+          "6": 4,
+          "4": 1,
+          "3": 266,
+          "8": 5,
+          "9": 4
+        }
+      }
+    },
+    "joint_metric_transfer/proof": {
+      "target_lower": "-6.24",
+      "receipt": {
+        "complement_lower": "-156/25",
+        "weight_positivity": {
+          "lower": "999555127/1000000000000",
+          "residual_l1": "444873/1000000000000",
+          "positive_indicators": 276,
+          "charge_indicators": 8,
+          "number_multiplier_terms": 1364
+        },
+        "numerator_positivity": {
+          "lower": "2947380861271604086469/150000000000000000000000",
+          "residual_l1": "28067878395913531/150000000000000000000000",
+          "positive_indicators": 357,
+          "charge_indicators": 41,
+          "number_multiplier_terms": 1364
+        },
+        "compilation": {
+          "polynomial_products": 290817,
+          "coefficient_products": 7992302,
+          "peak_terms": 1764,
+          "occupation_endpoint_evaluations": 0,
+          "metric_scale": 1000000000,
+          "numerator_scale": 300000000000000000000000,
+          "weight_terms": 567,
+          "numerator_terms": 1764,
+          "numerator_degree": 6,
+          "transition_groups": 1140,
+          "determinant_actions": 0,
+          "target_valence_exclusion": true
+        },
+        "verification_coefficient_products": 8023796,
+        "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+      },
+      "certificate_bytes": 793788,
+      "positive_atom_completions": {
+        "weight_proof": {
+          "400": 1,
+          "100": 1,
+          "80": 1,
+          "40": 7,
+          "60": 5,
+          "16": 74,
+          "36": 13,
+          "24": 62,
+          "10": 80,
+          "30": 32
+        },
+        "numerator_proof": {
+          "16": 1,
+          "30": 1,
+          "6": 8,
+          "18": 11,
+          "12": 18,
+          "4": 5,
+          "20": 1,
+          "3": 270,
+          "9": 31,
+          "8": 11
+        }
+      }
+    },
+    "vanishing_metric_proof": {
+      "target_lower": "-6.264",
+      "receipt": {
+        "complement_lower": "-783/125",
+        "weight_positivity": {
+          "lower": "999312001/1000000000000",
+          "residual_l1": "687999/1000000000000",
+          "positive_indicators": 349,
+          "charge_indicators": 51,
+          "number_multiplier_terms": 1364
+        },
+        "numerator_positivity": {
+          "lower": "1369985018722291018193/100000000000000000000000",
+          "residual_l1": "202953977708981807/100000000000000000000000",
+          "positive_indicators": 294,
+          "charge_indicators": 15,
+          "number_multiplier_terms": 1364
+        },
+        "compilation": {
+          "polynomial_products": 1120337,
+          "coefficient_products": 10200892,
+          "peak_terms": 1764,
+          "occupation_endpoint_evaluations": 0,
+          "metric_scale": 2000000000,
+          "numerator_scale": 600000000000000000000000,
+          "weight_terms": 1640,
+          "numerator_terms": 1764,
+          "numerator_degree": 6,
+          "transition_groups": 1140,
+          "determinant_actions": 0,
+          "target_valence_exclusion": true,
+          "projector_free_zero_metric": true
+        },
+        "verification_coefficient_products": 10236800,
+        "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+      },
+      "certificate_bytes": 830930,
+      "positive_atom_completions": {
+        "weight_proof": {
+          "60": 2,
+          "40": 1,
+          "16": 4,
+          "10": 3,
+          "30": 3,
+          "4": 22,
+          "12": 42,
+          "6": 5,
+          "18": 6,
+          "20": 1,
+          "3": 145,
+          "9": 80,
+          "8": 35
+        },
+        "numerator_proof": {
+          "16": 2,
+          "10": 1,
+          "4": 15,
+          "12": 8,
+          "6": 3,
+          "3": 233,
+          "9": 21,
+          "8": 11
+        }
+      }
+    },
+    "vanishing_metric_transfer/proof": {
+      "target_lower": "-6.264",
+      "receipt": {
+        "complement_lower": "-783/125",
+        "weight_positivity": {
+          "lower": "999312001/1000000000000",
+          "residual_l1": "687999/1000000000000",
+          "positive_indicators": 349,
+          "charge_indicators": 51,
+          "number_multiplier_terms": 1364
+        },
+        "numerator_positivity": {
+          "lower": "68509355319674991961/5000000000000000000000",
+          "residual_l1": "4990325008039/5000000000000000000000",
+          "positive_indicators": 379,
+          "charge_indicators": 19,
+          "number_multiplier_terms": 1364
+        },
+        "compilation": {
+          "polynomial_products": 1120337,
+          "coefficient_products": 10200892,
+          "peak_terms": 1764,
+          "occupation_endpoint_evaluations": 0,
+          "metric_scale": 2000000000,
+          "numerator_scale": 600000000000000000000000,
+          "weight_terms": 1640,
+          "numerator_terms": 1764,
+          "numerator_degree": 6,
+          "transition_groups": 1140,
+          "determinant_actions": 0,
+          "target_valence_exclusion": true,
+          "projector_free_zero_metric": true
+        },
+        "verification_coefficient_products": 10237968,
+        "scope": "Exact joint weighted-Q-row certificate: positive rational charge polynomial metric, exact target-valence exclusion, coherent signed CAR amplitudes, and global Boolean/localizer positivity decompositions on fixed spin populations and D>=1. No charge-pattern or occupation endpoint iteration in replay. Polynomial/atom counts may still scale combinatorially; no general representability claim."
+      },
+      "certificate_bytes": 839881,
+      "positive_atom_completions": {
+        "weight_proof": {
+          "60": 2,
+          "40": 1,
+          "16": 4,
+          "10": 3,
+          "30": 3,
+          "4": 22,
+          "12": 42,
+          "6": 5,
+          "18": 6,
+          "20": 1,
+          "3": 145,
+          "9": 80,
+          "8": 35
+        },
+        "numerator_proof": {
+          "120": 2,
+          "60": 1,
+          "16": 4,
+          "10": 1,
+          "30": 1,
+          "4": 25,
+          "12": 25,
+          "18": 4,
+          "6": 4,
+          "3": 223,
+          "9": 65,
+          "8": 24
+        }
+      }
+    }
+  },
+  "fixed_old_metric_obstructions": {
+    "quadratic_sos_obstruction": {
+      "functional_value": "-353762412083455376211182787708790589/5700000000000000000000000000000000000",
+      "functional_value_float": -0.062063581067272874,
+      "normalization": "1",
+      "minimum_atom": "0",
+      "max_abs_monomial_moment": "1",
+      "positive_indicators_checked": 86509,
+      "charge_indicators_checked": 9909,
+      "functional_states": 400,
+      "residual_l1_allowance_covered": true,
+      "square_degree": 2,
+      "moment_psd": {
+        "dimension": 79,
+        "rank": 54,
+        "nullity": 25,
+        "positive_semidefinite": true
+      },
+      "compilation": {
+        "polynomial_products": 290817,
+        "coefficient_products": 7992302,
+        "peak_terms": 1764,
+        "occupation_endpoint_evaluations": 0,
+        "metric_scale": 100000000,
+        "numerator_scale": 30000000000000000000000,
+        "weight_terms": 567,
+        "numerator_terms": 1764,
+        "numerator_degree": 6,
+        "transition_groups": 1140,
+        "determinant_actions": 0,
+        "target_valence_exclusion": true
+      },
+      "scope": "Exact finite separator for the fixed metric and threshold: nonsingleton occupation indicators of degree<=6, (D-1) indicators of degree<=4, arbitrary unlocalized polynomial squares through square_degree, optional (D-1)-localized polynomial squares through charge_square_degree, and all fixed-spin number identities. Includes coefficient-L1 residual allowances. No restriction on the number of admitted squares. Does not exclude other localizers, higher-degree squares, other metrics or general representability."
+    },
+    "localized_quadratic_sos_projected_obstruction": {
+      "functional_value": "-73727002635770845477402514636860001/5700000000000000000000000000000000000",
+      "functional_value_float": -0.01293456186592471,
+      "normalization": "1",
+      "minimum_atom": "0",
+      "max_abs_monomial_moment": "1",
+      "positive_indicators_checked": 86509,
+      "charge_indicators_checked": 9909,
+      "functional_states": 400,
+      "residual_l1_allowance_covered": true,
+      "square_degree": 2,
+      "moment_psd": {
+        "dimension": 79,
+        "rank": 54,
+        "nullity": 25,
+        "positive_semidefinite": true
+      },
+      "compilation": {
+        "polynomial_products": 290817,
+        "coefficient_products": 7992302,
+        "peak_terms": 1764,
+        "occupation_endpoint_evaluations": 0,
+        "metric_scale": 100000000,
+        "numerator_scale": 30000000000000000000000,
+        "weight_terms": 567,
+        "numerator_terms": 1764,
+        "numerator_degree": 6,
+        "transition_groups": 1140,
+        "determinant_actions": 0,
+        "target_valence_exclusion": true
+      },
+      "charge_square_degree": 2,
+      "charge_moment_psd": {
+        "dimension": 79,
+        "rank": 54,
+        "nullity": 25,
+        "positive_semidefinite": true
+      },
+      "scope": "Exact finite separator for the fixed metric and threshold: nonsingleton occupation indicators of degree<=6, (D-1) indicators of degree<=4, arbitrary unlocalized polynomial squares through square_degree, optional (D-1)-localized polynomial squares through charge_square_degree, and all fixed-spin number identities. Includes coefficient-L1 residual allowances. No restriction on the number of admitted squares. Does not exclude other localizers, higher-degree squares, other metrics or general representability."
+    }
+  },
+  "scaling_diagnostic": "results/marginal_h6/polynomial_metric/projector_scaling_diagnostic.json",
+  "discovery_scope": "Joint LPs and transfer LPs in400 explicit sector coordinates; no general compression claim.",
+  "remaining": [
+    "Replace explicit400-state metric/proof discovery and sector-sized number-ideal completion with controlled construction cost.",
+    "Control degree, atom count, coefficient bit size and accuracy as systems grow.",
+    "Remove explicit full-sector upper-witness and retained-response work.",
+    "Transfer accurate certificates across larger molecular families.",
+    "General physical marginal representability and thermodynamic, kinetic and synthesis modeling remain open."
+  ],
+  "latest_full_tests_passed": 353,
+  "latest_full_elapsed_seconds": 264.041,
+  "analytic_hubbard_followup": "results/marginal_hubbard_polynomial/progress.json",
+  "bounded_quotient_followup": "results/marginal_h6/polynomial_metric/bounded_quotient/progress.json"
+}

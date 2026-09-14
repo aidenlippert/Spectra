@@ -1,0 +1,19 @@
+{
+  "name": "sc_paired_tests",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-S",
+    "-c",
+    "from research.correlated_pair_20260913.self_consistent.test_builder import *; test_guide_exact_acceptance(); test_bad_moments_refused(); test_paired_cubic_exact_acceptance(); print(\"PASS\")"
+  ],
+  "timeout_seconds": 180,
+  "status": "passed",
+  "started_UTC": "2026-09-14T06:36:17.446914+00:00",
+  "pid": 18435,
+  "exit_code": 0,
+  "wall_seconds": 0.07732941600261256,
+  "child_user_seconds": 0.046824,
+  "child_system_seconds": 0.00977,
+  "peak_child_RSS_bytes": 17793024,
+  "finished_UTC": "2026-09-14T06:36:17.524860+00:00"
+}

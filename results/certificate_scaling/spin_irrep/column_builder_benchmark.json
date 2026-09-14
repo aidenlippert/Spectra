@@ -1,0 +1,45 @@
+{
+  "system": "H6",
+  "groups": 28,
+  "exact_all_columns_indices_counts_equal": true,
+  "cold_caches_each_run": true,
+  "runs": [
+    {
+      "builder": "reference",
+      "seconds": 16.02388195799722,
+      "word_product_cache": {
+        "hits": 447335,
+        "misses": 118297,
+        "maxsize": 100000,
+        "currsize": 100000
+      },
+      "adjoint_cache": {
+        "hits": 0,
+        "misses": 0,
+        "maxsize": 100000,
+        "currsize": 0
+      },
+      "columns": 28894,
+      "word_pairs": 246590
+    },
+    {
+      "builder": "cached_canonical_adjoint",
+      "seconds": 9.452409541001543,
+      "word_product_cache": {
+        "hits": 139560,
+        "misses": 107030,
+        "maxsize": 100000,
+        "currsize": 100000
+      },
+      "adjoint_cache": {
+        "hits": 579167,
+        "misses": 11323,
+        "maxsize": 100000,
+        "currsize": 11323
+      },
+      "columns": 28894,
+      "word_pairs": 246590
+    }
+  ],
+  "scope": "Exact symbolic column construction only; no solver speed or accuracy claim."
+}

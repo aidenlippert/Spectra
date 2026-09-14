@@ -1,0 +1,27 @@
+{
+  "kind": "hamiltonian_only_cisd_witness_v1",
+  "fixture": "/Users/aidenlippert/Documents/Spectra/results/certificate_scaling/active_space_ladder/h8/fixture.json",
+  "reference_state": 255,
+  "cisd_basis_size": 849,
+  "witness_support": 185,
+  "amplitude_scale": 1000000000000,
+  "upper": "-9202521547724778217328717060175067289/999999999999533478211157000000000000",
+  "upper_float": -9.202521547729072,
+  "discovery_seconds": 2.5684738749987446,
+  "matrix_entries": 720801,
+  "upper_replay": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 185,
+    "hamiltonian_terms": 2912,
+    "word_state_checks": 538720,
+    "contributing_word_state_pairs": 24884,
+    "action_cache_states": 0,
+    "replay_seconds": 0.09704483300447464,
+    "upper": "-9202521547724778217328717060175067289/999999999999533478211157000000000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  },
+  "discovery_inputs": [
+    "fixture Hamiltonian only"
+  ],
+  "validation_note": "FCI/scoreboard values are not used for discovery; compare externally after freeze. CISD means at most two particle-hole substitutions from lowest-diagonal determinant."
+}

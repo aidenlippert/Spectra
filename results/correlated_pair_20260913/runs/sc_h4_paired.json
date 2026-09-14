@@ -1,0 +1,24 @@
+{
+  "name": "sc_h4_paired",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-S",
+    "-m",
+    "research.correlated_pair_20260913.self_consistent.run_builder",
+    "--paired",
+    "--fixture",
+    "results/molecular_collective_20260913/campaign/h4/fixture.json",
+    "--out",
+    "results/correlated_pair_20260913/self_consistent/h4_paired"
+  ],
+  "timeout_seconds": 180,
+  "status": "failed",
+  "started_UTC": "2026-09-14T06:35:47.743129+00:00",
+  "pid": 18354,
+  "exit_code": 1,
+  "wall_seconds": 0.0772431250079535,
+  "child_user_seconds": 0.037079,
+  "child_system_seconds": 0.01103,
+  "peak_child_RSS_bytes": 18055168,
+  "finished_UTC": "2026-09-14T06:35:47.820919+00:00"
+}

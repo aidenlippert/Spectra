@@ -1,0 +1,55 @@
+{
+  "preserved_file_count": 9643,
+  "changes_since_campaign_start": [],
+  "preexisting_parent_mismatches": [
+    {
+      "path": "research/global_response_20260913/joint_factor/local_family_residual_analysis.json",
+      "prior": {
+        "bytes": 1336,
+        "sha256": "c8aef646aec433892b061b322796f73f5552568e14fd11bd8332b6f7bfc0d3f5"
+      },
+      "current": {
+        "bytes": 1413,
+        "sha256": "2c12b8ab6d4fca02a0ac06556a675c80acbd98337bae2e18947c86321c43c540"
+      }
+    }
+  ],
+  "logged_completed_process_wall_seconds": 2030.3844160850276,
+  "peak_logged_child_RSS_bytes": 974766080,
+  "counts_by_status": {
+    "failed": 4,
+    "passed": 44,
+    "runner_error": 1,
+    "timeout": 3
+  },
+  "pending_experiments": [],
+  "missing_attempt_accounting": [
+    {
+      "path": "results/correlated_pair_20260913/runs/mps_h6.json",
+      "reason": "Early optimizer summary without a durable runner receipt; partial internal timing only.",
+      "partial_internal_seconds": 0.5086084159993334
+    },
+    {
+      "path": "results/correlated_pair_20260913/runs/mps_h6_random16.json",
+      "bytes": 0,
+      "reason": "Empty early optimizer output; timing receipt unavailable."
+    },
+    {
+      "path": "results/correlated_pair_20260913/runs/mps_h8.json",
+      "reason": "Early optimizer summary without a durable runner receipt; partial internal timing only.",
+      "partial_internal_seconds": 2.1296576659951825
+    },
+    {
+      "path": "results/correlated_pair_20260913/runs/mps_h8_random16.json",
+      "bytes": 0,
+      "reason": "Empty early optimizer output; timing receipt unavailable."
+    }
+  ],
+  "cost_scope": "Sum of logged process wall times, including failed and timed-out runs; not a complete end-to-end total because two early failed attempt timings are unavailable.",
+  "historical_cubic_discovery_seconds": {
+    "h6": 259.309,
+    "h8": 721.563
+  },
+  "historical_cubic_cost_scope": "Retained historical measurements, excluded from the new campaign total; unsuccessful historical attempts are not fully accounted.",
+  "preservation_scan_seconds": 5.69646320900938
+}

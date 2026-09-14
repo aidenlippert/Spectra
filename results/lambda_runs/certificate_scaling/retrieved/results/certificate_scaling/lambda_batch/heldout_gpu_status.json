@@ -1,0 +1,17 @@
+{
+  "returncode": 0,
+  "status": "finished",
+  "name": "heldout_gpu",
+  "command": [
+    "research/certificate_scaling/low_rank_compression.py",
+    "--campaign",
+    "--fixture",
+    "results/marginal_molecule_stress/accepted_degree3_certificate.json",
+    "--outputdir",
+    "results/certificate_scaling/lambda_batch/heldout_gpu",
+    "--backend",
+    "cupy"
+  ],
+  "timeout_seconds": 180,
+  "wall_seconds": 4.271828408999966
+}

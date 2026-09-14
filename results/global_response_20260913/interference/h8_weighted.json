@@ -1,0 +1,146 @@
+{
+  "unweighted_squared_norm": "15243993332885421/2000000000000000",
+  "weighted_squared_norm": "207333117499933899/32000000000000000",
+  "exponents": [
+    -1,
+    1,
+    1,
+    1,
+    -1,
+    1,
+    1
+  ],
+  "weights": [
+    "1/2",
+    "2",
+    "2",
+    "2",
+    "1/2",
+    "2",
+    "2"
+  ],
+  "improvement_ratio": 0.8500607131460275,
+  "coupling": {
+    "coupling_norm_squared_Ha2": "15243993332885421/2000000000000000",
+    "block_norm_bounds": [
+      [
+        "2694271/20000000",
+        "9455261/100000000",
+        "9455261/100000000"
+      ],
+      [
+        "5212853/100000000",
+        "4068511/3125000",
+        "39926937/100000000"
+      ],
+      [
+        "5212853/100000000",
+        "39926937/100000000",
+        "4068511/3125000"
+      ],
+      [
+        "45221531/100000000",
+        "109310267/100000000",
+        "109310267/100000000"
+      ]
+    ],
+    "local_input_occupations": [
+      3,
+      7,
+      11
+    ],
+    "local_output_occupations": [
+      12,
+      13,
+      14,
+      15
+    ],
+    "local_occupation_labels": 7,
+    "local_modes": 4,
+    "remaining_modes_not_enumerated": 12,
+    "blocks": [
+      {
+        "terms": 1,
+        "majorant_terms": 1,
+        "squared_norm_bound": "18147740359884415616961/1000000000000000000000000",
+        "method": "square"
+      },
+      {
+        "terms": 3,
+        "majorant_terms": 1,
+        "squared_norm_bound": "8940194746477515027933/1000000000000000000000000",
+        "method": "anticommutator"
+      },
+      {
+        "terms": 3,
+        "majorant_terms": 1,
+        "squared_norm_bound": "8940194746477515027933/1000000000000000000000000",
+        "method": "anticommutator"
+      },
+      {
+        "terms": 3,
+        "majorant_terms": 1,
+        "squared_norm_bound": "1358691609420906947381/500000000000000000000000",
+        "method": "anticommutator"
+      },
+      {
+        "terms": 36,
+        "majorant_terms": 558,
+        "squared_norm_bound": "339000965466421280136837/200000000000000000000000",
+        "method": "square"
+      },
+      {
+        "terms": 18,
+        "majorant_terms": 342,
+        "squared_norm_bound": "31883205924682160097567/200000000000000000000000",
+        "method": "square"
+      },
+      {
+        "terms": 3,
+        "majorant_terms": 1,
+        "squared_norm_bound": "1358691609420906947381/500000000000000000000000",
+        "method": "anticommutator"
+      },
+      {
+        "terms": 18,
+        "majorant_terms": 342,
+        "squared_norm_bound": "31883205924682160097567/200000000000000000000000",
+        "method": "square"
+      },
+      {
+        "terms": 36,
+        "majorant_terms": 558,
+        "squared_norm_bound": "339000965466421280136837/200000000000000000000000",
+        "method": "square"
+      },
+      {
+        "terms": 18,
+        "majorant_terms": 324,
+        "squared_norm_bound": "40899736600746380204021/200000000000000000000000",
+        "method": "square"
+      },
+      {
+        "terms": 156,
+        "majorant_terms": 919,
+        "squared_norm_bound": "597436717206405919702511/500000000000000000000000",
+        "method": "anticommutator"
+      },
+      {
+        "terms": 156,
+        "majorant_terms": 919,
+        "squared_norm_bound": "597436717206405919702511/500000000000000000000000",
+        "method": "anticommutator"
+      }
+    ],
+    "many_body_states_enumerated": 0,
+    "many_body_matrix_entries": 0,
+    "word_products": 100981,
+    "wall_seconds": 2.258092874995782
+  },
+  "rule": "weighted block row/column Schur bound over anticommutator blocks",
+  "case": "h8",
+  "seconds": 2.455781875003595,
+  "fixture_sha256": "c6f92ee95c502dbf68481e0d99560ea58362448287a852c61947beb9dac2438c",
+  "determinant_basis_constructed": false,
+  "candidate_count": 2187
+}

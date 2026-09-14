@@ -1,0 +1,282 @@
+{
+  "case": "h8",
+  "mode": "simple",
+  "rank_cap": 8,
+  "teacher_used": false,
+  "all_CAR_rows": 28461,
+  "degree_six_rows": 26936,
+  "sector_multiplier_dimension": 1525,
+  "full_gram_entries": 1206592,
+  "reduced_gram_entries": 18944,
+  "projected_map_nonzeros": 11378,
+  "map_build_seconds": 4.742054957998334,
+  "diagnostics": [],
+  "independent_preparation_receipt": "/Users/aidenlippert/Documents/Spectra/results/reconstruction_compression_20260914/prepared/h8/receipt.json",
+  "numerical_equality_tolerance": 1e-08,
+  "unknown_state_restricted_to_MPS": false,
+  "many_body_states_enumerated": 0,
+  "solve_seconds": 5.550268999999389,
+  "solver_status": "optimal",
+  "solver_iterations": 2050,
+  "status": "proposal_requires_exact_replay",
+  "proposed_b": -9.279040261992126,
+  "minimum_numeric_PSD_eigenvalue": -1.5949901250959532e-08,
+  "full_numeric_coefficient_l1": 2.428571728443478e-07,
+  "factor_rows": 407,
+  "certificate_bytes": 425192,
+  "total_seconds": 10.387179540994111,
+  "gram_state_actions": [
+    {
+      "name": "linear-(-1, 0, 1, 0)",
+      "dimension": 4,
+      "numeric_trace": 2.0752435824756913e-10,
+      "numeric_state_action_Ha": 2.4424501016362006e-10
+    },
+    {
+      "name": "linear-(-1, 1, 1, 1)",
+      "dimension": 4,
+      "numeric_trace": -4.771070314380566e-10,
+      "numeric_state_action_Ha": -2.0971345606735814e-10
+    },
+    {
+      "name": "linear-(0, 0, 0, 1)",
+      "dimension": 4,
+      "numeric_trace": 2.4219892722838545e-10,
+      "numeric_state_action_Ha": 2.7756896170090836e-10
+    },
+    {
+      "name": "linear-(0, 1, 0, 0)",
+      "dimension": 4,
+      "numeric_trace": -4.5875403529710914e-10,
+      "numeric_state_action_Ha": -2.0542845641093402e-10
+    },
+    {
+      "name": "linear+(0, 0, 0, 1)",
+      "dimension": 4,
+      "numeric_trace": -4.852703436457661e-10,
+      "numeric_state_action_Ha": -9.267951981079332e-11
+    },
+    {
+      "name": "linear+(0, 1, 0, 0)",
+      "dimension": 4,
+      "numeric_trace": 2.1568102930279873e-10,
+      "numeric_state_action_Ha": 1.3830288229190415e-10
+    },
+    {
+      "name": "linear+(1, 0, 1, 0)",
+      "dimension": 4,
+      "numeric_trace": -4.505967224110789e-10,
+      "numeric_state_action_Ha": -9.132922824827097e-11
+    },
+    {
+      "name": "linear+(1, 1, 1, 1)",
+      "dimension": 4,
+      "numeric_trace": 2.3403409388287755e-10,
+      "numeric_state_action_Ha": 1.5237061089385214e-10
+    },
+    {
+      "name": "pair-(-2, 0, 0, 0)",
+      "dimension": 12,
+      "numeric_trace": 0.008114850189291804,
+      "numeric_state_action_Ha": 0.0001013781682822247
+    },
+    {
+      "name": "pair-(-2, 1, 0, 1)",
+      "dimension": 16,
+      "numeric_trace": 0.020592015291109978,
+      "numeric_state_action_Ha": 0.0003014621526587477
+    },
+    {
+      "name": "pair-(-1, 0, 1, 1)",
+      "dimension": 32,
+      "numeric_trace": 0.7962502536063354,
+      "numeric_state_action_Ha": 0.001995099289514097
+    },
+    {
+      "name": "pair-(-1, 1, 1, 0)",
+      "dimension": 32,
+      "numeric_trace": 0.9056528351100894,
+      "numeric_state_action_Ha": 0.0023024479625205255
+    },
+    {
+      "name": "pair-(0, 0, 0, 0)",
+      "dimension": 12,
+      "numeric_trace": 0.008114833865489088,
+      "numeric_state_action_Ha": 0.00010137840846344403
+    },
+    {
+      "name": "pair-(0, 1, 0, 1)",
+      "dimension": 16,
+      "numeric_trace": 0.020592007345921634,
+      "numeric_state_action_Ha": 0.00030146156988776983
+    },
+    {
+      "name": "pair+(0, 0, 0, 0)",
+      "dimension": 12,
+      "numeric_trace": 0.0007556650245251391,
+      "numeric_state_action_Ha": 1.0280375292248988e-05
+    },
+    {
+      "name": "pair+(0, 1, 0, 1)",
+      "dimension": 16,
+      "numeric_trace": 0.00274567426303876,
+      "numeric_state_action_Ha": 3.8400210041426375e-05
+    },
+    {
+      "name": "pair+(1, 0, 1, 1)",
+      "dimension": 32,
+      "numeric_trace": 0.5812178779656239,
+      "numeric_state_action_Ha": 0.0014225153823312776
+    },
+    {
+      "name": "pair+(1, 1, 1, 0)",
+      "dimension": 32,
+      "numeric_trace": 0.481064932577013,
+      "numeric_state_action_Ha": 0.001290737769527312
+    },
+    {
+      "name": "pair+(2, 0, 0, 0)",
+      "dimension": 12,
+      "numeric_trace": 0.0007556555759266142,
+      "numeric_state_action_Ha": 1.0280206903402682e-05
+    },
+    {
+      "name": "pair+(2, 1, 0, 1)",
+      "dimension": 16,
+      "numeric_trace": 0.002745673793121506,
+      "numeric_state_action_Ha": 3.8400324256897074e-05
+    },
+    {
+      "name": "particle-hole(-1, 0, 1, 1)",
+      "dimension": 32,
+      "numeric_trace": 0.2861762560790506,
+      "numeric_state_action_Ha": 0.0013541447137141336
+    },
+    {
+      "name": "particle-hole(-1, 1, 1, 0)",
+      "dimension": 32,
+      "numeric_trace": 0.30230787720678554,
+      "numeric_state_action_Ha": 0.0019653330078274246
+    },
+    {
+      "name": "particle-hole(0, 0, 0, 0)",
+      "dimension": 64,
+      "numeric_trace": 1.5645660089444806,
+      "numeric_state_action_Ha": 0.0038903241637301246
+    },
+    {
+      "name": "particle-hole(0, 1, 0, 1)",
+      "dimension": 64,
+      "numeric_trace": 2.2954489771137476,
+      "numeric_state_action_Ha": 0.005719135255123954
+    },
+    {
+      "name": "particle-hole(1, 0, 1, 1)",
+      "dimension": 32,
+      "numeric_trace": 0.28617626648740135,
+      "numeric_state_action_Ha": 0.001354147563768936
+    },
+    {
+      "name": "particle-hole(1, 1, 1, 0)",
+      "dimension": 32,
+      "numeric_trace": 0.3023079023885753,
+      "numeric_state_action_Ha": 0.001965332586772139
+    },
+    {
+      "name": "local-triples-(-3, 0, 1, 0) paired",
+      "dimension": 4,
+      "numeric_trace": 2.143507143546882e-09,
+      "numeric_state_action_Ha": 1.409648980019301e-09
+    },
+    {
+      "name": "local-triples-(-3, 1, 1, 1) paired",
+      "dimension": 4,
+      "numeric_trace": -3.6716918552164664e-11,
+      "numeric_state_action_Ha": -2.500029407043406e-12
+    },
+    {
+      "name": "local-triples-(-2, 0, 0, 1) paired",
+      "dimension": 8,
+      "numeric_trace": 7.569775599307172e-09,
+      "numeric_state_action_Ha": 5.396918823507502e-09
+    },
+    {
+      "name": "local-triples-(-2, 1, 0, 0) paired",
+      "dimension": 8,
+      "numeric_trace": -2.189334167710829e-09,
+      "numeric_state_action_Ha": -1.690838541626588e-09
+    },
+    {
+      "name": "local-triples-(-1, 0, 1, 0) paired",
+      "dimension": 8,
+      "numeric_trace": 7.800033598911915e-09,
+      "numeric_state_action_Ha": 5.560879891018718e-09
+    },
+    {
+      "name": "local-triples-(-1, 1, 1, 1) paired",
+      "dimension": 8,
+      "numeric_trace": -1.3913238551106946e-09,
+      "numeric_state_action_Ha": -1.0546666440036612e-09
+    },
+    {
+      "name": "local-triples-(0, 0, 0, 1) paired",
+      "dimension": 4,
+      "numeric_trace": 2.686647799266716e-09,
+      "numeric_state_action_Ha": 1.808717847397275e-09
+    },
+    {
+      "name": "local-triples-(0, 1, 0, 0) paired",
+      "dimension": 4,
+      "numeric_trace": 5.544403938772465e-10,
+      "numeric_state_action_Ha": 4.211268563524408e-10
+    },
+    {
+      "name": "mixed-(-2, 0, 0, 1) paired",
+      "dimension": 8,
+      "numeric_trace": -1.922957519912849e-09,
+      "numeric_state_action_Ha": -5.64193809865701e-10
+    },
+    {
+      "name": "mixed-(-2, 1, 0, 0) paired",
+      "dimension": 8,
+      "numeric_trace": -6.910434090446943e-10,
+      "numeric_state_action_Ha": 7.626755410846158e-13
+    },
+    {
+      "name": "mixed-(-1, 0, 1, 0) paired",
+      "dimension": 8,
+      "numeric_trace": -3.0570468690918155e-09,
+      "numeric_state_action_Ha": -1.7385418211626043e-09
+    },
+    {
+      "name": "mixed-(-1, 1, 1, 1) paired",
+      "dimension": 8,
+      "numeric_trace": -1.2546865472950516e-09,
+      "numeric_state_action_Ha": -1.6819844192017728e-09
+    },
+    {
+      "name": "mixed-(0, 0, 0, 1) paired",
+      "dimension": 8,
+      "numeric_trace": -3.4813508804572774e-09,
+      "numeric_state_action_Ha": -1.706338052169494e-09
+    },
+    {
+      "name": "mixed-(0, 1, 0, 0) paired",
+      "dimension": 8,
+      "numeric_trace": -3.551028364421594e-09,
+      "numeric_state_action_Ha": -1.4668997566698303e-09
+    },
+    {
+      "name": "mixed-(1, 0, 1, 0) paired",
+      "dimension": 8,
+      "numeric_trace": -9.729821419153658e-10,
+      "numeric_state_action_Ha": -1.3416748191106443e-10
+    },
+    {
+      "name": "mixed-(1, 1, 1, 1) paired",
+      "dimension": 8,
+      "numeric_trace": 2.1607038088246202e-10,
+      "numeric_state_action_Ha": 3.535824209300163e-10
+    }
+  ]
+}

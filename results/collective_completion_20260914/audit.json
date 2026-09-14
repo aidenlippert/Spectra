@@ -1,0 +1,58 @@
+{
+  "preservation_checked": 10357,
+  "changed": [],
+  "process_receipts": 81,
+  "summed_process_wall_seconds": 5211.687274216994,
+  "summed_child_cpu_seconds": 5190.9020629999995,
+  "largest_measured_peak_child_RSS_bytes": 3740385280,
+  "failures": [
+    {
+      "name": "fresh_mps",
+      "status": "failed",
+      "seconds": 2.2284374999871943
+    },
+    {
+      "name": "fresh_prepare",
+      "status": "failed",
+      "seconds": 6.038472042011563
+    },
+    {
+      "name": "fresh_upper",
+      "status": "failed",
+      "seconds": 0.07221929199295118
+    },
+    {
+      "name": "h8_global_atoms",
+      "status": "failed",
+      "seconds": 3.7129581250046613
+    },
+    {
+      "name": "h8_global_completion",
+      "status": "timeout",
+      "seconds": 480.3398156250041
+    },
+    {
+      "name": "h8_invariant48_replay",
+      "status": "runner_error",
+      "seconds": 0.0009795410005608574
+    },
+    {
+      "name": "h8_shared_completion",
+      "status": "timeout",
+      "seconds": 480.32611716700194
+    },
+    {
+      "name": "h8_shared_moment",
+      "status": "timeout",
+      "seconds": 420.32913729200664
+    },
+    {
+      "name": "spin_tests",
+      "status": "failed",
+      "seconds": 0.07605037500616163
+    }
+  ],
+  "pending": [],
+  "meaning": "Sum of recorded child-process wall times, including retries and rejected searches; not elapsed human/agent work or an end-to-end speed comparison.",
+  "fresh_H6_all_recorded_process_seconds": 90.37454770899785
+}

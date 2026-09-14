@@ -1,0 +1,865 @@
+{
+  "rows": [
+    {
+      "arm": "adaptive",
+      "case": "baseline",
+      "directions": 0,
+      "fresh": {
+        "retained": {
+          "lower": "-380764151513697449436918498428423/60000000000000000000000000000000",
+          "lower_float": -6.346069191894958,
+          "residual_l1": "14427537449436918498428423/60000000000000000000000000000000",
+          "residual_l1_float": 2.404589574906153e-07,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 219,
+          "factor_nonzeros": 4134
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.10724945799302077,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-380764151731617449436918498428423/60000000000000000000000000000000",
+        "original_lower_float_Ha": -6.346069195526957,
+        "expand_seconds": 0.3102877499986789,
+        "SOS_replay_seconds": 0.09870699999737553,
+        "replay_seconds": 0.4089950420020614,
+        "expanded_certificate_bytes": 147493,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact lower bound for the frozen molecule. No optimality or compact upper-discovery claim."
+      },
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "5204227717655597551067012355084702211554113198443/400000000005595184460000000000000000000000000000000",
+      "width_mHa": 13.010569293957003,
+      "meets_1_6_mHa": false,
+      "gain_over_previous_cone_ceiling_Ha": "-36668209649711734171396221564288488260763048891/82500000000000000000000000000000000000000000000000000",
+      "gain_over_previous_cone_ceiling_mHa": -0.00044446314726923313,
+      "certificate_sha256": "e4cfeedb5ffc8944fd42c75e1522348140a58095196c00350d4623c8fac02886"
+    },
+    {
+      "arm": "adaptive",
+      "case": "round_1_batch_1",
+      "directions": 4,
+      "fresh": {
+        "retained": {
+          "lower": "-114226946378722034378707577130825448473400876603804621015923809/18000000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -6.345941465484557,
+          "residual_l1": "1900180034378707577130825448473400876603804621015923809/18000000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 1.0556555746548375e-07,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 228,
+          "factor_nonzeros": 5426
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.08337004100030754,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-114226946444098034378707577130825448473400876603804621015923809/18000000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.345941469116558,
+        "expand_seconds": 0.38222062500426546,
+        "SOS_replay_seconds": 4.449667666995083,
+        "replay_seconds": 4.831888459004404,
+        "expanded_certificate_bytes": 296010,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact lower bound for the frozen molecule. No optimality or compact upper-discovery claim."
+      },
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "1545941146048461853685640514282496330116609629879195241558479873074771811013469/120000000001678555338000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 12.882842883556977,
+      "meets_1_6_mHa": false,
+      "gain_over_previous_cone_ceiling_Ha": "25201825556045667885685023784212500218531526831830424838101/198000000000000000000000000000000000000000000000000000000000000",
+      "gain_over_previous_cone_ceiling_mHa": 0.1272819472527559,
+      "certificate_sha256": "c1d6b649823dd8ecd9584b6362f68226fad9bcf0b4a69096fc9b13fd0c24d3f2"
+    },
+    {
+      "arm": "adaptive",
+      "case": "round_1_batch_2",
+      "directions": 8,
+      "fresh": {
+        "retained": {
+          "lower": "-114224831820849110677057153166308936076907971644934953390383827/18000000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -6.3458239900471725,
+          "residual_l1": "6773511110677057153166308936076907971644934953390383827/18000000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 3.763061728153921e-07,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 236,
+          "factor_nonzeros": 6674
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.20184370900096837,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-114224831886225110677057153166308936076907971644934953390383827/18000000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.345823993679173,
+        "expand_seconds": 0.49946595799701754,
+        "SOS_replay_seconds": 4.253341125004226,
+        "replay_seconds": 4.752807249999023,
+        "expanded_certificate_bytes": 333365,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact lower bound for the frozen molecule. No optimality or compact upper-discovery claim."
+      },
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "1531844093562106653660308195001744878186003544510503399189858148678331704428807/120000000001678555338000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 12.765367446172327,
+      "meets_1_6_mHa": false,
+      "gain_over_previous_cone_ceiling_Ha": "48461962158206386040348633465848861640486074398174305777903/198000000000000000000000000000000000000000000000000000000000000",
+      "gain_over_previous_cone_ceiling_mHa": 0.24475738463740598,
+      "certificate_sha256": "0a068a0830472fbfccb39e004cbb7c06c79845f680d885fae76b871acbc74368"
+    },
+    {
+      "arm": "adaptive",
+      "case": "round_2_batch_1",
+      "directions": 12,
+      "fresh": {
+        "retained": {
+          "lower": "-19036900267102146152458182269868899227641315284515906542818327/3000000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -6.345633422367382,
+          "residual_l1": "308080146152458182269868899227641315284515906542818327/3000000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 1.026933820508194e-07,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 244,
+          "factor_nonzeros": 7919
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.11608720799995353,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-19036900277998146152458182269868899227641315284515906542818327/3000000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.345633425999382,
+        "expand_seconds": 0.4874319579976145,
+        "SOS_replay_seconds": 4.414686750002147,
+        "replay_seconds": 4.902118791993416,
+        "expanded_certificate_bytes": 367920,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact lower bound for the frozen molecule. No optimality or compact upper-discovery claim."
+      },
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "83831998443716390363541563987125018293022805567596149228970438395496821297769/6666666666759919741000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 12.574799766381563,
+      "meets_1_6_mHa": false,
+      "gain_over_previous_cone_ceiling_Ha": "14365727126129628571500608586132780550227565105471628998403/33000000000000000000000000000000000000000000000000000000000000",
+      "gain_over_previous_cone_ceiling_mHa": 0.43532506442817054,
+      "certificate_sha256": "73a8c72087e5b4fc0abc37c2951999a9787a95204cbb4253eff19f4f29f61f20"
+    },
+    {
+      "arm": "adaptive",
+      "case": "round_2_batch_2",
+      "directions": 16,
+      "fresh": {
+        "retained": {
+          "lower": "-6345577531012279144296746492042534242127793028912956474084931/1000000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -6.345577531012279,
+          "residual_l1": "121396279144296746492042534242127793028912956474084931/1000000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 1.2139627914429674e-07,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 252,
+          "factor_nonzeros": 9156
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.12210629200126277,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-6345577534644279144296746492042534242127793028912956474084931/1000000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.3455775346442795,
+        "expand_seconds": 0.532670667002094,
+        "SOS_replay_seconds": 4.333917332995043,
+        "replay_seconds": 4.8665881249980885,
+        "expanded_certificate_bytes": 402234,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact lower bound for the frozen molecule. No optimality or compact upper-discovery claim."
+      },
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "250378168229075404515596727472247522597655640787694726172125237822819932568613/20000000000279759223000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 12.518908411278657,
+      "meets_1_6_mHa": false,
+      "gain_over_previous_cone_ceiling_Ha": "5403380614841847939623779913464764795841913550959985065759/11000000000000000000000000000000000000000000000000000000000000",
+      "gain_over_previous_cone_ceiling_mHa": 0.4912164195310771,
+      "certificate_sha256": "617fbb4866a5897b8a3b00a84be22122adf7bf50bdec367df452d5ffe373dc40"
+    },
+    {
+      "arm": "adaptive",
+      "case": "round_3_batch_1",
+      "directions": 20,
+      "fresh": {
+        "retained": {
+          "lower": "-76143101142374321083048855804526934607382562676691380942959529/12000000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -6.345258428531193,
+          "residual_l1": "278102321083048855804526934607382562676691380942959529/12000000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 2.3175193423587405e-08,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 260,
+          "factor_nonzeros": 10428
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.11216854200029047,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-76143101185958321083048855804526934607382562676691380942959529/12000000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.3452584321631935,
+        "expand_seconds": 0.546558540998376,
+        "SOS_replay_seconds": 4.562464208996971,
+        "replay_seconds": 5.10902291599632,
+        "expanded_certificate_bytes": 434538,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact lower bound for the frozen molecule. No optimality or compact upper-discovery claim."
+      },
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "975984474429086873866375922977652839521582880720258219123520314466455051161989/80000000001119036892000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 12.199805930192936,
+      "meets_1_6_mHa": false,
+      "gain_over_previous_cone_ceiling_Ha": "106962094881417308908608458779816457210593335516584027445181/132000000000000000000000000000000000000000000000000000000000000",
+      "gain_over_previous_cone_ceiling_mHa": 0.8103189006167978,
+      "certificate_sha256": "c277e0864aaba1e2e3f77ff220abd18008168fd42e81804162351b356dcf56d1"
+    },
+    {
+      "arm": "adaptive",
+      "case": "round_3_batch_2",
+      "directions": 24,
+      "fresh": {
+        "retained": {
+          "lower": "-228418883561650111726785868569168619232892724072483086829248551/36000000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -6.344968987823615,
+          "residual_l1": "3934390111726785868569168619232892724072483086829248551/36000000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 1.0928861421463294e-07,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 268,
+          "factor_nonzeros": 11655
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.12544179199903738,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-228418883692402111726785868569168619232892724072483086829248551/36000000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.344968991455614,
+        "expand_seconds": 0.6151644999990822,
+        "SOS_replay_seconds": 4.455416832999617,
+        "replay_seconds": 5.070581500003755,
+        "expanded_certificate_bytes": 471955,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact lower bound for the frozen molecule. No optimality or compact upper-discovery claim."
+      },
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "2858487653467278788038318983021729178715072040746220371280761350664036100545291/240000000003357110676000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 11.910365222613727,
+      "meets_1_6_mHa": false,
+      "gain_over_previous_cone_ceiling_Ha": "435504804845618672693512664873479853436383540051368078265939/396000000000000000000000000000000000000000000000000000000000000",
+      "gain_over_previous_cone_ceiling_mHa": 1.0997596081960068,
+      "certificate_sha256": "3ea6e56682469106ea9cf3de197e8670fa57bacd03aa1cc0ede75a0fcff0ecef"
+    },
+    {
+      "arm": "adaptive",
+      "case": "round_4_batch_1",
+      "directions": 28,
+      "fresh": {
+        "retained": {
+          "lower": "-45680973051970454382529336147735543815070830295160093919958351/7200000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -6.344579590551452,
+          "residual_l1": "897036854382529336147735543815070830295160093919958351/7200000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 1.2458845199757352e-07,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 276,
+          "factor_nonzeros": 12925
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.15663879200292286,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-45680973078120854382529336147735543815070830295160093919958351/7200000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.344579594183452,
+        "expand_seconds": 0.6474620840017451,
+        "SOS_replay_seconds": 4.637126291003369,
+        "replay_seconds": 5.284588583999721,
+        "expanded_certificate_bytes": 508114,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact lower bound for the frozen molecule. No optimality or compact upper-discovery claim."
+      },
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "553006461629407888807497144651009385604304950129516524168622845218190822707091/48000000000671422135200000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 11.52096795045151,
+      "meets_1_6_mHa": false,
+      "gain_over_previous_cone_ceiling_Ha": "117941224924371325644915760054676317272136420712031520458139/79200000000000000000000000000000000000000000000000000000000000",
+      "gain_over_previous_cone_ceiling_mHa": 1.4891568803582238,
+      "certificate_sha256": "a9d4a56303b3fd41063be4b7a9dfdcdcca414be44b6067d15d2486aa49b06438"
+    },
+    {
+      "arm": "adaptive",
+      "case": "round_4_batch_2",
+      "directions": 32,
+      "fresh": {
+        "retained": {
+          "lower": "-57100389318727187926479235865276301474582228099115332616102367/9000000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -6.344487702080799,
+          "residual_l1": "5222743187926479235865276301474582228099115332616102367/9000000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 5.803047986584977e-07,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 284,
+          "factor_nonzeros": 14151
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.136567624998861,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-57100389351415187926479235865276301474582228099115332616102367/9000000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.344487705712798,
+        "expand_seconds": 0.7173543339958997,
+        "SOS_replay_seconds": 4.535941333000665,
+        "replay_seconds": 5.253295834001619,
+        "expanded_certificate_bytes": 546905,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact lower bound for the frozen molecule. No optimality or compact upper-discovery claim."
+      },
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "685744768797482396518351392199613880982664254383176901554870813355785160126947/60000000000839277669000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 11.42907947979817,
+      "meets_1_6_mHa": false,
+      "gain_over_previous_cone_ceiling_Ha": "156523489750144725562922213392756633409577994072672022873963/99000000000000000000000000000000000000000000000000000000000000",
+      "gain_over_previous_cone_ceiling_mHa": 1.581045351011563,
+      "certificate_sha256": "818fa0e7af7275668289f3066c4774ca5d9d1381c9b7a6013f43fe71449d4aa7"
+    },
+    {
+      "arm": "full",
+      "case": "full_frame",
+      "directions": 252,
+      "fresh": {
+        "retained": {
+          "lower": "-2283502970100057880048979174440501135907239/360000000000000000000000000000000000000000",
+          "lower_float": -6.343063805833494,
+          "residual_l1": "9070196937880048979174440501135907239/360000000000000000000000000000000000000000",
+          "residual_l1_float": 2.5194991494111246e-05,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 604,
+          "factor_nonzeros": 64126
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.11915991700516315,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-2283502971407577880048979174440501135907239/360000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.3430638094654945,
+        "expand_seconds": 1.53225491700141,
+        "SOS_replay_seconds": 5.203446416999213,
+        "replay_seconds": 6.735701459001575,
+        "expanded_certificate_bytes": 1312728,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact lower bound for the frozen molecule. No optimality or compact upper-discovery claim."
+      },
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "24012439758320580686532230232997444643145352504008860905099/2400000000033571106760000000000000000000000000000000000000000",
+      "width_mHa": 10.005183232493623,
+      "meets_1_6_mHa": false,
+      "gain_over_previous_cone_ceiling_Ha": "743723045583237258413109400735651198308405210853327/247500000000000000000000000000000000000000000000000000",
+      "gain_over_previous_cone_ceiling_mHa": 3.00494159831611,
+      "certificate_sha256": "580795e540678ab29fd20706c768e067934bcff16c5e963a0ffffc8627d00c13"
+    },
+    {
+      "arm": "separate_retry",
+      "case": "separate_selected",
+      "directions": 32,
+      "fresh": {
+        "retained": {
+          "lower": "-228426005991207507239012439756648766021783173991951977681237851/36000000000000000000000000000000000000000000000000000000000000",
+          "lower_float": -6.345166833089097,
+          "residual_l1": "1300143507239012439756648766021783173991951977681237851/36000000000000000000000000000000000000000000000000000000000000",
+          "residual_l1_float": 3.6115097423305904e-08,
+          "multiplier_terms": 37,
+          "square_polynomial_terms": 919,
+          "residual_terms": 919,
+          "residual_max_degree": 4,
+          "mode_count": 12,
+          "particle_number": 6,
+          "factor_rows": 283,
+          "factor_nonzeros": 14137
+        },
+        "tail": {
+          "lower_operator_shift_Ha": "-227/62500000000",
+          "upper_operator_shift_Ha": "6770477/62500000000",
+          "tail_interval_width_Ha": "423169/3906250000",
+          "tail_interval_width_mHa": 0.108331264,
+          "factors": 10,
+          "factor_nonzeros": 105,
+          "coefficient_dimension": 21,
+          "modes": 12,
+          "particles": 6,
+          "number_centered": true,
+          "mismatch_paired_norm_Ha": "1/31250000000",
+          "mismatch_terms": 54,
+          "casimir_bound": "24",
+          "lower_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "upper_psd": {
+            "dimension": 21,
+            "rank": 21
+          },
+          "replay_seconds": 0.11470754099718761,
+          "many_body_states_enumerated": 0,
+          "scope": "Operator interval H_retained + lo I <= H <= H_retained + hi I; no retained-system energy solve implied."
+        },
+        "original_lower_Ha": "-228426006121959507239012439756648766021783173991951977681237851/36000000000000000000000000000000000000000000000000000000000000",
+        "original_lower_float_Ha": -6.345166836721098,
+        "expand_seconds": 0.6551536250044592,
+        "SOS_replay_seconds": 4.653438041998015,
+        "replay_seconds": 5.308591834000254,
+        "expanded_certificate_bytes": 550168,
+        "many_body_states_enumerated": 0,
+        "scope": "Exact lower bound for the frozen molecule. No optimality or compact upper-discovery claim."
+      },
+      "upper_Ha": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width_Ha": "2905970517183913058001743300357438623105949235067471818406437843138814291316591/240000000003357110676000000000000000000000000000000000000000000000000000000000000",
+      "width_mHa": 12.108210488096935,
+      "meets_1_6_mHa": false,
+      "gain_over_previous_cone_ceiling_Ha": "357158079714268038201229602591865175641434425893568706383639/396000000000000000000000000000000000000000000000000000000000000",
+      "gain_over_previous_cone_ceiling_mHa": 0.901914342712798,
+      "certificate_sha256": "88aa19d56787dc0a964f2248133d4f4f10348dd42d4612c4d9bf2b645ac551e0"
+    }
+  ],
+  "previous_cone": {
+    "retained_lower_ceiling_Ha": "-174516890554374781088009587980953353570503913078983703/27500000000000000000000000000000000000000000000000000",
+    "retained_lower_ceiling_float_Ha": -6.3460687474318105,
+    "original_lower_ceiling_Ha": "-174516890654254781088009587980953353570503913078983703/27500000000000000000000000000000000000000000000000000",
+    "original_lower_ceiling_float_Ha": -6.34606875106381,
+    "exact_PSD_checks": [
+      {
+        "kind": "square",
+        "dimension": 3,
+        "rank": 3
+      },
+      {
+        "kind": "square",
+        "dimension": 3,
+        "rank": 3
+      },
+      {
+        "kind": "square",
+        "dimension": 3,
+        "rank": 3
+      },
+      {
+        "kind": "square",
+        "dimension": 3,
+        "rank": 3
+      },
+      {
+        "kind": "square",
+        "dimension": 3,
+        "rank": 3
+      },
+      {
+        "kind": "square",
+        "dimension": 3,
+        "rank": 3
+      },
+      {
+        "kind": "square",
+        "dimension": 3,
+        "rank": 3
+      },
+      {
+        "kind": "square",
+        "dimension": 3,
+        "rank": 3
+      },
+      {
+        "kind": "square",
+        "dimension": 6,
+        "rank": 6
+      },
+      {
+        "kind": "square",
+        "dimension": 9,
+        "rank": 9
+      },
+      {
+        "kind": "square",
+        "dimension": 18,
+        "rank": 18
+      },
+      {
+        "kind": "square",
+        "dimension": 18,
+        "rank": 18
+      },
+      {
+        "kind": "square",
+        "dimension": 6,
+        "rank": 6
+      },
+      {
+        "kind": "square",
+        "dimension": 9,
+        "rank": 9
+      },
+      {
+        "kind": "square",
+        "dimension": 6,
+        "rank": 6
+      },
+      {
+        "kind": "square",
+        "dimension": 9,
+        "rank": 9
+      },
+      {
+        "kind": "square",
+        "dimension": 18,
+        "rank": 18
+      },
+      {
+        "kind": "square",
+        "dimension": 18,
+        "rank": 18
+      },
+      {
+        "kind": "square",
+        "dimension": 6,
+        "rank": 6
+      },
+      {
+        "kind": "square",
+        "dimension": 9,
+        "rank": 9
+      },
+      {
+        "kind": "square",
+        "dimension": 18,
+        "rank": 18
+      },
+      {
+        "kind": "square",
+        "dimension": 18,
+        "rank": 18
+      },
+      {
+        "kind": "square",
+        "dimension": 36,
+        "rank": 36
+      },
+      {
+        "kind": "square",
+        "dimension": 36,
+        "rank": 36
+      },
+      {
+        "kind": "square",
+        "dimension": 18,
+        "rank": 18
+      },
+      {
+        "kind": "square",
+        "dimension": 18,
+        "rank": 18
+      },
+      {
+        "kind": "anticommutator",
+        "dimension": 33,
+        "rank": 33
+      },
+      {
+        "kind": "anticommutator",
+        "dimension": 33,
+        "rank": 33
+      },
+      {
+        "kind": "anticommutator",
+        "dimension": 33,
+        "rank": 33
+      },
+      {
+        "kind": "anticommutator",
+        "dimension": 33,
+        "rank": 33
+      }
+    ],
+    "number_ideal_equalities": 79,
+    "moments": 919,
+    "replay_seconds": 6.433324083998741,
+    "many_body_states_enumerated": 0,
+    "scope": "Ceiling on every b minus coefficient-l1 residual lower bound in the full quadratic plus joint ten-density-pattern anticommutator cone, with the body-one number ideal and fixed lower tail shift. This is not a physical energy lower bound."
+  },
+  "previous_dual_sha256": "9f5fa8208a7bdc1d4da7df4dc4cdb3b342ac309a57d41a7bfc2e115433aa99e3",
+  "reference_upper": {
+    "method": "bounded_streaming_integer_reference_upper_v1",
+    "witness_states": 200,
+    "hamiltonian_terms": 918,
+    "word_state_checks": 183600,
+    "contributing_word_state_pairs": 23424,
+    "action_cache_states": 0,
+    "replay_seconds": 0.04814312500093365,
+    "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+    "scope": "validation upper witness only; exponentially growing FCI discovery cost is not removed"
+  },
+  "reference_sha256": "0cf0b58228f1861bf80738bbab945ee18d60c2e7b3cc27ce0c418c13ff6330cc",
+  "wall_seconds": 59.08507679099421,
+  "numerical_packages_loaded": [],
+  "scope": "Exact interval validation against the frozen molecule and proof that any positive ceiling gain is outside the prior spin-summed cone. Prior upper-discovery cost remains separate."
+}

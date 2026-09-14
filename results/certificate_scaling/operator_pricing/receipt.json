@@ -1,0 +1,615 @@
+{
+  "scope": "numerical surrogate; no SDP certificate",
+  "cases": [
+    {
+      "modes": 6,
+      "dimension": 20,
+      "dictionary": 30,
+      "exact_reference": -1.236067977499791,
+      "strategies": {
+        "adaptive": {
+          "order": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "wall_seconds": 0.00039125000330386683,
+          "trace": [
+            {
+              "energy": 1.3333333333333337,
+              "residual_norm": 2.4267032964268394,
+              "support": 6,
+              "error_to_full_reference": 2.5694013108331246
+            },
+            {
+              "energy": 0.4429125146746174,
+              "residual_norm": 2.0060382160908916,
+              "support": 9,
+              "error_to_full_reference": 1.6789804921744083
+            },
+            {
+              "energy": 0.040426703339402174,
+              "residual_norm": 1.604086907273744,
+              "support": 13,
+              "error_to_full_reference": 1.276494680839193
+            },
+            {
+              "energy": -0.36714128929099654,
+              "residual_norm": 1.7628987011606283,
+              "support": 15,
+              "error_to_full_reference": 0.8689266882087944
+            },
+            {
+              "energy": -0.6190535569931809,
+              "residual_norm": 1.4716287361704135,
+              "support": 17,
+              "error_to_full_reference": 0.61701442050661
+            },
+            {
+              "energy": -0.8749623451118493,
+              "residual_norm": 1.0854749204225316,
+              "support": 19,
+              "error_to_full_reference": 0.3611056323879416
+            }
+          ],
+          "heldout_trace": [
+            {
+              "energy": 1.3333333333333337,
+              "residual_norm": 2.589611725508071,
+              "support": 6
+            },
+            {
+              "energy": 0.41643633822368226,
+              "residual_norm": 2.100937044053012,
+              "support": 9
+            },
+            {
+              "energy": 0.010866380278903801,
+              "residual_norm": 1.6909015236239346,
+              "support": 13
+            },
+            {
+              "energy": -0.4359879306396334,
+              "residual_norm": 1.921230303328863,
+              "support": 15
+            },
+            {
+              "energy": -0.7717496671446575,
+              "residual_norm": 1.573236481674946,
+              "support": 17
+            },
+            {
+              "energy": -1.067610166338352,
+              "residual_norm": 1.19107578847576,
+              "support": 19
+            }
+          ]
+        },
+        "fixed": {
+          "order": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "wall_seconds": 0.00034408400097163394,
+          "trace": [
+            {
+              "energy": 1.3333333333333337,
+              "residual_norm": 2.4267032964268394,
+              "support": 6,
+              "error_to_full_reference": 2.5694013108331246
+            },
+            {
+              "energy": 1.04633275063796,
+              "residual_norm": 2.473385894576944,
+              "support": 9,
+              "error_to_full_reference": 2.282400728137751
+            },
+            {
+              "energy": 0.8836120514205988,
+              "residual_norm": 2.153826500584434,
+              "support": 10,
+              "error_to_full_reference": 2.11968002892039
+            },
+            {
+              "energy": 0.8041914540527874,
+              "residual_norm": 2.222355078121117,
+              "support": 10,
+              "error_to_full_reference": 2.0402594315525784
+            },
+            {
+              "energy": 0.15666867791485303,
+              "residual_norm": 1.854524315315236,
+              "support": 10,
+              "error_to_full_reference": 1.3927366554146439
+            },
+            {
+              "energy": 0.13976327380529024,
+              "residual_norm": 1.8786658705056747,
+              "support": 16,
+              "error_to_full_reference": 1.3758312513050812
+            }
+          ],
+          "heldout_trace": [
+            {
+              "energy": 1.3333333333333337,
+              "residual_norm": 2.589611725508071,
+              "support": 6
+            },
+            {
+              "energy": 0.9923452063600965,
+              "residual_norm": 2.638596483054426,
+              "support": 9
+            },
+            {
+              "energy": 0.8806260524572446,
+              "residual_norm": 2.2587824729563453,
+              "support": 10
+            },
+            {
+              "energy": 0.7573454066590056,
+              "residual_norm": 2.423174113103785,
+              "support": 10
+            },
+            {
+              "energy": 0.038876748557499105,
+              "residual_norm": 2.0328520387053506,
+              "support": 10
+            },
+            {
+              "energy": 0.02189390201598329,
+              "residual_norm": 2.052063609169889,
+              "support": 16
+            }
+          ]
+        },
+        "random": {
+          "order": [
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "wall_seconds": 0.00033312500454485416,
+          "trace": [
+            {
+              "energy": 3.333333333333334,
+              "residual_norm": 1.9293061504650377,
+              "support": 6,
+              "error_to_full_reference": 4.569401310833125
+            },
+            {
+              "energy": 2.3990747874226686,
+              "residual_norm": 2.729494404920811,
+              "support": 10,
+              "error_to_full_reference": 3.6351427649224597
+            },
+            {
+              "energy": 2.1840484020074067,
+              "residual_norm": 2.7374789592317104,
+              "support": 12,
+              "error_to_full_reference": 3.4201163795071974
+            },
+            {
+              "energy": 0.8800244149856812,
+              "residual_norm": 1.8348230186612415,
+              "support": 15,
+              "error_to_full_reference": 2.116092392485472
+            },
+            {
+              "energy": 0.4445639987978853,
+              "residual_norm": 1.8586363901200667,
+              "support": 18,
+              "error_to_full_reference": 1.6806319762976762
+            },
+            {
+              "energy": 0.2286263631251158,
+              "residual_norm": 1.4463166577960127,
+              "support": 18,
+              "error_to_full_reference": 1.4646943406249067
+            }
+          ],
+          "heldout_trace": [
+            {
+              "energy": 3.333333333333334,
+              "residual_norm": 2.019225649159158,
+              "support": 6
+            },
+            {
+              "energy": 2.471595693515741,
+              "residual_norm": 2.88956829238782,
+              "support": 10
+            },
+            {
+              "energy": 2.1945077628380107,
+              "residual_norm": 2.892896897511191,
+              "support": 12
+            },
+            {
+              "energy": 0.8070810635192667,
+              "residual_norm": 1.877145741412534,
+              "support": 15
+            },
+            {
+              "energy": 0.32906739976083016,
+              "residual_norm": 1.9776463487002949,
+              "support": 18
+            },
+            {
+              "energy": 0.11701477786893291,
+              "residual_norm": 1.5422767906566501,
+              "support": 18
+            }
+          ]
+        }
+      }
+    },
+    {
+      "modes": 8,
+      "dimension": 70,
+      "dictionary": 50,
+      "exact_reference": -1.9531453086845556,
+      "strategies": {
+        "adaptive": {
+          "order": [
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              2,
+              7
+            ]
+          ],
+          "wall_seconds": 0.0004477499969652854,
+          "trace": [
+            {
+              "energy": 2.4,
+              "residual_norm": 2.4576411454889016,
+              "support": 20,
+              "error_to_full_reference": 4.353145308684556
+            },
+            {
+              "energy": 1.6863390107274616,
+              "residual_norm": 2.5217113701592644,
+              "support": 30,
+              "error_to_full_reference": 3.639484319412017
+            },
+            {
+              "energy": 1.1228427557291334,
+              "residual_norm": 2.2967867261621304,
+              "support": 34,
+              "error_to_full_reference": 3.075988064413689
+            },
+            {
+              "energy": 0.8494988459978744,
+              "residual_norm": 2.1883741255460447,
+              "support": 45,
+              "error_to_full_reference": 2.80264415468243
+            },
+            {
+              "energy": 0.6216666690771381,
+              "residual_norm": 2.232864922333006,
+              "support": 51,
+              "error_to_full_reference": 2.574811977761694
+            },
+            {
+              "energy": 0.4276429840347206,
+              "residual_norm": 2.1686965950101365,
+              "support": 56,
+              "error_to_full_reference": 2.3807882927192763
+            }
+          ],
+          "heldout_trace": [
+            {
+              "energy": 2.4000000000000004,
+              "residual_norm": 2.5399763778429123,
+              "support": 20
+            },
+            {
+              "energy": 1.642051615276688,
+              "residual_norm": 2.5956130045230066,
+              "support": 30
+            },
+            {
+              "energy": 1.0690885255357272,
+              "residual_norm": 2.3161328638116427,
+              "support": 34
+            },
+            {
+              "energy": 0.8048787250640481,
+              "residual_norm": 2.238496176611567,
+              "support": 45
+            },
+            {
+              "energy": 0.5755542514177056,
+              "residual_norm": 2.2771012400215445,
+              "support": 51
+            },
+            {
+              "energy": 0.38968564024334684,
+              "residual_norm": 2.2031772280489954,
+              "support": 56
+            }
+          ]
+        },
+        "fixed": {
+          "order": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "wall_seconds": 0.00042629199742805213,
+          "trace": [
+            {
+              "energy": 2.4,
+              "residual_norm": 2.4576411454889016,
+              "support": 20,
+              "error_to_full_reference": 4.353145308684556
+            },
+            {
+              "energy": 2.1416994755741645,
+              "residual_norm": 2.5285354335188766,
+              "support": 30,
+              "error_to_full_reference": 4.09484478425872
+            },
+            {
+              "energy": 2.131667012442936,
+              "residual_norm": 2.5520105842550276,
+              "support": 34,
+              "error_to_full_reference": 4.084812321127492
+            },
+            {
+              "energy": 2.120693677889156,
+              "residual_norm": 2.550980827316397,
+              "support": 35,
+              "error_to_full_reference": 4.073838986573712
+            },
+            {
+              "energy": 1.3394512877212907,
+              "residual_norm": 2.3616522540441385,
+              "support": 35,
+              "error_to_full_reference": 3.292596596405846
+            },
+            {
+              "energy": 1.324766054381159,
+              "residual_norm": 2.3748633299944446,
+              "support": 55,
+              "error_to_full_reference": 3.277911363065715
+            }
+          ],
+          "heldout_trace": [
+            {
+              "energy": 2.4000000000000004,
+              "residual_norm": 2.5399763778429123,
+              "support": 20
+            },
+            {
+              "energy": 2.109419332670759,
+              "residual_norm": 2.599324299185353,
+              "support": 30
+            },
+            {
+              "energy": 2.1082493656559267,
+              "residual_norm": 2.611249590551675,
+              "support": 34
+            },
+            {
+              "energy": 2.0804190361272092,
+              "residual_norm": 2.6141752101078977,
+              "support": 35
+            },
+            {
+              "energy": 1.3058466992801192,
+              "residual_norm": 2.3981299961979468,
+              "support": 35
+            },
+            {
+              "energy": 1.2909726414079659,
+              "residual_norm": 2.4122361316848906,
+              "support": 55
+            }
+          ]
+        },
+        "random": {
+          "order": [
+            [
+              1,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          "wall_seconds": 0.0005434169943328016,
+          "trace": [
+            {
+              "energy": 2.4,
+              "residual_norm": 2.4576411454889016,
+              "support": 20,
+              "error_to_full_reference": 4.353145308684556
+            },
+            {
+              "energy": 2.2189750324093356,
+              "residual_norm": 2.4348529007991684,
+              "support": 40,
+              "error_to_full_reference": 4.172120341093891
+            },
+            {
+              "energy": 1.6315086571062039,
+              "residual_norm": 2.2978744351561,
+              "support": 40,
+              "error_to_full_reference": 3.5846539657907597
+            },
+            {
+              "energy": 1.6075323886450739,
+              "residual_norm": 2.3203207106162598,
+              "support": 44,
+              "error_to_full_reference": 3.5606776973296297
+            },
+            {
+              "energy": 1.595843580044045,
+              "residual_norm": 2.3328863800666046,
+              "support": 45,
+              "error_to_full_reference": 3.5489888887286005
+            },
+            {
+              "energy": 1.3568014294176105,
+              "residual_norm": 2.199952994208384,
+              "support": 45,
+              "error_to_full_reference": 3.309946738102166
+            }
+          ],
+          "heldout_trace": [
+            {
+              "energy": 2.4000000000000004,
+              "residual_norm": 2.5399763778429123,
+              "support": 20
+            },
+            {
+              "energy": 2.2189750324093356,
+              "residual_norm": 2.5390306647220933,
+              "support": 40
+            },
+            {
+              "energy": 1.592886451416241,
+              "residual_norm": 2.3958638325810773,
+              "support": 40
+            },
+            {
+              "energy": 1.579044931662835,
+              "residual_norm": 2.4159376405238033,
+              "support": 44
+            },
+            {
+              "energy": 1.5586470151624114,
+              "residual_norm": 2.4342204992346845,
+              "support": 45
+            },
+            {
+              "energy": 1.339326754345621,
+              "residual_norm": 2.2706411678463208,
+              "support": 45
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

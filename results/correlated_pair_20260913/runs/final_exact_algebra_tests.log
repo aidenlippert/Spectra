@@ -1,0 +1,13 @@
+......F...
+======================================================================
+FAIL: test_lower_mutations (research.correlated_pair_20260913.test_algebra.AlgebraChecks.test_lower_mutations) (mutation='charge')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/test_algebra.py", line 34, in test_lower_mutations
+    with self.subTest(mutation=mutation),self.assertRaises(ValueError):check(data,bad)
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.151s
+
+FAILED (failures=1)

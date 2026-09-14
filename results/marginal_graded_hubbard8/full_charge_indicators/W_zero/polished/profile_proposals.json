@@ -1,0 +1,76 @@
+{
+  "rows": [
+    {
+      "name": "profile_joint_r1_2",
+      "rational_parameters": [
+        "693/15625",
+        "455939/125000",
+        "655703/1000000",
+        "576931/500000",
+        "-28753/500000",
+        "165277/200000",
+        "6953/50000",
+        "19193/125000"
+      ],
+      "local_minimum": -3.0517372995658034,
+      "active_sector": [
+        3,
+        3,
+        1
+      ],
+      "lower": "-15258687/5000000",
+      "proposed_periodic_density": "-160805322396029/250000000000000",
+      "density_float": -0.643221289584116,
+      "matrix_evaluations": 120,
+      "max_fresh_affine_difference": 3.552713678800501e-15,
+      "optimizer_success": false,
+      "optimizer_message": "Iteration limit reached",
+      "telescoping_coefficients": [
+        "-21109/1000000",
+        "18597/500000",
+        "-47063/1000000",
+        "23929/250000",
+        "-93721/1000000",
+        "35831/1000000",
+        "28109/1000000",
+        "-42229/1000000",
+        "-7997/200000"
+      ],
+      "free_range_two_profile": true,
+      "range_two_profile_shift": "-32003/125000",
+      "complete_quadratic_charge_family": true,
+      "quadratic_charge_coefficient": "-79237/500000",
+      "charge_square_pair_coefficients": {
+        "0,1": "110381/250000",
+        "0,2": "94543/1000000",
+        "0,3": "5399/1000000",
+        "1,2": "137929/500000"
+      },
+      "higher_indicator_coefficients": {
+        "0,1,2": "-43121/100000",
+        "0,1,3": "-92699/500000",
+        "0,1,4": "-3103/200000",
+        "0,2,3": "-70877/1000000",
+        "0,1,2,3": "36869/100000",
+        "0,1,2,4": "3181/40000"
+      },
+      "shape_indices": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        31,
+        11,
+        20
+      ],
+      "seed_certificate": "results/marginal_graded_hubbard8/full_charge_indicators/W_zero/profile_joint_r1_2_certificate.json",
+      "seed_sha256": "daf360f3bfef09847c957cb2e549625a85b84640027712d62c380918a13a9ee6"
+    }
+  ],
+  "seconds": 40.01706995799759,
+  "signed_density": true,
+  "driver_sha256": "a55a38bea45983f3a21c7cb504d50a87136186c6a0ab088d4a23ea9ebedb14f6",
+  "scope": "Numerical proposals only, equal250 evaluation caps, fresh exact-CAR matrix numerical check. No optimizer optimality or exact PSD claim."
+}

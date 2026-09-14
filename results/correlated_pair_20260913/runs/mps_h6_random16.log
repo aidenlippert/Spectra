@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/mps_search/mps_dmrg.py", line 54, in <module>
+    a=ap.parse_args(); d=json.loads(Path(a.fixture).read_text()); row,_=optimize(d,a.na,a.nb,a.bond); print(json.dumps(row,indent=2))
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/research/correlated_pair_20260913/mps_search/mps_dmrg.py", line 43, in optimize
+    physical_energy=float(np.real(mps.expec(physical_mpo)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'Tensor'

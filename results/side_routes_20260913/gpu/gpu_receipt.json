@@ -1,0 +1,105 @@
+{
+  "host": "146-235-200-232",
+  "device": "NVIDIA A10",
+  "cupy": "13.6.0",
+  "numpy": "2.2.6",
+  "source_sha256": "962e16d7bfeb61e92720f093f5a42919db3bb666a778ddf12fb3e2fe6f2ddb9b",
+  "warmups": 2,
+  "timed_trials": 3,
+  "cases": [
+    {
+      "size": 225,
+      "batch": 8,
+      "source_keys": [
+        "gram_34",
+        "gram_35",
+        "gram_40",
+        "gram_41",
+        "gram_42",
+        "gram_43",
+        "gram_48",
+        "gram_49"
+      ],
+      "methods": {
+        "cpu_evd": {
+          "median_seconds": 0.03249750599934487,
+          "trials_seconds": [
+            0.03289544700237457,
+            0.032482857001014054,
+            0.03249750599934487
+          ],
+          "max_abs_projection_difference": 0.0,
+          "accepted_kernel_comparison": true
+        },
+        "gpu_loop": {
+          "median_seconds": 0.0628447689996392,
+          "trials_seconds": [
+            0.06300586500219651,
+            0.06256855500032543,
+            0.0628447689996392
+          ],
+          "max_abs_projection_difference": 3.3864377231226928e-18,
+          "accepted_kernel_comparison": true
+        },
+        "gpu_batch": {
+          "median_seconds": 0.11832656299884547,
+          "trials_seconds": [
+            0.11859228599860216,
+            0.11825381900052889,
+            0.11832656299884547
+          ],
+          "max_abs_projection_difference": 1.4879590615191063e-15,
+          "accepted_kernel_comparison": true
+        }
+      }
+    },
+    {
+      "size": 725,
+      "batch": 8,
+      "source_keys": [
+        "gram_36",
+        "gram_37",
+        "gram_38",
+        "gram_39",
+        "gram_44",
+        "gram_45",
+        "gram_46",
+        "gram_47"
+      ],
+      "methods": {
+        "cpu_evd": {
+          "median_seconds": 0.5809511670013308,
+          "trials_seconds": [
+            0.5799691349966452,
+            0.5822062109982653,
+            0.5809511670013308
+          ],
+          "max_abs_projection_difference": 0.0,
+          "accepted_kernel_comparison": true
+        },
+        "gpu_loop": {
+          "median_seconds": 0.255555245999858,
+          "trials_seconds": [
+            0.25523321800210397,
+            0.255555245999858,
+            0.2556019309995463
+          ],
+          "max_abs_projection_difference": 2.949029909160572e-17,
+          "accepted_kernel_comparison": true
+        },
+        "gpu_batch": {
+          "median_seconds": 2.1327921689990035,
+          "trials_seconds": [
+            2.1328391059978458,
+            2.132367382000666,
+            2.1327921689990035
+          ],
+          "max_abs_projection_difference": 3.2421981766006525e-14,
+          "accepted_kernel_comparison": true
+        }
+      }
+    }
+  ],
+  "gpu_pool_bytes": 293106176,
+  "scope": "Float64 PSD projection only, including reconstruction and GPU input/output transfers. No solver speedup or exact-certificate claim."
+}

@@ -1,0 +1,24 @@
+{
+  "name": "h6_state_guided_proof",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.correlated_pair_20260913.state_guided",
+    "results/certificate_scaling/active_space_ladder/h6/fixture.json",
+    "results/correlated_pair_20260913/mps/h6_b48_real/state.json",
+    "results/correlated_pair_20260913/self_consistent/h6_fixed/certificate.json",
+    "results/correlated_pair_20260913/state_guided_h6"
+  ],
+  "timeout_seconds": 180,
+  "status": "passed",
+  "started_UTC": "2026-09-14T06:58:21.572142+00:00",
+  "pid": 22191,
+  "exit_code": 0,
+  "wall_seconds": 106.85179508301371,
+  "child_user_seconds": 105.370297,
+  "child_system_seconds": 0.5641149999999999,
+  "peak_child_RSS_bytes": 105709568,
+  "finished_UTC": "2026-09-14T07:00:08.423265+00:00"
+}

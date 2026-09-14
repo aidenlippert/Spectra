@@ -1,0 +1,85 @@
+{
+  "accepted": true,
+  "operator_convention": "A(i,j)=4 S_i dot S_j; Y=A(i,j)-A(4-j,4-i); T=Y_left-Y_right",
+  "separators": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "exact_moment": "0",
+      "moment_float": 0.0,
+      "norm_upper_bound": 12,
+      "normalized_violation_lower": 0.0,
+      "violated": false
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "exact_moment": "0",
+      "moment_float": 0.0,
+      "norm_upper_bound": 12,
+      "normalized_violation_lower": 0.0,
+      "violated": false
+    },
+    {
+      "pair": [
+        0,
+        3
+      ],
+      "exact_moment": "0",
+      "moment_float": 0.0,
+      "norm_upper_bound": 12,
+      "normalized_violation_lower": 0.0,
+      "violated": false
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "exact_moment": "0",
+      "moment_float": 0.0,
+      "norm_upper_bound": 12,
+      "normalized_violation_lower": 0.0,
+      "violated": false
+    }
+  ],
+  "all_fock_states": 4096,
+  "source_sha256": {
+    "experiments/marginal_asymmetric_reference.py": "909f2dd66df909c4b67dd08d0e29174cb86fde63bb06f9f2e0c0e237cf032881",
+    "experiments/marginal_charge_product.py": "bad102f6d1ef7ec33ae524464a7306f92f0f4dc17a9722025c4b2148800c5798",
+    "experiments/marginal_charged_projectors.py": "6e87655790782c3bef1da558e4c67427cc7659cf57096d0ad4bbeb7aaae14ba3",
+    "experiments/marginal_coherent_tree.py": "6613f0f4cf76e22a4266c6058ccb5874e1b7fdf1ff799dd6b7476956ba4a9f60",
+    "experiments/marginal_collective.py": "326f6ff573f075720bf7f10c29cde5059242e3d052bbc8538414910487df0265",
+    "experiments/marginal_defect_dicke.py": "9be4a47c8eb0110991d158af0cd6ccdfdf7323440b80b871c6b2bf8197106858",
+    "experiments/marginal_determinant_tree.py": "9cd66df9a51235375cfd59d0dd70aa2a4aefb1c3a4d9542d6824e82db5e9e71b",
+    "experiments/marginal_enlarged_schur.py": "48a27deca365e46c35c999720ea9b9d3de456b07e0ccb00e5c3c725216c32089",
+    "experiments/marginal_fixed_point_ldl.py": "480a6134223edcb4534576b5885ca02dac897ed1cd8b3e10c1dca05a4dda6639",
+    "experiments/marginal_general_schur.py": "d40aa1f00c04bea4332d23ca91752f5b121171095816dd505ca47f779e596b7b",
+    "experiments/marginal_h6_complement.py": "3974fb8e613b8aecbf9c8104fc85497077dbd2f404a932a67e8a4a5344dbb891",
+    "experiments/marginal_hunt_car.py": "e95375f0df0d36c18345f0b60913d4e8186c6ea33c4c50f2db381a14acdb4614",
+    "experiments/marginal_implicit_certificate.py": "8a181156a0a9b34ad0528d6fba6a1464beebd4b6a607be326d6bce295319a242",
+    "experiments/marginal_local_hubbard_block.py": "8bd8ffa948513e6b1073f9f1b970a4c87e6f04ca0150f9f407bf928147ce9257",
+    "experiments/marginal_molecular_gershgorin.py": "8801019ea959dff15bde352d35d94cb9aad801a8c4358b77ab18ea225e85313f",
+    "experiments/marginal_orbit_certificate.py": "6aece21dfcb6b569333dea0aa475d5bc49b6068bbc1010dbc83e8eaa08c60148",
+    "experiments/marginal_polynomial_metric.py": "45d52db9af8981d5b5e2847e693c01ff7fde11f37ed71dfc99797687031e07ea",
+    "experiments/marginal_polynomial_sos.py": "95f2733deca3c2a15a96dff4d9adf225adc4dc1da689fe6dd92fe065431e5360",
+    "experiments/marginal_projector_extendibility.py": "f9bab61bf0718c7bd97b44e25cd1cfb7c1cb6a1f27a49229bf7d23b4c4d22859",
+    "experiments/marginal_schur_transfer.py": "5a6e57182169b542c9a9079648c188a65e11f84125bc3ee2c7f6fd05d2009768",
+    "experiments/marginal_sector_reference.py": "750f3e16d24d152cec16d1296eab98192d98e4e981a00b92e5ab7c505960ddf8",
+    "experiments/marginal_sparse_molecular.py": "4655b3f3c3f1633e19074d5e6cbca2fb2b84c8a5627bd2cf745bd4b4d1e73b10",
+    "experiments/marginal_sparse_response.py": "83b38c5b347d259f5cefa47a6ce5ce10896655d26ef1d8b0e87a006aefc96a53",
+    "experiments/marginal_spin_reduction.py": "a465a6a2b74ff4e093a1b3228ef3fcece8e5d6eb3ca531aa2d7dcbed60af32ac",
+    "experiments/marginal_symbolic.py": "a1fc87c3f4fcd10426b6d68e1131941d96db7b4fe29920678034770734f9713f",
+    "experiments/marginal_symmetry_transfer.py": "796d9cbf5f39c49ef6766ec2c54dc3939664bc04ea2dc9d9e2250c3a21e238e0",
+    "experiments/marginal_transfer_verify.py": "5f7bd4bd45adcb397942e09e37065486f9e72f022fe818d2d94ff98c32844bae",
+    "experiments/marginal_window_family_bound.py": "749f8c9d21111f03c9ed48588c43d54146ede88ae545fc3c71d016528f7f0a3f",
+    "results/marginal_graded_hubbard8/discovery/spin_overlap_probe.py": "8690a91628ca6167c23772c466c1cc444777058f5e49a3e976e69f646d24a377",
+    "results/marginal_graded_hubbard8/pair_transfer/W_zero/family/range_two_family_limit_certificate.json": "28469e92420ca18eb371da314ff349fbfa1ed08d1696b447ca00d30de18b22ac",
+    "results/marginal_graded_hubbard8/pair_transfer/W_zero/family/range_two_family_limit_replay.json": "5b1d420721fb24f3212dff624ecf1146ab3ede35ec0bf29d29b05267df46089c"
+  },
+  "scope": "Exact necessary translation-consistency constraints for a stationary quantum extension. PH/reflection/spin-flip invariant CAR actions, all-Fock Hermiticity and periodic cancellation verified. Pair norm3 from exact singlet/triplet block; triangle upper bound12 for each telescope, not a claim of its exact norm. No spin-corrected energy bound or general representability result."
+}

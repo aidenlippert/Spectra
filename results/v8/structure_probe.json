@@ -1,0 +1,60 @@
+{
+  "schema": "v8-reachable-graph-probe-2",
+  "rows": [
+    {
+      "n": 3,
+      "family": "xxz",
+      "reachable": 30,
+      "edges": 56,
+      "complete": true,
+      "bipartite": true,
+      "odd_edge": null
+    },
+    {
+      "n": 3,
+      "family": "mixed",
+      "reachable": 63,
+      "edges": 192,
+      "complete": true,
+      "bipartite": true,
+      "odd_edge": null
+    },
+    {
+      "n": 4,
+      "family": "xxz",
+      "reachable": 126,
+      "edges": 320,
+      "complete": true,
+      "bipartite": true,
+      "odd_edge": null
+    },
+    {
+      "n": 4,
+      "family": "mixed",
+      "reachable": 255,
+      "edges": 1088,
+      "complete": true,
+      "bipartite": true,
+      "odd_edge": null
+    },
+    {
+      "n": 6,
+      "family": "xxz",
+      "reachable": 512,
+      "edges": 1411,
+      "complete": false,
+      "bipartite": true,
+      "odd_edge": null
+    },
+    {
+      "n": 6,
+      "family": "mixed",
+      "reachable": 512,
+      "edges": 1783,
+      "complete": false,
+      "bipartite": true,
+      "odd_edge": null
+    }
+  ],
+  "caveat": "Bipartite result only applies to fully explored reachable component; incomplete rows are unknown."
+}

@@ -1,0 +1,74 @@
+{
+  "created_utc": "2026-09-13T02:42:35.229256+00:00",
+  "goal_status": "active",
+  "structural_scaling_theorem_established": false,
+  "rows": [
+    {
+      "modes": 8,
+      "particles": 4,
+      "lower": "-3667000108966591573/1000000000000000000",
+      "upper": "-244466663760057021416809030361/66666666674605144848000000000",
+      "width": "637509967737864742458470072869/4166666667162821553000000000000000000",
+      "width_float": 1.5300239223886845e-07,
+      "passes_0_0016_Ha": true,
+      "certificate": "results/certificate_scaling/cubic_precision/local_h4_quotient/certificate.json",
+      "certificate_sha256": "4b012777ba9ba4a8ea9e7caa1bee278372ad905581bf87d0130ca6e6136f1128",
+      "proof": null,
+      "proof_sha256": null,
+      "proof_bytes": 0,
+      "wall_seconds": 0.44457187499210704
+    },
+    {
+      "modes": 12,
+      "particles": 6,
+      "lower": "-3166556810312917952757997/500000000000000000000000",
+      "upper": "-63330586263215870660998836114091/10000000000139879611500000000000",
+      "width": "549943928361866999604199235327947756331/10000000000139879611500000000000000000000000",
+      "width_float": 5.4994392835417443e-05,
+      "passes_0_0016_Ha": true,
+      "certificate": "results/lambda_runs/cubic_precision/downloaded/precision_scs/h6_row-column/certificate.json",
+      "certificate_sha256": "07dd51f6cbec4c2abc90677475e47009887fbdee2d7f09a5dc986fcc4c791f1e",
+      "proof": "results/certificate_scaling/cubic_precision/wedge_spectral/h6_conditioned/witness.json",
+      "proof_sha256": "03c022cf3a6ed6781216addffd07b16b22e5fe0a2366823fdddac8626b8aac58",
+      "proof_bytes": 95108,
+      "wall_seconds": 6.803841750006541
+    },
+    {
+      "modes": 16,
+      "particles": 8,
+      "lower": "-2314013753548521439038541/250000000000000000000000",
+      "upper": "-462765221479404761245032793227251/50000000002683070502000000000000",
+      "width": "4691156891771842018593695993075299108791/6250000000335383812750000000000000000000000",
+      "width_float": 0.0007505851026432173,
+      "passes_0_0016_Ha": true,
+      "certificate": "results/lambda_runs/cubic_precision/downloaded/h8_scs_quotient_conditioned/certificate.json",
+      "certificate_sha256": "3d443ce704814bf75504ee142e91b5beafdab8ef7a351f242b63cf046cbd4001",
+      "proof": "results/certificate_scaling/cubic_precision/wedge_spectral/h8_conditioned/witness.json",
+      "proof_sha256": "bdf235cf78657b4ea2f616b3d392fd7395bca190fb2390783411bd7fcea05c06",
+      "proof_bytes": 554403,
+      "wall_seconds": 43.849822040996514
+    },
+    {
+      "modes": 20,
+      "particles": 10,
+      "lower": "-2478329153430006616256357/200000000000000000000000",
+      "upper": "-77301871607146255920348419895881/6250000000414345045312500000000",
+      "width": "18677048662511086662267601301577625779953/800000000053036165800000000000000000000000",
+      "width_float": 0.02334631082659111,
+      "passes_0_0016_Ha": false,
+      "certificate": "results/lambda_runs/cubic_precision/downloaded/h10_scs_quotient_conditioned/certificate.json",
+      "certificate_sha256": "44501d55930ca98b05555e9c4587f5185c6dce16bc83719e5435e7853d1614c1",
+      "proof": "results/certificate_scaling/cubic_precision/wedge_spectral/h10_conditioned/witness.json",
+      "proof_sha256": "676a27bd31a96cf7361962e0fe5bf2f2a7578cf1c199bb5e79f357de40c2171b",
+      "proof_bytes": 2190186,
+      "wall_seconds": 221.26339424999605
+    }
+  ],
+  "report": "research/certificate_scaling/CUBIC_PRECISION_RESULTS.md",
+  "tests": {
+    "research": 20,
+    "symbolic_orbit": 17
+  },
+  "remote_result_files_hash_verified": 42,
+  "instances": "two existing A10s intentionally warm, no current campaign job outstanding"
+}

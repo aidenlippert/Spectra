@@ -1,0 +1,18 @@
+{
+  "name": "fresh_result_summary",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-c",
+    "import json,pathlib; p=pathlib.Path(\"results/reconstruction_compression_20260914/candidates/fresh_h6_2p07_low_32/interval.json\"); r=json.loads(p.read_text()); print({k:r[k] for k in (\"width_mHa\",\"target_1p6mHa_met\",\"lower_float\",\"replay_seconds\")})"
+  ],
+  "timeout_seconds": 60,
+  "status": "passed",
+  "started_UTC": "2026-09-14T08:28:50.496579+00:00",
+  "pid": 37000,
+  "exit_code": 0,
+  "wall_seconds": 0.023971999995410442,
+  "child_user_seconds": 0.016281,
+  "child_system_seconds": 0.0050349999999999995,
+  "peak_child_RSS_bytes": 10928128,
+  "finished_UTC": "2026-09-14T08:28:50.521136+00:00"
+}

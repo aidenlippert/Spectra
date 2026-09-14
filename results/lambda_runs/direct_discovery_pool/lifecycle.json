@@ -1,0 +1,22 @@
+{
+  "utc": "2026-09-12T22:29:59.307393+00:00",
+  "state": "KEEP_RUNNING_USER_REQUEST",
+  "pool_ids": [
+    "fab09ca8165b41d7bfc5649f413dda3f",
+    "b55288de9761445f8c589c21829f853c"
+  ],
+  "rate_usd_per_hour_each": 1.29,
+  "combined_usd_per_hour": 2.58,
+  "combined_usd_24_hours": 61.92,
+  "spend_ceiling_usd": 2600,
+  "autoterminate_after_batch": false,
+  "reason": "User explicitly requested multiple A10s and avoiding repeated boot/teardown between batches.",
+  "credential_file": "~/.config/spectra/lambda-api-key",
+  "credential_in_repo": false,
+  "jobs_completed": 39,
+  "source_archives": {
+    "lp": "source_v1.tar.gz",
+    "compare": "source_v2.tar.gz"
+  },
+  "scope": "LP and SDP jobs use CPU cores on A10 hosts; no GPU acceleration claim."
+}

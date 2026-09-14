@@ -1,0 +1,21 @@
+{
+  "name": "repair_unchanged_spans",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.sector_quotient_20260914.repair",
+    "results/sector_quotient_20260914/candidates/maximize_fixed_mu/best/certificate.json",
+    "results/sector_quotient_20260914/candidates/unchanged_spans_repaired"
+  ],
+  "timeout_seconds": 180,
+  "status": "passed",
+  "started_UTC": "2026-09-14T22:28:23.419793+00:00",
+  "pid": 65795,
+  "exit_code": 0,
+  "wall_seconds": 50.4621426659869,
+  "child_user_seconds": 49.135928,
+  "child_system_seconds": 0.579523,
+  "peak_child_RSS_bytes": 257179648,
+  "finished_UTC": "2026-09-14T22:29:13.884681+00:00"
+}
