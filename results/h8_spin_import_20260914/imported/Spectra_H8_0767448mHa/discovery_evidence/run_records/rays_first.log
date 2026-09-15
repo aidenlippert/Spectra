@@ -1,0 +1,5 @@
+initial rays 281 seconds 0.6480428269999834
+LP_START 0 shape (8533, 18947) nnz 2004607
+/mnt/data/h8_execution/ray_search.py:24: OptimizeWarning: Unrecognized options detected: {'threads': 1}. These will be passed to HiGHS verbatim.
+  sol=linprog(c,A_eq=Amat,b_eq=op.rhs,bounds=bounds,method='highs',options={'time_limit':a.seconds,'primal_feasibility_tolerance':1e-9,'dual_feasibility_tolerance':1e-9,'ipm_optimality_tolerance':1e-10,'threads':1})
+LP_DONE 1 Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None) seconds 80.47316731299998

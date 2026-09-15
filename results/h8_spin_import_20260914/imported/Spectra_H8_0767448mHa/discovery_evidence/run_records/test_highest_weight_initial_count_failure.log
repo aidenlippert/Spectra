@@ -1,0 +1,22 @@
+test_all_raising_words_against_literal_CAR (__main__.HighestWeightChecks.test_all_raising_words_against_literal_CAR) ... FAIL
+test_exact_kernel_and_rank (__main__.HighestWeightChecks.test_exact_kernel_and_rank) ... ok
+test_exact_spin_commutator (__main__.HighestWeightChecks.test_exact_spin_commutator) ... ok
+test_full_accepted_rational_interval (__main__.HighestWeightChecks.test_full_accepted_rational_interval) ... ok
+test_random_full_gram_embedding (__main__.HighestWeightChecks.test_random_full_gram_embedding) ... raising [(42, 44, (368, 112)), (43, 45, (368, 112)), (44, 46, (368, 368)), (45, 47, (368, 368)), (46, 48, (112, 368)), (47, 49, (112, 368)), (50, 52, (368, 112)), (51, 53, (368, 112)), (52, 54, (368, 368)), (53, 55, (368, 368)), (54, 56, (112, 368)), (55, 57, (112, 368))]
+raising [(42, 44, (368, 112)), (43, 45, (368, 112)), (44, 46, (368, 368)), (45, 47, (368, 368)), (46, 48, (112, 368)), (47, 49, (112, 368)), (50, 52, (368, 112)), (51, 53, (368, 112)), (52, 54, (368, 368)), (53, 55, (368, 368)), (54, 56, (112, 368)), (55, 57, (112, 368))]
+ok
+test_reject_wrong_sector_and_hamiltonian (__main__.HighestWeightChecks.test_reject_wrong_sector_and_hamiltonian) ... ok
+
+======================================================================
+FAIL: test_all_raising_words_against_literal_CAR (__main__.HighestWeightChecks.test_all_raising_words_against_literal_CAR)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/h8_execution/test_highest_weight.py", line 20, in test_all_raising_words_against_literal_CAR
+    self.assertEqual(count,1920)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: 3840 != 1920
+
+----------------------------------------------------------------------
+Ran 6 tests in 4.066s
+
+FAILED (failures=1)

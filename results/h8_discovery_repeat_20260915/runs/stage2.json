@@ -1,0 +1,25 @@
+{
+  "name": "stage2",
+  "command": [
+    "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+    "-B",
+    "/Users/aidenlippert/Documents/Spectra/results/h8_spin_import_20260914/imported/Spectra_H8_0767448mHa/discovery/solve_spin_sparse.py",
+    "stage2",
+    "--seconds",
+    "180",
+    "--mu",
+    ".03",
+    "--restart",
+    "/Users/aidenlippert/Documents/Spectra/results/h8_discovery_repeat_20260915/discovery/stage1/checkpoint.npz"
+  ],
+  "timeout_seconds": 270,
+  "status": "passed",
+  "started_UTC": "2026-09-15T02:01:15.839642+00:00",
+  "pid": 2846,
+  "exit_code": 0,
+  "wall_seconds": 41.78609745801077,
+  "child_user_seconds": 40.435952,
+  "child_system_seconds": 0.817426,
+  "peak_child_RSS_bytes": 661520384,
+  "finished_UTC": "2026-09-15T02:01:57.627746+00:00"
+}

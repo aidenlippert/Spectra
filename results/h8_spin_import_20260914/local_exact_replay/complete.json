@@ -1,0 +1,115 @@
+{
+  "kind": "independent_local_import_replay_v1",
+  "lower_Ha": "-277669368076014353/30000000000000000",
+  "upper_Ha": "-96404980911024525006405292665415310181984785342197138743660616188707848777834027376804741614844212591234754769059203115061173136863499536151492878657828048232619820481156991641543265044980626316403255536154728946984394146630657922055077269284099303387662389638721/10416666681366128139025077588426157777196472916600533534511978270474724715766654315271523831102045082704716582998560034624027721405606900471966456548039163183196819459817932009693131265884064116310586385813423340702869292372988380208030951789665275378000000000000",
+  "width_Ha": "119913771335302489327018384940681430950279012590367659170612605972803723040460006942824441870063615193487543592068688641520937436509561328250229435289732775172436307581764924016640352231178337794727092720763844049160879761170322677945613691662524195473704631935217/156250000220491922085376163826392366657947093749008003017679674057120870736499814729072857466530676240570748744978400519360415821084103507079496848220587447747952291897268980145396968988260961744658795787201350110543039385594825703120464276844979130670000000000000000",
+  "width_mHa": 0.7674481354629528,
+  "target_met": true,
+  "matches_supplied_claim_exactly": true,
+  "matches_frozen_upper_exactly": true,
+  "lower_improvement_vs_previous_compact_Ha": "10148525873782065727121/4875000000000000000000000",
+  "lower_improvement_vs_previous_strong_Ha": "307058745205492115623/750000000000000000000000",
+  "valid_on": "Entire fixed-N sector",
+  "spin_defect_Ha": "59/250000000000",
+  "residual_wedge_witness_used": false,
+  "upper_replay_seconds": 32.85690104099922,
+  "lower_replay_seconds": 48.17597554199165,
+  "total_replay_seconds": 81.0778096249851,
+  "numerical_libraries_imported": [],
+  "input_sha256": {
+    "fixture": {
+      "path": "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+      "sha256": "ae6221749adf40be04631a5511a5deb27f3a36d6b4a3121f51811bb954c4df07"
+    },
+    "state": {
+      "path": "results/correlated_pair_20260913/mps/h8_spatial_warm144/state.json",
+      "sha256": "7f3215f9367d1851c194ff6bddde345d2a6f27ac4d4d74ba42b90b253b36248e"
+    },
+    "singlet": {
+      "path": "results/h8_spin_import_20260914/imported/Spectra_H8_0767448mHa/certificates/singlet.json",
+      "sha256": "647f60739d7aff67a09bb6fdef8df48798dc497ba7ce9d17f6a1a49f4b175174"
+    },
+    "nonsinglet": {
+      "path": "results/collective_completion_20260914/candidates/h8_spin_r1_nonsinglet/round_0/certificate.json",
+      "sha256": "797ddb67604580fa9b74d2f33524d29096f73eac95358a4c0a28d0847d29f24d"
+    }
+  },
+  "local_accepting_modules": {
+    "experiments.marginal_hunt_car": {
+      "path": "experiments/marginal_hunt_car.py",
+      "sha256": "e95375f0df0d36c18345f0b60913d4e8186c6ea33c4c50f2db381a14acdb4614"
+    },
+    "experiments.marginal_symbolic": {
+      "path": "experiments/marginal_symbolic.py",
+      "sha256": "3d7821dd5d05e7ddc3fc2ed43629a87875015393fe6c104d2c834a99574c31fe"
+    },
+    "experiments.marginal_collective": {
+      "path": "experiments/marginal_collective.py",
+      "sha256": "326f6ff573f075720bf7f10c29cde5059242e3d052bbc8538414910487df0265"
+    },
+    "experiments.marginal_sector_reference": {
+      "path": "experiments/marginal_sector_reference.py",
+      "sha256": "750f3e16d24d152cec16d1296eab98192d98e4e981a00b92e5ab7c505960ddf8"
+    },
+    "experiments.marginal_asymmetric_reference": {
+      "path": "experiments/marginal_asymmetric_reference.py",
+      "sha256": "909f2dd66df909c4b67dd08d0e29174cb86fde63bb06f9f2e0c0e237cf032881"
+    },
+    "experiments.marginal_transfer_verify": {
+      "path": "experiments/marginal_transfer_verify.py",
+      "sha256": "5f7bd4bd45adcb397942e09e37065486f9e72f022fe818d2d94ff98c32844bae"
+    },
+    "experiments.marginal_schur_transfer": {
+      "path": "experiments/marginal_schur_transfer.py",
+      "sha256": "5a6e57182169b542c9a9079648c188a65e11f84125bc3ee2c7f6fd05d2009768"
+    },
+    "experiments.marginal_orbit_certificate": {
+      "path": "experiments/marginal_orbit_certificate.py",
+      "sha256": "6aece21dfcb6b569333dea0aa475d5bc49b6068bbc1010dbc83e8eaa08c60148"
+    },
+    "experiments.marginal_symmetry_transfer": {
+      "path": "experiments/marginal_symmetry_transfer.py",
+      "sha256": "796d9cbf5f39c49ef6766ec2c54dc3939664bc04ea2dc9d9e2250c3a21e238e0"
+    },
+    "experiments.marginal_general_schur": {
+      "path": "experiments/marginal_general_schur.py",
+      "sha256": "d40aa1f00c04bea4332d23ca91752f5b121171095816dd505ca47f779e596b7b"
+    },
+    "research.certificate_scaling.commutator_dual_witness": {
+      "path": "research/certificate_scaling/commutator_dual_witness.py",
+      "sha256": "5b7188235d62c36c324d8f2c80040ecf84363832ac9c054d31c5429e16a29419"
+    },
+    "research.molecular_collective_20260913.core": {
+      "path": "research/molecular_collective_20260913/core.py",
+      "sha256": "e8b80892ab8d18ba5798446bba5a129ac4e45cf20246765a86c9c1fc9d2defc5"
+    },
+    "research.correlated_pair_20260913.mps_exact": {
+      "path": "research/correlated_pair_20260913/mps_exact.py",
+      "sha256": "834aa2e2f66c62579f4ea622f6fec3560fd0f8c0e529741ec3d35bc1328b34b0"
+    },
+    "research.certificate_scaling.spin_basis": {
+      "path": "research/certificate_scaling/spin_basis.py",
+      "sha256": "d27cd89115f252ca591a0d6a2874110e9061c57113781be82d0b01484a18556b"
+    },
+    "research.certificate_scaling.spin_twirl": {
+      "path": "research/certificate_scaling/spin_twirl.py",
+      "sha256": "99aa0a67f0f9423ac00a1a98b10a9a9035e331b32fbc532d86f4de7bf7a9a91d"
+    },
+    "research.collective_completion_20260914.spin_replay": {
+      "path": "research/collective_completion_20260914/spin_replay.py",
+      "sha256": "9a8e2c21160fcc37823dccf361629f17c9a03807732368b5e2b108065e153d89"
+    },
+    "research.collective_completion_20260914.spin_screen": {
+      "path": "research/collective_completion_20260914/spin_screen.py",
+      "sha256": "8e18b33496995dc289639fa39d5d0cada2b9f9635f1f1c410582bb84af386ef4"
+    },
+    "research.correlated_pair_20260913.budget": {
+      "path": "research/correlated_pair_20260913/budget.py",
+      "sha256": "77db8aae8f7c08646ba42fb13573460320fa6551acb23e5c99131789f6bd7412"
+    },
+    "research.h8_spin_import_20260914.budget": {
+      "path": "research/h8_spin_import_20260914/budget.py",
+      "sha256": "060895570a67f678fd55e1b235363a66bba48a24d287cf09ea5380fc09f3fc56"
+    }
+  }
+}

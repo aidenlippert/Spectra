@@ -1,0 +1,81 @@
+{
+  "kind": "H8_accuracy_milestone_independently_achieved",
+  "claim_status": "Verified by unchanged original local accepting code",
+  "lower_Ha": "-277669368076014353/30000000000000000",
+  "upper_Ha": "-96404980911024525006405292665415310181984785342197138743660616188707848777834027376804741614844212591234754769059203115061173136863499536151492878657828048232619820481156991641543265044980626316403255536154728946984394146630657922055077269284099303387662389638721/10416666681366128139025077588426157777196472916600533534511978270474724715766654315271523831102045082704716582998560034624027721405606900471966456548039163183196819459817932009693131265884064116310586385813423340702869292372988380208030951789665275378000000000000",
+  "width_Ha": "119913771335302489327018384940681430950279012590367659170612605972803723040460006942824441870063615193487543592068688641520937436509561328250229435289732775172436307581764924016640352231178337794727092720763844049160879761170322677945613691662524195473704631935217/156250000220491922085376163826392366657947093749008003017679674057120870736499814729072857466530676240570748744978400519360415821084103507079496848220587447747952291897268980145396968988260961744658795787201350110543039385594825703120464276844979130670000000000000000",
+  "width_mHa": 0.7674481354629528,
+  "target_mHa": 1.6,
+  "target_met": true,
+  "target_margin_mHa": 0.8325518645370472,
+  "new_lower_improvement_mHa": 2.0817488971860647,
+  "improvement_over_old_strong_mHa": 0.4094116602739895,
+  "local_exact_replay": "results/h8_spin_import_20260914/local_exact_replay/complete.json",
+  "local_tests_passed": 6,
+  "original_checker_modified": false,
+  "original_input_bytes_identical": {
+    "inputs/fixture.json": {
+      "package_sha256": "ae6221749adf40be04631a5511a5deb27f3a36d6b4a3121f51811bb954c4df07",
+      "local_sha256": "ae6221749adf40be04631a5511a5deb27f3a36d6b4a3121f51811bb954c4df07",
+      "byte_identical": true
+    },
+    "inputs/state.json": {
+      "package_sha256": "7f3215f9367d1851c194ff6bddde345d2a6f27ac4d4d74ba42b90b253b36248e",
+      "local_sha256": "7f3215f9367d1851c194ff6bddde345d2a6f27ac4d4d74ba42b90b253b36248e",
+      "byte_identical": true
+    },
+    "certificates/nonsinglet.json": {
+      "package_sha256": "797ddb67604580fa9b74d2f33524d29096f73eac95358a4c0a28d0847d29f24d",
+      "local_sha256": "797ddb67604580fa9b74d2f33524d29096f73eac95358a4c0a28d0847d29f24d",
+      "byte_identical": true
+    }
+  },
+  "source_comparison_counts": {
+    "identical": 804,
+    "different": 0,
+    "absent_locally": 1
+  },
+  "inherited_files_verified": 11384,
+  "changed_inherited_files": [],
+  "imported_manifest_hashes_verified": 930,
+  "singlet_Gram_matrix_entries": 335168,
+  "singlet_independent_symmetric_entries": 168696,
+  "complete_Gram_matrix_entries": 353296,
+  "accepted_singlet_rows": 203,
+  "accepted_singlet_nonzero_factor_coefficients": 61888,
+  "sparse_rebuild": {
+    "python": "3.12.2",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "platform": "macOS-26.4.1-arm64-arm-64bit",
+    "gram_entries": 335168,
+    "coefficient_map_nonzeros": 1494886,
+    "normal_stored_nonzeros": 222889,
+    "normal_minimum_nonzero_magnitude": 7.889067397657199e-24,
+    "normal_nonzeros_below_1e_18": 31246,
+    "LU_factor_nonzeros": 954188,
+    "normal_relative_solve_residual": 5.141525934972027e-10,
+    "build_and_factor_seconds": 1.3665575410122983,
+    "archive_normal_nonzeros": 221779,
+    "archive_LU_factor_nonzeros": 954952,
+    "scope": "Local reconstruction, no new optimization. Stored numerical sparsity counts need not be bit-identical across environments. Raw imported builder RSS field has Linux units and is not used for local memory accounting."
+  },
+  "numeric_bridge": {
+    "block_structure_identical": true,
+    "final_primal_b": -9.255633788088257,
+    "supplied_final_selected_residual_l1": 2.025885657920583e-06,
+    "local_final_selected_residual_l1": 2.0258856525741274e-06,
+    "absolute_residual_l1_difference": 5.346455445926672e-15,
+    "normal_map_relative_error": 3.8291945874933303e-16,
+    "scope": "Numerical bridge only. Exact lower and upper already independently accepted by original local checker.",
+    "supplied_and_locally_rebuilt_bases_elementwise_identical": true
+  },
+  "local_instrumented_processes": 3,
+  "local_recorded_process_wall_seconds": 87.59357100099442,
+  "local_peak_process_RSS_bytes": 293257216,
+  "fresh_numerical_discovery_repeated_locally": false,
+  "cold_end_to_end_cost_verified": false,
+  "general_scalability_demonstrated": false,
+  "old_compact_span_impossibility_proved": false,
+  "no_next_research_campaign_automatically_started": true
+}

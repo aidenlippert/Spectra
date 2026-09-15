@@ -1,0 +1,117 @@
+{
+  "mixed_words_checked_by_exact_local_CAR": 3840,
+  "warm_start_max_coefficient_error": 8.326672684688674e-17,
+  "block_dimensions": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    12,
+    16,
+    32,
+    32,
+    12,
+    16,
+    12,
+    16,
+    32,
+    32,
+    12,
+    16,
+    32,
+    32,
+    64,
+    64,
+    32,
+    32,
+    4,
+    4,
+    4,
+    4,
+    24,
+    24,
+    24,
+    24,
+    24,
+    24,
+    24,
+    24,
+    4,
+    4,
+    4,
+    4,
+    256,
+    112,
+    256,
+    112,
+    256,
+    112,
+    256,
+    112
+  ],
+  "matrix_entries": 335168,
+  "independent_symmetric_entries": 168696,
+  "random_full_Gram_transport_relative_errors": [
+    3.2286925199677167e-16,
+    3.272861202261047e-16
+  ],
+  "transport_check_scope": "Floating diagnostics on local coefficient maps; energy acceptance is independent exact CAR replay.",
+  "exact_kernel_checks": [
+    {
+      "physical_group": 46,
+      "integer_kernel_dimension": 256,
+      "squared_norms_of_six_times_basis": [
+        18,
+        24,
+        36
+      ]
+    },
+    {
+      "physical_group": 47,
+      "integer_kernel_dimension": 256,
+      "squared_norms_of_six_times_basis": [
+        18,
+        24,
+        36
+      ]
+    },
+    {
+      "physical_group": 54,
+      "integer_kernel_dimension": 256,
+      "squared_norms_of_six_times_basis": [
+        18,
+        24,
+        36
+      ]
+    },
+    {
+      "physical_group": 55,
+      "integer_kernel_dimension": 256,
+      "squared_norms_of_six_times_basis": [
+        18,
+        24,
+        36
+      ]
+    }
+  ],
+  "integer_spin_commutator_groups_checked": 16,
+  "refusals_checked": [
+    "changed particle number",
+    "changed Hamiltonian coefficient",
+    "missing nonsinglet proof"
+  ],
+  "pruning": {
+    "removed_rows": 377,
+    "retained_rows": 203,
+    "exact_removed_square_norm_bound_Ha": "198941/125000000000000000",
+    "all_other_certificate_content_identical": true
+  },
+  "tests_run": 6,
+  "successful": true,
+  "seconds": 3.5299532909994014,
+  "no_new_numerical_optimization_run": true
+}

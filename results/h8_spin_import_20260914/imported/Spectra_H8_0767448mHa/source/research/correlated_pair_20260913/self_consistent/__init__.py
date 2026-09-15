@@ -1,0 +1,1 @@
+"""Direct Hamiltonian structured factors."""
