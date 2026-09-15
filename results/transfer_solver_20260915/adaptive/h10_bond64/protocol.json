@@ -1,0 +1,143 @@
+{
+  "original_frozen_failure": {
+    "status": "stopped_after_failed_step",
+    "last_step": "state",
+    "elapsed_seconds": 902.5120937910106,
+    "from_new_integrals": true,
+    "historical_artifacts_loaded": false,
+    "development_and_failed_other_case_costs_are_separate": true
+  },
+  "fresh_integrals_and_random_state": true,
+  "bond_cap": 64,
+  "sweeps_cap": 6,
+  "previous_checkpoint_used": false,
+  "proposal_projector": "Existing exact combinatorial spin twirl",
+  "accepting_checker_unchanged": true,
+  "same_lower_dictionary_and_optimizer_as_frozen_campaign": true,
+  "frozen_source_hashes": {
+    "research/transfer_solver_20260915/actions.py": "37128e2813d196af2867186035bffd02108c683c314db1de7546ad782c7362c0",
+    "research/transfer_solver_20260915/algebra.py": "59c0ee7cd61022797d83f2b1eec083826cb1b618cd4f84a3782a38ec8996e185",
+    "research/transfer_solver_20260915/budget.py": "b0f58eb42983a41962c0e441974d4056951936246e64b55bb8cc506b11f7fff1",
+    "research/transfer_solver_20260915/campaign.py": "159f71a834d1497df30ba6723c7246d3e3641b82757200576bd94cb8e7e04c89",
+    "research/transfer_solver_20260915/generate.py": "d030e97a3623e0907b48383981591f79f0e873ae378992a72c4825db8b5c1190",
+    "research/transfer_solver_20260915/prepare.py": "b49c15a72f1367fc327ae56c15ab89babdb0ca08c5a8815d36ffc9f33bff3c82",
+    "research/transfer_solver_20260915/run_set.py": "5a009b9afc9b4a4c81a243d4d7b80159c3aa383b243a59d02e7e7bedc09b3441",
+    "research/transfer_solver_20260915/solve.py": "f9612cb3cbbb3f5b66d31bfb6d24893bda22518fac934e537d613b823c647eed",
+    "research/transfer_solver_20260915/test_algebra.py": "15104f9e8f4ce64899174bb33bdb77476bb6e1f3d96eb548793bfbc8b6509dbd",
+    "research/transfer_followup_20260915/adaptive_size.py": "e9c8e2e599d0e6ba9820cf54d5857ffeec2de6aea850fc4af2c9258c9e81729a"
+  },
+  "two_declared_changes": [
+    "smaller MPS bond/sweep budget",
+    "faster proposal-side exact twirl"
+  ],
+  "not_an_untouched_frozen_validation_case": true,
+  "steps": [
+    {
+      "name": "generate",
+      "seconds": 90,
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.generate",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64"
+      ]
+    },
+    {
+      "name": "state",
+      "seconds": 600,
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.adaptive_size",
+        "state",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64"
+      ]
+    },
+    {
+      "name": "upper",
+      "seconds": 300,
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64",
+        "upper"
+      ]
+    },
+    {
+      "name": "nonsinglet",
+      "seconds": 240,
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64",
+        "nonsinglet"
+      ]
+    },
+    {
+      "name": "prepare",
+      "seconds": 900,
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.adaptive_size",
+        "prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64"
+      ]
+    },
+    {
+      "name": "stage1",
+      "seconds": 400,
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64",
+        "stage1",
+        "--seconds",
+        "300",
+        "--mu",
+        "2"
+      ]
+    },
+    {
+      "name": "stage2",
+      "seconds": 300,
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64",
+        "stage2",
+        "--seconds",
+        "180",
+        "--mu",
+        ".03",
+        "--restart",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64/stage1/checkpoint.npz"
+      ]
+    },
+    {
+      "name": "replay",
+      "seconds": 600,
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64",
+        "replay"
+      ]
+    }
+  ]
+}

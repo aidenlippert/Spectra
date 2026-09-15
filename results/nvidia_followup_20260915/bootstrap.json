@@ -1,0 +1,11 @@
+{
+  "name": "bootstrap",
+  "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+  "started_UTC": "2026-09-15T07:12:49.757646+00:00",
+  "timeout_seconds": 900,
+  "script": "set -eu\nmkdir -p /home/ubuntu/spectra-nvidia\ncd /home/ubuntu/spectra-nvidia\npython3 -m pip install --user uv\n/home/ubuntu/.local/bin/uv python install 3.12\n/home/ubuntu/.local/bin/uv venv --python 3.12 .venv\n/home/ubuntu/.local/bin/uv pip install --python .venv/bin/python 'numpy==2.2.6' 'scipy==1.18.1' 'cupy-cuda12x[ctk]==14.2.0' 'cuquantum-python-cu12' 'nvmath-python[cu12]' 'nvidia-cudss-cu12' 'quimb==1.15.0' numba networkx threadpoolctl python-flint pytest\n.venv/bin/python -m pip freeze > installed.txt 2>&1 || /home/ubuntu/.local/bin/uv pip freeze --python .venv/bin/python > installed.txt\nnvidia-smi --query-gpu=name,driver_version,memory.total --format=csv,noheader > gpu.txt\nsudo apt-get update -qq\nsudo apt-get install -y -qq libsuitesparse-dev\n/home/ubuntu/.local/bin/uv pip install --python .venv/bin/python 'scikit-sparse==0.4.16'\n/home/ubuntu/.local/bin/uv pip freeze --python .venv/bin/python > installed.txt\n",
+  "status": "passed",
+  "exit_code": 0,
+  "wall_seconds": 43.641577750007855,
+  "finished_UTC": "2026-09-15T07:13:33.400546+00:00"
+}

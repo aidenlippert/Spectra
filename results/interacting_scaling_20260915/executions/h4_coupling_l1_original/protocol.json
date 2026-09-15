@@ -1,0 +1,23 @@
+{
+  "steps": [
+    [
+      "transfer",
+      600,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.interacting_scaling_20260915.rotation",
+        "transfer",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_coupling_l1",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_coupling_l1/exact",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_coupling_l1/original_interval.json"
+      ]
+    ]
+  ],
+  "one_heavy_process_at_a_time": true,
+  "host": "local Mac; one BLAS/Numba thread",
+  "external_spending": false
+}

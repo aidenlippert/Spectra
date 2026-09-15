@@ -1,0 +1,157 @@
+{
+  "outcomes": [
+    {
+      "input": {
+        "steps": [
+          {
+            "stage": "integrals",
+            "exit_code": 0,
+            "effective_cap_seconds": 300
+          },
+          {
+            "stage": "rotation",
+            "exit_code": 0,
+            "effective_cap_seconds": 300
+          },
+          {
+            "stage": "initialize",
+            "exit_code": 0,
+            "effective_cap_seconds": 20
+          }
+        ],
+        "wall_seconds": 12.444434500008356,
+        "completed": true,
+        "last_stage": "initialize"
+      }
+    },
+    {
+      "state_and_screen": {
+        "steps": [
+          {
+            "stage": "state",
+            "exit_code": 0,
+            "effective_cap_seconds": 900
+          },
+          {
+            "stage": "upper",
+            "exit_code": 0,
+            "effective_cap_seconds": 180
+          }
+        ],
+        "wall_seconds": 835.2954118750058,
+        "completed": true,
+        "last_stage": "upper"
+      }
+    },
+    {
+      "direct_screen": {
+        "completed": false,
+        "levels": [
+          {
+            "level": 0,
+            "case": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_heldout_base_magnetic_level0",
+            "execution": {
+              "steps": [
+                {
+                  "stage": "initialize",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 20
+                },
+                {
+                  "stage": "prepare",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 300
+                },
+                {
+                  "stage": "solve",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 195
+                },
+                {
+                  "stage": "check",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 180
+                }
+              ],
+              "wall_seconds": 182.31327166597475,
+              "completed": true,
+              "last_stage": "check"
+            },
+            "threshold_met": false
+          },
+          {
+            "level": 1,
+            "case": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_heldout_base_magnetic_level1",
+            "execution": {
+              "steps": [
+                {
+                  "stage": "initialize",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 20
+                },
+                {
+                  "stage": "prepare",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 300
+                },
+                {
+                  "stage": "solve",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 195
+                },
+                {
+                  "stage": "check",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 180
+                }
+              ],
+              "wall_seconds": 189.98929833300645,
+              "completed": true,
+              "last_stage": "check"
+            },
+            "threshold_met": false
+          },
+          {
+            "level": 2,
+            "case": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_heldout_base_magnetic_level2",
+            "execution": {
+              "steps": [
+                {
+                  "stage": "initialize",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 20
+                },
+                {
+                  "stage": "prepare",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 300
+                },
+                {
+                  "stage": "solve",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 195
+                },
+                {
+                  "stage": "check",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 180
+                }
+              ],
+              "wall_seconds": 282.75148641699343,
+              "completed": true,
+              "last_stage": "check"
+            },
+            "threshold_met": false
+          }
+        ],
+        "global_cubic_map_constructed": false
+      }
+    }
+  ],
+  "best": null,
+  "target_met": false,
+  "wall_seconds": 1502.7998542500136,
+  "single_fresh_pipeline_on_one_local_host": true,
+  "all_failed_levels_in_clock": true,
+  "integrals_and_state_discovery_included": true
+}

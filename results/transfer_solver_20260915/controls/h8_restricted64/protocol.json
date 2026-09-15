@@ -1,0 +1,77 @@
+{
+  "input_hashes": {
+    "fixture.json": "fda4ca29219e996e794493a48cf0df006fe64a86976b0f514b5b8b18780502be",
+    "upper.json": "63581134926b446183408d9003a7887734860f13d86b943ed03ab0c444f56ead",
+    "nonsinglet.json": "3a7962e25cb2522b2e6b8f74a3f21aff5004f255f25a959f005331a46df18e12",
+    "mps/state.json": "af53dee1e39219f78b78e72072a62c5e890b778025d8adca58da988c66bb4b6e"
+  },
+  "nested_restriction": "At most first 64 rational columns per mixed highest-weight block",
+  "common_initial_primal": "zero",
+  "same_state_and_nonsinglet_as_full_control": true,
+  "same_optimizer_and_stopping_rule": true,
+  "different_attainable_family": true,
+  "not_claimed_to_be_best_restricted_basis": true,
+  "no_verified_family_ceiling": true,
+  "source_sha256": "4ec992befa690f43db5f2217cf67ee75e02d8428a571905e7f342e82f0b871b3",
+  "steps": [
+    {
+      "name": "prepare",
+      "seconds": 900,
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.restricted_control",
+        "prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_restricted64"
+      ]
+    },
+    {
+      "name": "stage1",
+      "seconds": 400,
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_restricted64",
+        "stage1",
+        "--seconds",
+        "300",
+        "--mu",
+        "2"
+      ]
+    },
+    {
+      "name": "stage2",
+      "seconds": 300,
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_restricted64",
+        "stage2",
+        "--seconds",
+        "180",
+        "--mu",
+        ".03",
+        "--restart",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_restricted64/stage1/checkpoint.npz"
+      ]
+    },
+    {
+      "name": "replay",
+      "seconds": 600,
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_restricted64",
+        "replay"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "input_derived_sparse_boundary_point_v1",
+  "best": {
+    "iteration": "final",
+    "seconds": 300.05426533397986,
+    "mu": 2.0,
+    "b": -15.632179235873437,
+    "raw_width_mHa": -1.170530493830313,
+    "predicted_coefficient_l1_Ha": 0.06809982474610338,
+    "unverified_width_mHa": 66.92929721427276,
+    "primal_l2": 0.0001809954105505026,
+    "dual_l2": 1.375791584080416e-05,
+    "minimum_dual_eigenvalue": -3.5630306220874214e-06,
+    "cg_status": 0,
+    "kernel_seconds": 286.446404561284
+  },
+  "export": {
+    "proposed_b": -15.632179235873437,
+    "number_multiplier_quartic_terms": 1008,
+    "minimum_eigenvalue_before_export": -2.3276093190665594e-16,
+    "factor_rows": 1019,
+    "certificate_bytes": 4683344
+  },
+  "seconds": 307.3757857089804,
+  "normal_map_relative_error": 2.3898157154525235e-16,
+  "ideal_projection": {
+    "implementation": "SuiteSparseQR_economy",
+    "ideal_coordinate_count": 957,
+    "numerical_ideal_rank": 955,
+    "dependent_coordinates_removed": 2,
+    "QR_absolute_rank_tolerance": 2.8738927014172363e-11,
+    "ideal_projector_max_defect": 8.35669675383491e-15,
+    "dual_normalization_error": 1.1792174875525947e-13,
+    "Q_nonzeros": 519852,
+    "R_nonzeros": 37487,
+    "seconds": 5.878707833995577
+  },
+  "restart": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_posthoc_screen_0/resume.npz",
+  "initial_old_checkpoint_used": false,
+  "Gram_entries": 257936,
+  "backend": "cpu_evd",
+  "setup_seconds": 6.645938417001162,
+  "kernel_seconds": 286.446404561284,
+  "iterations_completed": 6840,
+  "fixed_iterations_requested": null,
+  "switch_iteration": null,
+  "adaptive_refinement": true,
+  "status": "requires_original_exact_checker"
+}

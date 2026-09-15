@@ -1,0 +1,208 @@
+{
+  "outcomes": [
+    {
+      "input": {
+        "steps": [
+          {
+            "stage": "integrals",
+            "exit_code": 0,
+            "effective_cap_seconds": 300
+          },
+          {
+            "stage": "rotation",
+            "exit_code": 0,
+            "effective_cap_seconds": 300
+          },
+          {
+            "stage": "initialize",
+            "exit_code": 0,
+            "effective_cap_seconds": 20
+          }
+        ],
+        "wall_seconds": 2.1839542080124374,
+        "completed": true,
+        "last_stage": "initialize"
+      }
+    },
+    {
+      "state_and_screen": {
+        "steps": [
+          {
+            "stage": "state",
+            "exit_code": 0,
+            "effective_cap_seconds": 900
+          },
+          {
+            "stage": "upper",
+            "exit_code": 0,
+            "effective_cap_seconds": 180
+          }
+        ],
+        "wall_seconds": 1.943799417000264,
+        "completed": true,
+        "last_stage": "upper"
+      }
+    },
+    {
+      "direct_screen": {
+        "completed": true,
+        "levels": [
+          {
+            "level": 0,
+            "case": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_cold_integration_base_magnetic_level0",
+            "execution": {
+              "steps": [
+                {
+                  "stage": "initialize",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 20
+                },
+                {
+                  "stage": "prepare",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 300
+                },
+                {
+                  "stage": "solve",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 195
+                },
+                {
+                  "stage": "check",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 180
+                }
+              ],
+              "wall_seconds": 2.934662416984793,
+              "completed": true,
+              "last_stage": "check"
+            },
+            "threshold_met": true,
+            "attachment": {
+              "steps": [
+                {
+                  "stage": "attach",
+                  "exit_code": 0,
+                  "effective_cap_seconds": 180
+                }
+              ],
+              "wall_seconds": 0.24336095800390467,
+              "completed": true,
+              "last_stage": "attach"
+            }
+          }
+        ],
+        "global_cubic_map_constructed": false
+      }
+    },
+    {
+      "level": 0,
+      "case": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_cold_integration_level0",
+      "execution": {
+        "steps": [
+          {
+            "stage": "initialize",
+            "exit_code": 0,
+            "effective_cap_seconds": 20
+          },
+          {
+            "stage": "prepare",
+            "exit_code": 0,
+            "effective_cap_seconds": 900
+          },
+          {
+            "stage": "solve",
+            "exit_code": 0,
+            "effective_cap_seconds": 105
+          },
+          {
+            "stage": "replay",
+            "exit_code": 0,
+            "effective_cap_seconds": 600
+          }
+        ],
+        "wall_seconds": 11.961556374997599,
+        "completed": true,
+        "last_stage": "replay"
+      },
+      "interval": {
+        "lower_Ha": "-2210406051623034005571922832815350816359550324629047976766593155132695251022775380655806634034394584167331950655004640737969943421631165267725736024420588484760201698953310035256507276654822361593123199/602782720640912297730034416775221194431899467364169497031823398788547527069347012233211378399400449619005852423829789629155071780060810490995377759067649813406874734226367588373207709000000000000000000",
+        "upper_Ha": "-1842003507882163799609054386151565507769262028634066568817155376097587744371212882141145934992229023171823383373030966293380801268348541958265836924988031972564232696556731811494104124105266727588816136411124918351477777275616142749526104390963532219774146053845099781034031722078675462014303920453410423/502318933763831241351819291478284939604922892935156259525173424269090961700308408912798402882044148227256642400479174745915604152472512777337468650049481274897445089167961799037924302158465988014835910836228846449330091506285683634266910143023569339807510427858158599726066835139306139262737500000000000",
+        "width_Ha": "368341714934077307099426819777117360219124174617002895235022084254394593330489350173864100779488757100129128816833321024337712820507979064134735847773834970354137240621730046061438732835606873195161281560851078850209918234915891941660059787258971423339538696771810700732242284360092011670451839171616827/120556544103319497924436629954788385505181494304437502286041621824581830808074018139071616691690595574541594176115001939019744996593403066560992476011875505975386821400310831769101832518031837123560618600694923147839221961508564072224058434325656641553802502685958063934256040433433473423057000000000000000000",
+        "width_mHa": 0.0030553440103458897,
+        "target_met": true,
+        "rotation_allowance_each_endpoint_Ha": "460599127987134775076271113988723656139274858507561573830760482154134561985089784439296993745478800650779381660866116530851151659902536824318757728399684025101991381213355959553747371923/5023189338674269147750286806460176620265828894701412475265194989904562725577891768610094819995003746825048770198581580242958931500506754091628147992230415111723956118553063236443397575000000000000",
+        "original_fixture_sha256": "2f8319730b14d4b37acc6781525a413254e03ab5a6e2a6ac66ae870dcd955958",
+        "rotated_fixture_sha256": "9c80ce7519f32bf21b3c179c7bea432cac357e4e34d7eefabf1348b1eaaad7c8",
+        "upper_and_lower_witnesses_rechecked": true,
+        "fresh_complete_replay_in_this_invocation": true,
+        "witness_sha256": {
+          "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_cold_integration_level0/exact/fixture.json": "3ce229d5e3a9a685524dea5ef50abb0a3db42fc02361777f26b19347a2ceb122",
+          "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_cold_integration_level0/exact/certificate.json": "f43c7d4b25edb562bc6e395487dee8550184ab197cfc01bf39af65d738fc3d25",
+          "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_cold_integration_level0/exact/nonsinglet.json": "b165b957458fe022af0294fb4ec3e39b0faeb8f781edee8b7064be1f3b51ded0",
+          "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_cold_integration_level0/mps/state.json": "dac49f0bb9979d4b0052b01ed334c26e96ebbda6211acb73af4726d7e41131c7"
+        },
+        "full_fixed_N_determinants_enumerated": 0,
+        "complete_seconds": 0.9281285410106648,
+        "argument": "Exact paired orbital unitary; coefficient allowance charged separately at both endpoints."
+      }
+    }
+  ],
+  "best": {
+    "level": 0,
+    "case": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_cold_integration_level0",
+    "execution": {
+      "steps": [
+        {
+          "stage": "initialize",
+          "exit_code": 0,
+          "effective_cap_seconds": 20
+        },
+        {
+          "stage": "prepare",
+          "exit_code": 0,
+          "effective_cap_seconds": 900
+        },
+        {
+          "stage": "solve",
+          "exit_code": 0,
+          "effective_cap_seconds": 105
+        },
+        {
+          "stage": "replay",
+          "exit_code": 0,
+          "effective_cap_seconds": 600
+        }
+      ],
+      "wall_seconds": 11.961556374997599,
+      "completed": true,
+      "last_stage": "replay"
+    },
+    "interval": {
+      "lower_Ha": "-2210406051623034005571922832815350816359550324629047976766593155132695251022775380655806634034394584167331950655004640737969943421631165267725736024420588484760201698953310035256507276654822361593123199/602782720640912297730034416775221194431899467364169497031823398788547527069347012233211378399400449619005852423829789629155071780060810490995377759067649813406874734226367588373207709000000000000000000",
+      "upper_Ha": "-1842003507882163799609054386151565507769262028634066568817155376097587744371212882141145934992229023171823383373030966293380801268348541958265836924988031972564232696556731811494104124105266727588816136411124918351477777275616142749526104390963532219774146053845099781034031722078675462014303920453410423/502318933763831241351819291478284939604922892935156259525173424269090961700308408912798402882044148227256642400479174745915604152472512777337468650049481274897445089167961799037924302158465988014835910836228846449330091506285683634266910143023569339807510427858158599726066835139306139262737500000000000",
+      "width_Ha": "368341714934077307099426819777117360219124174617002895235022084254394593330489350173864100779488757100129128816833321024337712820507979064134735847773834970354137240621730046061438732835606873195161281560851078850209918234915891941660059787258971423339538696771810700732242284360092011670451839171616827/120556544103319497924436629954788385505181494304437502286041621824581830808074018139071616691690595574541594176115001939019744996593403066560992476011875505975386821400310831769101832518031837123560618600694923147839221961508564072224058434325656641553802502685958063934256040433433473423057000000000000000000",
+      "width_mHa": 0.0030553440103458897,
+      "target_met": true,
+      "rotation_allowance_each_endpoint_Ha": "460599127987134775076271113988723656139274858507561573830760482154134561985089784439296993745478800650779381660866116530851151659902536824318757728399684025101991381213355959553747371923/5023189338674269147750286806460176620265828894701412475265194989904562725577891768610094819995003746825048770198581580242958931500506754091628147992230415111723956118553063236443397575000000000000",
+      "original_fixture_sha256": "2f8319730b14d4b37acc6781525a413254e03ab5a6e2a6ac66ae870dcd955958",
+      "rotated_fixture_sha256": "9c80ce7519f32bf21b3c179c7bea432cac357e4e34d7eefabf1348b1eaaad7c8",
+      "upper_and_lower_witnesses_rechecked": true,
+      "fresh_complete_replay_in_this_invocation": true,
+      "witness_sha256": {
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_cold_integration_level0/exact/fixture.json": "3ce229d5e3a9a685524dea5ef50abb0a3db42fc02361777f26b19347a2ceb122",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_cold_integration_level0/exact/certificate.json": "f43c7d4b25edb562bc6e395487dee8550184ab197cfc01bf39af65d738fc3d25",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_cold_integration_level0/exact/nonsinglet.json": "b165b957458fe022af0294fb4ec3e39b0faeb8f781edee8b7064be1f3b51ded0",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_cold_integration_level0/mps/state.json": "dac49f0bb9979d4b0052b01ed334c26e96ebbda6211acb73af4726d7e41131c7"
+      },
+      "full_fixed_N_determinants_enumerated": 0,
+      "complete_seconds": 0.9281285410106648,
+      "argument": "Exact paired orbital unitary; coefficient allowance charged separately at both endpoints."
+    }
+  },
+  "target_met": true,
+  "wall_seconds": 19.27815508301137,
+  "single_fresh_pipeline_on_one_local_host": true,
+  "all_failed_levels_in_clock": true,
+  "integrals_and_state_discovery_included": true
+}

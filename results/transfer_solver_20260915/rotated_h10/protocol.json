@@ -1,0 +1,46 @@
+{
+  "source_case": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h10_size",
+  "source_sha256": "0c0f220030dfacc5c4f9936b285f322a89cca15ec7e59b4f033f308c9cd41ea5",
+  "old_many_body_state_used": false,
+  "FCI_used": false,
+  "steps": [
+    [
+      "construct",
+      180,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.rotated_upper",
+        "construct"
+      ]
+    ],
+    [
+      "state",
+      600,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.rotated_upper",
+        "state"
+      ]
+    ],
+    [
+      "verify",
+      600,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.rotated_upper",
+        "verify"
+      ]
+    ]
+  ],
+  "bond_cap": 32,
+  "sweeps": 6,
+  "purpose": "Isolate a compact local-basis upper while keeping the original Hamiltonian and canonical lower family",
+  "integral_generation_cost_is_shared_and_must_be_charged": true
+}

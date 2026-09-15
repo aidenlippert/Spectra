@@ -1,0 +1,24 @@
+{
+  "name": "h12_posthoc_main_fixed_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.interacting_scaling_20260915.complete",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/models/h12_heldout",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_posthoc_main_fixed",
+    "solve",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_posthoc_main_fixed/exact"
+  ],
+  "timeout_seconds": 600,
+  "status": "passed",
+  "started_UTC": "2026-09-15T13:12:32.577644+00:00",
+  "pid": 43835,
+  "exit_code": 0,
+  "wall_seconds": 592.3086300000141,
+  "child_user_seconds": 583.882021,
+  "child_system_seconds": 6.9565019999999995,
+  "peak_child_RSS_bytes": 1878441984,
+  "finished_UTC": "2026-09-15T13:22:24.876545+00:00"
+}

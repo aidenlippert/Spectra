@@ -1,0 +1,28 @@
+{"case": "cold_h6_hybrid_v5", "map_seconds": 23.154062008999972, "moment_seconds": 1.1856754660000206, "total_seconds": 24.339738004999845, "coefficient_rows": 949, "maximum_moment_degree": 4, "requested_moments": 949, "cached_moments": 949, "transfer_steps": 4600, "cubic_word_pairs_visited": 434500, "map_nonzeros": 57490, "minimum_guide_eigenvalue": -1.1210728470708336e-15, "many_body_states_enumerated": 0, "full_cubic_teacher_used": false, "three_particle_moments_constructed": false, "global_triples": false}
+{"stage": "solve", "case": "cold_h6_hybrid_v5", "round": 0, "spin_lifting": true, "rank_cap_initial": 4, "gram_entries": 11516, "full_gram_entries": 434500, "coefficient_equations": 949, "free_variables": 87, "projected_map_nonzeros": 41897, "build_seconds": 0.30207161199996335, "prepared_dependency": "/home/ubuntu/spectra-gpu-acceleration-20260915/cases/cold_h6_hybrid_v5/nonsinglet_prepared", "fixture": "/home/ubuntu/spectra-gpu-acceleration-20260915/cases/cold_h6_hybrid_v5/fixture.json", "state": "/home/ubuntu/spectra-gpu-acceleration-20260915/cases/cold_h6_hybrid_v5/mps/state.json", "full_Gram_teacher_used": false, "many_body_states_enumerated": 0, "magnetization": 1, "singlet": false, "ladder_ideal_dimension": 0, "shared_spin_orbits": false, "moment_dual_formulation": false, "coherent_atoms": false}
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/transfer_solver_20260915/actions.py", line 77, in <module>
+    run(a.case.resolve(), a.action)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/transfer_solver_20260915/actions.py", line 30, in run
+    search.solve(case.name, 4, seconds=90, spin=True, tag='_nonsinglet', prepared=prepared, mag=1)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/collective_completion_20260914/search.py", line 195, in solve
+    problem.solve(solver=solver,verbose=verbose,**options)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/venv/lib/python3.10/site-packages/cvxpy/problems/problem.py", line 609, in solve
+    return solve_func(self, *args, **kwargs)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/venv/lib/python3.10/site-packages/cvxpy/problems/problem.py", line 1218, in _solve
+    solution = solving_chain.solve_via_data(
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/venv/lib/python3.10/site-packages/cvxpy/reductions/solvers/solving_chain.py", line 481, in solve_via_data
+    return self.solver.solve_via_data(data, warm_start, verbose,
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/venv/lib/python3.10/site-packages/cvxpy/reductions/solvers/conic_solvers/scs_conif.py", line 343, in solve_via_data
+    results, status = solve(solver_opts)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/venv/lib/python3.10/site-packages/cvxpy/reductions/solvers/conic_solvers/scs_conif.py", line 338, in solve
+    _results = scs.solve(args, cones, verbose=verbose, **_solver_opts)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/venv/lib/python3.10/site-packages/scs/__init__.py", line 219, in solve
+    solver = SCS(data, cone, **settings)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/venv/lib/python3.10/site-packages/scs/__init__.py", line 172, in __init__
+    self._solver = _scs.SCS(
+TypeError: 'use_indirect' is an invalid keyword argument for this function

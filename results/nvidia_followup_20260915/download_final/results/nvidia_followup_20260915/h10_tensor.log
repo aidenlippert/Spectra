@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/spectra-nvidia/research/nvidia_followup_20260915/library_bench.py", line 171, in <module>
+    {'sparse':sparse_bench,'tensor':tensor_bench}[a.mode](a.case.resolve(),a.output.resolve())
+  File "/home/ubuntu/spectra-nvidia/research/nvidia_followup_20260915/library_bench.py", line 96, in tensor_bench
+    from research.reconstruction_compression_20260914.moments import Proposal, transfer
+  File "/home/ubuntu/spectra-nvidia/research/reconstruction_compression_20260914/moments.py", line 8, in <module>
+    from experiments.marginal_coefficient import dagger
+  File "/home/ubuntu/spectra-nvidia/experiments/marginal_coefficient.py", line 17, in <module>
+    import cvxpy as cp
+ModuleNotFoundError: No module named 'cvxpy'

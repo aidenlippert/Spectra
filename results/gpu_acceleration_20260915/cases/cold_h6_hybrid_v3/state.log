@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/transfer_solver_20260915/actions.py", line 77, in <module>
+    run(a.case.resolve(), a.action)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/transfer_solver_20260915/actions.py", line 18, in run
+    discover(data, [data['particles']//2]*2, out, bond=bond, sweeps=10, initial=None)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/correlated_pair_20260913/mps_spatial.py", line 34, in run
+    start=time.monotonic();raw,terms=build_mpo(data,*counts,4.);mpo=group_mpo(raw)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/correlated_pair_20260913/mps_direct.py", line 29, in build_mpo
+    return builder.build_mpo(dtype=float),len(builder._terms_raw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/state_venv/lib/python3.12/site-packages/quimb/operator/builder.py", line 1666, in build_mpo
+    G = self.build_state_machine_greedy()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/state_venv/lib/python3.12/site-packages/quimb/operator/builder.py", line 1380, in build_state_machine_greedy
+    import networkx as nx
+ModuleNotFoundError: No module named 'networkx'

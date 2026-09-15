@@ -1,0 +1,25 @@
+{
+  "name": "h4_coupling_l1_original_transfer",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.interacting_scaling_20260915.rotation",
+    "transfer",
+    "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_coupling_l1",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_coupling_l1/exact",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_coupling_l1/original_interval.json"
+  ],
+  "timeout_seconds": 600,
+  "status": "passed",
+  "started_UTC": "2026-09-15T09:44:04.404127+00:00",
+  "pid": 1446,
+  "exit_code": 0,
+  "wall_seconds": 0.9267717499751598,
+  "child_user_seconds": 0.855885,
+  "child_system_seconds": 0.012294,
+  "peak_child_RSS_bytes": 37257216,
+  "finished_UTC": "2026-09-15T09:44:05.331426+00:00"
+}

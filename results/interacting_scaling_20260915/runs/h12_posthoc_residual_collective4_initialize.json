@@ -1,0 +1,29 @@
+{
+  "name": "h12_posthoc_residual_collective4_initialize",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.interacting_scaling_20260915.cases",
+    "h12_posthoc_residual_collective4",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_heldout_base",
+    "--widths",
+    "2",
+    "3",
+    "4",
+    "--collective-widths",
+    "3",
+    "4"
+  ],
+  "timeout_seconds": 20,
+  "status": "failed",
+  "started_UTC": "2026-09-15T12:58:42.967408+00:00",
+  "pid": 41287,
+  "exit_code": 1,
+  "wall_seconds": 0.08874183299485594,
+  "child_user_seconds": 0.034478999999999996,
+  "child_system_seconds": 0.013966,
+  "peak_child_RSS_bytes": 25935872,
+  "finished_UTC": "2026-09-15T12:58:43.056680+00:00"
+}

@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/spectra-nvidia/research/nvidia_followup_20260915/replay.py", line 89, in <module>
+    run(a.case.resolve(),a.proposal,a.output.resolve(),a.rotated.resolve() if a.rotated else None,a.compiled_grams,a.compiled_rationals)
+  File "/home/ubuntu/spectra-nvidia/research/nvidia_followup_20260915/replay.py", line 66, in run
+    original_actions(output,'replay')
+  File "/home/ubuntu/spectra-nvidia/research/transfer_solver_20260915/actions.py", line 53, in run
+    receipt = check(data, cert, read(case/'nonsinglet.json'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/spectra-nvidia/research/collective_completion_20260914/spin_screen.py", line 59, in check
+    s=check_sector(data,singlet);t=check_sector(data,nonsinglet);delta=F(s['original_H_spin_defect_Ha'])
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/spectra-nvidia/research/collective_completion_20260914/spin_screen.py", line 23, in check_sector
+    t=time.monotonic();h,hs,delta=setup(data);m,n=data['modes'],data['particles']
+                                  ^^^^^^^^^^^
+  File "/home/ubuntu/spectra-nvidia/research/collective_completion_20260914/spin_replay.py", line 26, in setup
+    h=decode(data['hamiltonian'],m,4)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/spectra-nvidia/experiments/marginal_symbolic.py", line 105, in decode
+    return canonical(raw)
+           ^^^^^^^^^^^^^^
+  File "/home/ubuntu/spectra-nvidia/experiments/marginal_symbolic.py", line 37, in canonical
+    for w,v in product(p, {(): 1}).items()}
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/spectra-nvidia/experiments/marginal_symbolic.py", line 28, in product
+    result[word] = result.get(word, 0) + a*b*sign
+                                         ~~~^~~~~
+TypeError: unsupported operand type(s) for *: 'flint.types.fmpq.fmpq' and 'Fraction'

@@ -1,0 +1,50 @@
+{
+  "completed": true,
+  "levels": [
+    {
+      "level": 0,
+      "case": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h10_matched_reference_extended_reference_magnetic_level0",
+      "execution": {
+        "steps": [
+          {
+            "stage": "initialize",
+            "exit_code": 0,
+            "effective_cap_seconds": 20
+          },
+          {
+            "stage": "prepare",
+            "exit_code": 0,
+            "effective_cap_seconds": 300
+          },
+          {
+            "stage": "solve",
+            "exit_code": 0,
+            "effective_cap_seconds": 195
+          },
+          {
+            "stage": "check",
+            "exit_code": 0,
+            "effective_cap_seconds": 180
+          }
+        ],
+        "wall_seconds": 48.77331191601115,
+        "completed": true,
+        "last_stage": "check"
+      },
+      "threshold_met": true,
+      "attachment": {
+        "steps": [
+          {
+            "stage": "attach",
+            "exit_code": 0,
+            "effective_cap_seconds": 180
+          }
+        ],
+        "wall_seconds": 3.200665124983061,
+        "completed": true,
+        "last_stage": "attach"
+      }
+    }
+  ],
+  "global_cubic_map_constructed": false
+}

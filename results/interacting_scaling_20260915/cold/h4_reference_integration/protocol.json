@@ -1,0 +1,80 @@
+{
+  "specification": {
+    "geometry": [
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          1.4
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          2.8
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          4.199999999999999
+        ]
+      ]
+    ],
+    "basis": "sto-3g",
+    "role": "development control"
+  },
+  "levels": [
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      4
+    ],
+    [
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  "solve_seconds": 60,
+  "complete_pipeline_budget_seconds": 3600,
+  "per_stage_hard_caps_recorded_in_executions": true,
+  "new_integrals_and_product_state_discovery": true,
+  "sources": {
+    "cold.py": "9154819f971814d53752c22c0d325415721c1cc5300a4161e9587b6ee6528d1c",
+    "state.py": "23a1796ef06f25581be81ff2067302262ab131987282b6f3d79810dd9fe44456",
+    "prepare.py": "6d93fe6090123435090d191029c02447a6e808d5eb0ba477d6bdab01c659b877",
+    "dictionary.py": "30c6876f09bad8433845d6dbe804bbc440b9c52233c916d576f4faf2709f24c3",
+    "spin_patterns.py": "b1f11eef9a581f15f18125a29b987e8b5fd454a8204ff1e4a322b2c6107c6094",
+    "solve.py": "eabee8e9033b52054120cce7d2c44228501c4ed9c89db5c3cb992c5e4c518661",
+    "nonsinglet.py": "fe3e5c07c1d9bea5b0bac538a7e4b1d90d08508a295416c2e0c36f148a182e52",
+    "warmstart.py": "54285638aa35f92fa4836b0c181ec0921c268326efdc0e3bb4349e5022a89e21",
+    "pipeline.py": "37dc6f56203ba61e8cf110bc532a83f55b656af73642bdd3fc22bd0aebe2376f",
+    "cases.py": "1ddb85dd51969e7eb019c0be1cbab77e5000afd4873e7ad407a3c14285374850",
+    "rotation.py": "9bd4fd50a4e95db68b2b5741ebc6b01fa46d6916ac476f2e02dee1527e9f9776",
+    "budget.py": "9b3dac59a07855511d0572c55f283d1912323cd63de1c2b9fe6ea54ca3bbd7a5",
+    "reference.py": "8b3b6d642c589d7f1a0a4b7314db5702827cb92e27185bc6ba5ef84f388c42f9",
+    "complete.py": "93cea7555f0f115b58b634a643262cc30ee832e51acd37a1d53126a7dfb48fb2"
+  },
+  "retained_full_canonical_reference": true,
+  "acceptance": "Exact complete original-H width <=1.6 mHa; every retained stage charged",
+  "continuation": "Exact checked embedding of earlier local-family proposals; no full-family teacher"
+}

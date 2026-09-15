@@ -1,0 +1,8 @@
+{
+  "failed_file_sha256": "759159ba3654e71a86f289ce222196b3196f6046f76bc3ca8002dd209318fdcf",
+  "reason": "A NumPy bool in the comparison field is not accepted by the standard JSON encoder",
+  "change": "Convert NumPy scalar values to their native Python scalar for serialization only",
+  "frozen_benchmark_source_unchanged": true,
+  "numerical_solver_and_tolerances_unchanged": true,
+  "reference_recomputed_after_discovery": true
+}

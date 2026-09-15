@@ -1,0 +1,31 @@
+{
+  "steps": [
+    [
+      "state",
+      900,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.interacting_scaling_20260915.state",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_631g_heldout_base"
+      ]
+    ],
+    [
+      "upper",
+      180,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_631g_heldout_base",
+        "upper"
+      ]
+    ]
+  ],
+  "one_heavy_process_at_a_time": true,
+  "host": "local Mac; one BLAS/Numba thread",
+  "external_spending": false
+}

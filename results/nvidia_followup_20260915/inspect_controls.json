@@ -1,0 +1,11 @@
+{
+  "name": "inspect_controls",
+  "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+  "started_UTC": "2026-09-15T07:51:07.373232+00:00",
+  "timeout_seconds": 60,
+  "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\n.venv/bin/python - <<'PY'\nimport json\nfrom pathlib import Path\nfor label,path in [('H8',Path('results/transfer_solver_20260915/cases/h8_cold')),('H10',Path('results/transfer_solver_20260915/adaptive/h10_correlated_guide'))]:\n    rows=[]\n    for tag in ('dense_200','sparse_cpu_200','sparse_hybrid_200','sparse_cudss_200'):\n        d=json.loads((path/tag/'discovery.json').read_text())\n        h=json.loads((path/tag/'history.json').read_text())[-1]\n        rows.append({'tag':tag,'seconds':d['seconds'],'setup':d['setup_seconds'],\n            'QR':d['ideal_projection']['seconds'],'rank':d['ideal_projection']['numerical_ideal_rank'],\n            'kernel':d['kernel_seconds'],'iterations':d['iterations_completed'],\n            'b':h['b'],'unverified_width_mHa':h['unverified_width_mHa']})\n    print(label,json.dumps(rows))\nPY\ntail -3 results/nvidia_followup_20260915/h10_sparse_cudss_adaptive.log\n",
+  "status": "passed",
+  "exit_code": 0,
+  "wall_seconds": 0.5572274579899386,
+  "finished_UTC": "2026-09-15T07:51:07.930480+00:00"
+}

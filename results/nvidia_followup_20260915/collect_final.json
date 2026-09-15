@@ -1,0 +1,11 @@
+{
+  "name": "collect_final",
+  "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+  "started_UTC": "2026-09-15T08:11:10.277826+00:00",
+  "timeout_seconds": 180,
+  "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\n.venv/bin/python - <<'PY'\nimport hashlib,json,tarfile\nfrom pathlib import Path\nfiles=[Path('installed.txt'),Path('gpu.txt')]\nfor root in [Path('results/transfer_solver_20260915/adaptive/h10_correlated_guide'),Path('results/transfer_solver_20260915/cases/h8_cold'),Path('results/nvidia_followup_20260915')]:\n    files.extend(p for p in root.rglob('*') if p.is_file() and not set(p.parts)&{'prepared','__pycache__','numba_cache','mps'})\nfiles=sorted(set(files))\nmanifest={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}\nPath('final_download_manifest.json').write_text(json.dumps(manifest,indent=2)+'\\n')\nwith tarfile.open('final_download.tar.gz','w:gz') as stream:\n    for p in files+[Path('final_download_manifest.json')]:stream.add(p,arcname=str(p),recursive=False)\nPath('final_download.sha256').write_text(hashlib.sha256(Path('final_download.tar.gz').read_bytes()).hexdigest()+'\\n')\nprint(json.dumps({'files':len(files),'bytes':Path('final_download.tar.gz').stat().st_size}))\nPY\n",
+  "status": "passed",
+  "exit_code": 0,
+  "wall_seconds": 14.873788500000956,
+  "finished_UTC": "2026-09-15T08:11:25.151783+00:00"
+}

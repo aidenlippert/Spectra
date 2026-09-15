@@ -1,0 +1,66 @@
+{
+  "id": "031ebec4a5b9424f99f83e983465f9f4",
+  "requested_UTC": "2026-09-15T08:11:59.210556+00:00",
+  "response": {
+    "data": {
+      "terminated_instances": [
+        {
+          "id": "031ebec4a5b9424f99f83e983465f9f4",
+          "name": "spectra-nvidia-h10-20260915",
+          "ip": "129.146.102.131",
+          "private_ip": "10.19.31.204",
+          "status": "terminating",
+          "ssh_key_names": [
+            "aiden-mac"
+          ],
+          "file_system_names": [],
+          "region": {
+            "name": "us-west-2",
+            "description": "Arizona, USA"
+          },
+          "instance_type": {
+            "name": "gpu_1x_a100_sxm4",
+            "description": "1x A100 (40 GB SXM4)",
+            "gpu_description": "A100 (40 GB SXM4)",
+            "price_cents_per_hour": 199,
+            "specs": {
+              "vcpus": 30,
+              "memory_gib": 200,
+              "storage_gib": 512,
+              "gpus": 1
+            },
+            "architecture": "x86_64"
+          },
+          "workspace_id": "4c315b664b1444fa8f10eb579e0c0482",
+          "hostname": "129-146-102-131",
+          "jupyter_token": "45a29e4b06a9428f8d41709256616e40",
+          "jupyter_url": "https://d48fd118a9c64ecab47ad407207f39c2-0.lambdaspaces.com/?token=45a29e4b06a9428f8d41709256616e40",
+          "is_reserved": false,
+          "actions": {
+            "migrate": {
+              "available": true
+            },
+            "rebuild": {
+              "available": true
+            },
+            "restart": {
+              "available": true
+            },
+            "cold_reboot": {
+              "available": true
+            },
+            "power_cycle": {
+              "available": true
+            },
+            "terminate": {
+              "available": true
+            }
+          },
+          "tags": [],
+          "firewall_rulesets": []
+        }
+      ]
+    }
+  },
+  "other_instances_untouched": true
+}

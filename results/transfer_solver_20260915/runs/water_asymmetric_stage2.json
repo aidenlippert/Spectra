@@ -1,0 +1,27 @@
+{
+  "name": "water_asymmetric_stage2",
+  "command": [
+    "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.transfer_solver_20260915.solve",
+    "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric",
+    "stage2",
+    "--seconds",
+    "180",
+    "--mu",
+    ".03",
+    "--restart",
+    "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric/stage1/checkpoint.npz"
+  ],
+  "timeout_seconds": 300,
+  "status": "passed",
+  "started_UTC": "2026-09-15T05:42:12.545269+00:00",
+  "pid": 47069,
+  "exit_code": 0,
+  "wall_seconds": 4.225101750023896,
+  "child_user_seconds": 3.6548789999999998,
+  "child_system_seconds": 0.152494,
+  "peak_child_RSS_bytes": 344096768,
+  "finished_UTC": "2026-09-15T05:42:16.771058+00:00"
+}

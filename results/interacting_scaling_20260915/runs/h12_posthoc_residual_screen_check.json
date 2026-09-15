@@ -1,0 +1,24 @@
+{
+  "name": "h12_posthoc_residual_screen_check",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.interacting_scaling_20260915.nonsinglet",
+    "check",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_posthoc_residual_screen",
+    "solve",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_posthoc_residual_screen/exact.json"
+  ],
+  "timeout_seconds": 180,
+  "status": "passed",
+  "started_UTC": "2026-09-15T12:58:28.538267+00:00",
+  "pid": 41219,
+  "exit_code": 0,
+  "wall_seconds": 14.385628291987814,
+  "child_user_seconds": 14.227818,
+  "child_system_seconds": 0.082563,
+  "peak_child_RSS_bytes": 315916288,
+  "finished_UTC": "2026-09-15T12:58:42.924931+00:00"
+}

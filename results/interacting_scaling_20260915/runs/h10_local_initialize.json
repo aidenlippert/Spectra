@@ -1,0 +1,26 @@
+{
+  "name": "h10_local_initialize",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.interacting_scaling_20260915.rotation",
+    "initialize",
+    "h10_local_pair",
+    "results/transfer_solver_20260915/rotated_h10",
+    "--widths",
+    "2",
+    "3"
+  ],
+  "timeout_seconds": 30,
+  "status": "passed",
+  "started_UTC": "2026-09-15T08:59:35.865598+00:00",
+  "pid": 92137,
+  "exit_code": 0,
+  "wall_seconds": 0.08251887498772703,
+  "child_user_seconds": 0.053055,
+  "child_system_seconds": 0.013883999999999999,
+  "peak_child_RSS_bytes": 36208640,
+  "finished_UTC": "2026-09-15T08:59:35.948601+00:00"
+}

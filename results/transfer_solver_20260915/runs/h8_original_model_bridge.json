@@ -1,0 +1,25 @@
+{
+  "name": "h8_original_model_bridge",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.transfer_solver_20260915.gauge_bridge",
+    "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+    "results/transfer_solver_20260915/cases/h8_cold/fixture.json",
+    "results/transfer_solver_20260915/h8_original_model_bridge.json",
+    "--interval",
+    "results/transfer_solver_20260915/cases/h8_cold/interval.json"
+  ],
+  "timeout_seconds": 30,
+  "status": "passed",
+  "started_UTC": "2026-09-15T05:31:43.249569+00:00",
+  "pid": 43754,
+  "exit_code": 0,
+  "wall_seconds": 0.1268818749813363,
+  "child_user_seconds": 0.082594,
+  "child_system_seconds": 0.012761999999999999,
+  "peak_child_RSS_bytes": 25935872,
+  "finished_UTC": "2026-09-15T05:31:43.377175+00:00"
+}

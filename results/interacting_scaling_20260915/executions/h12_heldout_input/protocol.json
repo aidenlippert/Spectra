@@ -1,0 +1,47 @@
+{
+  "steps": [
+    [
+      "integrals",
+      300,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.generate",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/models/h12_heldout"
+      ]
+    ],
+    [
+      "rotation",
+      300,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.interacting_scaling_20260915.rotation",
+        "construct",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/models/h12_heldout",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/rotations/h12_heldout"
+      ]
+    ],
+    [
+      "initialize",
+      20,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.interacting_scaling_20260915.rotation",
+        "initialize",
+        "h12_heldout_base",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/rotations/h12_heldout",
+        "--widths",
+        "2"
+      ]
+    ]
+  ],
+  "one_heavy_process_at_a_time": true,
+  "host": "local Mac; one BLAS/Numba thread",
+  "external_spending": false
+}

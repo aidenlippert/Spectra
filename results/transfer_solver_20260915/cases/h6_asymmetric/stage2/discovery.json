@@ -1,0 +1,38 @@
+{
+  "kind": "input_derived_sparse_boundary_point_v1",
+  "best": {
+    "iteration": 458,
+    "seconds": 11.879271874990081,
+    "mu": 0.03,
+    "b": -6.186334832398018,
+    "raw_width_mHa": 0.02021278014652239,
+    "predicted_coefficient_l1_Ha": 3.523673190287517e-08,
+    "unverified_width_mHa": 0.020248114878107515,
+    "primal_l2": 2.6806961369262954e-10,
+    "dual_l2": 1.093270576555757e-05,
+    "minimum_dual_eigenvalue": -3.3954263060817523e-06,
+    "cg_status": 0
+  },
+  "export": {
+    "proposed_b": -6.186334832398018,
+    "number_multiplier_quartic_terms": 675,
+    "minimum_eigenvalue_before_export": -9.383307755384397e-17,
+    "factor_rows": 287,
+    "certificate_bytes": 697467
+  },
+  "seconds": 12.466890375013463,
+  "normal_map_relative_error": 2.4005303940391103e-16,
+  "ideal_projection": {
+    "ideal_coordinate_count": 1029,
+    "numerical_ideal_rank": 394,
+    "QR_rank_threshold": 1e-11,
+    "dependent_coordinates_removed": 635,
+    "ideal_projector_max_defect": 9.992007221626409e-16,
+    "dual_normalization_error": 7.549516567451064e-15,
+    "seconds": 1.6398144169943407
+  },
+  "restart": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric/stage1/checkpoint.npz",
+  "initial_old_checkpoint_used": false,
+  "Gram_entries": 127492,
+  "status": "requires_original_exact_checker"
+}

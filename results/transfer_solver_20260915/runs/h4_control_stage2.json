@@ -1,0 +1,27 @@
+{
+  "name": "h4_control_stage2",
+  "command": [
+    "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.transfer_solver_20260915.solve",
+    "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+    "stage2",
+    "--seconds",
+    "180",
+    "--mu",
+    ".03",
+    "--restart",
+    "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control/stage1/checkpoint.npz"
+  ],
+  "timeout_seconds": 300,
+  "status": "passed",
+  "started_UTC": "2026-09-15T05:11:27.640643+00:00",
+  "pid": 32525,
+  "exit_code": 0,
+  "wall_seconds": 0.34792558301705867,
+  "child_user_seconds": 0.277621,
+  "child_system_seconds": 0.043997,
+  "peak_child_RSS_bytes": 65323008,
+  "finished_UTC": "2026-09-15T05:11:27.989022+00:00"
+}

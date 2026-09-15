@@ -1,0 +1,11 @@
+{
+  "name": "replay_retry",
+  "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+  "started_UTC": "2026-09-15T08:02:15.291088+00:00",
+  "timeout_seconds": 600,
+  "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\nexport OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1\n/usr/bin/time -v -o results/nvidia_followup_20260915/flint_transition_test_time.txt .venv/bin/python -B -m unittest research.nvidia_followup_20260915.test_flint_transition research.nvidia_followup_20260915.test_sector_gate\n/usr/bin/time -v -o results/nvidia_followup_20260915/h10_compiled_retry_time.txt .venv/bin/python -B -m research.nvidia_followup_20260915.strict_replay results/transfer_solver_20260915/adaptive/h10_correlated_guide sparse_cudss_adaptive results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive/exact_compiled_retry --rotated results/transfer_solver_20260915/rotated_h10 --compiled-rationals\n",
+  "status": "passed",
+  "exit_code": 0,
+  "wall_seconds": 270.2479762090079,
+  "finished_UTC": "2026-09-15T08:06:45.521000+00:00"
+}

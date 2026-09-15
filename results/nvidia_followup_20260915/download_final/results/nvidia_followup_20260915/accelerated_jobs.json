@@ -1,0 +1,261 @@
+[
+  {
+    "name": "h8_sparse_context_corrected",
+    "seconds": 1.696375848000116,
+    "exit_code": 0,
+    "status": "passed",
+    "command": [
+      "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+      "-B",
+      "-m",
+      "research.nvidia_followup_20260915.library_bench",
+      "sparse",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+      "/home/ubuntu/spectra-nvidia/results/nvidia_followup_20260915/h8_sparse_corrected.json"
+    ]
+  },
+  {
+    "name": "h10_sparse_context_corrected",
+    "seconds": 2.375215392999962,
+    "exit_code": 0,
+    "status": "passed",
+    "command": [
+      "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+      "-B",
+      "-m",
+      "research.nvidia_followup_20260915.library_bench",
+      "sparse",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+      "/home/ubuntu/spectra-nvidia/results/nvidia_followup_20260915/h10_sparse_corrected.json"
+    ]
+  },
+  {
+    "name": "h10_tensor_retry",
+    "seconds": 6.655713229999947,
+    "exit_code": 0,
+    "status": "passed",
+    "command": [
+      "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+      "-B",
+      "-m",
+      "research.nvidia_followup_20260915.library_bench",
+      "tensor",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/rotated_h10",
+      "/home/ubuntu/spectra-nvidia/results/nvidia_followup_20260915/h10_tensor_retry.json"
+    ]
+  },
+  {
+    "name": "h8_dense_200",
+    "seconds": 18.945221437999862,
+    "exit_code": 0,
+    "status": "passed",
+    "command": [
+      "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+      "-B",
+      "-m",
+      "research.gpu_acceleration_20260915.solve",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+      "dense_200",
+      "--seconds",
+      "360",
+      "--mu",
+      "2",
+      "--backend",
+      "cpu_evd",
+      "--iterations",
+      "200"
+    ]
+  },
+  {
+    "name": "h8_sparse_cpu_200",
+    "seconds": 11.988642160999916,
+    "exit_code": 0,
+    "status": "passed",
+    "command": [
+      "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+      "-B",
+      "-m",
+      "research.nvidia_followup_20260915.solve",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+      "sparse_cpu_200",
+      "--seconds",
+      "210",
+      "--backend",
+      "cpu_evd",
+      "--normal",
+      "superlu",
+      "--iterations",
+      "200"
+    ]
+  },
+  {
+    "name": "h8_sparse_hybrid_200",
+    "seconds": 10.72260738299974,
+    "exit_code": 0,
+    "status": "passed",
+    "command": [
+      "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+      "-B",
+      "-m",
+      "research.nvidia_followup_20260915.solve",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+      "sparse_hybrid_200",
+      "--seconds",
+      "210",
+      "--backend",
+      "hybrid",
+      "--normal",
+      "superlu",
+      "--iterations",
+      "200"
+    ]
+  },
+  {
+    "name": "h8_sparse_cudss_200",
+    "seconds": 10.835048925000137,
+    "exit_code": 0,
+    "status": "passed",
+    "command": [
+      "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+      "-B",
+      "-m",
+      "research.nvidia_followup_20260915.solve",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+      "sparse_cudss_200",
+      "--seconds",
+      "210",
+      "--backend",
+      "hybrid",
+      "--normal",
+      "cudss",
+      "--iterations",
+      "200"
+    ]
+  },
+  {
+    "name": "h10_dense_200",
+    "seconds": 216.20475752500033,
+    "exit_code": 0,
+    "status": "passed",
+    "command": [
+      "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+      "-B",
+      "-m",
+      "research.gpu_acceleration_20260915.solve",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+      "dense_200",
+      "--seconds",
+      "360",
+      "--mu",
+      "2",
+      "--backend",
+      "cpu_evd",
+      "--iterations",
+      "200"
+    ]
+  },
+  {
+    "name": "h10_sparse_cpu_200",
+    "seconds": 48.44950995699992,
+    "exit_code": 0,
+    "status": "passed",
+    "command": [
+      "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+      "-B",
+      "-m",
+      "research.nvidia_followup_20260915.solve",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+      "sparse_cpu_200",
+      "--seconds",
+      "210",
+      "--backend",
+      "cpu_evd",
+      "--normal",
+      "superlu",
+      "--iterations",
+      "200"
+    ]
+  },
+  {
+    "name": "h10_sparse_hybrid_200",
+    "seconds": 26.729091865999635,
+    "exit_code": 0,
+    "status": "passed",
+    "command": [
+      "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+      "-B",
+      "-m",
+      "research.nvidia_followup_20260915.solve",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+      "sparse_hybrid_200",
+      "--seconds",
+      "210",
+      "--backend",
+      "hybrid",
+      "--normal",
+      "superlu",
+      "--iterations",
+      "200"
+    ]
+  },
+  {
+    "name": "h10_sparse_cudss_200",
+    "seconds": 26.33274005500016,
+    "exit_code": 0,
+    "status": "passed",
+    "command": [
+      "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+      "-B",
+      "-m",
+      "research.nvidia_followup_20260915.solve",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+      "sparse_cudss_200",
+      "--seconds",
+      "210",
+      "--backend",
+      "hybrid",
+      "--normal",
+      "cudss",
+      "--iterations",
+      "200"
+    ]
+  },
+  {
+    "name": "h10_sparse_cudss_adaptive",
+    "seconds": 424.7059179349999,
+    "exit_code": 0,
+    "status": "passed",
+    "command": [
+      "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+      "-B",
+      "-m",
+      "research.nvidia_followup_20260915.solve",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+      "sparse_cudss_adaptive",
+      "--seconds",
+      "850",
+      "--backend",
+      "hybrid",
+      "--normal",
+      "cudss"
+    ]
+  },
+  {
+    "name": "h10_compiled_complete_replay",
+    "seconds": 46.98986103600009,
+    "exit_code": 1,
+    "status": "failed",
+    "command": [
+      "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+      "-B",
+      "-m",
+      "research.nvidia_followup_20260915.replay",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+      "sparse_cudss_adaptive",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive/exact_compiled",
+      "--rotated",
+      "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/rotated_h10",
+      "--compiled-rationals"
+    ]
+  }
+]

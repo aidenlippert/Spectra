@@ -1,0 +1,27 @@
+{
+  "name": "h8_cold_stage2",
+  "command": [
+    "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.transfer_solver_20260915.solve",
+    "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+    "stage2",
+    "--seconds",
+    "180",
+    "--mu",
+    ".03",
+    "--restart",
+    "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold/stage1/checkpoint.npz"
+  ],
+  "timeout_seconds": 300,
+  "status": "passed",
+  "started_UTC": "2026-09-15T05:25:27.311141+00:00",
+  "pid": 41781,
+  "exit_code": 0,
+  "wall_seconds": 30.261550374998478,
+  "child_user_seconds": 29.154289,
+  "child_system_seconds": 0.768284,
+  "peak_child_RSS_bytes": 689274880,
+  "finished_UTC": "2026-09-15T05:25:57.573049+00:00"
+}

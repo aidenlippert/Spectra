@@ -1,0 +1,95 @@
+1, R, max_bond=(1/32), cutoff:1e-12
+  0%|                                                     | 0/7 [00:00<?, ?it/s]100%|############################################| 7/7 [00:00<00:00, 307.80it/s]
+Energy: -9.215386906036787 ... not converged.
+2, L, max_bond=(4/32), cutoff:1e-12
+  0%|                                                     | 0/7 [00:00<?, ?it/s]100%|############################################| 7/7 [00:00<00:00, 104.98it/s]
+Energy: -9.251095894667383 ... not converged.
+3, R, max_bond=(16/32), cutoff:1e-12
+  0%|                                                     | 0/7 [00:00<?, ?it/s] 57%|#########################7                   | 4/7 [00:00<00:00, 23.63it/s]100%|#############################################| 7/7 [00:00<00:00, 17.61it/s]100%|#############################################| 7/7 [00:00<00:00, 18.40it/s]
+Energy: -9.255274645529145 ... not converged.
+4, L, max_bond=(32/32), cutoff:1e-12
+  0%|                                                     | 0/7 [00:00<?, ?it/s] 57%|#########################7                   | 4/7 [00:00<00:00,  8.85it/s]100%|#############################################| 7/7 [00:00<00:00, 14.11it/s]
+Energy: -9.25530181979822 ... not converged.
+5, R, max_bond=(32/32), cutoff:1e-12
+  0%|                                                     | 0/7 [00:00<?, ?it/s] 57%|#########################7                   | 4/7 [00:00<00:00, 22.67it/s]100%|#############################################| 7/7 [00:00<00:00, 32.58it/s]
+Energy: -9.255301824901938 ... not converged.
+6, L, max_bond=(32/32), cutoff:1e-12
+  0%|                                                     | 0/7 [00:00<?, ?it/s] 57%|#########################7                   | 4/7 [00:00<00:00, 26.27it/s]100%|#############################################| 7/7 [00:00<00:00, 36.52it/s]
+Energy: -9.25530182503405 ... converged!
+{
+  "fixture_sha256": "91a54c475421a442ecf67ca5daa1de22c09524040f4a4ceb8f133adff4a72fbb",
+  "physical_energy_float_Ha": -9.255296900381019,
+  "penalized_energy_float_Ha": -9.25530182503405,
+  "initial_MPS_path": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h8_matched_direct_base/product_seed.json",
+  "requested_spatial_bond": 32,
+  "spatial_bonds": [
+    4,
+    16,
+    32,
+    32,
+    32,
+    16,
+    4
+  ],
+  "export_spin_bonds": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    32,
+    56,
+    32,
+    64,
+    32,
+    32,
+    16,
+    8,
+    4,
+    2,
+    1
+  ],
+  "export_nonzero_entries": 2400,
+  "MPO_bond": 33,
+  "MPO_bond_before_compression": 785,
+  "MPO_compression_cutoff_proposal_only": 1e-12,
+  "sweeps_cap": 6,
+  "sweep_energies": [
+    -9.215386906036787,
+    -9.251095894667383,
+    -9.255274645529145,
+    -9.25530181979822,
+    -9.255301824901938,
+    -9.25530182503405
+  ],
+  "converged": true,
+  "rounding": {
+    "charge_eigenvalue_max_distance_to_integer": 1.288689188072567e-05,
+    "discarded_local_tensor_squared_entries": 6.201226212688774e-06,
+    "input_norm_before_normalization": 0.9999999999999997,
+    "postround_bond_dimensions": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      32,
+      56,
+      32,
+      64,
+      32,
+      32,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "warning": "Discarded local tensor entries are a proposal diagnostic, not a state norm or energy error guarantee."
+  },
+  "seconds": 124.42901175000588,
+  "initializer": "Random MPS bond4, seed20260913, paired spin sites; no FCI or Gram teacher",
+  "full_state_or_H_expansion": false
+}

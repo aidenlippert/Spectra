@@ -1,0 +1,63 @@
+{
+  "steps": [
+    [
+      "initialize",
+      20,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.interacting_scaling_20260915.nonsinglet",
+        "initialize",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_reference_integration_reference",
+        "h4_reference_integration_reference_magnetic_level0",
+        "--level",
+        "0"
+      ]
+    ],
+    [
+      "prepare",
+      300,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.interacting_scaling_20260915.prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_reference_integration_reference_magnetic_level0"
+      ]
+    ],
+    [
+      "solve",
+      195,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.interacting_scaling_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_reference_integration_reference_magnetic_level0",
+        "solve",
+        "--seconds",
+        "150"
+      ]
+    ],
+    [
+      "check",
+      180,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.interacting_scaling_20260915.nonsinglet",
+        "check",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_reference_integration_reference_magnetic_level0",
+        "solve",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_reference_integration_reference_magnetic_level0/exact.json"
+      ]
+    ]
+  ],
+  "one_heavy_process_at_a_time": true,
+  "host": "local Mac; one BLAS/Numba thread",
+  "external_spending": false
+}

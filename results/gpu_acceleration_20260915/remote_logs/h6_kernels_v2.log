@@ -1,0 +1,30 @@
+{"name": "cpu_evr", "threads": 1, "median_seconds": 0.016113628000005063, "min_seconds": 0.016097637799998666, "max_seconds": 0.016216423999992458, "relative_error": 0.0}
+{"name": "cpu_evd", "threads": 1, "median_seconds": 0.014602082600003997, "min_seconds": 0.014586270399991007, "max_seconds": 0.014996351199999935, "relative_error": 5.032907571106946e-14}
+Traceback (most recent call last):
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/gpu_acceleration_20260915/kernel_bench.py", line 114, in <module>
+    bench(a.case, a.output)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/gpu_acceleration_20260915/kernel_bench.py", line 87, in bench
+    trial(f'gpu_{"batched" if batched else "individual"}_including_transfers',
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/gpu_acceleration_20260915/kernel_bench.py", line 61, in trial
+    got = fn()
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/gpu_acceleration_20260915/kernel_bench.py", line 88, in <lambda>
+    lambda: gpu(blocks), cp.cuda.Stream.null.synchronize)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/gpu_acceleration_20260915/kernel_bench.py", line 44, in __call__
+    answer = self.device([cp.asarray(q) for q in blocks])
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/gpu_acceleration_20260915/kernel_bench.py", line 34, in device
+    q = cp.stack([blocks[i] for i in ids])
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/venv/lib/python3.10/site-packages/cupy/_manipulation/join.py", line 165, in stack
+    return concatenate([cupy.expand_dims(x, axis) for x in tup], axis, out,
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/venv/lib/python3.10/site-packages/cupy/_manipulation/join.py", line 64, in concatenate
+    return _core.concatenate_method(tup, axis, out, dtype, casting)
+  File "cupy/_core/_routines_manipulation.pyx", line 652, in cupy._core._routines_manipulation.concatenate_method
+  File "cupy/_core/_routines_manipulation.pyx", line 731, in cupy._core._routines_manipulation.concatenate_method
+  File "cupy/_core/_routines_manipulation.pyx", line 770, in cupy._core._routines_manipulation._concatenate
+  File "cupy/_core/_kernel.pyx", line 1397, in cupy._core._kernel.ufunc.__call__
+  File "cupy/_core/_kernel.pyx", line 1426, in cupy._core._kernel.ufunc._get_ufunc_kernel
+  File "cupy/_core/_kernel.pyx", line 1098, in cupy._core._kernel._get_ufunc_kernel
+  File "cupy/_core/_kernel.pyx", line 124, in cupy._core._kernel._get_simple_elementwise_kernel
+  File "cupy/_core/_kernel.pyx", line 112, in cupy._core._kernel._get_simple_elementwise_kernel_from_code
+  File "cupy/_core/core.pyx", line 2637, in cupy._core.core.compile_with_cache
+  File "cupy/_core/core.pyx", line 2599, in cupy._core.core.assemble_cupy_compiler_options
+RuntimeError: Failed to find CUDA headers. Please install CUDA toolkit headers (e.g., pip install cupy-cuda12x[ctk]) or specify CUDA_PATH environment variable.

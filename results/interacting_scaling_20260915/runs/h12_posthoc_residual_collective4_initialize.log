@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/aidenlippert/Documents/Spectra/research/interacting_scaling_20260915/cases.py", line 48, in <module>
+    print(initialize(a.name, a.source.resolve(), a.widths, not a.no_collective, a.complete, a.collective_widths, a.nonsinglet_source))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aidenlippert/Documents/Spectra/research/interacting_scaling_20260915/cases.py", line 18, in initialize
+    raise ValueError(('Required conditional input missing', str(path)))
+ValueError: ('Required conditional input missing', '/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_heldout_base/nonsinglet.json')

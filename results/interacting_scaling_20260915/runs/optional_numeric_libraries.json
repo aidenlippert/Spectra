@@ -1,0 +1,24 @@
+{
+  "name": "optional_numeric_libraries",
+  "command": [
+    ".venv-correlated/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-deps",
+    "--target",
+    ".spectra-interacting-libs",
+    "sparseqr==1.6.0",
+    "python-flint==0.9.0"
+  ],
+  "timeout_seconds": 300,
+  "status": "failed",
+  "started_UTC": "2026-09-15T08:46:19.929185+00:00",
+  "pid": 88235,
+  "exit_code": 1,
+  "wall_seconds": 6.887679458013736,
+  "child_user_seconds": 4.032477,
+  "child_system_seconds": 0.772305,
+  "peak_child_RSS_bytes": 102285312,
+  "finished_UTC": "2026-09-15T08:46:26.817666+00:00"
+}

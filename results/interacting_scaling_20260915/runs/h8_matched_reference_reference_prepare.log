@@ -1,0 +1,116 @@
+{"stage": "forecast", "rows": 28461, "full_word_pairs": 1230272, "retained_Gram_entries": 343424, "largest_Gram_block": 260, "number_ideal_columns": 1525, "stats": {"spatial_parity_masks": [13107, 52428], "mixed_linear_words_retained": true, "operator_dictionary_dimensions": [4, 4, 4, 4, 4, 4, 4, 4, 12, 16, 32, 32, 12, 16, 12, 16, 32, 32, 12, 16, 32, 32, 64, 64, 32, 32, 4, 4, 24, 24, 24, 24, 4, 4, 4, 4, 24, 24, 24, 24, 4, 4, 112, 112, 372, 372, 372, 372, 112, 112, 112, 112, 372, 372, 372, 372, 112, 112]}}
+{"stage": "spin_projection", "seconds": 9.971568334003678, "original_rows": 28461, "independent_invariant_rows": 8533, "integer_denominator": 12, "projector_nonzeros": 379625, "exact_integer_idempotence_checked": true, "modular_prime": 65521, "rank_equals_exact_trace": true}
+{"stage": "maps", "block": 0, "seconds": 10.868203249992803}
+{"stage": "maps", "block": 8, "seconds": 10.874083667004015}
+{"stage": "maps", "block": 16, "seconds": 10.929897916998016}
+{"stage": "maps", "block": 24, "seconds": 11.073950541991508}
+{"stage": "maps", "block": 32, "seconds": 11.114966458990239}
+{"stage": "maps", "block": 40, "seconds": 11.206452124984935}
+{"stage": "maps", "block": 48, "seconds": 22.082813124987297}
+{
+  "kind": "input_derived_highest_weight_preparation_v1",
+  "fixture": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h8_matched_reference_reference/fixture.json",
+  "fixture_sha256": "fda4ca29219e996e794493a48cf0df006fe64a86976b0f514b5b8b18780502be",
+  "state": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h8_matched_reference_reference/mps/state.json",
+  "state_sha256": "f2c7eef2035705a7b5fd4a16d3c80ab8d1a20b5aca8bcd0e7ef03d1379f7926e",
+  "modes": 16,
+  "particles": 8,
+  "spin_projection": {
+    "original_rows": 28461,
+    "independent_invariant_rows": 8533,
+    "integer_denominator": 12,
+    "projector_nonzeros": 379625,
+    "exact_integer_idempotence_checked": true,
+    "modular_prime": 65521,
+    "rank_equals_exact_trace": true
+  },
+  "upper_Ha": "-620656395079720871944695242521930075538845109297719297515601131774072192579520612139546535207142078026182904865867232110618758150467489896302985626454412724547915482047346267061239458826412583694020181689066457359838017344216286433172218711750164396976605923418813420270522970929580997762057186258943465548407219118678011964341905804241010870599702945140799793757400707203450676274769571806928756661198456706284020348203008481417101131382257395112641558531784139858318100772214242992902544388462260306213125169640783017969875253433715952261599546755202689187132897001200326507675968785861552333566985311679205215430636287269464405081535054896366367511414426634447043556089705504378303321016553258978499106739201/67059587807188638204035229030980065261263123389022601604985034133928690078922673121540708814257282122287698618586800727207931518010071591410233298410605797530795560079277565679452009332164399580715002880633292423200439198120310665823172088376323575809526348593541425027118232745457376890261443861023246295533704421869143366333342213913713801729649690507122810520044494746874178177390898730244591180598257923204479412930904717585494141712775004052706719062671561321117583638346548797208999840135224291648326076570761743573356672886675775477167934138567281114579594947161463916136175956031876697534187579061328245015311689637237336009403731557781377484631173540872349320603666707766297378333481058956250000000000",
+  "original_H_spin_defect_Ha": "59/250000000000",
+  "forecast": {
+    "rows": 28461,
+    "full_word_pairs": 1230272,
+    "retained_Gram_entries": 343424,
+    "largest_Gram_block": 260,
+    "number_ideal_columns": 1525,
+    "stats": {
+      "spatial_parity_masks": [
+        13107,
+        52428
+      ],
+      "mixed_linear_words_retained": true,
+      "operator_dictionary_dimensions": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        12,
+        16,
+        32,
+        32,
+        12,
+        16,
+        12,
+        16,
+        32,
+        32,
+        12,
+        16,
+        32,
+        32,
+        64,
+        64,
+        32,
+        32,
+        4,
+        4,
+        24,
+        24,
+        24,
+        24,
+        4,
+        4,
+        4,
+        4,
+        24,
+        24,
+        24,
+        24,
+        4,
+        4,
+        112,
+        112,
+        372,
+        372,
+        372,
+        372,
+        112,
+        112,
+        112,
+        112,
+        372,
+        372,
+        372,
+        372,
+        112,
+        112
+      ]
+    }
+  },
+  "map_build_seconds": 23.02692437497899,
+  "physical_word_pairs_constructed": 626560,
+  "coefficient_nonzeros": 1084148,
+  "normal_nonzeros": 163733,
+  "moment_seconds": 0.1089028750138823,
+  "moment_count": 28461,
+  "moment_transfer_steps": 279987,
+  "moment_pullback_residual": 3.814654704624904e-15,
+  "initial_primal": "zero Gram matrices and zero ideal coordinates; no previous solution",
+  "teacher_certificate_used": false,
+  "old_checkpoint_used": false,
+  "many_body_determinants_enumerated": 0,
+  "total_seconds": 23.13582816699636
+}

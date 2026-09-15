@@ -1,0 +1,21 @@
+{
+  "steps": [
+    [
+      "attach",
+      180,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.interacting_scaling_20260915.nonsinglet",
+        "attach",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h10_matched_reference_reference",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h10_matched_reference_reference_magnetic_level0"
+      ]
+    ]
+  ],
+  "one_heavy_process_at_a_time": true,
+  "host": "local Mac; one BLAS/Numba thread",
+  "external_spending": false
+}

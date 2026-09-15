@@ -1,0 +1,105 @@
+{
+  "magnetic_continuations": [
+    {
+      "source_case": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_heldout_base_magnetic_level1",
+      "execution": {
+        "steps": [
+          {
+            "stage": "initialize",
+            "exit_code": 0,
+            "effective_cap_seconds": 30
+          },
+          {
+            "stage": "solve",
+            "exit_code": 0,
+            "effective_cap_seconds": 345
+          },
+          {
+            "stage": "check",
+            "exit_code": 0,
+            "effective_cap_seconds": 180
+          }
+        ],
+        "wall_seconds": 322.5510870839935,
+        "completed": true,
+        "last_stage": "check"
+      },
+      "additional_continuation_seconds": 322.55224962500506,
+      "fresh_complete_cold_calculation": false,
+      "earlier_costs_additional": true,
+      "exact_screen": {
+        "lower": "-47100837123594811211/3000000000000000000",
+        "lower_float": -15.70027904119827,
+        "residual_l1": "204299415975811211/3000000000000000000",
+        "residual_l1_float": 0.06809980532527041,
+        "multiplier_terms": 1297,
+        "square_polynomial_terms": 31305,
+        "residual_terms": 45981,
+        "residual_max_degree": 6,
+        "mode_count": 24,
+        "particle_number": 12,
+        "factor_rows": 1019,
+        "factor_nonzeros": 45231,
+        "restricted_to": "M_S=1",
+        "original_H_spin_defect_Ha": "1481/500000000000",
+        "lower_for": "Exact SU(2) average of input H in the stated sector",
+        "replay_seconds": 13.821530333982082,
+        "meets_full_interval_lower_threshold": false,
+        "not_a_full_fixed_N_bound_by_itself": true
+      }
+    },
+    {
+      "source_case": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_posthoc_screen_0",
+      "execution": {
+        "steps": [
+          {
+            "stage": "initialize",
+            "exit_code": 0,
+            "effective_cap_seconds": 30
+          },
+          {
+            "stage": "solve",
+            "exit_code": 0,
+            "effective_cap_seconds": 345
+          },
+          {
+            "stage": "check",
+            "exit_code": 0,
+            "effective_cap_seconds": 180
+          }
+        ],
+        "wall_seconds": 322.67090825000196,
+        "completed": true,
+        "last_stage": "check"
+      },
+      "additional_continuation_seconds": 322.6718239589827,
+      "fresh_complete_cold_calculation": false,
+      "earlier_costs_additional": true,
+      "exact_screen": {
+        "lower": "-9387639554356441319/600000000000000000",
+        "lower_float": -15.646065923927402,
+        "residual_l1": "7573876452241319/600000000000000000",
+        "residual_l1_float": 0.012623127420402199,
+        "multiplier_terms": 1297,
+        "square_polynomial_terms": 31305,
+        "residual_terms": 45981,
+        "residual_max_degree": 6,
+        "mode_count": 24,
+        "particle_number": 12,
+        "factor_rows": 1027,
+        "factor_nonzeros": 45525,
+        "restricted_to": "M_S=1",
+        "original_H_spin_defect_Ha": "1481/500000000000",
+        "lower_for": "Exact SU(2) average of input H in the stated sector",
+        "replay_seconds": 13.967842834012117,
+        "meets_full_interval_lower_threshold": false,
+        "not_a_full_fixed_N_bound_by_itself": true
+      }
+    }
+  ],
+  "selected_screen": null,
+  "frozen_H12_result_unchanged": true,
+  "fresh_complete_cold_calculation": false,
+  "original_failed_frozen_run_seconds_additional": 1502.7998542500136,
+  "additional_measured_continuation_seconds": 645.2264140000043
+}

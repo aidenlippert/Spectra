@@ -1,0 +1,23 @@
+{
+  "steps": [
+    [
+      "initialize",
+      20,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.interacting_scaling_20260915.coupling",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h8_matched_direct_base",
+        "h8_adaptive_coupling_l05_base",
+        "1/2",
+        "--previous",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h8_adaptive_coupling_l025_base"
+      ]
+    ]
+  ],
+  "one_heavy_process_at_a_time": true,
+  "host": "local Mac; one BLAS/Numba thread",
+  "external_spending": false
+}

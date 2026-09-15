@@ -1,0 +1,116 @@
+{"stage": "forecast", "rows": 28461, "full_word_pairs": 1230272, "retained_Gram_entries": 55616, "largest_Gram_block": 64, "number_ideal_columns": 1525, "stats": {"spatial_parity_masks": [13107, 52428], "mixed_linear_words_retained": true, "operator_dictionary_dimensions": [4, 4, 4, 4, 4, 4, 4, 4, 12, 16, 32, 32, 12, 16, 12, 16, 32, 32, 12, 16, 32, 32, 64, 64, 32, 32, 4, 4, 24, 24, 24, 24, 4, 4, 4, 4, 24, 24, 24, 24, 4, 4, 112, 112, 372, 372, 372, 372, 112, 112, 112, 112, 372, 372, 372, 372, 112, 112]}}
+{"stage": "spin_projection", "seconds": 180.08757658302784, "original_rows": 28461, "independent_invariant_rows": 8533, "integer_denominator": 12, "projector_nonzeros": 379625, "exact_integer_idempotence_checked": true, "modular_prime": 65521, "rank_equals_exact_trace": true}
+{"stage": "maps", "block": 0, "seconds": 181.16807675000746}
+{"stage": "maps", "block": 8, "seconds": 181.17531412502285}
+{"stage": "maps", "block": 16, "seconds": 181.33179000002565}
+{"stage": "maps", "block": 24, "seconds": 181.5302335830056}
+{"stage": "maps", "block": 32, "seconds": 181.61149108302197}
+{"stage": "maps", "block": 40, "seconds": 181.8773171250068}
+{"stage": "maps", "block": 48, "seconds": 195.28886991701438}
+{
+  "kind": "input_derived_highest_weight_preparation_v1",
+  "fixture": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_restricted64/fixture.json",
+  "fixture_sha256": "fda4ca29219e996e794493a48cf0df006fe64a86976b0f514b5b8b18780502be",
+  "state": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_restricted64/mps/state.json",
+  "state_sha256": "af53dee1e39219f78b78e72072a62c5e890b778025d8adca58da988c66bb4b6e",
+  "modes": 16,
+  "particles": 8,
+  "spin_projection": {
+    "original_rows": 28461,
+    "independent_invariant_rows": 8533,
+    "integer_denominator": 12,
+    "projector_nonzeros": 379625,
+    "exact_integer_idempotence_checked": true,
+    "modular_prime": 65521,
+    "rank_equals_exact_trace": true
+  },
+  "upper_Ha": "-2313720166994759907978133352396514735232910843732019989999194287654989356982970617647218675380637908556594019960638281396313774786565943771917647319355302578603498291289942263868546172258353791770095297456103344387328381817260053150529231576952049711697156424979841/249999999760020155116866557242970840157919649578587380267959264450545184020670100054287822350495680040054917014890633868644188855214430981428771585937827398488091591644476727721110696840221254827058585166319371668481306631175628579580159296994068647533000000000000",
+  "original_H_spin_defect_Ha": "59/250000000000",
+  "forecast": {
+    "rows": 28461,
+    "full_word_pairs": 1230272,
+    "retained_Gram_entries": 55616,
+    "largest_Gram_block": 64,
+    "number_ideal_columns": 1525,
+    "stats": {
+      "spatial_parity_masks": [
+        13107,
+        52428
+      ],
+      "mixed_linear_words_retained": true,
+      "operator_dictionary_dimensions": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        12,
+        16,
+        32,
+        32,
+        12,
+        16,
+        12,
+        16,
+        32,
+        32,
+        12,
+        16,
+        32,
+        32,
+        64,
+        64,
+        32,
+        32,
+        4,
+        4,
+        24,
+        24,
+        24,
+        24,
+        4,
+        4,
+        4,
+        4,
+        24,
+        24,
+        24,
+        24,
+        4,
+        4,
+        112,
+        112,
+        372,
+        372,
+        372,
+        372,
+        112,
+        112,
+        112,
+        112,
+        372,
+        372,
+        372,
+        372,
+        112,
+        112
+      ]
+    }
+  },
+  "map_build_seconds": 195.91950150000048,
+  "physical_word_pairs_constructed": 626560,
+  "coefficient_nonzeros": 147982,
+  "normal_nonzeros": 153154,
+  "moment_seconds": 4.695975875016302,
+  "moment_count": 28461,
+  "moment_transfer_steps": 162600,
+  "moment_pullback_residual": 3.0959174080856377e-12,
+  "initial_primal": "zero Gram matrices and zero ideal coordinates; no previous solution",
+  "teacher_certificate_used": false,
+  "old_checkpoint_used": false,
+  "many_body_determinants_enumerated": 0,
+  "total_seconds": 200.61547825002344
+}

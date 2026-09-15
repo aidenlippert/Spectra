@@ -1,0 +1,207 @@
+{
+  "case": "h8_cold",
+  "round": 0,
+  "spin_lifting": true,
+  "rank_cap_initial": 4,
+  "gram_entries": 18368,
+  "gram_dimensions": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    12,
+    16,
+    32,
+    32,
+    12,
+    16,
+    12,
+    16,
+    32,
+    32,
+    12,
+    16,
+    32,
+    32,
+    64,
+    64,
+    32,
+    32,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "full_gram_entries": 1206592,
+  "coefficient_equations": 1525,
+  "free_variables": 83,
+  "projected_map_nonzeros": 125216,
+  "build_seconds": 0.2564018330012914,
+  "prepared_dependency": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold/nonsinglet_prepared",
+  "fixture": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold/fixture.json",
+  "state": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold/mps/state.json",
+  "full_Gram_teacher_used": false,
+  "many_body_states_enumerated": 0,
+  "guide": [
+    {
+      "name": "local-triples-(-3, 0, 1, 0)",
+      "lowest": 0.6641505393249465,
+      "highest_retained": 0.7846098932869368
+    },
+    {
+      "name": "local-triples-(-3, 1, 1, 1)",
+      "lowest": 0.666887717188601,
+      "highest_retained": 0.7887828807873281
+    },
+    {
+      "name": "local-triples-(-2, 0, 0, 1)",
+      "lowest": 0.6641507364838686,
+      "highest_retained": 0.6780096490906471
+    },
+    {
+      "name": "local-triples-(-2, 1, 0, 0)",
+      "lowest": 0.6668879239160588,
+      "highest_retained": 0.676172932183483
+    },
+    {
+      "name": "local-triples-(-1, 0, 1, 0)",
+      "lowest": 0.6641507003261526,
+      "highest_retained": 0.678009597093131
+    },
+    {
+      "name": "local-triples-(-1, 1, 1, 1)",
+      "lowest": 0.6668878835486906,
+      "highest_retained": 0.6761728743534097
+    },
+    {
+      "name": "local-triples-(0, 0, 0, 1)",
+      "lowest": 0.6641504308533823,
+      "highest_retained": 0.7846095525316886
+    },
+    {
+      "name": "local-triples-(0, 1, 0, 0)",
+      "lowest": 0.6668875960871374,
+      "highest_retained": 0.7887825841341823
+    },
+    {
+      "name": "mixed-(-2, 0, 0, 1)",
+      "lowest": 5.476513401556485e-12,
+      "highest_retained": 1.0711536007464354e-11
+    },
+    {
+      "name": "mixed-(-2, 1, 0, 0)",
+      "lowest": 4.180795200567835e-12,
+      "highest_retained": 9.915985146696784e-12
+    },
+    {
+      "name": "mixed-(-1, 0, 1, 0)",
+      "lowest": 1.6910019272316916e-12,
+      "highest_retained": 2.9534982771694885e-12
+    },
+    {
+      "name": "mixed-(-1, 1, 1, 1)",
+      "lowest": 1.9328701310338707e-12,
+      "highest_retained": 3.214860059285314e-12
+    },
+    {
+      "name": "mixed-(0, 0, 0, 1)",
+      "lowest": 1.6527220190395944e-12,
+      "highest_retained": 3.019894074356808e-12
+    },
+    {
+      "name": "mixed-(0, 1, 0, 0)",
+      "lowest": 1.8592859946245413e-12,
+      "highest_retained": 3.2479822144674973e-12
+    },
+    {
+      "name": "mixed-(1, 0, 1, 0)",
+      "lowest": 5.555862916267608e-12,
+      "highest_retained": 1.0532620700474261e-11
+    },
+    {
+      "name": "mixed-(1, 1, 1, 1)",
+      "lowest": 4.271008300413682e-12,
+      "highest_retained": 9.926394763170686e-12
+    }
+  ],
+  "magnetization": 1,
+  "singlet": false,
+  "ladder_ideal_dimension": 0,
+  "shared_spin_orbits": false,
+  "map_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41
+  ],
+  "moment_dual_formulation": false,
+  "coherent_atoms": false,
+  "solve_seconds": 9.236513583018677,
+  "solver": "SCS",
+  "solver_status": "optimal",
+  "solver_iterations": 4125,
+  "solver_max_threads": null,
+  "status": "requires_independent_exact_replay",
+  "proposed_b": -9.218557612807862,
+  "numeric_coefficient_l1": 5.400261128000359e-07,
+  "minimum_PSD_eigenvalue": -6.790705831291011e-10,
+  "total_state_action_Ha": 0.0922170878086202,
+  "factor_rows": 410,
+  "certificate_bytes": 648782,
+  "round_seconds": 9.547723875002703,
+  "total_seconds": 10.261715083004674
+}

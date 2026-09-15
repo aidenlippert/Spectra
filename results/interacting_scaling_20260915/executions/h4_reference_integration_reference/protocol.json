@@ -1,0 +1,50 @@
+{
+  "steps": [
+    [
+      "prepare",
+      900,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.interacting_scaling_20260915.reference",
+        "prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_reference_integration_reference",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_reference_integration_base"
+      ]
+    ],
+    [
+      "solve",
+      105,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.interacting_scaling_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_reference_integration_reference",
+        "solve",
+        "--seconds",
+        "60"
+      ]
+    ],
+    [
+      "replay",
+      600,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.nvidia_followup_20260915.strict_replay",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_reference_integration_reference",
+        "solve",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_reference_integration_reference/exact",
+        "--rotated",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_reference_integration_base"
+      ]
+    ]
+  ],
+  "one_heavy_process_at_a_time": true,
+  "host": "local Mac; one BLAS/Numba thread",
+  "external_spending": false
+}

@@ -1,0 +1,62 @@
+Collecting sparseqr==1.6.0
+  Downloading sparseqr-1.6.0.tar.gz (23 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting python-flint==0.9.0
+  Downloading python_flint-0.9.0-cp310-abi3-macosx_11_0_arm64.whl.metadata (23 kB)
+Downloading python_flint-0.9.0-cp310-abi3-macosx_11_0_arm64.whl (7.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.9/7.9 MB 16.3 MB/s eta 0:00:00
+Building wheels for collected packages: sparseqr
+  Building wheel for sparseqr (pyproject.toml): started
+  Building wheel for sparseqr (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Building wheel for sparseqr (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [31 lines of output]
+      No `packages` or `py_modules` configuration, performing automatic discovery.
+      `flat-layout` detected -- analysing .
+      discovered packages -- ['sparseqr']
+      /private/var/folders/kd/rc4wy4k9029_9fkdbgqc33900000gn/T/pip-build-env-2tuvd82t/overlay/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsWarning: `install_requires` overwritten in `pyproject.toml` (dependencies)
+        corresp(dist, value, root_dir)
+      running bdist_wheel
+      running build
+      running build_py
+      creating build/lib.macosx-11.0-arm64-cpython-312/sparseqr
+      copying sparseqr/sparseqr_gen.py -> build/lib.macosx-11.0-arm64-cpython-312/sparseqr
+      copying sparseqr/__init__.py -> build/lib.macosx-11.0-arm64-cpython-312/sparseqr
+      copying sparseqr/cffi_asarray.py -> build/lib.macosx-11.0-arm64-cpython-312/sparseqr
+      copying sparseqr/sparseqr.py -> build/lib.macosx-11.0-arm64-cpython-312/sparseqr
+      running egg_info
+      writing sparseqr.egg-info/PKG-INFO
+      writing dependency_links to sparseqr.egg-info/dependency_links.txt
+      writing requirements to sparseqr.egg-info/requires.txt
+      writing top-level names to sparseqr.egg-info/top_level.txt
+      reading manifest file 'sparseqr.egg-info/SOURCES.txt'
+      adding license file 'LICENSE.md'
+      writing manifest file 'sparseqr.egg-info/SOURCES.txt'
+      running build_ext
+      generating cffi module 'build/temp.macosx-11.0-arm64-cpython-312/sparseqr._sparseqr.c'
+      creating build/temp.macosx-11.0-arm64-cpython-312
+      building 'sparseqr._sparseqr' extension
+      clang -fno-strict-overflow -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /opt/homebrew/Caskroom/miniconda/base/include -arch arm64 -fPIC -O2 -isystem /opt/homebrew/Caskroom/miniconda/base/include -arch arm64 -I/opt/homebrew/Caskroom/miniconda/base/include/suitesparse -I/opt/homebrew/Caskroom/miniconda/base/Library/include/suitesparse -I/Users/aidenlippert/Documents/Spectra/.venv-correlated/include -I/opt/homebrew/Caskroom/miniconda/base/include/python3.12 -c build/temp.macosx-11.0-arm64-cpython-312/sparseqr._sparseqr.c -o build/temp.macosx-11.0-arm64-cpython-312/build/temp.macosx-11.0-arm64-cpython-312/sparseqr._sparseqr.o
+      build/temp.macosx-11.0-arm64-cpython-312/sparseqr._sparseqr.c:581:10: fatal error: 'SuiteSparseQR_C.h' file not found
+      #include <SuiteSparseQR_C.h>
+               ^~~~~~~~~~~~~~~~~~~
+      1 error generated.
+      error: Command '['clang', '-fno-strict-overflow', '-DNDEBUG', '-O2', '-Wall', '-fPIC', '-O2', '-isystem', '/opt/homebrew/Caskroom/miniconda/base/include', '-arch', 'arm64', '-fPIC', '-O2', '-isystem', '/opt/homebrew/Caskroom/miniconda/base/include', '-arch', 'arm64', '-I/opt/homebrew/Caskroom/miniconda/base/include/suitesparse', '-I/opt/homebrew/Caskroom/miniconda/base/Library/include/suitesparse', '-I/Users/aidenlippert/Documents/Spectra/.venv-correlated/include', '-I/opt/homebrew/Caskroom/miniconda/base/include/python3.12', '-c', 'build/temp.macosx-11.0-arm64-cpython-312/sparseqr._sparseqr.c', '-o', 'build/temp.macosx-11.0-arm64-cpython-312/build/temp.macosx-11.0-arm64-cpython-312/sparseqr._sparseqr.o']' returned non-zero exit status 1.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for sparseqr
+Failed to build sparseqr
+ERROR: Could not build wheels for sparseqr, which is required to install pyproject.toml-based projects
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip

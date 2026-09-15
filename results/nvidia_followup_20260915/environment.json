@@ -1,0 +1,11 @@
+{
+  "name": "environment",
+  "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+  "started_UTC": "2026-09-15T07:14:05.633925+00:00",
+  "timeout_seconds": 180,
+  "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\n.venv/bin/python - <<'PY'\nimport hashlib,json,tarfile\nfrom pathlib import Path\nfor name,key in [('source','sha256'),('cases','archive_sha256')]:\n    data=json.loads(Path(name+'_upload_manifest.json').read_text())\n    archive=Path(name+'.tar.gz')\n    assert hashlib.sha256(archive.read_bytes()).hexdigest()==data[key]\n    with tarfile.open(archive) as stream:\n        stream.extractall('.',filter='data')\n    if isinstance(data.get('files'),dict):\n        for path, expected in data['files'].items():\n            assert hashlib.sha256(Path(path).read_bytes()).hexdigest()==expected,path\nprint('Uploaded archive and case hashes verified')\nimport cupy as cp, numpy as np, nvmath, inspect, flint\nfrom cuquantum.tensornet import Network\nfrom nvmath.sparse.advanced import DirectSolver, DirectSolverOptions, DirectSolverMatrixType, DirectSolverMatrixViewType\nfrom sksparse.cholmod import cholesky\nprint('CuPy',cp.__version__,'nvmath',nvmath.__version__,'flint',flint.__version__)\nprint('GPU',cp.cuda.runtime.getDeviceProperties(0)['name'])\nprint(inspect.signature(DirectSolverOptions))\nprint(list(DirectSolverMatrixType),list(DirectSolverMatrixViewType))\nprint('nvmath reset',inspect.signature(DirectSolver.reset_operands))\nprint('tensor network',inspect.signature(Network))\nprint('FP64 eigh',cp.asnumpy(cp.linalg.eigh(cp.eye(4,dtype=cp.float64))[0]).tolist())\nPY\n",
+  "status": "passed",
+  "exit_code": 0,
+  "wall_seconds": 4.086122624983545,
+  "finished_UTC": "2026-09-15T07:14:09.720185+00:00"
+}

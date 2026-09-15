@@ -1,0 +1,65 @@
+{
+  "steps": [
+    [
+      "initialize",
+      20,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.interacting_scaling_20260915.cases",
+        "water_heldout_level0",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/water_heldout_base",
+        "--widths",
+        "2",
+        "3",
+        "--collective-widths",
+        "3"
+      ]
+    ],
+    [
+      "prepare",
+      900,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.interacting_scaling_20260915.prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/water_heldout_level0"
+      ]
+    ],
+    [
+      "solve",
+      495,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.interacting_scaling_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/water_heldout_level0",
+        "solve",
+        "--seconds",
+        "450"
+      ]
+    ],
+    [
+      "replay",
+      600,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.interacting_scaling_20260915.complete",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/models/water_heldout",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/water_heldout_level0",
+        "solve",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/water_heldout_level0/exact"
+      ]
+    ]
+  ],
+  "one_heavy_process_at_a_time": true,
+  "host": "local Mac; one BLAS/Numba thread",
+  "external_spending": false
+}

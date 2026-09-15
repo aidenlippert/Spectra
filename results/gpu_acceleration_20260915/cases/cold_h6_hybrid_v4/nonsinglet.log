@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/transfer_solver_20260915/actions.py", line 77, in <module>
+    run(a.case.resolve(), a.action)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/transfer_solver_20260915/actions.py", line 23, in run
+    from research.collective_completion_20260914.prepare import build
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/collective_completion_20260914/prepare.py", line 16, in <module>
+    from experiments.marginal_coefficient import gram_map,dagger
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/experiments/marginal_coefficient.py", line 17, in <module>
+    import cvxpy as cp
+ModuleNotFoundError: No module named 'cvxpy'

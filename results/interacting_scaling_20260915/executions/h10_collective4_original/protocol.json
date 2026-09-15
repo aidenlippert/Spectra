@@ -1,0 +1,22 @@
+{
+  "steps": [
+    [
+      "replay",
+      600,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.interacting_scaling_20260915.complete",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h10_size",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h10_collective4",
+        "solve",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h10_collective4/exact_original"
+      ]
+    ]
+  ],
+  "one_heavy_process_at_a_time": true,
+  "host": "local Mac; one BLAS/Numba thread",
+  "external_spending": false
+}

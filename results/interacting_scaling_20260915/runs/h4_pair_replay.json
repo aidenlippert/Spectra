@@ -1,0 +1,23 @@
+{
+  "name": "h4_pair_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.nvidia_followup_20260915.strict_replay",
+    "results/interacting_scaling_20260915/cases/h4_pair",
+    "solve",
+    "results/interacting_scaling_20260915/cases/h4_pair/exact"
+  ],
+  "timeout_seconds": 60,
+  "status": "passed",
+  "started_UTC": "2026-09-15T08:55:31.038382+00:00",
+  "pid": 90916,
+  "exit_code": 0,
+  "wall_seconds": 0.9791949999926146,
+  "child_user_seconds": 0.887836,
+  "child_system_seconds": 0.016545,
+  "peak_child_RSS_bytes": 35766272,
+  "finished_UTC": "2026-09-15T08:55:32.019796+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "h8_adaptive_coupling_l1_level0_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.interacting_scaling_20260915.complete",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/models/h8_matched_direct",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h8_adaptive_coupling_l1_level0",
+    "solve",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h8_adaptive_coupling_l1_level0/exact"
+  ],
+  "timeout_seconds": 600,
+  "status": "passed",
+  "started_UTC": "2026-09-15T12:38:55.157995+00:00",
+  "pid": 37024,
+  "exit_code": 0,
+  "wall_seconds": 52.34178004198475,
+  "child_user_seconds": 52.084445,
+  "child_system_seconds": 0.197496,
+  "peak_child_RSS_bytes": 348143616,
+  "finished_UTC": "2026-09-15T12:39:47.501145+00:00"
+}

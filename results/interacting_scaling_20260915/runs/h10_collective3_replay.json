@@ -1,0 +1,23 @@
+{
+  "name": "h10_collective3_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.nvidia_followup_20260915.strict_replay",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h10_collective3",
+    "solve",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h10_collective3/exact"
+  ],
+  "timeout_seconds": 600,
+  "status": "passed",
+  "started_UTC": "2026-09-15T09:37:11.420381+00:00",
+  "pid": 99655,
+  "exit_code": 0,
+  "wall_seconds": 159.21552204198088,
+  "child_user_seconds": 158.3619,
+  "child_system_seconds": 0.670493,
+  "peak_child_RSS_bytes": 732987392,
+  "finished_UTC": "2026-09-15T09:39:50.634606+00:00"
+}

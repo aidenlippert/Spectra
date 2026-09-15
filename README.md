@@ -1,8 +1,34 @@
 # Spectra — constructive scientific discovery
 
+## Current molecular certificate work — September 15, 2026
+
+Start with the [interacting certificate scaling report](research/interacting_scaling_20260915/REPORT.md), [mathematical construction](research/interacting_scaling_20260915/MATHEMATICS.md), [measured results](research/interacting_scaling_20260915/TABLES.md), and [runbook](research/interacting_scaling_20260915/RUNBOOK.md). These supersede the older program summary below as the entry point for the molecular solver.
+
+The direct local and collective proof construction reached complete certified intervals of **1.030971 mHa on H8** and **1.557100 mHa on H10**, without first building the complete global cubic coefficient map. Frozen transfer passed changed-geometry water and an expanded-orbital H4 model; the H8 coupling path passed through the fully interacting endpoint. H12's best accepted continuation interval is **12.590173 mHa**, above the 1.6 mHa target. These are finite-model solver guarantees, not certified physical-model accuracy.
+
+The selected optimization representations are smaller, but the matched H8 and H10 complete runs are about **1.43 times slower** than the optimized references. No whole-pipeline speed or memory advantage, general scaling theorem, or experimental predictive advantage is established.
+
+All campaign source, certificates, unsuccessful attempts, cost records and integrity manifests are included. Earlier supporting work is in the [transfer solver report](research/transfer_solver_20260915/REPORT.md), [transfer follow-up](research/transfer_followup_20260915/RESULTS.md), [GPU report](research/gpu_acceleration_20260915/REPORT.md), and [NVIDIA follow-up](research/nvidia_followup_20260915/REPORT.md).
+
+A separately supplied [localized H8 report and derivation](research/imported_local_coupling_h8_20260915/README.md) are preserved as **unreplayed external claims**. They report a sharp obstruction for one four-orbital paired H8 family. The runnable certificate bundle was not supplied with those documents; this claim is not promoted to an independently verified local result.
+
+### Retrieve complete research artifacts
+
+Large artifacts use Git LFS. Install Git LFS, then run the following from a clone:
+
+```bash
+git lfs install
+git lfs pull
+python3 -B -m research.interacting_scaling_20260915.seal check
+```
+
+The last command checks the preserved campaign file hashes; it does not rerun mathematical certificate acceptance. Use the [runbook](research/interacting_scaling_20260915/RUNBOOK.md) for exact replay, construction commands, dependencies and accounting conventions. The smaller dependency list in the historical section below applies to those earlier experiments.
+
+## Earlier research program
+
 Spectra now contains a source-grounded research program for the ten keystone problems, an executable baseline joining mechanism identification, intervention-stable representations and certified quantum energy bounds, and an exact finite-patch stabilizer diagnostic.
 
-**Current result: V9 tests trajectory-wide basis construction and direct ODE collocation, with 128 independently replayed certificates. Neither method clears the full-cost acquisition gate. Compounding scientific-method capability remains unproved.** V1–V6 are preserved, and the V6 history-state candidate is retired for its tested workload.
+**Earlier V9 result: trajectory-wide basis construction and direct ODE collocation, with 128 independently replayed certificates. Neither method clears the full-cost acquisition gate. Compounding scientific-method capability remains unproved.** V1–V6 are preserved, and the V6 history-state candidate is retired for its tested workload.
 
 Start with the [V9 report](results/v9/REPORT.md), [V8 cost report](results/v8/REPORT.md), [V7 prediction and certificate report](results/v7/REPORT.md), [current research state](research/ACTIVE_STATUS.md), [measured prediction witness](results/v7/prediction_requests.json), and [independently replayed certificates](results/v7/verification_receipt.json). The [V6 report](results/v6/REPORT.md) preserves the failed ARX headroom gate. Earlier information-transfer results are not relabeled as research-method acquisition.
 
@@ -107,4 +133,4 @@ The main command writes [structured results and certificates](results/keystone_r
 
 [Evaluation gates](research/decision_gates.md) separate pipeline correctness from the stronger intelligence claim. [Adversarial review](research/adversarial_review.md) and [source review](research/source_audit.md) record independent scrutiny. [Constructive lemmas](research/constructive_lemmas.md) make the next mathematical obligations explicit.
 
-The connected project is `/Users/aidenlippert/Documents/Spectra`. The originally supplied Desktop path no longer existed; no earlier Spectra code was found in the connected project. This directory was not a Git repository. All work remains local; no remote publication or commit was performed.
+The original local workspace was `/Users/aidenlippert/Documents/Spectra`. Historical reports retain their original local paths and publication status; use the current links at the top of this README for the latest molecular work.

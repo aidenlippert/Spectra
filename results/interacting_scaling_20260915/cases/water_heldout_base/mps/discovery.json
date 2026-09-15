@@ -1,0 +1,72 @@
+{
+  "fixture_sha256": "d18b57dace755782407e76aa66cde865d02191992c3b0c1cc129b29e17159b7e",
+  "physical_energy_float_Ha": -84.12657148202017,
+  "penalized_energy_float_Ha": -84.12655294561291,
+  "initial_MPS_path": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/water_heldout_base/product_seed.json",
+  "requested_spatial_bond": 32,
+  "spatial_bonds": [
+    4,
+    16,
+    31,
+    31,
+    16,
+    4
+  ],
+  "export_spin_bonds": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    28,
+    31,
+    50,
+    31,
+    28,
+    16,
+    8,
+    4,
+    2,
+    1
+  ],
+  "export_nonzero_entries": 1527,
+  "MPO_bond": 95,
+  "MPO_bond_before_compression": 483,
+  "MPO_compression_cutoff_proposal_only": 1e-12,
+  "sweeps_cap": 6,
+  "sweep_energies": [
+    -83.16298536121148,
+    -83.64352908145408,
+    -83.9800265964962,
+    -84.11544207276815,
+    -84.1265526948063,
+    -84.12655294561291
+  ],
+  "converged": false,
+  "rounding": {
+    "charge_eigenvalue_max_distance_to_integer": 0.4974459834276459,
+    "discarded_local_tensor_squared_entries": 5.276602751189503,
+    "input_norm_before_normalization": 1.000000000000001,
+    "postround_bond_dimensions": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      28,
+      31,
+      50,
+      31,
+      28,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "warning": "Discarded local tensor entries are a proposal diagnostic, not a state norm or energy error guarantee."
+  },
+  "seconds": 24.258834542008117,
+  "initializer": "Random MPS bond4, seed20260913, paired spin sites; no FCI or Gram teacher",
+  "full_state_or_H_expansion": false
+}

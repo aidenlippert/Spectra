@@ -1,0 +1,53 @@
+{
+  "fixture_sha256": "ae1bd7d923adcf4d68f93148bd60968a5e43683060e6ecc87346b960a6e44483",
+  "physical_energy_float_Ha": -4.0481793556623025,
+  "penalized_energy_float_Ha": -4.048179060719635,
+  "initial_MPS_path": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_coupling_l05/continuation_seed.json",
+  "requested_spatial_bond": 32,
+  "spatial_bonds": [
+    4,
+    16,
+    4
+  ],
+  "export_spin_bonds": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    8,
+    4,
+    2,
+    1
+  ],
+  "export_nonzero_entries": 108,
+  "MPO_bond": 30,
+  "MPO_bond_before_compression": 67,
+  "MPO_compression_cutoff_proposal_only": 1e-12,
+  "sweeps_cap": 6,
+  "sweep_energies": [
+    -4.048179060719641,
+    -4.048179060719635
+  ],
+  "converged": true,
+  "rounding": {
+    "charge_eigenvalue_max_distance_to_integer": 2.7839064387080725e-11,
+    "discarded_local_tensor_squared_entries": 3.6158430731187023e-12,
+    "input_norm_before_normalization": 1.0000000000000007,
+    "postround_bond_dimensions": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "warning": "Discarded local tensor entries are a proposal diagnostic, not a state norm or energy error guarantee."
+  },
+  "seconds": 0.30183283300721087,
+  "initializer": "Random MPS bond4, seed20260913, paired spin sites; no FCI or Gram teacher",
+  "full_state_or_H_expansion": false
+}

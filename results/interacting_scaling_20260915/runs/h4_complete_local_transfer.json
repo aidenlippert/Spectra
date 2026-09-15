@@ -1,0 +1,25 @@
+{
+  "name": "h4_complete_local_transfer",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.interacting_scaling_20260915.rotation",
+    "transfer",
+    "results/transfer_solver_20260915/cases/h4_control",
+    "results/interacting_scaling_20260915/cases/h4_complete_local",
+    "results/interacting_scaling_20260915/cases/h4_complete_local/exact",
+    "results/interacting_scaling_20260915/cases/h4_complete_local/original_interval.json"
+  ],
+  "timeout_seconds": 60,
+  "status": "passed",
+  "started_UTC": "2026-09-15T09:06:46.469286+00:00",
+  "pid": 93489,
+  "exit_code": 0,
+  "wall_seconds": 1.5416812089970335,
+  "child_user_seconds": 1.495102,
+  "child_system_seconds": 0.016559,
+  "peak_child_RSS_bytes": 51888128,
+  "finished_UTC": "2026-09-15T09:06:48.011532+00:00"
+}

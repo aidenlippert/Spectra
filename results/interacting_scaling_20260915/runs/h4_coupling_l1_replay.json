@@ -1,0 +1,23 @@
+{
+  "name": "h4_coupling_l1_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.nvidia_followup_20260915.strict_replay",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_coupling_l1",
+    "solve",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_coupling_l1/exact"
+  ],
+  "timeout_seconds": 600,
+  "status": "passed",
+  "started_UTC": "2026-09-15T09:44:03.473810+00:00",
+  "pid": 1422,
+  "exit_code": 0,
+  "wall_seconds": 0.8917576660169289,
+  "child_user_seconds": 0.854962,
+  "child_system_seconds": 0.015318,
+  "peak_child_RSS_bytes": 36093952,
+  "finished_UTC": "2026-09-15T09:44:04.366524+00:00"
+}

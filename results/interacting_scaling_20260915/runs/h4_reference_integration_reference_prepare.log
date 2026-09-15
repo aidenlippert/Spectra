@@ -1,0 +1,107 @@
+{"stage": "forecast", "rows": 435, "full_word_pairs": 19248, "retained_Gram_entries": 6368, "largest_Gram_block": 34, "number_ideal_columns": 111, "stats": {"spatial_parity_masks": [51, 204], "mixed_linear_words_retained": true, "operator_dictionary_dimensions": [2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 8, 8, 2, 4, 2, 4, 8, 8, 2, 4, 8, 8, 16, 16, 8, 8, 2, 2, 2, 2, 2, 2, 2, 2, 12, 12, 46, 46, 46, 46, 12, 12, 12, 12, 46, 46, 46, 46, 12, 12]}}
+{"stage": "spin_projection", "seconds": 0.34229579201200977, "original_rows": 435, "independent_invariant_rows": 167, "integer_denominator": 12, "projector_nonzeros": 2989, "exact_integer_idempotence_checked": true, "modular_prime": 65521, "rank_equals_exact_trace": true}
+{"stage": "maps", "block": 0, "seconds": 0.3734849170141388}
+{"stage": "maps", "block": 8, "seconds": 0.37663920799968764}
+{"stage": "maps", "block": 16, "seconds": 0.38274895801441744}
+{"stage": "maps", "block": 24, "seconds": 0.39338287501595914}
+{"stage": "maps", "block": 32, "seconds": 0.3981672920053825}
+{"stage": "maps", "block": 40, "seconds": 0.5813055830076337}
+{
+  "kind": "input_derived_highest_weight_preparation_v1",
+  "fixture": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_reference_integration_reference/fixture.json",
+  "fixture_sha256": "652a1a61b049a0260787004a2bbbcc89dd4bd90c0387940527d7eade0ca9376d",
+  "state": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_reference_integration_reference/mps/state.json",
+  "state_sha256": "dac49f0bb9979d4b0052b01ed334c26e96ebbda6211acb73af4726d7e41131c7",
+  "modes": 8,
+  "particles": 4,
+  "spin_projection": {
+    "original_rows": 435,
+    "independent_invariant_rows": 167,
+    "integer_denominator": 12,
+    "projector_nonzeros": 2989,
+    "exact_integer_idempotence_checked": true,
+    "modular_prime": 65521,
+    "rank_equals_exact_trace": true
+  },
+  "upper_Ha": "-1842003507882163799609054386151565507769262028634066568817155376097587744371212882141145934992229023171823383373030966293380801268348541958265836924988031972564232696556731811494104124105266727588816136411124918351477777275616142749526104390963532219774146053845099781034031722078675462014303920453410423/502318933763831241351819291478284939604922892935156259525173424269090961700308408912798402882044148227256642400479174745915604152472512777337468650049481274897445089167961799037924302158465988014835910836228846449330091506285683634266910143023569339807510427858158599726066835139306139262737500000000000",
+  "original_H_spin_defect_Ha": "3/500000000000",
+  "forecast": {
+    "rows": 435,
+    "full_word_pairs": 19248,
+    "retained_Gram_entries": 6368,
+    "largest_Gram_block": 34,
+    "number_ideal_columns": 111,
+    "stats": {
+      "spatial_parity_masks": [
+        51,
+        204
+      ],
+      "mixed_linear_words_retained": true,
+      "operator_dictionary_dimensions": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        4,
+        8,
+        8,
+        2,
+        4,
+        2,
+        4,
+        8,
+        8,
+        2,
+        4,
+        8,
+        8,
+        16,
+        16,
+        8,
+        8,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        12,
+        12,
+        46,
+        46,
+        46,
+        46,
+        12,
+        12,
+        12,
+        12,
+        46,
+        46,
+        46,
+        46,
+        12,
+        12
+      ]
+    }
+  },
+  "map_build_seconds": 0.6190917920030188,
+  "physical_word_pairs_constructed": 10208,
+  "coefficient_nonzeros": 14338,
+  "normal_nonzeros": 2395,
+  "moment_seconds": 0.0028504999936558306,
+  "moment_count": 435,
+  "moment_transfer_steps": 3333,
+  "moment_pullback_residual": 1.9950173914364553e-16,
+  "initial_primal": "zero Gram matrices and zero ideal coordinates; no previous solution",
+  "teacher_certificate_used": false,
+  "old_checkpoint_used": false,
+  "many_body_determinants_enumerated": 0,
+  "total_seconds": 0.6219427920004819
+}

@@ -1,0 +1,11 @@
+{
+  "name": "library_probes",
+  "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+  "started_UTC": "2026-09-15T07:32:38.253062+00:00",
+  "timeout_seconds": 1200,
+  "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\nexport OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1\n/home/ubuntu/.local/bin/uv pip install --python .venv/bin/python sparseqr\n/home/ubuntu/.local/bin/uv pip freeze --python .venv/bin/python > installed.txt\n.venv/bin/python -B -m research.nvidia_followup_20260915.probe_jobs\n",
+  "status": "passed",
+  "exit_code": 0,
+  "wall_seconds": 427.8811674169847,
+  "finished_UTC": "2026-09-15T07:39:46.147125+00:00"
+}

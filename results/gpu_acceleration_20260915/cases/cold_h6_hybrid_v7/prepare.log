@@ -1,0 +1,83 @@
+{"stage": "forecast", "rows": 9559, "full_word_pairs": 434500, "retained_Gram_entries": 127492, "largest_Gram_block": 222, "number_ideal_columns": 949, "stats": {"spatial_parity_masks": [4095], "mixed_linear_words_retained": true, "operator_dictionary_dimensions": [6, 6, 6, 6, 15, 36, 15, 15, 36, 15, 36, 72, 36, 2, 18, 18, 2, 2, 18, 18, 2, 90, 312, 312, 90, 90, 312, 312, 90]}}
+{"stage": "spin_projection", "seconds": 26.181138035000004, "original_rows": 9559, "independent_invariant_rows": 3068, "integer_denominator": 12, "projector_nonzeros": 107521, "exact_integer_idempotence_checked": true, "modular_prime": 65521, "rank_equals_exact_trace": true}
+{"stage": "maps", "block": 0, "seconds": 27.131198976000178}
+{"stage": "maps", "block": 8, "seconds": 27.23135150500002}
+{"stage": "maps", "block": 16, "seconds": 27.525640494000072}
+{"stage": "maps", "block": 24, "seconds": 35.93173324600002}
+{
+  "kind": "input_derived_highest_weight_preparation_v1",
+  "fixture": "/home/ubuntu/spectra-gpu-acceleration-20260915/cases/cold_h6_hybrid_v7/fixture.json",
+  "fixture_sha256": "1be76d93928e423311ce69962c3e4ba1874282a0196143c924a6dbd6cc35d123",
+  "state": "/home/ubuntu/spectra-gpu-acceleration-20260915/cases/cold_h6_hybrid_v7/mps/state.json",
+  "state_sha256": "8ba8716c61b67a2f5ed0954183c77c1dc67f20767a81b2ec8a31595358722b6f",
+  "modes": 12,
+  "particles": 6,
+  "spin_projection": {
+    "original_rows": 9559,
+    "independent_invariant_rows": 3068,
+    "integer_denominator": 12,
+    "projector_nonzeros": 107521,
+    "exact_integer_idempotence_checked": true,
+    "modular_prime": 65521,
+    "rank_equals_exact_trace": true
+  },
+  "upper_Ha": "-386644664791757476956854132826040925769231958612067997648898934529463498934448981856691578260521388719404939212772721491588529315667612540063572925184916154462590221420877125893248877766621269/62500000172257855579885203969090327747945529193676322708850942170567567462350132679474749590781276032972118183574977361838933716791192987667940621190918045021295404243609683081732000000000000",
+  "original_H_spin_defect_Ha": "49/500000000000",
+  "forecast": {
+    "rows": 9559,
+    "full_word_pairs": 434500,
+    "retained_Gram_entries": 127492,
+    "largest_Gram_block": 222,
+    "number_ideal_columns": 949,
+    "stats": {
+      "spatial_parity_masks": [
+        4095
+      ],
+      "mixed_linear_words_retained": true,
+      "operator_dictionary_dimensions": [
+        6,
+        6,
+        6,
+        6,
+        15,
+        36,
+        15,
+        15,
+        36,
+        15,
+        36,
+        72,
+        36,
+        2,
+        18,
+        18,
+        2,
+        2,
+        18,
+        18,
+        2,
+        90,
+        312,
+        312,
+        90,
+        90,
+        312,
+        312,
+        90
+      ]
+    }
+  },
+  "map_build_seconds": 36.19620273600003,
+  "physical_word_pairs_constructed": 223612,
+  "coefficient_nonzeros": 312759,
+  "normal_nonzeros": 49950,
+  "moment_seconds": 0.964479429000221,
+  "moment_count": 9559,
+  "moment_transfer_steps": 40119,
+  "moment_pullback_residual": 9.082023093105938e-16,
+  "initial_primal": "zero Gram matrices and zero ideal coordinates; no previous solution",
+  "teacher_certificate_used": false,
+  "old_checkpoint_used": false,
+  "many_body_determinants_enumerated": 0,
+  "total_seconds": 37.16068341400023
+}

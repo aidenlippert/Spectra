@@ -1,0 +1,30 @@
+{
+  "source_sha256": "0df691196ac0102aee328efe1fe57d798da8f7473f21888c50ebe57ce38d9375",
+  "purpose": "Recover a concrete exact interval from the last preserved iterate without weakening the numerical guard",
+  "new_optimization": false,
+  "steps": [
+    [
+      "export",
+      90,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.recover_restricted",
+        "export"
+      ]
+    ],
+    [
+      "verify",
+      600,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.recover_restricted",
+        "verify"
+      ]
+    ]
+  ]
+}

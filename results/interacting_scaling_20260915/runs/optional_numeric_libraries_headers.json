@@ -1,0 +1,27 @@
+{
+  "name": "optional_numeric_libraries_headers",
+  "command": [
+    "/usr/bin/env",
+    "CFLAGS=-I/opt/homebrew/opt/suite-sparse/include/suitesparse",
+    "LDFLAGS=-L/opt/homebrew/opt/suite-sparse/lib",
+    ".venv-correlated/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--no-deps",
+    "--target",
+    ".spectra-interacting-libs",
+    "sparseqr==1.6.0",
+    "python-flint==0.9.0"
+  ],
+  "timeout_seconds": 300,
+  "status": "passed",
+  "started_UTC": "2026-09-15T08:50:54.783091+00:00",
+  "pid": 89351,
+  "exit_code": 0,
+  "wall_seconds": 6.730384958995273,
+  "child_user_seconds": 4.323373,
+  "child_system_seconds": 0.8797339999999999,
+  "peak_child_RSS_bytes": 102563840,
+  "finished_UTC": "2026-09-15T08:51:01.513972+00:00"
+}

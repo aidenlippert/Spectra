@@ -1,0 +1,25 @@
+{
+  "name": "h4_control_magnetic_stage1",
+  "command": [
+    "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.transfer_solver_20260915.solve",
+    "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h4_control_magnetic",
+    "stage1",
+    "--seconds",
+    "300",
+    "--mu",
+    "2"
+  ],
+  "timeout_seconds": 400,
+  "status": "passed",
+  "started_UTC": "2026-09-15T06:09:10.929174+00:00",
+  "pid": 54304,
+  "exit_code": 0,
+  "wall_seconds": 50.60954479200882,
+  "child_user_seconds": 49.423567,
+  "child_system_seconds": 0.39255399999999996,
+  "peak_child_RSS_bytes": 68878336,
+  "finished_UTC": "2026-09-15T06:10:01.540453+00:00"
+}

@@ -1,0 +1,30 @@
+{
+  "source_sha256": "42ddb3a092ed88b1de571c5446123a63bad65396aaac13bd9ce0b0c6b93c78a0",
+  "local_enumeration_explicit": true,
+  "no_monolithic_optimizer_claim": true,
+  "steps": [
+    [
+      "construct",
+      90,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.global_fragments",
+        "construct"
+      ]
+    ],
+    [
+      "verify",
+      180,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.global_fragments",
+        "verify"
+      ]
+    ]
+  ]
+}

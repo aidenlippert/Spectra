@@ -18,3 +18,45 @@
 "results/v10/certificate_archive.json" filter=lfs diff=lfs merge=lfs -text
 "results/v5/transfer_results.json" filter=lfs diff=lfs merge=lfs -text
 "results/wave2_20260913/control/h10_spin_scs600/certificate.json" filter=lfs diff=lfs merge=lfs -text
+
+# Large September 2026 campaign JSON artifacts.
+"results/interacting_scaling_20260915/cases/h10_collective3/exact/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_collective3/prepared/frame.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_collective3_patterns/prepared/frame.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_collective4/exact/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_collective4/exact_original/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_collective4/prepared/frame.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_local_pair/exact/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_local_pair/exact/nonsinglet.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_local_pair/nonsinglet.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_local_pair/prepared/frame.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_matched_direct_level0/exact/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_matched_direct_level0/prepared/frame.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_matched_direct_level1/exact/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_matched_direct_level1/prepared/frame.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_matched_reference_extended_reference/exact/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_matched_reference_extended_reference/prepared/frame.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_matched_reference_reference/exact/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h10_matched_reference_reference/prepared/frame.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h12_heldout_base_magnetic_level2/prepared/frame.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h12_main_refined/exact/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h12_main_refined/prepared/frame.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h12_posthoc_main_fixed/exact/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/interacting_scaling_20260915/cases/h12_posthoc_main_fixed/prepared/frame.json" filter=lfs diff=lfs merge=lfs -text
+"results/nvidia_followup_20260915/download_final/results/transfer_solver_20260915/adaptive/h10_correlated_guide/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/nvidia_followup_20260915/download_final/results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive/exact_compiled/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/nvidia_followup_20260915/download_final/results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive/exact_compiled_retry/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/nvidia_followup_20260915/download_initial/results/transfer_solver_20260915/adaptive/h10_correlated_guide/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/transfer_solver_20260915/adaptive/h10_correlated_guide/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/transfer_solver_20260915/adaptive/h10_correlated_guide/hybrid_adaptive/exact_local_stdlib/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/transfer_solver_20260915/adaptive/h10_correlated_guide/prepared/frame.json" filter=lfs diff=lfs merge=lfs -text
+"results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive/exact_compiled/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive/exact_compiled_retry/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive/exact_local_stdlib/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/transfer_solver_20260915/adaptive/h10_rotated_upper/certificate.json" filter=lfs diff=lfs merge=lfs -text
+"results/transfer_solver_20260915/adaptive/h10_rotated_upper/prepared/frame.json" filter=lfs diff=lfs merge=lfs -text
+
+# Small, sealed map arrays stay in Git; larger numerical artifacts use LFS.
+results/gpu_acceleration_20260915/**/map_*.npz -filter -diff -merge -text
+results/interacting_scaling_20260915/**/map_*.npz -filter -diff -merge -text
+results/transfer_solver_20260915/**/map_*.npz -filter -diff -merge -text

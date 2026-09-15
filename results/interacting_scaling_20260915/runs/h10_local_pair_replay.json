@@ -1,0 +1,23 @@
+{
+  "name": "h10_local_pair_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.nvidia_followup_20260915.strict_replay",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h10_local_pair",
+    "solve",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h10_local_pair/exact"
+  ],
+  "timeout_seconds": 600,
+  "status": "passed",
+  "started_UTC": "2026-09-15T09:19:01.714492+00:00",
+  "pid": 95998,
+  "exit_code": 0,
+  "wall_seconds": 120.15023108400055,
+  "child_user_seconds": 119.518633,
+  "child_system_seconds": 0.44349099999999997,
+  "peak_child_RSS_bytes": 569720832,
+  "finished_UTC": "2026-09-15T09:21:01.864183+00:00"
+}

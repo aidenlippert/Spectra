@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/transfer_solver_20260915/actions.py", line 77, in <module>
+    run(a.case.resolve(), a.action)
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/transfer_solver_20260915/actions.py", line 14, in run
+    from research.correlated_pair_20260913.mps_spatial import run as discover
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/correlated_pair_20260913/mps_spatial.py", line 8, in <module>
+    from research.correlated_pair_20260913.mps_direct import build_mpo
+  File "/home/ubuntu/spectra-gpu-acceleration-20260915/source/research/correlated_pair_20260913/mps_direct.py", line 13, in <module>
+    from quimb.operator import SparseOperatorBuilder
+ModuleNotFoundError: No module named 'quimb.operator'

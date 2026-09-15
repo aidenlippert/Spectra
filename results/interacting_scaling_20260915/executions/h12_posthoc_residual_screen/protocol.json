@@ -1,0 +1,54 @@
+{
+  "steps": [
+    [
+      "initialize",
+      30,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.interacting_scaling_20260915.screen_continue",
+        "initialize",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_posthoc_screen_1",
+        "h12_posthoc_residual_screen"
+      ]
+    ],
+    [
+      "solve",
+      345,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.interacting_scaling_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_posthoc_residual_screen",
+        "solve",
+        "--seconds",
+        "300",
+        "--mu",
+        "0.03",
+        "--restart",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_posthoc_residual_screen/resume.npz"
+      ]
+    ],
+    [
+      "check",
+      180,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.interacting_scaling_20260915.nonsinglet",
+        "check",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_posthoc_residual_screen",
+        "solve",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h12_posthoc_residual_screen/exact.json"
+      ]
+    ]
+  ],
+  "one_heavy_process_at_a_time": true,
+  "host": "local Mac; one BLAS/Numba thread",
+  "external_spending": false
+}

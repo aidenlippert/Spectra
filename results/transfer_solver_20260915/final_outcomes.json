@@ -1,0 +1,1654 @@
+{
+  "cases": [
+    {
+      "case": "h4_control",
+      "interval": {
+        "lower_Ha": "-11001004502135672923/3000000000000000000",
+        "upper_Ha": "-28648437185059001569651346770617483322808408400624284789720348553076873413947812907592761959934817896131373189728550783/7812500007932562714846797228068846359965899772841003815005567215576059532456770451447165035837817715429681000000000000",
+        "width_Ha": "36205024098141486652204818130080626348796526289732420749436221171763543683259562972512872236801378672459631736673227563/23437500023797688144540391684206539079897699318523011445016701646728178597370311354341495107513453146289043000000000000000000",
+        "width_mHa": 0.0015447476932855494,
+        "target_met": true,
+        "valid_on": "Entire fixed-N sector",
+        "removed_rows": 26,
+        "removed_square_norm_bound_Ha": "1397/500000000000000000",
+        "lower_replay_seconds": 0.6851868329977151,
+        "accepting_numerical_imports": []
+      },
+      "stage_process_seconds": 27.52545241799089,
+      "peak_RSS_bytes": 328581120,
+      "forecast": {
+        "rows": 435,
+        "full_word_pairs": 19248,
+        "retained_Gram_entries": 6368,
+        "largest_Gram_block": 34,
+        "number_ideal_columns": 111,
+        "stats": {
+          "spatial_parity_masks": [
+            51,
+            204
+          ],
+          "mixed_linear_words_retained": true,
+          "operator_dictionary_dimensions": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            8,
+            8,
+            2,
+            4,
+            2,
+            4,
+            8,
+            8,
+            2,
+            4,
+            8,
+            8,
+            16,
+            16,
+            8,
+            8,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            12,
+            12,
+            46,
+            46,
+            46,
+            46,
+            12,
+            12,
+            12,
+            12,
+            46,
+            46,
+            46,
+            46,
+            12,
+            12
+          ]
+        }
+      },
+      "execution": {
+        "status": "completed",
+        "last_step": "replay",
+        "elapsed_seconds": 27.839559624990216,
+        "from_new_integrals": true,
+        "historical_artifacts_loaded": false,
+        "development_and_failed_other_case_costs_are_separate": true
+      }
+    },
+    {
+      "case": "h8_cold",
+      "interval": {
+        "lower_Ha": "-13883228681767008661/1500000000000000000",
+        "upper_Ha": "-2313720166994759907978133352396514735232910843732019989999194287654989356982970617647218675380637908556594019960638281396313774786565943771917647319355302578603498291289942263868546172258353791770095297456103344387328381817260053150529231576952049711697156424979841/249999999760020155116866557242970840157919649578587380267959264450545184020670100054287822350495680040054917014890633868644188855214430981428771585937827398488091591644476727721110696840221254827058585166319371668481306631175628579580159296994068647533000000000000",
+        "width_Ha": "226916617917237755284046279769067464341298496454875170855614887813826036491665757693108979852926793458187009054078375017709263874658127859572636399545714617261207302090421884521420135555808761881533872813231349739010770206078621145150857805886291321412774789605783313/374999999640030232675299835864456260236879474367881070401938896675817776031005150081431733525743520060082375522335950802966283282821646472143157378906741097732137387466715091581666045260331882240587877749479057502721959946763442869370238945491102971299500000000000000000",
+        "width_mHa": 0.6051109816934918,
+        "target_met": true,
+        "valid_on": "Entire fixed-N sector",
+        "removed_rows": 288,
+        "removed_square_norm_bound_Ha": "42663/500000000000000000",
+        "lower_replay_seconds": 50.87080199999036,
+        "accepting_numerical_imports": []
+      },
+      "stage_process_seconds": 858.4151896240073,
+      "peak_RSS_bytes": 908296192,
+      "forecast": {
+        "rows": 28461,
+        "full_word_pairs": 1230272,
+        "retained_Gram_entries": 343424,
+        "largest_Gram_block": 260,
+        "number_ideal_columns": 1525,
+        "stats": {
+          "spatial_parity_masks": [
+            13107,
+            52428
+          ],
+          "mixed_linear_words_retained": true,
+          "operator_dictionary_dimensions": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            12,
+            16,
+            32,
+            32,
+            12,
+            16,
+            12,
+            16,
+            32,
+            32,
+            12,
+            16,
+            32,
+            32,
+            64,
+            64,
+            32,
+            32,
+            4,
+            4,
+            24,
+            24,
+            24,
+            24,
+            4,
+            4,
+            4,
+            4,
+            24,
+            24,
+            24,
+            24,
+            4,
+            4,
+            112,
+            112,
+            372,
+            372,
+            372,
+            372,
+            112,
+            112,
+            112,
+            112,
+            372,
+            372,
+            372,
+            372,
+            112,
+            112
+          ]
+        }
+      },
+      "execution": {
+        "status": "completed",
+        "last_step": "replay",
+        "elapsed_seconds": 858.8332950000186,
+        "from_new_integrals": true,
+        "historical_artifacts_loaded": false,
+        "development_and_failed_other_case_costs_are_separate": true
+      }
+    },
+    {
+      "case": "h6_asymmetric",
+      "interval": {
+        "lower_Ha": "-18559008408850324919/3000000000000000000",
+        "upper_Ha": "-309315731754209661729350838525362411869557271666587200365500931170583405397237619199562945646809417657874527868781075305077118193493625996675239606024824943339759726932522752562857871792912107/50000000125004330508581931754341411599341763758632109945085222070578435289287498973018950598073186444944406647773443815131306234125233608494751853874907611643723237860962164060764000000000000",
+        "width_Ha": "806874960920453356192305994093172493648644699338918622561403128954917729842110342841621123391302555718070531115717794292646281182005722323841465725124192764935523111224794390317235502384594529/37500000093753247881436448815756058699506322818974082458813916552933826466965624229764212948554889833708304985830082861348479675593925206371063890406180708732792428395721623045573000000000000000000",
+        "width_mHa": 0.021516665570751894,
+        "target_met": true,
+        "valid_on": "Entire fixed-N sector",
+        "removed_rows": 167,
+        "removed_square_norm_bound_Ha": "62239/1000000000000000000",
+        "lower_replay_seconds": 15.032023709005443,
+        "accepting_numerical_imports": []
+      },
+      "stage_process_seconds": 410.66951712497394,
+      "peak_RSS_bytes": 388579328,
+      "forecast": {
+        "rows": 9559,
+        "full_word_pairs": 434500,
+        "retained_Gram_entries": 127492,
+        "largest_Gram_block": 222,
+        "number_ideal_columns": 949,
+        "stats": {
+          "spatial_parity_masks": [
+            4095
+          ],
+          "mixed_linear_words_retained": true,
+          "operator_dictionary_dimensions": [
+            6,
+            6,
+            6,
+            6,
+            15,
+            36,
+            15,
+            15,
+            36,
+            15,
+            36,
+            72,
+            36,
+            2,
+            18,
+            18,
+            2,
+            2,
+            18,
+            18,
+            2,
+            90,
+            312,
+            312,
+            90,
+            90,
+            312,
+            312,
+            90
+          ]
+        }
+      },
+      "execution": {
+        "status": "completed",
+        "last_step": "replay",
+        "elapsed_seconds": 411.12275479198433,
+        "from_new_integrals": true,
+        "historical_artifacts_loaded": false,
+        "development_and_failed_other_case_costs_are_separate": true
+      }
+    },
+    {
+      "case": "water_asymmetric",
+      "interval": {
+        "lower_Ha": "-253183890175292137339/3000000000000000000",
+        "upper_Ha": "-9377178234568387968945227571528312076807752292404560328867289033112369108708530957748285668671155486549072095057637951952474570399180435618171145459786601521622360932261396699428889145186024139360513895015945295057447061699562643/111111110998566669105021196451653122129441441209881001702891847345295017216858299173159155678425047070096295767343154689320835209544385419785466257513220524451520810069692636420096835107267783179559238651921730066525000000000000",
+        "width_Ha": "344824425357222640973136157677754523571736499468382138797407242756350817664145970245701165635627225264880896818034433898725832841742867805151318488534870674603718454247242488769538286396731930235537817434714374328810043919099079/13333333319828000292602543574198374655532972945185720204347021681435402066022995900779098681411005648411555492081178562718500225145326250374255950901586462934182497208363116370411620212872133981547108638230607607983000000000000000000",
+        "width_mHa": 0.025861831927987147,
+        "target_met": true,
+        "valid_on": "Entire fixed-N sector",
+        "removed_rows": 219,
+        "removed_square_norm_bound_Ha": "13323/100000000000000000",
+        "lower_replay_seconds": 23.877481458010152,
+        "accepting_numerical_imports": []
+      },
+      "stage_process_seconds": 540.4859545429936,
+      "peak_RSS_bytes": 474529792,
+      "forecast": {
+        "rows": 13732,
+        "full_word_pairs": 618092,
+        "retained_Gram_entries": 178590,
+        "largest_Gram_block": 240,
+        "number_ideal_columns": 1108,
+        "stats": {
+          "spatial_parity_masks": [
+            768,
+            15615
+          ],
+          "mixed_linear_words_retained": true,
+          "operator_dictionary_dimensions": [
+            6,
+            1,
+            6,
+            1,
+            6,
+            1,
+            6,
+            1,
+            15,
+            6,
+            37,
+            12,
+            15,
+            6,
+            15,
+            6,
+            37,
+            12,
+            15,
+            6,
+            37,
+            12,
+            74,
+            24,
+            37,
+            12,
+            4,
+            1,
+            23,
+            7,
+            21,
+            9,
+            2,
+            3,
+            2,
+            3,
+            21,
+            9,
+            23,
+            7,
+            4,
+            1,
+            96,
+            51,
+            336,
+            161,
+            336,
+            161,
+            96,
+            51,
+            96,
+            51,
+            336,
+            161,
+            336,
+            161,
+            96,
+            51
+          ]
+        }
+      },
+      "execution": {
+        "status": "completed",
+        "last_step": "replay",
+        "elapsed_seconds": 540.9338852909859,
+        "from_new_integrals": true,
+        "historical_artifacts_loaded": false,
+        "development_and_failed_other_case_costs_are_separate": true
+      }
+    }
+  ],
+  "H10_rotated_upper_reference_excess_mHa": 0.019262925162522038,
+  "H10_upper_rotation_allowance_mHa": 3.6070858899621093e-06,
+  "restricted64_recovered_interval": {
+    "upper_Ha": "-2313720166994759907978133352396514735232910843732019989999194287654989356982970617647218675380637908556594019960638281396313774786565943771917647319355302578603498291289942263868546172258353791770095297456103344387328381817260053150529231576952049711697156424979841/249999999760020155116866557242970840157919649578587380267959264450545184020670100054287822350495680040054917014890633868644188855214430981428771585937827398488091591644476727721110696840221254827058585166319371668481306631175628579580159296994068647533000000000000",
+    "lower_Ha": "-2318424641127004981/250000000000000000",
+    "width_Ha": "1176117976686082504573687282046625940544459885887872979330517810403882561973825422178365863123169875922760794442293106528162678310343884475786159082254978134216754237238492455600797937623186491558053541272812349947522525966669457477797570030908674853467000100664111873/62499999940005038779216639310742710039479912394646845066989816112636296005167525013571955587623920010013729253722658467161047213803607745357192896484456849622022897911119181930277674210055313706764646291579842917120326657793907144895039824248517161883250000000000000000",
+    "width_mHa": 18.817887645040976,
+    "target_met": false,
+    "valid_on": "Entire fixed-N sector",
+    "no_family_ceiling_claimed": true,
+    "accepting_numerical_imports": [],
+    "seconds": 29.98762204198283
+  },
+  "global_fragment_control": {
+    "local_lowers_Ha": {
+      "0": "-1/1250",
+      "1": "-7531967317/5000000000",
+      "2": "-6508518089/2500000000",
+      "3": "-1644707473/500000000",
+      "4": "-11001004502135672923/3000000000000000000",
+      "5": "-17205397347/5000000000",
+      "6": "-28886339711/10000000000",
+      "7": "-8990707241/5000000000",
+      "8": "-2351608957/10000000000"
+    },
+    "chemical_potential_Ha": "-758322617/10000000000",
+    "admissible_slope_interval_Ha": [
+      "-1132759664135672923/3000000000000000000",
+      "677766093935672923/3000000000000000000"
+    ],
+    "neutral_lower_Ha": "-11001004502135672923/3000000000000000000",
+    "results": [
+      {
+        "copies": 2,
+        "total_particles": 8,
+        "lower_Ha": "-11001004502135672923/1500000000000000000",
+        "upper_Ha": "-28648437185059001569651346770617483322808408400624284789720348553076873413947812907592761959934817896131373189728550783/3906250003966281357423398614034423179982949886420501907502783607788029766228385225723582517918908857714840500000000000",
+        "width_mHa": 0.0030894953865710987,
+        "local_particle_constraints": false,
+        "composite_determinants_enumerated": 0,
+        "charge_assignments_enumerated": 0
+      },
+      {
+        "copies": 4,
+        "total_particles": 16,
+        "lower_Ha": "-11001004502135672923/750000000000000000",
+        "upper_Ha": "-28648437185059001569651346770617483322808408400624284789720348553076873413947812907592761959934817896131373189728550783/1953125001983140678711699307017211589991474943210250953751391803894014883114192612861791258959454428857420250000000000",
+        "width_mHa": 0.0061789907731421975,
+        "local_particle_constraints": false,
+        "composite_determinants_enumerated": 0,
+        "charge_assignments_enumerated": 0
+      },
+      {
+        "copies": 8,
+        "total_particles": 32,
+        "lower_Ha": "-11001004502135672923/375000000000000000",
+        "upper_Ha": "-28648437185059001569651346770617483322808408400624284789720348553076873413947812907592761959934817896131373189728550783/976562500991570339355849653508605794995737471605125476875695901947007441557096306430895629479727214428710125000000000",
+        "width_mHa": 0.012357981546284395,
+        "local_particle_constraints": false,
+        "composite_determinants_enumerated": 0,
+        "charge_assignments_enumerated": 0
+      }
+    ],
+    "all_local_charge_sectors_checked": true,
+    "extra_local_determinant_labels_enumerated": 186,
+    "invalid_slope_missing_charge_and_coupling_refused": true,
+    "monolithic_SOS_optimization_tested": false,
+    "seconds": 2.5835383749799803,
+    "argument": "H_i >= L + mu(N_i-4) on every local charge sector. Sum on total N=4k gives kL without fixing individual charges.",
+    "numerical_imports": []
+  },
+  "physical_method_comparison": [
+    {
+      "basis": "cc-pvdz",
+      "CASSCF_gap_kcal_mol": 11.937745520013571,
+      "SC_NEVPT2_gap_kcal_mol": 13.104827108913064,
+      "CCSD_T_gap_kcal_mol": 12.149801686205237
+    },
+    {
+      "basis": "cc-pvtz",
+      "CASSCF_gap_kcal_mol": 10.511813778306822,
+      "SC_NEVPT2_gap_kcal_mol": 12.300474115277074,
+      "CCSD_T_gap_kcal_mol": 10.920795126200666
+    }
+  ],
+  "NVIDIA_followup": {
+    "best_H10": {
+      "proposal": "hybrid_adaptive",
+      "path": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_correlated_guide/hybrid_adaptive/exact_local_stdlib",
+      "width_mHa": 0.4790852030110648,
+      "lower_Ha": "-6184379639299961407/500000000000000000",
+      "upper_Ha": "-949053725622794292033748402666442798756080920623008198187520529319922995079215042786629175386769200535100805324909677306028020474390950487011810677872308392501241112867795237721253643149665677716558384817080887169735982426836604696577186342038310410952223129388082941407898637335518798537806742337710752445344913280245495563883499764150117743119525754599269743360855555815183947819551375639161620408732609405763354856153216790756569507119901140797206776015191916460477555646771615416278499961436130220273203217045772735628061069768199737390595908265421435447430622298092102225059814146443837705674213405697542040629067542899367504218660605671014160098884429295209782030483069970976210041396435186693899532814467108614048524276472556075240277885727189313450553453290740498081418783626885297606244127263643393883506937194480651372039972690079053051795610312585184029874820323451576599114958673442997111224379/76732877229727399943554328776105255402119864927406528188075582438687816094179760554225248746183499830173528537556694197697596528034511970521131586399700240752712196239692288680843707847777972543721966454937396867900242039674319357907746869340326655491714674452585832918789885483760512958249782438880611641630209364721281888648331501683048762346841442166518204706892743593655261194937630034722224108767563034424268175549289961496986358525472341498656980042349742855169236478962884352758775391336138906551128048864578801711097626878925341606460477116069539603637234950088057203052231116147142931230562661336550145865117682470078605329823551236454179947694678478674573533652168353032621207987468448787183435428852688784144571640257249944084792179095832264089819087637941817143276121364860831238042994488343927113754243842687208205612497663802477368752412190205726133322608717761092376758789062500000000000000",
+      "target_met": true,
+      "local_complete_replay": {
+        "proposal": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_correlated_guide/hybrid_adaptive/export/certificate.json",
+        "proposal_file_sha256": "d3af3feb500b40a997ba2923f4d092af10d55ea2f2afaaff337bcba450e91900",
+        "upper_seconds": 27.181785833003232,
+        "complete_seconds": 241.1750547499978,
+        "all_upper_and_lower_dependencies_rechecked": true,
+        "integer_Gram_backend": "Python_standard_library",
+        "rational_backend": "Python_standard_library",
+        "independent_stdlib_comparison_required_for_experimental_backend": false,
+        "rotated_state_directory": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/rotated_h10",
+        "numerical_imports": []
+      }
+    },
+    "all_H10_certificates": [
+      {
+        "proposal": "hybrid_adaptive",
+        "path": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_correlated_guide/hybrid_adaptive/exact_local_stdlib",
+        "width_mHa": 0.4790852030110648,
+        "lower_Ha": "-6184379639299961407/500000000000000000",
+        "upper_Ha": "-949053725622794292033748402666442798756080920623008198187520529319922995079215042786629175386769200535100805324909677306028020474390950487011810677872308392501241112867795237721253643149665677716558384817080887169735982426836604696577186342038310410952223129388082941407898637335518798537806742337710752445344913280245495563883499764150117743119525754599269743360855555815183947819551375639161620408732609405763354856153216790756569507119901140797206776015191916460477555646771615416278499961436130220273203217045772735628061069768199737390595908265421435447430622298092102225059814146443837705674213405697542040629067542899367504218660605671014160098884429295209782030483069970976210041396435186693899532814467108614048524276472556075240277885727189313450553453290740498081418783626885297606244127263643393883506937194480651372039972690079053051795610312585184029874820323451576599114958673442997111224379/76732877229727399943554328776105255402119864927406528188075582438687816094179760554225248746183499830173528537556694197697596528034511970521131586399700240752712196239692288680843707847777972543721966454937396867900242039674319357907746869340326655491714674452585832918789885483760512958249782438880611641630209364721281888648331501683048762346841442166518204706892743593655261194937630034722224108767563034424268175549289961496986358525472341498656980042349742855169236478962884352758775391336138906551128048864578801711097626878925341606460477116069539603637234950088057203052231116147142931230562661336550145865117682470078605329823551236454179947694678478674573533652168353032621207987468448787183435428852688784144571640257249944084792179095832264089819087637941817143276121364860831238042994488343927113754243842687208205612497663802477368752412190205726133322608717761092376758789062500000000000000",
+        "target_met": true,
+        "local_complete_replay": {
+          "proposal": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_correlated_guide/hybrid_adaptive/export/certificate.json",
+          "proposal_file_sha256": "d3af3feb500b40a997ba2923f4d092af10d55ea2f2afaaff337bcba450e91900",
+          "upper_seconds": 27.181785833003232,
+          "complete_seconds": 241.1750547499978,
+          "all_upper_and_lower_dependencies_rechecked": true,
+          "integer_Gram_backend": "Python_standard_library",
+          "rational_backend": "Python_standard_library",
+          "independent_stdlib_comparison_required_for_experimental_backend": false,
+          "rotated_state_directory": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/rotated_h10",
+          "numerical_imports": []
+        }
+      },
+      {
+        "proposal": "sparse_cudss_adaptive",
+        "path": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive/exact_local_stdlib",
+        "width_mHa": 0.4790852237010321,
+        "lower_Ha": "-4638284729482729793/375000000000000000",
+        "upper_Ha": "-949053725622794292033748402666442798756080920623008198187520529319922995079215042786629175386769200535100805324909677306028020474390950487011810677872308392501241112867795237721253643149665677716558384817080887169735982426836604696577186342038310410952223129388082941407898637335518798537806742337710752445344913280245495563883499764150117743119525754599269743360855555815183947819551375639161620408732609405763354856153216790756569507119901140797206776015191916460477555646771615416278499961436130220273203217045772735628061069768199737390595908265421435447430622298092102225059814146443837705674213405697542040629067542899367504218660605671014160098884429295209782030483069970976210041396435186693899532814467108614048524276472556075240277885727189313450553453290740498081418783626885297606244127263643393883506937194480651372039972690079053051795610312585184029874820323451576599114958673442997111224379/76732877229727399943554328776105255402119864927406528188075582438687816094179760554225248746183499830173528537556694197697596528034511970521131586399700240752712196239692288680843707847777972543721966454937396867900242039674319357907746869340326655491714674452585832918789885483760512958249782438880611641630209364721281888648331501683048762346841442166518204706892743593655261194937630034722224108767563034424268175549289961496986358525472341498656980042349742855169236478962884352758775391336138906551128048864578801711097626878925341606460477116069539603637234950088057203052231116147142931230562661336550145865117682470078605329823551236454179947694678478674573533652168353032621207987468448787183435428852688784144571640257249944084792179095832264089819087637941817143276121364860831238042994488343927113754243842687208205612497663802477368752412190205726133322608717761092376758789062500000000000000",
+        "target_met": true,
+        "local_complete_replay": {
+          "proposal": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive/export/certificate.json",
+          "proposal_file_sha256": "49a6421e06ac1098da7c80e911a0366f86f121dc0041057a4518e5f1ecafef09",
+          "upper_seconds": 27.070732166001108,
+          "complete_seconds": 239.11987458297517,
+          "all_upper_and_lower_dependencies_rechecked": true,
+          "integer_Gram_backend": "Python_standard_library",
+          "rational_backend": "Python_standard_library",
+          "independent_stdlib_comparison_required_for_experimental_backend": false,
+          "rotated_state_directory": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/rotated_h10",
+          "numerical_imports": []
+        }
+      }
+    ],
+    "fixed_iteration_comparisons": [
+      {
+        "case": "H8",
+        "runs": [
+          {
+            "backend": "dense_200",
+            "seconds": 18.945221437999862,
+            "proposal_function_seconds": 18.50766443500015,
+            "process_metrics": {
+              "wall_seconds": 18.94,
+              "peak_host_RSS_bytes": 597561344
+            },
+            "setup_seconds": 7.48941314800004,
+            "kernel_seconds": 8.82397283000364,
+            "QR_seconds": 7.145779296000001,
+            "ideal_coordinate_count": 1599,
+            "ideal_rank": 601,
+            "final_b_Ha": -9.082817956054324,
+            "final_unverified_width_mHa": 18664.29322803942,
+            "normal_map_relative_error": 2.6781010731402e-16,
+            "b_difference_from_CPU_reference_Ha": 0.0,
+            "width_difference_from_CPU_reference_mHa": 0.0
+          },
+          {
+            "backend": "sparse_cpu_200",
+            "seconds": 11.988642160999916,
+            "proposal_function_seconds": 11.547214796999924,
+            "process_metrics": {
+              "wall_seconds": 11.98,
+              "peak_host_RSS_bytes": 190754816
+            },
+            "setup_seconds": 0.5326334670003234,
+            "kernel_seconds": 8.816411877002338,
+            "QR_seconds": 0.18114366800000425,
+            "ideal_coordinate_count": 1599,
+            "ideal_rank": 601,
+            "final_b_Ha": -9.082817956054324,
+            "final_unverified_width_mHa": 18664.293228039427,
+            "normal_map_relative_error": 2.6781010731402e-16,
+            "b_difference_from_CPU_reference_Ha": 0.0,
+            "width_difference_from_CPU_reference_mHa": 7.275957614183426e-12
+          },
+          {
+            "backend": "sparse_hybrid_200",
+            "seconds": 10.72260738299974,
+            "proposal_function_seconds": 10.007637052000064,
+            "process_metrics": {
+              "wall_seconds": 10.72,
+              "peak_host_RSS_bytes": 730947584
+            },
+            "setup_seconds": 1.0468196930000886,
+            "kernel_seconds": 6.816820205002841,
+            "QR_seconds": 0.18142635499998505,
+            "ideal_coordinate_count": 1599,
+            "ideal_rank": 601,
+            "final_b_Ha": -9.08281795605446,
+            "final_unverified_width_mHa": 18664.293228042377,
+            "normal_map_relative_error": 2.6781010731402e-16,
+            "b_difference_from_CPU_reference_Ha": 1.3677947663381929e-13,
+            "width_difference_from_CPU_reference_mHa": 2.9576767701655626e-09
+          },
+          {
+            "backend": "sparse_cudss_200",
+            "seconds": 10.835048925000137,
+            "proposal_function_seconds": 10.06191191300013,
+            "process_metrics": {
+              "wall_seconds": 10.83,
+              "peak_host_RSS_bytes": 863797248
+            },
+            "setup_seconds": 1.3224602750001395,
+            "kernel_seconds": 6.534961324002779,
+            "QR_seconds": 0.18155765800020163,
+            "ideal_coordinate_count": 1599,
+            "ideal_rank": 601,
+            "final_b_Ha": -9.082817956054331,
+            "final_unverified_width_mHa": 18664.293228038474,
+            "normal_map_relative_error": 2.6781010731402e-16,
+            "b_difference_from_CPU_reference_Ha": 7.105427357601002e-15,
+            "width_difference_from_CPU_reference_mHa": 9.458744898438454e-10
+          }
+        ]
+      },
+      {
+        "case": "H10",
+        "runs": [
+          {
+            "backend": "dense_200",
+            "seconds": 216.20475752500033,
+            "proposal_function_seconds": 215.70263281999996,
+            "process_metrics": {
+              "wall_seconds": 216.2,
+              "peak_host_RSS_bytes": 3981893632
+            },
+            "setup_seconds": 169.563816116,
+            "kernel_seconds": 39.589224379000825,
+            "QR_seconds": 168.38426381599993,
+            "ideal_coordinate_count": 3793,
+            "ideal_rank": 1386,
+            "final_b_Ha": -11.562016459266172,
+            "final_unverified_width_mHa": 23872.26845996865,
+            "normal_map_relative_error": 2.721224245843041e-16,
+            "b_difference_from_CPU_reference_Ha": 0.0,
+            "width_difference_from_CPU_reference_mHa": 0.0
+          },
+          {
+            "backend": "sparse_cpu_200",
+            "seconds": 48.44950995699992,
+            "proposal_function_seconds": 47.9526291520001,
+            "process_metrics": {
+              "wall_seconds": 48.44,
+              "peak_host_RSS_bytes": 491286528
+            },
+            "setup_seconds": 2.4330857219997597,
+            "kernel_seconds": 39.06734291799785,
+            "QR_seconds": 1.2785210360002566,
+            "ideal_coordinate_count": 3793,
+            "ideal_rank": 1386,
+            "final_b_Ha": -11.562016459266177,
+            "final_unverified_width_mHa": 23872.26845996865,
+            "normal_map_relative_error": 2.721224245843041e-16,
+            "b_difference_from_CPU_reference_Ha": 5.329070518200751e-15,
+            "width_difference_from_CPU_reference_mHa": 0.0
+          },
+          {
+            "backend": "sparse_hybrid_200",
+            "seconds": 26.729091865999635,
+            "proposal_function_seconds": 25.95298975500009,
+            "process_metrics": {
+              "wall_seconds": 26.72,
+              "peak_host_RSS_bytes": 980500480
+            },
+            "setup_seconds": 2.9154536400001234,
+            "kernel_seconds": 16.69809840200014,
+            "QR_seconds": 1.2848469509999632,
+            "ideal_coordinate_count": 3793,
+            "ideal_rank": 1386,
+            "final_b_Ha": -11.56201645926612,
+            "final_unverified_width_mHa": 23872.268459970626,
+            "normal_map_relative_error": 2.721224245843041e-16,
+            "b_difference_from_CPU_reference_Ha": 5.1514348342607263e-14,
+            "width_difference_from_CPU_reference_mHa": 1.9754224922508e-09
+          },
+          {
+            "backend": "sparse_cudss_200",
+            "seconds": 26.33274005500016,
+            "proposal_function_seconds": 25.47804371400025,
+            "process_metrics": {
+              "wall_seconds": 26.33,
+              "peak_host_RSS_bytes": 1109635072
+            },
+            "setup_seconds": 3.1898970749998625,
+            "kernel_seconds": 15.924514769998495,
+            "QR_seconds": 1.3143253470002492,
+            "ideal_coordinate_count": 3793,
+            "ideal_rank": 1386,
+            "final_b_Ha": -11.562016459266156,
+            "final_unverified_width_mHa": 23872.268459969,
+            "normal_map_relative_error": 2.721224245843041e-16,
+            "b_difference_from_CPU_reference_Ha": 1.5987211554602254e-14,
+            "width_difference_from_CPU_reference_mHa": 3.4924596548080444e-10
+          }
+        ]
+      }
+    ],
+    "H8_verifier_comparison": {
+      "h8_stdlib": {
+        "library": "stdlib",
+        "version": "3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]",
+        "substituted_aliases": [],
+        "lower_seconds": 94.3370782259999,
+        "complete_replay_seconds": 154.3706683339999,
+        "exact_endpoints_equal_to_stdlib": true,
+        "experimental_backend_only": true
+      },
+      "h8_flint": {
+        "library": "python-flint",
+        "version": "0.9.0",
+        "substituted_aliases": [
+          "experiments.marginal_hunt_car.Fraction",
+          "experiments.marginal_symbolic.F",
+          "research.certificate_scaling.spin_basis.F",
+          "research.certificate_scaling.spin_twirl.F",
+          "research.collective_completion_20260914.spin_replay.F",
+          "research.collective_completion_20260914.spin_screen.F",
+          "experiments.marginal_collective.F",
+          "experiments.marginal_sector_reference.F",
+          "experiments.marginal_asymmetric_reference.F",
+          "experiments.marginal_transfer_verify.F",
+          "experiments.marginal_schur_transfer.F",
+          "experiments.marginal_orbit_certificate.F",
+          "experiments.marginal_symmetry_transfer.F",
+          "experiments.marginal_general_schur.F",
+          "research.certificate_scaling.commutator_dual_witness.F",
+          "research.molecular_collective_20260913.core.F",
+          "research.correlated_pair_20260913.mps_exact.F"
+        ],
+        "lower_seconds": 53.144527917999994,
+        "complete_replay_seconds": 111.97895344800008,
+        "exact_endpoints_equal_to_stdlib": true,
+        "experimental_backend_only": true
+      },
+      "h8_flint_gram": {
+        "library": "FLINT_integer_Gram",
+        "version": "0.9.0",
+        "substituted_aliases": [
+          "experiments.marginal_symbolic.expand_squares"
+        ],
+        "lower_seconds": 91.37718927900005,
+        "complete_replay_seconds": 151.37436449300003,
+        "exact_endpoints_equal_to_stdlib": true,
+        "experimental_backend_only": true
+      }
+    },
+    "sparse_system_comparisons": {
+      "h8": {
+        "case": "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+        "normal_file_sha256": "9361aa5fba7d8abe0f0976d00b1a0a78c6b1ed1f217fd3e603cb9e9c1090bff2",
+        "shape": [
+          8533,
+          8533
+        ],
+        "nnz": 163733,
+        "diagonal_shift": 1e-11,
+        "precision": "float64",
+        "blas_threads": 1,
+        "RHS": "Actual shifted normal matrix times deterministic seed-109 vector",
+        "input_seconds": 0.013820303000102285,
+        "results": [
+          {
+            "backend": "SciPy_SuperLU",
+            "setup_seconds": 0.026266227000178333,
+            "median_solve_seconds": 0.0008033149999846501,
+            "min_solve_seconds": 0.0008017415000040274,
+            "max_solve_seconds": 0.0008390392999899632,
+            "relative_RHS_residual": 2.8972114694007436e-16,
+            "backward_error": 3.0969263932984596e-18,
+            "status": "passed"
+          },
+          {
+            "backend": "SuiteSparse_CHOLMOD",
+            "setup_seconds": 0.018813298999702965,
+            "median_solve_seconds": 0.0004929249000042546,
+            "min_solve_seconds": 0.0004926949000036984,
+            "max_solve_seconds": 0.0004938490000085949,
+            "relative_RHS_residual": 2.6577009224261215e-16,
+            "backward_error": 2.840905546276036e-18,
+            "status": "passed"
+          },
+          {
+            "backend": "NVIDIA_cuDSS_with_RHS_and_output_transfers",
+            "setup_seconds": 0.13226997299989307,
+            "median_solve_seconds": 0.0004027425000003859,
+            "min_solve_seconds": 0.0004014104500129179,
+            "max_solve_seconds": 0.0004100137000023096,
+            "relative_RHS_residual": 2.6699468277980366e-16,
+            "backward_error": 2.853995604753529e-18,
+            "status": "passed"
+          }
+        ],
+        "full_solver_speedup_measured": false,
+        "CUDA_context_initialization_seconds": 0.21796158899996954,
+        "complete_seconds": 0.6056912039998679
+      },
+      "h10": {
+        "case": "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+        "normal_file_sha256": "d3d4a48f97d09dffba7171e0dc92b17293f9abd09dc86d942894213a9399ecce",
+        "shape": [
+          32406,
+          32406
+        ],
+        "nnz": 658626,
+        "diagonal_shift": 1e-11,
+        "precision": "float64",
+        "blas_threads": 1,
+        "RHS": "Actual shifted normal matrix times deterministic seed-109 vector",
+        "input_seconds": 0.04048404799959826,
+        "results": [
+          {
+            "backend": "SciPy_SuperLU",
+            "setup_seconds": 0.12594083999965733,
+            "median_solve_seconds": 0.003465990850008893,
+            "min_solve_seconds": 0.0034419829000171378,
+            "max_solve_seconds": 0.003498467150006945,
+            "relative_RHS_residual": 3.195527460095906e-16,
+            "backward_error": 1.767134130321203e-18,
+            "status": "passed"
+          },
+          {
+            "backend": "SuiteSparse_CHOLMOD",
+            "setup_seconds": 0.07449258900032873,
+            "median_solve_seconds": 0.0018924880999975358,
+            "min_solve_seconds": 0.0018899525000051654,
+            "max_solve_seconds": 0.0019016557499980991,
+            "relative_RHS_residual": 2.6800168254597226e-16,
+            "backward_error": 1.482055548339059e-18,
+            "status": "passed"
+          },
+          {
+            "backend": "NVIDIA_cuDSS_with_RHS_and_output_transfers",
+            "setup_seconds": 0.20094977800044944,
+            "median_solve_seconds": 0.0006073824000168316,
+            "min_solve_seconds": 0.0006057539000039469,
+            "max_solve_seconds": 0.0006166795499893852,
+            "relative_RHS_residual": 2.748071267198461e-16,
+            "backward_error": 1.5196898131727182e-18,
+            "status": "passed"
+          }
+        ],
+        "full_solver_speedup_measured": false,
+        "CUDA_context_initialization_seconds": 0.18816878699999506,
+        "complete_seconds": 1.2670883209998465
+      }
+    },
+    "tensor_comparison": {
+      "case": "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/rotated_h10",
+      "site": 8,
+      "tensor_shapes": [
+        [
+          32,
+          32
+        ],
+        [
+          32,
+          2,
+          63
+        ],
+        [
+          32,
+          2,
+          63
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "source_state_sha256": "ebeab5421daa0a8cb7a50a5c204aba3f0805211beb67c09197825fea34191664",
+      "precision": "float64",
+      "expression": "ab,asr,btq,st->rq",
+      "input_and_JIT_seconds": 1.1811789210000825,
+      "scope": "One actual MPS transfer, not complete DMRG discovery",
+      "results": [
+        {
+          "backend": "existing_NumPy_numba_sparse_transfer",
+          "median_seconds": 4.265270000360033e-05,
+          "relative_error": 1.4624055816255275e-16,
+          "min_seconds": 4.249253999660141e-05,
+          "max_seconds": 4.38933200075553e-05
+        },
+        {
+          "backend": "NumPy_dense_einsum",
+          "median_seconds": 0.0002007420599966281,
+          "relative_error": 0.0,
+          "min_seconds": 0.00020004621999760274,
+          "max_seconds": 0.00020808100000067499
+        },
+        {
+          "backend": "CuPy_dense_einsum_resident",
+          "median_seconds": 0.0004892903600011777,
+          "relative_error": 9.110336289800799e-17,
+          "min_seconds": 0.000485403659995427,
+          "max_seconds": 0.0005074309599967818
+        },
+        {
+          "backend": "cuTensorNet_resident_cached_path",
+          "median_seconds": 0.00012021673999697669,
+          "relative_error": 1.0438775174678419e-16,
+          "min_seconds": 0.00011949794000429392,
+          "max_seconds": 0.00012404803999743308
+        },
+        {
+          "backend": "cuTensorNet_with_input_and_output_transfers",
+          "median_seconds": 0.00039988548000110315,
+          "relative_error": 1.0438775174678419e-16,
+          "min_seconds": 0.00039571479999722214,
+          "max_seconds": 0.0020397646200035523
+        }
+      ],
+      "initial_input_transfer_seconds": 0.22330384199995024,
+      "cuTensorNet_plan_seconds": 0.4203930590001619,
+      "complete_seconds": 2.8934865060000448
+    },
+    "full_prepared_runs": [
+      {
+        "proposal": "hybrid_adaptive",
+        "proposal_seconds": 612.61,
+        "proposal_function_seconds": 611.8403738879999,
+        "proposal_process_metrics": {
+          "wall_seconds": 612.61,
+          "peak_host_RSS_bytes": 4482232320
+        },
+        "setup_seconds": 170.54709713,
+        "iterations": 4900,
+        "proof_seconds": 403.31,
+        "proof_scope": "original stdlib lower; the prior independently checked upper is charged in preparation",
+        "shared_local_preparation_component_seconds": 716.5325620419753,
+        "mixed_host_component_sum_seconds": 1732.4525620419754,
+        "not_a_single_fresh_timed_end_to_end_run": true
+      },
+      {
+        "proposal": "sparse_cudss_adaptive",
+        "proposal_seconds": 424.7,
+        "proposal_function_seconds": 423.85558226500007,
+        "proposal_process_metrics": {
+          "wall_seconds": 424.7,
+          "peak_host_RSS_bytes": 1108447232
+        },
+        "setup_seconds": 3.200797176999913,
+        "iterations": 4900,
+        "proof_seconds": 269.34,
+        "proof_scope": "complete rotated upper and FLINT rational lower; independent stdlib replay additionally charged",
+        "shared_local_preparation_component_seconds": 716.5325620419753,
+        "mixed_host_component_sum_seconds": 1410.5725620419753,
+        "not_a_single_fresh_timed_end_to_end_run": true
+      }
+    ],
+    "cloud": {
+      "owned_instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+      "launch_to_absence_seconds": 4168.008476,
+      "price_USD_per_hour": 1.99,
+      "estimated_USD_including_boot_and_idle": 2.3039824631222223,
+      "actual_provider_invoice_not_available": true,
+      "owned_instance_terminated": true,
+      "preexisting_instances_untouched": true
+    },
+    "remote_orchestration": [
+      {
+        "name": "h10_hybrid",
+        "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+        "started_UTC": "2026-09-15T07:14:53.025367+00:00",
+        "timeout_seconds": 1800,
+        "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\nexport OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1\nmkdir -p results/nvidia_followup_20260915\n/usr/bin/time -v -o results/nvidia_followup_20260915/h10_hybrid_time.txt .venv/bin/python -B -m research.gpu_acceleration_20260915.solve results/transfer_solver_20260915/adaptive/h10_correlated_guide hybrid_adaptive --seconds 1100 --mu 2 --backend hybrid --adaptive\nPYTHONPATH=. .venv/bin/python -B -S - <<'PY'\nimport json,hashlib\nfrom pathlib import Path\nroot=Path('results/transfer_solver_20260915/adaptive/h10_correlated_guide')\nsource=root/'hybrid_adaptive/export/certificate.json'\n(root/'stage2/export').mkdir(parents=True,exist_ok=False)\n(root/'stage2/export/certificate.json').write_bytes(source.read_bytes())\n(root/'selected_proposal.json').write_text(json.dumps({'source':str(source),'sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'no_new_optimization':True},indent=2)+'\\n')\nPY\n/usr/bin/time -v -o results/nvidia_followup_20260915/h10_replay_time.txt .venv/bin/python -B -S -m research.transfer_solver_20260915.actions results/transfer_solver_20260915/adaptive/h10_correlated_guide replay\n",
+        "status": "passed",
+        "exit_code": 0,
+        "wall_seconds": 1016.6827645830053,
+        "finished_UTC": "2026-09-15T07:31:49.746285+00:00"
+      },
+      {
+        "name": "inspect_controls",
+        "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+        "started_UTC": "2026-09-15T07:51:07.373232+00:00",
+        "timeout_seconds": 60,
+        "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\n.venv/bin/python - <<'PY'\nimport json\nfrom pathlib import Path\nfor label,path in [('H8',Path('results/transfer_solver_20260915/cases/h8_cold')),('H10',Path('results/transfer_solver_20260915/adaptive/h10_correlated_guide'))]:\n    rows=[]\n    for tag in ('dense_200','sparse_cpu_200','sparse_hybrid_200','sparse_cudss_200'):\n        d=json.loads((path/tag/'discovery.json').read_text())\n        h=json.loads((path/tag/'history.json').read_text())[-1]\n        rows.append({'tag':tag,'seconds':d['seconds'],'setup':d['setup_seconds'],\n            'QR':d['ideal_projection']['seconds'],'rank':d['ideal_projection']['numerical_ideal_rank'],\n            'kernel':d['kernel_seconds'],'iterations':d['iterations_completed'],\n            'b':h['b'],'unverified_width_mHa':h['unverified_width_mHa']})\n    print(label,json.dumps(rows))\nPY\ntail -3 results/nvidia_followup_20260915/h10_sparse_cudss_adaptive.log\n",
+        "status": "passed",
+        "exit_code": 0,
+        "wall_seconds": 0.5572274579899386,
+        "finished_UTC": "2026-09-15T07:51:07.930480+00:00"
+      },
+      {
+        "name": "library_probes",
+        "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+        "started_UTC": "2026-09-15T07:32:38.253062+00:00",
+        "timeout_seconds": 1200,
+        "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\nexport OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1\n/home/ubuntu/.local/bin/uv pip install --python .venv/bin/python sparseqr\n/home/ubuntu/.local/bin/uv pip freeze --python .venv/bin/python > installed.txt\n.venv/bin/python -B -m research.nvidia_followup_20260915.probe_jobs\n",
+        "status": "passed",
+        "exit_code": 0,
+        "wall_seconds": 427.8811674169847,
+        "finished_UTC": "2026-09-15T07:39:46.147125+00:00"
+      },
+      {
+        "name": "accelerated",
+        "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+        "started_UTC": "2026-09-15T07:42:48.677380+00:00",
+        "timeout_seconds": 2200,
+        "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\nexport OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1\n/home/ubuntu/.local/bin/uv pip install --python .venv/bin/python cvxpy scs\n/home/ubuntu/.local/bin/uv pip freeze --python .venv/bin/python > installed.txt\n.venv/bin/python -B -m research.nvidia_followup_20260915.accelerated_jobs\n",
+        "status": "passed",
+        "exit_code": 0,
+        "wall_seconds": 855.6416763750021,
+        "finished_UTC": "2026-09-15T07:57:04.333843+00:00"
+      },
+      {
+        "name": "replay_retry",
+        "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+        "started_UTC": "2026-09-15T08:02:15.291088+00:00",
+        "timeout_seconds": 600,
+        "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\nexport OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1\n/usr/bin/time -v -o results/nvidia_followup_20260915/flint_transition_test_time.txt .venv/bin/python -B -m unittest research.nvidia_followup_20260915.test_flint_transition research.nvidia_followup_20260915.test_sector_gate\n/usr/bin/time -v -o results/nvidia_followup_20260915/h10_compiled_retry_time.txt .venv/bin/python -B -m research.nvidia_followup_20260915.strict_replay results/transfer_solver_20260915/adaptive/h10_correlated_guide sparse_cudss_adaptive results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive/exact_compiled_retry --rotated results/transfer_solver_20260915/rotated_h10 --compiled-rationals\n",
+        "status": "passed",
+        "exit_code": 0,
+        "wall_seconds": 270.2479762090079,
+        "finished_UTC": "2026-09-15T08:06:45.521000+00:00"
+      },
+      {
+        "name": "collect_initial",
+        "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+        "started_UTC": "2026-09-15T07:42:03.334876+00:00",
+        "timeout_seconds": 90,
+        "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\n.venv/bin/python - <<'PY'\nimport hashlib,json,tarfile\nfrom pathlib import Path\nfiles=[Path('installed.txt'),Path('gpu.txt')]\nfor root in [Path('results/transfer_solver_20260915/adaptive/h10_correlated_guide'),Path('results/nvidia_followup_20260915')]:\n    files.extend(p for p in root.rglob('*') if p.is_file() and not set(p.parts)&{'prepared','__pycache__','numba_cache'})\nmanifest={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}\nPath('initial_download_manifest.json').write_text(json.dumps(manifest,indent=2)+'\\n')\nwith tarfile.open('initial_download.tar.gz','w:gz') as stream:\n    for p in files+[Path('initial_download_manifest.json')]:stream.add(p,arcname=str(p),recursive=False)\nPath('initial_download.sha256').write_text(hashlib.sha256(Path('initial_download.tar.gz').read_bytes()).hexdigest()+'\\n')\nprint(json.dumps({'files':len(files),'bytes':Path('initial_download.tar.gz').stat().st_size}))\nPY\n",
+        "status": "passed",
+        "exit_code": 0,
+        "wall_seconds": 3.52035462501226,
+        "finished_UTC": "2026-09-15T07:42:06.855352+00:00"
+      },
+      {
+        "name": "collect_final",
+        "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+        "started_UTC": "2026-09-15T08:11:10.277826+00:00",
+        "timeout_seconds": 180,
+        "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\n.venv/bin/python - <<'PY'\nimport hashlib,json,tarfile\nfrom pathlib import Path\nfiles=[Path('installed.txt'),Path('gpu.txt')]\nfor root in [Path('results/transfer_solver_20260915/adaptive/h10_correlated_guide'),Path('results/transfer_solver_20260915/cases/h8_cold'),Path('results/nvidia_followup_20260915')]:\n    files.extend(p for p in root.rglob('*') if p.is_file() and not set(p.parts)&{'prepared','__pycache__','numba_cache','mps'})\nfiles=sorted(set(files))\nmanifest={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}\nPath('final_download_manifest.json').write_text(json.dumps(manifest,indent=2)+'\\n')\nwith tarfile.open('final_download.tar.gz','w:gz') as stream:\n    for p in files+[Path('final_download_manifest.json')]:stream.add(p,arcname=str(p),recursive=False)\nPath('final_download.sha256').write_text(hashlib.sha256(Path('final_download.tar.gz').read_bytes()).hexdigest()+'\\n')\nprint(json.dumps({'files':len(files),'bytes':Path('final_download.tar.gz').stat().st_size}))\nPY\n",
+        "status": "passed",
+        "exit_code": 0,
+        "wall_seconds": 14.873788500000956,
+        "finished_UTC": "2026-09-15T08:11:25.151783+00:00"
+      },
+      {
+        "name": "environment",
+        "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+        "started_UTC": "2026-09-15T07:14:05.633925+00:00",
+        "timeout_seconds": 180,
+        "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\n.venv/bin/python - <<'PY'\nimport hashlib,json,tarfile\nfrom pathlib import Path\nfor name,key in [('source','sha256'),('cases','archive_sha256')]:\n    data=json.loads(Path(name+'_upload_manifest.json').read_text())\n    archive=Path(name+'.tar.gz')\n    assert hashlib.sha256(archive.read_bytes()).hexdigest()==data[key]\n    with tarfile.open(archive) as stream:\n        stream.extractall('.',filter='data')\n    if isinstance(data.get('files'),dict):\n        for path, expected in data['files'].items():\n            assert hashlib.sha256(Path(path).read_bytes()).hexdigest()==expected,path\nprint('Uploaded archive and case hashes verified')\nimport cupy as cp, numpy as np, nvmath, inspect, flint\nfrom cuquantum.tensornet import Network\nfrom nvmath.sparse.advanced import DirectSolver, DirectSolverOptions, DirectSolverMatrixType, DirectSolverMatrixViewType\nfrom sksparse.cholmod import cholesky\nprint('CuPy',cp.__version__,'nvmath',nvmath.__version__,'flint',flint.__version__)\nprint('GPU',cp.cuda.runtime.getDeviceProperties(0)['name'])\nprint(inspect.signature(DirectSolverOptions))\nprint(list(DirectSolverMatrixType),list(DirectSolverMatrixViewType))\nprint('nvmath reset',inspect.signature(DirectSolver.reset_operands))\nprint('tensor network',inspect.signature(Network))\nprint('FP64 eigh',cp.asnumpy(cp.linalg.eigh(cp.eye(4,dtype=cp.float64))[0]).tolist())\nPY\n",
+        "status": "passed",
+        "exit_code": 0,
+        "wall_seconds": 4.086122624983545,
+        "finished_UTC": "2026-09-15T07:14:09.720185+00:00"
+      },
+      {
+        "name": "collect_proposal",
+        "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+        "started_UTC": "2026-09-15T07:58:03.314209+00:00",
+        "timeout_seconds": 90,
+        "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\n.venv/bin/python - <<'PY'\nimport hashlib,json,tarfile\nfrom pathlib import Path\nroot=Path('results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive')\nassert (root/'discovery.json').exists()\nfiles=[p for p in root.rglob('*') if p.is_file() and 'exact_compiled' not in p.parts]\nmanifest={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}\nPath('proposal_download_manifest.json').write_text(json.dumps(manifest,indent=2)+'\\n')\nwith tarfile.open('proposal_download.tar.gz','w:gz') as stream:\n    for p in files+[Path('proposal_download_manifest.json')]:stream.add(p,arcname=str(p),recursive=False)\nPath('proposal_download.sha256').write_text(hashlib.sha256(Path('proposal_download.tar.gz').read_bytes()).hexdigest()+'\\n')\nprint(json.dumps({'files':len(files),'bytes':Path('proposal_download.tar.gz').stat().st_size}))\nPY\n",
+        "status": "passed",
+        "exit_code": 0,
+        "wall_seconds": 2.012249207997229,
+        "finished_UTC": "2026-09-15T07:58:05.326499+00:00"
+      },
+      {
+        "name": "bootstrap",
+        "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+        "started_UTC": "2026-09-15T07:12:49.757646+00:00",
+        "timeout_seconds": 900,
+        "script": "set -eu\nmkdir -p /home/ubuntu/spectra-nvidia\ncd /home/ubuntu/spectra-nvidia\npython3 -m pip install --user uv\n/home/ubuntu/.local/bin/uv python install 3.12\n/home/ubuntu/.local/bin/uv venv --python 3.12 .venv\n/home/ubuntu/.local/bin/uv pip install --python .venv/bin/python 'numpy==2.2.6' 'scipy==1.18.1' 'cupy-cuda12x[ctk]==14.2.0' 'cuquantum-python-cu12' 'nvmath-python[cu12]' 'nvidia-cudss-cu12' 'quimb==1.15.0' numba networkx threadpoolctl python-flint pytest\n.venv/bin/python -m pip freeze > installed.txt 2>&1 || /home/ubuntu/.local/bin/uv pip freeze --python .venv/bin/python > installed.txt\nnvidia-smi --query-gpu=name,driver_version,memory.total --format=csv,noheader > gpu.txt\nsudo apt-get update -qq\nsudo apt-get install -y -qq libsuitesparse-dev\n/home/ubuntu/.local/bin/uv pip install --python .venv/bin/python 'scikit-sparse==0.4.16'\n/home/ubuntu/.local/bin/uv pip freeze --python .venv/bin/python > installed.txt\n",
+        "status": "passed",
+        "exit_code": 0,
+        "wall_seconds": 43.641577750007855,
+        "finished_UTC": "2026-09-15T07:13:33.400546+00:00"
+      }
+    ],
+    "remote_orchestration_wall_seconds": 2639.144904749992,
+    "probe_processes": [
+      {
+        "name": "sparse_quotient_tests",
+        "seconds": 0.4335179650001919,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "research.nvidia_followup_20260915.test_sparse_quotient"
+        ]
+      },
+      {
+        "name": "flint_gram_tests",
+        "seconds": 0.10578397699987363,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "research.nvidia_followup_20260915.test_flint_squares"
+        ]
+      },
+      {
+        "name": "h8_sparse",
+        "seconds": 1.6922575570001754,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.library_bench",
+          "sparse",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+          "/home/ubuntu/spectra-nvidia/results/nvidia_followup_20260915/h8_sparse.json"
+        ]
+      },
+      {
+        "name": "h10_sparse",
+        "seconds": 2.339358096000069,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.library_bench",
+          "sparse",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+          "/home/ubuntu/spectra-nvidia/results/nvidia_followup_20260915/h10_sparse.json"
+        ]
+      },
+      {
+        "name": "h10_tensor",
+        "seconds": 1.3691488179999851,
+        "exit_code": 1,
+        "status": "failed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.library_bench",
+          "tensor",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/rotated_h10",
+          "/home/ubuntu/spectra-nvidia/results/nvidia_followup_20260915/h10_tensor.json"
+        ]
+      },
+      {
+        "name": "h8_stdlib",
+        "seconds": 154.85328496399984,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.flint_probe",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+          "/home/ubuntu/spectra-nvidia/results/nvidia_followup_20260915/h8_stdlib.json",
+          "--stdlib"
+        ]
+      },
+      {
+        "name": "h8_flint",
+        "seconds": 112.25484178700003,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.flint_probe",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+          "/home/ubuntu/spectra-nvidia/results/nvidia_followup_20260915/h8_flint.json"
+        ]
+      },
+      {
+        "name": "h8_flint_gram",
+        "seconds": 151.91963502,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.flint_probe",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+          "/home/ubuntu/spectra-nvidia/results/nvidia_followup_20260915/h8_flint_gram.json",
+          "--grams"
+        ]
+      }
+    ],
+    "accelerated_processes": [
+      {
+        "name": "h8_sparse_context_corrected",
+        "seconds": 1.696375848000116,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.library_bench",
+          "sparse",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+          "/home/ubuntu/spectra-nvidia/results/nvidia_followup_20260915/h8_sparse_corrected.json"
+        ]
+      },
+      {
+        "name": "h10_sparse_context_corrected",
+        "seconds": 2.375215392999962,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.library_bench",
+          "sparse",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+          "/home/ubuntu/spectra-nvidia/results/nvidia_followup_20260915/h10_sparse_corrected.json"
+        ]
+      },
+      {
+        "name": "h10_tensor_retry",
+        "seconds": 6.655713229999947,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.library_bench",
+          "tensor",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/rotated_h10",
+          "/home/ubuntu/spectra-nvidia/results/nvidia_followup_20260915/h10_tensor_retry.json"
+        ]
+      },
+      {
+        "name": "h8_dense_200",
+        "seconds": 18.945221437999862,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.gpu_acceleration_20260915.solve",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+          "dense_200",
+          "--seconds",
+          "360",
+          "--mu",
+          "2",
+          "--backend",
+          "cpu_evd",
+          "--iterations",
+          "200"
+        ]
+      },
+      {
+        "name": "h8_sparse_cpu_200",
+        "seconds": 11.988642160999916,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.solve",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+          "sparse_cpu_200",
+          "--seconds",
+          "210",
+          "--backend",
+          "cpu_evd",
+          "--normal",
+          "superlu",
+          "--iterations",
+          "200"
+        ]
+      },
+      {
+        "name": "h8_sparse_hybrid_200",
+        "seconds": 10.72260738299974,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.solve",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+          "sparse_hybrid_200",
+          "--seconds",
+          "210",
+          "--backend",
+          "hybrid",
+          "--normal",
+          "superlu",
+          "--iterations",
+          "200"
+        ]
+      },
+      {
+        "name": "h8_sparse_cudss_200",
+        "seconds": 10.835048925000137,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.solve",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+          "sparse_cudss_200",
+          "--seconds",
+          "210",
+          "--backend",
+          "hybrid",
+          "--normal",
+          "cudss",
+          "--iterations",
+          "200"
+        ]
+      },
+      {
+        "name": "h10_dense_200",
+        "seconds": 216.20475752500033,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.gpu_acceleration_20260915.solve",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+          "dense_200",
+          "--seconds",
+          "360",
+          "--mu",
+          "2",
+          "--backend",
+          "cpu_evd",
+          "--iterations",
+          "200"
+        ]
+      },
+      {
+        "name": "h10_sparse_cpu_200",
+        "seconds": 48.44950995699992,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.solve",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+          "sparse_cpu_200",
+          "--seconds",
+          "210",
+          "--backend",
+          "cpu_evd",
+          "--normal",
+          "superlu",
+          "--iterations",
+          "200"
+        ]
+      },
+      {
+        "name": "h10_sparse_hybrid_200",
+        "seconds": 26.729091865999635,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.solve",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+          "sparse_hybrid_200",
+          "--seconds",
+          "210",
+          "--backend",
+          "hybrid",
+          "--normal",
+          "superlu",
+          "--iterations",
+          "200"
+        ]
+      },
+      {
+        "name": "h10_sparse_cudss_200",
+        "seconds": 26.33274005500016,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.solve",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+          "sparse_cudss_200",
+          "--seconds",
+          "210",
+          "--backend",
+          "hybrid",
+          "--normal",
+          "cudss",
+          "--iterations",
+          "200"
+        ]
+      },
+      {
+        "name": "h10_sparse_cudss_adaptive",
+        "seconds": 424.7059179349999,
+        "exit_code": 0,
+        "status": "passed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.solve",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+          "sparse_cudss_adaptive",
+          "--seconds",
+          "850",
+          "--backend",
+          "hybrid",
+          "--normal",
+          "cudss"
+        ]
+      },
+      {
+        "name": "h10_compiled_complete_replay",
+        "seconds": 46.98986103600009,
+        "exit_code": 1,
+        "status": "failed",
+        "command": [
+          "/home/ubuntu/spectra-nvidia/.venv/bin/python",
+          "-B",
+          "-m",
+          "research.nvidia_followup_20260915.replay",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+          "sparse_cudss_adaptive",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive/exact_compiled",
+          "--rotated",
+          "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/rotated_h10",
+          "--compiled-rationals"
+        ]
+      }
+    ],
+    "local_H10_replays": [
+      {
+        "name": "h10_gpu_independent_replay",
+        "command": [
+          "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+          "-B",
+          "-S",
+          "-m",
+          "research.nvidia_followup_20260915.replay",
+          "results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+          "hybrid_adaptive",
+          "results/transfer_solver_20260915/adaptive/h10_correlated_guide/hybrid_adaptive/exact_local_stdlib",
+          "--rotated",
+          "results/transfer_solver_20260915/rotated_h10"
+        ],
+        "timeout_seconds": 600,
+        "status": "passed",
+        "started_UTC": "2026-09-15T07:43:49.205970+00:00",
+        "pid": 76817,
+        "exit_code": 0,
+        "wall_seconds": 241.7477211250225,
+        "child_user_seconds": 238.449382,
+        "child_system_seconds": 1.8438189999999999,
+        "peak_child_RSS_bytes": 787660800,
+        "finished_UTC": "2026-09-15T07:47:50.958794+00:00"
+      },
+      {
+        "name": "h10_library_independent_replay",
+        "command": [
+          "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+          "-B",
+          "-S",
+          "-m",
+          "research.nvidia_followup_20260915.strict_replay",
+          "results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+          "sparse_cudss_adaptive",
+          "results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive/exact_local_stdlib",
+          "--rotated",
+          "results/transfer_solver_20260915/rotated_h10"
+        ],
+        "timeout_seconds": 600,
+        "status": "passed",
+        "started_UTC": "2026-09-15T07:59:13.828813+00:00",
+        "pid": 79600,
+        "exit_code": 0,
+        "wall_seconds": 239.63029337499756,
+        "child_user_seconds": 236.570905,
+        "child_system_seconds": 1.69622,
+        "peak_child_RSS_bytes": 790216704,
+        "finished_UTC": "2026-09-15T08:03:13.464402+00:00"
+      }
+    ],
+    "charged_local_preparation": [
+      {
+        "name": "h10_size_generate",
+        "command": [
+          "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+          "-B",
+          "-m",
+          "research.transfer_solver_20260915.generate",
+          "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h10_size"
+        ],
+        "timeout_seconds": 90,
+        "status": "passed",
+        "started_UTC": "2026-09-15T05:42:41.280397+00:00",
+        "pid": 47231,
+        "exit_code": 0,
+        "wall_seconds": 2.339279208012158,
+        "child_user_seconds": 1.777031,
+        "child_system_seconds": 0.15365299999999998,
+        "peak_child_RSS_bytes": 161480704,
+        "finished_UTC": "2026-09-15T05:42:43.620136+00:00"
+      },
+      {
+        "name": "h10_rotated_construct",
+        "command": [
+          "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+          "-B",
+          "-m",
+          "research.transfer_followup_20260915.rotated_upper",
+          "construct"
+        ],
+        "timeout_seconds": 180,
+        "status": "passed",
+        "started_UTC": "2026-09-15T06:38:28.301812+00:00",
+        "pid": 63283,
+        "exit_code": 0,
+        "wall_seconds": 3.9251286670041736,
+        "child_user_seconds": 3.33017,
+        "child_system_seconds": 0.147757,
+        "peak_child_RSS_bytes": 130711552,
+        "finished_UTC": "2026-09-15T06:38:32.227964+00:00"
+      },
+      {
+        "name": "h10_rotated_state",
+        "command": [
+          "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+          "-B",
+          "-m",
+          "research.transfer_followup_20260915.rotated_upper",
+          "state"
+        ],
+        "timeout_seconds": 600,
+        "status": "passed",
+        "started_UTC": "2026-09-15T06:38:32.267236+00:00",
+        "pid": 63310,
+        "exit_code": 0,
+        "wall_seconds": 263.22151941698394,
+        "child_user_seconds": 257.529576,
+        "child_system_seconds": 3.417376,
+        "peak_child_RSS_bytes": 774160384,
+        "finished_UTC": "2026-09-15T06:42:55.496833+00:00"
+      },
+      {
+        "name": "h10_rotated_verify",
+        "command": [
+          "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+          "-B",
+          "-S",
+          "-m",
+          "research.transfer_followup_20260915.rotated_upper",
+          "verify"
+        ],
+        "timeout_seconds": 600,
+        "status": "passed",
+        "started_UTC": "2026-09-15T06:42:55.538112+00:00",
+        "pid": 64570,
+        "exit_code": 0,
+        "wall_seconds": 28.68637054201099,
+        "child_user_seconds": 28.317733,
+        "child_system_seconds": 0.181618,
+        "peak_child_RSS_bytes": 126156800,
+        "finished_UTC": "2026-09-15T06:43:24.225858+00:00"
+      },
+      {
+        "name": "h10_rotated_lower_initialize",
+        "command": [
+          "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+          "-B",
+          "-S",
+          "-m",
+          "research.transfer_followup_20260915.rotated_lower",
+          "initialize"
+        ],
+        "timeout_seconds": 30,
+        "status": "passed",
+        "started_UTC": "2026-09-15T06:44:11.598614+00:00",
+        "pid": 64830,
+        "exit_code": 0,
+        "wall_seconds": 0.13016124998102896,
+        "child_user_seconds": 0.079857,
+        "child_system_seconds": 0.017058,
+        "peak_child_RSS_bytes": 30130176,
+        "finished_UTC": "2026-09-15T06:44:11.730182+00:00"
+      },
+      {
+        "name": "h10_rotated_lower_nonsinglet",
+        "command": [
+          "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+          "-B",
+          "-m",
+          "research.transfer_solver_20260915.actions",
+          "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper",
+          "nonsinglet"
+        ],
+        "timeout_seconds": 240,
+        "status": "passed",
+        "started_UTC": "2026-09-15T06:44:11.775238+00:00",
+        "pid": 64834,
+        "exit_code": 0,
+        "wall_seconds": 106.6286779580114,
+        "child_user_seconds": 103.847974,
+        "child_system_seconds": 1.05003,
+        "peak_child_RSS_bytes": 513867776,
+        "finished_UTC": "2026-09-15T06:45:58.407602+00:00"
+      },
+      {
+        "name": "h10_rotated_lower_prepare",
+        "command": [
+          "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+          "-B",
+          "-m",
+          "research.transfer_followup_20260915.adaptive_size",
+          "prepare",
+          "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper"
+        ],
+        "timeout_seconds": 900,
+        "status": "passed",
+        "started_UTC": "2026-09-15T06:45:58.479921+00:00",
+        "pid": 65369,
+        "exit_code": 0,
+        "wall_seconds": 296.1189734999789,
+        "child_user_seconds": 292.329058,
+        "child_system_seconds": 1.826477,
+        "peak_child_RSS_bytes": 753565696,
+        "finished_UTC": "2026-09-15T06:50:54.608146+00:00"
+      },
+      {
+        "name": "h10_correlated_prepare",
+        "command": [
+          "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+          "-B",
+          "-m",
+          "research.transfer_followup_20260915.correlated_guide",
+          "prepare"
+        ],
+        "timeout_seconds": 300,
+        "status": "passed",
+        "started_UTC": "2026-09-15T07:04:14.400599+00:00",
+        "pid": 69425,
+        "exit_code": 0,
+        "wall_seconds": 15.482451499992749,
+        "child_user_seconds": 13.709917,
+        "child_system_seconds": 0.49447599999999997,
+        "peak_child_RSS_bytes": 753860608,
+        "finished_UTC": "2026-09-15T07:04:29.884465+00:00"
+      }
+    ],
+    "claims": {
+      "H10_accuracy_met": true,
+      "general_scaling_proved": false,
+      "whole_DMRG_cuTensorNet_speedup_measured": false,
+      "all_open_research_questions_solved": false
+    }
+  },
+  "all_instrumented_attempts": 102,
+  "all_instrumented_process_wall_seconds": 6875.312364087964,
+  "all_open_research_questions_solved": false
+}

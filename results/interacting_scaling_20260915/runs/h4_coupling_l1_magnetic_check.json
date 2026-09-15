@@ -1,0 +1,24 @@
+{
+  "name": "h4_coupling_l1_magnetic_check",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.interacting_scaling_20260915.nonsinglet",
+    "check",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_coupling_l1_magnetic",
+    "solve",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_coupling_l1_magnetic/exact.json"
+  ],
+  "timeout_seconds": 180,
+  "status": "passed",
+  "started_UTC": "2026-09-15T09:43:52.920284+00:00",
+  "pid": 1353,
+  "exit_code": 0,
+  "wall_seconds": 0.1880284580111038,
+  "child_user_seconds": 0.141851,
+  "child_system_seconds": 0.009685,
+  "peak_child_RSS_bytes": 22085632,
+  "finished_UTC": "2026-09-15T09:43:53.108932+00:00"
+}

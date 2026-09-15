@@ -1,0 +1,11 @@
+{
+  "name": "collect_proposal",
+  "instance_id": "031ebec4a5b9424f99f83e983465f9f4",
+  "started_UTC": "2026-09-15T07:58:03.314209+00:00",
+  "timeout_seconds": 90,
+  "script": "set -eu\ncd /home/ubuntu/spectra-nvidia\n.venv/bin/python - <<'PY'\nimport hashlib,json,tarfile\nfrom pathlib import Path\nroot=Path('results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive')\nassert (root/'discovery.json').exists()\nfiles=[p for p in root.rglob('*') if p.is_file() and 'exact_compiled' not in p.parts]\nmanifest={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files}\nPath('proposal_download_manifest.json').write_text(json.dumps(manifest,indent=2)+'\\n')\nwith tarfile.open('proposal_download.tar.gz','w:gz') as stream:\n    for p in files+[Path('proposal_download_manifest.json')]:stream.add(p,arcname=str(p),recursive=False)\nPath('proposal_download.sha256').write_text(hashlib.sha256(Path('proposal_download.tar.gz').read_bytes()).hexdigest()+'\\n')\nprint(json.dumps({'files':len(files),'bytes':Path('proposal_download.tar.gz').stat().st_size}))\nPY\n",
+  "status": "passed",
+  "exit_code": 0,
+  "wall_seconds": 2.012249207997229,
+  "finished_UTC": "2026-09-15T07:58:05.326499+00:00"
+}

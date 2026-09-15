@@ -1,0 +1,46 @@
+{
+  "kind": "input_derived_sparse_boundary_point_v1",
+  "best": {
+    "iteration": 2200,
+    "seconds": 31.08122142000002,
+    "mu": 0.03,
+    "b": -6.186365123272004,
+    "raw_width_mHa": 0.05050365414493996,
+    "predicted_coefficient_l1_Ha": 3.0297059416828985e-06,
+    "unverified_width_mHa": 0.053533458086896246,
+    "primal_l2": 2.7454189647355286e-08,
+    "dual_l2": 0.00010974118444902172,
+    "minimum_dual_eigenvalue": -1.961055422016719e-05,
+    "cg_status": 0,
+    "kernel_seconds": 28.131513893002193
+  },
+  "export": {
+    "proposed_b": -6.186365123272004,
+    "number_multiplier_quartic_terms": 674,
+    "minimum_eigenvalue_before_export": -1.0186447147151452e-16,
+    "factor_rows": 311,
+    "certificate_bytes": 790147
+  },
+  "seconds": 32.480420864999815,
+  "normal_map_relative_error": 2.6280703483804066e-16,
+  "ideal_projection": {
+    "ideal_coordinate_count": 1029,
+    "numerical_ideal_rank": 394,
+    "QR_rank_threshold": 1e-11,
+    "dependent_coordinates_removed": 635,
+    "ideal_projector_max_defect": 3.134935924279438e-16,
+    "dual_normalization_error": 9.769962616701378e-15,
+    "seconds": 0.9260340079999878
+  },
+  "restart": null,
+  "initial_old_checkpoint_used": false,
+  "Gram_entries": 127492,
+  "backend": "hybrid",
+  "setup_seconds": 1.5841174590000264,
+  "kernel_seconds": 28.131513893002193,
+  "iterations_completed": 2200,
+  "fixed_iterations_requested": null,
+  "switch_iteration": null,
+  "adaptive_refinement": true,
+  "status": "requires_original_exact_checker"
+}

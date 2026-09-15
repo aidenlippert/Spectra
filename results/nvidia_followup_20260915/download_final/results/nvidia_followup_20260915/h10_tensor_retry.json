@@ -1,0 +1,69 @@
+{
+  "case": "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/rotated_h10",
+  "site": 8,
+  "tensor_shapes": [
+    [
+      32,
+      32
+    ],
+    [
+      32,
+      2,
+      63
+    ],
+    [
+      32,
+      2,
+      63
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "source_state_sha256": "ebeab5421daa0a8cb7a50a5c204aba3f0805211beb67c09197825fea34191664",
+  "precision": "float64",
+  "expression": "ab,asr,btq,st->rq",
+  "input_and_JIT_seconds": 1.1811789210000825,
+  "scope": "One actual MPS transfer, not complete DMRG discovery",
+  "results": [
+    {
+      "backend": "existing_NumPy_numba_sparse_transfer",
+      "median_seconds": 4.265270000360033e-05,
+      "relative_error": 1.4624055816255275e-16,
+      "min_seconds": 4.249253999660141e-05,
+      "max_seconds": 4.38933200075553e-05
+    },
+    {
+      "backend": "NumPy_dense_einsum",
+      "median_seconds": 0.0002007420599966281,
+      "relative_error": 0.0,
+      "min_seconds": 0.00020004621999760274,
+      "max_seconds": 0.00020808100000067499
+    },
+    {
+      "backend": "CuPy_dense_einsum_resident",
+      "median_seconds": 0.0004892903600011777,
+      "relative_error": 9.110336289800799e-17,
+      "min_seconds": 0.000485403659995427,
+      "max_seconds": 0.0005074309599967818
+    },
+    {
+      "backend": "cuTensorNet_resident_cached_path",
+      "median_seconds": 0.00012021673999697669,
+      "relative_error": 1.0438775174678419e-16,
+      "min_seconds": 0.00011949794000429392,
+      "max_seconds": 0.00012404803999743308
+    },
+    {
+      "backend": "cuTensorNet_with_input_and_output_transfers",
+      "median_seconds": 0.00039988548000110315,
+      "relative_error": 1.0438775174678419e-16,
+      "min_seconds": 0.00039571479999722214,
+      "max_seconds": 0.0020397646200035523
+    }
+  ],
+  "initial_input_transfer_seconds": 0.22330384199995024,
+  "cuTensorNet_plan_seconds": 0.4203930590001619,
+  "complete_seconds": 2.8934865060000448
+}

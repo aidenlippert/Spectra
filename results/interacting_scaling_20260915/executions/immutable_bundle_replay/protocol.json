@@ -1,0 +1,21 @@
+{
+  "steps": [
+    [
+      "h4",
+      60,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.interacting_scaling_20260915.replay_bundle",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/models/h4_cold_integration",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_cold_integration_level0",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/independent_bundle_replay/h4"
+      ]
+    ]
+  ],
+  "one_heavy_process_at_a_time": true,
+  "host": "local Mac; one BLAS/Numba thread",
+  "external_spending": false
+}

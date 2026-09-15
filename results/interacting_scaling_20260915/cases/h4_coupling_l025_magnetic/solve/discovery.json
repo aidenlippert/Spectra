@@ -1,0 +1,49 @@
+{
+  "kind": "input_derived_sparse_boundary_point_v1",
+  "best": {
+    "iteration": 4900,
+    "seconds": 3.013785250019282,
+    "mu": 0.03,
+    "b": -4.112536138079707,
+    "raw_width_mHa": -146.55414204624418,
+    "predicted_coefficient_l1_Ha": 6.561759502683798e-07,
+    "unverified_width_mHa": -146.55348586229434,
+    "primal_l2": 2.197882671287505e-08,
+    "dual_l2": 8.973833519720354e-07,
+    "minimum_dual_eigenvalue": -1.69774361055766e-07,
+    "cg_status": 0,
+    "kernel_seconds": 2.862502412084723
+  },
+  "export": {
+    "proposed_b": -4.112536138079707,
+    "number_multiplier_quartic_terms": 0,
+    "minimum_eigenvalue_before_export": -7.290595021478862e-17,
+    "factor_rows": 74,
+    "certificate_bytes": 70140
+  },
+  "seconds": 3.097263417002978,
+  "normal_map_relative_error": 1.5279648984888258e-16,
+  "ideal_projection": {
+    "implementation": "SuiteSparseQR_economy",
+    "ideal_coordinate_count": 43,
+    "numerical_ideal_rank": 41,
+    "dependent_coordinates_removed": 2,
+    "QR_absolute_rank_tolerance": 1.0341394704992378e-11,
+    "ideal_projector_max_defect": 4.440892098500626e-16,
+    "dual_normalization_error": 1.420160285666346e-15,
+    "Q_nonzeros": 586,
+    "R_nonzeros": 134,
+    "seconds": 0.0009420410206075758
+  },
+  "restart": null,
+  "initial_old_checkpoint_used": false,
+  "Gram_entries": 2256,
+  "backend": "cpu_evd",
+  "setup_seconds": 0.022335917019518092,
+  "kernel_seconds": 2.862502412084723,
+  "iterations_completed": 4900,
+  "fixed_iterations_requested": null,
+  "switch_iteration": null,
+  "adaptive_refinement": true,
+  "status": "requires_original_exact_checker"
+}

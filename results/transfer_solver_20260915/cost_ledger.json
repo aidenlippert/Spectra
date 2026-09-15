@@ -1,0 +1,4794 @@
+{
+  "instrumented_attempts": [
+    {
+      "name": "algebra_checked",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "research.transfer_solver_20260915.test_algebra"
+      ],
+      "timeout_seconds": 90,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:07:03.778519+00:00",
+      "pid": 31704,
+      "exit_code": 0,
+      "wall_seconds": 2.1231466670287773,
+      "child_user_seconds": 1.61052,
+      "child_system_seconds": 0.148367,
+      "peak_child_RSS_bytes": 125485056,
+      "finished_UTC": "2026-09-15T05:07:05.902367+00:00"
+    },
+    {
+      "name": "algebra_initial",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "research.transfer_solver_20260915.test_algebra"
+      ],
+      "timeout_seconds": 90,
+      "status": "failed",
+      "started_UTC": "2026-09-15T05:04:20.237044+00:00",
+      "pid": 31167,
+      "exit_code": 1,
+      "wall_seconds": 2.7338347079930827,
+      "child_user_seconds": 1.703189,
+      "child_system_seconds": 0.195569,
+      "peak_child_RSS_bytes": 126468096,
+      "finished_UTC": "2026-09-15T05:04:22.971673+00:00"
+    },
+    {
+      "name": "ch2_cc-pvdz_s0",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.ch2_model_study_20260915.study",
+        "case",
+        "--basis",
+        "cc-pvdz",
+        "--spin",
+        "0"
+      ],
+      "timeout_seconds": 360,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:30:55.181940+00:00",
+      "pid": 61301,
+      "exit_code": 0,
+      "wall_seconds": 262.39332962498884,
+      "child_user_seconds": 2.106249,
+      "child_system_seconds": 0.385526,
+      "peak_child_RSS_bytes": 102039552,
+      "finished_UTC": "2026-09-15T06:35:17.583230+00:00"
+    },
+    {
+      "name": "ch2_cc-pvdz_s1",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.ch2_model_study_20260915.study",
+        "case",
+        "--basis",
+        "cc-pvdz",
+        "--spin",
+        "1"
+      ],
+      "timeout_seconds": 360,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:35:17.645726+00:00",
+      "pid": 62402,
+      "exit_code": 0,
+      "wall_seconds": 2.316802124987589,
+      "child_user_seconds": 1.750839,
+      "child_system_seconds": 0.17536,
+      "peak_child_RSS_bytes": 118620160,
+      "finished_UTC": "2026-09-15T06:35:19.963405+00:00"
+    },
+    {
+      "name": "ch2_cc-pvtz_s0",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.ch2_model_study_20260915.study",
+        "case",
+        "--basis",
+        "cc-pvtz",
+        "--spin",
+        "0"
+      ],
+      "timeout_seconds": 360,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:35:20.002029+00:00",
+      "pid": 62421,
+      "exit_code": 0,
+      "wall_seconds": 9.690771708003012,
+      "child_user_seconds": 9.352706,
+      "child_system_seconds": 0.226597,
+      "peak_child_RSS_bytes": 316145664,
+      "finished_UTC": "2026-09-15T06:35:29.693661+00:00"
+    },
+    {
+      "name": "ch2_cc-pvtz_s1",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.ch2_model_study_20260915.study",
+        "case",
+        "--basis",
+        "cc-pvtz",
+        "--spin",
+        "1"
+      ],
+      "timeout_seconds": 360,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:35:29.733464+00:00",
+      "pid": 62502,
+      "exit_code": 0,
+      "wall_seconds": 10.508635749982204,
+      "child_user_seconds": 10.157086,
+      "child_system_seconds": 0.225319,
+      "peak_child_RSS_bytes": 317489152,
+      "finished_UTC": "2026-09-15T06:35:40.242938+00:00"
+    },
+    {
+      "name": "ch2_cc_cc-pvdz_s0",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.ch2_model_study_20260915.cc_control",
+        "case",
+        "--basis",
+        "cc-pvdz",
+        "--spin",
+        "0"
+      ],
+      "timeout_seconds": 240,
+      "status": "passed",
+      "started_UTC": "2026-09-15T07:05:52.262206+00:00",
+      "pid": 69841,
+      "exit_code": 0,
+      "wall_seconds": 4.606748375023017,
+      "child_user_seconds": 0.610181,
+      "child_system_seconds": 0.170282,
+      "peak_child_RSS_bytes": 101498880,
+      "finished_UTC": "2026-09-15T07:05:56.869580+00:00"
+    },
+    {
+      "name": "ch2_cc_cc-pvdz_s1",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.ch2_model_study_20260915.cc_control",
+        "case",
+        "--basis",
+        "cc-pvdz",
+        "--spin",
+        "1"
+      ],
+      "timeout_seconds": 240,
+      "status": "passed",
+      "started_UTC": "2026-09-15T07:05:56.909291+00:00",
+      "pid": 69857,
+      "exit_code": 0,
+      "wall_seconds": 7.7812132079852745,
+      "child_user_seconds": 0.788805,
+      "child_system_seconds": 0.123332,
+      "peak_child_RSS_bytes": 125419520,
+      "finished_UTC": "2026-09-15T07:06:04.691549+00:00"
+    },
+    {
+      "name": "ch2_cc_cc-pvtz_s0",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.ch2_model_study_20260915.cc_control",
+        "case",
+        "--basis",
+        "cc-pvtz",
+        "--spin",
+        "0"
+      ],
+      "timeout_seconds": 240,
+      "status": "passed",
+      "started_UTC": "2026-09-15T07:06:04.731301+00:00",
+      "pid": 69891,
+      "exit_code": 0,
+      "wall_seconds": 1.4287168750015553,
+      "child_user_seconds": 1.206403,
+      "child_system_seconds": 0.152916,
+      "peak_child_RSS_bytes": 208175104,
+      "finished_UTC": "2026-09-15T07:06:06.160591+00:00"
+    },
+    {
+      "name": "ch2_cc_cc-pvtz_s1",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.ch2_model_study_20260915.cc_control",
+        "case",
+        "--basis",
+        "cc-pvtz",
+        "--spin",
+        "1"
+      ],
+      "timeout_seconds": 240,
+      "status": "passed",
+      "started_UTC": "2026-09-15T07:06:06.197323+00:00",
+      "pid": 69901,
+      "exit_code": 0,
+      "wall_seconds": 3.7425447500136215,
+      "child_user_seconds": 3.331049,
+      "child_system_seconds": 0.305761,
+      "peak_child_RSS_bytes": 794787840,
+      "finished_UTC": "2026-09-15T07:06:09.940729+00:00"
+    },
+    {
+      "name": "ch2_coordinate_test",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "unittest",
+        "research.ch2_model_study_20260915.test_coordinates"
+      ],
+      "timeout_seconds": 20,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:34:32.299967+00:00",
+      "pid": 44858,
+      "exit_code": 0,
+      "wall_seconds": 0.07744191697565839,
+      "child_user_seconds": 0.047174999999999995,
+      "child_system_seconds": 0.014974,
+      "peak_child_RSS_bytes": 20152320,
+      "finished_UTC": "2026-09-15T05:34:32.377935+00:00"
+    },
+    {
+      "name": "ch2_import_profile",
+      "command": [
+        "/usr/bin/sample",
+        "61301",
+        "1",
+        "-file",
+        "results/transfer_solver_20260915/ch2_model_study/import_stack.txt"
+      ],
+      "timeout_seconds": 15,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:33:48.203812+00:00",
+      "pid": 62028,
+      "exit_code": 0,
+      "wall_seconds": 1.5819112500175834,
+      "child_user_seconds": 0.11316999999999999,
+      "child_system_seconds": 0.11355599999999999,
+      "peak_child_RSS_bytes": 23543808,
+      "finished_UTC": "2026-09-15T06:33:49.786712+00:00"
+    },
+    {
+      "name": "correlated_moment_rules",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "research.transfer_followup_20260915.test_correlated_guide"
+      ],
+      "timeout_seconds": 30,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:58:41.637026+00:00",
+      "pid": 68112,
+      "exit_code": 0,
+      "wall_seconds": 0.6691890000074636,
+      "child_user_seconds": 0.443029,
+      "child_system_seconds": 0.072197,
+      "peak_child_RSS_bytes": 41664512,
+      "finished_UTC": "2026-09-15T06:58:42.308325+00:00"
+    },
+    {
+      "name": "even_sector_replay_gate",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "unittest",
+        "research.nvidia_followup_20260915.test_sector_gate"
+      ],
+      "timeout_seconds": 30,
+      "status": "passed",
+      "started_UTC": "2026-09-15T07:53:59.440316+00:00",
+      "pid": 78566,
+      "exit_code": 0,
+      "wall_seconds": 0.07164549999288283,
+      "child_user_seconds": 0.035342,
+      "child_system_seconds": 0.010673,
+      "peak_child_RSS_bytes": 15761408,
+      "finished_UTC": "2026-09-15T07:53:59.512675+00:00"
+    },
+    {
+      "name": "family_span_test",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "unittest",
+        "research.transfer_followup_20260915.test_membership"
+      ],
+      "timeout_seconds": 20,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:14:44.459568+00:00",
+      "pid": 56117,
+      "exit_code": 0,
+      "wall_seconds": 0.40437100001145154,
+      "child_user_seconds": 0.123429,
+      "child_system_seconds": 0.038716,
+      "peak_child_RSS_bytes": 21004288,
+      "finished_UTC": "2026-09-15T06:14:44.865015+00:00"
+    },
+    {
+      "name": "followup_small_rules",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "unittest",
+        "research.transfer_followup_20260915.test_small_rules"
+      ],
+      "timeout_seconds": 20,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:50:52.269415+00:00",
+      "pid": 48736,
+      "exit_code": 0,
+      "wall_seconds": 0.34764062499743886,
+      "child_user_seconds": 0.096192,
+      "child_system_seconds": 0.038425,
+      "peak_child_RSS_bytes": 23543808,
+      "finished_UTC": "2026-09-15T05:50:52.618310+00:00"
+    },
+    {
+      "name": "fragment_composition",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.fragments"
+      ],
+      "timeout_seconds": 180,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:08:54.129406+00:00",
+      "pid": 54105,
+      "exit_code": 0,
+      "wall_seconds": 2.7431183329899795,
+      "child_user_seconds": 2.652946,
+      "child_system_seconds": 0.026178,
+      "peak_child_RSS_bytes": 48218112,
+      "finished_UTC": "2026-09-15T06:08:56.873028+00:00"
+    },
+    {
+      "name": "global_fragment_rules",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "unittest",
+        "research.transfer_followup_20260915.test_global_fragments"
+      ],
+      "timeout_seconds": 20,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:49:28.942437+00:00",
+      "pid": 66014,
+      "exit_code": 0,
+      "wall_seconds": 0.090345791017171,
+      "child_user_seconds": 0.048388999999999995,
+      "child_system_seconds": 0.013250999999999999,
+      "peak_child_RSS_bytes": 20922368,
+      "finished_UTC": "2026-09-15T06:49:29.033338+00:00"
+    },
+    {
+      "name": "global_fragments_construct",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.global_fragments",
+        "construct"
+      ],
+      "timeout_seconds": 90,
+      "status": "passed",
+      "started_UTC": "2026-09-15T07:06:10.044908+00:00",
+      "pid": 69946,
+      "exit_code": 0,
+      "wall_seconds": 0.23946179199265316,
+      "child_user_seconds": 0.122626,
+      "child_system_seconds": 0.02878,
+      "peak_child_RSS_bytes": 37502976,
+      "finished_UTC": "2026-09-15T07:06:10.284971+00:00"
+    },
+    {
+      "name": "global_fragments_verify",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.global_fragments",
+        "verify"
+      ],
+      "timeout_seconds": 180,
+      "status": "passed",
+      "started_UTC": "2026-09-15T07:06:10.323619+00:00",
+      "pid": 69951,
+      "exit_code": 0,
+      "wall_seconds": 2.7135252919979393,
+      "child_user_seconds": 2.620048,
+      "child_system_seconds": 0.023829,
+      "peak_child_RSS_bytes": 50069504,
+      "finished_UTC": "2026-09-15T07:06:13.037757+00:00"
+    },
+    {
+      "name": "h10_bond64_fci",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.benchmark",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64"
+      ],
+      "timeout_seconds": 180,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:08:52.507399+00:00",
+      "pid": 54082,
+      "exit_code": 0,
+      "wall_seconds": 0.8194312079867814,
+      "child_user_seconds": 0.711482,
+      "child_system_seconds": 0.085863,
+      "peak_child_RSS_bytes": 112427008,
+      "finished_UTC": "2026-09-15T06:08:53.327318+00:00"
+    },
+    {
+      "name": "h10_bond64_generate",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.generate",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64"
+      ],
+      "timeout_seconds": 90,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:58:45.859241+00:00",
+      "pid": 51299,
+      "exit_code": 0,
+      "wall_seconds": 2.9595871250203345,
+      "child_user_seconds": 1.812304,
+      "child_system_seconds": 0.201642,
+      "peak_child_RSS_bytes": 171491328,
+      "finished_UTC": "2026-09-15T05:58:48.819289+00:00"
+    },
+    {
+      "name": "h10_bond64_state",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.adaptive_size",
+        "state",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64"
+      ],
+      "timeout_seconds": 600,
+      "status": "timeout",
+      "started_UTC": "2026-09-15T05:58:48.863360+00:00",
+      "pid": 51346,
+      "exit_code": -15,
+      "wall_seconds": 600.0464905840054,
+      "child_user_seconds": 553.697947,
+      "child_system_seconds": 40.203311,
+      "peak_child_RSS_bytes": 1082458112,
+      "finished_UTC": "2026-09-15T06:08:48.914564+00:00"
+    },
+    {
+      "name": "h10_correlated_prepare",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.correlated_guide",
+        "prepare"
+      ],
+      "timeout_seconds": 300,
+      "status": "passed",
+      "started_UTC": "2026-09-15T07:04:14.400599+00:00",
+      "pid": 69425,
+      "exit_code": 0,
+      "wall_seconds": 15.482451499992749,
+      "child_user_seconds": 13.709917,
+      "child_system_seconds": 0.49447599999999997,
+      "peak_child_RSS_bytes": 753860608,
+      "finished_UTC": "2026-09-15T07:04:29.884465+00:00"
+    },
+    {
+      "name": "h10_gpu_independent_replay",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.nvidia_followup_20260915.replay",
+        "results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+        "hybrid_adaptive",
+        "results/transfer_solver_20260915/adaptive/h10_correlated_guide/hybrid_adaptive/exact_local_stdlib",
+        "--rotated",
+        "results/transfer_solver_20260915/rotated_h10"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T07:43:49.205970+00:00",
+      "pid": 76817,
+      "exit_code": 0,
+      "wall_seconds": 241.7477211250225,
+      "child_user_seconds": 238.449382,
+      "child_system_seconds": 1.8438189999999999,
+      "peak_child_RSS_bytes": 787660800,
+      "finished_UTC": "2026-09-15T07:47:50.958794+00:00"
+    },
+    {
+      "name": "h10_library_independent_replay",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.nvidia_followup_20260915.strict_replay",
+        "results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+        "sparse_cudss_adaptive",
+        "results/transfer_solver_20260915/adaptive/h10_correlated_guide/sparse_cudss_adaptive/exact_local_stdlib",
+        "--rotated",
+        "results/transfer_solver_20260915/rotated_h10"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T07:59:13.828813+00:00",
+      "pid": 79600,
+      "exit_code": 0,
+      "wall_seconds": 239.63029337499756,
+      "child_user_seconds": 236.570905,
+      "child_system_seconds": 1.69622,
+      "peak_child_RSS_bytes": 790216704,
+      "finished_UTC": "2026-09-15T08:03:13.464402+00:00"
+    },
+    {
+      "name": "h10_rotated_construct",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.rotated_upper",
+        "construct"
+      ],
+      "timeout_seconds": 180,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:38:28.301812+00:00",
+      "pid": 63283,
+      "exit_code": 0,
+      "wall_seconds": 3.9251286670041736,
+      "child_user_seconds": 3.33017,
+      "child_system_seconds": 0.147757,
+      "peak_child_RSS_bytes": 130711552,
+      "finished_UTC": "2026-09-15T06:38:32.227964+00:00"
+    },
+    {
+      "name": "h10_rotated_lower_initialize",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.rotated_lower",
+        "initialize"
+      ],
+      "timeout_seconds": 30,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:44:11.598614+00:00",
+      "pid": 64830,
+      "exit_code": 0,
+      "wall_seconds": 0.13016124998102896,
+      "child_user_seconds": 0.079857,
+      "child_system_seconds": 0.017058,
+      "peak_child_RSS_bytes": 30130176,
+      "finished_UTC": "2026-09-15T06:44:11.730182+00:00"
+    },
+    {
+      "name": "h10_rotated_lower_nonsinglet",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper",
+        "nonsinglet"
+      ],
+      "timeout_seconds": 240,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:44:11.775238+00:00",
+      "pid": 64834,
+      "exit_code": 0,
+      "wall_seconds": 106.6286779580114,
+      "child_user_seconds": 103.847974,
+      "child_system_seconds": 1.05003,
+      "peak_child_RSS_bytes": 513867776,
+      "finished_UTC": "2026-09-15T06:45:58.407602+00:00"
+    },
+    {
+      "name": "h10_rotated_lower_prepare",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.adaptive_size",
+        "prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper"
+      ],
+      "timeout_seconds": 900,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:45:58.479921+00:00",
+      "pid": 65369,
+      "exit_code": 0,
+      "wall_seconds": 296.1189734999789,
+      "child_user_seconds": 292.329058,
+      "child_system_seconds": 1.826477,
+      "peak_child_RSS_bytes": 753565696,
+      "finished_UTC": "2026-09-15T06:50:54.608146+00:00"
+    },
+    {
+      "name": "h10_rotated_lower_replay",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper",
+        "replay"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:59:01.480084+00:00",
+      "pid": 68223,
+      "exit_code": 0,
+      "wall_seconds": 231.04438404200482,
+      "child_user_seconds": 227.181438,
+      "child_system_seconds": 1.455036,
+      "peak_child_RSS_bytes": 810516480,
+      "finished_UTC": "2026-09-15T07:02:52.532069+00:00"
+    },
+    {
+      "name": "h10_rotated_lower_stage1",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper",
+        "stage1",
+        "--seconds",
+        "300",
+        "--mu",
+        "2"
+      ],
+      "timeout_seconds": 400,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:50:54.663842+00:00",
+      "pid": 66341,
+      "exit_code": 0,
+      "wall_seconds": 303.29803141599405,
+      "child_user_seconds": 288.595183,
+      "child_system_seconds": 9.155894,
+      "peak_child_RSS_bytes": 1655832576,
+      "finished_UTC": "2026-09-15T06:55:57.993360+00:00"
+    },
+    {
+      "name": "h10_rotated_lower_stage2",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper",
+        "stage2",
+        "--seconds",
+        "180",
+        "--mu",
+        ".03",
+        "--restart",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper/stage1/checkpoint.npz"
+      ],
+      "timeout_seconds": 300,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:55:58.065485+00:00",
+      "pid": 67498,
+      "exit_code": 0,
+      "wall_seconds": 183.3575101250026,
+      "child_user_seconds": 173.890768,
+      "child_system_seconds": 5.123048,
+      "peak_child_RSS_bytes": 1798111232,
+      "finished_UTC": "2026-09-15T06:59:01.429201+00:00"
+    },
+    {
+      "name": "h10_rotated_state",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.rotated_upper",
+        "state"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:38:32.267236+00:00",
+      "pid": 63310,
+      "exit_code": 0,
+      "wall_seconds": 263.22151941698394,
+      "child_user_seconds": 257.529576,
+      "child_system_seconds": 3.417376,
+      "peak_child_RSS_bytes": 774160384,
+      "finished_UTC": "2026-09-15T06:42:55.496833+00:00"
+    },
+    {
+      "name": "h10_rotated_verify",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.rotated_upper",
+        "verify"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:42:55.538112+00:00",
+      "pid": 64570,
+      "exit_code": 0,
+      "wall_seconds": 28.68637054201099,
+      "child_user_seconds": 28.317733,
+      "child_system_seconds": 0.181618,
+      "peak_child_RSS_bytes": 126156800,
+      "finished_UTC": "2026-09-15T06:43:24.225858+00:00"
+    },
+    {
+      "name": "h10_size_fci",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.benchmark",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h10_size"
+      ],
+      "timeout_seconds": 180,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:08:51.633467+00:00",
+      "pid": 54054,
+      "exit_code": 0,
+      "wall_seconds": 0.8373548749950714,
+      "child_user_seconds": 0.7169449999999999,
+      "child_system_seconds": 0.08684599999999999,
+      "peak_child_RSS_bytes": 111886336,
+      "finished_UTC": "2026-09-15T06:08:52.471333+00:00"
+    },
+    {
+      "name": "h10_size_generate",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.generate",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h10_size"
+      ],
+      "timeout_seconds": 90,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:42:41.280397+00:00",
+      "pid": 47231,
+      "exit_code": 0,
+      "wall_seconds": 2.339279208012158,
+      "child_user_seconds": 1.777031,
+      "child_system_seconds": 0.15365299999999998,
+      "peak_child_RSS_bytes": 161480704,
+      "finished_UTC": "2026-09-15T05:42:43.620136+00:00"
+    },
+    {
+      "name": "h10_size_state",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h10_size",
+        "state"
+      ],
+      "timeout_seconds": 900,
+      "status": "timeout",
+      "started_UTC": "2026-09-15T05:42:43.662351+00:00",
+      "pid": 47251,
+      "exit_code": -15,
+      "wall_seconds": 900.0862124169944,
+      "child_user_seconds": 795.122054,
+      "child_system_seconds": 85.798661,
+      "peak_child_RSS_bytes": 1572503552,
+      "finished_UTC": "2026-09-15T05:57:43.802565+00:00"
+    },
+    {
+      "name": "h4_control_enumerated_construct",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.enumerated_baseline",
+        "construct",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control"
+      ],
+      "timeout_seconds": 180,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:08:56.915265+00:00",
+      "pid": 54126,
+      "exit_code": 0,
+      "wall_seconds": 0.18839908399968408,
+      "child_user_seconds": 0.09398,
+      "child_system_seconds": 0.027632999999999998,
+      "peak_child_RSS_bytes": 37814272,
+      "finished_UTC": "2026-09-15T06:08:57.104222+00:00"
+    },
+    {
+      "name": "h4_control_enumerated_verify",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.enumerated_baseline",
+        "verify",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control"
+      ],
+      "timeout_seconds": 180,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:08:57.145230+00:00",
+      "pid": 54129,
+      "exit_code": 0,
+      "wall_seconds": 0.08284129199455492,
+      "child_user_seconds": 0.055288,
+      "child_system_seconds": 0.013496999999999999,
+      "peak_child_RSS_bytes": 19382272,
+      "finished_UTC": "2026-09-15T06:08:57.228665+00:00"
+    },
+    {
+      "name": "h4_control_fci",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.benchmark",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:08:48.971766+00:00",
+      "pid": 54006,
+      "exit_code": 1,
+      "wall_seconds": 0.8997115409874823,
+      "child_user_seconds": 0.407466,
+      "child_system_seconds": 0.11935599999999999,
+      "peak_child_RSS_bytes": 89243648,
+      "finished_UTC": "2026-09-15T06:08:49.872459+00:00"
+    },
+    {
+      "name": "h4_control_fci_fixed",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.repair_comparisons",
+        "case",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:29:36.300386+00:00",
+      "pid": 60956,
+      "exit_code": 1,
+      "wall_seconds": 0.8437700830108952,
+      "child_user_seconds": 0.383807,
+      "child_system_seconds": 0.127917,
+      "peak_child_RSS_bytes": 88948736,
+      "finished_UTC": "2026-09-15T06:29:37.146427+00:00"
+    },
+    {
+      "name": "h4_control_generate",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.generate",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control"
+      ],
+      "timeout_seconds": 90,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:11:00.995303+00:00",
+      "pid": 32361,
+      "exit_code": 0,
+      "wall_seconds": 1.7085327090171631,
+      "child_user_seconds": 0.479713,
+      "child_system_seconds": 0.16947399999999999,
+      "peak_child_RSS_bytes": 95207424,
+      "finished_UTC": "2026-09-15T05:11:02.704295+00:00"
+    },
+    {
+      "name": "h4_control_magnetic_prepare",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.representation_control",
+        "prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h4_control_magnetic"
+      ],
+      "timeout_seconds": 900,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:09:06.610436+00:00",
+      "pid": 54220,
+      "exit_code": 0,
+      "wall_seconds": 4.2618298750021495,
+      "child_user_seconds": 3.376491,
+      "child_system_seconds": 0.24062999999999998,
+      "peak_child_RSS_bytes": 211877888,
+      "finished_UTC": "2026-09-15T06:09:10.872761+00:00"
+    },
+    {
+      "name": "h4_control_magnetic_replay",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h4_control_magnetic",
+        "replay"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:10:02.189099+00:00",
+      "pid": 54630,
+      "exit_code": 0,
+      "wall_seconds": 1.0437952500069514,
+      "child_user_seconds": 1.008028,
+      "child_system_seconds": 0.019903,
+      "peak_child_RSS_bytes": 35438592,
+      "finished_UTC": "2026-09-15T06:10:03.233439+00:00"
+    },
+    {
+      "name": "h4_control_magnetic_stage1",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h4_control_magnetic",
+        "stage1",
+        "--seconds",
+        "300",
+        "--mu",
+        "2"
+      ],
+      "timeout_seconds": 400,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:09:10.929174+00:00",
+      "pid": 54304,
+      "exit_code": 0,
+      "wall_seconds": 50.60954479200882,
+      "child_user_seconds": 49.423567,
+      "child_system_seconds": 0.39255399999999996,
+      "peak_child_RSS_bytes": 68878336,
+      "finished_UTC": "2026-09-15T06:10:01.540453+00:00"
+    },
+    {
+      "name": "h4_control_magnetic_stage2",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h4_control_magnetic",
+        "stage2",
+        "--seconds",
+        "180",
+        "--mu",
+        ".03",
+        "--restart",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h4_control_magnetic/stage1/checkpoint.npz"
+      ],
+      "timeout_seconds": 300,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:10:01.601355+00:00",
+      "pid": 54628,
+      "exit_code": 0,
+      "wall_seconds": 0.5478258749935776,
+      "child_user_seconds": 0.382762,
+      "child_system_seconds": 0.065053,
+      "peak_child_RSS_bytes": 67420160,
+      "finished_UTC": "2026-09-15T06:10:02.149810+00:00"
+    },
+    {
+      "name": "h4_control_nonsinglet",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+        "nonsinglet"
+      ],
+      "timeout_seconds": 240,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:11:12.156337+00:00",
+      "pid": 32436,
+      "exit_code": 0,
+      "wall_seconds": 2.408136541984277,
+      "child_user_seconds": 2.032401,
+      "child_system_seconds": 0.17571199999999998,
+      "peak_child_RSS_bytes": 222920704,
+      "finished_UTC": "2026-09-15T05:11:14.565305+00:00"
+    },
+    {
+      "name": "h4_control_prepare",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control"
+      ],
+      "timeout_seconds": 900,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:11:14.604404+00:00",
+      "pid": 32453,
+      "exit_code": 0,
+      "wall_seconds": 2.5598839170124847,
+      "child_user_seconds": 2.369087,
+      "child_system_seconds": 0.153611,
+      "peak_child_RSS_bytes": 201179136,
+      "finished_UTC": "2026-09-15T05:11:17.164803+00:00"
+    },
+    {
+      "name": "h4_control_replay",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+        "replay"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:11:28.026655+00:00",
+      "pid": 32527,
+      "exit_code": 0,
+      "wall_seconds": 0.7679540420067497,
+      "child_user_seconds": 0.726738,
+      "child_system_seconds": 0.01171,
+      "peak_child_RSS_bytes": 33259520,
+      "finished_UTC": "2026-09-15T05:11:28.795101+00:00"
+    },
+    {
+      "name": "h4_control_stage1",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+        "stage1",
+        "--seconds",
+        "300",
+        "--mu",
+        "2"
+      ],
+      "timeout_seconds": 400,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:11:17.205060+00:00",
+      "pid": 32484,
+      "exit_code": 0,
+      "wall_seconds": 10.392535791994305,
+      "child_user_seconds": 10.216342,
+      "child_system_seconds": 0.076581,
+      "peak_child_RSS_bytes": 66519040,
+      "finished_UTC": "2026-09-15T05:11:27.598072+00:00"
+    },
+    {
+      "name": "h4_control_stage2",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+        "stage2",
+        "--seconds",
+        "180",
+        "--mu",
+        ".03",
+        "--restart",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control/stage1/checkpoint.npz"
+      ],
+      "timeout_seconds": 300,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:11:27.640643+00:00",
+      "pid": 32525,
+      "exit_code": 0,
+      "wall_seconds": 0.34792558301705867,
+      "child_user_seconds": 0.277621,
+      "child_system_seconds": 0.043997,
+      "peak_child_RSS_bytes": 65323008,
+      "finished_UTC": "2026-09-15T05:11:27.989022+00:00"
+    },
+    {
+      "name": "h4_control_state",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+        "state"
+      ],
+      "timeout_seconds": 900,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:11:02.743145+00:00",
+      "pid": 32376,
+      "exit_code": 0,
+      "wall_seconds": 9.264613499981351,
+      "child_user_seconds": 7.673121,
+      "child_system_seconds": 0.721526,
+      "peak_child_RSS_bytes": 328581120,
+      "finished_UTC": "2026-09-15T05:11:12.008107+00:00"
+    },
+    {
+      "name": "h4_control_upper",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+        "upper"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:11:12.045361+00:00",
+      "pid": 32433,
+      "exit_code": 0,
+      "wall_seconds": 0.07587033297750168,
+      "child_user_seconds": 0.048546,
+      "child_system_seconds": 0.009136,
+      "peak_child_RSS_bytes": 18923520,
+      "finished_UTC": "2026-09-15T05:11:12.121689+00:00"
+    },
+    {
+      "name": "h4_unreduced_membership",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.family_membership",
+        "h4_control"
+      ],
+      "timeout_seconds": 30,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:14:45.033697+00:00",
+      "pid": 56119,
+      "exit_code": 0,
+      "wall_seconds": 0.2035956250037998,
+      "child_user_seconds": 0.11278099999999999,
+      "child_system_seconds": 0.027731,
+      "peak_child_RSS_bytes": 22036480,
+      "finished_UTC": "2026-09-15T06:14:45.238281+00:00"
+    },
+    {
+      "name": "h6_asymmetric_enumerated_construct",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.enumerated_baseline",
+        "construct",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric"
+      ],
+      "timeout_seconds": 180,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:08:57.271640+00:00",
+      "pid": 54132,
+      "exit_code": 0,
+      "wall_seconds": 2.0142114589980338,
+      "child_user_seconds": 1.934358,
+      "child_system_seconds": 0.039528,
+      "peak_child_RSS_bytes": 72171520,
+      "finished_UTC": "2026-09-15T06:08:59.286599+00:00"
+    },
+    {
+      "name": "h6_asymmetric_enumerated_verify",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.enumerated_baseline",
+        "verify",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric"
+      ],
+      "timeout_seconds": 180,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:08:59.322168+00:00",
+      "pid": 54168,
+      "exit_code": 0,
+      "wall_seconds": 2.807935250020819,
+      "child_user_seconds": 2.671634,
+      "child_system_seconds": 0.02349,
+      "peak_child_RSS_bytes": 46497792,
+      "finished_UTC": "2026-09-15T06:09:02.130599+00:00"
+    },
+    {
+      "name": "h6_asymmetric_fci",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.benchmark",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:08:50.483553+00:00",
+      "pid": 54039,
+      "exit_code": 1,
+      "wall_seconds": 0.5237621249980293,
+      "child_user_seconds": 0.41162499999999996,
+      "child_system_seconds": 0.070895,
+      "peak_child_RSS_bytes": 95764480,
+      "finished_UTC": "2026-09-15T06:08:51.007825+00:00"
+    },
+    {
+      "name": "h6_asymmetric_fci_fixed",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.repair_comparisons",
+        "case",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:29:37.724601+00:00",
+      "pid": 60966,
+      "exit_code": 1,
+      "wall_seconds": 0.516430332994787,
+      "child_user_seconds": 0.390188,
+      "child_system_seconds": 0.072568,
+      "peak_child_RSS_bytes": 95485952,
+      "finished_UTC": "2026-09-15T06:29:38.241488+00:00"
+    },
+    {
+      "name": "h6_asymmetric_generate",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.generate",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric"
+      ],
+      "timeout_seconds": 90,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:26:49.111379+00:00",
+      "pid": 42146,
+      "exit_code": 0,
+      "wall_seconds": 1.0202276250056457,
+      "child_user_seconds": 0.582484,
+      "child_system_seconds": 0.11868,
+      "peak_child_RSS_bytes": 104562688,
+      "finished_UTC": "2026-09-15T05:26:50.132078+00:00"
+    },
+    {
+      "name": "h6_asymmetric_nonsinglet",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric",
+        "nonsinglet"
+      ],
+      "timeout_seconds": 240,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:27:06.062279+00:00",
+      "pid": 42319,
+      "exit_code": 0,
+      "wall_seconds": 18.054876166017493,
+      "child_user_seconds": 17.352899,
+      "child_system_seconds": 0.28610399999999997,
+      "peak_child_RSS_bytes": 341573632,
+      "finished_UTC": "2026-09-15T05:27:24.117495+00:00"
+    },
+    {
+      "name": "h6_asymmetric_prepare",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric"
+      ],
+      "timeout_seconds": 900,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:27:24.179065+00:00",
+      "pid": 42441,
+      "exit_code": 0,
+      "wall_seconds": 46.53897641698131,
+      "child_user_seconds": 45.631213,
+      "child_system_seconds": 0.38069,
+      "peak_child_RSS_bytes": 307642368,
+      "finished_UTC": "2026-09-15T05:28:10.718058+00:00"
+    },
+    {
+      "name": "h6_asymmetric_replay",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric",
+        "replay"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:33:24.879395+00:00",
+      "pid": 44290,
+      "exit_code": 0,
+      "wall_seconds": 15.310439624998253,
+      "child_user_seconds": 13.835413,
+      "child_system_seconds": 0.191993,
+      "peak_child_RSS_bytes": 155402240,
+      "finished_UTC": "2026-09-15T05:33:40.190254+00:00"
+    },
+    {
+      "name": "h6_asymmetric_stage1",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric",
+        "stage1",
+        "--seconds",
+        "300",
+        "--mu",
+        "2"
+      ],
+      "timeout_seconds": 400,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:28:10.792776+00:00",
+      "pid": 42683,
+      "exit_code": 0,
+      "wall_seconds": 300.947638749989,
+      "child_user_seconds": 281.034192,
+      "child_system_seconds": 8.668125,
+      "peak_child_RSS_bytes": 256573440,
+      "finished_UTC": "2026-09-15T05:33:11.737855+00:00"
+    },
+    {
+      "name": "h6_asymmetric_stage2",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric",
+        "stage2",
+        "--seconds",
+        "180",
+        "--mu",
+        ".03",
+        "--restart",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric/stage1/checkpoint.npz"
+      ],
+      "timeout_seconds": 300,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:33:11.818068+00:00",
+      "pid": 44204,
+      "exit_code": 0,
+      "wall_seconds": 12.981511958001647,
+      "child_user_seconds": 11.277592,
+      "child_system_seconds": 0.406755,
+      "peak_child_RSS_bytes": 242958336,
+      "finished_UTC": "2026-09-15T05:33:24.800166+00:00"
+    },
+    {
+      "name": "h6_asymmetric_state",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric",
+        "state"
+      ],
+      "timeout_seconds": 900,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:26:50.166568+00:00",
+      "pid": 42158,
+      "exit_code": 0,
+      "wall_seconds": 14.863127666991204,
+      "child_user_seconds": 13.063106,
+      "child_system_seconds": 1.068734,
+      "peak_child_RSS_bytes": 388579328,
+      "finished_UTC": "2026-09-15T05:27:05.030032+00:00"
+    },
+    {
+      "name": "h6_asymmetric_upper",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric",
+        "upper"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:27:05.071860+00:00",
+      "pid": 42285,
+      "exit_code": 0,
+      "wall_seconds": 0.9527189169893973,
+      "child_user_seconds": 0.8998459999999999,
+      "child_system_seconds": 0.015501,
+      "peak_child_RSS_bytes": 27590656,
+      "finished_UTC": "2026-09-15T05:27:06.025054+00:00"
+    },
+    {
+      "name": "h8_cold_fast_projector",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.fast_projector",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold/fast_projector.json"
+      ],
+      "timeout_seconds": 900,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:57:56.514853+00:00",
+      "pid": 51089,
+      "exit_code": 0,
+      "wall_seconds": 49.26384920900455,
+      "child_user_seconds": 48.386182,
+      "child_system_seconds": 0.37457799999999997,
+      "peak_child_RSS_bytes": 230064128,
+      "finished_UTC": "2026-09-15T05:58:45.779512+00:00"
+    },
+    {
+      "name": "h8_cold_fci",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.benchmark",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:08:49.907528+00:00",
+      "pid": 54029,
+      "exit_code": 1,
+      "wall_seconds": 0.5400187080085743,
+      "child_user_seconds": 0.43295999999999996,
+      "child_system_seconds": 0.076746,
+      "peak_child_RSS_bytes": 97173504,
+      "finished_UTC": "2026-09-15T06:08:50.448000+00:00"
+    },
+    {
+      "name": "h8_cold_fci_fixed",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.repair_comparisons",
+        "case",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:29:37.186893+00:00",
+      "pid": 60961,
+      "exit_code": 1,
+      "wall_seconds": 0.5040150830172934,
+      "child_user_seconds": 0.420091,
+      "child_system_seconds": 0.07449599999999999,
+      "peak_child_RSS_bytes": 96681984,
+      "finished_UTC": "2026-09-15T06:29:37.691455+00:00"
+    },
+    {
+      "name": "h8_cold_generate",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.generate",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold"
+      ],
+      "timeout_seconds": 90,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:12:30.207894+00:00",
+      "pid": 32735,
+      "exit_code": 0,
+      "wall_seconds": 1.3224210839834996,
+      "child_user_seconds": 0.878512,
+      "child_system_seconds": 0.122251,
+      "peak_child_RSS_bytes": 124256256,
+      "finished_UTC": "2026-09-15T05:12:31.530824+00:00"
+    },
+    {
+      "name": "h8_cold_magnetic_prepare",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.representation_control",
+        "prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_cold_magnetic"
+      ],
+      "timeout_seconds": 900,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:10:03.344877+00:00",
+      "pid": 54642,
+      "exit_code": 0,
+      "wall_seconds": 232.70381054197787,
+      "child_user_seconds": 227.233562,
+      "child_system_seconds": 2.111863,
+      "peak_child_RSS_bytes": 415956992,
+      "finished_UTC": "2026-09-15T06:13:56.051149+00:00"
+    },
+    {
+      "name": "h8_cold_magnetic_replay",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_cold_magnetic",
+        "replay"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:22:01.353989+00:00",
+      "pid": 59005,
+      "exit_code": 0,
+      "wall_seconds": 77.10757004198967,
+      "child_user_seconds": 75.903321,
+      "child_system_seconds": 0.556474,
+      "peak_child_RSS_bytes": 292831232,
+      "finished_UTC": "2026-09-15T06:23:18.537692+00:00"
+    },
+    {
+      "name": "h8_cold_magnetic_stage1",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_cold_magnetic",
+        "stage1",
+        "--seconds",
+        "300",
+        "--mu",
+        "2"
+      ],
+      "timeout_seconds": 400,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:13:56.105857+00:00",
+      "pid": 55782,
+      "exit_code": 0,
+      "wall_seconds": 302.63501070800703,
+      "child_user_seconds": 287.061901,
+      "child_system_seconds": 10.051272,
+      "peak_child_RSS_bytes": 852197376,
+      "finished_UTC": "2026-09-15T06:18:58.743617+00:00"
+    },
+    {
+      "name": "h8_cold_magnetic_stage2",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_cold_magnetic",
+        "stage2",
+        "--seconds",
+        "180",
+        "--mu",
+        ".03",
+        "--restart",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_cold_magnetic/stage1/checkpoint.npz"
+      ],
+      "timeout_seconds": 300,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:18:58.809668+00:00",
+      "pid": 57794,
+      "exit_code": 0,
+      "wall_seconds": 182.46888966698316,
+      "child_user_seconds": 174.103887,
+      "child_system_seconds": 4.993404,
+      "peak_child_RSS_bytes": 809172992,
+      "finished_UTC": "2026-09-15T06:22:01.280747+00:00"
+    },
+    {
+      "name": "h8_cold_nonsinglet",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+        "nonsinglet"
+      ],
+      "timeout_seconds": 240,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:17:04.784835+00:00",
+      "pid": 38869,
+      "exit_code": 0,
+      "wall_seconds": 35.95728245799546,
+      "child_user_seconds": 34.181524,
+      "child_system_seconds": 0.470873,
+      "peak_child_RSS_bytes": 373866496,
+      "finished_UTC": "2026-09-15T05:17:40.742036+00:00"
+    },
+    {
+      "name": "h8_cold_prepare",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold"
+      ],
+      "timeout_seconds": 900,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:17:40.794148+00:00",
+      "pid": 39655,
+      "exit_code": 0,
+      "wall_seconds": 165.06887858302798,
+      "child_user_seconds": 162.806812,
+      "child_system_seconds": 1.107395,
+      "peak_child_RSS_bytes": 437846016,
+      "finished_UTC": "2026-09-15T05:20:25.860845+00:00"
+    },
+    {
+      "name": "h8_cold_replay",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+        "replay"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:25:57.626479+00:00",
+      "pid": 41962,
+      "exit_code": 0,
+      "wall_seconds": 51.385367000009865,
+      "child_user_seconds": 50.677746,
+      "child_system_seconds": 0.35815199999999997,
+      "peak_child_RSS_bytes": 294682624,
+      "finished_UTC": "2026-09-15T05:26:49.011838+00:00"
+    },
+    {
+      "name": "h8_cold_stage1",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+        "stage1",
+        "--seconds",
+        "300",
+        "--mu",
+        "2"
+      ],
+      "timeout_seconds": 400,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:20:25.933384+00:00",
+      "pid": 40206,
+      "exit_code": 0,
+      "wall_seconds": 301.29772429101286,
+      "child_user_seconds": 290.250136,
+      "child_system_seconds": 9.069857,
+      "peak_child_RSS_bytes": 674349056,
+      "finished_UTC": "2026-09-15T05:25:27.247704+00:00"
+    },
+    {
+      "name": "h8_cold_stage2",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+        "stage2",
+        "--seconds",
+        "180",
+        "--mu",
+        ".03",
+        "--restart",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold/stage1/checkpoint.npz"
+      ],
+      "timeout_seconds": 300,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:25:27.311141+00:00",
+      "pid": 41781,
+      "exit_code": 0,
+      "wall_seconds": 30.261550374998478,
+      "child_user_seconds": 29.154289,
+      "child_system_seconds": 0.768284,
+      "peak_child_RSS_bytes": 689274880,
+      "finished_UTC": "2026-09-15T05:25:57.573049+00:00"
+    },
+    {
+      "name": "h8_cold_state",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+        "state"
+      ],
+      "timeout_seconds": 900,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:12:31.567722+00:00",
+      "pid": 32747,
+      "exit_code": 0,
+      "wall_seconds": 234.68807641699095,
+      "child_user_seconds": 200.818842,
+      "child_system_seconds": 28.464204,
+      "peak_child_RSS_bytes": 908296192,
+      "finished_UTC": "2026-09-15T05:16:26.252535+00:00"
+    },
+    {
+      "name": "h8_cold_upper",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+        "upper"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:16:26.298401+00:00",
+      "pid": 34768,
+      "exit_code": 0,
+      "wall_seconds": 38.43388941598823,
+      "child_user_seconds": 33.667775,
+      "child_system_seconds": 0.25762799999999997,
+      "peak_child_RSS_bytes": 39337984,
+      "finished_UTC": "2026-09-15T05:17:04.732463+00:00"
+    },
+    {
+      "name": "h8_original_model_bridge",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.gauge_bridge",
+        "results/certificate_scaling/active_space_ladder/h8/fixture.json",
+        "results/transfer_solver_20260915/cases/h8_cold/fixture.json",
+        "results/transfer_solver_20260915/h8_original_model_bridge.json",
+        "--interval",
+        "results/transfer_solver_20260915/cases/h8_cold/interval.json"
+      ],
+      "timeout_seconds": 30,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:31:43.249569+00:00",
+      "pid": 43754,
+      "exit_code": 0,
+      "wall_seconds": 0.1268818749813363,
+      "child_user_seconds": 0.082594,
+      "child_system_seconds": 0.012761999999999999,
+      "peak_child_RSS_bytes": 25935872,
+      "finished_UTC": "2026-09-15T05:31:43.377175+00:00"
+    },
+    {
+      "name": "h8_restricted64_prepare",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.restricted_control",
+        "prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_restricted64"
+      ],
+      "timeout_seconds": 900,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:23:18.655577+00:00",
+      "pid": 59344,
+      "exit_code": 0,
+      "wall_seconds": 203.20809958400787,
+      "child_user_seconds": 199.192761,
+      "child_system_seconds": 1.682773,
+      "peak_child_RSS_bytes": 388415488,
+      "finished_UTC": "2026-09-15T06:26:41.870771+00:00"
+    },
+    {
+      "name": "h8_restricted64_recover_export",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.recover_restricted",
+        "export"
+      ],
+      "timeout_seconds": 90,
+      "status": "passed",
+      "started_UTC": "2026-09-15T07:05:11.321881+00:00",
+      "pid": 69672,
+      "exit_code": 0,
+      "wall_seconds": 10.296485792001477,
+      "child_user_seconds": 9.744595,
+      "child_system_seconds": 0.195101,
+      "peak_child_RSS_bytes": 694910976,
+      "finished_UTC": "2026-09-15T07:05:21.619189+00:00"
+    },
+    {
+      "name": "h8_restricted64_recover_verify",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.recover_restricted",
+        "verify"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T07:05:21.662753+00:00",
+      "pid": 69722,
+      "exit_code": 0,
+      "wall_seconds": 30.515543625020655,
+      "child_user_seconds": 30.104213,
+      "child_system_seconds": 0.110621,
+      "peak_child_RSS_bytes": 256360448,
+      "finished_UTC": "2026-09-15T07:05:52.179757+00:00"
+    },
+    {
+      "name": "h8_restricted64_stage1",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_restricted64",
+        "stage1",
+        "--seconds",
+        "300",
+        "--mu",
+        "2"
+      ],
+      "timeout_seconds": 400,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:26:41.936348+00:00",
+      "pid": 60138,
+      "exit_code": 1,
+      "wall_seconds": 140.49455595898326,
+      "child_user_seconds": 135.748008,
+      "child_system_seconds": 2.447758,
+      "peak_child_RSS_bytes": 622690304,
+      "finished_UTC": "2026-09-15T06:29:02.435688+00:00"
+    },
+    {
+      "name": "h8_unreduced_membership",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.family_membership",
+        "h8_cold"
+      ],
+      "timeout_seconds": 30,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:15:55.337603+00:00",
+      "pid": 56520,
+      "exit_code": 0,
+      "wall_seconds": 0.9273500840063207,
+      "child_user_seconds": 0.580957,
+      "child_system_seconds": 0.060107,
+      "peak_child_RSS_bytes": 104595456,
+      "finished_UTC": "2026-09-15T06:15:56.267305+00:00"
+    },
+    {
+      "name": "independent_h4_oracle",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.independent_oracle",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/independent_h4_oracle.json"
+      ],
+      "timeout_seconds": 180,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:08:53.363052+00:00",
+      "pid": 54095,
+      "exit_code": 0,
+      "wall_seconds": 0.7305344579799566,
+      "child_user_seconds": 0.690191,
+      "child_system_seconds": 0.008949,
+      "peak_child_RSS_bytes": 14352384,
+      "finished_UTC": "2026-09-15T06:08:54.094693+00:00"
+    },
+    {
+      "name": "rotation_exact_tests",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "unittest",
+        "research.transfer_followup_20260915.test_rotation"
+      ],
+      "timeout_seconds": 30,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:28:41.910983+00:00",
+      "pid": 60710,
+      "exit_code": 0,
+      "wall_seconds": 0.13037358300061896,
+      "child_user_seconds": 0.057807,
+      "child_system_seconds": 0.020217,
+      "peak_child_RSS_bytes": 21626880,
+      "finished_UTC": "2026-09-15T06:28:42.042263+00:00"
+    },
+    {
+      "name": "water_asymmetric_enumerated_construct",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.enumerated_baseline",
+        "construct",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric"
+      ],
+      "timeout_seconds": 180,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:09:02.168404+00:00",
+      "pid": 54192,
+      "exit_code": 0,
+      "wall_seconds": 1.7493947080220096,
+      "child_user_seconds": 1.686795,
+      "child_system_seconds": 0.030251999999999998,
+      "peak_child_RSS_bytes": 72220672,
+      "finished_UTC": "2026-09-15T06:09:03.918348+00:00"
+    },
+    {
+      "name": "water_asymmetric_enumerated_verify",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.enumerated_baseline",
+        "verify",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric"
+      ],
+      "timeout_seconds": 180,
+      "status": "passed",
+      "started_UTC": "2026-09-15T06:09:03.954246+00:00",
+      "pid": 54201,
+      "exit_code": 0,
+      "wall_seconds": 2.5821984999929555,
+      "child_user_seconds": 2.49706,
+      "child_system_seconds": 0.024411,
+      "peak_child_RSS_bytes": 43286528,
+      "finished_UTC": "2026-09-15T06:09:06.536967+00:00"
+    },
+    {
+      "name": "water_asymmetric_fci",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.benchmark",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:08:51.045559+00:00",
+      "pid": 54046,
+      "exit_code": 1,
+      "wall_seconds": 0.5480942499998491,
+      "child_user_seconds": 0.41213,
+      "child_system_seconds": 0.07016499999999999,
+      "peak_child_RSS_bytes": 96616448,
+      "finished_UTC": "2026-09-15T06:08:51.594160+00:00"
+    },
+    {
+      "name": "water_asymmetric_fci_fixed",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.repair_comparisons",
+        "case",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:29:38.279794+00:00",
+      "pid": 60969,
+      "exit_code": 1,
+      "wall_seconds": 0.515948791988194,
+      "child_user_seconds": 0.412142,
+      "child_system_seconds": 0.07657499999999999,
+      "peak_child_RSS_bytes": 96157696,
+      "finished_UTC": "2026-09-15T06:29:38.796297+00:00"
+    },
+    {
+      "name": "water_asymmetric_generate",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.generate",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric"
+      ],
+      "timeout_seconds": 90,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:33:40.294221+00:00",
+      "pid": 44387,
+      "exit_code": 0,
+      "wall_seconds": 1.1612292919890024,
+      "child_user_seconds": 0.704239,
+      "child_system_seconds": 0.12661899999999998,
+      "peak_child_RSS_bytes": 112099328,
+      "finished_UTC": "2026-09-15T05:33:41.455886+00:00"
+    },
+    {
+      "name": "water_asymmetric_nonsinglet",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric",
+        "nonsinglet"
+      ],
+      "timeout_seconds": 240,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:34:06.137625+00:00",
+      "pid": 44579,
+      "exit_code": 0,
+      "wall_seconds": 105.59746458398877,
+      "child_user_seconds": 99.059139,
+      "child_system_seconds": 1.313211,
+      "peak_child_RSS_bytes": 343867392,
+      "finished_UTC": "2026-09-15T05:35:51.734692+00:00"
+    },
+    {
+      "name": "water_asymmetric_prepare",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric"
+      ],
+      "timeout_seconds": 900,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:35:51.826400+00:00",
+      "pid": 45145,
+      "exit_code": 0,
+      "wall_seconds": 79.34854208401521,
+      "child_user_seconds": 73.856271,
+      "child_system_seconds": 1.135448,
+      "peak_child_RSS_bytes": 297451520,
+      "finished_UTC": "2026-09-15T05:37:11.175123+00:00"
+    },
+    {
+      "name": "water_asymmetric_replay",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric",
+        "replay"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:42:16.810536+00:00",
+      "pid": 47119,
+      "exit_code": 0,
+      "wall_seconds": 24.36975604199688,
+      "child_user_seconds": 23.477066,
+      "child_system_seconds": 0.179252,
+      "peak_child_RSS_bytes": 189087744,
+      "finished_UTC": "2026-09-15T05:42:41.180585+00:00"
+    },
+    {
+      "name": "water_asymmetric_stage1",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric",
+        "stage1",
+        "--seconds",
+        "300",
+        "--mu",
+        "2"
+      ],
+      "timeout_seconds": 400,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:37:11.259402+00:00",
+      "pid": 45568,
+      "exit_code": 0,
+      "wall_seconds": 301.2194037500012,
+      "child_user_seconds": 281.443162,
+      "child_system_seconds": 9.078418,
+      "peak_child_RSS_bytes": 320159744,
+      "finished_UTC": "2026-09-15T05:42:12.476646+00:00"
+    },
+    {
+      "name": "water_asymmetric_stage2",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric",
+        "stage2",
+        "--seconds",
+        "180",
+        "--mu",
+        ".03",
+        "--restart",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric/stage1/checkpoint.npz"
+      ],
+      "timeout_seconds": 300,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:42:12.545269+00:00",
+      "pid": 47069,
+      "exit_code": 0,
+      "wall_seconds": 4.225101750023896,
+      "child_user_seconds": 3.6548789999999998,
+      "child_system_seconds": 0.152494,
+      "peak_child_RSS_bytes": 344096768,
+      "finished_UTC": "2026-09-15T05:42:16.771058+00:00"
+    },
+    {
+      "name": "water_asymmetric_state",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric",
+        "state"
+      ],
+      "timeout_seconds": 900,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:33:41.490722+00:00",
+      "pid": 44397,
+      "exit_code": 0,
+      "wall_seconds": 23.51703049999196,
+      "child_user_seconds": 21.75047,
+      "child_system_seconds": 1.117256,
+      "peak_child_RSS_bytes": 474529792,
+      "finished_UTC": "2026-09-15T05:34:05.008070+00:00"
+    },
+    {
+      "name": "water_asymmetric_upper",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric",
+        "upper"
+      ],
+      "timeout_seconds": 600,
+      "status": "passed",
+      "started_UTC": "2026-09-15T05:34:05.050647+00:00",
+      "pid": 44569,
+      "exit_code": 0,
+      "wall_seconds": 1.0474265409866348,
+      "child_user_seconds": 0.994595,
+      "child_system_seconds": 0.014496,
+      "peak_child_RSS_bytes": 29147136,
+      "finished_UTC": "2026-09-15T05:34:06.098451+00:00"
+    }
+  ],
+  "count": 102,
+  "sum_process_wall_seconds": 6875.312364087964,
+  "sum_process_CPU_seconds": 6472.749839,
+  "peak_single_process_RSS_bytes": 1798111232,
+  "failed_attempts": [
+    {
+      "name": "algebra_initial",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "research.transfer_solver_20260915.test_algebra"
+      ],
+      "timeout_seconds": 90,
+      "status": "failed",
+      "started_UTC": "2026-09-15T05:04:20.237044+00:00",
+      "pid": 31167,
+      "exit_code": 1,
+      "wall_seconds": 2.7338347079930827,
+      "child_user_seconds": 1.703189,
+      "child_system_seconds": 0.195569,
+      "peak_child_RSS_bytes": 126468096,
+      "finished_UTC": "2026-09-15T05:04:22.971673+00:00"
+    },
+    {
+      "name": "h10_bond64_state",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.adaptive_size",
+        "state",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64"
+      ],
+      "timeout_seconds": 600,
+      "status": "timeout",
+      "started_UTC": "2026-09-15T05:58:48.863360+00:00",
+      "pid": 51346,
+      "exit_code": -15,
+      "wall_seconds": 600.0464905840054,
+      "child_user_seconds": 553.697947,
+      "child_system_seconds": 40.203311,
+      "peak_child_RSS_bytes": 1082458112,
+      "finished_UTC": "2026-09-15T06:08:48.914564+00:00"
+    },
+    {
+      "name": "h10_size_state",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h10_size",
+        "state"
+      ],
+      "timeout_seconds": 900,
+      "status": "timeout",
+      "started_UTC": "2026-09-15T05:42:43.662351+00:00",
+      "pid": 47251,
+      "exit_code": -15,
+      "wall_seconds": 900.0862124169944,
+      "child_user_seconds": 795.122054,
+      "child_system_seconds": 85.798661,
+      "peak_child_RSS_bytes": 1572503552,
+      "finished_UTC": "2026-09-15T05:57:43.802565+00:00"
+    },
+    {
+      "name": "h4_control_fci",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.benchmark",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:08:48.971766+00:00",
+      "pid": 54006,
+      "exit_code": 1,
+      "wall_seconds": 0.8997115409874823,
+      "child_user_seconds": 0.407466,
+      "child_system_seconds": 0.11935599999999999,
+      "peak_child_RSS_bytes": 89243648,
+      "finished_UTC": "2026-09-15T06:08:49.872459+00:00"
+    },
+    {
+      "name": "h4_control_fci_fixed",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.repair_comparisons",
+        "case",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:29:36.300386+00:00",
+      "pid": 60956,
+      "exit_code": 1,
+      "wall_seconds": 0.8437700830108952,
+      "child_user_seconds": 0.383807,
+      "child_system_seconds": 0.127917,
+      "peak_child_RSS_bytes": 88948736,
+      "finished_UTC": "2026-09-15T06:29:37.146427+00:00"
+    },
+    {
+      "name": "h6_asymmetric_fci",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.benchmark",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:08:50.483553+00:00",
+      "pid": 54039,
+      "exit_code": 1,
+      "wall_seconds": 0.5237621249980293,
+      "child_user_seconds": 0.41162499999999996,
+      "child_system_seconds": 0.070895,
+      "peak_child_RSS_bytes": 95764480,
+      "finished_UTC": "2026-09-15T06:08:51.007825+00:00"
+    },
+    {
+      "name": "h6_asymmetric_fci_fixed",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.repair_comparisons",
+        "case",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:29:37.724601+00:00",
+      "pid": 60966,
+      "exit_code": 1,
+      "wall_seconds": 0.516430332994787,
+      "child_user_seconds": 0.390188,
+      "child_system_seconds": 0.072568,
+      "peak_child_RSS_bytes": 95485952,
+      "finished_UTC": "2026-09-15T06:29:38.241488+00:00"
+    },
+    {
+      "name": "h8_cold_fci",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.benchmark",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:08:49.907528+00:00",
+      "pid": 54029,
+      "exit_code": 1,
+      "wall_seconds": 0.5400187080085743,
+      "child_user_seconds": 0.43295999999999996,
+      "child_system_seconds": 0.076746,
+      "peak_child_RSS_bytes": 97173504,
+      "finished_UTC": "2026-09-15T06:08:50.448000+00:00"
+    },
+    {
+      "name": "h8_cold_fci_fixed",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.repair_comparisons",
+        "case",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:29:37.186893+00:00",
+      "pid": 60961,
+      "exit_code": 1,
+      "wall_seconds": 0.5040150830172934,
+      "child_user_seconds": 0.420091,
+      "child_system_seconds": 0.07449599999999999,
+      "peak_child_RSS_bytes": 96681984,
+      "finished_UTC": "2026-09-15T06:29:37.691455+00:00"
+    },
+    {
+      "name": "h8_restricted64_stage1",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h8_restricted64",
+        "stage1",
+        "--seconds",
+        "300",
+        "--mu",
+        "2"
+      ],
+      "timeout_seconds": 400,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:26:41.936348+00:00",
+      "pid": 60138,
+      "exit_code": 1,
+      "wall_seconds": 140.49455595898326,
+      "child_user_seconds": 135.748008,
+      "child_system_seconds": 2.447758,
+      "peak_child_RSS_bytes": 622690304,
+      "finished_UTC": "2026-09-15T06:29:02.435688+00:00"
+    },
+    {
+      "name": "water_asymmetric_fci",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.benchmark",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:08:51.045559+00:00",
+      "pid": 54046,
+      "exit_code": 1,
+      "wall_seconds": 0.5480942499998491,
+      "child_user_seconds": 0.41213,
+      "child_system_seconds": 0.07016499999999999,
+      "peak_child_RSS_bytes": 96616448,
+      "finished_UTC": "2026-09-15T06:08:51.594160+00:00"
+    },
+    {
+      "name": "water_asymmetric_fci_fixed",
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.repair_comparisons",
+        "case",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric"
+      ],
+      "timeout_seconds": 180,
+      "status": "failed",
+      "started_UTC": "2026-09-15T06:29:38.279794+00:00",
+      "pid": 60969,
+      "exit_code": 1,
+      "wall_seconds": 0.515948791988194,
+      "child_user_seconds": 0.412142,
+      "child_system_seconds": 0.07657499999999999,
+      "peak_child_RSS_bytes": 96157696,
+      "finished_UTC": "2026-09-15T06:29:38.796297+00:00"
+    }
+  ],
+  "cases": [
+    {
+      "case": "h4_control",
+      "specification": {
+        "geometry": [
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              1.4
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              2.8
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              4.199999999999999
+            ]
+          ]
+        ],
+        "basis": "sto-3g",
+        "role": "development control"
+      },
+      "execution": {
+        "status": "completed",
+        "last_step": "replay",
+        "elapsed_seconds": 27.839559624990216,
+        "from_new_integrals": true,
+        "historical_artifacts_loaded": false,
+        "development_and_failed_other_case_costs_are_separate": true
+      },
+      "interval": {
+        "lower_Ha": "-11001004502135672923/3000000000000000000",
+        "upper_Ha": "-28648437185059001569651346770617483322808408400624284789720348553076873413947812907592761959934817896131373189728550783/7812500007932562714846797228068846359965899772841003815005567215576059532456770451447165035837817715429681000000000000",
+        "width_Ha": "36205024098141486652204818130080626348796526289732420749436221171763543683259562972512872236801378672459631736673227563/23437500023797688144540391684206539079897699318523011445016701646728178597370311354341495107513453146289043000000000000000000",
+        "width_mHa": 0.0015447476932855494,
+        "target_met": true,
+        "valid_on": "Entire fixed-N sector",
+        "removed_rows": 26,
+        "removed_square_norm_bound_Ha": "1397/500000000000000000",
+        "lower_replay_seconds": 0.6851868329977151,
+        "accepting_numerical_imports": []
+      },
+      "forecast": {
+        "rows": 435,
+        "full_word_pairs": 19248,
+        "retained_Gram_entries": 6368,
+        "largest_Gram_block": 34,
+        "number_ideal_columns": 111,
+        "stats": {
+          "spatial_parity_masks": [
+            51,
+            204
+          ],
+          "mixed_linear_words_retained": true,
+          "operator_dictionary_dimensions": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            8,
+            8,
+            2,
+            4,
+            2,
+            4,
+            8,
+            8,
+            2,
+            4,
+            8,
+            8,
+            16,
+            16,
+            8,
+            8,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            12,
+            12,
+            46,
+            46,
+            46,
+            46,
+            12,
+            12,
+            12,
+            12,
+            46,
+            46,
+            46,
+            46,
+            12,
+            12
+          ]
+        }
+      },
+      "fci_reference": {
+        "method": "PySCF direct_spin1 FCI",
+        "numerical_electronic_energy_Ha": -3.666999955963389,
+        "converged": true,
+        "convergence_tolerance_Ha": 1e-10,
+        "spin_squared": -8.881784197001252e-16,
+        "spin_multiplicity": 0.9999999999999982,
+        "numerical_solve_seconds": 0.0031828749924898148,
+        "total_seconds": 0.00552816700655967,
+        "determinant_coefficients": 36,
+        "expected_Ms0_dimension": 36,
+        "source": "Newly generated spatial integrals; numerical reference for the pre-rounding model",
+        "coefficient_rounding_l1_Ha": "7187045401711867/140737488355328000000000000",
+        "rigorous_two_sided_certificate": false,
+        "never_used_in_state_or_certificate_discovery": true,
+        "accuracy_matched_runtime_claim": false,
+        "timing_scope": "Fixed tight numerical convergence, reported separately from rigorous bounds",
+        "numerical_reference_inside_certificate_with_rounding_and_1e_minus_7_Ha_slack": true,
+        "upper_minus_reference_mHa": -8.08686451136964e-10,
+        "reference_minus_lower_mHa": 0.0015447485020025908,
+        "certified_width_mHa": 0.0015447476932855494,
+        "singlet_remainder_mHa": 0.0014337448909743332,
+        "nonsinglet_lower_Ha": -3.575275634766921,
+        "singlet_lower_Ha": -3.667001500705891
+      },
+      "peak_RSS_bytes": 328581120,
+      "stage_process_wall_seconds": 27.52545241799089,
+      "stages": [
+        {
+          "name": "h4_control_generate",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.generate",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control"
+          ],
+          "timeout_seconds": 90,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:11:00.995303+00:00",
+          "pid": 32361,
+          "exit_code": 0,
+          "wall_seconds": 1.7085327090171631,
+          "child_user_seconds": 0.479713,
+          "child_system_seconds": 0.16947399999999999,
+          "peak_child_RSS_bytes": 95207424,
+          "finished_UTC": "2026-09-15T05:11:02.704295+00:00"
+        },
+        {
+          "name": "h4_control_state",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+            "state"
+          ],
+          "timeout_seconds": 900,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:11:02.743145+00:00",
+          "pid": 32376,
+          "exit_code": 0,
+          "wall_seconds": 9.264613499981351,
+          "child_user_seconds": 7.673121,
+          "child_system_seconds": 0.721526,
+          "peak_child_RSS_bytes": 328581120,
+          "finished_UTC": "2026-09-15T05:11:12.008107+00:00"
+        },
+        {
+          "name": "h4_control_upper",
+          "command": [
+            "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+            "-B",
+            "-S",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+            "upper"
+          ],
+          "timeout_seconds": 600,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:11:12.045361+00:00",
+          "pid": 32433,
+          "exit_code": 0,
+          "wall_seconds": 0.07587033297750168,
+          "child_user_seconds": 0.048546,
+          "child_system_seconds": 0.009136,
+          "peak_child_RSS_bytes": 18923520,
+          "finished_UTC": "2026-09-15T05:11:12.121689+00:00"
+        },
+        {
+          "name": "h4_control_nonsinglet",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+            "nonsinglet"
+          ],
+          "timeout_seconds": 240,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:11:12.156337+00:00",
+          "pid": 32436,
+          "exit_code": 0,
+          "wall_seconds": 2.408136541984277,
+          "child_user_seconds": 2.032401,
+          "child_system_seconds": 0.17571199999999998,
+          "peak_child_RSS_bytes": 222920704,
+          "finished_UTC": "2026-09-15T05:11:14.565305+00:00"
+        },
+        {
+          "name": "h4_control_prepare",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.prepare",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control"
+          ],
+          "timeout_seconds": 900,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:11:14.604404+00:00",
+          "pid": 32453,
+          "exit_code": 0,
+          "wall_seconds": 2.5598839170124847,
+          "child_user_seconds": 2.369087,
+          "child_system_seconds": 0.153611,
+          "peak_child_RSS_bytes": 201179136,
+          "finished_UTC": "2026-09-15T05:11:17.164803+00:00"
+        },
+        {
+          "name": "h4_control_stage1",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.solve",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+            "stage1",
+            "--seconds",
+            "300",
+            "--mu",
+            "2"
+          ],
+          "timeout_seconds": 400,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:11:17.205060+00:00",
+          "pid": 32484,
+          "exit_code": 0,
+          "wall_seconds": 10.392535791994305,
+          "child_user_seconds": 10.216342,
+          "child_system_seconds": 0.076581,
+          "peak_child_RSS_bytes": 66519040,
+          "finished_UTC": "2026-09-15T05:11:27.598072+00:00"
+        },
+        {
+          "name": "h4_control_stage2",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.solve",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+            "stage2",
+            "--seconds",
+            "180",
+            "--mu",
+            ".03",
+            "--restart",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control/stage1/checkpoint.npz"
+          ],
+          "timeout_seconds": 300,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:11:27.640643+00:00",
+          "pid": 32525,
+          "exit_code": 0,
+          "wall_seconds": 0.34792558301705867,
+          "child_user_seconds": 0.277621,
+          "child_system_seconds": 0.043997,
+          "peak_child_RSS_bytes": 65323008,
+          "finished_UTC": "2026-09-15T05:11:27.989022+00:00"
+        },
+        {
+          "name": "h4_control_replay",
+          "command": [
+            "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+            "-B",
+            "-S",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+            "replay"
+          ],
+          "timeout_seconds": 600,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:11:28.026655+00:00",
+          "pid": 32527,
+          "exit_code": 0,
+          "wall_seconds": 0.7679540420067497,
+          "child_user_seconds": 0.726738,
+          "child_system_seconds": 0.01171,
+          "peak_child_RSS_bytes": 33259520,
+          "finished_UTC": "2026-09-15T05:11:28.795101+00:00"
+        }
+      ]
+    },
+    {
+      "case": "h8_cold",
+      "specification": {
+        "geometry": [
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              1.4
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              2.8
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              4.199999999999999
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              5.6
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              7.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              8.399999999999999
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              9.799999999999999
+            ]
+          ]
+        ],
+        "basis": "sto-3g",
+        "role": "cold reconstruction of known geometry"
+      },
+      "execution": {
+        "status": "completed",
+        "last_step": "replay",
+        "elapsed_seconds": 858.8332950000186,
+        "from_new_integrals": true,
+        "historical_artifacts_loaded": false,
+        "development_and_failed_other_case_costs_are_separate": true
+      },
+      "interval": {
+        "lower_Ha": "-13883228681767008661/1500000000000000000",
+        "upper_Ha": "-2313720166994759907978133352396514735232910843732019989999194287654989356982970617647218675380637908556594019960638281396313774786565943771917647319355302578603498291289942263868546172258353791770095297456103344387328381817260053150529231576952049711697156424979841/249999999760020155116866557242970840157919649578587380267959264450545184020670100054287822350495680040054917014890633868644188855214430981428771585937827398488091591644476727721110696840221254827058585166319371668481306631175628579580159296994068647533000000000000",
+        "width_Ha": "226916617917237755284046279769067464341298496454875170855614887813826036491665757693108979852926793458187009054078375017709263874658127859572636399545714617261207302090421884521420135555808761881533872813231349739010770206078621145150857805886291321412774789605783313/374999999640030232675299835864456260236879474367881070401938896675817776031005150081431733525743520060082375522335950802966283282821646472143157378906741097732137387466715091581666045260331882240587877749479057502721959946763442869370238945491102971299500000000000000000",
+        "width_mHa": 0.6051109816934918,
+        "target_met": true,
+        "valid_on": "Entire fixed-N sector",
+        "removed_rows": 288,
+        "removed_square_norm_bound_Ha": "42663/500000000000000000",
+        "lower_replay_seconds": 50.87080199999036,
+        "accepting_numerical_imports": []
+      },
+      "forecast": {
+        "rows": 28461,
+        "full_word_pairs": 1230272,
+        "retained_Gram_entries": 343424,
+        "largest_Gram_block": 260,
+        "number_ideal_columns": 1525,
+        "stats": {
+          "spatial_parity_masks": [
+            13107,
+            52428
+          ],
+          "mixed_linear_words_retained": true,
+          "operator_dictionary_dimensions": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            12,
+            16,
+            32,
+            32,
+            12,
+            16,
+            12,
+            16,
+            32,
+            32,
+            12,
+            16,
+            32,
+            32,
+            64,
+            64,
+            32,
+            32,
+            4,
+            4,
+            24,
+            24,
+            24,
+            24,
+            4,
+            4,
+            4,
+            4,
+            24,
+            24,
+            24,
+            24,
+            4,
+            4,
+            112,
+            112,
+            372,
+            372,
+            372,
+            372,
+            112,
+            112,
+            112,
+            112,
+            372,
+            372,
+            372,
+            372,
+            112,
+            112
+          ]
+        }
+      },
+      "fci_reference": {
+        "method": "PySCF direct_spin1 FCI",
+        "numerical_electronic_energy_Ha": -9.25530442909185,
+        "converged": true,
+        "convergence_tolerance_Ha": 1e-10,
+        "spin_squared": 9.200640249673597e-12,
+        "spin_multiplicity": 1.0000000000184013,
+        "numerical_solve_seconds": 0.03959887500968762,
+        "total_seconds": 0.047530166018987074,
+        "determinant_coefficients": 4900,
+        "expected_Ms0_dimension": 4900,
+        "source": "Newly generated spatial integrals; numerical reference for the pre-rounding model",
+        "coefficient_rounding_l1_Ha": "469075684714671583883393295677953/633825300114114700748351602688000000000000",
+        "rigorous_two_sided_certificate": false,
+        "never_used_in_state_or_certificate_discovery": true,
+        "accuracy_matched_runtime_claim": false,
+        "timing_scope": "Fixed tight numerical convergence, reported separately from rigorous bounds",
+        "numerical_reference_inside_certificate_with_rounding_and_1e_minus_7_Ha_slack": true,
+        "upper_minus_reference_mHa": 0.423752228872587,
+        "reference_minus_lower_mHa": 0.18135875282254688,
+        "certified_width_mHa": 0.6051109816934918,
+        "singlet_remainder_mHa": 0.012990833672440666,
+        "nonsinglet_lower_Ha": -9.218558524654448,
+        "singlet_lower_Ha": -9.255485787608672
+      },
+      "peak_RSS_bytes": 908296192,
+      "stage_process_wall_seconds": 858.4151896240073,
+      "stages": [
+        {
+          "name": "h8_cold_generate",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.generate",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold"
+          ],
+          "timeout_seconds": 90,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:12:30.207894+00:00",
+          "pid": 32735,
+          "exit_code": 0,
+          "wall_seconds": 1.3224210839834996,
+          "child_user_seconds": 0.878512,
+          "child_system_seconds": 0.122251,
+          "peak_child_RSS_bytes": 124256256,
+          "finished_UTC": "2026-09-15T05:12:31.530824+00:00"
+        },
+        {
+          "name": "h8_cold_state",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+            "state"
+          ],
+          "timeout_seconds": 900,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:12:31.567722+00:00",
+          "pid": 32747,
+          "exit_code": 0,
+          "wall_seconds": 234.68807641699095,
+          "child_user_seconds": 200.818842,
+          "child_system_seconds": 28.464204,
+          "peak_child_RSS_bytes": 908296192,
+          "finished_UTC": "2026-09-15T05:16:26.252535+00:00"
+        },
+        {
+          "name": "h8_cold_upper",
+          "command": [
+            "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+            "-B",
+            "-S",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+            "upper"
+          ],
+          "timeout_seconds": 600,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:16:26.298401+00:00",
+          "pid": 34768,
+          "exit_code": 0,
+          "wall_seconds": 38.43388941598823,
+          "child_user_seconds": 33.667775,
+          "child_system_seconds": 0.25762799999999997,
+          "peak_child_RSS_bytes": 39337984,
+          "finished_UTC": "2026-09-15T05:17:04.732463+00:00"
+        },
+        {
+          "name": "h8_cold_nonsinglet",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+            "nonsinglet"
+          ],
+          "timeout_seconds": 240,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:17:04.784835+00:00",
+          "pid": 38869,
+          "exit_code": 0,
+          "wall_seconds": 35.95728245799546,
+          "child_user_seconds": 34.181524,
+          "child_system_seconds": 0.470873,
+          "peak_child_RSS_bytes": 373866496,
+          "finished_UTC": "2026-09-15T05:17:40.742036+00:00"
+        },
+        {
+          "name": "h8_cold_prepare",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.prepare",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold"
+          ],
+          "timeout_seconds": 900,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:17:40.794148+00:00",
+          "pid": 39655,
+          "exit_code": 0,
+          "wall_seconds": 165.06887858302798,
+          "child_user_seconds": 162.806812,
+          "child_system_seconds": 1.107395,
+          "peak_child_RSS_bytes": 437846016,
+          "finished_UTC": "2026-09-15T05:20:25.860845+00:00"
+        },
+        {
+          "name": "h8_cold_stage1",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.solve",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+            "stage1",
+            "--seconds",
+            "300",
+            "--mu",
+            "2"
+          ],
+          "timeout_seconds": 400,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:20:25.933384+00:00",
+          "pid": 40206,
+          "exit_code": 0,
+          "wall_seconds": 301.29772429101286,
+          "child_user_seconds": 290.250136,
+          "child_system_seconds": 9.069857,
+          "peak_child_RSS_bytes": 674349056,
+          "finished_UTC": "2026-09-15T05:25:27.247704+00:00"
+        },
+        {
+          "name": "h8_cold_stage2",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.solve",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+            "stage2",
+            "--seconds",
+            "180",
+            "--mu",
+            ".03",
+            "--restart",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold/stage1/checkpoint.npz"
+          ],
+          "timeout_seconds": 300,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:25:27.311141+00:00",
+          "pid": 41781,
+          "exit_code": 0,
+          "wall_seconds": 30.261550374998478,
+          "child_user_seconds": 29.154289,
+          "child_system_seconds": 0.768284,
+          "peak_child_RSS_bytes": 689274880,
+          "finished_UTC": "2026-09-15T05:25:57.573049+00:00"
+        },
+        {
+          "name": "h8_cold_replay",
+          "command": [
+            "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+            "-B",
+            "-S",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h8_cold",
+            "replay"
+          ],
+          "timeout_seconds": 600,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:25:57.626479+00:00",
+          "pid": 41962,
+          "exit_code": 0,
+          "wall_seconds": 51.385367000009865,
+          "child_user_seconds": 50.677746,
+          "child_system_seconds": 0.35815199999999997,
+          "peak_child_RSS_bytes": 294682624,
+          "finished_UTC": "2026-09-15T05:26:49.011838+00:00"
+        }
+      ]
+    },
+    {
+      "case": "h6_asymmetric",
+      "specification": {
+        "geometry": [
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.07,
+              0.03,
+              1.4
+            ]
+          ],
+          [
+            "H",
+            [
+              0.28,
+              0.06,
+              2.8
+            ]
+          ],
+          [
+            "H",
+            [
+              0.6300000000000001,
+              0.0,
+              4.199999999999999
+            ]
+          ],
+          [
+            "H",
+            [
+              1.12,
+              0.03,
+              5.6
+            ]
+          ],
+          [
+            "H",
+            [
+              1.7500000000000002,
+              0.06,
+              7.0
+            ]
+          ]
+        ],
+        "basis": "sto-3g",
+        "role": "symmetry-breaking transfer"
+      },
+      "execution": {
+        "status": "completed",
+        "last_step": "replay",
+        "elapsed_seconds": 411.12275479198433,
+        "from_new_integrals": true,
+        "historical_artifacts_loaded": false,
+        "development_and_failed_other_case_costs_are_separate": true
+      },
+      "interval": {
+        "lower_Ha": "-18559008408850324919/3000000000000000000",
+        "upper_Ha": "-309315731754209661729350838525362411869557271666587200365500931170583405397237619199562945646809417657874527868781075305077118193493625996675239606024824943339759726932522752562857871792912107/50000000125004330508581931754341411599341763758632109945085222070578435289287498973018950598073186444944406647773443815131306234125233608494751853874907611643723237860962164060764000000000000",
+        "width_Ha": "806874960920453356192305994093172493648644699338918622561403128954917729842110342841621123391302555718070531115717794292646281182005722323841465725124192764935523111224794390317235502384594529/37500000093753247881436448815756058699506322818974082458813916552933826466965624229764212948554889833708304985830082861348479675593925206371063890406180708732792428395721623045573000000000000000000",
+        "width_mHa": 0.021516665570751894,
+        "target_met": true,
+        "valid_on": "Entire fixed-N sector",
+        "removed_rows": 167,
+        "removed_square_norm_bound_Ha": "62239/1000000000000000000",
+        "lower_replay_seconds": 15.032023709005443,
+        "accepting_numerical_imports": []
+      },
+      "forecast": {
+        "rows": 9559,
+        "full_word_pairs": 434500,
+        "retained_Gram_entries": 127492,
+        "largest_Gram_block": 222,
+        "number_ideal_columns": 949,
+        "stats": {
+          "spatial_parity_masks": [
+            4095
+          ],
+          "mixed_linear_words_retained": true,
+          "operator_dictionary_dimensions": [
+            6,
+            6,
+            6,
+            6,
+            15,
+            36,
+            15,
+            15,
+            36,
+            15,
+            36,
+            72,
+            36,
+            2,
+            18,
+            18,
+            2,
+            2,
+            18,
+            18,
+            2,
+            90,
+            312,
+            312,
+            90,
+            90,
+            312,
+            312,
+            90
+          ]
+        }
+      },
+      "fci_reference": {
+        "method": "PySCF direct_spin1 FCI",
+        "numerical_electronic_energy_Ha": -6.186314619618375,
+        "converged": true,
+        "convergence_tolerance_Ha": 1e-10,
+        "spin_squared": 2.220446049250313e-16,
+        "spin_multiplicity": 1.0000000000000004,
+        "numerical_solve_seconds": 0.02143166700261645,
+        "total_seconds": 0.025497374997939914,
+        "determinant_coefficients": 400,
+        "expected_Ms0_dimension": 400,
+        "source": "Newly generated spatial integrals; numerical reference for the pre-rounding model",
+        "coefficient_rounding_l1_Ha": "126553990391273837/281474976710656000000000000",
+        "rigorous_two_sided_certificate": false,
+        "never_used_in_state_or_certificate_discovery": true,
+        "accuracy_matched_runtime_claim": false,
+        "timing_scope": "Fixed tight numerical convergence, reported separately from rigorous bounds",
+        "numerical_reference_inside_certificate_with_rounding_and_1e_minus_7_Ha_slack": true,
+        "upper_minus_reference_mHa": 5.03597163969971e-10,
+        "reference_minus_lower_mHa": 0.021516665066556584,
+        "certified_width_mHa": 0.021516665570751894,
+        "singlet_remainder_mHa": 0.0013037874416396665,
+        "nonsinglet_lower_Ha": -6.136827127355013,
+        "singlet_lower_Ha": -6.186336136185441
+      },
+      "peak_RSS_bytes": 388579328,
+      "stage_process_wall_seconds": 410.66951712497394,
+      "stages": [
+        {
+          "name": "h6_asymmetric_generate",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.generate",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric"
+          ],
+          "timeout_seconds": 90,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:26:49.111379+00:00",
+          "pid": 42146,
+          "exit_code": 0,
+          "wall_seconds": 1.0202276250056457,
+          "child_user_seconds": 0.582484,
+          "child_system_seconds": 0.11868,
+          "peak_child_RSS_bytes": 104562688,
+          "finished_UTC": "2026-09-15T05:26:50.132078+00:00"
+        },
+        {
+          "name": "h6_asymmetric_state",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric",
+            "state"
+          ],
+          "timeout_seconds": 900,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:26:50.166568+00:00",
+          "pid": 42158,
+          "exit_code": 0,
+          "wall_seconds": 14.863127666991204,
+          "child_user_seconds": 13.063106,
+          "child_system_seconds": 1.068734,
+          "peak_child_RSS_bytes": 388579328,
+          "finished_UTC": "2026-09-15T05:27:05.030032+00:00"
+        },
+        {
+          "name": "h6_asymmetric_upper",
+          "command": [
+            "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+            "-B",
+            "-S",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric",
+            "upper"
+          ],
+          "timeout_seconds": 600,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:27:05.071860+00:00",
+          "pid": 42285,
+          "exit_code": 0,
+          "wall_seconds": 0.9527189169893973,
+          "child_user_seconds": 0.8998459999999999,
+          "child_system_seconds": 0.015501,
+          "peak_child_RSS_bytes": 27590656,
+          "finished_UTC": "2026-09-15T05:27:06.025054+00:00"
+        },
+        {
+          "name": "h6_asymmetric_nonsinglet",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric",
+            "nonsinglet"
+          ],
+          "timeout_seconds": 240,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:27:06.062279+00:00",
+          "pid": 42319,
+          "exit_code": 0,
+          "wall_seconds": 18.054876166017493,
+          "child_user_seconds": 17.352899,
+          "child_system_seconds": 0.28610399999999997,
+          "peak_child_RSS_bytes": 341573632,
+          "finished_UTC": "2026-09-15T05:27:24.117495+00:00"
+        },
+        {
+          "name": "h6_asymmetric_prepare",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.prepare",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric"
+          ],
+          "timeout_seconds": 900,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:27:24.179065+00:00",
+          "pid": 42441,
+          "exit_code": 0,
+          "wall_seconds": 46.53897641698131,
+          "child_user_seconds": 45.631213,
+          "child_system_seconds": 0.38069,
+          "peak_child_RSS_bytes": 307642368,
+          "finished_UTC": "2026-09-15T05:28:10.718058+00:00"
+        },
+        {
+          "name": "h6_asymmetric_stage1",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.solve",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric",
+            "stage1",
+            "--seconds",
+            "300",
+            "--mu",
+            "2"
+          ],
+          "timeout_seconds": 400,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:28:10.792776+00:00",
+          "pid": 42683,
+          "exit_code": 0,
+          "wall_seconds": 300.947638749989,
+          "child_user_seconds": 281.034192,
+          "child_system_seconds": 8.668125,
+          "peak_child_RSS_bytes": 256573440,
+          "finished_UTC": "2026-09-15T05:33:11.737855+00:00"
+        },
+        {
+          "name": "h6_asymmetric_stage2",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.solve",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric",
+            "stage2",
+            "--seconds",
+            "180",
+            "--mu",
+            ".03",
+            "--restart",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric/stage1/checkpoint.npz"
+          ],
+          "timeout_seconds": 300,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:33:11.818068+00:00",
+          "pid": 44204,
+          "exit_code": 0,
+          "wall_seconds": 12.981511958001647,
+          "child_user_seconds": 11.277592,
+          "child_system_seconds": 0.406755,
+          "peak_child_RSS_bytes": 242958336,
+          "finished_UTC": "2026-09-15T05:33:24.800166+00:00"
+        },
+        {
+          "name": "h6_asymmetric_replay",
+          "command": [
+            "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+            "-B",
+            "-S",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric",
+            "replay"
+          ],
+          "timeout_seconds": 600,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:33:24.879395+00:00",
+          "pid": 44290,
+          "exit_code": 0,
+          "wall_seconds": 15.310439624998253,
+          "child_user_seconds": 13.835413,
+          "child_system_seconds": 0.191993,
+          "peak_child_RSS_bytes": 155402240,
+          "finished_UTC": "2026-09-15T05:33:40.190254+00:00"
+        }
+      ]
+    },
+    {
+      "case": "water_asymmetric",
+      "specification": {
+        "geometry": [
+          [
+            "O",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.7586,
+              0.0,
+              0.5043
+            ]
+          ],
+          [
+            "H",
+            [
+              -0.8,
+              0.02,
+              0.53
+            ]
+          ]
+        ],
+        "basis": "sto-3g",
+        "role": "different molecule and electron/orbital counts"
+      },
+      "execution": {
+        "status": "completed",
+        "last_step": "replay",
+        "elapsed_seconds": 540.9338852909859,
+        "from_new_integrals": true,
+        "historical_artifacts_loaded": false,
+        "development_and_failed_other_case_costs_are_separate": true
+      },
+      "interval": {
+        "lower_Ha": "-253183890175292137339/3000000000000000000",
+        "upper_Ha": "-9377178234568387968945227571528312076807752292404560328867289033112369108708530957748285668671155486549072095057637951952474570399180435618171145459786601521622360932261396699428889145186024139360513895015945295057447061699562643/111111110998566669105021196451653122129441441209881001702891847345295017216858299173159155678425047070096295767343154689320835209544385419785466257513220524451520810069692636420096835107267783179559238651921730066525000000000000",
+        "width_Ha": "344824425357222640973136157677754523571736499468382138797407242756350817664145970245701165635627225264880896818034433898725832841742867805151318488534870674603718454247242488769538286396731930235537817434714374328810043919099079/13333333319828000292602543574198374655532972945185720204347021681435402066022995900779098681411005648411555492081178562718500225145326250374255950901586462934182497208363116370411620212872133981547108638230607607983000000000000000000",
+        "width_mHa": 0.025861831927987147,
+        "target_met": true,
+        "valid_on": "Entire fixed-N sector",
+        "removed_rows": 219,
+        "removed_square_norm_bound_Ha": "13323/100000000000000000",
+        "lower_replay_seconds": 23.877481458010152,
+        "accepting_numerical_imports": []
+      },
+      "forecast": {
+        "rows": 13732,
+        "full_word_pairs": 618092,
+        "retained_Gram_entries": 178590,
+        "largest_Gram_block": 240,
+        "number_ideal_columns": 1108,
+        "stats": {
+          "spatial_parity_masks": [
+            768,
+            15615
+          ],
+          "mixed_linear_words_retained": true,
+          "operator_dictionary_dimensions": [
+            6,
+            1,
+            6,
+            1,
+            6,
+            1,
+            6,
+            1,
+            15,
+            6,
+            37,
+            12,
+            15,
+            6,
+            15,
+            6,
+            37,
+            12,
+            15,
+            6,
+            37,
+            12,
+            74,
+            24,
+            37,
+            12,
+            4,
+            1,
+            23,
+            7,
+            21,
+            9,
+            2,
+            3,
+            2,
+            3,
+            21,
+            9,
+            23,
+            7,
+            4,
+            1,
+            96,
+            51,
+            336,
+            161,
+            336,
+            161,
+            96,
+            51,
+            96,
+            51,
+            336,
+            161,
+            336,
+            161,
+            96,
+            51
+          ]
+        }
+      },
+      "fci_reference": {
+        "method": "PySCF direct_spin1 FCI",
+        "numerical_electronic_energy_Ha": -84.3946041966414,
+        "converged": true,
+        "convergence_tolerance_Ha": 1e-10,
+        "spin_squared": 1.7719159473017498e-13,
+        "spin_multiplicity": 1.0000000000003544,
+        "numerical_solve_seconds": 0.023153916001319885,
+        "total_seconds": 0.027421374979894608,
+        "determinant_coefficients": 441,
+        "expected_Ms0_dimension": 441,
+        "source": "Newly generated spatial integrals; numerical reference for the pre-rounding model",
+        "coefficient_rounding_l1_Ha": "1323357006929047129130316086723197/2535301200456458802993406410752000000000000",
+        "rigorous_two_sided_certificate": false,
+        "never_used_in_state_or_certificate_discovery": true,
+        "accuracy_matched_runtime_claim": false,
+        "timing_scope": "Fixed tight numerical convergence, reported separately from rigorous bounds",
+        "numerical_reference_inside_certificate_with_rounding_and_1e_minus_7_Ha_slack": true,
+        "upper_minus_reference_mHa": 4.261835329089081e-08,
+        "reference_minus_lower_mHa": 0.025861789310965833,
+        "certified_width_mHa": 0.025861831927987147,
+        "singlet_remainder_mHa": 0.008529518712446333,
+        "nonsinglet_lower_Ha": -83.99442658573226,
+        "singlet_lower_Ha": -84.3946300583007
+      },
+      "peak_RSS_bytes": 474529792,
+      "stage_process_wall_seconds": 540.4859545429936,
+      "stages": [
+        {
+          "name": "water_asymmetric_generate",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.generate",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric"
+          ],
+          "timeout_seconds": 90,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:33:40.294221+00:00",
+          "pid": 44387,
+          "exit_code": 0,
+          "wall_seconds": 1.1612292919890024,
+          "child_user_seconds": 0.704239,
+          "child_system_seconds": 0.12661899999999998,
+          "peak_child_RSS_bytes": 112099328,
+          "finished_UTC": "2026-09-15T05:33:41.455886+00:00"
+        },
+        {
+          "name": "water_asymmetric_state",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric",
+            "state"
+          ],
+          "timeout_seconds": 900,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:33:41.490722+00:00",
+          "pid": 44397,
+          "exit_code": 0,
+          "wall_seconds": 23.51703049999196,
+          "child_user_seconds": 21.75047,
+          "child_system_seconds": 1.117256,
+          "peak_child_RSS_bytes": 474529792,
+          "finished_UTC": "2026-09-15T05:34:05.008070+00:00"
+        },
+        {
+          "name": "water_asymmetric_upper",
+          "command": [
+            "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+            "-B",
+            "-S",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric",
+            "upper"
+          ],
+          "timeout_seconds": 600,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:34:05.050647+00:00",
+          "pid": 44569,
+          "exit_code": 0,
+          "wall_seconds": 1.0474265409866348,
+          "child_user_seconds": 0.994595,
+          "child_system_seconds": 0.014496,
+          "peak_child_RSS_bytes": 29147136,
+          "finished_UTC": "2026-09-15T05:34:06.098451+00:00"
+        },
+        {
+          "name": "water_asymmetric_nonsinglet",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric",
+            "nonsinglet"
+          ],
+          "timeout_seconds": 240,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:34:06.137625+00:00",
+          "pid": 44579,
+          "exit_code": 0,
+          "wall_seconds": 105.59746458398877,
+          "child_user_seconds": 99.059139,
+          "child_system_seconds": 1.313211,
+          "peak_child_RSS_bytes": 343867392,
+          "finished_UTC": "2026-09-15T05:35:51.734692+00:00"
+        },
+        {
+          "name": "water_asymmetric_prepare",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.prepare",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric"
+          ],
+          "timeout_seconds": 900,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:35:51.826400+00:00",
+          "pid": 45145,
+          "exit_code": 0,
+          "wall_seconds": 79.34854208401521,
+          "child_user_seconds": 73.856271,
+          "child_system_seconds": 1.135448,
+          "peak_child_RSS_bytes": 297451520,
+          "finished_UTC": "2026-09-15T05:37:11.175123+00:00"
+        },
+        {
+          "name": "water_asymmetric_stage1",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.solve",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric",
+            "stage1",
+            "--seconds",
+            "300",
+            "--mu",
+            "2"
+          ],
+          "timeout_seconds": 400,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:37:11.259402+00:00",
+          "pid": 45568,
+          "exit_code": 0,
+          "wall_seconds": 301.2194037500012,
+          "child_user_seconds": 281.443162,
+          "child_system_seconds": 9.078418,
+          "peak_child_RSS_bytes": 320159744,
+          "finished_UTC": "2026-09-15T05:42:12.476646+00:00"
+        },
+        {
+          "name": "water_asymmetric_stage2",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.solve",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric",
+            "stage2",
+            "--seconds",
+            "180",
+            "--mu",
+            ".03",
+            "--restart",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric/stage1/checkpoint.npz"
+          ],
+          "timeout_seconds": 300,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:42:12.545269+00:00",
+          "pid": 47069,
+          "exit_code": 0,
+          "wall_seconds": 4.225101750023896,
+          "child_user_seconds": 3.6548789999999998,
+          "child_system_seconds": 0.152494,
+          "peak_child_RSS_bytes": 344096768,
+          "finished_UTC": "2026-09-15T05:42:16.771058+00:00"
+        },
+        {
+          "name": "water_asymmetric_replay",
+          "command": [
+            "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+            "-B",
+            "-S",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric",
+            "replay"
+          ],
+          "timeout_seconds": 600,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:42:16.810536+00:00",
+          "pid": 47119,
+          "exit_code": 0,
+          "wall_seconds": 24.36975604199688,
+          "child_user_seconds": 23.477066,
+          "child_system_seconds": 0.179252,
+          "peak_child_RSS_bytes": 189087744,
+          "finished_UTC": "2026-09-15T05:42:41.180585+00:00"
+        }
+      ]
+    },
+    {
+      "case": "h10_size",
+      "specification": {
+        "geometry": [
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              1.4
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              2.8
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              4.199999999999999
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              5.6
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              7.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              8.399999999999999
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              9.799999999999999
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              11.2
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              12.6
+            ]
+          ]
+        ],
+        "basis": "sto-3g",
+        "role": "modest size increase"
+      },
+      "execution": {
+        "status": "stopped_after_failed_step",
+        "last_step": "state",
+        "elapsed_seconds": 902.5120937910106,
+        "from_new_integrals": true,
+        "historical_artifacts_loaded": false,
+        "development_and_failed_other_case_costs_are_separate": true
+      },
+      "interval": null,
+      "forecast": null,
+      "fci_reference": {
+        "method": "PySCF direct_spin1 FCI",
+        "numerical_electronic_energy_Ha": -12.368299456322074,
+        "converged": true,
+        "convergence_tolerance_Ha": 1e-10,
+        "spin_squared": 5.077271936215766e-12,
+        "spin_multiplicity": 1.0000000000101545,
+        "numerical_solve_seconds": 0.3110276669904124,
+        "total_seconds": 0.36725633300375193,
+        "determinant_coefficients": 63504,
+        "expected_Ms0_dimension": 63504,
+        "source": "Newly generated spatial integrals; numerical reference for the pre-rounding model",
+        "coefficient_rounding_l1_Ha": "1104192360404508848776703925122143/633825300114114700748351602688000000000000",
+        "rigorous_two_sided_certificate": false,
+        "never_used_in_state_or_certificate_discovery": true,
+        "accuracy_matched_runtime_claim": false,
+        "timing_scope": "Fixed tight numerical convergence, reported separately from rigorous bounds"
+      },
+      "peak_RSS_bytes": 1572503552,
+      "stage_process_wall_seconds": 902.4254916250065,
+      "stages": [
+        {
+          "name": "h10_size_generate",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.generate",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h10_size"
+          ],
+          "timeout_seconds": 90,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:42:41.280397+00:00",
+          "pid": 47231,
+          "exit_code": 0,
+          "wall_seconds": 2.339279208012158,
+          "child_user_seconds": 1.777031,
+          "child_system_seconds": 0.15365299999999998,
+          "peak_child_RSS_bytes": 161480704,
+          "finished_UTC": "2026-09-15T05:42:43.620136+00:00"
+        },
+        {
+          "name": "h10_size_state",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.actions",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h10_size",
+            "state"
+          ],
+          "timeout_seconds": 900,
+          "status": "timeout",
+          "started_UTC": "2026-09-15T05:42:43.662351+00:00",
+          "pid": 47251,
+          "exit_code": -15,
+          "wall_seconds": 900.0862124169944,
+          "child_user_seconds": 795.122054,
+          "child_system_seconds": 85.798661,
+          "peak_child_RSS_bytes": 1572503552,
+          "finished_UTC": "2026-09-15T05:57:43.802565+00:00"
+        }
+      ]
+    },
+    {
+      "case": "h10_bond64",
+      "specification": {
+        "geometry": [
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              1.4
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              2.8
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              4.199999999999999
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              5.6
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              7.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              8.399999999999999
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              9.799999999999999
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              11.2
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              12.6
+            ]
+          ]
+        ],
+        "basis": "sto-3g",
+        "role": "exploratory retry after frozen state-budget failure"
+      },
+      "execution": {
+        "status": "stopped_after_failed_step",
+        "last_step": "state",
+        "elapsed_seconds": 603.0882327079889,
+        "original_failed_run_cost_is_additional": true,
+        "new_from_integrals_attempt": true
+      },
+      "interval": null,
+      "forecast": null,
+      "fci_reference": {
+        "method": "PySCF direct_spin1 FCI",
+        "numerical_electronic_energy_Ha": -12.368299456322074,
+        "converged": true,
+        "convergence_tolerance_Ha": 1e-10,
+        "spin_squared": 5.077271936215766e-12,
+        "spin_multiplicity": 1.0000000000101545,
+        "numerical_solve_seconds": 0.28487866700743325,
+        "total_seconds": 0.3410855830006767,
+        "determinant_coefficients": 63504,
+        "expected_Ms0_dimension": 63504,
+        "source": "Newly generated spatial integrals; numerical reference for the pre-rounding model",
+        "coefficient_rounding_l1_Ha": "1104192360404508848776703925122143/633825300114114700748351602688000000000000",
+        "rigorous_two_sided_certificate": false,
+        "never_used_in_state_or_certificate_discovery": true,
+        "accuracy_matched_runtime_claim": false,
+        "timing_scope": "Fixed tight numerical convergence, reported separately from rigorous bounds"
+      },
+      "peak_RSS_bytes": 1082458112,
+      "stage_process_wall_seconds": 603.0060777090257,
+      "stages": [
+        {
+          "name": "h10_bond64_generate",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-molecule/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_solver_20260915.generate",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64"
+          ],
+          "timeout_seconds": 90,
+          "status": "passed",
+          "started_UTC": "2026-09-15T05:58:45.859241+00:00",
+          "pid": 51299,
+          "exit_code": 0,
+          "wall_seconds": 2.9595871250203345,
+          "child_user_seconds": 1.812304,
+          "child_system_seconds": 0.201642,
+          "peak_child_RSS_bytes": 171491328,
+          "finished_UTC": "2026-09-15T05:58:48.819289+00:00"
+        },
+        {
+          "name": "h10_bond64_state",
+          "command": [
+            "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+            "-B",
+            "-m",
+            "research.transfer_followup_20260915.adaptive_size",
+            "state",
+            "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_bond64"
+          ],
+          "timeout_seconds": 600,
+          "status": "timeout",
+          "started_UTC": "2026-09-15T05:58:48.863360+00:00",
+          "pid": 51346,
+          "exit_code": -15,
+          "wall_seconds": 600.0464905840054,
+          "child_user_seconds": 553.697947,
+          "child_system_seconds": 40.203311,
+          "peak_child_RSS_bytes": 1082458112,
+          "finished_UTC": "2026-09-15T06:08:48.914564+00:00"
+        }
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "control": "h4_control_magnetic",
+      "execution": {
+        "status": "completed",
+        "seconds": 56.66206991599756,
+        "last_step": "replay",
+        "shared_dependency_costs_excluded": true
+      },
+      "interval": {
+        "lower_Ha": "-3667000319296146909/1000000000000000000",
+        "upper_Ha": "-28648437185059001569651346770617483322808408400624284789720348553076873413947812907592761959934817896131373189728550783/7812500007932562714846797228068846359965899772841003815005567215576059532456770451447165035837817715429681000000000000",
+        "width_Ha": "2838530856165091068629289819440790891784205506299315948841487585209018741876510823983446718600789362201069629852006029/7812500007932562714846797228068846359965899772841003815005567215576059532456770451447165035837817715429681000000000000000000",
+        "width_mHa": 0.000363331949220216,
+        "target_met": true,
+        "valid_on": "Entire fixed-N sector",
+        "removed_rows": 48,
+        "removed_square_norm_bound_Ha": "399/125000000000000000",
+        "lower_replay_seconds": 0.970094499993138,
+        "accepting_numerical_imports": []
+      },
+      "forecast": {
+        "rows": 435,
+        "full_word_pairs": 19248,
+        "retained_Gram_entries": 19248,
+        "largest_Gram_block": 46,
+        "number_ideal_columns": 111,
+        "stats": {
+          "spatial_parity_masks": [
+            51,
+            204
+          ],
+          "mixed_linear_words_retained": true,
+          "operator_dictionary_dimensions": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            8,
+            8,
+            2,
+            4,
+            2,
+            4,
+            8,
+            8,
+            2,
+            4,
+            8,
+            8,
+            16,
+            16,
+            8,
+            8,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            12,
+            12,
+            46,
+            46,
+            46,
+            46,
+            12,
+            12,
+            12,
+            12,
+            46,
+            46,
+            46,
+            46,
+            12,
+            12
+          ]
+        }
+      },
+      "control_process_seconds": 56.4629957920115,
+      "source_same_stage_seconds": 14.068299334030598,
+      "source_case": "h4_control",
+      "shared_state_integrals_upper_nonsinglet_excluded_from_both": true
+    },
+    {
+      "control": "h8_cold_magnetic",
+      "execution": {
+        "status": "completed",
+        "seconds": 795.175090957986,
+        "last_step": "replay",
+        "shared_dependency_costs_excluded": true
+      },
+      "interval": {
+        "lower_Ha": "-14023773167456969681/1500000000000000000",
+        "upper_Ha": "-2313720166994759907978133352396514735232910843732019989999194287654989356982970617647218675380637908556594019960638281396313774786565943771917647319355302578603498291289942263868546172258353791770095297456103344387328381817260053150529231576952049711697156424979841/249999999760020155116866557242970840157919649578587380267959264450545184020670100054287822350495680040054917014890633868644188855214430981428771585937827398488091591644476727721110696840221254827058585166319371668481306631175628579580159296994068647533000000000000",
+        "width_Ha": "35363038006679648880227432826196893103601983023473108059399830759803554312654869047710706330833312921939281598659551243019161367229800454328905021794007209137340867127383839101016787075675644232394080795999491807519890064956206458592226356328157597760095318296494946973/374999999640030232675299835864456260236879474367881070401938896675817776031005150081431733525743520060082375522335950802966283282821646472143157378906741097732137387466715091581666045260331882240587877749479057502721959946763442869370238945491102971299500000000000000000",
+        "width_mHa": 94.30143477500084,
+        "target_met": false,
+        "valid_on": "Entire fixed-N sector",
+        "removed_rows": 386,
+        "removed_square_norm_bound_Ha": "12349/500000000000000000",
+        "lower_replay_seconds": 76.55027616600273,
+        "accepting_numerical_imports": []
+      },
+      "forecast": {
+        "rows": 28461,
+        "full_word_pairs": 1230272,
+        "retained_Gram_entries": 1230272,
+        "largest_Gram_block": 372,
+        "number_ideal_columns": 1525,
+        "stats": {
+          "spatial_parity_masks": [
+            13107,
+            52428
+          ],
+          "mixed_linear_words_retained": true,
+          "operator_dictionary_dimensions": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            12,
+            16,
+            32,
+            32,
+            12,
+            16,
+            12,
+            16,
+            32,
+            32,
+            12,
+            16,
+            32,
+            32,
+            64,
+            64,
+            32,
+            32,
+            4,
+            4,
+            24,
+            24,
+            24,
+            24,
+            4,
+            4,
+            4,
+            4,
+            24,
+            24,
+            24,
+            24,
+            4,
+            4,
+            112,
+            112,
+            372,
+            372,
+            372,
+            372,
+            112,
+            112,
+            112,
+            112,
+            372,
+            372,
+            372,
+            372,
+            112,
+            112
+          ]
+        }
+      },
+      "control_process_seconds": 794.9152809589577,
+      "source_same_stage_seconds": 548.0135202490492,
+      "source_case": "h8_cold",
+      "shared_state_integrals_upper_nonsinglet_excluded_from_both": true
+    },
+    {
+      "control": "h8_restricted64",
+      "execution": {
+        "status": "stopped_after_failed_step",
+        "last_step": "stage1",
+        "seconds": 343.8194384170056,
+        "shared_input_construction_costs_excluded": true
+      },
+      "interval": null,
+      "forecast": {
+        "rows": 28461,
+        "full_word_pairs": 1230272,
+        "retained_Gram_entries": 55616,
+        "largest_Gram_block": 64,
+        "number_ideal_columns": 1525,
+        "stats": {
+          "spatial_parity_masks": [
+            13107,
+            52428
+          ],
+          "mixed_linear_words_retained": true,
+          "operator_dictionary_dimensions": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            12,
+            16,
+            32,
+            32,
+            12,
+            16,
+            12,
+            16,
+            32,
+            32,
+            12,
+            16,
+            32,
+            32,
+            64,
+            64,
+            32,
+            32,
+            4,
+            4,
+            24,
+            24,
+            24,
+            24,
+            4,
+            4,
+            4,
+            4,
+            24,
+            24,
+            24,
+            24,
+            4,
+            4,
+            112,
+            112,
+            372,
+            372,
+            372,
+            372,
+            112,
+            112,
+            112,
+            112,
+            372,
+            372,
+            372,
+            372,
+            112,
+            112
+          ]
+        }
+      },
+      "control_process_seconds": 384.51468496001326,
+      "source_same_stage_seconds": 548.0135202490492,
+      "source_case": "h8_cold",
+      "shared_state_integrals_upper_nonsinglet_excluded_from_both": true
+    }
+  ],
+  "enumerated_baselines": [
+    {
+      "case": "h4_control",
+      "receipt": {
+        "lower_Ha": "-916949989/250000000",
+        "upper_Ha": "-6111666594001422794118449185933/1666666666865128621200000000000",
+        "width_mHa": 0.8000000358023106,
+        "target_met": true,
+        "cost": {
+          "full_sector_labels_enumerated": 70,
+          "dense_matrix_entries": 1810,
+          "largest_matrix_dimension": 36,
+          "Hamiltonian_word_state_checks": 12880
+        },
+        "seconds": 0.009646416991017759,
+        "valid_on": "Entire fixed-N sector",
+        "bad_lower_mutation_refused": true,
+        "numerical_imports": [],
+        "comparison_scope": "Same rational fixture and <=1.6 mHa guarantee; determinant enumeration is explicit."
+      },
+      "seconds_including_shared_integral_generation": 1.9797730850114021,
+      "shared_integrals_charged_once_to_each_method_comparison": true
+    },
+    {
+      "case": "h6_asymmetric",
+      "receipt": {
+        "lower_Ha": "-15467786549/2500000000",
+        "upper_Ha": "-309315730997941889102023710695531/50000000002752429713000000000000",
+        "width_mHa": 0.7999999817101414,
+        "target_met": true,
+        "cost": {
+          "full_sector_labels_enumerated": 924,
+          "dense_matrix_entries": 263844,
+          "largest_matrix_dimension": 400,
+          "Hamiltonian_word_state_checks": 1679832
+        },
+        "seconds": 2.725355041999137,
+        "valid_on": "Entire fixed-N sector",
+        "bad_lower_mutation_refused": true,
+        "numerical_imports": [],
+        "comparison_scope": "Same rational fixture and <=1.6 mHa guarantee; determinant enumeration is explicit."
+      },
+      "seconds_including_shared_integral_generation": 5.842374334024498,
+      "shared_integrals_charged_once_to_each_method_comparison": true
+    },
+    {
+      "case": "water_asymmetric",
+      "receipt": {
+        "lower_Ha": "-421977020983/5000000000",
+        "upper_Ha": "-8439460419390677588330820648452827/99999999996757270801000000000000",
+        "width_mHa": 0.799999956535644,
+        "target_met": true,
+        "cost": {
+          "full_sector_labels_enumerated": 1001,
+          "dense_matrix_entries": 316981,
+          "largest_matrix_dimension": 441,
+          "Hamiltonian_word_state_checks": 2111109
+        },
+        "seconds": 2.4879514169879258,
+        "valid_on": "Entire fixed-N sector",
+        "bad_lower_mutation_refused": true,
+        "numerical_imports": [],
+        "comparison_scope": "Same rational fixture and <=1.6 mHa guarantee; determinant enumeration is explicit."
+      },
+      "seconds_including_shared_integral_generation": 5.492822500003967,
+      "shared_integrals_charged_once_to_each_method_comparison": true
+    }
+  ],
+  "scope": "All instrumented computation in this pass, including controls and failures. Editing, browsing, report generation and preservation I/O are not included. Earlier research costs remain in their earlier ledgers.",
+  "physical_model_study": [
+    {
+      "basis": "cc-pvdz",
+      "singlet": {
+        "basis": "cc-pvdz",
+        "total_spin": 0,
+        "pyscf_state_symmetry": "A1",
+        "physical_state": "A1 singlet",
+        "physical_electrons": 8,
+        "active_electrons": 6,
+        "active_spatial_orbitals": 6,
+        "CASSCF_inactive_doubly_occupied_orbitals": 1,
+        "active_Ms_determinant_dimension": 400,
+        "active_space_FCI_used": true,
+        "full_parent_basis_FCI_used": false,
+        "total_spatial_orbitals": 24,
+        "geometry_Angstrom": [
+          [
+            "C",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.8719079513155708,
+              0.7323672561825899
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              -0.8719079513155708,
+              0.7323672561825899
+            ]
+          ]
+        ],
+        "bond_Angstrom": 1.1386769838262873,
+        "angle_degrees": 99.9422110491277,
+        "geometry_gradient": [
+          -5.1177545286179696e-06,
+          1.3372434382923217e-07
+        ],
+        "CASSCF_total_Ha": -38.94154858247491,
+        "SC_NEVPT2_correction_Ha": -0.06303516415381205,
+        "SC_NEVPT2_total_Ha": -39.00458374662872,
+        "NEVPT2_seconds": 0.07085183399613015,
+        "complete_internal_seconds": 256.5131122910243,
+        "geometry_evaluations": 7,
+        "geometry_converged": true,
+        "spin_checked_at_every_evaluation": true,
+        "pyscf_version": "2.14.0",
+        "scope": "Numerical CASSCF-optimized geometries and SC-NEVPT2 single points. No rigorous total-energy bound, zero-point correction, or physical error interval."
+      },
+      "triplet": {
+        "basis": "cc-pvdz",
+        "total_spin": 1,
+        "pyscf_state_symmetry": "B1",
+        "physical_state": "triplet with one out-of-plane p electron",
+        "physical_electrons": 8,
+        "active_electrons": 6,
+        "active_spatial_orbitals": 6,
+        "CASSCF_inactive_doubly_occupied_orbitals": 1,
+        "active_Ms_determinant_dimension": 225,
+        "active_space_FCI_used": true,
+        "full_parent_basis_FCI_used": false,
+        "total_spatial_orbitals": 24,
+        "geometry_Angstrom": [
+          [
+            "C",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              1.0023631394837274,
+              0.45680228847512755
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              -1.0023631394837274,
+              0.45680228847512755
+            ]
+          ]
+        ],
+        "bond_Angstrom": 1.101544458545268,
+        "angle_degrees": 131.00008630913143,
+        "geometry_gradient": [
+          -6.185903545462747e-06,
+          7.327822209441656e-06
+        ],
+        "CASSCF_total_Ha": -38.9605725908997,
+        "SC_NEVPT2_correction_Ha": -0.06489502705190923,
+        "SC_NEVPT2_total_Ha": -39.02546761795161,
+        "NEVPT2_seconds": 0.0663798330060672,
+        "complete_internal_seconds": 1.473679666989483,
+        "geometry_evaluations": 7,
+        "geometry_converged": true,
+        "spin_checked_at_every_evaluation": true,
+        "pyscf_version": "2.14.0",
+        "scope": "Numerical CASSCF-optimized geometries and SC-NEVPT2 single points. No rigorous total-energy bound, zero-point correction, or physical error interval."
+      },
+      "CASSCF_electronic_gap_kcal_mol": 11.937745520013571,
+      "SC_NEVPT2_electronic_gap_kcal_mol": 13.104827108913064,
+      "gap_convention": "E_S-E_T",
+      "rigorous_physical_error_bar": false
+    },
+    {
+      "basis": "cc-pvtz",
+      "singlet": {
+        "basis": "cc-pvtz",
+        "total_spin": 0,
+        "pyscf_state_symmetry": "A1",
+        "physical_state": "A1 singlet",
+        "physical_electrons": 8,
+        "active_electrons": 6,
+        "active_spatial_orbitals": 6,
+        "CASSCF_inactive_doubly_occupied_orbitals": 1,
+        "active_Ms_determinant_dimension": 400,
+        "active_space_FCI_used": true,
+        "full_parent_basis_FCI_used": false,
+        "total_spatial_orbitals": 58,
+        "geometry_Angstrom": [
+          [
+            "C",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.8678893348368382,
+              0.7157467720595687
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              -0.8678893348368382,
+              0.7157467720595687
+            ]
+          ]
+        ],
+        "bond_Angstrom": 1.1249557054556512,
+        "angle_degrees": 100.97531842021993,
+        "geometry_gradient": [
+          -1.1366173666026632e-05,
+          -1.0906776758233387e-05
+        ],
+        "CASSCF_total_Ha": -38.9543255484688,
+        "SC_NEVPT2_correction_Ha": -0.09514719643240752,
+        "SC_NEVPT2_total_Ha": -39.04947274490121,
+        "NEVPT2_seconds": 0.12765320800826885,
+        "complete_internal_seconds": 9.191160124988528,
+        "geometry_evaluations": 6,
+        "geometry_converged": true,
+        "spin_checked_at_every_evaluation": true,
+        "pyscf_version": "2.14.0",
+        "scope": "Numerical CASSCF-optimized geometries and SC-NEVPT2 single points. No rigorous total-energy bound, zero-point correction, or physical error interval."
+      },
+      "triplet": {
+        "basis": "cc-pvtz",
+        "total_spin": 1,
+        "pyscf_state_symmetry": "B1",
+        "physical_state": "triplet with one out-of-plane p electron",
+        "physical_electrons": 8,
+        "active_electrons": 6,
+        "active_spatial_orbitals": 6,
+        "CASSCF_inactive_doubly_occupied_orbitals": 1,
+        "active_Ms_determinant_dimension": 225,
+        "active_space_FCI_used": true,
+        "full_parent_basis_FCI_used": false,
+        "total_spatial_orbitals": 58,
+        "geometry_Angstrom": [
+          [
+            "C",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.9932305930668427,
+              0.4492144478603007
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              -0.9932305930668427,
+              0.4492144478603007
+            ]
+          ]
+        ],
+        "bond_Angstrom": 1.0900920287619513,
+        "angle_degrees": 131.3277956171826,
+        "geometry_gradient": [
+          8.000218635238007e-07,
+          5.350804506901319e-06
+        ],
+        "CASSCF_total_Ha": -38.971077190019805,
+        "SC_NEVPT2_correction_Ha": -0.09799760811714087,
+        "SC_NEVPT2_total_Ha": -39.069074798136946,
+        "NEVPT2_seconds": 0.127372374990955,
+        "complete_internal_seconds": 9.992032084002858,
+        "geometry_evaluations": 7,
+        "geometry_converged": true,
+        "spin_checked_at_every_evaluation": true,
+        "pyscf_version": "2.14.0",
+        "scope": "Numerical CASSCF-optimized geometries and SC-NEVPT2 single points. No rigorous total-energy bound, zero-point correction, or physical error interval."
+      },
+      "CASSCF_electronic_gap_kcal_mol": 10.511813778306822,
+      "SC_NEVPT2_electronic_gap_kcal_mol": 12.300474115277074,
+      "gap_convention": "E_S-E_T",
+      "rigorous_physical_error_bar": false
+    }
+  ],
+  "hardware": [
+    "MacBookAir10,1",
+    "8589934592",
+    "8",
+    "Apple M1"
+  ],
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "one_heavy_process_at_a_time": true
+}

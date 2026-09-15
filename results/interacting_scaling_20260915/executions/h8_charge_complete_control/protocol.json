@@ -1,0 +1,34 @@
+{
+  "steps": [
+    [
+      "construct",
+      30,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.interacting_scaling_20260915.fragment_control",
+        "construct",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h8_adaptive_coupling_l0_base",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/fragment_controls/h8"
+      ]
+    ],
+    [
+      "check",
+      30,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.interacting_scaling_20260915.fragment_control",
+        "check",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h8_adaptive_coupling_l0_base",
+        "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/fragment_controls/h8"
+      ]
+    ]
+  ],
+  "one_heavy_process_at_a_time": true,
+  "host": "local Mac; one BLAS/Numba thread",
+  "external_spending": false
+}

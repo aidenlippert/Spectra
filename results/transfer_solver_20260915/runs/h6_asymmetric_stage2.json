@@ -1,0 +1,27 @@
+{
+  "name": "h6_asymmetric_stage2",
+  "command": [
+    "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.transfer_solver_20260915.solve",
+    "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric",
+    "stage2",
+    "--seconds",
+    "180",
+    "--mu",
+    ".03",
+    "--restart",
+    "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h6_asymmetric/stage1/checkpoint.npz"
+  ],
+  "timeout_seconds": 300,
+  "status": "passed",
+  "started_UTC": "2026-09-15T05:33:11.818068+00:00",
+  "pid": 44204,
+  "exit_code": 0,
+  "wall_seconds": 12.981511958001647,
+  "child_user_seconds": 11.277592,
+  "child_system_seconds": 0.406755,
+  "peak_child_RSS_bytes": 242958336,
+  "finished_UTC": "2026-09-15T05:33:24.800166+00:00"
+}

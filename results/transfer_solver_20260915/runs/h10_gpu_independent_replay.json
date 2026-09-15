@@ -1,0 +1,25 @@
+{
+  "name": "h10_gpu_independent_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.nvidia_followup_20260915.replay",
+    "results/transfer_solver_20260915/adaptive/h10_correlated_guide",
+    "hybrid_adaptive",
+    "results/transfer_solver_20260915/adaptive/h10_correlated_guide/hybrid_adaptive/exact_local_stdlib",
+    "--rotated",
+    "results/transfer_solver_20260915/rotated_h10"
+  ],
+  "timeout_seconds": 600,
+  "status": "passed",
+  "started_UTC": "2026-09-15T07:43:49.205970+00:00",
+  "pid": 76817,
+  "exit_code": 0,
+  "wall_seconds": 241.7477211250225,
+  "child_user_seconds": 238.449382,
+  "child_system_seconds": 1.8438189999999999,
+  "peak_child_RSS_bytes": 787660800,
+  "finished_UTC": "2026-09-15T07:47:50.958794+00:00"
+}

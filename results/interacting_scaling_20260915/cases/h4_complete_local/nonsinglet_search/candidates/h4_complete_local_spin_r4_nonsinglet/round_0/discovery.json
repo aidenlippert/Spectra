@@ -1,0 +1,111 @@
+{
+  "case": "h4_complete_local",
+  "round": 0,
+  "spin_lifting": true,
+  "rank_cap_initial": 4,
+  "gram_entries": 2352,
+  "gram_dimensions": [
+    4,
+    4,
+    4,
+    4,
+    6,
+    16,
+    6,
+    6,
+    16,
+    6,
+    16,
+    32,
+    16,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "full_gram_entries": 38480,
+  "coefficient_equations": 199,
+  "free_variables": 43,
+  "projected_map_nonzeros": 8864,
+  "build_seconds": 0.02239666602690704,
+  "prepared_dependency": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_complete_local/nonsinglet_prepared",
+  "fixture": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_complete_local/fixture.json",
+  "state": "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h4_complete_local/mps/state.json",
+  "full_Gram_teacher_used": false,
+  "many_body_states_enumerated": 0,
+  "guide": [
+    {
+      "name": "local-triples-(-2, 0, 1)",
+      "lowest": 0.00855709712775588,
+      "highest_retained": 0.037359284721417155
+    },
+    {
+      "name": "local-triples-(-1, 1, 0)",
+      "lowest": 0.008557218020874046,
+      "highest_retained": 0.03735947048577043
+    },
+    {
+      "name": "mixed-(-2, 0, 1)",
+      "lowest": -2.2151699532810697e-16,
+      "highest_retained": -7.835756267867591e-17
+    },
+    {
+      "name": "mixed-(-1, 1, 0)",
+      "lowest": -1.024416590656649e-15,
+      "highest_retained": -6.140040317193541e-16
+    },
+    {
+      "name": "mixed-(0, 0, 1)",
+      "lowest": -1.037992554763464e-15,
+      "highest_retained": -6.763880606124998e-16
+    },
+    {
+      "name": "mixed-(1, 1, 0)",
+      "lowest": -3.3595864413612107e-16,
+      "highest_retained": -1.1258528265949052e-16
+    }
+  ],
+  "magnetization": 1,
+  "singlet": false,
+  "ladder_ideal_dimension": 0,
+  "shared_spin_orbits": false,
+  "map_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "moment_dual_formulation": false,
+  "coherent_atoms": false,
+  "solve_seconds": 0.48250204100622796,
+  "solver": "SCS",
+  "solver_status": "optimal",
+  "solver_iterations": 1400,
+  "solver_max_threads": null,
+  "status": "requires_independent_exact_replay",
+  "proposed_b": -3.5752753690089927,
+  "numeric_coefficient_l1": 1.0168000898286578e-07,
+  "minimum_PSD_eigenvalue": -3.837669928749363e-09,
+  "total_state_action_Ha": 2.0780095039180075,
+  "factor_rows": 117,
+  "certificate_bytes": 86898,
+  "round_seconds": 0.515262666012859,
+  "total_seconds": 0.5751449579838663
+}

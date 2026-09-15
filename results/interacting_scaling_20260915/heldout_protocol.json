@@ -1,0 +1,220 @@
+{
+  "frozen_UTC": "2026-09-15T10:11:07.373655+00:00",
+  "models": {
+    "h12_heldout": {
+      "geometry": [
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            1.4
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            2.8
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            4.2
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            5.6
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            7.0
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            8.4
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            9.8
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            11.2
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            12.6
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            14.0
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            15.4
+          ]
+        ]
+      ],
+      "basis": "sto-3g"
+    },
+    "water_heldout": {
+      "geometry": [
+        [
+          "O",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            0.77,
+            0.03,
+            0.57
+          ]
+        ],
+        [
+          "H",
+          [
+            -0.84,
+            0.01,
+            0.48
+          ]
+        ]
+      ],
+      "basis": "sto-3g"
+    },
+    "h4_631g_heldout": {
+      "geometry": [
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            1.4
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            2.8
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            4.199999999999999
+          ]
+        ]
+      ],
+      "basis": "6-31g",
+      "different_model_from_STO3G": true
+    }
+  },
+  "levels": [
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      4
+    ],
+    [
+      2,
+      3,
+      4,
+      5
+    ]
+  ],
+  "per_level_solve_seconds": 450,
+  "complete_pipeline_budget_seconds": 3600,
+  "local_Gram_entry_cap": 2000000,
+  "coefficient_row_cap": 180000,
+  "magnetic_levels": [
+    "global quadratics",
+    "quadratics plus local widths 2 and 3",
+    "preceding family plus coherent pair-supported cubics"
+  ],
+  "per_magnetic_level_solve_seconds": 150,
+  "source_sha256": {
+    "cold.py": "9154819f971814d53752c22c0d325415721c1cc5300a4161e9587b6ee6528d1c",
+    "reference.py": "8b3b6d642c589d7f1a0a4b7314db5702827cb92e27185bc6ba5ef84f388c42f9",
+    "state.py": "23a1796ef06f25581be81ff2067302262ab131987282b6f3d79810dd9fe44456",
+    "dictionary.py": "30c6876f09bad8433845d6dbe804bbc440b9c52233c916d576f4faf2709f24c3",
+    "prepare.py": "6d93fe6090123435090d191029c02447a6e808d5eb0ba477d6bdab01c659b877",
+    "spin_patterns.py": "b1f11eef9a581f15f18125a29b987e8b5fd454a8204ff1e4a322b2c6107c6094",
+    "solve.py": "eabee8e9033b52054120cce7d2c44228501c4ed9c89db5c3cb992c5e4c518661",
+    "nonsinglet.py": "fe3e5c07c1d9bea5b0bac538a7e4b1d90d08508a295416c2e0c36f148a182e52",
+    "pipeline.py": "37dc6f56203ba61e8cf110bc532a83f55b656af73642bdd3fc22bd0aebe2376f",
+    "warmstart.py": "54285638aa35f92fa4836b0c181ec0921c268326efdc0e3bb4349e5022a89e21",
+    "rotation.py": "9bd4fd50a4e95db68b2b5741ebc6b01fa46d6916ac476f2e02dee1527e9f9776",
+    "cases.py": "1ddb85dd51969e7eb019c0be1cbab77e5000afd4873e7ad407a3c14285374850",
+    "budget.py": "9b3dac59a07855511d0572c55f283d1912323cd63de1c2b9fe6ea54ca3bbd7a5",
+    "heldout.py": "f07a07b99cfc86d2e92e1b11915f7ddcef36af81b553d0b9f1461de63eccc096",
+    "complete.py": "93cea7555f0f115b58b634a643262cc30ee832e51acd37a1d53126a7dfb48fb2"
+  },
+  "H16_condition": "Attempt only if H12 meets 1.6 mHa within 1800 s and its measured growth fits the declared local memory/representation envelope.",
+  "new_external_spending": false,
+  "earlier_development_searches_remain_in_campaign_ledger": true
+}

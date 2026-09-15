@@ -1,0 +1,27 @@
+{
+  "name": "h10_rotated_lower_stage2",
+  "command": [
+    "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+    "-B",
+    "-m",
+    "research.transfer_solver_20260915.solve",
+    "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper",
+    "stage2",
+    "--seconds",
+    "180",
+    "--mu",
+    ".03",
+    "--restart",
+    "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper/stage1/checkpoint.npz"
+  ],
+  "timeout_seconds": 300,
+  "status": "passed",
+  "started_UTC": "2026-09-15T06:55:58.065485+00:00",
+  "pid": 67498,
+  "exit_code": 0,
+  "wall_seconds": 183.3575101250026,
+  "child_user_seconds": 173.890768,
+  "child_system_seconds": 5.123048,
+  "peak_child_RSS_bytes": 1798111232,
+  "finished_UTC": "2026-09-15T06:59:01.429201+00:00"
+}

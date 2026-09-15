@@ -1,0 +1,49 @@
+{
+  "case": "/home/ubuntu/spectra-nvidia/results/transfer_solver_20260915/cases/h8_cold",
+  "normal_file_sha256": "9361aa5fba7d8abe0f0976d00b1a0a78c6b1ed1f217fd3e603cb9e9c1090bff2",
+  "shape": [
+    8533,
+    8533
+  ],
+  "nnz": 163733,
+  "diagonal_shift": 1e-11,
+  "precision": "float64",
+  "blas_threads": 1,
+  "RHS": "Actual shifted normal matrix times deterministic seed-109 vector",
+  "input_seconds": 0.013820303000102285,
+  "results": [
+    {
+      "backend": "SciPy_SuperLU",
+      "setup_seconds": 0.026266227000178333,
+      "median_solve_seconds": 0.0008033149999846501,
+      "min_solve_seconds": 0.0008017415000040274,
+      "max_solve_seconds": 0.0008390392999899632,
+      "relative_RHS_residual": 2.8972114694007436e-16,
+      "backward_error": 3.0969263932984596e-18,
+      "status": "passed"
+    },
+    {
+      "backend": "SuiteSparse_CHOLMOD",
+      "setup_seconds": 0.018813298999702965,
+      "median_solve_seconds": 0.0004929249000042546,
+      "min_solve_seconds": 0.0004926949000036984,
+      "max_solve_seconds": 0.0004938490000085949,
+      "relative_RHS_residual": 2.6577009224261215e-16,
+      "backward_error": 2.840905546276036e-18,
+      "status": "passed"
+    },
+    {
+      "backend": "NVIDIA_cuDSS_with_RHS_and_output_transfers",
+      "setup_seconds": 0.13226997299989307,
+      "median_solve_seconds": 0.0004027425000003859,
+      "min_solve_seconds": 0.0004014104500129179,
+      "max_solve_seconds": 0.0004100137000023096,
+      "relative_RHS_residual": 2.6699468277980366e-16,
+      "backward_error": 2.853995604753529e-18,
+      "status": "passed"
+    }
+  ],
+  "full_solver_speedup_measured": false,
+  "CUDA_context_initialization_seconds": 0.21796158899996954,
+  "complete_seconds": 0.6056912039998679
+}

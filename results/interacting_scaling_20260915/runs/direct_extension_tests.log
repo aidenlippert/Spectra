@@ -1,0 +1,23 @@
+F..........
+======================================================================
+FAIL: test_collective_cluster_extension_contains_old_spin_space (research.interacting_scaling_20260915.test_dictionary.DirectDictionaryTests.test_collective_cluster_extension_contains_old_spin_space)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/aidenlippert/Documents/Spectra/research/interacting_scaling_20260915/test_dictionary.py", line 46, in test_collective_cluster_extension_contains_old_spin_space
+    self.assertEqual([g['name'] for g in groups], [g['name'] for g in larger])
+AssertionError: Lists differ: ['glo[825 chars]-3, -1)', 'collective_pair_supports:triples-(-[753 chars] 1)'] != ['glo[825 chars]-3, -3)', 'collective_pair_supports:triples-(-[929 chars] 1)']
+
+First differing element 21:
+'collective_pair_supports:triples-(-3, -1)'
+'collective_pair_supports:triples-(-3, -3)'
+
+Second list contains 4 additional elements.
+First extra element 49:
+'cluster_1:triples-(-3, -1)'
+
+Diff is 1969 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.045s
+
+FAILED (failures=1)

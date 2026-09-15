@@ -1,0 +1,23 @@
+{
+  "name": "h8_adaptive_coupling_l05_level0_replay",
+  "command": [
+    "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+    "-B",
+    "-S",
+    "-m",
+    "research.nvidia_followup_20260915.strict_replay",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h8_adaptive_coupling_l05_level0",
+    "solve",
+    "/Users/aidenlippert/Documents/Spectra/results/interacting_scaling_20260915/cases/h8_adaptive_coupling_l05_level0/exact"
+  ],
+  "timeout_seconds": 600,
+  "status": "passed",
+  "started_UTC": "2026-09-15T12:31:12.940965+00:00",
+  "pid": 35345,
+  "exit_code": 0,
+  "wall_seconds": 52.90129887498915,
+  "child_user_seconds": 52.623871,
+  "child_system_seconds": 0.201991,
+  "peak_child_RSS_bytes": 336527360,
+  "finished_UTC": "2026-09-15T12:32:05.843600+00:00"
+}

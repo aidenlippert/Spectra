@@ -1,0 +1,95 @@
+{
+  "source_sha256": "7b0fee0b5c0f806c10da60046a7510b582b4fbd9ba5dac8bc2f9069af7d03040",
+  "same_original_H10_lower_dictionary": true,
+  "fresh_zero_Gram_and_ideal_coordinates": true,
+  "proposal_initial_dual": "Fresh canonical HF product moments",
+  "accepting_checker_unchanged": true,
+  "upper_dependency": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/rotated_h10",
+  "not_a_success_of_the_original_frozen_random_state_rule": true,
+  "original_state_failures_remain_additional_cost": true,
+  "steps": [
+    [
+      "initialize",
+      30,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_followup_20260915.rotated_lower",
+        "initialize"
+      ]
+    ],
+    [
+      "nonsinglet",
+      240,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper",
+        "nonsinglet"
+      ]
+    ],
+    [
+      "prepare",
+      900,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_followup_20260915.adaptive_size",
+        "prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper"
+      ]
+    ],
+    [
+      "stage1",
+      400,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper",
+        "stage1",
+        "--seconds",
+        "300",
+        "--mu",
+        "2"
+      ]
+    ],
+    [
+      "stage2",
+      300,
+      [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper",
+        "stage2",
+        "--seconds",
+        "180",
+        "--mu",
+        ".03",
+        "--restart",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper/stage1/checkpoint.npz"
+      ]
+    ],
+    [
+      "replay",
+      600,
+      [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper",
+        "replay"
+      ]
+    ]
+  ]
+}

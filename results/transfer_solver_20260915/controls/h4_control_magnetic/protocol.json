@@ -1,0 +1,73 @@
+{
+  "source_case": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/h4_control",
+  "input_hashes": {
+    "fixture.json": "652a1a61b049a0260787004a2bbbcc89dd4bd90c0387940527d7eade0ca9376d",
+    "upper.json": "31b66b867cfa5df40fef3fc8aa74a4482697a3d29dd8124e47428a3069f969ed",
+    "nonsinglet.json": "417fc019b0e9ca36108ded4bf233c42d11dca72eb97c6e292bc9a24a42d7a5ea",
+    "mps/state.json": "2e1eb619442d376064d408c5a4c8480f650cc7dba3cf86e5cc2e85fbea09ae5e"
+  },
+  "identical_cold_physical_initial_primal": "zero Gram and ideal coordinates",
+  "attainable_singlet_cone": "Same spin-averaged mixed dictionary; highest-weight decomposition disabled",
+  "common_state_and_nonsinglet_costs_excluded_from_both_representation_comparisons": true,
+  "steps": [
+    {
+      "name": "prepare",
+      "seconds": 900,
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.representation_control",
+        "prepare",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h4_control_magnetic"
+      ]
+    },
+    {
+      "name": "stage1",
+      "seconds": 400,
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h4_control_magnetic",
+        "stage1",
+        "--seconds",
+        "300",
+        "--mu",
+        "2"
+      ]
+    },
+    {
+      "name": "stage2",
+      "seconds": 300,
+      "command": [
+        "/Users/aidenlippert/Documents/Spectra/.venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.transfer_solver_20260915.solve",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h4_control_magnetic",
+        "stage2",
+        "--seconds",
+        "180",
+        "--mu",
+        ".03",
+        "--restart",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h4_control_magnetic/stage1/checkpoint.npz"
+      ]
+    },
+    {
+      "name": "replay",
+      "seconds": 600,
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.transfer_solver_20260915.actions",
+        "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/controls/h4_control_magnetic",
+        "replay"
+      ]
+    }
+  ]
+}

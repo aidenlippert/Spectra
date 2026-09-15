@@ -1,0 +1,80 @@
+{
+  "source_MPS": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/rotated_h10/mps/state.json",
+  "source_prepared": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/adaptive/h10_rotated_upper/prepared",
+  "numerical_proposal_only": true,
+  "full_N_determinants_enumerated": 0,
+  "highest_reduced_density_order": 3,
+  "checks": [
+    {
+      "degree": 1,
+      "alpha_count": 0,
+      "dimension": 10,
+      "trace_error": 1.7763568394002505e-15,
+      "seconds": 0.43562070798361674
+    },
+    {
+      "degree": 1,
+      "alpha_count": 1,
+      "dimension": 10,
+      "trace_error": 3.552713678800501e-15,
+      "seconds": 0.44109945799573325
+    },
+    {
+      "degree": 2,
+      "alpha_count": 0,
+      "dimension": 45,
+      "trace_error": 5.329070518200751e-15,
+      "seconds": 0.4938618750020396
+    },
+    {
+      "degree": 2,
+      "alpha_count": 1,
+      "dimension": 100,
+      "trace_error": 1.4210854715202004e-14,
+      "seconds": 0.8029555829998571
+    },
+    {
+      "degree": 2,
+      "alpha_count": 2,
+      "dimension": 45,
+      "trace_error": 8.881784197001252e-15,
+      "seconds": 0.8643697919906117
+    },
+    {
+      "degree": 3,
+      "alpha_count": 0,
+      "dimension": 120,
+      "trace_error": 5.329070518200751e-15,
+      "seconds": 1.1999334169959184
+    },
+    {
+      "degree": 3,
+      "alpha_count": 1,
+      "dimension": 450,
+      "trace_error": 3.552713678800501e-14,
+      "seconds": 5.748411624983419
+    },
+    {
+      "degree": 3,
+      "alpha_count": 2,
+      "dimension": 450,
+      "trace_error": 4.263256414560601e-14,
+      "seconds": 10.751264207996428
+    },
+    {
+      "degree": 3,
+      "alpha_count": 3,
+      "dimension": 120,
+      "trace_error": 1.0658141036401503e-14,
+      "seconds": 11.176394166977843
+    }
+  ],
+  "transported_energy_Ha": -12.36828019699853,
+  "absolute_difference_from_exact_upper_Ha": 3.6016185589460292e-09,
+  "moment_pullback_residual": 2.4896972080610493e-12,
+  "MPS_transfer_steps": 1229010,
+  "local_words_evaluated": 224700,
+  "seconds": 13.429643749987008,
+  "old_maps_shared_cost_additional": true,
+  "initial_Gram_matrices": "zero"
+}

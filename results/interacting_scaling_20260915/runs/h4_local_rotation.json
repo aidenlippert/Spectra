@@ -1,0 +1,22 @@
+{
+  "name": "h4_local_rotation",
+  "command": [
+    ".venv-molecule/bin/python",
+    "-B",
+    "-m",
+    "research.interacting_scaling_20260915.rotation",
+    "construct",
+    "results/transfer_solver_20260915/cases/h4_control",
+    "results/interacting_scaling_20260915/rotations/h4"
+  ],
+  "timeout_seconds": 60,
+  "status": "passed",
+  "started_UTC": "2026-09-15T09:01:46.653656+00:00",
+  "pid": 92566,
+  "exit_code": 0,
+  "wall_seconds": 1.3800828749954235,
+  "child_user_seconds": 0.42013999999999996,
+  "child_system_seconds": 0.136519,
+  "peak_child_RSS_bytes": 90472448,
+  "finished_UTC": "2026-09-15T09:01:48.033941+00:00"
+}

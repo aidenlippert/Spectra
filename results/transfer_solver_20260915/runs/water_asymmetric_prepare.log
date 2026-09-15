@@ -1,0 +1,116 @@
+{"stage": "forecast", "rows": 13732, "full_word_pairs": 618092, "retained_Gram_entries": 178590, "largest_Gram_block": 240, "number_ideal_columns": 1108, "stats": {"spatial_parity_masks": [768, 15615], "mixed_linear_words_retained": true, "operator_dictionary_dimensions": [6, 1, 6, 1, 6, 1, 6, 1, 15, 6, 37, 12, 15, 6, 15, 6, 37, 12, 15, 6, 37, 12, 74, 24, 37, 12, 4, 1, 23, 7, 21, 9, 2, 3, 2, 3, 21, 9, 23, 7, 4, 1, 96, 51, 336, 161, 336, 161, 96, 51, 96, 51, 336, 161, 336, 161, 96, 51]}}
+{"stage": "spin_projection", "seconds": 67.19480220798869, "original_rows": 13732, "independent_invariant_rows": 4360, "integer_denominator": 12, "projector_nonzeros": 161310, "exact_integer_idempotence_checked": true, "modular_prime": 65521, "rank_equals_exact_trace": true}
+{"stage": "maps", "block": 0, "seconds": 67.78736924999976}
+{"stage": "maps", "block": 8, "seconds": 67.79439820797415}
+{"stage": "maps", "block": 16, "seconds": 67.87119895798969}
+{"stage": "maps", "block": 24, "seconds": 67.98610916698817}
+{"stage": "maps", "block": 32, "seconds": 68.02592137499596}
+{"stage": "maps", "block": 40, "seconds": 68.24612654198427}
+{"stage": "maps", "block": 48, "seconds": 75.34477437500027}
+{
+  "kind": "input_derived_highest_weight_preparation_v1",
+  "fixture": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric/fixture.json",
+  "fixture_sha256": "e179e0bb12d0b81b5618fa534b680e7f618fc6052d253135b2ac3e8e5d7059ba",
+  "state": "/Users/aidenlippert/Documents/Spectra/results/transfer_solver_20260915/cases/water_asymmetric/mps/state.json",
+  "state_sha256": "09367c8d0faed2abb98f201f4c1e0321b929cd7c64816a5e9ecfea93ca6e1adc",
+  "modes": 14,
+  "particles": 10,
+  "spin_projection": {
+    "original_rows": 13732,
+    "independent_invariant_rows": 4360,
+    "integer_denominator": 12,
+    "projector_nonzeros": 161310,
+    "exact_integer_idempotence_checked": true,
+    "modular_prime": 65521,
+    "rank_equals_exact_trace": true
+  },
+  "upper_Ha": "-9377178234568387968945227571528312076807752292404560328867289033112369108708530957748285668671155486549072095057637951952474570399180435618171145459786601521622360932261396699428889145186024139360513895015945295057447061699562643/111111110998566669105021196451653122129441441209881001702891847345295017216858299173159155678425047070096295767343154689320835209544385419785466257513220524451520810069692636420096835107267783179559238651921730066525000000000000",
+  "original_H_spin_defect_Ha": "13/100000000000",
+  "forecast": {
+    "rows": 13732,
+    "full_word_pairs": 618092,
+    "retained_Gram_entries": 178590,
+    "largest_Gram_block": 240,
+    "number_ideal_columns": 1108,
+    "stats": {
+      "spatial_parity_masks": [
+        768,
+        15615
+      ],
+      "mixed_linear_words_retained": true,
+      "operator_dictionary_dimensions": [
+        6,
+        1,
+        6,
+        1,
+        6,
+        1,
+        6,
+        1,
+        15,
+        6,
+        37,
+        12,
+        15,
+        6,
+        15,
+        6,
+        37,
+        12,
+        15,
+        6,
+        37,
+        12,
+        74,
+        24,
+        37,
+        12,
+        4,
+        1,
+        23,
+        7,
+        21,
+        9,
+        2,
+        3,
+        2,
+        3,
+        21,
+        9,
+        23,
+        7,
+        4,
+        1,
+        96,
+        51,
+        336,
+        161,
+        336,
+        161,
+        96,
+        51,
+        96,
+        51,
+        336,
+        161,
+        336,
+        161,
+        96,
+        51
+      ]
+    }
+  },
+  "map_build_seconds": 75.78439229200012,
+  "physical_word_pairs_constructed": 316824,
+  "coefficient_nonzeros": 517265,
+  "normal_nonzeros": 82908,
+  "moment_seconds": 1.0702427079959307,
+  "moment_count": 13732,
+  "moment_transfer_steps": 65344,
+  "moment_pullback_residual": 5.307985786640917e-12,
+  "initial_primal": "zero Gram matrices and zero ideal coordinates; no previous solution",
+  "teacher_certificate_used": false,
+  "old_checkpoint_used": false,
+  "many_body_determinants_enumerated": 0,
+  "total_seconds": 76.85463637497742
+}

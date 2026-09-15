@@ -1,0 +1,125 @@
+{
+  "case": "cold_h6_hybrid_v7",
+  "round": 0,
+  "spin_lifting": true,
+  "rank_cap_initial": 4,
+  "gram_entries": 11516,
+  "gram_dimensions": [
+    6,
+    6,
+    6,
+    6,
+    15,
+    36,
+    15,
+    15,
+    36,
+    15,
+    36,
+    72,
+    36,
+    2,
+    4,
+    4,
+    2,
+    4,
+    4,
+    4,
+    4
+  ],
+  "full_gram_entries": 434500,
+  "coefficient_equations": 949,
+  "free_variables": 87,
+  "projected_map_nonzeros": 41897,
+  "build_seconds": 0.23834911300036765,
+  "prepared_dependency": "/home/ubuntu/spectra-gpu-acceleration-20260915/cases/cold_h6_hybrid_v7/nonsinglet_prepared",
+  "fixture": "/home/ubuntu/spectra-gpu-acceleration-20260915/cases/cold_h6_hybrid_v7/fixture.json",
+  "state": "/home/ubuntu/spectra-gpu-acceleration-20260915/cases/cold_h6_hybrid_v7/mps/state.json",
+  "full_Gram_teacher_used": false,
+  "many_body_states_enumerated": 0,
+  "guide": [
+    {
+      "name": "local-triples-(-3, 1, 0)",
+      "lowest": 0.6682367995603431,
+      "highest_retained": 0.6682367995603434
+    },
+    {
+      "name": "local-triples-(-2, 0, 1)",
+      "lowest": 0.6682367989289574,
+      "highest_retained": 0.678309867705501
+    },
+    {
+      "name": "local-triples-(-1, 1, 0)",
+      "lowest": 0.6682368032212662,
+      "highest_retained": 0.6783098383614118
+    },
+    {
+      "name": "local-triples-(0, 0, 1)",
+      "lowest": 0.6682368124371687,
+      "highest_retained": 0.668236812437169
+    },
+    {
+      "name": "mixed-(-2, 0, 1)",
+      "lowest": 7.740725956493309e-15,
+      "highest_retained": 2.1399558052791285e-14
+    },
+    {
+      "name": "mixed-(-1, 1, 0)",
+      "lowest": -3.7415019972475996e-16,
+      "highest_retained": 2.3638004341256583e-16
+    },
+    {
+      "name": "mixed-(0, 0, 1)",
+      "lowest": -1.0022371204418325e-15,
+      "highest_retained": 2.3033256306564425e-16
+    },
+    {
+      "name": "mixed-(1, 1, 0)",
+      "lowest": 8.254710942709695e-15,
+      "highest_retained": 2.2014713363100728e-14
+    }
+  ],
+  "magnetization": 1,
+  "singlet": false,
+  "ladder_ideal_dimension": 0,
+  "shared_spin_orbits": false,
+  "map_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "moment_dual_formulation": false,
+  "coherent_atoms": false,
+  "solve_seconds": 10.042743067000174,
+  "solver": "SCS",
+  "solver_status": "optimal",
+  "solver_iterations": 5225,
+  "solver_max_threads": null,
+  "status": "requires_independent_exact_replay",
+  "proposed_b": -6.136826381089128,
+  "numeric_coefficient_l1": 3.0324774211427267e-07,
+  "minimum_PSD_eigenvalue": -1.9772068161351648e-09,
+  "total_state_action_Ha": 0.11933180994616022,
+  "factor_rows": 190,
+  "certificate_bytes": 348071,
+  "round_seconds": 10.336496403000183,
+  "total_seconds": 11.179423257000053
+}

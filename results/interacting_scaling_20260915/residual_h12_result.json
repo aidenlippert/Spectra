@@ -1,0 +1,62 @@
+{
+  "earlier_diagnostic_parent_seconds": 645.2264140000043,
+  "original_failed_cold_seconds_additional": 1502.7998542500136,
+  "fresh_complete_cold_calculation": false,
+  "frozen_H12_result_unchanged": true,
+  "screen_execution": {
+    "steps": [
+      {
+        "stage": "initialize",
+        "exit_code": 0,
+        "effective_cap_seconds": 30
+      },
+      {
+        "stage": "solve",
+        "exit_code": 0,
+        "effective_cap_seconds": 345
+      },
+      {
+        "stage": "check",
+        "exit_code": 0,
+        "effective_cap_seconds": 180
+      }
+    ],
+    "wall_seconds": 157.22571041699848,
+    "completed": true,
+    "last_stage": "check"
+  },
+  "exact_screen": {
+    "lower": "-15633710238020601611/1000000000000000000",
+    "lower_float": -15.633710238020601,
+    "residual_l1": "18092599601611/1000000000000000000",
+    "residual_l1_float": 1.8092599601611e-05,
+    "multiplier_terms": 1293,
+    "square_polynomial_terms": 31305,
+    "residual_terms": 45979,
+    "residual_max_degree": 6,
+    "mode_count": 24,
+    "particle_number": 12,
+    "factor_rows": 1008,
+    "factor_nonzeros": 45525,
+    "restricted_to": "M_S=1",
+    "original_H_spin_defect_Ha": "1481/500000000000",
+    "lower_for": "Exact SU(2) average of input H in the stated sector",
+    "replay_seconds": 13.932959625002695,
+    "meets_full_interval_lower_threshold": true,
+    "not_a_full_fixed_N_bound_by_itself": true
+  },
+  "main_execution": {
+    "steps": [
+      {
+        "stage": "initialize",
+        "exit_code": 1,
+        "effective_cap_seconds": 20
+      }
+    ],
+    "wall_seconds": 0.12898762497934513,
+    "completed": false,
+    "last_stage": "initialize"
+  },
+  "additional_refinement_parent_seconds": 157.35699816598208,
+  "combined_diagnostic_parent_seconds": 802.5834121659864
+}
