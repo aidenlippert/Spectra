@@ -1,0 +1,137 @@
+{
+  "metered_subprocess_runs": 17,
+  "sum_metered_subprocess_wall_seconds": 17.396681915968657,
+  "maximum_peak_child_RSS_bytes": 244137984,
+  "process_status_counts": {
+    "passed": 17
+  },
+  "completed_target_false_despite_zero_process_exit": [
+    {
+      "artifact": "layered_8.json",
+      "reason": "declared sparse matrix entry cap reached; later circuit-action representation completed separately"
+    }
+  ],
+  "early_candidate_failures": "Incorrect proposed normalizations, nonsymmetric quadratic forms and occupation counts were caught during review and repaired. Early agent checks are unmetered and not acceptance receipts.",
+  "excluded_from_subprocess_cost": [
+    "reasoning and code authoring",
+    "primary-source research",
+    "early unmetered agent checks",
+    "report production",
+    "artifact hashing"
+  ],
+  "complete_end_to_end_scaling_claim": false,
+  "external_spending_USD": 0,
+  "new_package_installations": 0,
+  "git_writes": 0,
+  "host": {
+    "platform": "macOS-26.4.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:54:21) [Clang 16.0.6 ]",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1"
+  },
+  "runs": [
+    {
+      "name": "all_bond_dressing_6",
+      "wall_seconds": 0.7319761669496074,
+      "peak_child_RSS_bytes": 76447744,
+      "status": "passed"
+    },
+    {
+      "name": "all_bond_dressing_8",
+      "wall_seconds": 1.3748428329708986,
+      "peak_child_RSS_bytes": 244137984,
+      "status": "passed"
+    },
+    {
+      "name": "circuit_action_8",
+      "wall_seconds": 1.8416686659911647,
+      "peak_child_RSS_bytes": 164200448,
+      "status": "passed"
+    },
+    {
+      "name": "circuit_action_test",
+      "wall_seconds": 0.5639355829916894,
+      "peak_child_RSS_bytes": 65781760,
+      "status": "passed"
+    },
+    {
+      "name": "exact_and_numeric_regressions_v2",
+      "wall_seconds": 0.6070150000159629,
+      "peak_child_RSS_bytes": 58294272,
+      "status": "passed"
+    },
+    {
+      "name": "final_29_tests",
+      "wall_seconds": 0.6732088749995455,
+      "peak_child_RSS_bytes": 67616768,
+      "status": "passed"
+    },
+    {
+      "name": "final_exact_replay",
+      "wall_seconds": 0.28862200002186,
+      "peak_child_RSS_bytes": 18497536,
+      "status": "passed"
+    },
+    {
+      "name": "focused_tests_v1",
+      "wall_seconds": 0.664062375028152,
+      "peak_child_RSS_bytes": 59146240,
+      "status": "passed"
+    },
+    {
+      "name": "fresh_exact_replay",
+      "wall_seconds": 0.3076167500112206,
+      "peak_child_RSS_bytes": 18251776,
+      "status": "passed"
+    },
+    {
+      "name": "full_tests_v3",
+      "wall_seconds": 0.7170906250248663,
+      "peak_child_RSS_bytes": 60260352,
+      "status": "passed"
+    },
+    {
+      "name": "ladder_8_sites",
+      "wall_seconds": 7.3770934590138495,
+      "peak_child_RSS_bytes": 187842560,
+      "status": "passed"
+    },
+    {
+      "name": "ladders_4_6_sites",
+      "wall_seconds": 0.8219489579787478,
+      "peak_child_RSS_bytes": 65667072,
+      "status": "passed"
+    },
+    {
+      "name": "layered_gate_tests",
+      "wall_seconds": 0.597176541981753,
+      "peak_child_RSS_bytes": 59523072,
+      "status": "passed"
+    },
+    {
+      "name": "metric_cold_discovery",
+      "wall_seconds": 0.554253707989119,
+      "peak_child_RSS_bytes": 56197120,
+      "status": "passed"
+    },
+    {
+      "name": "metric_independent_replay",
+      "wall_seconds": 0.07550820801407099,
+      "peak_child_RSS_bytes": 14598144,
+      "status": "passed"
+    },
+    {
+      "name": "metric_tests",
+      "wall_seconds": 0.12314416700974107,
+      "peak_child_RSS_bytes": 17203200,
+      "status": "passed"
+    },
+    {
+      "name": "sharpness_tests",
+      "wall_seconds": 0.07751799997640774,
+      "peak_child_RSS_bytes": 17448960,
+      "status": "passed"
+    }
+  ]
+}

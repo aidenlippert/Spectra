@@ -1,0 +1,565 @@
+{
+  "experiment": "polynomial_operator_map_followup_with_common_backend",
+  "campaigns": 6,
+  "arms": {
+    "A": {
+      "acquired": false,
+      "replay": false
+    },
+    "B": {
+      "acquired": true,
+      "replay": false
+    },
+    "C": {
+      "acquired": false,
+      "replay": true
+    },
+    "D": {
+      "acquired": true,
+      "replay": true
+    }
+  },
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "proposal_calls_per_arm": 2,
+  "proposal_timeout_seconds": 180,
+  "evaluation_timeout_seconds": 180,
+  "repetitions": 3,
+  "proposal_parallelism": 4,
+  "independence": "Six fresh discovery campaigns conditional on one shared, already acquired library; not independent library acquisitions.",
+  "historical_acquisition": {
+    "study": "/Users/aidenlippert/Documents/Spectra-rsi-discovery/results/rsi_discovery_v2_20260916/confirmatory001",
+    "study_passed": false,
+    "selection": "fastest exact transfer method that also passed all real operator-channel conformance",
+    "campaign": "campaign_2",
+    "arm": "A",
+    "method_id": "d9d2cf86e9f9e4768067a59bb9dfdffc16bd14b97d13eac629319cfd98ba3128",
+    "source_sha256": "5027b224a17e9603ef2a8772b0a8e638c28e45fe803dc2c4664486fd351ac544",
+    "cost_charge": "The complete earlier study and subsequent conformance are acquisition costs, not just the winning proposal."
+  },
+  "new_problem": "Exact symmetric Gram maps of sparse polynomial operators, not monomial dictionaries",
+  "library_exposure": "The existing ordinary monomial_map and oracle are available to every arm. B/D use the acquired monomial-map backend through exactly the same interface. Operational contract and measured regime are exposed; full implementation is not injected into prompts.",
+  "common_backend": "After all sources are frozen, rerun every arm with the same ordinary monomial-map backend. This measures differences in the discovered algorithms without inherited primitive execution speed. No repair or reselection follows transfer.",
+  "invalidated_predecessor": "compound_confirmatory001 stopped before any development evaluation or transfer: frozen arms lacked the existing monomial-map capability. Its 12 started proposals remain charged; no results count toward the hypothesis test.",
+  "fixed_policy": "continue search",
+  "replay_policy": "frozen previous measured action prior, with typed response to actual new observations",
+  "selection": "accepted development construction time only; freeze before new transfer; no transfer repair",
+  "primary": {
+    "contrast": "D versus A",
+    "all_six_wins": true,
+    "median_speedup_min": 1.25,
+    "B_over_A_and_D_over_C_median_min": 1.2,
+    "all_D_generated_and_exact_transfer": true,
+    "all_D_actually_call_acquired_primitive": true,
+    "common_backend_required": {
+      "all_six_D_over_A_wins": true,
+      "median_A_over_D_A_over_B_C_over_D_min": 1.2,
+      "one_sided_sign_p_max": 0.025
+    },
+    "one_sided_sign_p_max": 0.025,
+    "multiplicity": "Bonferroni family of two RSI studies; report both, including the negative first study"
+  },
+  "universal_RSI_claim": false,
+  "cumulative_payback_requires_separate_full_accounting": true,
+  "development": [
+    [
+      {
+        "seed": 18317,
+        "base": {
+          "family": "collective",
+          "spatial": 5,
+          "weight": -1
+        },
+        "unique_words": 48,
+        "operators": 20,
+        "terms": 5
+      },
+      {
+        "seed": 18336,
+        "base": {
+          "family": "chain",
+          "spatial": 6,
+          "width": 3,
+          "weight": -1
+        },
+        "unique_words": 64,
+        "operators": 24,
+        "terms": 8,
+        "relations": true
+      }
+    ],
+    [
+      {
+        "seed": 19348,
+        "base": {
+          "family": "collective",
+          "spatial": 5,
+          "weight": -1
+        },
+        "unique_words": 48,
+        "operators": 20,
+        "terms": 5
+      },
+      {
+        "seed": 19367,
+        "base": {
+          "family": "chain",
+          "spatial": 6,
+          "width": 3,
+          "weight": -1
+        },
+        "unique_words": 64,
+        "operators": 24,
+        "terms": 8,
+        "relations": true
+      }
+    ],
+    [
+      {
+        "seed": 20379,
+        "base": {
+          "family": "collective",
+          "spatial": 5,
+          "weight": -1
+        },
+        "unique_words": 48,
+        "operators": 20,
+        "terms": 5
+      },
+      {
+        "seed": 20398,
+        "base": {
+          "family": "chain",
+          "spatial": 6,
+          "width": 3,
+          "weight": -1
+        },
+        "unique_words": 64,
+        "operators": 24,
+        "terms": 8,
+        "relations": true
+      }
+    ],
+    [
+      {
+        "seed": 21410,
+        "base": {
+          "family": "collective",
+          "spatial": 5,
+          "weight": -1
+        },
+        "unique_words": 48,
+        "operators": 20,
+        "terms": 5
+      },
+      {
+        "seed": 21429,
+        "base": {
+          "family": "chain",
+          "spatial": 6,
+          "width": 3,
+          "weight": -1
+        },
+        "unique_words": 64,
+        "operators": 24,
+        "terms": 8,
+        "relations": true
+      }
+    ],
+    [
+      {
+        "seed": 22441,
+        "base": {
+          "family": "collective",
+          "spatial": 5,
+          "weight": -1
+        },
+        "unique_words": 48,
+        "operators": 20,
+        "terms": 5
+      },
+      {
+        "seed": 22460,
+        "base": {
+          "family": "chain",
+          "spatial": 6,
+          "width": 3,
+          "weight": -1
+        },
+        "unique_words": 64,
+        "operators": 24,
+        "terms": 8,
+        "relations": true
+      }
+    ],
+    [
+      {
+        "seed": 23472,
+        "base": {
+          "family": "collective",
+          "spatial": 5,
+          "weight": -1
+        },
+        "unique_words": 48,
+        "operators": 20,
+        "terms": 5
+      },
+      {
+        "seed": 23491,
+        "base": {
+          "family": "chain",
+          "spatial": 6,
+          "width": 3,
+          "weight": -1
+        },
+        "unique_words": 64,
+        "operators": 24,
+        "terms": 8,
+        "relations": true
+      }
+    ]
+  ],
+  "transfer": [
+    [
+      {
+        "seed": 702193,
+        "base": {
+          "family": "star",
+          "spatial": 8,
+          "weight": -1
+        },
+        "unique_words": 96,
+        "operators": 40,
+        "terms": 10,
+        "relations": true
+      },
+      {
+        "seed": 702222,
+        "base": {
+          "family": "chain",
+          "spatial": 10,
+          "width": 4,
+          "weight": -1
+        },
+        "unique_words": 120,
+        "operators": 48,
+        "terms": 12,
+        "zero_operator": true
+      },
+      {
+        "seed": 702240,
+        "base": {
+          "family": "disjoint",
+          "spatial": 12,
+          "weight": -1,
+          "mode_offset": 59,
+          "mode_stride": 3
+        },
+        "unique_words": 80,
+        "operators": 32,
+        "terms": 8,
+        "large_integers": true,
+        "relations": true
+      },
+      {
+        "seed": 702254,
+        "base": {
+          "family": "collective",
+          "spatial": 10,
+          "weight": -1,
+          "adjoint": true
+        },
+        "unique_words": 100,
+        "operators": 40,
+        "terms": 4,
+        "zero_operator": true
+      }
+    ],
+    [
+      {
+        "seed": 703224,
+        "base": {
+          "family": "star",
+          "spatial": 8,
+          "weight": -1
+        },
+        "unique_words": 96,
+        "operators": 40,
+        "terms": 10,
+        "relations": true
+      },
+      {
+        "seed": 703253,
+        "base": {
+          "family": "chain",
+          "spatial": 10,
+          "width": 4,
+          "weight": -1
+        },
+        "unique_words": 120,
+        "operators": 48,
+        "terms": 12,
+        "zero_operator": true
+      },
+      {
+        "seed": 703271,
+        "base": {
+          "family": "disjoint",
+          "spatial": 12,
+          "weight": -1,
+          "mode_offset": 59,
+          "mode_stride": 3
+        },
+        "unique_words": 80,
+        "operators": 32,
+        "terms": 8,
+        "large_integers": true,
+        "relations": true
+      },
+      {
+        "seed": 703285,
+        "base": {
+          "family": "collective",
+          "spatial": 10,
+          "weight": -1,
+          "adjoint": true
+        },
+        "unique_words": 100,
+        "operators": 40,
+        "terms": 4,
+        "zero_operator": true
+      }
+    ],
+    [
+      {
+        "seed": 704255,
+        "base": {
+          "family": "star",
+          "spatial": 8,
+          "weight": -1
+        },
+        "unique_words": 96,
+        "operators": 40,
+        "terms": 10,
+        "relations": true
+      },
+      {
+        "seed": 704284,
+        "base": {
+          "family": "chain",
+          "spatial": 10,
+          "width": 4,
+          "weight": -1
+        },
+        "unique_words": 120,
+        "operators": 48,
+        "terms": 12,
+        "zero_operator": true
+      },
+      {
+        "seed": 704302,
+        "base": {
+          "family": "disjoint",
+          "spatial": 12,
+          "weight": -1,
+          "mode_offset": 59,
+          "mode_stride": 3
+        },
+        "unique_words": 80,
+        "operators": 32,
+        "terms": 8,
+        "large_integers": true,
+        "relations": true
+      },
+      {
+        "seed": 704316,
+        "base": {
+          "family": "collective",
+          "spatial": 10,
+          "weight": -1,
+          "adjoint": true
+        },
+        "unique_words": 100,
+        "operators": 40,
+        "terms": 4,
+        "zero_operator": true
+      }
+    ],
+    [
+      {
+        "seed": 705286,
+        "base": {
+          "family": "star",
+          "spatial": 8,
+          "weight": -1
+        },
+        "unique_words": 96,
+        "operators": 40,
+        "terms": 10,
+        "relations": true
+      },
+      {
+        "seed": 705315,
+        "base": {
+          "family": "chain",
+          "spatial": 10,
+          "width": 4,
+          "weight": -1
+        },
+        "unique_words": 120,
+        "operators": 48,
+        "terms": 12,
+        "zero_operator": true
+      },
+      {
+        "seed": 705333,
+        "base": {
+          "family": "disjoint",
+          "spatial": 12,
+          "weight": -1,
+          "mode_offset": 59,
+          "mode_stride": 3
+        },
+        "unique_words": 80,
+        "operators": 32,
+        "terms": 8,
+        "large_integers": true,
+        "relations": true
+      },
+      {
+        "seed": 705347,
+        "base": {
+          "family": "collective",
+          "spatial": 10,
+          "weight": -1,
+          "adjoint": true
+        },
+        "unique_words": 100,
+        "operators": 40,
+        "terms": 4,
+        "zero_operator": true
+      }
+    ],
+    [
+      {
+        "seed": 706317,
+        "base": {
+          "family": "star",
+          "spatial": 8,
+          "weight": -1
+        },
+        "unique_words": 96,
+        "operators": 40,
+        "terms": 10,
+        "relations": true
+      },
+      {
+        "seed": 706346,
+        "base": {
+          "family": "chain",
+          "spatial": 10,
+          "width": 4,
+          "weight": -1
+        },
+        "unique_words": 120,
+        "operators": 48,
+        "terms": 12,
+        "zero_operator": true
+      },
+      {
+        "seed": 706364,
+        "base": {
+          "family": "disjoint",
+          "spatial": 12,
+          "weight": -1,
+          "mode_offset": 59,
+          "mode_stride": 3
+        },
+        "unique_words": 80,
+        "operators": 32,
+        "terms": 8,
+        "large_integers": true,
+        "relations": true
+      },
+      {
+        "seed": 706378,
+        "base": {
+          "family": "collective",
+          "spatial": 10,
+          "weight": -1,
+          "adjoint": true
+        },
+        "unique_words": 100,
+        "operators": 40,
+        "terms": 4,
+        "zero_operator": true
+      }
+    ],
+    [
+      {
+        "seed": 707348,
+        "base": {
+          "family": "star",
+          "spatial": 8,
+          "weight": -1
+        },
+        "unique_words": 96,
+        "operators": 40,
+        "terms": 10,
+        "relations": true
+      },
+      {
+        "seed": 707377,
+        "base": {
+          "family": "chain",
+          "spatial": 10,
+          "width": 4,
+          "weight": -1
+        },
+        "unique_words": 120,
+        "operators": 48,
+        "terms": 12,
+        "zero_operator": true
+      },
+      {
+        "seed": 707395,
+        "base": {
+          "family": "disjoint",
+          "spatial": 12,
+          "weight": -1,
+          "mode_offset": 59,
+          "mode_stride": 3
+        },
+        "unique_words": 80,
+        "operators": 32,
+        "terms": 8,
+        "large_integers": true,
+        "relations": true
+      },
+      {
+        "seed": 707409,
+        "base": {
+          "family": "collective",
+          "spatial": 10,
+          "weight": -1,
+          "adjoint": true
+        },
+        "unique_words": 100,
+        "operators": 40,
+        "terms": 4,
+        "zero_operator": true
+      }
+    ]
+  ],
+  "sources": {
+    "research/rsi_discovery_20260916/v2/compound_campaign.py": "8b87e03cb2d58b30047a9a00a4b7907ea2419dd02a1980223cb63774940086ee",
+    "research/rsi_discovery_20260916/v2/compound.py": "443a2838051d59333a9e008c49d74ca4a076e6b4458ccbc1df91d5605e15fa2c",
+    "research/rsi_discovery_20260916/v2/campaign.py": "e54059dbf9bdd980c2ec7c8a11eb4ba1fb00c4c2786a186152d9bfccdff0b214",
+    "research/rsi_discovery_20260916/v2/model.py": "68beddd0cd32fd92374de24c758b22d9c2a68f9706b134c5bca85b273e83b258",
+    "research/rsi_discovery_20260916/v2/model_job.py": "549d1fdbadf2000c8da4f99c677d5c6c48b7f61071aa682dbef615859056c428",
+    "research/rsi_discovery_20260916/v2/records.py": "c56e74ef58e5269e315e52d3be25517d03faca957d6fdb0a3362917a6b383e0f",
+    "research/rsi_discovery_20260916/v2/library.py": "dabf0b2a6abd17d2cc9fd144ccbbe60cf938481fc1cd37d71c0d3545de254776",
+    "research/rsi_discovery_20260916/v2/algebra.py": "5d36367dc128db41aacf9b2ba8b903df4bcab264fe7e9114cc13bbbabe66539a",
+    "research/rsi_discovery_20260916/v2/language.py": "86693e05f0da134612cfe659da40ebee11cc363bee8d22c9a36c3f5d283842b5"
+  }
+}

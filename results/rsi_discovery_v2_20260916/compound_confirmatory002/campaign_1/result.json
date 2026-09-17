@@ -1,0 +1,2595 @@
+{
+  "index": 0,
+  "arms": {
+    "A": {
+      "attempts": [
+        {
+          "source_sha256": "f612f19822a341b7b84c7d25bcab79abb0f1945b9d418c9954eaf86115b9f828",
+          "validation": {
+            "status": "verified_encoded_claim",
+            "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+            "tasks": [
+              {
+                "task": {
+                  "seed": 18317,
+                  "base": {
+                    "family": "collective",
+                    "spatial": 5,
+                    "weight": -1
+                  },
+                  "unique_words": 48,
+                  "operators": 20,
+                  "terms": 5
+                },
+                "operator_count": 20,
+                "distinct_words": 42,
+                "preparation_seconds": 0.00040608301060274243,
+                "independent_reference_seconds": 0.05398941703606397,
+                "validation_seconds": [
+                  0.0056559580261819065,
+                  0.005651541985571384,
+                  0.005623250035569072
+                ],
+                "cold_seconds": [
+                  0.027635667007416487,
+                  0.027851458988152444,
+                  0.027794707973953336
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 42,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 42,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 42,
+                    "monomial_map": 1
+                  }
+                ],
+                "median_seconds": 0.027794707973953336,
+                "coefficient_rows": 1257,
+                "nonzero_entries": 7875
+              },
+              {
+                "task": {
+                  "seed": 18336,
+                  "base": {
+                    "family": "chain",
+                    "spatial": 6,
+                    "width": 3,
+                    "weight": -1
+                  },
+                  "unique_words": 64,
+                  "operators": 24,
+                  "terms": 8,
+                  "relations": true
+                },
+                "operator_count": 24,
+                "distinct_words": 62,
+                "preparation_seconds": 0.0005468750023283064,
+                "independent_reference_seconds": 0.1850909169879742,
+                "validation_seconds": [
+                  0.018471250019501895,
+                  0.017998208990320563,
+                  0.01836062502115965
+                ],
+                "cold_seconds": [
+                  0.07288683397928253,
+                  0.06878283299738541,
+                  0.07091250002849847
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 62,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 62,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 62,
+                    "monomial_map": 1
+                  }
+                ],
+                "median_seconds": 0.07091250002849847,
+                "coefficient_rows": 2664,
+                "nonzero_entries": 31883
+              }
+            ],
+            "activation_seconds": 0.0015000830171629786,
+            "backend": "ordinary",
+            "universal_program_correctness_proved": false,
+            "complete_worker_seconds": 0.6132210000068881
+          },
+          "node": "3c47bad2f93b5a8e6500d0471b203b653dea473b4379b2c0660619fb2bb17ccf",
+          "action": "open_mechanism",
+          "cost": {
+            "metered_wall_seconds": 72.15433870902052,
+            "self_cpu_seconds": 0.03803600000000001,
+            "child_cpu_seconds": 1.925822,
+            "operations": 1,
+            "failed_operations": 0,
+            "model_usage": [
+              {
+                "cache_write_input_tokens": 0,
+                "cached_input_tokens": 0,
+                "input_tokens": 21190,
+                "output_tokens": 2277,
+                "reasoning_output_tokens": 1452
+              }
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          }
+        },
+        {
+          "source_sha256": null,
+          "validation": {
+            "status": "resource_obstruction",
+            "reason": "No proposal returned within the fixed native model budget"
+          },
+          "node": "45e8deacbad92c8fc4b6e3060af9e3393d54bf202b63f012158483036fb80203",
+          "action": "continue_search",
+          "cost": {
+            "metered_wall_seconds": 180.01581520802574,
+            "self_cpu_seconds": 0.08301899999999998,
+            "child_cpu_seconds": 1.858871,
+            "operations": 1,
+            "failed_operations": 1,
+            "model_usage": [
+              null
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          }
+        }
+      ],
+      "reads": [
+        "4a2ee02e6ac57842088e5aefa0ab06747c8471ba6415805adc35ebec9a0e5ff4",
+        "ff59fba3cf1c35a94804e06799d4ee6fbf2768cb4a520c3d8e4601dafd35c280",
+        "3c47bad2f93b5a8e6500d0471b203b653dea473b4379b2c0660619fb2bb17ccf",
+        "45e8deacbad92c8fc4b6e3060af9e3393d54bf202b63f012158483036fb80203"
+      ],
+      "best": {
+        "hypothesis": "Normalize each distinct monomial once, then lift a shared monomial Gram map through sparse integer coefficient incidences. This may reduce repeated algebra when operators share terms; no measured improvement is claimed.",
+        "mechanism": "After exact normal ordering and cancellation, write O_i = sum_a C_ai M_a. Lift each monomial diagonal coordinate (a,a) with weights C_ai squared on (i,i) and 2*C_ai*C_aj on (i,j). Lift each (a,b), a<b, with weights C_ai*C_bi on diagonals and C_ai*C_bj+C_aj*C_bi off diagonal. Cache these sparse lifts across canonical output rows. All arithmetic remains integral, and final cancellations remove empty rows.",
+        "source": "def propose(payload):\n    normalized = {}\n    positions = {}\n    words = []\n    supports = []\n    for i, operator in enumerate(payload['operators']):\n        polynomial = {}\n        for word, coefficient in operator.items():\n            if coefficient:\n                if word not in normalized:\n                    normalized[word] = tuple((w, int(c)) for w, c in oracle((), word).items() if c)\n                for w, c in normalized[word]:\n                    polynomial[w] = polynomial.get(w, 0) + coefficient * c\n        for word, coefficient in polynomial.items():\n            if coefficient:\n                if word not in positions:\n                    positions[word] = len(words)\n                    words.append(word)\n                    supports.append([])\n                supports[positions[word]].append((i, coefficient))\n    if not words:\n        return {}\n    base = monomial_map({'words': words, 'cache': payload['cache']})\n    lifts = {}\n    result = {}\n    for word, entries in base.items():\n        row = {}\n        for pair, coefficient in entries.items():\n            if pair not in lifts:\n                a, b = pair\n                weights = {}\n                left = supports[a]\n                right = supports[b]\n                if a == b:\n                    for p, item in enumerate(left):\n                        i, x = item\n                        weights[(i, i)] = x * x\n                        for q in range(p + 1, len(left)):\n                            j, y = left[q]\n                            weights[(i, j)] = 2 * x * y\n                else:\n                    for i, x in left:\n                        for j, y in right:\n                            if i <= j:\n                                coordinate = (i, j)\n                            else:\n                                coordinate = (j, i)\n                            weights[coordinate] = weights.get(coordinate, 0) + x * y\n                lifts[pair] = tuple((coordinate, value) for coordinate, value in weights.items() if value)\n            coefficient = int(coefficient)\n            for coordinate, value in lifts[pair]:\n                row[coordinate] = row.get(coordinate, 0) + coefficient * value\n        row = {coordinate: value for coordinate, value in row.items() if value}\n        if row:\n            result[word] = row\n    return result",
+        "assumptions": "The supplied oracle computes exact normal-ordered word products with integer-valued rational coefficients. monomial_map returns the stated direct canonical-word map and uses the supplied cache. Integer coefficients and homogeneous charge make the symmetric pullback exact, including after contractions reduce word degree.",
+        "failure_cases": "No semantic exclusions beyond the specified domain. With little term reuse, normalization and lift construction may cost more than direct products. Dense incidences can make stored lifts large, and the full monomial map can contain many rows that later cancel. Performance is unmeasured.",
+        "source_sha256": "f612f19822a341b7b84c7d25bcab79abb0f1945b9d418c9954eaf86115b9f828",
+        "model_wall_seconds": 72.15081054205075,
+        "prompt_sha256": "47c9e77b67d79dd3417b9f597937f896c47a1d38d1ba388a7412b99dc053030f",
+        "usage": {
+          "input_tokens": 21190,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2277,
+          "reasoning_output_tokens": 1452
+        }
+      },
+      "score": 0.09870720800245181,
+      "last_source": "def propose(payload):\n    normalized = {}\n    positions = {}\n    words = []\n    supports = []\n    for i, operator in enumerate(payload['operators']):\n        polynomial = {}\n        for word, coefficient in operator.items():\n            if coefficient:\n                if word not in normalized:\n                    normalized[word] = tuple((w, int(c)) for w, c in oracle((), word).items() if c)\n                for w, c in normalized[word]:\n                    polynomial[w] = polynomial.get(w, 0) + coefficient * c\n        for word, coefficient in polynomial.items():\n            if coefficient:\n                if word not in positions:\n                    positions[word] = len(words)\n                    words.append(word)\n                    supports.append([])\n                supports[positions[word]].append((i, coefficient))\n    if not words:\n        return {}\n    base = monomial_map({'words': words, 'cache': payload['cache']})\n    lifts = {}\n    result = {}\n    for word, entries in base.items():\n        row = {}\n        for pair, coefficient in entries.items():\n            if pair not in lifts:\n                a, b = pair\n                weights = {}\n                left = supports[a]\n                right = supports[b]\n                if a == b:\n                    for p, item in enumerate(left):\n                        i, x = item\n                        weights[(i, i)] = x * x\n                        for q in range(p + 1, len(left)):\n                            j, y = left[q]\n                            weights[(i, j)] = 2 * x * y\n                else:\n                    for i, x in left:\n                        for j, y in right:\n                            if i <= j:\n                                coordinate = (i, j)\n                            else:\n                                coordinate = (j, i)\n                            weights[coordinate] = weights.get(coordinate, 0) + x * y\n                lifts[pair] = tuple((coordinate, value) for coordinate, value in weights.items() if value)\n            coefficient = int(coefficient)\n            for coordinate, value in lifts[pair]:\n                row[coordinate] = row.get(coordinate, 0) + coefficient * value\n        row = {coordinate: value for coordinate, value in row.items() if value}\n        if row:\n            result[word] = row\n    return result",
+      "best_node": "3c47bad2f93b5a8e6500d0471b203b653dea473b4379b2c0660619fb2bb17ccf",
+      "frozen_source": "f612f19822a341b7b84c7d25bcab79abb0f1945b9d418c9954eaf86115b9f828",
+      "generated_method_found": true,
+      "method_id": "d74b077e7fead2cf046c38607f8f56c34207d2260edff6c82925c7522eee7e2e",
+      "transfer": {
+        "status": "verified_encoded_claim",
+        "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+        "tasks": [
+          {
+            "task": {
+              "seed": 702193,
+              "base": {
+                "family": "star",
+                "spatial": 8,
+                "weight": -1
+              },
+              "unique_words": 96,
+              "operators": 40,
+              "terms": 10,
+              "relations": true
+            },
+            "operator_count": 40,
+            "distinct_words": 95,
+            "preparation_seconds": 0.0022170000011101365,
+            "independent_reference_seconds": 0.7089774589985609,
+            "validation_seconds": [
+              0.07303425000282004,
+              0.07129716599592939,
+              0.06986041698837653
+            ],
+            "cold_seconds": [
+              0.20749345899093896,
+              0.2013505829963833,
+              0.19032316701486707
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 95,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 95,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 95,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.2013505829963833,
+            "coefficient_rows": 7442,
+            "nonzero_entries": 141679
+          },
+          {
+            "task": {
+              "seed": 702222,
+              "base": {
+                "family": "chain",
+                "spatial": 10,
+                "width": 4,
+                "weight": -1
+              },
+              "unique_words": 120,
+              "operators": 48,
+              "terms": 12,
+              "zero_operator": true
+            },
+            "operator_count": 48,
+            "distinct_words": 119,
+            "preparation_seconds": 0.0021669590496458113,
+            "independent_reference_seconds": 1.4951733330381103,
+            "validation_seconds": [
+              0.13015450001694262,
+              0.13252600003033876,
+              0.13146674999734387
+            ],
+            "cold_seconds": [
+              0.3385570830432698,
+              0.33239358401624486,
+              0.3425438329577446
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 119,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 119,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 119,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.3385570830432698,
+            "coefficient_rows": 11636,
+            "nonzero_entries": 277907
+          },
+          {
+            "task": {
+              "seed": 702240,
+              "base": {
+                "family": "disjoint",
+                "spatial": 12,
+                "weight": -1,
+                "mode_offset": 59,
+                "mode_stride": 3
+              },
+              "unique_words": 80,
+              "operators": 32,
+              "terms": 8,
+              "large_integers": true,
+              "relations": true
+            },
+            "operator_count": 32,
+            "distinct_words": 77,
+            "preparation_seconds": 0.0008449589950032532,
+            "independent_reference_seconds": 0.3792973340023309,
+            "validation_seconds": [
+              0.03669599996646866,
+              0.03685662499628961,
+              0.03621562500484288
+            ],
+            "cold_seconds": [
+              0.12838875001762062,
+              0.12053479201858863,
+              0.11997670796699822
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 77,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 77,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 77,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.12053479201858863,
+            "coefficient_rows": 5069,
+            "nonzero_entries": 64324
+          },
+          {
+            "task": {
+              "seed": 702254,
+              "base": {
+                "family": "collective",
+                "spatial": 10,
+                "weight": -1,
+                "adjoint": true
+              },
+              "unique_words": 100,
+              "operators": 40,
+              "terms": 4,
+              "zero_operator": true
+            },
+            "operator_count": 40,
+            "distinct_words": 80,
+            "preparation_seconds": 0.001977625011932105,
+            "independent_reference_seconds": 0.2427013329579495,
+            "validation_seconds": [
+              0.023980958038009703,
+              0.023938541999086738,
+              0.023721750010736287
+            ],
+            "cold_seconds": [
+              0.15847916598431766,
+              0.1554752920055762,
+              0.14855358295608312
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 80,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 80,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 80,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.1554752920055762,
+            "coefficient_rows": 6052,
+            "nonzero_entries": 24814
+          }
+        ],
+        "activation_seconds": 0.0015299170045182109,
+        "backend": "ordinary",
+        "universal_program_correctness_proved": false,
+        "complete_worker_seconds": 6.091784167045262
+      },
+      "common_backend_transfer": {
+        "status": "verified_encoded_claim",
+        "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+        "tasks": [
+          {
+            "task": {
+              "seed": 702193,
+              "base": {
+                "family": "star",
+                "spatial": 8,
+                "weight": -1
+              },
+              "unique_words": 96,
+              "operators": 40,
+              "terms": 10,
+              "relations": true
+            },
+            "operator_count": 40,
+            "distinct_words": 95,
+            "preparation_seconds": 0.0023784160148352385,
+            "independent_reference_seconds": 0.7168485420406796,
+            "validation_seconds": [
+              0.07112041598884389,
+              0.07034620904596522,
+              0.07290091598406434
+            ],
+            "cold_seconds": [
+              0.19416120904497802,
+              0.1984412909951061,
+              0.2137489170418121
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 95,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 95,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 95,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.1984412909951061,
+            "coefficient_rows": 7442,
+            "nonzero_entries": 141679
+          },
+          {
+            "task": {
+              "seed": 702222,
+              "base": {
+                "family": "chain",
+                "spatial": 10,
+                "width": 4,
+                "weight": -1
+              },
+              "unique_words": 120,
+              "operators": 48,
+              "terms": 12,
+              "zero_operator": true
+            },
+            "operator_count": 48,
+            "distinct_words": 119,
+            "preparation_seconds": 0.0021833329810760915,
+            "independent_reference_seconds": 1.7077007089974359,
+            "validation_seconds": [
+              0.13265854102792218,
+              0.1342046660138294,
+              0.13325095898471773
+            ],
+            "cold_seconds": [
+              0.3349127910332754,
+              0.33024241600651294,
+              0.3403423340059817
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 119,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 119,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 119,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.3349127910332754,
+            "coefficient_rows": 11636,
+            "nonzero_entries": 277907
+          },
+          {
+            "task": {
+              "seed": 702240,
+              "base": {
+                "family": "disjoint",
+                "spatial": 12,
+                "weight": -1,
+                "mode_offset": 59,
+                "mode_stride": 3
+              },
+              "unique_words": 80,
+              "operators": 32,
+              "terms": 8,
+              "large_integers": true,
+              "relations": true
+            },
+            "operator_count": 32,
+            "distinct_words": 77,
+            "preparation_seconds": 0.0008547909674234688,
+            "independent_reference_seconds": 0.3743235419970006,
+            "validation_seconds": [
+              0.0370278749614954,
+              0.035958124964963645,
+              0.03680312499636784
+            ],
+            "cold_seconds": [
+              0.1268273340538144,
+              0.11737358302343637,
+              0.11572116694878787
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 77,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 77,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 77,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.11737358302343637,
+            "coefficient_rows": 5069,
+            "nonzero_entries": 64324
+          },
+          {
+            "task": {
+              "seed": 702254,
+              "base": {
+                "family": "collective",
+                "spatial": 10,
+                "weight": -1,
+                "adjoint": true
+              },
+              "unique_words": 100,
+              "operators": 40,
+              "terms": 4,
+              "zero_operator": true
+            },
+            "operator_count": 40,
+            "distinct_words": 80,
+            "preparation_seconds": 0.0020238750148564577,
+            "independent_reference_seconds": 0.24636699998518452,
+            "validation_seconds": [
+              0.024047624960076064,
+              0.023766875034198165,
+              0.023670999973546714
+            ],
+            "cold_seconds": [
+              0.15833566698711365,
+              0.1534596660058014,
+              0.14701120799873024
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 80,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 80,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 80,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.1534596660058014,
+            "coefficient_rows": 6052,
+            "nonzero_entries": 24814
+          }
+        ],
+        "activation_seconds": 0.0015551670221611857,
+        "backend": "ordinary",
+        "universal_program_correctness_proved": false,
+        "complete_worker_seconds": 6.30429533298593
+      }
+    },
+    "B": {
+      "attempts": [
+        {
+          "source_sha256": "4c8d249904744becaff4dec74011fae23f2b8450fc910b61b1e81d3771c1dc88",
+          "validation": {
+            "status": "verified_encoded_claim",
+            "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+            "tasks": [
+              {
+                "task": {
+                  "seed": 18317,
+                  "base": {
+                    "family": "collective",
+                    "spatial": 5,
+                    "weight": -1
+                  },
+                  "unique_words": 48,
+                  "operators": 20,
+                  "terms": 5
+                },
+                "operator_count": 20,
+                "distinct_words": 42,
+                "preparation_seconds": 0.0008384999819099903,
+                "independent_reference_seconds": 0.05508529196958989,
+                "validation_seconds": [
+                  0.00569862499833107,
+                  0.00571374996798113,
+                  0.005711250007152557
+                ],
+                "cold_seconds": [
+                  0.007135916035622358,
+                  0.007416291977278888,
+                  0.007196833961643279
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 42,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 42,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 42,
+                    "monomial_map": 1
+                  }
+                ],
+                "median_seconds": 0.007196833961643279,
+                "coefficient_rows": 1257,
+                "nonzero_entries": 7875
+              },
+              {
+                "task": {
+                  "seed": 18336,
+                  "base": {
+                    "family": "chain",
+                    "spatial": 6,
+                    "width": 3,
+                    "weight": -1
+                  },
+                  "unique_words": 64,
+                  "operators": 24,
+                  "terms": 8,
+                  "relations": true
+                },
+                "operator_count": 24,
+                "distinct_words": 62,
+                "preparation_seconds": 0.0005390829755924642,
+                "independent_reference_seconds": 0.18218687496846542,
+                "validation_seconds": [
+                  0.018167292000725865,
+                  0.018889667000621557,
+                  0.01893054199172184
+                ],
+                "cold_seconds": [
+                  0.02164824999636039,
+                  0.02655883302213624,
+                  0.022529167006723583
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 62,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 62,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 62,
+                    "monomial_map": 1
+                  }
+                ],
+                "median_seconds": 0.022529167006723583,
+                "coefficient_rows": 2664,
+                "nonzero_entries": 31883
+              }
+            ],
+            "activation_seconds": 0.015778749948367476,
+            "backend": "acquired",
+            "universal_program_correctness_proved": false,
+            "complete_worker_seconds": 0.4233884169952944
+          },
+          "node": "bd642dd1f183962ef3c1a1e0b767d2bf82665c8174a2dcd42950c55d534c490a",
+          "action": "open_mechanism",
+          "cost": {
+            "metered_wall_seconds": 73.3751245829626,
+            "self_cpu_seconds": 0.03780699999999999,
+            "child_cpu_seconds": 1.984658,
+            "operations": 1,
+            "failed_operations": 0,
+            "model_usage": [
+              {
+                "cache_write_input_tokens": 0,
+                "cached_input_tokens": 16768,
+                "input_tokens": 21186,
+                "output_tokens": 2308,
+                "reasoning_output_tokens": 1467
+              }
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          }
+        },
+        {
+          "source_sha256": "a4be53e3b9b61759b297f9840c5edc2566565e892b9a9f03dfc8a8299e03aaea",
+          "validation": {
+            "status": "verified_encoded_claim",
+            "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+            "tasks": [
+              {
+                "task": {
+                  "seed": 18317,
+                  "base": {
+                    "family": "collective",
+                    "spatial": 5,
+                    "weight": -1
+                  },
+                  "unique_words": 48,
+                  "operators": 20,
+                  "terms": 5
+                },
+                "operator_count": 20,
+                "distinct_words": 42,
+                "preparation_seconds": 0.0009473749669268727,
+                "independent_reference_seconds": 0.05542308394797146,
+                "validation_seconds": [
+                  0.0058253329480066895,
+                  0.005781541985925287,
+                  0.006026207993272692
+                ],
+                "cold_seconds": [
+                  0.006598624982871115,
+                  0.00681266700848937,
+                  0.006553624989464879
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  }
+                ],
+                "median_seconds": 0.006598624982871115,
+                "coefficient_rows": 1257,
+                "nonzero_entries": 7875
+              },
+              {
+                "task": {
+                  "seed": 18336,
+                  "base": {
+                    "family": "chain",
+                    "spatial": 6,
+                    "width": 3,
+                    "weight": -1
+                  },
+                  "unique_words": 64,
+                  "operators": 24,
+                  "terms": 8,
+                  "relations": true
+                },
+                "operator_count": 24,
+                "distinct_words": 62,
+                "preparation_seconds": 0.0005637920112349093,
+                "independent_reference_seconds": 0.19415970897534862,
+                "validation_seconds": [
+                  0.018513540970161557,
+                  0.018126833019778132,
+                  0.018434416968375444
+                ],
+                "cold_seconds": [
+                  0.019225791038479656,
+                  0.020970041980035603,
+                  0.018736374971922487
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  }
+                ],
+                "median_seconds": 0.019225791038479656,
+                "coefficient_rows": 2664,
+                "nonzero_entries": 31883
+              }
+            ],
+            "activation_seconds": 0.014552292006555945,
+            "backend": "acquired",
+            "universal_program_correctness_proved": false,
+            "complete_worker_seconds": 0.42011941701639444
+          },
+          "node": "0db2069b53b755cd8e06fe76869e63208ce3451c72e1dd4c41bc7c348cb4c646",
+          "action": "continue_search",
+          "cost": {
+            "metered_wall_seconds": 102.33922504197108,
+            "self_cpu_seconds": 0.04956,
+            "child_cpu_seconds": 1.979723,
+            "operations": 1,
+            "failed_operations": 0,
+            "model_usage": [
+              {
+                "cache_write_input_tokens": 0,
+                "cached_input_tokens": 0,
+                "input_tokens": 22001,
+                "output_tokens": 3263,
+                "reasoning_output_tokens": 1967
+              }
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          }
+        }
+      ],
+      "reads": [
+        "4a2ee02e6ac57842088e5aefa0ab06747c8471ba6415805adc35ebec9a0e5ff4",
+        "ff59fba3cf1c35a94804e06799d4ee6fbf2768cb4a520c3d8e4601dafd35c280",
+        "bd642dd1f183962ef3c1a1e0b767d2bf82665c8174a2dcd42950c55d534c490a",
+        "0db2069b53b755cd8e06fe76869e63208ce3451c72e1dd4c41bc7c348cb4c646"
+      ],
+      "best": {
+        "hypothesis": "Factoring proportional monomial coefficient columns and combining their Gram contributions before coordinate expansion can reduce repeated arithmetic and expose cancellations early. This is an unmeasured algorithmic proposal.",
+        "mechanism": "Normalize each distinct input word using exact CAR rewrites. Factor each nonzero coefficient column into an integer scale and a primitive signed column, grouping identical primitive columns. Transpose and aggregate the monomial Gram map by group pair, then expand each surviving group contribution into operator coordinates. This computes an exact sparse congruence transformation, including the required diagonal and off-diagonal multiplicities.",
+        "source": "def normal_form(word):\n    pending = [(word, 1)]\n    result = {}\n    while pending:\n        current, coefficient = pending.pop()\n        terminal = True\n        for k in range(len(current) - 1):\n            a, b = current[k], current[k + 1]\n            if a[0] == b[0] and a[1] == b[1]:\n                terminal = False\n                break\n            if a[0] < b[0] or (a[0] == b[0] and a[1] > b[1]):\n                terminal = False\n                swapped = current[:k] + (b, a) + current[k + 2:]\n                pending.append((swapped, -coefficient))\n                if a[0] < b[0] and a[1] == b[1]:\n                    pending.append((current[:k] + current[k + 2:], coefficient))\n                break\n        if terminal:\n            result[current] = result.get(current, 0) + coefficient\n    return {w: c for w, c in result.items() if c}\n\n\ndef propose(payload):\n    normalized = {}\n    positions = {}\n    words = []\n    columns = []\n    for i, operator in enumerate(payload['operators']):\n        reduced = {}\n        for word, coefficient in operator.items():\n            if coefficient:\n                if word not in normalized:\n                    normalized[word] = normal_form(word)\n                for w, c in normalized[word].items():\n                    reduced[w] = reduced.get(w, 0) + coefficient * c\n        for word, coefficient in reduced.items():\n            if coefficient:\n                if word not in positions:\n                    positions[word] = len(words)\n                    words.append(word)\n                    columns.append([])\n                columns[positions[word]].append((i, coefficient))\n    if not words:\n        return {}\n    group_positions = {}\n    groups = []\n    owners = []\n    scales = []\n    for column in columns:\n        divisor = 0\n        for i, coefficient in column:\n            value = abs(coefficient)\n            while value:\n                divisor, value = value, divisor % value\n        if column[0][1] < 0:\n            divisor = -divisor\n        signature = tuple((i, c // divisor) for i, c in column)\n        if signature not in group_positions:\n            group_positions[signature] = len(groups)\n            groups.append(signature)\n        owners.append(group_positions[signature])\n        scales.append(divisor)\n    basis = monomial_map({'words': words, 'cache': payload['cache']})\n    buckets = {}\n    for word, entries in basis.items():\n        for pair, coefficient in entries.items():\n            p, q = pair\n            s, t = owners[p], owners[q]\n            if s > t:\n                s, t = t, s\n            bucket = buckets.setdefault((s, t), {})\n            value = int(coefficient) * scales[p] * scales[q]\n            bucket[word] = bucket.get(word, 0) + value\n    result = {}\n    for pair, bucket in buckets.items():\n        terms = [(word, c) for word, c in bucket.items() if c]\n        if not terms:\n            continue\n        s, t = pair\n        left, right = groups[s], groups[t]\n        if s == t:\n            lift = []\n            for p, entry in enumerate(left):\n                i, a = entry\n                lift.append(((i, i), a * a))\n                for q in range(p + 1, len(left)):\n                    j, b = left[q]\n                    lift.append(((i, j), 2 * a * b))\n        else:\n            weights = {}\n            for i, a in left:\n                for j, b in right:\n                    if i <= j:\n                        coordinate = (i, j)\n                    else:\n                        coordinate = (j, i)\n                    weights[coordinate] = weights.get(coordinate, 0) + a * b\n            lift = [(coordinate, c) for coordinate, c in weights.items() if c]\n        for word, coefficient in terms:\n            row = result.setdefault(word, {})\n            for coordinate, weight in lift:\n                row[coordinate] = row.get(coordinate, 0) + coefficient * weight\n    answer = {}\n    for word, row in result.items():\n        cleaned = {coordinate: c for coordinate, c in row.items() if c}\n        if cleaned:\n            answer[word] = cleaned\n    return answer",
+        "assumptions": "Inputs satisfy the stated integer, degree and homogeneous-charge contract. monomial_map supplies the exact stated symmetric Gram map and stores its cache in payload['cache']. All arithmetic remains integral. No execution or independent validation was performed.",
+        "failure_cases": "Few proportional columns or few cancellations may leave grouping and transposition overhead uncompensated. Large coefficient magnitudes increase integer arithmetic cost, and dense results retain quadratic coordinate storage requirements.",
+        "source_sha256": "a4be53e3b9b61759b297f9840c5edc2566565e892b9a9f03dfc8a8299e03aaea",
+        "model_wall_seconds": 102.33471962501062,
+        "prompt_sha256": "5d206708ec34d5daee79f14cdefda12cfa4e790e4aee525bdf601ee438709576",
+        "usage": {
+          "input_tokens": 22001,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3263,
+          "reasoning_output_tokens": 1967
+        }
+      },
+      "score": 0.02582441602135077,
+      "last_source": "def normal_form(word):\n    pending = [(word, 1)]\n    result = {}\n    while pending:\n        current, coefficient = pending.pop()\n        terminal = True\n        for k in range(len(current) - 1):\n            a, b = current[k], current[k + 1]\n            if a[0] == b[0] and a[1] == b[1]:\n                terminal = False\n                break\n            if a[0] < b[0] or (a[0] == b[0] and a[1] > b[1]):\n                terminal = False\n                swapped = current[:k] + (b, a) + current[k + 2:]\n                pending.append((swapped, -coefficient))\n                if a[0] < b[0] and a[1] == b[1]:\n                    pending.append((current[:k] + current[k + 2:], coefficient))\n                break\n        if terminal:\n            result[current] = result.get(current, 0) + coefficient\n    return {w: c for w, c in result.items() if c}\n\n\ndef propose(payload):\n    normalized = {}\n    positions = {}\n    words = []\n    columns = []\n    for i, operator in enumerate(payload['operators']):\n        reduced = {}\n        for word, coefficient in operator.items():\n            if coefficient:\n                if word not in normalized:\n                    normalized[word] = normal_form(word)\n                for w, c in normalized[word].items():\n                    reduced[w] = reduced.get(w, 0) + coefficient * c\n        for word, coefficient in reduced.items():\n            if coefficient:\n                if word not in positions:\n                    positions[word] = len(words)\n                    words.append(word)\n                    columns.append([])\n                columns[positions[word]].append((i, coefficient))\n    if not words:\n        return {}\n    group_positions = {}\n    groups = []\n    owners = []\n    scales = []\n    for column in columns:\n        divisor = 0\n        for i, coefficient in column:\n            value = abs(coefficient)\n            while value:\n                divisor, value = value, divisor % value\n        if column[0][1] < 0:\n            divisor = -divisor\n        signature = tuple((i, c // divisor) for i, c in column)\n        if signature not in group_positions:\n            group_positions[signature] = len(groups)\n            groups.append(signature)\n        owners.append(group_positions[signature])\n        scales.append(divisor)\n    basis = monomial_map({'words': words, 'cache': payload['cache']})\n    buckets = {}\n    for word, entries in basis.items():\n        for pair, coefficient in entries.items():\n            p, q = pair\n            s, t = owners[p], owners[q]\n            if s > t:\n                s, t = t, s\n            bucket = buckets.setdefault((s, t), {})\n            value = int(coefficient) * scales[p] * scales[q]\n            bucket[word] = bucket.get(word, 0) + value\n    result = {}\n    for pair, bucket in buckets.items():\n        terms = [(word, c) for word, c in bucket.items() if c]\n        if not terms:\n            continue\n        s, t = pair\n        left, right = groups[s], groups[t]\n        if s == t:\n            lift = []\n            for p, entry in enumerate(left):\n                i, a = entry\n                lift.append(((i, i), a * a))\n                for q in range(p + 1, len(left)):\n                    j, b = left[q]\n                    lift.append(((i, j), 2 * a * b))\n        else:\n            weights = {}\n            for i, a in left:\n                for j, b in right:\n                    if i <= j:\n                        coordinate = (i, j)\n                    else:\n                        coordinate = (j, i)\n                    weights[coordinate] = weights.get(coordinate, 0) + a * b\n            lift = [(coordinate, c) for coordinate, c in weights.items() if c]\n        for word, coefficient in terms:\n            row = result.setdefault(word, {})\n            for coordinate, weight in lift:\n                row[coordinate] = row.get(coordinate, 0) + coefficient * weight\n    answer = {}\n    for word, row in result.items():\n        cleaned = {coordinate: c for coordinate, c in row.items() if c}\n        if cleaned:\n            answer[word] = cleaned\n    return answer",
+      "best_node": "0db2069b53b755cd8e06fe76869e63208ce3451c72e1dd4c41bc7c348cb4c646",
+      "frozen_source": "a4be53e3b9b61759b297f9840c5edc2566565e892b9a9f03dfc8a8299e03aaea",
+      "generated_method_found": true,
+      "method_id": "c9f9214a521114c5578a8711a646aea2ced35041583f8b3e3c30ec4d322aeb5d",
+      "transfer": {
+        "status": "verified_encoded_claim",
+        "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+        "tasks": [
+          {
+            "task": {
+              "seed": 702193,
+              "base": {
+                "family": "star",
+                "spatial": 8,
+                "weight": -1
+              },
+              "unique_words": 96,
+              "operators": 40,
+              "terms": 10,
+              "relations": true
+            },
+            "operator_count": 40,
+            "distinct_words": 95,
+            "preparation_seconds": 0.0021739169606007636,
+            "independent_reference_seconds": 0.7320680420380086,
+            "validation_seconds": [
+              0.07191504200454801,
+              0.07001837500138208,
+              0.0715437499457039
+            ],
+            "cold_seconds": [
+              0.07835020800121129,
+              0.07440087501890957,
+              0.0668500000028871
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.07440087501890957,
+            "coefficient_rows": 7442,
+            "nonzero_entries": 141679
+          },
+          {
+            "task": {
+              "seed": 702222,
+              "base": {
+                "family": "chain",
+                "spatial": 10,
+                "width": 4,
+                "weight": -1
+              },
+              "unique_words": 120,
+              "operators": 48,
+              "terms": 12,
+              "zero_operator": true
+            },
+            "operator_count": 48,
+            "distinct_words": 119,
+            "preparation_seconds": 0.0019859590101987123,
+            "independent_reference_seconds": 1.4800055000232533,
+            "validation_seconds": [
+              0.13480850000632927,
+              0.13627337501384318,
+              0.1359105829615146
+            ],
+            "cold_seconds": [
+              0.146326708025299,
+              0.1479124579927884,
+              0.14519141701748595
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.146326708025299,
+            "coefficient_rows": 11636,
+            "nonzero_entries": 277907
+          },
+          {
+            "task": {
+              "seed": 702240,
+              "base": {
+                "family": "disjoint",
+                "spatial": 12,
+                "weight": -1,
+                "mode_offset": 59,
+                "mode_stride": 3
+              },
+              "unique_words": 80,
+              "operators": 32,
+              "terms": 8,
+              "large_integers": true,
+              "relations": true
+            },
+            "operator_count": 32,
+            "distinct_words": 77,
+            "preparation_seconds": 0.0008047500159591436,
+            "independent_reference_seconds": 0.38652537495363504,
+            "validation_seconds": [
+              0.03813358396291733,
+              0.036450458981562406,
+              0.037544500024523586
+            ],
+            "cold_seconds": [
+              0.05769312503980473,
+              0.04468512500170618,
+              0.04457745800027624
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.04468512500170618,
+            "coefficient_rows": 5069,
+            "nonzero_entries": 64324
+          },
+          {
+            "task": {
+              "seed": 702254,
+              "base": {
+                "family": "collective",
+                "spatial": 10,
+                "weight": -1,
+                "adjoint": true
+              },
+              "unique_words": 100,
+              "operators": 40,
+              "terms": 4,
+              "zero_operator": true
+            },
+            "operator_count": 40,
+            "distinct_words": 80,
+            "preparation_seconds": 0.0017615410033613443,
+            "independent_reference_seconds": 0.24094808305380866,
+            "validation_seconds": [
+              0.024988749995827675,
+              0.02455879101762548,
+              0.024919333984144032
+            ],
+            "cold_seconds": [
+              0.03898574999766424,
+              0.0296157089760527,
+              0.031565167009830475
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.031565167009830475,
+            "coefficient_rows": 6052,
+            "nonzero_entries": 24814
+          }
+        ],
+        "activation_seconds": 0.008837957982905209,
+        "backend": "acquired",
+        "universal_program_correctness_proved": false,
+        "complete_worker_seconds": 4.57944200001657
+      },
+      "common_backend_transfer": {
+        "status": "verified_encoded_claim",
+        "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+        "tasks": [
+          {
+            "task": {
+              "seed": 702193,
+              "base": {
+                "family": "star",
+                "spatial": 8,
+                "weight": -1
+              },
+              "unique_words": 96,
+              "operators": 40,
+              "terms": 10,
+              "relations": true
+            },
+            "operator_count": 40,
+            "distinct_words": 95,
+            "preparation_seconds": 0.0021651670103892684,
+            "independent_reference_seconds": 0.7231266659800895,
+            "validation_seconds": [
+              0.07108354201773182,
+              0.07074533303966746,
+              0.06847220897907391
+            ],
+            "cold_seconds": [
+              0.1952374580432661,
+              0.18440345796989277,
+              0.18907762499293312
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.18907762499293312,
+            "coefficient_rows": 7442,
+            "nonzero_entries": 141679
+          },
+          {
+            "task": {
+              "seed": 702222,
+              "base": {
+                "family": "chain",
+                "spatial": 10,
+                "width": 4,
+                "weight": -1
+              },
+              "unique_words": 120,
+              "operators": 48,
+              "terms": 12,
+              "zero_operator": true
+            },
+            "operator_count": 48,
+            "distinct_words": 119,
+            "preparation_seconds": 0.0019964580424129963,
+            "independent_reference_seconds": 1.5144819999695756,
+            "validation_seconds": [
+              0.13409558299463242,
+              0.1345778329996392,
+              0.1324457079754211
+            ],
+            "cold_seconds": [
+              0.3333734159823507,
+              0.3014548749779351,
+              0.3063255000161007
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.3063255000161007,
+            "coefficient_rows": 11636,
+            "nonzero_entries": 277907
+          },
+          {
+            "task": {
+              "seed": 702240,
+              "base": {
+                "family": "disjoint",
+                "spatial": 12,
+                "weight": -1,
+                "mode_offset": 59,
+                "mode_stride": 3
+              },
+              "unique_words": 80,
+              "operators": 32,
+              "terms": 8,
+              "large_integers": true,
+              "relations": true
+            },
+            "operator_count": 32,
+            "distinct_words": 77,
+            "preparation_seconds": 0.0008730829576961696,
+            "independent_reference_seconds": 0.3808112500119023,
+            "validation_seconds": [
+              0.03684108302695677,
+              0.03716912498930469,
+              0.03655929199885577
+            ],
+            "cold_seconds": [
+              0.12979791703401133,
+              0.11224425002001226,
+              0.11391499999444932
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.11391499999444932,
+            "coefficient_rows": 5069,
+            "nonzero_entries": 64324
+          },
+          {
+            "task": {
+              "seed": 702254,
+              "base": {
+                "family": "collective",
+                "spatial": 10,
+                "weight": -1,
+                "adjoint": true
+              },
+              "unique_words": 100,
+              "operators": 40,
+              "terms": 4,
+              "zero_operator": true
+            },
+            "operator_count": 40,
+            "distinct_words": 80,
+            "preparation_seconds": 0.001835417002439499,
+            "independent_reference_seconds": 0.245585625001695,
+            "validation_seconds": [
+              0.024627417034935206,
+              0.02380062500014901,
+              0.023809749982319772
+            ],
+            "cold_seconds": [
+              0.15870216599432752,
+              0.14839612500509247,
+              0.15147595800226554
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.15147595800226554,
+            "coefficient_rows": 6052,
+            "nonzero_entries": 24814
+          }
+        ],
+        "activation_seconds": 0.0025784169556573033,
+        "backend": "ordinary",
+        "universal_program_correctness_proved": false,
+        "complete_worker_seconds": 6.013681875017937
+      }
+    },
+    "C": {
+      "attempts": [
+        {
+          "source_sha256": "745acf04ec7c3f4952fe7e4bcd87ce9ac7a10d2656981b0c27fd68c55fd79fb2",
+          "validation": {
+            "status": "verified_encoded_claim",
+            "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+            "tasks": [
+              {
+                "task": {
+                  "seed": 18317,
+                  "base": {
+                    "family": "collective",
+                    "spatial": 5,
+                    "weight": -1
+                  },
+                  "unique_words": 48,
+                  "operators": 20,
+                  "terms": 5
+                },
+                "operator_count": 20,
+                "distinct_words": 42,
+                "preparation_seconds": 0.00039820902748033404,
+                "independent_reference_seconds": 0.055446417012717575,
+                "validation_seconds": [
+                  0.005815250042360276,
+                  0.005822499981150031,
+                  0.00583529204595834
+                ],
+                "cold_seconds": [
+                  0.028234124998562038,
+                  0.028510958014521748,
+                  0.028494833037257195
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 42,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 42,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 42,
+                    "monomial_map": 1
+                  }
+                ],
+                "median_seconds": 0.028494833037257195,
+                "coefficient_rows": 1257,
+                "nonzero_entries": 7875
+              },
+              {
+                "task": {
+                  "seed": 18336,
+                  "base": {
+                    "family": "chain",
+                    "spatial": 6,
+                    "width": 3,
+                    "weight": -1
+                  },
+                  "unique_words": 64,
+                  "operators": 24,
+                  "terms": 8,
+                  "relations": true
+                },
+                "operator_count": 24,
+                "distinct_words": 62,
+                "preparation_seconds": 0.0005568750202655792,
+                "independent_reference_seconds": 0.1844063749886118,
+                "validation_seconds": [
+                  0.017903792031574994,
+                  0.01791970804333687,
+                  0.018036832974758
+                ],
+                "cold_seconds": [
+                  0.06561045901617035,
+                  0.06792504200711846,
+                  0.06491700001060963
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 62,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 62,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 62,
+                    "monomial_map": 1
+                  }
+                ],
+                "median_seconds": 0.06561045901617035,
+                "coefficient_rows": 2664,
+                "nonzero_entries": 31883
+              }
+            ],
+            "activation_seconds": 0.0014121659914962947,
+            "backend": "ordinary",
+            "universal_program_correctness_proved": false,
+            "complete_worker_seconds": 0.6007902910350822
+          },
+          "node": "79e57718591cc35c818d74d12962b3bba23768aa68bc61535f76cc355ca2b6e1",
+          "action": "open_mechanism",
+          "cost": {
+            "metered_wall_seconds": 65.50489158299752,
+            "self_cpu_seconds": 0.0355,
+            "child_cpu_seconds": 1.903465,
+            "operations": 1,
+            "failed_operations": 0,
+            "model_usage": [
+              {
+                "cache_write_input_tokens": 0,
+                "cached_input_tokens": 16768,
+                "input_tokens": 21190,
+                "output_tokens": 2038,
+                "reasoning_output_tokens": 1218
+              }
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          }
+        },
+        {
+          "source_sha256": "5197263161481184181bd6d92c4b9e56a805ea7d61f0a8be72f55edaa73f4384",
+          "validation": {
+            "status": "verified_encoded_claim",
+            "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+            "tasks": [
+              {
+                "task": {
+                  "seed": 18317,
+                  "base": {
+                    "family": "collective",
+                    "spatial": 5,
+                    "weight": -1
+                  },
+                  "unique_words": 48,
+                  "operators": 20,
+                  "terms": 5
+                },
+                "operator_count": 20,
+                "distinct_words": 42,
+                "preparation_seconds": 0.0004283330054022372,
+                "independent_reference_seconds": 0.05523091700160876,
+                "validation_seconds": [
+                  0.005753459001425654,
+                  0.005606084014289081,
+                  0.005689291981980205
+                ],
+                "cold_seconds": [
+                  0.00658854196080938,
+                  0.0070353749906644225,
+                  0.006874583021271974
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 42,
+                    "monomial_map": 0
+                  },
+                  {
+                    "oracle": 42,
+                    "monomial_map": 0
+                  },
+                  {
+                    "oracle": 42,
+                    "monomial_map": 0
+                  }
+                ],
+                "median_seconds": 0.006874583021271974,
+                "coefficient_rows": 1257,
+                "nonzero_entries": 7875
+              },
+              {
+                "task": {
+                  "seed": 18336,
+                  "base": {
+                    "family": "chain",
+                    "spatial": 6,
+                    "width": 3,
+                    "weight": -1
+                  },
+                  "unique_words": 64,
+                  "operators": 24,
+                  "terms": 8,
+                  "relations": true
+                },
+                "operator_count": 24,
+                "distinct_words": 62,
+                "preparation_seconds": 0.0005329170380719006,
+                "independent_reference_seconds": 0.18429491703864187,
+                "validation_seconds": [
+                  0.019252458005212247,
+                  0.018796208023559302,
+                  0.01829783304128796
+                ],
+                "cold_seconds": [
+                  0.018965582945384085,
+                  0.023906499962322414,
+                  0.019673749979119748
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 62,
+                    "monomial_map": 0
+                  },
+                  {
+                    "oracle": 62,
+                    "monomial_map": 0
+                  },
+                  {
+                    "oracle": 62,
+                    "monomial_map": 0
+                  }
+                ],
+                "median_seconds": 0.019673749979119748,
+                "coefficient_rows": 2664,
+                "nonzero_entries": 31883
+              }
+            ],
+            "activation_seconds": 0.0031404169858433306,
+            "backend": "ordinary",
+            "universal_program_correctness_proved": false,
+            "complete_worker_seconds": 0.40379029198084027
+          },
+          "node": "716bfffc02f484e5e251160967edc3190fd0db881861d96319d3fdcf15e40b4b",
+          "action": "continue_search",
+          "cost": {
+            "metered_wall_seconds": 156.81441433297005,
+            "self_cpu_seconds": 0.07192,
+            "child_cpu_seconds": 2.063886,
+            "operations": 1,
+            "failed_operations": 0,
+            "model_usage": [
+              {
+                "cache_write_input_tokens": 0,
+                "cached_input_tokens": 0,
+                "input_tokens": 22846,
+                "output_tokens": 5065,
+                "reasoning_output_tokens": 3576
+              }
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          }
+        }
+      ],
+      "reads": [
+        "4a2ee02e6ac57842088e5aefa0ab06747c8471ba6415805adc35ebec9a0e5ff4",
+        "ff59fba3cf1c35a94804e06799d4ee6fbf2768cb4a520c3d8e4601dafd35c280",
+        "79e57718591cc35c818d74d12962b3bba23768aa68bc61535f76cc355ca2b6e1",
+        "716bfffc02f484e5e251160967edc3190fd0db881861d96319d3fdcf15e40b4b"
+      ],
+      "best": {
+        "hypothesis": "A shared contraction compiler can reduce cold construction work by reusing annihilator\u2013creator crossing expansions and exterior-product merges across monomial pairs, then directly accumulating polynomial coordinates. This is an unmeasured hypothesis.",
+        "mechanism": "Normalize the input polynomials exactly. Split canonical monomials into ascending creator and annihilator tuples. Compile each product using cached CAR crossing expansions and signed exterior merges. Obtain the reverse product by canonical adjunction; homogeneous charge makes this adjunction unsigned. Transfer each compiled symmetric product directly to operator coordinates, avoiding construction and transposition of an intermediate monomial Gram map.",
+        "source": "def crossings(ann, cre, cache):\n    key = (ann, cre)\n    if key in cache:\n        return cache[key]\n    if not any(a in cre for a in ann):\n        result = [(cre, ann, 1 - 2 * ((len(ann) * len(cre)) % 2))]\n    else:\n        a = ann[-1]\n        rest = ann[:-1]\n        sign = 1 - 2 * (len(cre) % 2)\n        result = []\n        for c, b, value in crossings(rest, cre, cache):\n            result.append((c, b + (a,), sign * value))\n        if a in cre:\n            p = cre.index(a)\n            sign = 1 - 2 * (p % 2)\n            reduced = cre[:p] + cre[p + 1:]\n            for c, b, value in crossings(rest, reduced, cache):\n                result.append((c, b, sign * value))\n    cache[key] = result\n    return result\n\n\ndef wedge(left, right, cache):\n    key = (left, right)\n    if key in cache:\n        return cache[key]\n    sign = 1\n    for a in left:\n        for b in right:\n            if a == b:\n                cache[key] = ((), 0)\n                return cache[key]\n            if a > b:\n                sign = -sign\n    result = (tuple(sorted(left + right)), sign)\n    cache[key] = result\n    return result\n\n\ndef propose(payload):\n    owned = payload['cache']\n    normal = owned.setdefault('normal', {})\n    crossing_cache = owned.setdefault('crossings', {})\n    wedge_cache = owned.setdefault('wedges', {})\n    encoded = owned.setdefault('encoded', {})\n    incidence = {}\n    for i, operator in enumerate(payload['operators']):\n        polynomial = {}\n        for word, a in operator.items():\n            if a:\n                if word not in normal:\n                    normal[word] = oracle((), word)\n                for w, c in normal[word].items():\n                    polynomial[w] = polynomial.get(w, 0) + a * int(c)\n        for w, a in polynomial.items():\n            if a:\n                incidence.setdefault(w, []).append((i, a))\n    words = list(incidence)\n    supports = [incidence[w] for w in words]\n    groups = []\n    for w in words:\n        cre = tuple(m for flag, m in w if flag)\n        ann = tuple(m for flag, m in w if not flag)\n        reversals = len(cre) * (len(cre) - 1) // 2 + len(ann) * (len(ann) - 1) // 2\n        groups.append((cre, ann, 1 - 2 * (reversals % 2)))\n    result = {}\n    for u in range(len(words)):\n        cu, au, dagger_sign = groups[u]\n        for v in range(u, len(words)):\n            cv, av, unused = groups[v]\n            product = {}\n            for middle_cre, middle_ann, value in crossings(cu, cv, crossing_cache):\n                cre, sc = wedge(au, middle_cre, wedge_cache)\n                if not sc:\n                    continue\n                ann, sa = wedge(middle_ann, av, wedge_cache)\n                if not sa:\n                    continue\n                coefficient = dagger_sign * value * sc * sa\n                key = (cre, ann)\n                product[key] = product.get(key, 0) + coefficient\n                if u != v:\n                    mate = (ann, cre)\n                    product[mate] = product.get(mate, 0) + coefficient\n            product = {key: c for key, c in product.items() if c}\n            if not product:\n                continue\n            left = supports[u]\n            right = supports[v]\n            transfer = {}\n            if u == v:\n                for p, entry in enumerate(left):\n                    i, a = entry\n                    transfer[(i, i)] = a * a\n                    for q in range(p + 1, len(left)):\n                        j, b = left[q]\n                        transfer[(i, j)] = 2 * a * b\n            else:\n                for i, a in left:\n                    for j, b in right:\n                        if i <= j:\n                            coordinate = (i, j)\n                        else:\n                            coordinate = (j, i)\n                        transfer[coordinate] = transfer.get(coordinate, 0) + a * b\n                transfer = {coordinate: c for coordinate, c in transfer.items() if c}\n            for key, c in product.items():\n                if key not in encoded:\n                    cre, ann = key\n                    encoded[key] = tuple((1, m) for m in cre) + tuple((0, m) for m in ann)\n                row = result.setdefault(encoded[key], {})\n                for coordinate, a in transfer.items():\n                    row[coordinate] = row.get(coordinate, 0) + c * a\n    answer = {}\n    for w, row in result.items():\n        clean = {coordinate: c for coordinate, c in row.items() if c}\n        if clean:\n            answer[w] = clean\n    return answer",
+        "assumptions": "Inputs satisfy the stated integer, degree, and homogeneous-charge contract. oracle((), word) supplies exact canonical normalization. Every product has equal creator and annihilator counts, so reversing both groups during adjunction contributes an even total number of swaps. All caches belong to payload['cache']; arithmetic remains exact.",
+        "failure_cases": "Mixed-charge inputs invalidate unsigned adjunction and are outside scope. Limited reuse of creator and annihilator tuples can make caching overhead outweigh savings. Dense coordinate supports still require quadratic output work. No execution or timing validation was performed.",
+        "source_sha256": "5197263161481184181bd6d92c4b9e56a805ea7d61f0a8be72f55edaa73f4384",
+        "model_wall_seconds": 156.80146320798667,
+        "prompt_sha256": "86a841b26c2d550f51a0abbcfc67b645a52f8a64eabe60bd919ca69213f71055",
+        "usage": {
+          "input_tokens": 22846,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5065,
+          "reasoning_output_tokens": 3576
+        }
+      },
+      "score": 0.02654833300039172,
+      "last_source": "def crossings(ann, cre, cache):\n    key = (ann, cre)\n    if key in cache:\n        return cache[key]\n    if not any(a in cre for a in ann):\n        result = [(cre, ann, 1 - 2 * ((len(ann) * len(cre)) % 2))]\n    else:\n        a = ann[-1]\n        rest = ann[:-1]\n        sign = 1 - 2 * (len(cre) % 2)\n        result = []\n        for c, b, value in crossings(rest, cre, cache):\n            result.append((c, b + (a,), sign * value))\n        if a in cre:\n            p = cre.index(a)\n            sign = 1 - 2 * (p % 2)\n            reduced = cre[:p] + cre[p + 1:]\n            for c, b, value in crossings(rest, reduced, cache):\n                result.append((c, b, sign * value))\n    cache[key] = result\n    return result\n\n\ndef wedge(left, right, cache):\n    key = (left, right)\n    if key in cache:\n        return cache[key]\n    sign = 1\n    for a in left:\n        for b in right:\n            if a == b:\n                cache[key] = ((), 0)\n                return cache[key]\n            if a > b:\n                sign = -sign\n    result = (tuple(sorted(left + right)), sign)\n    cache[key] = result\n    return result\n\n\ndef propose(payload):\n    owned = payload['cache']\n    normal = owned.setdefault('normal', {})\n    crossing_cache = owned.setdefault('crossings', {})\n    wedge_cache = owned.setdefault('wedges', {})\n    encoded = owned.setdefault('encoded', {})\n    incidence = {}\n    for i, operator in enumerate(payload['operators']):\n        polynomial = {}\n        for word, a in operator.items():\n            if a:\n                if word not in normal:\n                    normal[word] = oracle((), word)\n                for w, c in normal[word].items():\n                    polynomial[w] = polynomial.get(w, 0) + a * int(c)\n        for w, a in polynomial.items():\n            if a:\n                incidence.setdefault(w, []).append((i, a))\n    words = list(incidence)\n    supports = [incidence[w] for w in words]\n    groups = []\n    for w in words:\n        cre = tuple(m for flag, m in w if flag)\n        ann = tuple(m for flag, m in w if not flag)\n        reversals = len(cre) * (len(cre) - 1) // 2 + len(ann) * (len(ann) - 1) // 2\n        groups.append((cre, ann, 1 - 2 * (reversals % 2)))\n    result = {}\n    for u in range(len(words)):\n        cu, au, dagger_sign = groups[u]\n        for v in range(u, len(words)):\n            cv, av, unused = groups[v]\n            product = {}\n            for middle_cre, middle_ann, value in crossings(cu, cv, crossing_cache):\n                cre, sc = wedge(au, middle_cre, wedge_cache)\n                if not sc:\n                    continue\n                ann, sa = wedge(middle_ann, av, wedge_cache)\n                if not sa:\n                    continue\n                coefficient = dagger_sign * value * sc * sa\n                key = (cre, ann)\n                product[key] = product.get(key, 0) + coefficient\n                if u != v:\n                    mate = (ann, cre)\n                    product[mate] = product.get(mate, 0) + coefficient\n            product = {key: c for key, c in product.items() if c}\n            if not product:\n                continue\n            left = supports[u]\n            right = supports[v]\n            transfer = {}\n            if u == v:\n                for p, entry in enumerate(left):\n                    i, a = entry\n                    transfer[(i, i)] = a * a\n                    for q in range(p + 1, len(left)):\n                        j, b = left[q]\n                        transfer[(i, j)] = 2 * a * b\n            else:\n                for i, a in left:\n                    for j, b in right:\n                        if i <= j:\n                            coordinate = (i, j)\n                        else:\n                            coordinate = (j, i)\n                        transfer[coordinate] = transfer.get(coordinate, 0) + a * b\n                transfer = {coordinate: c for coordinate, c in transfer.items() if c}\n            for key, c in product.items():\n                if key not in encoded:\n                    cre, ann = key\n                    encoded[key] = tuple((1, m) for m in cre) + tuple((0, m) for m in ann)\n                row = result.setdefault(encoded[key], {})\n                for coordinate, a in transfer.items():\n                    row[coordinate] = row.get(coordinate, 0) + c * a\n    answer = {}\n    for w, row in result.items():\n        clean = {coordinate: c for coordinate, c in row.items() if c}\n        if clean:\n            answer[w] = clean\n    return answer",
+      "best_node": "716bfffc02f484e5e251160967edc3190fd0db881861d96319d3fdcf15e40b4b",
+      "frozen_source": "5197263161481184181bd6d92c4b9e56a805ea7d61f0a8be72f55edaa73f4384",
+      "generated_method_found": true,
+      "method_id": "74e4eb6a54d3ccc211040aaa1bea7e4733399ffafa9eacc686516d0b6c302f61",
+      "transfer": {
+        "status": "verified_encoded_claim",
+        "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+        "tasks": [
+          {
+            "task": {
+              "seed": 702193,
+              "base": {
+                "family": "star",
+                "spatial": 8,
+                "weight": -1
+              },
+              "unique_words": 96,
+              "operators": 40,
+              "terms": 10,
+              "relations": true
+            },
+            "operator_count": 40,
+            "distinct_words": 95,
+            "preparation_seconds": 0.0023218750138767064,
+            "independent_reference_seconds": 0.7184774579945952,
+            "validation_seconds": [
+              0.07122904201969504,
+              0.07066270796349272,
+              0.07132254203315824
+            ],
+            "cold_seconds": [
+              0.07901366701116785,
+              0.07123574998695403,
+              0.07450645801145583
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 95,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 95,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 95,
+                "monomial_map": 0
+              }
+            ],
+            "median_seconds": 0.07450645801145583,
+            "coefficient_rows": 7442,
+            "nonzero_entries": 141679
+          },
+          {
+            "task": {
+              "seed": 702222,
+              "base": {
+                "family": "chain",
+                "spatial": 10,
+                "width": 4,
+                "weight": -1
+              },
+              "unique_words": 120,
+              "operators": 48,
+              "terms": 12,
+              "zero_operator": true
+            },
+            "operator_count": 48,
+            "distinct_words": 119,
+            "preparation_seconds": 0.002014749974478036,
+            "independent_reference_seconds": 1.4843604170018807,
+            "validation_seconds": [
+              0.15004599996609613,
+              0.1435631670174189,
+              0.14138808398274705
+            ],
+            "cold_seconds": [
+              0.175140916951932,
+              0.16648458398412913,
+              0.15056574996560812
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 119,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 119,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 119,
+                "monomial_map": 0
+              }
+            ],
+            "median_seconds": 0.16648458398412913,
+            "coefficient_rows": 11636,
+            "nonzero_entries": 277907
+          },
+          {
+            "task": {
+              "seed": 702240,
+              "base": {
+                "family": "disjoint",
+                "spatial": 12,
+                "weight": -1,
+                "mode_offset": 59,
+                "mode_stride": 3
+              },
+              "unique_words": 80,
+              "operators": 32,
+              "terms": 8,
+              "large_integers": true,
+              "relations": true
+            },
+            "operator_count": 32,
+            "distinct_words": 77,
+            "preparation_seconds": 0.0008720830082893372,
+            "independent_reference_seconds": 0.4010814580251463,
+            "validation_seconds": [
+              0.03936691704438999,
+              0.03675166598986834,
+              0.038104499981272966
+            ],
+            "cold_seconds": [
+              0.05887458298821002,
+              0.04830333299469203,
+              0.04272204200970009
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 77,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 77,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 77,
+                "monomial_map": 0
+              }
+            ],
+            "median_seconds": 0.04830333299469203,
+            "coefficient_rows": 5069,
+            "nonzero_entries": 64324
+          },
+          {
+            "task": {
+              "seed": 702254,
+              "base": {
+                "family": "collective",
+                "spatial": 10,
+                "weight": -1,
+                "adjoint": true
+              },
+              "unique_words": 100,
+              "operators": 40,
+              "terms": 4,
+              "zero_operator": true
+            },
+            "operator_count": 40,
+            "distinct_words": 80,
+            "preparation_seconds": 0.0019264589645899832,
+            "independent_reference_seconds": 0.24017954198643565,
+            "validation_seconds": [
+              0.02483287500217557,
+              0.025745499995537102,
+              0.024875667004380375
+            ],
+            "cold_seconds": [
+              0.03942520800046623,
+              0.03345112502574921,
+              0.03588870901148766
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 80,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 80,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 80,
+                "monomial_map": 0
+              }
+            ],
+            "median_seconds": 0.03588870901148766,
+            "coefficient_rows": 6052,
+            "nonzero_entries": 24814
+          }
+        ],
+        "activation_seconds": 0.0031093329889699817,
+        "backend": "ordinary",
+        "universal_program_correctness_proved": false,
+        "complete_worker_seconds": 4.680763832991943
+      },
+      "common_backend_transfer": {
+        "status": "verified_encoded_claim",
+        "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+        "tasks": [
+          {
+            "task": {
+              "seed": 702193,
+              "base": {
+                "family": "star",
+                "spatial": 8,
+                "weight": -1
+              },
+              "unique_words": 96,
+              "operators": 40,
+              "terms": 10,
+              "relations": true
+            },
+            "operator_count": 40,
+            "distinct_words": 95,
+            "preparation_seconds": 0.002749083039816469,
+            "independent_reference_seconds": 0.7580864169867709,
+            "validation_seconds": [
+              0.07405875000404194,
+              0.07246191595913842,
+              0.07308366702636704
+            ],
+            "cold_seconds": [
+              0.08206712501123548,
+              0.07762929197633639,
+              0.07992024999111891
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 95,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 95,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 95,
+                "monomial_map": 0
+              }
+            ],
+            "median_seconds": 0.07992024999111891,
+            "coefficient_rows": 7442,
+            "nonzero_entries": 141679
+          },
+          {
+            "task": {
+              "seed": 702222,
+              "base": {
+                "family": "chain",
+                "spatial": 10,
+                "width": 4,
+                "weight": -1
+              },
+              "unique_words": 120,
+              "operators": 48,
+              "terms": 12,
+              "zero_operator": true
+            },
+            "operator_count": 48,
+            "distinct_words": 119,
+            "preparation_seconds": 0.002042750013060868,
+            "independent_reference_seconds": 1.5737025839625858,
+            "validation_seconds": [
+              0.13459058298030868,
+              0.1362882080138661,
+              0.13240066700382158
+            ],
+            "cold_seconds": [
+              0.15628658304922283,
+              0.14979358401615173,
+              0.14885204198071733
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 119,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 119,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 119,
+                "monomial_map": 0
+              }
+            ],
+            "median_seconds": 0.14979358401615173,
+            "coefficient_rows": 11636,
+            "nonzero_entries": 277907
+          },
+          {
+            "task": {
+              "seed": 702240,
+              "base": {
+                "family": "disjoint",
+                "spatial": 12,
+                "weight": -1,
+                "mode_offset": 59,
+                "mode_stride": 3
+              },
+              "unique_words": 80,
+              "operators": 32,
+              "terms": 8,
+              "large_integers": true,
+              "relations": true
+            },
+            "operator_count": 32,
+            "distinct_words": 77,
+            "preparation_seconds": 0.0008396250195801258,
+            "independent_reference_seconds": 0.3711031669517979,
+            "validation_seconds": [
+              0.037047750025521964,
+              0.03702387504745275,
+              0.03667154198046774
+            ],
+            "cold_seconds": [
+              0.05718595802318305,
+              0.0479752910323441,
+              0.043605541985016316
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 77,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 77,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 77,
+                "monomial_map": 0
+              }
+            ],
+            "median_seconds": 0.0479752910323441,
+            "coefficient_rows": 5069,
+            "nonzero_entries": 64324
+          },
+          {
+            "task": {
+              "seed": 702254,
+              "base": {
+                "family": "collective",
+                "spatial": 10,
+                "weight": -1,
+                "adjoint": true
+              },
+              "unique_words": 100,
+              "operators": 40,
+              "terms": 4,
+              "zero_operator": true
+            },
+            "operator_count": 40,
+            "distinct_words": 80,
+            "preparation_seconds": 0.0018724999972619116,
+            "independent_reference_seconds": 0.23327891598455608,
+            "validation_seconds": [
+              0.024194957979489118,
+              0.024112583021633327,
+              0.0242888749926351
+            ],
+            "cold_seconds": [
+              0.034286375041119754,
+              0.03138970799045637,
+              0.03189341601682827
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 80,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 80,
+                "monomial_map": 0
+              },
+              {
+                "oracle": 80,
+                "monomial_map": 0
+              }
+            ],
+            "median_seconds": 0.03189341601682827,
+            "coefficient_rows": 6052,
+            "nonzero_entries": 24814
+          }
+        ],
+        "activation_seconds": 0.0030102499877102673,
+        "backend": "ordinary",
+        "universal_program_correctness_proved": false,
+        "complete_worker_seconds": 4.705195542017464
+      }
+    },
+    "D": {
+      "attempts": [
+        {
+          "source_sha256": "4801c0bd0d0dd0fdcb7f09aba62a7670c7d3db8d0e4ef71ab7628aa4c70a9e72",
+          "validation": {
+            "status": "verified_encoded_claim",
+            "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+            "tasks": [
+              {
+                "task": {
+                  "seed": 18317,
+                  "base": {
+                    "family": "collective",
+                    "spatial": 5,
+                    "weight": -1
+                  },
+                  "unique_words": 48,
+                  "operators": 20,
+                  "terms": 5
+                },
+                "operator_count": 20,
+                "distinct_words": 42,
+                "preparation_seconds": 0.00041920796502381563,
+                "independent_reference_seconds": 0.05643962504109368,
+                "validation_seconds": [
+                  0.006031374970916659,
+                  0.005982709000818431,
+                  0.005681083013769239
+                ],
+                "cold_seconds": [
+                  0.006055666017346084,
+                  0.006161958037409931,
+                  0.0063154170056805015
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  }
+                ],
+                "median_seconds": 0.006161958037409931,
+                "coefficient_rows": 1257,
+                "nonzero_entries": 7875
+              },
+              {
+                "task": {
+                  "seed": 18336,
+                  "base": {
+                    "family": "chain",
+                    "spatial": 6,
+                    "width": 3,
+                    "weight": -1
+                  },
+                  "unique_words": 64,
+                  "operators": 24,
+                  "terms": 8,
+                  "relations": true
+                },
+                "operator_count": 24,
+                "distinct_words": 62,
+                "preparation_seconds": 0.0005864580161869526,
+                "independent_reference_seconds": 0.1872696249629371,
+                "validation_seconds": [
+                  0.01853433297947049,
+                  0.018505000043660402,
+                  0.01826420903671533
+                ],
+                "cold_seconds": [
+                  0.02231299999402836,
+                  0.01921050000237301,
+                  0.02091083297273144
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  }
+                ],
+                "median_seconds": 0.02091083297273144,
+                "coefficient_rows": 2664,
+                "nonzero_entries": 31883
+              }
+            ],
+            "activation_seconds": 0.010213166999164969,
+            "backend": "acquired",
+            "universal_program_correctness_proved": false,
+            "complete_worker_seconds": 0.4121531670098193
+          },
+          "node": "a972000cad3181555262018f3818c1a72414f4db4e94950c94feda258e6e7465",
+          "action": "open_mechanism",
+          "cost": {
+            "metered_wall_seconds": 54.6059840839589,
+            "self_cpu_seconds": 0.032392000000000004,
+            "child_cpu_seconds": 1.924185,
+            "operations": 1,
+            "failed_operations": 0,
+            "model_usage": [
+              {
+                "cache_write_input_tokens": 0,
+                "cached_input_tokens": 16768,
+                "input_tokens": 21186,
+                "output_tokens": 1667,
+                "reasoning_output_tokens": 915
+              }
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          }
+        },
+        {
+          "source_sha256": "3dbc7b4e9fa5c5abc2ab86d2b417886306ad566a30b45509a3f3f2f4b17ddda4",
+          "validation": {
+            "status": "verified_encoded_claim",
+            "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+            "tasks": [
+              {
+                "task": {
+                  "seed": 18317,
+                  "base": {
+                    "family": "collective",
+                    "spatial": 5,
+                    "weight": -1
+                  },
+                  "unique_words": 48,
+                  "operators": 20,
+                  "terms": 5
+                },
+                "operator_count": 20,
+                "distinct_words": 42,
+                "preparation_seconds": 0.0008237919537350535,
+                "independent_reference_seconds": 0.0538064589491114,
+                "validation_seconds": [
+                  0.005643542041070759,
+                  0.005950209044385701,
+                  0.005773250013589859
+                ],
+                "cold_seconds": [
+                  0.006158042000606656,
+                  0.0061774589703418314,
+                  0.008068875002209097
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  }
+                ],
+                "median_seconds": 0.0061774589703418314,
+                "coefficient_rows": 1257,
+                "nonzero_entries": 7875
+              },
+              {
+                "task": {
+                  "seed": 18336,
+                  "base": {
+                    "family": "chain",
+                    "spatial": 6,
+                    "width": 3,
+                    "weight": -1
+                  },
+                  "unique_words": 64,
+                  "operators": 24,
+                  "terms": 8,
+                  "relations": true
+                },
+                "operator_count": 24,
+                "distinct_words": 62,
+                "preparation_seconds": 0.0005496249650605023,
+                "independent_reference_seconds": 0.1824919159989804,
+                "validation_seconds": [
+                  0.0185122910188511,
+                  0.01882716704858467,
+                  0.01959837501635775
+                ],
+                "cold_seconds": [
+                  0.021243874973151833,
+                  0.021576874947641045,
+                  0.01841741701355204
+                ],
+                "primitive_calls": [
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  },
+                  {
+                    "oracle": 0,
+                    "monomial_map": 1
+                  }
+                ],
+                "median_seconds": 0.021243874973151833,
+                "coefficient_rows": 2664,
+                "nonzero_entries": 31883
+              }
+            ],
+            "activation_seconds": 0.008040999993681908,
+            "backend": "acquired",
+            "universal_program_correctness_proved": false,
+            "complete_worker_seconds": 0.40506891696713865
+          },
+          "node": "7784df21c6425a6e935f74bf9ab07cb77093b73ac88878dac1213a48c46ac086",
+          "action": "continue_search",
+          "cost": {
+            "metered_wall_seconds": 75.28200745797949,
+            "self_cpu_seconds": 0.037934999999999997,
+            "child_cpu_seconds": 1.8654669999999998,
+            "operations": 1,
+            "failed_operations": 0,
+            "model_usage": [
+              {
+                "cache_write_input_tokens": 0,
+                "cached_input_tokens": 12288,
+                "input_tokens": 22757,
+                "output_tokens": 2331,
+                "reasoning_output_tokens": 1552
+              }
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          }
+        }
+      ],
+      "reads": [
+        "4a2ee02e6ac57842088e5aefa0ab06747c8471ba6415805adc35ebec9a0e5ff4",
+        "ff59fba3cf1c35a94804e06799d4ee6fbf2768cb4a520c3d8e4601dafd35c280",
+        "a972000cad3181555262018f3818c1a72414f4db4e94950c94feda258e6e7465",
+        "7784df21c6425a6e935f74bf9ab07cb77093b73ac88878dac1213a48c46ac086"
+      ],
+      "best": {
+        "hypothesis": "Compile the distinct monomials once, then lift their symmetric Gram map through the sparse integer coefficient matrix. Reusing each coordinate transformation may reduce repeated algebra and coefficient work; no measured improvement is claimed.",
+        "mechanism": "Build an inverted index from each monomial to its operator coefficients. Call monomial_map once. For every encountered monomial coordinate, memoize its sparse transformation into operator coordinates and reuse it across canonical rows. A diagonal monomial coordinate contributes x_i^2 on operator diagonals and 2*x_i*x_j off diagonal. An off-diagonal monomial coordinate contributes x_i*y_i on diagonals and x_i*y_j+x_j*y_i off diagonal. Accumulate with exact integer arithmetic and remove cancellations.",
+        "source": "def propose(payload):\n    words = []\n    indices = {}\n    supports = []\n    for i, operator in enumerate(payload['operators']):\n        for word, coefficient in operator.items():\n            if coefficient:\n                a = indices.get(word)\n                if a is None:\n                    a = len(words)\n                    indices[word] = a\n                    words.append(word)\n                    supports.append([])\n                supports[a].append((i, coefficient))\n    if not words:\n        return {}\n    base = monomial_map({'words': words, 'cache': payload['cache']})\n    stencils = {}\n    result = {}\n    for word, row in base.items():\n        lifted = {}\n        for pair, coefficient in row.items():\n            stencil = stencils.get(pair)\n            if stencil is None:\n                a, b = pair\n                left = supports[a]\n                weights = {}\n                if a == b:\n                    for p, entry in enumerate(left):\n                        i, x = entry\n                        weights[(i, i)] = x*x\n                        for q in range(p + 1, len(left)):\n                            j, y = left[q]\n                            weights[(i, j)] = 2*x*y\n                else:\n                    for i, x in left:\n                        for j, y in supports[b]:\n                            if i <= j:\n                                coordinate = (i, j)\n                            else:\n                                coordinate = (j, i)\n                            weights[coordinate] = weights.get(coordinate, 0) + x*y\n                stencil = [(coordinate, weight) for coordinate, weight in weights.items() if weight]\n                stencils[pair] = stencil\n            for coordinate, weight in stencil:\n                lifted[coordinate] = lifted.get(coordinate, 0) + coefficient*weight\n        lifted = {coordinate: coefficient for coordinate, coefficient in lifted.items() if coefficient}\n        if lifted:\n            result[word] = lifted\n    return result\n",
+        "assumptions": "Input coefficients are Python integers, and nonzero words satisfy the stated degree and common-charge constraints. monomial_map implements the supplied exact symmetric convention and stores its caches in payload['cache']. Supports are ordered by operator index because operators are traversed in input order. The transformation requires no linear independence.",
+        "failure_cases": "Dense monomial supports can make the cached transformations large. Dictionaries with little monomial reuse may gain little and incur transformation overhead. Worst-case output size remains quadratic in the number of operators per canonical row. Correctness depends on the supplied monomial_map contract; performance and execution have not been tested here.",
+        "source_sha256": "4801c0bd0d0dd0fdcb7f09aba62a7670c7d3db8d0e4ef71ab7628aa4c70a9e72",
+        "model_wall_seconds": 54.58618675003527,
+        "prompt_sha256": "3768bc7c3e3f9f705f770c3c003d2c4a895eae3b32aecdedf47b9c9ea2de3cc1",
+        "usage": {
+          "input_tokens": 21186,
+          "cached_input_tokens": 16768,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1667,
+          "reasoning_output_tokens": 915
+        }
+      },
+      "score": 0.027072791010141373,
+      "last_source": "def propose(payload):\n    words = []\n    indices = {}\n    supports = []\n    for i, operator in enumerate(payload['operators']):\n        for word, coefficient in operator.items():\n            if coefficient:\n                a = indices.get(word)\n                if a is None:\n                    a = len(words)\n                    indices[word] = a\n                    words.append(word)\n                    supports.append([])\n                supports[a].append((i, coefficient))\n    if not words:\n        return {}\n    base = monomial_map({'words': words, 'cache': payload['cache']})\n    stencils = {}\n    seen = set()\n    result = {}\n    for word, row in base.items():\n        if word in seen:\n            continue\n        half = len(word) // 2\n        mate = tuple((1 - flag, mode) for flag, mode in word[half:] + word[:half])\n        seen.add(mate)\n        lifted = {}\n        for pair, coefficient in row.items():\n            stencil = stencils.get(pair)\n            if stencil is None:\n                a, b = pair\n                left = supports[a]\n                if a == b:\n                    stencil = []\n                    for p, entry in enumerate(left):\n                        i, x = entry\n                        stencil.append(((i, i), x*x))\n                        for q in range(p + 1, len(left)):\n                            j, y = left[q]\n                            stencil.append(((i, j), 2*x*y))\n                else:\n                    weights = {}\n                    for i, x in left:\n                        for j, y in supports[b]:\n                            if i <= j:\n                                coordinate = (i, j)\n                            else:\n                                coordinate = (j, i)\n                            weights[coordinate] = weights.get(coordinate, 0) + x*y\n                    stencil = [(coordinate, weight) for coordinate, weight in weights.items() if weight]\n                stencils[pair] = stencil\n            for coordinate, weight in stencil:\n                lifted[coordinate] = lifted.get(coordinate, 0) + coefficient*weight\n        lifted = {coordinate: coefficient for coordinate, coefficient in lifted.items() if coefficient}\n        if lifted:\n            result[word] = lifted\n            if mate != word:\n                result[mate] = lifted.copy()\n    return result",
+      "best_node": "a972000cad3181555262018f3818c1a72414f4db4e94950c94feda258e6e7465",
+      "frozen_source": "4801c0bd0d0dd0fdcb7f09aba62a7670c7d3db8d0e4ef71ab7628aa4c70a9e72",
+      "generated_method_found": true,
+      "method_id": "2b9ab431e27f2f0b00455275f828c19dc70a35d675a4e471d1698604eaec192f",
+      "transfer": {
+        "status": "verified_encoded_claim",
+        "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+        "tasks": [
+          {
+            "task": {
+              "seed": 702193,
+              "base": {
+                "family": "star",
+                "spatial": 8,
+                "weight": -1
+              },
+              "unique_words": 96,
+              "operators": 40,
+              "terms": 10,
+              "relations": true
+            },
+            "operator_count": 40,
+            "distinct_words": 95,
+            "preparation_seconds": 0.002424500009510666,
+            "independent_reference_seconds": 0.749034375010524,
+            "validation_seconds": [
+              0.07314437499735504,
+              0.07298804202582687,
+              0.07135683402884752
+            ],
+            "cold_seconds": [
+              0.08562929200707003,
+              0.07959866704186425,
+              0.08067662501707673
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.08067662501707673,
+            "coefficient_rows": 7442,
+            "nonzero_entries": 141679
+          },
+          {
+            "task": {
+              "seed": 702222,
+              "base": {
+                "family": "chain",
+                "spatial": 10,
+                "width": 4,
+                "weight": -1
+              },
+              "unique_words": 120,
+              "operators": 48,
+              "terms": 12,
+              "zero_operator": true
+            },
+            "operator_count": 48,
+            "distinct_words": 119,
+            "preparation_seconds": 0.0019602079992182553,
+            "independent_reference_seconds": 1.5177356249769218,
+            "validation_seconds": [
+              0.13727083400590345,
+              0.13447737495880574,
+              0.13585458300076425
+            ],
+            "cold_seconds": [
+              0.1686625420115888,
+              0.1581043329788372,
+              0.1617631249828264
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.1617631249828264,
+            "coefficient_rows": 11636,
+            "nonzero_entries": 277907
+          },
+          {
+            "task": {
+              "seed": 702240,
+              "base": {
+                "family": "disjoint",
+                "spatial": 12,
+                "weight": -1,
+                "mode_offset": 59,
+                "mode_stride": 3
+              },
+              "unique_words": 80,
+              "operators": 32,
+              "terms": 8,
+              "large_integers": true,
+              "relations": true
+            },
+            "operator_count": 32,
+            "distinct_words": 77,
+            "preparation_seconds": 0.0008823330281302333,
+            "independent_reference_seconds": 0.3958015000098385,
+            "validation_seconds": [
+              0.03836333396611735,
+              0.03638237499399111,
+              0.03775666595902294
+            ],
+            "cold_seconds": [
+              0.06455095898127183,
+              0.04944758297642693,
+              0.044390790979377925
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.04944758297642693,
+            "coefficient_rows": 5069,
+            "nonzero_entries": 64324
+          },
+          {
+            "task": {
+              "seed": 702254,
+              "base": {
+                "family": "collective",
+                "spatial": 10,
+                "weight": -1,
+                "adjoint": true
+              },
+              "unique_words": 100,
+              "operators": 40,
+              "terms": 4,
+              "zero_operator": true
+            },
+            "operator_count": 40,
+            "distinct_words": 80,
+            "preparation_seconds": 0.001793457951862365,
+            "independent_reference_seconds": 0.2500994579750113,
+            "validation_seconds": [
+              0.02517250005621463,
+              0.02563887502765283,
+              0.02476033300627023
+            ],
+            "cold_seconds": [
+              0.03789883299032226,
+              0.034587416041176766,
+              0.033221042016521096
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.034587416041176766,
+            "coefficient_rows": 6052,
+            "nonzero_entries": 24814
+          }
+        ],
+        "activation_seconds": 0.028319916978944093,
+        "backend": "acquired",
+        "universal_program_correctness_proved": false,
+        "complete_worker_seconds": 4.771053832955658
+      },
+      "common_backend_transfer": {
+        "status": "verified_encoded_claim",
+        "claim": "exact Gram map of every supplied polynomial operator, including all cross terms",
+        "tasks": [
+          {
+            "task": {
+              "seed": 702193,
+              "base": {
+                "family": "star",
+                "spatial": 8,
+                "weight": -1
+              },
+              "unique_words": 96,
+              "operators": 40,
+              "terms": 10,
+              "relations": true
+            },
+            "operator_count": 40,
+            "distinct_words": 95,
+            "preparation_seconds": 0.002237749984487891,
+            "independent_reference_seconds": 0.7524856250383891,
+            "validation_seconds": [
+              0.07273775001522154,
+              0.07028970797546208,
+              0.07275862502865493
+            ],
+            "cold_seconds": [
+              0.20328233297914267,
+              0.19443916698219255,
+              0.20851033297367394
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.20328233297914267,
+            "coefficient_rows": 7442,
+            "nonzero_entries": 141679
+          },
+          {
+            "task": {
+              "seed": 702222,
+              "base": {
+                "family": "chain",
+                "spatial": 10,
+                "width": 4,
+                "weight": -1
+              },
+              "unique_words": 120,
+              "operators": 48,
+              "terms": 12,
+              "zero_operator": true
+            },
+            "operator_count": 48,
+            "distinct_words": 119,
+            "preparation_seconds": 0.0020296659786254168,
+            "independent_reference_seconds": 1.5778444170136936,
+            "validation_seconds": [
+              0.16441966698039323,
+              0.13732183299725875,
+              0.13734562502941117
+            ],
+            "cold_seconds": [
+              0.3557653749594465,
+              0.34164075000444427,
+              0.3534227079944685
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.3534227079944685,
+            "coefficient_rows": 11636,
+            "nonzero_entries": 277907
+          },
+          {
+            "task": {
+              "seed": 702240,
+              "base": {
+                "family": "disjoint",
+                "spatial": 12,
+                "weight": -1,
+                "mode_offset": 59,
+                "mode_stride": 3
+              },
+              "unique_words": 80,
+              "operators": 32,
+              "terms": 8,
+              "large_integers": true,
+              "relations": true
+            },
+            "operator_count": 32,
+            "distinct_words": 77,
+            "preparation_seconds": 0.001079459034372121,
+            "independent_reference_seconds": 0.4084565420052968,
+            "validation_seconds": [
+              0.038112000038381666,
+              0.038358582998625934,
+              0.03890187502838671
+            ],
+            "cold_seconds": [
+              0.12901020899880677,
+              0.11862304201349616,
+              0.12421083298977464
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.12421083298977464,
+            "coefficient_rows": 5069,
+            "nonzero_entries": 64324
+          },
+          {
+            "task": {
+              "seed": 702254,
+              "base": {
+                "family": "collective",
+                "spatial": 10,
+                "weight": -1,
+                "adjoint": true
+              },
+              "unique_words": 100,
+              "operators": 40,
+              "terms": 4,
+              "zero_operator": true
+            },
+            "operator_count": 40,
+            "distinct_words": 80,
+            "preparation_seconds": 0.0018742080428637564,
+            "independent_reference_seconds": 0.26619079196825624,
+            "validation_seconds": [
+              0.0239037080318667,
+              0.024690291029401124,
+              0.024699166999198496
+            ],
+            "cold_seconds": [
+              0.16012816701550037,
+              0.14755295804934576,
+              0.15156841604039073
+            ],
+            "primitive_calls": [
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              },
+              {
+                "oracle": 0,
+                "monomial_map": 1
+              }
+            ],
+            "median_seconds": 0.15156841604039073,
+            "coefficient_rows": 6052,
+            "nonzero_entries": 24814
+          }
+        ],
+        "activation_seconds": 0.0012812920031137764,
+        "backend": "ordinary",
+        "universal_program_correctness_proved": false,
+        "complete_worker_seconds": 6.369680709030945
+      }
+    }
+  },
+  "costs": {
+    "metered_wall_seconds": 48.10832412488526,
+    "self_cpu_seconds": 0.06588200000000488,
+    "child_cpu_seconds": 47.00883600000002,
+    "operations": 15,
+    "failed_operations": 0,
+    "model_usage": [],
+    "money_charged_by_runner": 0,
+    "subscription_marginal_price": null
+  },
+  "audit": {
+    "chain_valid": true,
+    "unfinished_operations": [],
+    "unfinished_attempts": [],
+    "events": 68
+  }
+}

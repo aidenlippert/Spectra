@@ -1,0 +1,15 @@
+{
+  "timestamp_unix": 1789601631.021415,
+  "stopped_process": 85310,
+  "command": ".venv-discovery-local/bin/python -B -m research.rsi_discovery_20260916.v2.summarize results/rsi_discovery_v2_20260916",
+  "observed_elapsed_seconds_lower_bound": 409,
+  "reason": "Final all-blob audit stalled on macOS offloaded evidence; process identity validated before SIGTERM. No scientific worker was stopped.",
+  "blocked_object": "confirmatory001/campaign_2/acquisition/objects/56dd29dde082bb735f61f6f0e53f3b558f32952c8f9b1b4be74ab2d1021eba96",
+  "offload_flag_source": "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:359, SF_DATALESS=0x40000000",
+  "object_metadata_snapshot": {
+    "resident": 848,
+    "offloaded": 136
+  },
+  "recovery": "The report verifies all ledger chains and reads resident object bytes. Every skipped offloaded object is explicitly listed as unavailable. The original full Ledger.audit acceptance implementation is unchanged.",
+  "cost_scope": "Report maintenance, additional to the recorded scientific operation costs. Complete CPU and exact wall cost are unknown."
+}

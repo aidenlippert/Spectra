@@ -1,0 +1,70 @@
+{
+  "native_model": "gpt-6-astra",
+  "effort": "high",
+  "proposal_calls": 0,
+  "model_deadline_seconds": 300,
+  "development": {
+    "name": "h4_nonuniform_v2",
+    "basis": "sto-3g",
+    "geometry": [
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          1.05
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          2.31
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          3.62
+        ]
+      ]
+    ],
+    "particles": 4
+  },
+  "transfer_hash": "a9f8fa73a5285a7bb1a0f236fdc3c31a2233d59f04ab566d8fa7ac21be408044",
+  "no_repair_from_transfer": true,
+  "budgets": {
+    "development": {
+      "bond": 16,
+      "solve_seconds_per_sector": 50
+    },
+    "transfer": {
+      "bond": 24,
+      "solve_seconds_per_sector": 60
+    }
+  },
+  "comparison_scope": "One exploratory structural algorithm against previously measured frozen windows; not an independent RSI significance test",
+  "map_source_sha256": "f192bcfad83912a44611655297bc97156f49bf2cf65a9e769752df9ec11f4e31",
+  "primitive_source_sha256": "7a6b59e93b6754e3b0caf4b5aa4b44316aaec6292525f3572332c3fda7e28c8d",
+  "sources": {
+    "/Users/aidenlippert/Documents/Spectra-rsi-discovery/research/rsi_discovery_20260916/v2/correlation_search.py": "0a83d07a8726f1e3f85c3822bcafbb14c0e2a61c12c6672148e8096af2e5880f",
+    "/Users/aidenlippert/Documents/Spectra-rsi-discovery/research/rsi_discovery_20260916/v2/workflow.py": "be1822e52aab618be5cdbb48ac949f7efbbe3a377011497c3f2850fd46d33aca",
+    "/Users/aidenlippert/Documents/Spectra-rsi-discovery/research/rsi_discovery_20260916/v2/language.py": "86693e05f0da134612cfe659da40ebee11cc363bee8d22c9a36c3f5d283842b5"
+  },
+  "supplied_proposal": {
+    "path": "/Users/aidenlippert/Documents/Spectra-rsi-discovery/results/rsi_discovery_v2_20260916/correlation_search002/proposal.json",
+    "sha256": "e12c29a22120e3399916c868078c43d9310a29685f691c4b11a25a282d6f95d9",
+    "scope": "unchanged program rerun under a restored runtime; previous failed stages stay charged"
+  }
+}

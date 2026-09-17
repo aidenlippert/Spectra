@@ -1,0 +1,117 @@
+{
+  "status": "verified_encoded_claim",
+  "target": {
+    "specification": {
+      "name": "h4_nonuniform_v2",
+      "basis": "sto-3g",
+      "geometry": [
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            1.05
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            2.31
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            3.62
+          ]
+        ]
+      ]
+    },
+    "N": 4,
+    "scope": "entire fixed-N sector",
+    "max_width_Ha": "1/625",
+    "constructor": "declared collective pair supports plus width-three local clusters",
+    "full_occupation_enumeration": false,
+    "cached_teacher": false
+  },
+  "acceptance": {
+    "kind": "complete_spin_screen_v1",
+    "lower": "-12064989043077123299/3000000000000000000",
+    "lower_float": -4.021663014359041,
+    "singlet": {
+      "lower": "-12064989043023123299/3000000000000000000",
+      "lower_float": -4.0216630143410415,
+      "residual_l1": "7586913123299/3000000000000000000",
+      "residual_l1_float": 2.5289710410996667e-06,
+      "multiplier_terms": 99,
+      "square_polynomial_terms": 1401,
+      "residual_terms": 1401,
+      "residual_max_degree": 6,
+      "mode_count": 8,
+      "particle_number": 4,
+      "factor_rows": 239,
+      "factor_nonzeros": 4052,
+      "unaveraged_residual_l1": "74537820793878826847/3000000000000000000",
+      "spin_twirl": true,
+      "positivity": "Exact SU(2) average of positive squares; ideals have zero singlet compression",
+      "restricted_to": "S=0",
+      "original_H_spin_defect_Ha": "9/500000000000",
+      "lower_for": "Exact SU(2) average of input H in the stated sector",
+      "replay_seconds": 0.7653511250391603
+    },
+    "all_nonsinglets": {
+      "lower": "-1160810754915257651/300000000000000000",
+      "lower_float": -3.8693691830508588,
+      "residual_l1": "1088837357651/300000000000000000",
+      "residual_l1_float": 3.6294578588366665e-06,
+      "multiplier_terms": 216,
+      "square_polynomial_terms": 1401,
+      "residual_terms": 1401,
+      "residual_max_degree": 6,
+      "mode_count": 8,
+      "particle_number": 4,
+      "factor_rows": 641,
+      "factor_nonzeros": 20162,
+      "restricted_to": "M_S=1",
+      "original_H_spin_defect_Ha": "9/500000000000",
+      "lower_for": "Exact SU(2) average of input H in the stated sector",
+      "replay_seconds": 0.3741327499737963
+    },
+    "valid_on": "Entire fixed-N sector",
+    "argument": "Every integer-spin S>=1 multiplet meets M_S=1; S=0 is certified separately; original-H spin defect charged once",
+    "many_body_states_enumerated": 0,
+    "replay_seconds": 1.1399929580511525,
+    "upper_Ha": "-80421914800283502591869313127677204352865368846231529676910321209546128514980268461317726736644785984613056637937458419/19999999995678217741919031389075759861353905207536749458928259956319919092688184185161088175845188821369117000000000000",
+    "width_Ha": "34036408549702614080066014037625857148034096936329987213185049426109323149626285422431364273952406796384024954563742756983/59999999987034653225757094167227279584061715622610248376784779868959757278064552555483264527535566464107351000000000000000000",
+    "width_mHa": 0.5672734759509586,
+    "target_1p6mHa_met": true
+  },
+  "costs": {
+    "metered_wall_seconds": 55.50419279106427,
+    "self_cpu_seconds": 0.04248800000000002,
+    "child_cpu_seconds": 50.66126200000001,
+    "operations": 8,
+    "failed_operations": 0,
+    "model_usage": [],
+    "money_charged_by_runner": 0,
+    "subscription_marginal_price": null
+  },
+  "audit": {
+    "chain_valid": true,
+    "unfinished_operations": [],
+    "unfinished_attempts": [],
+    "events": 17
+  }
+}

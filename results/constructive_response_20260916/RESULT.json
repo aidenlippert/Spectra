@@ -1,0 +1,86 @@
+{
+  "requested_field_level_breakthrough_achieved": false,
+  "sharp_conditional_relative_residual_bound_verified": true,
+  "novelty_in_world_literature_established": false,
+  "exact_square_model": {
+    "status": "accepted_exact_rational_finite_model",
+    "energy_lower_over_t": "-43538262312609/32977655000000",
+    "energy_upper_over_t": "-330058727736293991619244091624/249999997803671252361968388085",
+    "width_over_t": "525900295725283808406284064476172753/1648882735514045658762185724634648135000000",
+    "relative_allowance_over_t": "1990921/8244413750000",
+    "absolute_allowance_over_t": "1461681/5280940000000",
+    "global_determinants_enumerated": 36,
+    "retained_dimension": 6,
+    "eliminated_dimension": 30,
+    "local_gap_check_dimension": 16,
+    "eliminated_gap_over_t": "264047/200000",
+    "retained_psd_check_dimension": 6,
+    "global_ground_state_teacher_used": false,
+    "not_a_general_compact_solver": true
+  },
+  "determinant_free_complete_interacting_constructor": false,
+  "large_system_scaling_proved": false,
+  "new_physics_phase_result": false,
+  "compact_circuit_action_diagnostic": {
+    "status": "enumerated_float64_diagnostic_not_certified",
+    "sites": 8,
+    "global_determinants_enumerated": 4900,
+    "retained_dimension": 70,
+    "base_H_nonzeros": 60830,
+    "gate_nonzeros_total": 97000,
+    "stored_transformed_H_entries": 0,
+    "response_entries": 338100,
+    "matrix_free_does_not_mean_determinant_free": true,
+    "preconditioner": "8 times bare doublon count minus target energy",
+    "gate_count": 10,
+    "ground_energy": -3.025922805690692,
+    "ground_residual": 5.54811382418829e-12,
+    "retained_weight": 0.9832969526069026,
+    "coupling_norm": 1.5578876423915022,
+    "eliminated_gap": 5.275856777254965,
+    "condition_at_target": 7.211271256480618,
+    "first_sampled_iteration_below_0p001": 4,
+    "residual_history": [
+      {
+        "iteration": 0,
+        "residual_norm": 1.5578876423915022,
+        "gap_bound": 0.4599355276757563
+      },
+      {
+        "iteration": 1,
+        "residual_norm": 0.5081577675474525,
+        "gap_bound": 0.048935252105352704
+      },
+      {
+        "iteration": 2,
+        "residual_norm": 0.20587357242661355,
+        "gap_bound": 0.008032040590221274
+      },
+      {
+        "iteration": 4,
+        "residual_norm": 0.041136342235873834,
+        "gap_bound": 0.0003206830740301471
+      },
+      {
+        "iteration": 8,
+        "residual_norm": 0.0022238657987579766,
+        "gap_bound": 9.372206409320354e-07
+      },
+      {
+        "iteration": 16,
+        "residual_norm": 7.007317620209968e-06,
+        "gap_bound": 9.305255439593027e-12
+      },
+      {
+        "iteration": 32,
+        "residual_norm": 7.000922846597176e-11,
+        "gap_bound": 9.28827951428747e-22
+      }
+    ],
+    "seconds": 1.3705626669689082
+  },
+  "full_focused_tests": 29,
+  "exact_corruption_rejections": 4,
+  "authoritative_derivation": "research/constructive_response_20260916/DERIVATION.md",
+  "report": "research/constructive_response_20260916/REPORT.md"
+}

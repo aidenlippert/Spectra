@@ -1,0 +1,47 @@
+{
+  "status": "accepted_scoped_exact_results_only",
+  "certificate_sha256": "3d627014439904495ecdbca4d38651c057e3a1f5a5ea00539144a17e8e08794f",
+  "square_model": {
+    "status": "accepted_exact_rational_finite_model",
+    "energy_lower_over_t": "-43538262312609/32977655000000",
+    "energy_upper_over_t": "-330058727736293991619244091624/249999997803671252361968388085",
+    "width_over_t": "525900295725283808406284064476172753/1648882735514045658762185724634648135000000",
+    "relative_allowance_over_t": "1990921/8244413750000",
+    "absolute_allowance_over_t": "1461681/5280940000000",
+    "global_determinants_enumerated": 36,
+    "retained_dimension": 6,
+    "eliminated_dimension": 30,
+    "local_gap_check_dimension": 16,
+    "eliminated_gap_over_t": "264047/200000",
+    "retained_psd_check_dimension": 6,
+    "global_ground_state_teacher_used": false,
+    "not_a_general_compact_solver": true
+  },
+  "local_bond_checks": 24,
+  "corruption_checks": [
+    {
+      "case": "zero_rho",
+      "rejected": true,
+      "reason": "Relative residual inequality failed"
+    },
+    {
+      "case": "zero_trial",
+      "rejected": true,
+      "reason": "Nonzero trial state required"
+    },
+    {
+      "case": "wrong_reference",
+      "rejected": true,
+      "reason": "Local gap proof needs a negative reference energy"
+    },
+    {
+      "case": "wrong_model",
+      "rejected": true,
+      "reason": "Wrong exact model/certificate kind"
+    }
+  ],
+  "global_states_constructed_for_dimer_family": 0,
+  "global_states_enumerated_for_square": 36,
+  "new_field_level_breakthrough_established": false,
+  "seconds": 0.2055441249976866
+}

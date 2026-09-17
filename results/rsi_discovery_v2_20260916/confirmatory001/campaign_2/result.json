@@ -1,0 +1,1163 @@
+{
+  "index": 1,
+  "arms": {
+    "A": {
+      "attempts": [
+        {
+          "source_sha256": null,
+          "validation": {
+            "status": "implementation_failure",
+            "reason": "model proposal unavailable"
+          },
+          "cost": {
+            "metered_wall_seconds": 150.0123784590396,
+            "self_cpu_seconds": 0.06515300000000002,
+            "child_cpu_seconds": 1.60046,
+            "operations": 1,
+            "failed_operations": 1,
+            "model_usage": [
+              null
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          },
+          "node": "f6ebb6deb4c53f3fd9acd616f707ef5c8b65dc797041fa90c6a76442a4eeda7a",
+          "action": "open_mechanism"
+        },
+        {
+          "source_sha256": "5027b224a17e9603ef2a8772b0a8e638c28e45fe803dc2c4664486fd351ac544",
+          "validation": {
+            "status": "verified_encoded_claim",
+            "claim": "exact symmetric Gram coefficient map for every recorded input",
+            "universal_program_correctness_proved": false,
+            "tasks": [
+              {
+                "task": {
+                  "family": "collective",
+                  "spatial": 6,
+                  "weight": -1,
+                  "permutation_seed": 8880
+                },
+                "dictionary_words": 132,
+                "preparation_seconds": 0.00040483399061486125,
+                "independent_reference_seconds": 0.22362466697813943,
+                "validation_seconds": [
+                  0.023839125002268702,
+                  0.02369791700039059,
+                  0.023540207999758422
+                ],
+                "cold_seconds": [
+                  0.018931917031295598,
+                  0.02088074997300282,
+                  0.017970166984014213
+                ],
+                "median_seconds": 0.018931917031295598,
+                "coefficient_rows": 8687,
+                "nonzero_entries": 14538
+              },
+              {
+                "task": {
+                  "family": "chain",
+                  "spatial": 7,
+                  "width": 3,
+                  "weight": -1,
+                  "adjoint": true,
+                  "permutation_seed": 220
+                },
+                "dictionary_words": 147,
+                "preparation_seconds": 0.00048383401008322835,
+                "independent_reference_seconds": 0.43139762501232326,
+                "validation_seconds": [
+                  0.03609008400235325,
+                  0.03592062502866611,
+                  0.03617899998789653
+                ],
+                "cold_seconds": [
+                  0.029943666013423353,
+                  0.03392545902170241,
+                  0.0318254170124419
+                ],
+                "median_seconds": 0.0318254170124419,
+                "coefficient_rows": 12825,
+                "nonzero_entries": 22764
+              }
+            ],
+            "complete_worker_seconds": 0.9986103749834001
+          },
+          "cost": {
+            "metered_wall_seconds": 141.2887173339841,
+            "self_cpu_seconds": 0.06278399999999999,
+            "child_cpu_seconds": 1.851226,
+            "operations": 1,
+            "failed_operations": 0,
+            "model_usage": [
+              {
+                "cache_write_input_tokens": 0,
+                "cached_input_tokens": 0,
+                "input_tokens": 20694,
+                "output_tokens": 4535,
+                "reasoning_output_tokens": 2885
+              }
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          },
+          "node": "bf9df42326a503450bffa754c44d420b224209296d6e971a5632276235f5be3b",
+          "action": "continue_search"
+        }
+      ],
+      "reads": [
+        "40117d8e1c9508333d9764b77d9790130570cd963013d228f6ace3bcc8420600",
+        "f6ebb6deb4c53f3fd9acd616f707ef5c8b65dc797041fa90c6a76442a4eeda7a",
+        "bf9df42326a503450bffa754c44d420b224209296d6e971a5632276235f5be3b"
+      ],
+      "best": {
+        "hypothesis": "Factoring each product into cached middle contractions and exterior merges, then accumulating directly into Hermitian monomial orbits, may reduce cold construction time. No measured improvement is claimed.",
+        "mechanism": "Normalize each input word exactly. Multiply normal monomials by enumerating subsets of matching modes between the left annihilation block and right creation block, with exact fermionic signs. Cache these smaller block operations within the invocation. Homogeneous charge makes every resulting monomial charge zero, so adjunction simply exchanges its sorted creation and annihilation blocks. Accumulate off-diagonal products into these exchange orbits and expand each orbit only once.",
+        "source": "def exterior(left, right, cache):\n    key = (left, right)\n    found = cache.get(key)\n    if found is not None:\n        return found\n    sign = 1\n    for x in left:\n        for y in right:\n            if x == y:\n                cache[key] = ((), 0)\n                return cache[key]\n            if x > y:\n                sign = -sign\n    found = (tuple(sorted(left + right)), sign)\n    cache[key] = found\n    return found\n\n\ndef normalize(word, cache):\n    polynomial = {((), ()): 1}\n    for flag, mode in word:\n        following = {}\n        for blocks, coefficient in polynomial.items():\n            creators, annihilators = blocks\n            if flag:\n                if mode in annihilators:\n                    position = annihilators.index(mode)\n                    key = (creators, annihilators[:position] + annihilators[position + 1:])\n                    value = coefficient\n                    if (len(annihilators) - position - 1) % 2:\n                        value = -value\n                    following[key] = following.get(key, 0) + value\n                merged, sign = exterior(creators, (mode,), cache)\n                if sign:\n                    if len(annihilators) % 2:\n                        sign = -sign\n                    key = (merged, annihilators)\n                    following[key] = following.get(key, 0) + coefficient * sign\n            else:\n                merged, sign = exterior(annihilators, (mode,), cache)\n                if sign:\n                    key = (creators, merged)\n                    following[key] = following.get(key, 0) + coefficient * sign\n        polynomial = {key: value for key, value in following.items() if value}\n    return polynomial\n\n\ndef contractions(annihilators, creators, cache):\n    key = (annihilators, creators)\n    found = cache.get(key)\n    if found is not None:\n        return found\n    states = [(annihilators, creators, 1)]\n    for mode in annihilators:\n        if mode in creators:\n            additions = []\n            for remaining_a, remaining_c, sign in states:\n                position_a = remaining_a.index(mode)\n                position_c = remaining_c.index(mode)\n                if (len(remaining_a) - position_a - 1 + position_c) % 2:\n                    sign = -sign\n                additions.append((remaining_a[:position_a] + remaining_a[position_a + 1:], remaining_c[:position_c] + remaining_c[position_c + 1:], sign))\n            states.extend(additions)\n    found = []\n    for remaining_a, remaining_c, sign in states:\n        if (len(remaining_a) * len(remaining_c)) % 2:\n            sign = -sign\n        found.append((remaining_c, remaining_a, sign))\n    cache[key] = found\n    return found\n\n\ndef propose(payload):\n    words = payload['words']\n    merge_cache = {}\n    contraction_cache = {}\n    word_cache = {}\n    polynomials = []\n    adjoints = []\n    for word in words:\n        polynomial = word_cache.get(word)\n        if polynomial is None:\n            polynomial = normalize(word, merge_cache)\n            word_cache[word] = polynomial\n        terms = []\n        adjoint_terms = []\n        for blocks, coefficient in polynomial.items():\n            creators, annihilators = blocks\n            terms.append((creators, annihilators, coefficient))\n            parity = len(creators) * (len(creators) - 1) // 2 + len(annihilators) * (len(annihilators) - 1) // 2\n            if parity % 2:\n                coefficient = -coefficient\n            adjoint_terms.append((annihilators, creators, coefficient))\n        polynomials.append(terms)\n        adjoints.append(adjoint_terms)\n    orbits = {}\n    for i in range(len(words)):\n        for j in range(i, len(words)):\n            coordinate = (i, j)\n            for left_c, left_a, left_value in adjoints[i]:\n                for right_c, right_a, right_value in polynomials[j]:\n                    scale = left_value * right_value\n                    middle = contractions(left_a, right_c, contraction_cache)\n                    for middle_c, middle_a, middle_sign in middle:\n                        creators, creator_sign = exterior(left_c, middle_c, merge_cache)\n                        if creator_sign:\n                            annihilators, annihilator_sign = exterior(middle_a, right_a, merge_cache)\n                            if annihilator_sign:\n                                value = scale * middle_sign * creator_sign * annihilator_sign\n                                if i == j:\n                                    if creators <= annihilators:\n                                        orbit = (creators, annihilators)\n                                        bucket = orbits.setdefault(orbit, {})\n                                        updated = bucket.get(coordinate, 0) + value\n                                        if updated:\n                                            bucket[coordinate] = updated\n                                        else:\n                                            bucket.pop(coordinate, None)\n                                else:\n                                    if creators == annihilators:\n                                        value = value * 2\n                                    if creators <= annihilators:\n                                        orbit = (creators, annihilators)\n                                    else:\n                                        orbit = (annihilators, creators)\n                                    bucket = orbits.setdefault(orbit, {})\n                                    updated = bucket.get(coordinate, 0) + value\n                                    if updated:\n                                        bucket[coordinate] = updated\n                                    else:\n                                        bucket.pop(coordinate, None)\n    result = {}\n    for blocks, bucket in orbits.items():\n        if bucket:\n            creators, annihilators = blocks\n            word = tuple((1, mode) for mode in creators) + tuple((0, mode) for mode in annihilators)\n            result[word] = bucket\n            if creators != annihilators:\n                transpose = tuple((1, mode) for mode in annihilators) + tuple((0, mode) for mode in creators)\n                result[transpose] = bucket.copy()\n    return result\n",
+        "assumptions": "Operators obey fermionic canonical anticommutation relations; flags are 0/1; modes are hashable and sortable; input words are tuples of degree at most three and share one particle-number charge. All caches are created empty inside propose.",
+        "failure_cases": "Mixed-charge dictionaries invalidate the unsigned orbit expansion and are outside the specified input domain. Dictionaries with little block reuse may incur cache overhead without a speed benefit. Large outputs still require quadratic coordinate storage in the worst case.",
+        "source_sha256": "5027b224a17e9603ef2a8772b0a8e638c28e45fe803dc2c4664486fd351ac544",
+        "model_wall_seconds": 141.2838309580111,
+        "prompt_sha256": "2a44bed9cbbccedaf7cc146dbd29d6698fc54ae9253ee1c52d378aa188a8ecb7",
+        "usage": {
+          "input_tokens": 20694,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4535,
+          "reasoning_output_tokens": 2885
+        }
+      },
+      "best_score": 0.0507573340437375,
+      "best_node": "bf9df42326a503450bffa754c44d420b224209296d6e971a5632276235f5be3b",
+      "frozen_source": "5027b224a17e9603ef2a8772b0a8e638c28e45fe803dc2c4664486fd351ac544",
+      "generated_method_found": true,
+      "method_id": "d9d2cf86e9f9e4768067a59bb9dfdffc16bd14b97d13eac629319cfd98ba3128",
+      "transfer": {
+        "status": "verified_encoded_claim",
+        "claim": "exact symmetric Gram coefficient map for every recorded input",
+        "universal_program_correctness_proved": false,
+        "tasks": [
+          {
+            "task": {
+              "family": "star",
+              "spatial": 7,
+              "weight": -1,
+              "permutation_seed": 99002
+            },
+            "dictionary_words": 317,
+            "preparation_seconds": 0.0014380000066012144,
+            "independent_reference_seconds": 1.4096554589923471,
+            "validation_seconds": [
+              0.11121854203520343,
+              0.11134329199558124,
+              0.11203237500740215
+            ],
+            "cold_seconds": [
+              0.07722637499682605,
+              0.11036683298880234,
+              0.09275549999438226
+            ],
+            "median_seconds": 0.09275549999438226,
+            "coefficient_rows": 34864,
+            "nonzero_entries": 84849
+          },
+          {
+            "task": {
+              "family": "disjoint",
+              "spatial": 15,
+              "weight": -1,
+              "adjoint": true,
+              "mode_offset": 101,
+              "mode_stride": 3,
+              "permutation_seed": 774
+            },
+            "dictionary_words": 195,
+            "preparation_seconds": 0.0006902089808136225,
+            "independent_reference_seconds": 0.7304628750425763,
+            "validation_seconds": [
+              0.09035700000822544,
+              0.08610954199684784,
+              0.08650804194621742
+            ],
+            "cold_seconds": [
+              0.08236150001175702,
+              0.07324399997014552,
+              0.07632816699333489
+            ],
+            "median_seconds": 0.07632816699333489,
+            "coefficient_rows": 31821,
+            "nonzero_entries": 38910
+          },
+          {
+            "task": {
+              "family": "collective",
+              "spatial": 10,
+              "weight": -1,
+              "adjoint": true,
+              "permutation_seed": 67932
+            },
+            "dictionary_words": 380,
+            "preparation_seconds": 0.0016000419855117798,
+            "independent_reference_seconds": 3.090444999979809,
+            "validation_seconds": [
+              0.2654920839704573,
+              0.26815575000364333,
+              0.26411549997283146
+            ],
+            "cold_seconds": [
+              0.2265707920305431,
+              0.2759235829580575,
+              0.27507037500618026
+            ],
+            "median_seconds": 0.27507037500618026,
+            "coefficient_rows": 89251,
+            "nonzero_entries": 147480
+          },
+          {
+            "task": {
+              "family": "chain",
+              "spatial": 10,
+              "width": 4,
+              "weight": -3,
+              "mode_offset": 71,
+              "mode_stride": 2,
+              "permutation_seed": 320
+            },
+            "dictionary_words": 114,
+            "preparation_seconds": 0.0011816250043921173,
+            "independent_reference_seconds": 0.21489970799302682,
+            "validation_seconds": [
+              0.037406374991405755,
+              0.03649412503000349,
+              0.03641291701933369
+            ],
+            "cold_seconds": [
+              0.04555633303243667,
+              0.02686674997676164,
+              0.026245250017382205
+            ],
+            "median_seconds": 0.02686674997676164,
+            "coefficient_rows": 13464,
+            "nonzero_entries": 14418
+          }
+        ],
+        "complete_worker_seconds": 8.383077542006504
+      }
+    },
+    "B": {
+      "attempts": [
+        {
+          "source_sha256": "87a5323b88247efcf4cfea58b5d8ac5b519dc64f374bc70920bcfbbbea1662c5",
+          "validation": {
+            "status": "verified_encoded_claim",
+            "claim": "exact symmetric Gram coefficient map for every recorded input",
+            "universal_program_correctness_proved": false,
+            "tasks": [
+              {
+                "task": {
+                  "family": "collective",
+                  "spatial": 6,
+                  "weight": -1,
+                  "permutation_seed": 8880
+                },
+                "dictionary_words": 132,
+                "preparation_seconds": 0.0005683330236934125,
+                "independent_reference_seconds": 0.3248381250305101,
+                "validation_seconds": [
+                  0.035416207974776626,
+                  0.034411959000863135,
+                  0.034884874999988824
+                ],
+                "cold_seconds": [
+                  0.04472533299122006,
+                  0.044270874990615994,
+                  0.049345833947882056
+                ],
+                "median_seconds": 0.04472533299122006,
+                "coefficient_rows": 8687,
+                "nonzero_entries": 14538
+              },
+              {
+                "task": {
+                  "family": "chain",
+                  "spatial": 7,
+                  "width": 3,
+                  "weight": -1,
+                  "adjoint": true,
+                  "permutation_seed": 220
+                },
+                "dictionary_words": 147,
+                "preparation_seconds": 0.0006689580040983856,
+                "independent_reference_seconds": 0.6206530419876799,
+                "validation_seconds": [
+                  0.05319095798768103,
+                  0.05023962497944012,
+                  0.05075654201209545
+                ],
+                "cold_seconds": [
+                  0.0679076670203358,
+                  0.06925595802022144,
+                  0.0683008330524899
+                ],
+                "median_seconds": 0.0683008330524899,
+                "coefficient_rows": 12825,
+                "nonzero_entries": 22764
+              }
+            ],
+            "complete_worker_seconds": 1.5636616249685176
+          },
+          "cost": {
+            "metered_wall_seconds": 102.31592308398103,
+            "self_cpu_seconds": 0.045763000000000005,
+            "child_cpu_seconds": 1.644078,
+            "operations": 1,
+            "failed_operations": 0,
+            "model_usage": [
+              {
+                "cache_write_input_tokens": 0,
+                "cached_input_tokens": 0,
+                "input_tokens": 22152,
+                "output_tokens": 3276,
+                "reasoning_output_tokens": 2070
+              }
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          },
+          "node": "669f8c13dd51a1101b61bdbe76259dd3b0d89eda85784a722e34c2f26b8feff5",
+          "action": "open_mechanism"
+        },
+        {
+          "source_sha256": null,
+          "validation": {
+            "status": "implementation_failure",
+            "reason": "model proposal unavailable"
+          },
+          "cost": {
+            "metered_wall_seconds": 150.0146902910201,
+            "self_cpu_seconds": 0.064243,
+            "child_cpu_seconds": 1.839675,
+            "operations": 1,
+            "failed_operations": 1,
+            "model_usage": [
+              null
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          },
+          "node": "417fbce88ebe1ffab8df7599954e8449d8f5b8c86d27193f2f63c507a90bd066",
+          "action": "continue_search"
+        }
+      ],
+      "reads": [
+        "40117d8e1c9508333d9764b77d9790130570cd963013d228f6ace3bcc8420600",
+        "669f8c13dd51a1101b61bdbe76259dd3b0d89eda85784a722e34c2f26b8feff5",
+        "417fbce88ebe1ffab8df7599954e8449d8f5b8c86d27193f2f63c507a90bd066"
+      ],
+      "best": {
+        "hypothesis": "Compiling CAR products directly into adjoint-orbit templates can reduce cold symmetric Gram construction work by combining transpose contributions and cancellations before concrete mode substitution. Performance is unmeasured.",
+        "mechanism": "Homogeneous charge makes every product number preserving. For canonical creator and annihilator mode tuples C and A of equal length, adjunction exchanges C and A with positive sign. The compiler therefore accumulates each normalized product into unordered adjoint orbits: nonfixed orbits receive the sum of both orientations, while fixed orbits receive twice their coefficient. Templates depend only on flags and mode-equality patterns. Construction instantiates each surviving orbit once, corrects relabeling parity, and emits both orientations when distinct. Diagonal coordinates divide the symmetric template coefficients exactly by two.",
+        "source": "def gramplan(pattern):\n    pending = [(pattern, 1)]\n    terms = {}\n    while pending:\n        word, coefficient = pending.pop()\n        finished = True\n        position = 0\n        while position + 1 < len(word):\n            leftflag, leftmode = word[position]\n            rightflag, rightmode = word[position + 1]\n            if leftflag == rightflag and leftmode == rightmode:\n                finished = False\n                break\n            if leftflag < rightflag or (leftflag == rightflag and leftmode > rightmode):\n                prefix = word[:position]\n                suffix = word[position + 2:]\n                swapped = prefix + (word[position + 1], word[position]) + suffix\n                pending.append((swapped, -coefficient))\n                if leftflag == 0 and rightflag == 1 and leftmode == rightmode:\n                    pending.append((prefix + suffix, coefficient))\n                finished = False\n                break\n            position += 1\n        if finished:\n            creators = tuple(mode for flag, mode in word if flag == 1)\n            annihilators = tuple(mode for flag, mode in word if flag == 0)\n            if creators == annihilators:\n                coefficient = 2 * coefficient\n            elif creators > annihilators:\n                creators, annihilators = annihilators, creators\n            key = (creators, annihilators)\n            terms[key] = terms.get(key, 0) + coefficient\n    return tuple((coefficient, groups[0], groups[1]) for groups, coefficient in terms.items() if coefficient)\n\n\ndef propose(payload):\n    words = payload['words']\n    cache = payload['cache']\n    adjoints = [tuple((1 - flag, mode) for flag, mode in reversed(word)) for word in words]\n    result = {}\n    for i in range(len(words)):\n        for j in range(i, len(words)):\n            labels = {}\n            modes = []\n            pattern = []\n            for flag, mode in adjoints[i] + words[j]:\n                if mode in labels:\n                    label = labels[mode]\n                else:\n                    label = len(modes)\n                    labels[mode] = label\n                    modes.append(mode)\n                pattern.append((flag, label))\n            key = ('symmetric CAR orbit plan', tuple(pattern))\n            if key in cache:\n                plan = cache[key]\n            else:\n                plan = gramplan(key[1])\n                cache[key] = plan\n            coordinate = (i, j)\n            for coefficient, creators, annihilators in plan:\n                if i == j:\n                    coefficient = coefficient // 2\n                if coefficient:\n                    if creators == annihilators:\n                        ordered = sorted(modes[label] for label in creators)\n                        word = tuple((1, mode) for mode in ordered) + tuple((0, mode) for mode in ordered)\n                        result.setdefault(word, {})[coordinate] = coefficient\n                    else:\n                        groups = []\n                        for group in (creators, annihilators):\n                            ordered = []\n                            for label in group:\n                                mode = modes[label]\n                                position = len(ordered)\n                                ordered.append(mode)\n                                while position > 0 and ordered[position - 1] > mode:\n                                    ordered[position] = ordered[position - 1]\n                                    position -= 1\n                                    coefficient = -coefficient\n                                ordered[position] = mode\n                            groups.append(ordered)\n                        word = tuple((1, mode) for mode in groups[0]) + tuple((0, mode) for mode in groups[1])\n                        transpose = tuple((1, mode) for mode in groups[1]) + tuple((0, mode) for mode in groups[0])\n                        result.setdefault(word, {})[coordinate] = coefficient\n                        result.setdefault(transpose, {})[coordinate] = coefficient\n    return result\n",
+        "assumptions": "Flags are 0 or 1; modes are hashable and consistently totally ordered. Words are tuples of degree at most three with homogeneous particle-number charge. The initially empty mutable cache stores structural templates only. Exactness follows algebraically from CAR normalization, injective relabeling, and adjoint symmetry; this implementation was not executed or independently checked here.",
+        "failure_cases": "Mixed-charge dictionaries invalidate the positive-sign adjoint exchange used here. Low structural reuse can make compilation overhead outweigh savings. Template storage grows with encountered patterns, and explicit output construction retains its unavoidable size cost. No hard-time-limit success or measured improvement is claimed.",
+        "source_sha256": "87a5323b88247efcf4cfea58b5d8ac5b519dc64f374bc70920bcfbbbea1662c5",
+        "model_wall_seconds": 102.30965087498771,
+        "prompt_sha256": "aaf1fcc57b9f01b69563e888e49cdb19d0ee2dadcfab7f12c16129257b89abbb",
+        "usage": {
+          "input_tokens": 22152,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3276,
+          "reasoning_output_tokens": 2070
+        }
+      },
+      "best_score": 0.11302616604370996,
+      "best_node": "669f8c13dd51a1101b61bdbe76259dd3b0d89eda85784a722e34c2f26b8feff5",
+      "frozen_source": "87a5323b88247efcf4cfea58b5d8ac5b519dc64f374bc70920bcfbbbea1662c5",
+      "generated_method_found": true,
+      "method_id": "5a00df999cc8917185e9e5c88e072d76f03e153a23f552370d4f62858965d066",
+      "transfer": {
+        "status": "verified_encoded_claim",
+        "claim": "exact symmetric Gram coefficient map for every recorded input",
+        "universal_program_correctness_proved": false,
+        "tasks": [
+          {
+            "task": {
+              "family": "star",
+              "spatial": 7,
+              "weight": -1,
+              "permutation_seed": 99002
+            },
+            "dictionary_words": 317,
+            "preparation_seconds": 0.0013476670137606561,
+            "independent_reference_seconds": 1.4156404589884914,
+            "validation_seconds": [
+              0.1130904580350034,
+              0.11233900004299358,
+              0.11379500001203269
+            ],
+            "cold_seconds": [
+              0.17152187501778826,
+              0.21873379102908075,
+              0.20816854102304205
+            ],
+            "median_seconds": 0.20816854102304205,
+            "coefficient_rows": 34864,
+            "nonzero_entries": 84849
+          },
+          {
+            "task": {
+              "family": "disjoint",
+              "spatial": 15,
+              "weight": -1,
+              "adjoint": true,
+              "mode_offset": 101,
+              "mode_stride": 3,
+              "permutation_seed": 774
+            },
+            "dictionary_words": 195,
+            "preparation_seconds": 0.0006550840334966779,
+            "independent_reference_seconds": 0.7310156669700518,
+            "validation_seconds": [
+              0.08861524995882064,
+              0.08687691600061953,
+              0.08770970901241526
+            ],
+            "cold_seconds": [
+              0.10048520797863603,
+              0.0984086660319008,
+              0.09875295800156891
+            ],
+            "median_seconds": 0.09875295800156891,
+            "coefficient_rows": 31821,
+            "nonzero_entries": 38910
+          },
+          {
+            "task": {
+              "family": "collective",
+              "spatial": 10,
+              "weight": -1,
+              "adjoint": true,
+              "permutation_seed": 67932
+            },
+            "dictionary_words": 380,
+            "preparation_seconds": 0.0017288750386796892,
+            "independent_reference_seconds": 3.098758666019421,
+            "validation_seconds": [
+              0.27843570802360773,
+              0.2678436669521034,
+              0.26954058301635087
+            ],
+            "cold_seconds": [
+              0.41996012500021607,
+              0.4434136660420336,
+              0.41924216598272324
+            ],
+            "median_seconds": 0.41996012500021607,
+            "coefficient_rows": 89251,
+            "nonzero_entries": 147480
+          },
+          {
+            "task": {
+              "family": "chain",
+              "spatial": 10,
+              "width": 4,
+              "weight": -3,
+              "mode_offset": 71,
+              "mode_stride": 2,
+              "permutation_seed": 320
+            },
+            "dictionary_words": 114,
+            "preparation_seconds": 0.0013796249986626208,
+            "independent_reference_seconds": 0.20657425001263618,
+            "validation_seconds": [
+              0.03721512499032542,
+              0.036374000017531216,
+              0.03665824997005984
+            ],
+            "cold_seconds": [
+              0.06052045902470127,
+              0.034684291982557625,
+              0.034050083020702004
+            ],
+            "median_seconds": 0.034684291982557625,
+            "coefficient_rows": 13464,
+            "nonzero_entries": 14418
+          }
+        ],
+        "complete_worker_seconds": 9.330940417014062
+      }
+    },
+    "C": {
+      "attempts": [
+        {
+          "source_sha256": "919ada692744d4e1297fff6d7d3094e7b59c905008e149247d11144e5552f498",
+          "validation": {
+            "status": "verified_encoded_claim",
+            "claim": "exact symmetric Gram coefficient map for every recorded input",
+            "universal_program_correctness_proved": false,
+            "tasks": [
+              {
+                "task": {
+                  "family": "collective",
+                  "spatial": 6,
+                  "weight": -1,
+                  "permutation_seed": 8880
+                },
+                "dictionary_words": 132,
+                "preparation_seconds": 0.000519834051374346,
+                "independent_reference_seconds": 0.3081623339676298,
+                "validation_seconds": [
+                  0.033868499973323196,
+                  0.032824791967868805,
+                  0.032344084000214934
+                ],
+                "cold_seconds": [
+                  0.04994183301459998,
+                  0.05264120898209512,
+                  0.04647895897505805
+                ],
+                "median_seconds": 0.04994183301459998,
+                "coefficient_rows": 8687,
+                "nonzero_entries": 14538
+              },
+              {
+                "task": {
+                  "family": "chain",
+                  "spatial": 7,
+                  "width": 3,
+                  "weight": -1,
+                  "adjoint": true,
+                  "permutation_seed": 220
+                },
+                "dictionary_words": 147,
+                "preparation_seconds": 0.0008645000052638352,
+                "independent_reference_seconds": 0.6104628749890253,
+                "validation_seconds": [
+                  0.04952337499707937,
+                  0.049879541038535535,
+                  0.05057750002015382
+                ],
+                "cold_seconds": [
+                  0.08025225001620129,
+                  0.08826962497550994,
+                  0.08167475002119318
+                ],
+                "median_seconds": 0.08167475002119318,
+                "coefficient_rows": 12825,
+                "nonzero_entries": 22764
+              }
+            ],
+            "complete_worker_seconds": 1.5819257500115782
+          },
+          "cost": {
+            "metered_wall_seconds": 84.35925049998332,
+            "self_cpu_seconds": 0.040619,
+            "child_cpu_seconds": 1.721391,
+            "operations": 1,
+            "failed_operations": 0,
+            "model_usage": [
+              {
+                "cache_write_input_tokens": 0,
+                "cached_input_tokens": 0,
+                "input_tokens": 20681,
+                "output_tokens": 2665,
+                "reasoning_output_tokens": 1759
+              }
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          },
+          "node": "88ce2aed5dd7093c8efaefe20d389664201677ab74c4f62da16b8cc811e4228e",
+          "action": "open_mechanism"
+        },
+        {
+          "source_sha256": "667331b5c74680cf7648c68171b9d5e39c6c32aace087118fcab65a2588666e9",
+          "validation": {
+            "status": "verified_encoded_claim",
+            "claim": "exact symmetric Gram coefficient map for every recorded input",
+            "universal_program_correctness_proved": false,
+            "tasks": [
+              {
+                "task": {
+                  "family": "collective",
+                  "spatial": 6,
+                  "weight": -1,
+                  "permutation_seed": 8880
+                },
+                "dictionary_words": 132,
+                "preparation_seconds": 0.00039779196958988905,
+                "independent_reference_seconds": 0.22141008300241083,
+                "validation_seconds": [
+                  0.02367974998196587,
+                  0.02390870900126174,
+                  0.023883165966253728
+                ],
+                "cold_seconds": [
+                  0.02263091702479869,
+                  0.024468500050716102,
+                  0.02386908297194168
+                ],
+                "median_seconds": 0.02386908297194168,
+                "coefficient_rows": 8687,
+                "nonzero_entries": 14538
+              },
+              {
+                "task": {
+                  "family": "chain",
+                  "spatial": 7,
+                  "width": 3,
+                  "weight": -1,
+                  "adjoint": true,
+                  "permutation_seed": 220
+                },
+                "dictionary_words": 147,
+                "preparation_seconds": 0.00048749998677521944,
+                "independent_reference_seconds": 0.43603416602127254,
+                "validation_seconds": [
+                  0.036806207965128124,
+                  0.03638945799320936,
+                  0.0367892500362359
+                ],
+                "cold_seconds": [
+                  0.0385991670191288,
+                  0.04164170799776912,
+                  0.03812133299652487
+                ],
+                "median_seconds": 0.0385991670191288,
+                "coefficient_rows": 12825,
+                "nonzero_entries": 22764
+              }
+            ],
+            "complete_worker_seconds": 1.038894125027582
+          },
+          "cost": {
+            "metered_wall_seconds": 118.2865408330108,
+            "self_cpu_seconds": 0.052100999999999995,
+            "child_cpu_seconds": 2.065239,
+            "operations": 1,
+            "failed_operations": 0,
+            "model_usage": [
+              {
+                "cache_write_input_tokens": 0,
+                "cached_input_tokens": 0,
+                "input_tokens": 21514,
+                "output_tokens": 3804,
+                "reasoning_output_tokens": 2218
+              }
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          },
+          "node": "efa9d0143ef84ee345139660013faa23dcb3ad50938132d04f06a25c96806282",
+          "action": "continue_search"
+        }
+      ],
+      "reads": [
+        "40117d8e1c9508333d9764b77d9790130570cd963013d228f6ace3bcc8420600",
+        "88ce2aed5dd7093c8efaefe20d389664201677ab74c4f62da16b8cc811e4228e",
+        "efa9d0143ef84ee345139660013faa23dcb3ad50938132d04f06a25c96806282"
+      ],
+      "best": {
+        "hypothesis": "Factoring multiplication into cached cross-contractions and exterior merges can reduce cold construction work by reusing operator groups across Gram coordinates. This proposal is unbenchmarked.",
+        "mechanism": "Normalize each input word once. Factor each canonical product (C A)(D E) into the normal-ordered cross-block A D, followed by signed exterior merges of the remaining creator and annihilator groups. Cache these smaller operations independently. Accumulate symmetric coordinates using the adjoint identity for charge-zero canonical monomials, and construct external canonical-word tuples only once per output row.",
+        "source": "def normalize(word, cache):\n    if word in cache:\n        return cache[word]\n    for k in range(len(word) - 1):\n        f, m = word[k]\n        g, n = word[k + 1]\n        if f == g and m == n:\n            cache[word] = {}\n            return cache[word]\n        if f < g or (f == g and m > n):\n            swapped = word[:k] + (word[k + 1], word[k]) + word[k + 2:]\n            result = {}\n            for term, coefficient in normalize(swapped, cache).items():\n                result[term] = -coefficient\n            if f < g and m == n:\n                reduced = word[:k] + word[k + 2:]\n                for term, coefficient in normalize(reduced, cache).items():\n                    result[term] = result.get(term, 0) + coefficient\n            result = {term: coefficient for term, coefficient in result.items() if coefficient}\n            cache[word] = result\n            return result\n    cache[word] = {word: 1}\n    return cache[word]\n\n\ndef cross(annihilators, creators, cache):\n    key = (annihilators, creators)\n    if key in cache:\n        return cache[key]\n    if not annihilators:\n        result = ((creators, (), 1),)\n    elif not creators:\n        result = (((), annihilators, 1),)\n    else:\n        last = annihilators[-1]\n        prefix = annihilators[:-1]\n        sign = 1 - 2 * (len(creators) % 2)\n        terms = []\n        for c, a, coefficient in cross(prefix, creators, cache):\n            terms.append((c, a + (last,), sign * coefficient))\n        if last in creators:\n            position = creators.index(last)\n            reduced = creators[:position] + creators[position + 1:]\n            sign = 1 - 2 * (position % 2)\n            for c, a, coefficient in cross(prefix, reduced, cache):\n                terms.append((c, a, sign * coefficient))\n        result = tuple(terms)\n    cache[key] = result\n    return result\n\n\ndef exterior(left, right, cache):\n    if not left:\n        return (right, 1)\n    if not right:\n        return (left, 1)\n    key = (left, right)\n    if key in cache:\n        return cache[key]\n    merged = []\n    i = 0\n    j = 0\n    size = len(left)\n    sign = 1\n    while i < size and j < len(right):\n        if left[i] == right[j]:\n            cache[key] = ((), 0)\n            return cache[key]\n        if left[i] < right[j]:\n            merged.append(left[i])\n            i += 1\n        else:\n            merged.append(right[j])\n            if (size - i) % 2:\n                sign = -sign\n            j += 1\n    merged.extend(left[i:])\n    merged.extend(right[j:])\n    result = (tuple(merged), sign)\n    cache[key] = result\n    return result\n\n\ndef propose(payload):\n    words = payload['words']\n    normalization = {}\n    compiled = {}\n    basis = []\n    adjoints = []\n    reversal = (1, 1, -1, -1)\n    for word in words:\n        if word not in compiled:\n            terms = []\n            reflected = []\n            for term, coefficient in normalize(word, normalization).items():\n                creators = tuple(mode for flag, mode in term if flag == 1)\n                annihilators = tuple(mode for flag, mode in term if flag == 0)\n                terms.append((creators, annihilators, coefficient))\n                sign = reversal[len(creators)] * reversal[len(annihilators)]\n                reflected.append((annihilators, creators, coefficient * sign))\n            compiled[word] = (tuple(terms), tuple(reflected))\n        terms, reflected = compiled[word]\n        basis.append(terms)\n        adjoints.append(reflected)\n    contractions = {}\n    merges = {}\n    rows = {}\n    for i in range(len(words)):\n        for j in range(i, len(words)):\n            polynomial = {}\n            symmetric = i != j\n            for left_c, left_a, left_value in adjoints[i]:\n                for right_c, right_a, right_value in basis[j]:\n                    scale = left_value * right_value\n                    for middle_c, middle_a, middle_value in cross(left_a, right_c, contractions):\n                        creators, creator_sign = exterior(left_c, middle_c, merges)\n                        if creator_sign:\n                            annihilators, annihilator_sign = exterior(middle_a, right_a, merges)\n                            if annihilator_sign:\n                                coefficient = scale * middle_value * creator_sign * annihilator_sign\n                                term = (creators, annihilators)\n                                polynomial[term] = polynomial.get(term, 0) + coefficient\n                                if symmetric:\n                                    reflected = (annihilators, creators)\n                                    polynomial[reflected] = polynomial.get(reflected, 0) + coefficient\n            coordinate = (i, j)\n            for term, coefficient in polynomial.items():\n                if coefficient:\n                    rows.setdefault(term, {})[coordinate] = coefficient\n    result = {}\n    for groups, coordinates in rows.items():\n        creators, annihilators = groups\n        word = tuple((1, mode) for mode in creators) + tuple((0, mode) for mode in annihilators)\n        result[word] = coordinates\n    return result\n",
+        "assumptions": "Flags encode creation as 1 and annihilation as 0; modes are hashable and consistently ordered. Words have degree at most three and share one particle-number charge. Consequently every product term has equally many creators and annihilators, so its canonical adjoint swaps the two ascending groups with positive sign. All caches are local to this invocation.",
+        "failure_cases": "Runtime improvement is not established. Dictionaries with little repeated group structure may incur substantial cache overhead. Mixed-charge dictionaries invalidate the positive-sign reflection shortcut and are outside the specified domain.",
+        "source_sha256": "667331b5c74680cf7648c68171b9d5e39c6c32aace087118fcab65a2588666e9",
+        "model_wall_seconds": 118.27377137501026,
+        "prompt_sha256": "2e0d3a745701587a825467a85009fa9236b7e8497c53fbbdf7872cc6fe36a329",
+        "usage": {
+          "input_tokens": 21514,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3804,
+          "reasoning_output_tokens": 2218
+        }
+      },
+      "best_score": 0.06246824999107048,
+      "best_node": "efa9d0143ef84ee345139660013faa23dcb3ad50938132d04f06a25c96806282",
+      "frozen_source": "667331b5c74680cf7648c68171b9d5e39c6c32aace087118fcab65a2588666e9",
+      "generated_method_found": true,
+      "method_id": "1775c6973e29e451d06976f4da92d0974526f26cdf08a375fbc54771907c465f",
+      "transfer": {
+        "status": "verified_encoded_claim",
+        "claim": "exact symmetric Gram coefficient map for every recorded input",
+        "universal_program_correctness_proved": false,
+        "tasks": [
+          {
+            "task": {
+              "family": "star",
+              "spatial": 7,
+              "weight": -1,
+              "permutation_seed": 99002
+            },
+            "dictionary_words": 317,
+            "preparation_seconds": 0.0013400829629972577,
+            "independent_reference_seconds": 1.3981784170027822,
+            "validation_seconds": [
+              0.11189404199831188,
+              0.11239324999041855,
+              0.1135498330113478
+            ],
+            "cold_seconds": [
+              0.10179458296624944,
+              0.13480916700791568,
+              0.13242029095999897
+            ],
+            "median_seconds": 0.13242029095999897,
+            "coefficient_rows": 34864,
+            "nonzero_entries": 84849
+          },
+          {
+            "task": {
+              "family": "disjoint",
+              "spatial": 15,
+              "weight": -1,
+              "adjoint": true,
+              "mode_offset": 101,
+              "mode_stride": 3,
+              "permutation_seed": 774
+            },
+            "dictionary_words": 195,
+            "preparation_seconds": 0.0006813749787397683,
+            "independent_reference_seconds": 0.7271633750060573,
+            "validation_seconds": [
+              0.08802441699663177,
+              0.08701595803722739,
+              0.08742204098962247
+            ],
+            "cold_seconds": [
+              0.09711254196008667,
+              0.0936185410246253,
+              0.09739695896860212
+            ],
+            "median_seconds": 0.09711254196008667,
+            "coefficient_rows": 31821,
+            "nonzero_entries": 38910
+          },
+          {
+            "task": {
+              "family": "collective",
+              "spatial": 10,
+              "weight": -1,
+              "adjoint": true,
+              "permutation_seed": 67932
+            },
+            "dictionary_words": 380,
+            "preparation_seconds": 0.0016208330052904785,
+            "independent_reference_seconds": 3.0893522080150433,
+            "validation_seconds": [
+              0.26518608297919855,
+              0.27544612501515076,
+              0.27211370901204646
+            ],
+            "cold_seconds": [
+              0.34434287500334904,
+              0.4126655420404859,
+              0.41445162502350286
+            ],
+            "median_seconds": 0.4126655420404859,
+            "coefficient_rows": 89251,
+            "nonzero_entries": 147480
+          },
+          {
+            "task": {
+              "family": "chain",
+              "spatial": 10,
+              "width": 4,
+              "weight": -3,
+              "mode_offset": 71,
+              "mode_stride": 2,
+              "permutation_seed": 320
+            },
+            "dictionary_words": 114,
+            "preparation_seconds": 0.0011899170349352062,
+            "independent_reference_seconds": 0.21940370800439268,
+            "validation_seconds": [
+              0.037246040999889374,
+              0.035999667015857995,
+              0.03627233300358057
+            ],
+            "cold_seconds": [
+              0.04954258300131187,
+              0.03161279205232859,
+              0.03307200002018362
+            ],
+            "median_seconds": 0.03307200002018362,
+            "coefficient_rows": 13464,
+            "nonzero_entries": 14418
+          }
+        ],
+        "complete_worker_seconds": 8.94236608297797
+      }
+    },
+    "D": {
+      "attempts": [
+        {
+          "source_sha256": "34286f21e3af57e5221d76e3ed086e0b9b7ee02211d5fdb04f0447f35f531e11",
+          "validation": {
+            "status": "verified_encoded_claim",
+            "claim": "exact symmetric Gram coefficient map for every recorded input",
+            "universal_program_correctness_proved": false,
+            "tasks": [
+              {
+                "task": {
+                  "family": "collective",
+                  "spatial": 6,
+                  "weight": -1,
+                  "permutation_seed": 8880
+                },
+                "dictionary_words": 132,
+                "preparation_seconds": 0.0005059579852968454,
+                "independent_reference_seconds": 0.30433554196497425,
+                "validation_seconds": [
+                  0.03301991702755913,
+                  0.03441883297637105,
+                  0.03384987497702241
+                ],
+                "cold_seconds": [
+                  0.0499180419719778,
+                  0.04576349997660145,
+                  0.049723415984772146
+                ],
+                "median_seconds": 0.049723415984772146,
+                "coefficient_rows": 8687,
+                "nonzero_entries": 14538
+              },
+              {
+                "task": {
+                  "family": "chain",
+                  "spatial": 7,
+                  "width": 3,
+                  "weight": -1,
+                  "adjoint": true,
+                  "permutation_seed": 220
+                },
+                "dictionary_words": 147,
+                "preparation_seconds": 0.0006849580095149577,
+                "independent_reference_seconds": 0.6168669580365531,
+                "validation_seconds": [
+                  0.050621792033780366,
+                  0.0474127089837566,
+                  0.05023604101734236
+                ],
+                "cold_seconds": [
+                  0.07216799998423085,
+                  0.07550229097250849,
+                  0.06862845801515505
+                ],
+                "median_seconds": 0.07216799998423085,
+                "coefficient_rows": 12825,
+                "nonzero_entries": 22764
+              }
+            ],
+            "complete_worker_seconds": 1.5500458749593236
+          },
+          "cost": {
+            "metered_wall_seconds": 99.84572370903334,
+            "self_cpu_seconds": 0.045002,
+            "child_cpu_seconds": 1.7147070000000002,
+            "operations": 1,
+            "failed_operations": 0,
+            "model_usage": [
+              {
+                "cache_write_input_tokens": 0,
+                "cached_input_tokens": 0,
+                "input_tokens": 22152,
+                "output_tokens": 3191,
+                "reasoning_output_tokens": 2025
+              }
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          },
+          "node": "edb2c708a4f9bdf8d698481870cc82de848fa22e18ff5f15cfb780bf164951b0",
+          "action": "open_mechanism"
+        },
+        {
+          "source_sha256": null,
+          "validation": {
+            "status": "implementation_failure",
+            "reason": "model proposal unavailable"
+          },
+          "cost": {
+            "metered_wall_seconds": 150.014762124978,
+            "self_cpu_seconds": 0.062582,
+            "child_cpu_seconds": 1.81373,
+            "operations": 1,
+            "failed_operations": 1,
+            "model_usage": [
+              null
+            ],
+            "money_charged_by_runner": 0,
+            "subscription_marginal_price": null
+          },
+          "node": "576e9504f5baaf5638bcb2e1e440977c41536955bb23068992db6c4b65f703e0",
+          "action": "continue_search"
+        }
+      ],
+      "reads": [
+        "40117d8e1c9508333d9764b77d9790130570cd963013d228f6ace3bcc8420600",
+        "edb2c708a4f9bdf8d698481870cc82de848fa22e18ff5f15cfb780bf164951b0",
+        "576e9504f5baaf5638bcb2e1e440977c41536955bb23068992db6c4b65f703e0"
+      ],
+      "best": {
+        "hypothesis": "Compiling CAR reductions directly into adjoint orbits can reduce cold construction work by canceling symbolic terms before materialization and constructing each symmetric Gram coordinate from one compiled plan. Performance is unmeasured.",
+        "mechanism": "Homogeneous charge makes every product neutral. A canonical neutral monomial with creator modes C and annihilator modes A has adjoint (A,C) with positive sign: reversing both groups contributes (-1)^(r(r-1)) = 1. The compiler folds normalization leaves into unordered adjoint orbits, accumulating cancellations immediately. Nonfixed orbits emit their coefficient on both orientations; fixed orbits accumulate twice their coefficient. Injective relabeling preserves these orbits, and both orientations have the same sorting sign. Diagonal coordinates divide the symmetric coefficients by two, exactly recovering B_i\u2020B_i.",
+        "source": "def symmetricplan(pattern):\n    pending = [(pattern, 1)]\n    orbits = {}\n    while pending:\n        word, coefficient = pending.pop()\n        finished = True\n        position = 0\n        while position + 1 < len(word):\n            leftflag, leftmode = word[position]\n            rightflag, rightmode = word[position + 1]\n            if leftflag == rightflag and leftmode == rightmode:\n                finished = False\n                break\n            if leftflag < rightflag or (leftflag == rightflag and leftmode > rightmode):\n                prefix = word[:position]\n                suffix = word[position + 2:]\n                swapped = prefix + (word[position + 1], word[position]) + suffix\n                pending.append((swapped, -coefficient))\n                if leftflag == 0 and rightflag == 1 and leftmode == rightmode:\n                    pending.append((prefix + suffix, coefficient))\n                finished = False\n                break\n            position += 1\n        if finished:\n            creators = tuple(mode for flag, mode in word if flag == 1)\n            annihilators = tuple(mode for flag, mode in word if flag == 0)\n            if creators == annihilators:\n                coefficient *= 2\n            elif annihilators < creators:\n                creators, annihilators = annihilators, creators\n            orbit = (creators, annihilators)\n            orbits[orbit] = orbits.get(orbit, 0) + coefficient\n    return tuple((coefficient, creators, annihilators) for (creators, annihilators), coefficient in orbits.items() if coefficient)\n\n\ndef propose(payload):\n    words = payload['words']\n    cache = payload['cache']\n    adjoints = [tuple((1 - flag, mode) for flag, mode in reversed(word)) for word in words]\n    result = {}\n    for i in range(len(words)):\n        for j in range(i, len(words)):\n            labels = {}\n            modes = []\n            pattern = []\n            for flag, mode in adjoints[i] + words[j]:\n                label = labels.get(mode, -1)\n                if label == -1:\n                    label = len(modes)\n                    labels[mode] = label\n                    modes.append(mode)\n                pattern.append((flag, label))\n            key = ('neutral symmetric orbit plan v1', tuple(pattern))\n            if key in cache:\n                plan = cache[key]\n            else:\n                plan = symmetricplan(key[1])\n                cache[key] = plan\n            coordinate = (i, j)\n            for coefficient, creators, annihilators in plan:\n                if i == j:\n                    coefficient = coefficient // 2\n                if coefficient:\n                    groups = []\n                    for group in (creators, annihilators):\n                        ordered = []\n                        for label in group:\n                            mode = modes[label]\n                            position = len(ordered)\n                            ordered.append(mode)\n                            while position > 0 and ordered[position - 1] > mode:\n                                ordered[position] = ordered[position - 1]\n                                position -= 1\n                                coefficient = -coefficient\n                            ordered[position] = mode\n                        groups.append(tuple(ordered))\n                    word = tuple((1, mode) for mode in groups[0]) + tuple((0, mode) for mode in groups[1])\n                    result.setdefault(word, {})[coordinate] = coefficient\n                    if creators != annihilators:\n                        adjoint = tuple((1, mode) for mode in groups[1]) + tuple((0, mode) for mode in groups[0])\n                        result.setdefault(adjoint, {})[coordinate] = coefficient\n    return result\n",
+        "assumptions": "Flags are 0/1; modes are hashable and consistently totally ordered. All input words have the same particle-number charge and degree at most three. The initially empty cache is mutable. Diagonal orbit coefficients are even by Hermiticity. Injective mode substitution ensures distinct compiled orbits cannot collide, permitting direct coefficient assignment.",
+        "failure_cases": "Many distinct structural signatures can make compilation and caching costly. Output size can remain quadratic in dictionary size. Mixed-charge dictionaries invalidate the positive adjoint-sign formula and are outside the stated contract. No execution, independent checking, or timing was performed.",
+        "source_sha256": "34286f21e3af57e5221d76e3ed086e0b9b7ee02211d5fdb04f0447f35f531e11",
+        "model_wall_seconds": 99.84232587501174,
+        "prompt_sha256": "aaf1fcc57b9f01b69563e888e49cdb19d0ee2dadcfab7f12c16129257b89abbb",
+        "usage": {
+          "input_tokens": 22152,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3191,
+          "reasoning_output_tokens": 2025
+        }
+      },
+      "best_score": 0.12189141596900299,
+      "best_node": "edb2c708a4f9bdf8d698481870cc82de848fa22e18ff5f15cfb780bf164951b0",
+      "frozen_source": "34286f21e3af57e5221d76e3ed086e0b9b7ee02211d5fdb04f0447f35f531e11",
+      "generated_method_found": true,
+      "method_id": "92c2fb83be69744bc2e69def392aec35e884ae667841f2b1c06c94e8d7061d50",
+      "transfer": {
+        "status": "verified_encoded_claim",
+        "claim": "exact symmetric Gram coefficient map for every recorded input",
+        "universal_program_correctness_proved": false,
+        "tasks": [
+          {
+            "task": {
+              "family": "star",
+              "spatial": 7,
+              "weight": -1,
+              "permutation_seed": 99002
+            },
+            "dictionary_words": 317,
+            "preparation_seconds": 0.001341041992418468,
+            "independent_reference_seconds": 1.397969749988988,
+            "validation_seconds": [
+              0.11313866695854813,
+              0.11097929201787338,
+              0.11380858300253749
+            ],
+            "cold_seconds": [
+              0.18117070803418756,
+              0.22782029199879616,
+              0.2184895000536926
+            ],
+            "median_seconds": 0.2184895000536926,
+            "coefficient_rows": 34864,
+            "nonzero_entries": 84849
+          },
+          {
+            "task": {
+              "family": "disjoint",
+              "spatial": 15,
+              "weight": -1,
+              "adjoint": true,
+              "mode_offset": 101,
+              "mode_stride": 3,
+              "permutation_seed": 774
+            },
+            "dictionary_words": 195,
+            "preparation_seconds": 0.000657290976960212,
+            "independent_reference_seconds": 0.728932082944084,
+            "validation_seconds": [
+              0.08905075001530349,
+              0.08807012502802536,
+              0.08848625002428889
+            ],
+            "cold_seconds": [
+              0.10509075003210455,
+              0.1024168329895474,
+              0.10408400004962459
+            ],
+            "median_seconds": 0.10408400004962459,
+            "coefficient_rows": 31821,
+            "nonzero_entries": 38910
+          },
+          {
+            "task": {
+              "family": "collective",
+              "spatial": 10,
+              "weight": -1,
+              "adjoint": true,
+              "permutation_seed": 67932
+            },
+            "dictionary_words": 380,
+            "preparation_seconds": 0.001634916989132762,
+            "independent_reference_seconds": 3.0580639999825507,
+            "validation_seconds": [
+              0.27155920898076147,
+              0.2664295840077102,
+              0.27736120903864503
+            ],
+            "cold_seconds": [
+              0.3954187909839675,
+              0.43676725000841543,
+              0.43340129201533273
+            ],
+            "median_seconds": 0.43340129201533273,
+            "coefficient_rows": 89251,
+            "nonzero_entries": 147480
+          },
+          {
+            "task": {
+              "family": "chain",
+              "spatial": 10,
+              "width": 4,
+              "weight": -3,
+              "mode_offset": 71,
+              "mode_stride": 2,
+              "permutation_seed": 320
+            },
+            "dictionary_words": 114,
+            "preparation_seconds": 0.001183625019621104,
+            "independent_reference_seconds": 0.21500529098557308,
+            "validation_seconds": [
+              0.03906579199247062,
+              0.03768374997889623,
+              0.03824237501248717
+            ],
+            "cold_seconds": [
+              0.06519975000992417,
+              0.03743454202776775,
+              0.03849224996520206
+            ],
+            "median_seconds": 0.03849224996520206,
+            "coefficient_rows": 13464,
+            "nonzero_entries": 14418
+          }
+        ],
+        "complete_worker_seconds": 9.321829624997918
+      }
+    }
+  },
+  "acquisition": {
+    "status": "verified_encoded_claim",
+    "claim": "exact CAR products on the recorded tests and coefficient-map inputs",
+    "universal_program_correctness_proved": false,
+    "independent_ladder_cases": 603,
+    "checking_seconds": 0.01589737500762567,
+    "benchmarks": [
+      {
+        "spatial": 4,
+        "dictionary_words": 12,
+        "variant": "reference",
+        "cold_seconds": [
+          0.002111708978191018,
+          0.0021981250029057264,
+          0.0023757079616189003
+        ],
+        "median_seconds": 0.0021981250029057264,
+        "coefficient_rows": 174,
+        "nonzero_entries": 180
+      },
+      {
+        "spatial": 4,
+        "dictionary_words": 12,
+        "variant": "acquired",
+        "cold_seconds": [
+          0.0004778750007972121,
+          0.0005647499929182231,
+          0.0004509579739533365
+        ],
+        "median_seconds": 0.0004778750007972121,
+        "coefficient_rows": 174,
+        "nonzero_entries": 180
+      },
+      {
+        "spatial": 6,
+        "dictionary_words": 30,
+        "variant": "reference",
+        "cold_seconds": [
+          0.013431457977276295,
+          0.013634958013426512,
+          0.013847249967511743
+        ],
+        "median_seconds": 0.013634958013426512,
+        "coefficient_rows": 1035,
+        "nonzero_entries": 1050
+      },
+      {
+        "spatial": 6,
+        "dictionary_words": 30,
+        "variant": "acquired",
+        "cold_seconds": [
+          0.002957790973596275,
+          0.0029972080374136567,
+          0.0029244159813970327
+        ],
+        "median_seconds": 0.002957790973596275,
+        "coefficient_rows": 1035,
+        "nonzero_entries": 1050
+      },
+      {
+        "spatial": 8,
+        "dictionary_words": 56,
+        "variant": "reference",
+        "cold_seconds": [
+          0.048701166990213096,
+          0.046554958971682936,
+          0.046670124982483685
+        ],
+        "median_seconds": 0.046670124982483685,
+        "coefficient_rows": 3500,
+        "nonzero_entries": 3528
+      },
+      {
+        "spatial": 8,
+        "dictionary_words": 56,
+        "variant": "acquired",
+        "cold_seconds": [
+          0.009871874994132668,
+          0.0103602500166744,
+          0.011966541991569102
+        ],
+        "median_seconds": 0.0103602500166744,
+        "coefficient_rows": 3500,
+        "nonzero_entries": 3528
+      }
+    ],
+    "complete_worker_seconds": 0.31759491696720943
+  },
+  "acquisition_cost": {
+    "metered_wall_seconds": 93.55337837495608,
+    "self_cpu_seconds": 0.055258999999999996,
+    "child_cpu_seconds": 2.138915,
+    "operations": 1,
+    "failed_operations": 0,
+    "model_usage": [
+      {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 20601,
+        "output_tokens": 2982,
+        "reasoning_output_tokens": 2024
+      }
+    ],
+    "money_charged_by_runner": 0,
+    "subscription_marginal_price": null
+  },
+  "evaluation_costs": {
+    "metered_wall_seconds": 43.973650333995465,
+    "self_cpu_seconds": 0.04083900000000096,
+    "child_cpu_seconds": 43.45429000000001,
+    "operations": 10,
+    "failed_operations": 0,
+    "model_usage": [],
+    "money_charged_by_runner": 0,
+    "subscription_marginal_price": null
+  },
+  "audit": {
+    "chain_valid": true,
+    "unfinished_operations": [],
+    "unfinished_attempts": [],
+    "events": 49
+  }
+}

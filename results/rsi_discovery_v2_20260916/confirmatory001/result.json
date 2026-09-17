@@ -1,0 +1,104 @@
+{
+  "protocol_sha256": "4c08b8ed29a3502540ba590aed4d9d161f9ad0c107c6afab08d61856ae14117a",
+  "elapsed_wall_seconds": 1830.339271068573,
+  "source_snapshot_unchanged": true,
+  "comparisons": [
+    {
+      "campaign": 1,
+      "comparable": true,
+      "construction_seconds": {
+        "A": 5.544899124943186,
+        "B": 0.8943282079999335,
+        "C": 5.529020123882219,
+        "D": 0.8133109990158118
+      },
+      "speedups": {
+        "A/D": 6.817686139315799,
+        "A/B": 6.200071825246059,
+        "C/D": 6.798162241224931,
+        "A/C": 1.0028719376499242,
+        "B/D": 1.099614057946051
+      }
+    },
+    {
+      "campaign": 2,
+      "comparable": true,
+      "construction_seconds": {
+        "A": 0.47102079197065905,
+        "B": 0.7615659160073847,
+        "C": 0.6752703749807552,
+        "D": 0.794467042083852
+      },
+      "speedups": {
+        "A/D": 0.5928764404564755,
+        "A/B": 0.6184898536952009,
+        "C/D": 0.8499665048528013,
+        "A/C": 0.6975291815283365,
+        "B/D": 0.9585871731190143
+      }
+    },
+    {
+      "campaign": 3,
+      "comparable": true,
+      "construction_seconds": {
+        "A": 0.798539208015427,
+        "B": 0.8529585000360385,
+        "C": 0.8140894999960437,
+        "D": 1.0755469169816934
+      },
+      "speedups": {
+        "A/D": 0.7424494416816024,
+        "A/B": 0.936199367239658,
+        "C/D": 0.7569074739023218,
+        "A/C": 0.9808985474193043,
+        "B/D": 0.7930462972546984
+      }
+    },
+    {
+      "campaign": 4,
+      "comparable": true,
+      "construction_seconds": {
+        "A": 0.7126922900206409,
+        "B": 0.7129888330237009,
+        "C": 0.787190459028352,
+        "D": 0.8370109999086708
+      },
+      "speedups": {
+        "A/D": 0.8514730273537687,
+        "A/B": 0.9995840846457548,
+        "C/D": 0.9404780332806202,
+        "A/C": 0.9053619512872831,
+        "B/D": 0.8518273154134146
+      }
+    },
+    {
+      "campaign": 5,
+      "comparable": true,
+      "construction_seconds": {
+        "A": 1.061595875013154,
+        "B": 0.9063156240154058,
+        "C": 5.547157666936982,
+        "D": 0.9285645420313813
+      },
+      "speedups": {
+        "A/D": 1.1432655749386529,
+        "A/B": 1.1713313186743746,
+        "C/D": 5.973906406981362,
+        "A/C": 0.19137654610768323,
+        "B/D": 0.9760394490540178
+      }
+    }
+  ],
+  "median_speedups": {
+    "A/D": 0.8514730273537687,
+    "A/B": 0.9995840846457548,
+    "C/D": 0.9404780332806202,
+    "A/C": 0.9053619512872831,
+    "B/D": 0.9585871731190143
+  },
+  "paired_sign_test_one_sided_p": 0.8125,
+  "predeclared_operational_test_passed": false,
+  "universal_RSI_proved": false,
+  "cumulative_payback_established": false,
+  "interpretation": "Scoped causal evidence requires the predeclared contrasts, exact transfer, complete costs, and independence limitations; kernel speed alone is insufficient."
+}

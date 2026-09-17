@@ -1,0 +1,2315 @@
+{
+  "metered_operation_wall_seconds_sum": 14675.36929378903,
+  "wall_sum_is_not_elapsed_time": "Native inference overlaps; this is a sum of charged operation walls.",
+  "self_cpu_seconds": 20.975170999999996,
+  "child_cpu_seconds": 1902.3373350000002,
+  "largest_recorded_process_family_rss_bytes": 610254848,
+  "memory_scope": "Local child-family high-water marks, not additive. macOS does not provide the Linux address-space limit; provider accelerator memory/work is unavailable.",
+  "operations": 377,
+  "failed_or_timed_out_operations": 40,
+  "native_model_calls": 116,
+  "model_calls_with_unavailable_token_usage": 28,
+  "known_input_tokens": 1896778,
+  "known_output_tokens": 275687,
+  "reported_reasoning_tokens_not_added_again_to_output": 175623,
+  "money_purchased_by_runner": 0,
+  "subscription_dollar_allocation": null,
+  "complete_lifetime_cost_known": false,
+  "exclusions": [
+    "parent implementation/reasoning tokens unavailable",
+    "initial dependency installation and unmetered development commands",
+    "earlier v1 development",
+    "prototype validations outside a ledger",
+    "report maintenance",
+    "unknown token usage on interrupted model calls"
+  ],
+  "audit_scope": "All event hash chains and all resident content-addressed objects. Offloaded objects are enumerated as unavailable, never counted as byte-verified.",
+  "freshly_verified_blobs": 848,
+  "unavailable_blobs": 136,
+  "unfinished_operations": 0,
+  "unfinished_attempts": 0,
+  "audits": [
+    {
+      "directory": "acquisition001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "acquisition002",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "acquisition003",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_capability_preflight001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 0,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_1/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_1/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_1/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_1/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 2,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 5
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_2/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_2/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_2/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_2/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 2,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 5
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_3/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_3/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_3/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_3/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_3",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 2,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 5
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_4",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 2,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 5
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_5",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 2,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 5
+    },
+    {
+      "directory": "compound_confirmatory001/campaign_6",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 2,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 5
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_1/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_1/arm_A/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_1/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_1/arm_B/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_1/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_1/arm_C/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_1/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_1/arm_D/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 40,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 68
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_2/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_2/arm_A/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_2/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_2/arm_B/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_2/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_2/arm_C/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_2/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_2/arm_D/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 40,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 68
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_3/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_3/arm_A/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_3/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_3/arm_B/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_3/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_3/arm_C/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_3/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_3/arm_D/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_3",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 43,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 70
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_4/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_4/arm_A/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_4/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_4/arm_B/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_4/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_4/arm_C/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_4/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_4/arm_D/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_4",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 43,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 70
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_5/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_5/arm_A/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_5/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_5/arm_B/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_5/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_5/arm_C/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_5/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_5/arm_D/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_5",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 43,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 70
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_6/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_6/arm_A/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_6/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_6/arm_B/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_6/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_6/arm_C/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_6/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_6/arm_D/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "compound_confirmatory002/campaign_6",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 40,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 68
+    },
+    {
+      "directory": "confirmatory001/campaign_1/acquisition",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_1/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_1/arm_A/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_1/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_1/arm_B/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_1/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_1/arm_C/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_1/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_1/arm_D/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 12,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 41
+    },
+    {
+      "directory": "confirmatory001/campaign_2/acquisition",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_2/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_2/arm_A/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 4,
+      "unavailable_blobs": [
+        {
+          "object": "fcb5060cb6d7579e4944129d5abb20253e392bd2c7713c70897e19363024c7d2",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_2/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "87a5323b88247efcf4cfea58b5d8ac5b519dc64f374bc70920bcfbbbea1662c5",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "959028e604fc627583b294d9ef3faa541865e4fc10bdd37b3bae8ab2da1047e1",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "aaf1fcc57b9f01b69563e888e49cdb19d0ee2dadcfab7f12c16129257b89abbb",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_2/arm_B/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_2/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 4,
+      "unavailable_blobs": [
+        {
+          "object": "dd48f0baae8cf18313c1c8fc6c34bea9fa1071de6523db6e5fa7a0b5fbb9e2b8",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_2/arm_C/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "12368350a1686467f26f44034738319eb706488a58c43c87fcaf1ca0ac2efb20",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "667331b5c74680cf7648c68171b9d5e39c6c32aace087118fcab65a2588666e9",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "80b3cbb8dff0b0e9e1171dd0a2afb36925c05edd826abb7454009bbf7c54a47b",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_2/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 4,
+      "unavailable_blobs": [
+        {
+          "object": "16bcf3025ba2c49c98d24e182c5d559da4a6242bfdbd574c5a3a9ac48af42414",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_2/arm_D/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "abb57fb7b0049611c618536d722cf145f8a71596b75602d14968086d22cec6cd",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 8,
+      "unavailable_blobs": [
+        {
+          "object": "188211812fcc7bc4ff14821e5e16ea96149380dfa5c3bcf3af6d5b4c57cfb59b",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "1b59fbd505a6a5f4b7440c211e4aab1b994e2e6e48c03a4f8f9e03e48964b93f",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "2bcd8bdbbb3bb4e8b341f6f31a2cb58f39bbd5db5448e9d876ecaefecae0245c",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "511a0557d52292c282941643f6a236e4d69eca0aae1f9c219f43cc26f401f26f",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "72cdabdf315c7a9480b3fd8e938879605e13635f9efe2e023d83116ab1368102",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "87a5323b88247efcf4cfea58b5d8ac5b519dc64f374bc70920bcfbbbea1662c5",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "919ada692744d4e1297fff6d7d3094e7b59c905008e149247d11144e5552f498",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "acfa2bef21fcb52a84c47a87dad07a7c1cc02a3167df062534afaf20a69c3937",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "c69a49e273d26213c84a55b5b76d8950e3773590468b6db85338affb25d3497e",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 49
+    },
+    {
+      "directory": "confirmatory001/campaign_3/acquisition",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "5357c875be282f87c28c961d3ac69db1453187c2f4ad3c675be7dda8959ccc1f",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "56dd29dde082bb735f61f6f0e53f3b558f32952c8f9b1b4be74ab2d1021eba96",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "862183da07aa54cd6fa15565034bc3e39c79153c264f488b4a3a21881d2923d9",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_3/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 0,
+      "unavailable_blobs": [
+        {
+          "object": "4a8865572ffc0b8bac7ea783b328622fb343914ddfbacf2d714109a56f27dc4b",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "5ba1d0d401f50e8ff67f3ed661fc4278eeea525a09d4790e14c6c81fb3c42736",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "6f10d7403f0d6667ac4263e1f94b171ffca738ec11758e1da2c202cd7257141d",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "70cfd1b101da5f6d8170737f136fa02134f7b85192812d1379f6f6492e893602",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "9966a24a3b44770e2e285a0752f166346a9f2a37c089c9defb5569c796720947",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_3/arm_A/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "4da0c29e722277f5dac3c305fc6918d5841b7454d6879730ac9697c7645036cf",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_3/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 3,
+      "unavailable_blobs": [
+        {
+          "object": "0fe3dc14f9719ac86a53fbd5d04b5334144db3af14e71a8e531d3e18fdc51ec1",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "7e4d56f04829dd8b7670d24147dae580768fd860a30d44ff0e9dfce73f5eea19",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_3/arm_B/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_3/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_3/arm_C/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "2b73f32b579d9389ce3664cba0551f299ebcf1bcf0954e7a927bf089e7d50cb6",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "8a8f61424979bbf04375555134a93250b91e61d00a18f18d23a39559d9263f3c",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "ae518ce5f35809f10146055c42978ecc93890fa4155b4de3cac70503f201f42a",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_3/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "081de33ebba77334f261427fa1ae60f1f8e5997316a4567f2ddebd4a2ae30c5d",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "0ce59fc1ee1d94def6e430b048f07e5da6786fdc1862aa1ee56dafe63b69ffab",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "804dc61dce0447b83048540f6bd843b9f89cebb4415015cf71af2ad0fac95893",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_3/arm_D/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 3,
+      "unavailable_blobs": [
+        {
+          "object": "9625555707225cc108094c6c5a1330c1cec41e1b39d3b1962ab8b83e710a6c73",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "e374c9afb3898b2995593acb5b8861b034b94b54299efe94b9916726f120feb6",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_3",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 7,
+      "unavailable_blobs": [
+        {
+          "object": "0b043568a710e32e4a03078c4198ae620217655d40f1e629be609a1f5ccab068",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "0fe3dc14f9719ac86a53fbd5d04b5334144db3af14e71a8e531d3e18fdc51ec1",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "3de8ef2fc5e7e8f27efac8a7480c48a9f3c290e7b91715777d0f47de1a486151",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "5ba1d0d401f50e8ff67f3ed661fc4278eeea525a09d4790e14c6c81fb3c42736",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "8a8f61424979bbf04375555134a93250b91e61d00a18f18d23a39559d9263f3c",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "a26988c7330ddaac2ecee390e403f205440cda1a2731bc4934a0a7a7094eaeb9",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "b378d8fc6e1f8902beffd5d585e65df76675fbab2526b56626dc0d917bfa2804",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "c11facbeaad9334a4420ea71d5c143c4c7c82e5f513af9dac5fe499a2edbee1d",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "f7cc19a2620ee73756b00d7099bea128383b927d4e1cbf7ec358030d716e2e8b",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "f9bbffc3972b8a2a3c81e8524cb47d849174fe422aae48f7e4b1e50667d6dbac",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 49
+    },
+    {
+      "directory": "confirmatory001/campaign_4/acquisition",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 3,
+      "unavailable_blobs": [
+        {
+          "object": "269eb05ecf8a978e37f4446e1c016b4e3e458d70de0c0663266b46377135d536",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "499ac886bdf91dcd973bdfc260cb4b6ce9f45dd7d6f9e330081f677016210cc1",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_4/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 4,
+      "unavailable_blobs": [
+        {
+          "object": "76e9082268340b17fedb6fd2ed5dfe13c770740546ae9895ceaa514faadc9a33",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_4/arm_A/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 1,
+      "unavailable_blobs": [
+        {
+          "object": "6e6cb98125ae3962e7668b23e859ad2f5eb5cb7219268b3723968214eb9ee5ed",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "b91c205a3f76fee919f2f86f2984e2698649c64ff18848e988bfc087044e6338",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_4/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 4,
+      "unavailable_blobs": [
+        {
+          "object": "c267be859a23f1c4d6e7269acb8afd6bb2aeae15d619bacf9c71e185318bd23f",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_4/arm_B/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "34a09a94f0d46a77a34ca3f1fbf703dcce7119bca074b9b8f348160b5c3307f6",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_4/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_4/arm_C/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 3,
+      "unavailable_blobs": [
+        {
+          "object": "2c3ee01725e8ae11e48015c8024887720b0a7fe4d9085599b0ea97e61e034a86",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "f508b1149d3594a8cf26773f7e421d043ef517eba1181f87edab852f3f0693e1",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_4/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 3,
+      "unavailable_blobs": [
+        {
+          "object": "175cbcda87d05c72bd04dd21c1ed978071d333c25572315820578f6e804b016e",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "7e80083706098f1401bc13bdc33be3c7362d21206eecedad53e9b30ea751cd32",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_4/arm_D/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 0,
+      "unavailable_blobs": [
+        {
+          "object": "11fb90f3b1f7b4074ed06333eddfe68e71e402080bb6f57fd7bc0ea5e9f30caa",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "1e6bb7df7d54f93e3451451c994800dba97d8f0b3b95ee8d4383b7a87123bba1",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "c6b9b3c763fb827e2dcfbbe5cf004aeaa6079a9fc39fc10a0696f258a8c52cea",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_4",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 10,
+      "unavailable_blobs": [
+        {
+          "object": "1e8c8c0cf70208c26e90af8a58782e95908c4387c8e72e4fe08d05a7e08210c2",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "2da2585cabf5d11f0e4323e60093e85e72b1287cbffb0fe295817bfe306c4ec7",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "52f18daee9f14fa7a3cac89bb9b76cc58c7cc491b862306b88d7b2da762c1517",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "8493aa299a935f34869a17b5919618cb1c936469927f7aadeca4df28d8dfe8c8",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "e3919eaa6bad3f30f1b3b53d45fb0d14f2b56874c5d9966d91feee73992a6801",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 47
+    },
+    {
+      "directory": "confirmatory001/campaign_5/acquisition",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "063f9395c63591b183b2bf31e194d7e4a11c9b01c40544ea413d36d1810fb760",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "56dd29dde082bb735f61f6f0e53f3b558f32952c8f9b1b4be74ab2d1021eba96",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "7a3413d703f593262754c66e99adedd7c2bdc1599112302fb5c8ccae7437a675",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_5/arm_A/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 0,
+      "unavailable_blobs": [
+        {
+          "object": "029948482351ff41f9a60d8e428b9de80599fe8ceb114ed64b07c5a47e847cbe",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "4511ff80a9243db0d5062a16d8c1f31c401ecc6a4b090f6460381a4fbe0781eb",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "8feb492ef7dfdc01a8f3dd1ea4ee27d9f47ee7abb5d3e86f51e0e030214e3313",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_5/arm_A/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 3,
+      "unavailable_blobs": [
+        {
+          "object": "32bd085804881afcb7808bb83240dae70f85c35fda02d9a7b9b8db9d9f5eb27c",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "4a9d90ed392681a225647015d58174dd516629d02ed9065da607b9e9eabf6508",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_5/arm_B/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "44b858dc52e3070ad7db75afa0961134091ad4f8e66633eefa3eae20607ea211",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "67f68fdf8996defa8137a47c8c22f5224365c0e5a1d8f0a5a929cfa4486e43a6",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "79140ffba7d975e5ba18e5d7835e80559b8fc896e9c73fe3efabc1b4be5ed3b1",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_5/arm_B/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "0a4d2c4c7ff7a3b4b47134a33feab90e0ff54e0409dfdb10fd32dffdb751594f",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "540533d404a949e463f7aed892547b0f9ad75f5a86361807eec56159287cd8a4",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "f38af0161d3529b2d971e8e2fa18db359caef9132e07a4a8c50743f8ec220695",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_5/arm_C/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 0,
+      "unavailable_blobs": [
+        {
+          "object": "4511ff80a9243db0d5062a16d8c1f31c401ecc6a4b090f6460381a4fbe0781eb",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "4e0e77fae4eff962865e58eb976dbcff784ee6f80836a5f3cff10e525654d4eb",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "ab45f9c3d40b9606c19de9f971a40c2eab1578cf31378ee1345f469fe52a9e6c",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_5/arm_C/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_5/arm_D/model_1",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 1,
+      "unavailable_blobs": [
+        {
+          "object": "bd7dd4f0e2c9fd555b3d5165e235a19490d20fd46c092065d46d838ee11b2ee3",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "bf0811a9436f289bc17ac01c6d180d04125c9bfa80c22d6041bcf1087988fcbf",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "confirmatory001/campaign_5/arm_D/model_2",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "confirmatory001/campaign_5",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 10,
+      "unavailable_blobs": [
+        {
+          "object": "0a4d2c4c7ff7a3b4b47134a33feab90e0ff54e0409dfdb10fd32dffdb751594f",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "1514d43fbd0e160a7e5bfd6699b9adf8429b39d06a022033661941fbc160e6e6",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "2bdcf5fc6a101d31b6e601387b70034dba459d25ec2ab9dfb90a70b763e44e5d",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "50626ee2fd8ef0ddc48e3cfbd266983abf8548335106c5bae0fd72df72db354b",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "a26988c7330ddaac2ecee390e403f205440cda1a2731bc4934a0a7a7094eaeb9",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "e815b393091be7be4b9b276d79d4cee3611de579c19ab6a6732b72511cb59bd7",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 46
+    },
+    {
+      "directory": "correlation_search001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 1,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 1
+    },
+    {
+      "directory": "correlation_search002/development",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 1,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "correlation_search002",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 13
+    },
+    {
+      "directory": "correlation_search002/transfer",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 1,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "correlation_search003/development",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 9,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 20
+    },
+    {
+      "directory": "correlation_search003",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 1,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 11
+    },
+    {
+      "directory": "correlation_search003/transfer",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 9,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 20
+    },
+    {
+      "directory": "frontier001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 0,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "frontier002",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 0,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 7
+    },
+    {
+      "directory": "frontier003",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 0,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 7
+    },
+    {
+      "directory": "frontier_candidate_preflight001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 1,
+      "unavailable_blobs": [
+        {
+          "object": "b1adb7d41139caf7e4d92d9234620edebc34f2844fc083a496d2d612ec4b6027",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 6
+    },
+    {
+      "directory": "frontier_search001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 9,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 13
+    },
+    {
+      "directory": "frontier_search002",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 5,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 14
+    },
+    {
+      "directory": "frontier_search003",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 6,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 15
+    },
+    {
+      "directory": "later_process_conformance001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 13,
+      "unavailable_blobs": [
+        {
+          "object": "5621a40b44ce3a674401014e010f4a73d00cb0aaae1bd3c4545281cfd402c77c",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "b5fa1bc05993a6bd48692e7e0f971ec0c6df12c1b743bf96079818392b18d969",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "b9ca1ae0445e2a578c81580629b33779aecef307c4d37fdfc5d73a8b6d323cbe",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "cba73c408c283618f143bd460b0b73ee7ad1cbc35b1f96aba7954034f47b75e1",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "dcbf51b9b6b137481dc87c7381f6d5d5b85cdaa8460409cbea34508da38bb291",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "e184588944a61d13e7e1f2b10b53721c5cd7454564eeedbf930d0e2c4d997d1b",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 44
+    },
+    {
+      "directory": "nonenumerating001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 2,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 5
+    },
+    {
+      "directory": "nonenumerating002",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 0,
+      "unavailable_blobs": [
+        {
+          "object": "2acea0136a90d3c5c2153e6958d576d9974ed61509342bf3fe514ad0a07fd7d0",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 5
+    },
+    {
+      "directory": "nonenumerating003",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 4,
+      "unavailable_blobs": [
+        {
+          "object": "d9905e157357fd77eb98e49b3c0959dee6ecb0bdb58ebb1a93990bc297d087af",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 9
+    },
+    {
+      "directory": "nonenumerating004",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "7353832611eff0643f14416c834d45976cf09326e936289540158d08d8937417",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "bda79f4189019dc6e5005252b1ae18dfcd71e4a35f520e0ed1396266ae3a6d61",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "c8d0d8cc38dcbdc7db01c2dcd78307e8c1162a28f5ee0ab0e6a2231c638f771d",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 11
+    },
+    {
+      "directory": "nonenumerating005",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 3,
+      "unavailable_blobs": [
+        {
+          "object": "bc9d00d6717fee3665ae848632610fa79797ac0980e186166091635b66137eae",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "f0ffacca55f08a9fdf45f38820b4ff35f2e06c5f1eebbae3f52f85b01ad30211",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 11
+    },
+    {
+      "directory": "nonenumerating006",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 7,
+      "unavailable_blobs": [
+        {
+          "object": "5ffe75c87816cc83b15b10c75b06edc1ea25e73e2e0ef9de5c8f8b9d38cb11c2",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "e108e30cf35ee534f5ce83611ed74fe73c5e0f920ce0ce6c7e5703e324a0ef6e",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 17
+    },
+    {
+      "directory": "nonenumerating_reference001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 5,
+      "unavailable_blobs": [
+        {
+          "object": "070d23e2fce5fb7d5c2d553b2491cd15aa95ff1c49f52911299f3569cc349f74",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "249a48b0b9daba3a22c7efac04ed007fcb82066ed431d2761489f8e16c744665",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "3a3a49f597a0d678b547dac471778ae8b9d219cffd45949a3a7b4768b92a55d2",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 17
+    },
+    {
+      "directory": "physical_transfer_h6001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 5,
+      "unavailable_blobs": [
+        {
+          "object": "11cda66fc3594009a9518ef981776a98df3f5d19bac3b241610469e5c586c161",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "3908d893daab4144957c206254c06e97ec09227e342001eac685b5e166200c54",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "e59505dd9263dcc6dee7f7423dc31dcacf794f25c997cca40c0e57f61c73eace",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 17
+    },
+    {
+      "directory": "physical_transfer_water001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 5,
+      "unavailable_blobs": [
+        {
+          "object": "6ed6844e7a65ebb98344bfa3422fff3febae9af2fdbf2ae2aec2c3c8047617ae",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "72ec5adb15051e99a1d6c91d49641e9c48ab6b7e5e4932a8005674334d4ed85d",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "974d6914f1e4387462fcc813bf4c7937b766d1146e486e4e769d2720570aef11",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "cff117de40dc087f5b52b4e020abce75909fb239740cf9773db5fe17c7a7fbc1",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 17
+    },
+    {
+      "directory": "pilot001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "5b554bbd7b2f6508c7f30254386f6e442591ab53a98a91d4ce8e552a9b9985be",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "62d10c57f33c4f9101061500bfdb4317d5c0bf429ecadbb7d6c772bd6293a58b",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "ba1c1b230fadf723f50f77fb2ea00ec9ecf45785a76a07fa42ff04a09e21309e",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "policy001/combine_methods",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 0,
+      "unavailable_blobs": [
+        {
+          "object": "0db5d7e135381b4b3354f1715e116eb315bc7890fcae67fd29f0e228a4b8e487",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "45f54658f6e5e9e639468fefc410f015b95427f624bde9518b184c6354107be8",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "e5f12db99b77c3ce95fd4143329bbb18bbcaec4e8a9c4fff0f4822e1de525f88",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "policy001/continue_search",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 2,
+      "unavailable_blobs": [
+        {
+          "object": "f1bd7cd04f4357dd7c97276be1ba703c1d71367b1a626e40b34a04e3deb3a7f4",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "policy001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 0,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 0
+    },
+    {
+      "directory": "policy002/combine_methods",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 3,
+      "unavailable_blobs": [
+        {
+          "object": "3c4bbebb84771c6b029c3fcb330fcb2ec9b0b549e3c3945136c8ebf655af2378",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "73ea85ed10f6665745af861f023ca34e23ca6b1cf7b1823aa59afec9fb6c19f5",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "policy002/continue_search",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 3,
+      "unavailable_blobs": [
+        {
+          "object": "5782f0ddc203df890e4947fe01966e9b3009c36a26ae64de0317a02f3265e494",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "b183440b30b8852ec96b018d14aad420d0942ca4474956002fc1665418e67408",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 3
+    },
+    {
+      "directory": "policy002",
+      "chain_valid": true,
+      "all_blob_bytes_verified": false,
+      "blobs_verified": 1,
+      "unavailable_blobs": [
+        {
+          "object": "c2f03a9038f955db35d6178857cb4cc7f323dc0a8600e90bf8bb8b24bd4f3d84",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        },
+        {
+          "object": "cd23fa320f80da474f8e940b78eaf20de8fc189ebcacda622032614e071c561f",
+          "reason": "macOS SF_DATALESS; bytes not re-read"
+        }
+      ],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 6
+    },
+    {
+      "directory": "proof_operations001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 3,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 4
+    },
+    {
+      "directory": "quotient001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 0,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "quotient002",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 0,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "quotient003",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 0,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "quotient004",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 0,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "runtime_recovery001",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 2,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    },
+    {
+      "directory": "runtime_recovery002",
+      "chain_valid": true,
+      "all_blob_bytes_verified": true,
+      "blobs_verified": 2,
+      "unavailable_blobs": [],
+      "unfinished_operations": [],
+      "unfinished_attempts": [],
+      "events": 2
+    }
+  ],
+  "study_costs": {
+    "confirmatory001": {
+      "metered_operation_wall_seconds_sum": 5895.403654957947,
+      "native_model_calls": 45
+    },
+    "compound_confirmatory001": {
+      "metered_operation_wall_seconds_sum": 1256.4725344589679,
+      "native_model_calls": 12
+    },
+    "compound_confirmatory002": {
+      "metered_operation_wall_seconds_sum": 4872.977992913919,
+      "native_model_calls": 48
+    },
+    "later_process_conformance001": {
+      "metered_operation_wall_seconds_sum": 53.006668206944596,
+      "native_model_calls": 0
+    },
+    "frontier_search001": {
+      "metered_operation_wall_seconds_sum": 302.54576791700674,
+      "native_model_calls": 2
+    },
+    "frontier_search002": {
+      "metered_operation_wall_seconds_sum": 209.4495319170528,
+      "native_model_calls": 0
+    },
+    "frontier_search003": {
+      "metered_operation_wall_seconds_sum": 185.30826800107025,
+      "native_model_calls": 0
+    },
+    "correlation_search001": {
+      "metered_operation_wall_seconds_sum": 0,
+      "native_model_calls": 0
+    },
+    "correlation_search002": {
+      "metered_operation_wall_seconds_sum": 327.2074922089232,
+      "native_model_calls": 1
+    },
+    "correlation_search003": {
+      "metered_operation_wall_seconds_sum": 237.51978274888825,
+      "native_model_calls": 0
+    },
+    "runtime_recovery001": {
+      "metered_operation_wall_seconds_sum": 3.452277082949877,
+      "native_model_calls": 0
+    },
+    "runtime_recovery002": {
+      "metered_operation_wall_seconds_sum": 2.6540122909937054,
+      "native_model_calls": 0
+    }
+  }
+}

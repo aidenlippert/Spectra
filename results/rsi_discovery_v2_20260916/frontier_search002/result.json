@@ -1,0 +1,59 @@
+{
+  "baseline": {
+    "status": "conditional_proof_obligation",
+    "D_interval": [
+      "-2",
+      "2"
+    ],
+    "dimensions": {
+      "reduced": 4,
+      "full_sector_constructed": 0,
+      "full_trajectories_read": 0
+    }
+  },
+  "proposals": [
+    {
+      "status": "resource_obstruction",
+      "D_interval": null,
+      "dimensions": null,
+      "error": null,
+      "remaining_obligation": null
+    }
+  ],
+  "target_proved": false,
+  "supplied_proposal": {
+    "path": "/Users/aidenlippert/Documents/Spectra-rsi-discovery/results/rsi_discovery_v2_20260916/recovered_frontier_proposal.json",
+    "sha256": "8ccb85fcb727be25db3ab0f27e2644dc5673daf06617e8b1973966078314886f",
+    "origin": {
+      "origin": "/Users/aidenlippert/Documents/Spectra-rsi-discovery/results/rsi_discovery_v2_20260916/frontier_search001/models/representation_0/process/stdout",
+      "stdout_sha256": "a4616d05497fe84db519d254551357ab64797ccb6d1d6fab7efe1d53bb78b43f",
+      "transformation": "Executable source copied verbatim from native mechanism field; original source field was attribution prose.",
+      "original_budget_status": "150-second client deadline failed; this is outside-budget recovery, not an accepted original-budget attempt",
+      "original_model_cost_ledger": "/Users/aidenlippert/Documents/Spectra-rsi-discovery/results/rsi_discovery_v2_20260916/frontier_search001",
+      "original_response": {
+        "hypothesis": "A weighted, sparse commutator-defect basis may tighten the D enclosure by representing the largest accessible quadratic and quartic drift defects explicitly.",
+        "mechanism": "def mass(A):\n    return sum(abs(v) for P in A for v in P.values())\n\ndef sparse(A):\n    half = rational(1, 2)\n    orbits = {}\n    for P in A:\n        for w in P:\n            if len(w) <= 4 and 2 * sum(f for f, m in w) == len(w):\n                t = tuple((1, m) for f, m in w if f == 0) + tuple((0, m) for f, m in w if f == 1)\n                u = min(w, t)\n                if u not in orbits:\n                    v = max(w, t)\n                    re = (A[0].get(u, 0) + A[0].get(v, 0)) * half\n                    im = (A[1].get(u, 0) - A[1].get(v, 0)) * half\n                    score = (abs(re) + abs(im)) * (1 if u == v else 2)\n                    if score:\n                        orbits[u] = (score, u, v, re, im)\n    R = ({}, {})\n    for score, u, v, re, im in sorted(orbits.values(), reverse=True)[:2048]:\n        if re:\n            R[0][u] = re\n            R[0][v] = re\n        if im:\n            R[1][u] = im\n            R[1][v] = -im\n    return R\n\ndef remainder(A, basis):\n    coeffs, residual = coordinates(A, basis)\n    R = ({}, {})\n    if residual:\n        R = A\n        for B, c in zip(basis, coeffs):\n            if c:\n                R = cadd(R, cscale(B, -c))\n    return R\n\ndef propose(payload):\n    one = rational(1, 1)\n    half = rational(1, 2)\n    limit = min(14, payload.get('max_additional_observables', 14))\n    basis = [({(): one}, {}), payload['D']]\n    answer = []\n    unit = mass(payload['D'])\n    if not unit:\n        unit = one\n    for name in ('W', 'Y'):\n        A = sparse(payload[name])\n        if len(answer) < limit and mass(A):\n            coeffs, residual = coordinates(A, basis)\n            if residual:\n                A = cscale(A, unit / mass(A))\n                basis.append(A)\n                answer.append(A)\n    generators = [(payload['H'], one), (payload['D'], half), (payload['W'], half)]\n    frontier = []\n    expanded = 1\n    budget = 2000000\n    running = True\n    while len(answer) < limit and running:\n        while expanded < len(basis):\n            O = basis[expanded]\n            size = len(O[0]) + len(O[1])\n            for G, weight in generators:\n                cost = size * (len(G[0]) + len(G[1]))\n                if cost and cost <= min(budget, 250000):\n                    budget = budget - cost\n                    A = sparse(drift(G, O))\n                    if mass(A):\n                        frontier.append((A, weight))\n            expanded = expanded + 1\n        best = -1\n        bestscore = 0\n        chosen = ({}, {})\n        for j, item in enumerate(frontier):\n            A, weight = item\n            R = sparse(remainder(A, basis))\n            size = mass(R)\n            score = weight * size\n            if score > bestscore and size <= 4 * mass(A):\n                coeffs, residual = coordinates(R, basis)\n                if residual:\n                    best = j\n                    bestscore = score\n                    chosen = R\n        if best < 0:\n            running = False\n        else:\n            frontier.pop(best)\n            chosen = cscale(chosen, unit / mass(chosen))\n            basis.append(chosen)\n            answer.append(chosen)\n    if not answer:\n        for m in range(payload['modes']):\n            if not answer:\n                A = ({((1, m), (0, m)): one}, {})\n                coeffs, residual = coordinates(A, basis)\n                if residual:\n                    answer.append(A)\n    return answer",
+        "source": "Derived from the supplied CAR representation, exact coordinate capability, and reported baseline defects; no external sources or execution.",
+        "assumptions": "The supplied capabilities are available globally; polynomial pairs use real and imaginary dictionaries. I and D are independent. Generator weights use the stated control bound of 1/2.",
+        "failure_cases": "Higher-degree defects and discarded terms remain checker obligations. Coefficient mass is a selection heuristic, not an enclosure objective or operator norm estimate. Work budgets can stop useful expansion and do not guarantee runtime. Independence is checked exactly, but conditioning and growth may remain poor. No measured improvement or D <= -3/5 certificate is claimed."
+      }
+    }
+  },
+  "discovery_improvement_proved": false,
+  "costs": {
+    "metered_wall_seconds": 209.4495319170528,
+    "self_cpu_seconds": 0.14477599999999996,
+    "child_cpu_seconds": 208.11335,
+    "operations": 4,
+    "failed_operations": 1,
+    "model_usage": [],
+    "money_charged_by_runner": 0,
+    "subscription_marginal_price": null
+  },
+  "audit": {
+    "chain_valid": true,
+    "unfinished_operations": [],
+    "unfinished_attempts": [],
+    "events": 14
+  }
+}

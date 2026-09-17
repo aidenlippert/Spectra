@@ -1,0 +1,69 @@
+{
+  "outcomes": [
+    {
+      "case": "development",
+      "status": "resource_obstruction",
+      "acceptance": {
+        "error": "fresh_integrals failed: /Users/aidenlippert/Documents/Spectra-rsi-discovery/results/rsi_discovery_v2_20260916/correlation_search002/development/processes/fresh_integrals/stderr",
+        "stage": "fresh_integrals"
+      },
+      "costs": {
+        "metered_wall_seconds": 90.02401108399499,
+        "self_cpu_seconds": 0.09084699999999998,
+        "child_cpu_seconds": 0.14432499999999998,
+        "operations": 1,
+        "failed_operations": 1,
+        "model_usage": [],
+        "money_charged_by_runner": 0,
+        "subscription_marginal_price": null
+      },
+      "node": "5820891d23c6b257c2b61ed058eedf0b202bbf14056cc999a77673d2d8ef4331"
+    },
+    {
+      "case": "transfer",
+      "status": "resource_obstruction",
+      "acceptance": {
+        "error": "fresh_integrals failed: /Users/aidenlippert/Documents/Spectra-rsi-discovery/results/rsi_discovery_v2_20260916/correlation_search002/transfer/processes/fresh_integrals/stderr",
+        "stage": "fresh_integrals"
+      },
+      "costs": {
+        "metered_wall_seconds": 90.01586341595976,
+        "self_cpu_seconds": 0.089328,
+        "child_cpu_seconds": 0.245691,
+        "operations": 1,
+        "failed_operations": 1,
+        "model_usage": [],
+        "money_charged_by_runner": 0,
+        "subscription_marginal_price": null
+      },
+      "node": "ceb17e1b678843b536ad525f50106ac61d20d6f94b217f1496012144ed32861f"
+    }
+  ],
+  "retained_method": "9d8bc25d7f9fd94d4626222b8188ae387326800bf44e67400b95345ef619cd74",
+  "discovery_improvement_proved": false,
+  "costs": {
+    "metered_wall_seconds": 147.16761770896846,
+    "self_cpu_seconds": 0.07656000000000002,
+    "child_cpu_seconds": 1.91522,
+    "operations": 1,
+    "failed_operations": 0,
+    "model_usage": [
+      {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 20792,
+        "output_tokens": 4765,
+        "reasoning_output_tokens": 3106
+      }
+    ],
+    "money_charged_by_runner": 0,
+    "subscription_marginal_price": null
+  },
+  "audit": {
+    "chain_valid": true,
+    "unfinished_operations": [],
+    "unfinished_attempts": [],
+    "events": 13
+  },
+  "scope": "One exploratory structural algorithm against previously measured frozen windows; not an independent RSI significance test"
+}

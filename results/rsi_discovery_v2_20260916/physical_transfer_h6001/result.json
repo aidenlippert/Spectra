@@ -1,0 +1,135 @@
+{
+  "status": "conditional_proof_obligation",
+  "target": {
+    "specification": {
+      "name": "h6_new_v2",
+      "particles": 6,
+      "basis": "sto-3g",
+      "geometry": [
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            1.11
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            2.3
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            3.58
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            4.8
+          ]
+        ],
+        [
+          "H",
+          [
+            0.0,
+            0.0,
+            6.05
+          ]
+        ]
+      ]
+    },
+    "N": 6,
+    "scope": "entire fixed-N sector",
+    "max_width_Ha": "1/625",
+    "constructor": "declared collective pair supports plus width-three local clusters",
+    "full_occupation_enumeration": false,
+    "cached_teacher": false
+  },
+  "acceptance": {
+    "kind": "complete_spin_screen_v1",
+    "lower": "-7231088580085534681/1000000000000000000",
+    "lower_float": -7.231088580085535,
+    "singlet": {
+      "lower": "-4172858829050055127/600000000000000000",
+      "lower_float": -6.954764715083425,
+      "residual_l1": "7789620255127/600000000000000000",
+      "residual_l1_float": 1.2982700425211666e-05,
+      "multiplier_terms": 199,
+      "square_polynomial_terms": 11219,
+      "residual_terms": 11219,
+      "residual_max_degree": 6,
+      "mode_count": 12,
+      "particle_number": 6,
+      "factor_rows": 299,
+      "factor_nonzeros": 12427,
+      "unaveraged_residual_l1": "8971188894262415339/200000000000000000",
+      "spin_twirl": true,
+      "positivity": "Exact SU(2) average of positive squares; ideals have zero singlet compression",
+      "restricted_to": "S=0",
+      "original_H_spin_defect_Ha": "31/250000000000",
+      "lower_for": "Exact SU(2) average of input H in the stated sector",
+      "replay_seconds": 6.381026124989148
+    },
+    "all_nonsinglets": {
+      "lower": "-7231088579961534681/1000000000000000000",
+      "lower_float": -7.2310885799615345,
+      "residual_l1": "457229104170534681/1000000000000000000",
+      "residual_l1_float": 0.4572291041705347,
+      "multiplier_terms": 438,
+      "square_polynomial_terms": 11219,
+      "residual_terms": 11219,
+      "residual_max_degree": 6,
+      "mode_count": 12,
+      "particle_number": 6,
+      "factor_rows": 481,
+      "factor_nonzeros": 23909,
+      "restricted_to": "M_S=1",
+      "original_H_spin_defect_Ha": "31/250000000000",
+      "lower_for": "Exact SU(2) average of input H in the stated sector",
+      "replay_seconds": 3.167657333018724
+    },
+    "valid_on": "Entire fixed-N sector",
+    "argument": "Every integer-spin S>=1 multiplet meets M_S=1; S=0 is certified separately; original-H spin defect charged once",
+    "many_body_states_enumerated": 0,
+    "replay_seconds": 9.551729375030845,
+    "upper_Ha": "-6944079010848716716290576530319561307477220985589745153486646688177460935264604064725631789249091658293696236009628427905145730224475027146419177012460837446474899923487550807382455055713821507/999999998971277114455276059260144133389569889148322319552032962458507315592939143609769667707421686137131404219407125136314654548892063361395568405967633848001457712729539643359120000000000000",
+    "width_Ha": "3587619522475395687179145233642533889073100692575657584758458671598540508891593803017025085518936432346116128211398824420989425354064742140867651169866014748100210298719388867028265347591932383009/12499999987140963930690950740751801667369623614354028994400412030731341444911739295122120846342771076714142552742589064203933181861150792017444605074595423100018221409119245541989000000000000000000",
+    "width_mHa": 287.00956209328496,
+    "target_1p6mHa_met": false,
+    "remaining_obligation": "Interval exceeds target after the fixed optimization budget; representational impossibility is not proved."
+  },
+  "costs": {
+    "metered_wall_seconds": 158.37876933306688,
+    "self_cpu_seconds": 0.09443099999999996,
+    "child_cpu_seconds": 149.34661900000003,
+    "operations": 8,
+    "failed_operations": 0,
+    "model_usage": [],
+    "money_charged_by_runner": 0,
+    "subscription_marginal_price": null
+  },
+  "audit": {
+    "chain_valid": true,
+    "unfinished_operations": [],
+    "unfinished_attempts": [],
+    "events": 17
+  }
+}

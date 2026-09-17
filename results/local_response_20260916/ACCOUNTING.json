@@ -1,0 +1,316 @@
+{
+  "metered_subprocesses": 14,
+  "wall_seconds_sum": 130.18110341503052,
+  "peak_child_RSS_bytes_max": 259047424,
+  "statuses": {
+    "passed": 11,
+    "timeout": 3
+  },
+  "runs": [
+    {
+      "name": "boundary_discovery",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.local_response_20260916.discover",
+        "--out",
+        "results/local_response_20260916/boundary"
+      ],
+      "timeout_seconds": 150,
+      "status": "passed",
+      "started_UTC": "2026-09-16T20:58:59.408012+00:00",
+      "pid": 47131,
+      "exit_code": 0,
+      "wall_seconds": 2.986299999989569,
+      "child_user_seconds": 2.616222,
+      "child_system_seconds": 0.11973299999999999,
+      "peak_child_RSS_bytes": 259047424,
+      "finished_UTC": "2026-09-16T20:59:02.394896+00:00"
+    },
+    {
+      "name": "clarabel_probe",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-c",
+        "import clarabel; print(clarabel.__version__, hasattr(clarabel,\"PSDTriangleConeT\"),flush=True)"
+      ],
+      "timeout_seconds": 15,
+      "status": "passed",
+      "started_UTC": "2026-09-16T20:51:43.363933+00:00",
+      "pid": 45889,
+      "exit_code": 0,
+      "wall_seconds": 0.07729116594418883,
+      "child_user_seconds": 0.010655,
+      "child_system_seconds": 0.006398,
+      "peak_child_RSS_bytes": 9469952,
+      "finished_UTC": "2026-09-16T20:51:43.442211+00:00"
+    },
+    {
+      "name": "enumerated_upper",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.local_response_20260916.reference",
+        "--out",
+        "results/local_response_20260916/reference"
+      ],
+      "timeout_seconds": 45,
+      "status": "passed",
+      "started_UTC": "2026-09-16T21:09:30.083969+00:00",
+      "pid": 49019,
+      "exit_code": 0,
+      "wall_seconds": 0.8798006670549512,
+      "child_user_seconds": 0.533941,
+      "child_system_seconds": 0.079956,
+      "peak_child_RSS_bytes": 71221248,
+      "finished_UTC": "2026-09-16T21:09:30.964992+00:00"
+    },
+    {
+      "name": "final_exact_interval",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.local_response_20260916.replay",
+        "--certificate",
+        "results/local_response_20260916/boundary/certificate.json",
+        "--correction",
+        "results/local_response_20260916/projector/correction.json",
+        "--upper",
+        "results/local_response_20260916/reference/upper.json",
+        "--out",
+        "results/local_response_20260916/final_replay"
+      ],
+      "timeout_seconds": 60,
+      "status": "passed",
+      "started_UTC": "2026-09-16T21:13:09.066604+00:00",
+      "pid": 49647,
+      "exit_code": 0,
+      "wall_seconds": 2.218532499973662,
+      "child_user_seconds": 1.915764,
+      "child_system_seconds": 0.047656,
+      "peak_child_RSS_bytes": 18644992,
+      "finished_UTC": "2026-09-16T21:13:11.285793+00:00"
+    },
+    {
+      "name": "final_local_tests",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "research.local_response_20260916.test_local_exact",
+        "research.local_response_20260916.test_projector_correction"
+      ],
+      "timeout_seconds": 60,
+      "status": "passed",
+      "started_UTC": "2026-09-16T21:11:43.627741+00:00",
+      "pid": 49396,
+      "exit_code": 0,
+      "wall_seconds": 2.3888386670150794,
+      "child_user_seconds": 1.8368499999999999,
+      "child_system_seconds": 0.08490199999999999,
+      "peak_child_RSS_bytes": 66191360,
+      "finished_UTC": "2026-09-16T21:11:46.017694+00:00"
+    },
+    {
+      "name": "fresh_exact_replay",
+      "command": [
+        "/opt/homebrew/Caskroom/miniconda/base/bin/python",
+        "-B",
+        "-S",
+        "-m",
+        "research.local_response_20260916.replay",
+        "--certificate",
+        "results/local_response_20260916/boundary/certificate.json",
+        "--correction",
+        "results/local_response_20260916/projector/correction.json",
+        "--out",
+        "results/local_response_20260916/fresh_replay"
+      ],
+      "timeout_seconds": 60,
+      "status": "passed",
+      "started_UTC": "2026-09-16T21:10:47.310536+00:00",
+      "pid": 49218,
+      "exit_code": 0,
+      "wall_seconds": 1.742409166006837,
+      "child_user_seconds": 1.685943,
+      "child_system_seconds": 0.022799999999999997,
+      "peak_child_RSS_bytes": 17252352,
+      "finished_UTC": "2026-09-16T21:10:49.053714+00:00"
+    },
+    {
+      "name": "local_unit_tests",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "research.local_response_20260916.test_local_exact"
+      ],
+      "timeout_seconds": 60,
+      "status": "timeout",
+      "started_UTC": "2026-09-16T20:57:14.839040+00:00",
+      "pid": 46599,
+      "exit_code": -15,
+      "wall_seconds": 60.01501654100139,
+      "child_user_seconds": 0.031633999999999995,
+      "child_system_seconds": 0.011268,
+      "peak_child_RSS_bytes": 16531456,
+      "finished_UTC": "2026-09-16T20:58:14.856255+00:00"
+    },
+    {
+      "name": "local_unit_tests_v2",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "research.local_response_20260916.test_local_exact"
+      ],
+      "timeout_seconds": 60,
+      "status": "passed",
+      "started_UTC": "2026-09-16T20:58:44.792635+00:00",
+      "pid": 47032,
+      "exit_code": 0,
+      "wall_seconds": 1.3133861660026014,
+      "child_user_seconds": 0.957553,
+      "child_system_seconds": 0.070879,
+      "peak_child_RSS_bytes": 65617920,
+      "finished_UTC": "2026-09-16T20:58:46.107004+00:00"
+    },
+    {
+      "name": "profile_limit_tests",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "research.local_response_20260916.test_projector_correction"
+      ],
+      "timeout_seconds": 60,
+      "status": "passed",
+      "started_UTC": "2026-09-16T21:12:45.488347+00:00",
+      "pid": 49621,
+      "exit_code": 0,
+      "wall_seconds": 0.9403151250444353,
+      "child_user_seconds": 0.8689119999999999,
+      "child_system_seconds": 0.017023,
+      "peak_child_RSS_bytes": 20578304,
+      "finished_UTC": "2026-09-16T21:12:46.429938+00:00"
+    },
+    {
+      "name": "projector_correction",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.local_response_20260916.projector_correction",
+        "--certificate",
+        "results/local_response_20260916/boundary/certificate.json",
+        "--out",
+        "results/local_response_20260916/projector"
+      ],
+      "timeout_seconds": 60,
+      "status": "passed",
+      "started_UTC": "2026-09-16T21:03:02.664094+00:00",
+      "pid": 47793,
+      "exit_code": 0,
+      "wall_seconds": 1.4684757920331322,
+      "child_user_seconds": 1.312554,
+      "child_system_seconds": 0.03948,
+      "peak_child_RSS_bytes": 35258368,
+      "finished_UTC": "2026-09-16T21:03:04.133465+00:00"
+    },
+    {
+      "name": "projector_tests",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "research.local_response_20260916.test_projector_correction"
+      ],
+      "timeout_seconds": 60,
+      "status": "passed",
+      "started_UTC": "2026-09-16T21:08:17.078904+00:00",
+      "pid": 48823,
+      "exit_code": 0,
+      "wall_seconds": 0.932287291972898,
+      "child_user_seconds": 0.885539,
+      "child_system_seconds": 0.018407,
+      "peak_child_RSS_bytes": 21102592,
+      "finished_UTC": "2026-09-16T21:08:18.012082+00:00"
+    },
+    {
+      "name": "rank_screen",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-m",
+        "research.local_response_20260916.rank_probe",
+        "--certificate",
+        "results/local_response_20260916/boundary/certificate.json",
+        "--out",
+        "results/local_response_20260916/rank_screen.json"
+      ],
+      "timeout_seconds": 45,
+      "status": "passed",
+      "started_UTC": "2026-09-16T21:04:54.403202+00:00",
+      "pid": 48152,
+      "exit_code": 0,
+      "wall_seconds": 0.18340824998449534,
+      "child_user_seconds": 0.11419499999999999,
+      "child_system_seconds": 0.020461999999999998,
+      "peak_child_RSS_bytes": 62275584,
+      "finished_UTC": "2026-09-16T21:04:54.587360+00:00"
+    },
+    {
+      "name": "solver_import_trace",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-c",
+        "import faulthandler; faulthandler.dump_traceback_later(8); import cvxpy as cp; print(cp.__version__, flush=True); print(cp.installed_solvers(), flush=True)"
+      ],
+      "timeout_seconds": 25,
+      "status": "timeout",
+      "started_UTC": "2026-09-16T20:51:11.476135+00:00",
+      "pid": 45829,
+      "exit_code": -15,
+      "wall_seconds": 25.015060500008985,
+      "child_user_seconds": 0.394254,
+      "child_system_seconds": 0.15065199999999998,
+      "peak_child_RSS_bytes": 82362368,
+      "finished_UTC": "2026-09-16T20:51:36.493672+00:00"
+    },
+    {
+      "name": "solver_probe",
+      "command": [
+        ".venv-correlated/bin/python",
+        "-B",
+        "-c",
+        "import cvxpy as cp; print(cp.__version__, cp.installed_solvers())"
+      ],
+      "timeout_seconds": 30,
+      "status": "timeout",
+      "started_UTC": "2026-09-16T20:50:26.410411+00:00",
+      "pid": 45750,
+      "exit_code": -15,
+      "wall_seconds": 30.019981582998298,
+      "child_user_seconds": 0.390743,
+      "child_system_seconds": 0.12755,
+      "peak_child_RSS_bytes": 82100224,
+      "finished_UTC": "2026-09-16T20:50:56.432762+00:00"
+    }
+  ],
+  "exclusions": [
+    "Reasoning, source/code review, authoring, web research, lightweight file/metadata probes, early unmetered agent tests, report assembly and hashing."
+  ],
+  "not_an_end_to_end_solver_timing": true,
+  "external_spend": 0
+}

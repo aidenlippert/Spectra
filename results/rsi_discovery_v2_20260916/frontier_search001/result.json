@@ -1,0 +1,57 @@
+{
+  "baseline": {
+    "status": "conditional_proof_obligation",
+    "D_interval": [
+      "-2",
+      "2"
+    ],
+    "dimensions": {
+      "reduced": 4,
+      "full_sector_constructed": 0,
+      "full_trajectories_read": 0
+    }
+  },
+  "proposals": [
+    {
+      "status": "resource_obstruction",
+      "D_interval": null,
+      "dimensions": null,
+      "error": "No executable native proposal within budget",
+      "remaining_obligation": null
+    },
+    {
+      "status": "resource_obstruction",
+      "D_interval": null,
+      "dimensions": null,
+      "error": "No executable native proposal within budget",
+      "remaining_obligation": null
+    }
+  ],
+  "target_proved": false,
+  "discovery_improvement_proved": false,
+  "costs": {
+    "metered_wall_seconds": 302.54576791700674,
+    "self_cpu_seconds": 0.2229499999999999,
+    "child_cpu_seconds": 5.523973,
+    "operations": 4,
+    "failed_operations": 2,
+    "model_usage": [
+      {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 16768,
+        "input_tokens": 20069,
+        "output_tokens": 4837,
+        "reasoning_output_tokens": 3621
+      },
+      null
+    ],
+    "money_charged_by_runner": 0,
+    "subscription_marginal_price": null
+  },
+  "audit": {
+    "chain_valid": true,
+    "unfinished_operations": [],
+    "unfinished_attempts": [],
+    "events": 13
+  }
+}

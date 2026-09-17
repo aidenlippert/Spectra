@@ -1,0 +1,56 @@
+{
+  "status": "verified_encoded_claim",
+  "claim": "exact symmetric Gram coefficient map for every recorded input",
+  "universal_program_correctness_proved": false,
+  "tasks": [
+    {
+      "task": {
+        "family": "collective",
+        "spatial": 6,
+        "weight": -1
+      },
+      "dictionary_words": 132,
+      "preparation_seconds": 0.0004041669890284538,
+      "independent_reference_seconds": 0.22193283296655864,
+      "validation_seconds": [
+        0.02400933299213648,
+        0.02411595801822841,
+        0.024111000006087124
+      ],
+      "cold_seconds": [
+        0.028542499989271164,
+        0.028147665958385915,
+        0.030237582977861166
+      ],
+      "median_seconds": 0.028542499989271164,
+      "coefficient_rows": 8687,
+      "nonzero_entries": 14538
+    },
+    {
+      "task": {
+        "family": "chain",
+        "spatial": 7,
+        "width": 3,
+        "weight": -1,
+        "permutation_seed": 438
+      },
+      "dictionary_words": 147,
+      "preparation_seconds": 0.0004243750008754432,
+      "independent_reference_seconds": 0.2793929160106927,
+      "validation_seconds": [
+        0.035472916963044554,
+        0.0363353340071626,
+        0.03502420801669359
+      ],
+      "cold_seconds": [
+        0.04444308398524299,
+        0.04215195798315108,
+        0.04542533296626061
+      ],
+      "median_seconds": 0.04444308398524299,
+      "coefficient_rows": 12440,
+      "nonzero_entries": 18427
+    }
+  ],
+  "complete_worker_seconds": 0.9113648750353605
+}

@@ -1,0 +1,360 @@
+{
+  "version": 2,
+  "independent_campaigns": 5,
+  "arms": {
+    "A": {
+      "acquired": false,
+      "replay": false
+    },
+    "B": {
+      "acquired": true,
+      "replay": false
+    },
+    "C": {
+      "acquired": false,
+      "replay": true
+    },
+    "D": {
+      "acquired": true,
+      "replay": true
+    }
+  },
+  "generation_one": "one independent model proposal per campaign, exact CAR acquisition gate",
+  "generation_two": "two model proposals per arm; select only by accepted development construction time",
+  "generation_three": "freeze source, four unseen support/size/adjoint/relabeling regimes; no repair from transfer",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "model_timeout_seconds": 150,
+  "evaluation_timeout_seconds": 90,
+  "repetitions": 3,
+  "proposal_parallelism": 4,
+  "execution_order": "all inference completed before serial transfer; arm order rotated by campaign",
+  "target": "exact homogeneous-charge degree-three SOS Gram map including every cross term",
+  "primary_contrast": "D versus A paired campaign-level transfer construction time",
+  "primary_acceptance": {
+    "all_D_transfer_exact": true,
+    "all_five_paired_wins_required": true,
+    "median_D_speedup_over_A_at_least": 1.2,
+    "D_must_be_new_generated_method": true,
+    "both_B_over_A_and_D_over_C_median_at_least": 1.2
+  },
+  "policy_contrast": "C/A and D/B reported separately; no policy-improvement claim unless supported",
+  "statistics": "one-sided paired sign test on five campaign units; descriptive secondary contrasts, no candidate pseudo-replication",
+  "costs": "acquisition, proposal, activation, construction, all validation and failures; marginal and cumulative separate",
+  "cost_exclusions": [
+    "parent implementation tokens unavailable",
+    "setup prior to this protocol",
+    "subscription dollar allocation unknown"
+  ],
+  "universal_RSI_claim": false,
+  "policy_training_archive": [
+    {
+      "before": "verified_encoded_claim",
+      "action": "continue_search",
+      "measured": true,
+      "accepted": false,
+      "cost_seconds": 150.0232068329933,
+      "construction_seconds": null,
+      "improves_parent": false,
+      "parent_source_sha256": "f192bcfad83912a44611655297bc97156f49bf2cf65a9e769752df9ec11f4e31",
+      "source_sha256": null,
+      "claim": "observed development branch only; future branches require live evaluation"
+    },
+    {
+      "before": "verified_encoded_claim",
+      "action": "combine_methods",
+      "measured": true,
+      "accepted": false,
+      "cost_seconds": 150.01489770802436,
+      "construction_seconds": null,
+      "improves_parent": false,
+      "parent_source_sha256": "f192bcfad83912a44611655297bc97156f49bf2cf65a9e769752df9ec11f4e31",
+      "source_sha256": null,
+      "claim": "observed development branch only; future branches require live evaluation"
+    },
+    {
+      "before": "verified_encoded_claim",
+      "action": "continue_search",
+      "measured": true,
+      "accepted": true,
+      "cost_seconds": 127.5351332500577,
+      "construction_seconds": 0.07298558397451416,
+      "improves_parent": true,
+      "parent_source_sha256": "fa4776941c6b672d6115f82e06cdf79064674882eeaf72e6710781f10b19500d",
+      "source_sha256": "34d28edb145f57b50a12dc17ff6d9ec407ad459d86b2e75b2a299ef2622737a2",
+      "claim": "observed development branch only; future branches require live evaluation"
+    },
+    {
+      "before": "verified_encoded_claim",
+      "action": "combine_methods",
+      "measured": true,
+      "accepted": true,
+      "cost_seconds": 150.48464212502586,
+      "construction_seconds": 0.07513316703261808,
+      "improves_parent": true,
+      "parent_source_sha256": "fa4776941c6b672d6115f82e06cdf79064674882eeaf72e6710781f10b19500d",
+      "source_sha256": "1c5a1037a11c86382f25db288346b62c9d1813f4cd96f1458a85f66990ab2fc5",
+      "claim": "observed development branch only; future branches require live evaluation"
+    }
+  ],
+  "development": [
+    [
+      {
+        "family": "collective",
+        "spatial": 5,
+        "weight": -1,
+        "permutation_seed": 8801
+      },
+      {
+        "family": "chain",
+        "spatial": 6,
+        "width": 3,
+        "weight": -1,
+        "adjoint": false,
+        "permutation_seed": 127
+      }
+    ],
+    [
+      {
+        "family": "collective",
+        "spatial": 6,
+        "weight": -1,
+        "permutation_seed": 8880
+      },
+      {
+        "family": "chain",
+        "spatial": 7,
+        "width": 3,
+        "weight": -1,
+        "adjoint": true,
+        "permutation_seed": 220
+      }
+    ],
+    [
+      {
+        "family": "collective",
+        "spatial": 5,
+        "weight": -1,
+        "permutation_seed": 8959
+      },
+      {
+        "family": "chain",
+        "spatial": 6,
+        "width": 3,
+        "weight": -1,
+        "adjoint": false,
+        "permutation_seed": 313
+      }
+    ],
+    [
+      {
+        "family": "collective",
+        "spatial": 6,
+        "weight": -1,
+        "permutation_seed": 9038
+      },
+      {
+        "family": "chain",
+        "spatial": 7,
+        "width": 3,
+        "weight": -1,
+        "adjoint": true,
+        "permutation_seed": 406
+      }
+    ],
+    [
+      {
+        "family": "collective",
+        "spatial": 5,
+        "weight": -1,
+        "permutation_seed": 9117
+      },
+      {
+        "family": "chain",
+        "spatial": 6,
+        "width": 3,
+        "weight": -1,
+        "adjoint": false,
+        "permutation_seed": 499
+      }
+    ]
+  ],
+  "transfer": [
+    [
+      {
+        "family": "star",
+        "spatial": 7,
+        "weight": -1,
+        "permutation_seed": 99001
+      },
+      {
+        "family": "disjoint",
+        "spatial": 15,
+        "weight": -1,
+        "adjoint": true,
+        "mode_offset": 101,
+        "mode_stride": 3,
+        "permutation_seed": 773
+      },
+      {
+        "family": "collective",
+        "spatial": 10,
+        "weight": -1,
+        "adjoint": true,
+        "permutation_seed": 67931
+      },
+      {
+        "family": "chain",
+        "spatial": 10,
+        "width": 4,
+        "weight": -3,
+        "mode_offset": 71,
+        "mode_stride": 2,
+        "permutation_seed": 319
+      }
+    ],
+    [
+      {
+        "family": "star",
+        "spatial": 7,
+        "weight": -1,
+        "permutation_seed": 99002
+      },
+      {
+        "family": "disjoint",
+        "spatial": 15,
+        "weight": -1,
+        "adjoint": true,
+        "mode_offset": 101,
+        "mode_stride": 3,
+        "permutation_seed": 774
+      },
+      {
+        "family": "collective",
+        "spatial": 10,
+        "weight": -1,
+        "adjoint": true,
+        "permutation_seed": 67932
+      },
+      {
+        "family": "chain",
+        "spatial": 10,
+        "width": 4,
+        "weight": -3,
+        "mode_offset": 71,
+        "mode_stride": 2,
+        "permutation_seed": 320
+      }
+    ],
+    [
+      {
+        "family": "star",
+        "spatial": 7,
+        "weight": -1,
+        "permutation_seed": 99003
+      },
+      {
+        "family": "disjoint",
+        "spatial": 15,
+        "weight": -1,
+        "adjoint": true,
+        "mode_offset": 101,
+        "mode_stride": 3,
+        "permutation_seed": 775
+      },
+      {
+        "family": "collective",
+        "spatial": 10,
+        "weight": -1,
+        "adjoint": true,
+        "permutation_seed": 67933
+      },
+      {
+        "family": "chain",
+        "spatial": 10,
+        "width": 4,
+        "weight": -3,
+        "mode_offset": 71,
+        "mode_stride": 2,
+        "permutation_seed": 321
+      }
+    ],
+    [
+      {
+        "family": "star",
+        "spatial": 7,
+        "weight": -1,
+        "permutation_seed": 99004
+      },
+      {
+        "family": "disjoint",
+        "spatial": 15,
+        "weight": -1,
+        "adjoint": true,
+        "mode_offset": 101,
+        "mode_stride": 3,
+        "permutation_seed": 776
+      },
+      {
+        "family": "collective",
+        "spatial": 10,
+        "weight": -1,
+        "adjoint": true,
+        "permutation_seed": 67934
+      },
+      {
+        "family": "chain",
+        "spatial": 10,
+        "width": 4,
+        "weight": -3,
+        "mode_offset": 71,
+        "mode_stride": 2,
+        "permutation_seed": 322
+      }
+    ],
+    [
+      {
+        "family": "star",
+        "spatial": 7,
+        "weight": -1,
+        "permutation_seed": 99005
+      },
+      {
+        "family": "disjoint",
+        "spatial": 15,
+        "weight": -1,
+        "adjoint": true,
+        "mode_offset": 101,
+        "mode_stride": 3,
+        "permutation_seed": 777
+      },
+      {
+        "family": "collective",
+        "spatial": 10,
+        "weight": -1,
+        "adjoint": true,
+        "permutation_seed": 67935
+      },
+      {
+        "family": "chain",
+        "spatial": 10,
+        "width": 4,
+        "weight": -3,
+        "mode_offset": 71,
+        "mode_stride": 2,
+        "permutation_seed": 323
+      }
+    ]
+  ],
+  "sources": {
+    "research/rsi_discovery_20260916/v2/campaign.py": "f01bc33aa240adda5aa2cb4b4ef3d3b78dd8480afa4dd33a0ec328c434e7e25f",
+    "research/rsi_discovery_20260916/v2/model.py": "68beddd0cd32fd92374de24c758b22d9c2a68f9706b134c5bca85b273e83b258",
+    "research/rsi_discovery_20260916/v2/model_job.py": "549d1fdbadf2000c8da4f99c677d5c6c48b7f61071aa682dbef615859056c428",
+    "research/rsi_discovery_20260916/v2/records.py": "c56e74ef58e5269e315e52d3be25517d03faca957d6fdb0a3362917a6b383e0f",
+    "research/rsi_discovery_20260916/v2/algebra.py": "5d36367dc128db41aacf9b2ba8b903df4bcab264fe7e9114cc13bbbabe66539a",
+    "research/rsi_discovery_20260916/v2/evaluate.py": "9285933b581e5bf6710da2c3144ddeb82f733e0c11ec27690eeece4c2516a4d5",
+    "research/rsi_discovery_20260916/v2/language.py": "86693e05f0da134612cfe659da40ebee11cc363bee8d22c9a36c3f5d283842b5",
+    "research/rsi_discovery_20260916/v2/discovery.py": "9fc45d700f5d821a043fd7b2ee5e56a220188d87a2a809d8bbf83f0a058a80dd",
+    "research/rsi_discovery_20260916/v2/acquire.py": "e50c16ade475d94950b34b1edb7e123195f34caf9f130a32b59603d48337ed2e"
+  }
+}
