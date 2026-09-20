@@ -1,0 +1,100 @@
+{
+  "goal": "Construct directly in compact tensor coordinates and independently accept the declared response accuracy without enumerating the many-body sector.",
+  "primary_status": "target_met",
+  "primary_elapsed_seconds": 191.97729352200002,
+  "primary_parent_peak_rss_bytes": 286760960,
+  "primary_rss_conservative_sum_bytes": 573521920,
+  "formal_sector_dimension": 34134779536,
+  "inverse_status": "certified_best_among_three",
+  "inverse_winner": "3/4",
+  "inverse_elapsed_seconds_excluding_shared_seed": 307.2346480739999,
+  "inverse": [
+    {
+      "rung": "3/4",
+      "radius": 3.435687478610135e-05,
+      "lower": 0.1048258416154416,
+      "upper": 0.10489455536501381,
+      "bond": 96
+    },
+    {
+      "rung": "1",
+      "radius": 0.00021913073758040514,
+      "lower": 0.07600895315338264,
+      "upper": 0.07644721462854345,
+      "bond": 96
+    },
+    {
+      "rung": "5/4",
+      "radius": 0.00039415300889877305,
+      "lower": 0.07654340764226301,
+      "upper": 0.07733171366006056,
+      "bond": 160
+    }
+  ],
+  "extension50_status": "target_not_met",
+  "extension50_elapsed_seconds": 312.1554027960001,
+  "new_tests_passed": 11,
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "scope": "Finite repulsive Hubbard ladders, even half filling, alternating-spin product source, positive-broadening scalar resolvent. Adaptive numerical construction; no pretrained architecture, new-material, or superiority-to-mature-tensor-solvers claim.",
+  "primary": [
+    {
+      "omega": "2",
+      "eta": "3/2",
+      "radius": 0.00023872675609426882,
+      "target_met": true,
+      "bond": 96,
+      "integer_entries": 62672,
+      "candidate": "results/tensor/cold20/query_00/bond_096.candidate.json",
+      "candidate_sha256": "4193c993da5f0ae4e0f3c0f486d0f1425e63b7bbde3f3cd8691faaf76345121e",
+      "receipt_sha256": "9f2f8a14b51adb309c329435ce1d3db35b8009359210b4c76618850e7ebb9c63",
+      "checker_seconds": 23.612166681999952,
+      "checker_peak_rss_bytes": 262991872
+    },
+    {
+      "omega": "-1",
+      "eta": "3/2",
+      "radius": 0.0002451675735185408,
+      "target_met": true,
+      "bond": 96,
+      "integer_entries": 62672,
+      "candidate": "results/tensor/cold20/query_01/bond_096.candidate.json",
+      "candidate_sha256": "0686bd1704944a8480d6f86492e746b747407a3ffcd737013ee72a5882719a4f",
+      "receipt_sha256": "810661050d9b5c55cc5482405d87d525edbb583abb7d9f586d6d4eb792531d6c",
+      "checker_seconds": 23.670357624000076,
+      "checker_peak_rss_bytes": 276582400
+    },
+    {
+      "omega": "8",
+      "eta": "3/2",
+      "radius": 0.0006936342208250391,
+      "target_met": true,
+      "bond": 96,
+      "integer_entries": 62672,
+      "candidate": "results/tensor/cold20/query_02/bond_096.candidate.json",
+      "candidate_sha256": "1ca4b97ac58ab47cfb716104f22d3f9c6a6de745c2b088931fab5abfe81bec3b",
+      "receipt_sha256": "dffc59c45139408d16a978d6342b717bc068bd5b95b8325f6731ed9f66b43a1b",
+      "checker_seconds": 22.96114697099995,
+      "checker_peak_rss_bytes": 286760960
+    }
+  ],
+  "extension50": [
+    {
+      "omega": "2",
+      "eta": "3/2",
+      "radius": 0.012019191263374638,
+      "target_met": false,
+      "bond": 96,
+      "integer_entries": 227666,
+      "candidate": "results/tensor/limit50/query_00/bond_096.candidate.json",
+      "candidate_sha256": "96b10b0bb32078863901551be5912064fa69a5e4923e74f6369f459316acb49c",
+      "receipt_sha256": "f534084571a0a40f7fd57430bc8d99c6b8cfabd65eb73082cf516237b94b5abb",
+      "checker_seconds": 130.10021270000004,
+      "checker_peak_rss_bytes": 492560384
+    }
+  ],
+  "execution_snapshot_tests_passed": 98,
+  "inherited_tests_passed": 87
+}
